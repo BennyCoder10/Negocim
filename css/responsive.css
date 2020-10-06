@@ -362,7 +362,7 @@ a, button {
   html body header h1 {
     padding-right: 0rem;
   }
-  html body .menu {
+  html body header .menu {
     float: right;
     padding-right: 1rem;
   }
@@ -473,7 +473,7 @@ a, button {
     left: -14rem !important;
   }
   #qui_sommes-nous .text .text_right {
-    width: 80vw;
+    width: 75vw;
   }
   #lexique > div {
     padding: .8rem 1rem;
@@ -500,6 +500,17 @@ a, button {
   }
   #simulateur .choice > div {
     width: 100%;
+  }
+  .step2 .bottom {
+    display: block;
+  }
+  .step2 .bottom .montant {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .step2 .bottom table {
+    width: auto;
   }
 }
 

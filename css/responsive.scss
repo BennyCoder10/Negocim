@@ -22,7 +22,7 @@
   html { font-size: 18px;
     body {
       header h1 { padding-right: 0rem;}
-      .menu { float: right; padding-right: 1rem;}
+      header .menu { float: right; padding-right: 1rem;}
 
     }
     .step3 .help > div span:first-child { padding-right: 2rem;}
@@ -93,7 +93,7 @@
 
   #sidebar-left { left: -14rem !important;}
 
-  #qui_sommes-nous .text .text_right { width: 80vw;}
+  #qui_sommes-nous .text .text_right { width: 75vw;}
 
   #lexique > div { padding: .8rem 1rem;}
 
@@ -109,6 +109,10 @@
   #qui_sommes-nous .text .list_left { display: none; }
   #qui_sommes-nous .text .text_right { width: 100%; direction: ltr; margin: 1.5rem auto; float: none; overflow-y: auto; height: auto;}
   #simulateur .choice > div {width: 100%;}
+  .step2 .bottom { display: block;}
+  .step2 .bottom .montant { justify-content: center;}
+  .step2 .bottom table { width: auto;}
+
   
 }
 
