@@ -16,21 +16,26 @@
   <div class="wrapper"> <!-- FOR FLEXBOX -->
     <!-- 
       HEADER 
-      -->
-    <header>
-      <h1><a href="index.html"><img src="images/main_logo.jpg" alt="Negocim logo"><span class="hide">Negocim</span></a></h1>
-      <h2 class="hide">menu</h2>
-      <nav class="menu">
-        <ul>
-          <li><a href="index.html">Terrains</a></li>
-          <li><a href="vendez.html">Vendez votre terrain</a></li>
-          <li><a href="simulateur.html">Simulateur de crédit</a></li>
-          <li><a href="qui_sommes_nous.html">Qui sommes-nous</a></li>
-          <li><a href="contact.html">Contactez-nous</a></li>
-          <li><a href="lexique.html">Lexique</a></li>            
-        </ul>
-      </nav>
-    </header>
+      -->     
+      <header class="clear">
+        <h1><a href="index.html"><img src="images/main_logo.jpg" alt="Negocim logo"><span class="hide">Negocim</span></a></h1>
+        <h2 class="hide">menu</h2>
+        <nav class="menu" id="menu">
+          <ul>
+            <li><a href="index.html">Terrains</a></li>
+            <li><a href="vendez.html">Vendez votre terrain</a></li>
+            <li><a href="simulateur.html">Simulateur de crédit</a></li>
+            <li><a href="qui_sommes_nous.html">Qui sommes-nous</a></li>
+            <li><a href="contact.html">Contactez-nous</a></li>
+            <li><a href="lexique.html">Lexique</a></li>            
+          </ul>
+        </nav>
+        <div id="menu-toggle" onclick="menuToggle(this)">
+          <div class="bar1"></div>
+          <div class="bar2"></div>
+          <div class="bar3"></div>
+        </div>
+      </header>
   
   <!-- 
     MAIN IN THE MIDDLE 
