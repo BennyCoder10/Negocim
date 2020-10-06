@@ -1,0 +1,33 @@
+@charset "utf-8";
+@import "index.scss";
+
+
+// qui sommes-nous 
+#qui_sommes-nous { 
+  div img { width: 100%; height: auto;}
+  .text { margin: 1.4rem 0 1.4rem; 
+    .list_left { float: left; width: 8.25rem; padding-top: 3.2rem;
+      li {
+        a { display: block; font-size: .65rem; font-weight: bold; padding: .4rem 0 .4rem .65rem; margin-right: .3rem;
+        &:hover span, 
+        &:active { color: $sub;}        
+        }
+      }
+    }
+    .text_right { float: left; width: 37rem;  text-align: left; height: 18.5rem; overflow-y: scroll; direction: rtl;
+     
+      article { padding: 0 1.15rem 2.5rem 1.5rem; direction: rtl;
+        h3 { font-size: 1.8rem; color: $sub; padding-bottom: 1.3rem;}
+        p { font-size: .65rem; line-height: 1.4; word-break: keep-all;}
+      }
+
+      // SCROLLBAR MODIFICATION
+      @include scrollbar(auto)
+      // &::-webkit-scrollbar { width: 6px;}
+      // &::-webkit-scrollbar-track { background: #bcbdbc;}
+      // &::-webkit-scrollbar-thumb { background: $sub;
+      //   &:hover { background: #5a9b00;}
+      // }
+    }
+  }
+}

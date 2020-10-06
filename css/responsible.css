@@ -1,0 +1,189 @@
+html {
+  font-size: 20px;
+}
+
+body {
+  font-size: 1rem;
+}
+
+* {
+  color: #525451;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+.wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100%;
+}
+
+main {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+header {
+  background: #4cb0b2;
+}
+
+header h1 {
+  float: left;
+  padding: 1rem 5rem .8rem 1.3rem;
+}
+
+header h1 a img {
+  display: block;
+  width: 8.5rem;
+  height: 1.75rem;
+}
+
+header .menu {
+  float: left;
+}
+
+header .menu ul li {
+  float: left;
+}
+
+header .menu ul li a {
+  display: block;
+  font-size: .8rem;
+  padding: 1.3rem .8rem .4rem;
+  color: #ffffff;
+  position: relative;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+header .menu ul li a:hover {
+  color: black;
+}
+
+header .menu ul li a:before {
+  content: "";
+  position: absolute;
+  left: 30%;
+  bottom: 0;
+  width: 0;
+  height: 1px;
+  background: white;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+}
+
+header .menu ul li a:hover:before {
+  width: 40%;
+}
+
+main {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+footer {
+  text-align: center;
+  background: #4cb0b2;
+  height: 2.35rem;
+  line-height: 2.35rem;
+}
+
+footer p {
+  font-size: .8rem;
+  color: #ffffff;
+}
+
+main .left {
+  float: left;
+  width: 50%;
+  border: 1px solid #707070;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+main .left img {
+  width: 100%;
+  height: 24rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+main .right {
+  float: left;
+  width: 50%;
+  text-align: center;
+  padding: 5rem 0 9rem;
+  position: relative;
+}
+
+main .right p {
+  font-size: 1rem;
+  line-height: 2.5rem;
+  font-weight: bold;
+  color: #525451;
+}
+
+main .right p a {
+  color: #525451;
+  font-weight: bold;
+}
+
+main .right p a:hover {
+  color: #87c133;
+}
+
+main .right p .buttons {
+  display: block;
+  background: #87c133;
+  border-radius: 1.4rem;
+  border: none;
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  bottom: 0;
+}
+
+main .right p .buttons a {
+  display: block;
+  font-size: .95rem;
+  color: white;
+  padding: .75rem 3rem;
+}
+
+main .right p .buttons:hover {
+  background: #5a9b00;
+}
+
+main .right p .buttons a {
+  padding: .75rem 4.5rem;
+}
+
+main > p {
+  font-size: .55rem;
+  text-align: center;
+  padding: 2rem 0 .5rem;
+  color: black;
+  line-height: 1.5;
+}
+
+main > p a {
+  color: #87c133;
+  font-weight: bold;
+}
+/*# sourceMappingURL=responsible.css.map */

@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Negocim</title>
+
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+  <link rel="stylesheet" href="css/default.css">
+  <link rel="stylesheet" href="css/lexique.css">
+  <link rel="stylesheet" href="css/responsive.css">
+
+</head>
+
+<body>
+
+  <!-- FLEXBOX -->
+  <div class="wrapper">
+    <!-- HEADER -->
+    <header>
+      <h1><a href="index.html"><img src="images/main_logo.jpg" alt="Negocim logo"><span class="hide">Negocim</span></a></h1>
+      <h2 class="hide">menu</h2>
+      <nav class="menu" id="menu">
+        <ul>
+          <li><a href="index.html">Terrains</a></li>
+          <li><a href="vendez.html">Vendez votre terrain</a></li>
+          <li><a href="simulateur.html">Simulateur de crédit</a></li>
+          <li><a href="qui_sommes_nous.html">Qui sommes-nous</a></li>
+          <li><a href="contact.html">Contactez-nous</a></li>
+          <li><a href="lexique.html" class="active">Lexique</a></li>            
+        </ul>
+      </nav>
+      <div id="menu-toggle" onclick="menuToggle(this)">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+      </div>
+    </header>
+  
+  <!-- MAIN IN THE MIDDLE -->
+    <main id="lexique">
+      <div>
+        <div class="search">
+          <form action="">
+            <input type="text" id="search-input" placeholder="" name="search" onkeyup="searchText()">
+            <button type="submit" onclick="searchText()">
+              <i class="xi-search"></i><span class="hide">search</span>
+            </button>
+          </form>         
+        </div>
+
+        <div class="index">
+          <div id="lexique-nav" class="CharacterContainer">
+            <a href="#A"><span>A</span></a>
+            <a href="#B"><span>B</span></a>
+            <a href="#C"><span>C</span></a>
+            <a href="#D"><span>D</span></a>
+            <a href="#C"><span>E</span></a>
+            <a href="#C"><span>F</span></a>
+            <a href="#C"><span>G</span></a>
+            <a href="#C"><span>H</span></a>
+            <a href="#C"><span>I</span></a>
+            <a href="#C"><span>J</span></a>
+            <a href="#C"><span>K</span></a>
+            <a href="#C"><span>L</span></a>
+            <a href="#C"><span>M</span></a>
+            <a href="#C"><span>N</span></a>
+            <a href="#C"><span>O</span></a>
+            <a href="#C"><span>P</span></a>
+            <a href="#C"><span>Q</span></a>
+            <a href="#C"><span>R</span></a>
+            <a href="#C"><span>S</span></a>
+            <a href="#C"><span>T</span></a>
+            <a href="#C"><span>U</span></a>
+            <a href="#C"><span>V</span></a>
+            <a href="#C"><span>W</span></a>
+            <a href="#C"><span>X</span></a>
+            <a href="#C"><span>Y</span></a>
+            <a href="#C"><span>Z</span></a>
+          </div>
+        </div>
+
+        <div id="lexique-contents">
+          <div class="texts" id="A">
+            <h3>Abattage d'Arbre </h3>
+            <p>
+              Sous réserve de certaines exceptions (arbres morts, malades ou présentant un quelconque danger), les coupes et abattages d'arbres sont soumis à autorisation préalable dans les bois, forêts ou parcs situés sur le territoire de communes où l'établissement d'un PLU ou d'un POS a été prescrit, ainsi que dans tout espace boisé classé (E.B.C.).
+            </p>     
+            <h3>Abri de Jardin</h3>
+            <p>
+              Ils sont soumis à permis de construire, comme toute construction, même s'ils ne sont pas destinés à l'habitation et ne comportent pas de fondations. Cependant, les abris d'une surface hors oeuvre brute supérieure à 2 m² et inférieure ou égale à 20 m² édifiés sur un terrain comportant déjà un bâtiment relève de la simple déclaration de travaux.
+            </p>  
+            <h3>Achèvement des Travaux</h3>
+            <p>
+              Un immeuble est considéré comme achevé lorsque l'état d'avancement des travaux est tel qu'il permet une utilisation effective du bâtiment pour l'usage auquel il est destiné.
+            </p>
+            <h3>Acte Authentique</h3>
+            <p>
+              Acte signé chez le notaire et entérinant l'acquisition. Cet acte détermine le transfert de propriété. L'acquéreur paye l'intégralité du prix du terrain (déduction faite de l'acompte versé lors de la réservation), le vendeur lui remet les éventuelles clefs. Le notaire remet à l'acquéreur ses titres de propriété après les avoir fait enregistrer.
+            </p>
+            <h3>Adaptation Mineure</h3>
+            <p>
+              Ce sont les assouplissements apportés à certaines règles d'urbanisme en vue d'éviter une mauvaise utilisation du sol tenant le plus souvent à la nature du sol, la configuration des parcelles ou le caractères des constructions avoisinantes.
+            </p>
+            <h3>Affichage du Permis de Construire</h3>
+            <p>
+              Un permis d'aménager, de construire, de démolir ou une déclaration doit faire l'objet d'un affichage sur le terrain et d'un affichage en mairie.<br>
+
+              L'affichage sur le terrain doit se faire de façon a être lisible du domaine public, sur un panneau rectangulaire dont les dimensions sont supérieures à 80 cm, et doit apparaître clairement le nom du bénéficiaire, la date et le N° du permis, la nature du projet et la superficie du terrain, ainsi que l'adresse de la mairie qui a délivré le permis.</br>
+
+              De plus, le panneau doit comporter les indications légales suivantes :</br>
+              
+              « Le délai de recours contentieux est de deux mois à compter du premier jour d’une période continue de deux mois d’affichage sur le terrain du présent panneau (article R 600-2 du Code de l’Urbanisme) »</br>
+              
+              « Tout recours administratif ou tout recours contentieux doit, à peine d’irrecevabilité, être notifié à l’auteur de la décision et au bénéficiaire du permis ou de la décision prise sur la déclaration préalable. Cette notification doit être adressée par lettre recommandée avec accusé de réception dans un délai de quinze jours francs à compter du dépôt du recours (article R 600-1 du Code de l’Urbanisme) »</br>
+              
+              En fonction de la nature du projet, le panneau indique clairement : </br>
+
+              <ul>
+                <li>
+                  pour une construction, la Surface de plancher autorisée ainsi que la hauteur du bâtiment
+                </li>
+                <li>
+                  pour un lotissement, le nombre maximum de lots prévus
+                </li>
+                <li>
+                  pour une démolition, la surface démolie
+                </li>
+              </ul>
+
+              <strong>L'affichage en mairie est celui du permis lui même.</br>
+              
+              Ces deux affichages doivent rester deux mois continus en place, et permettent à d'éventuels tiers de s'opposer à la mise en oeuvre du permis.</strong>
+            </p>
+
+            <h3>Alignement</h3>
+            <p>
+              C'est la détermination par l'autorité administrative des limites du droit de construire par rapport aux voies publiques au moyen d'un plan d'alignement ou d'un alignement individuel.
+            </p>
+            <h3>Annulation du Permis de construire</h3>
+            <p>
+              Sanction prononcée par le juge administratif à la suite d'un recours contentieux exercé par un tiers. Si le juge estime le permis illégal, ce dernier est alors frappé d'annulation. En conséquence, les travaux doivent s'arrêter immédiatement, dans certains cas, le juge peut aller jusqu’à demander la remise en l’état antérieur aux travaux du terrain.
+            </p>
+            <h3>Antenne</h3>
+            <p>
+              Ne sont pas soumis à permis de construire les antennes d'émission ou de réception de signaux radioélectriques dont aucune dimension n'excède 4 mètres et, dans le cas où l'antenne comporte un réflecteur lorsque aucune dimension de ce dernier n'excède 1 mètre.
+            </p>
+            <h3>Archéologie Préventive</h3>
+            <p>
+              Mission d'archéologie ayant pour objet de détecter l'éventuelle présence d'éléments d'intérêt archéologique avant que ne soient réalisés des travaux en surface dont les conséquences seraient entre autres de rendre le sous-sol inaccessible, et donc de mettre hors de portée l'éventuel patrimoine archéologique.
+            </p>
+            <h3>Architecte</h3>
+            <p>
+              Professionnel qualifié, inscrit à un ordre et soumis à un code des devoirs professionnels, dont la mission consiste essentiellement à établir des projets de construction mais peut s'étendre à la maîtrise d'oeuvre et recouvrir des activités d'urbanisme. Leur intervention doit permettre, notamment, d'assurer la qualité des constructions et leur insertion harmonieuse dans le milieu environnant.
+            </p>
+            <h3>Aspect Extérieur</h3>
+            <p>
+              L'aspect extérieur concerne les formes, les matériaux employés et leur couleur, les toitures, les ouvertures, les clôtures. L'examen est fait au regard du règlement de zone qui peut imposer des prescriptions.
+            </p>
+            <h3>Assainissement</h3>
+            <p>
+              Réseaux de collecte des eaux usées et pluviales.
+            </p>
+            <h3>Association Syndicale d'un lotissement</h3>
+            <p>
+              Entité sous laquelle sont regroupés l'ensemble des acquéreurs des lots et à qui sera dévolu la propriété, la gestion et l'entretien des parties communes du lotissement, jusqu'à leur transfert éventuel à la commune ou à la communauté urbaine.
+            </p>       
+                       
+            </div>
+          <div class="texts" id="B">
+            <h3>Bbattage d'Arbre </h3>
+            <p>Sous réserve de certaines exceptions (arbres morts, malades ou présentant un quelconque danger), les coupes et
+              abattages d'arbres sont soumis à autorisation préalable dans les bois, forêts ou parcs situés sur le territoire de
+              communes où l'établissement d'un PLU ou d'un POS a été prescrit, ainsi que dans tout espace boisé classé (E.B.C.).</p>      
+          </div>
+          <div class="texts" id="C">
+            <h3>Cbattage d'Arbre </h3>
+            <p>Sous réserve de certaines exceptions (arbres morts, malades ou présentant un quelconque danger), les coupes et
+              abattages d'arbres sont soumis à autorisation préalable dans les bois, forêts ou parcs situés sur le territoire de
+              communes où l'établissement d'un PLU ou d'un POS a été prescrit, ainsi que dans tout espace boisé classé (E.B.C.).</p>      
+          </div>
+          <div class="texts" id="D">
+            <h3>Abattage d'Arbre </h3>
+            <p>Sous réserve de certaines exceptions (arbres morts, malades ou présentant un quelconque danger), les coupes et
+              abattages d'arbres sont soumis à autorisation préalable dans les bois, forêts ou parcs situés sur le territoire de
+              communes où l'établissement d'un PLU ou d'un POS a été prescrit, ainsi que dans tout espace boisé classé (E.B.C.).</p>      
+          </div>
+          <div class="texts">
+            <h3>Abattage d'Arbre </h3>
+            <p>Sous réserve de certaines exceptions (arbres morts, malades ou présentant un quelconque danger), les coupes et
+              abattages d'arbres sont soumis à autorisation préalable dans les bois, forêts ou parcs situés sur le territoire de
+              communes où l'établissement d'un PLU ou d'un POS a été prescrit, ainsi que dans tout espace boisé classé (E.B.C.).</p>      
+          </div>        
+             
+        </div>
+      </div>
+     
+    </main>
+    
+    <!-- 
+      FOOTER AT THE BOTTOM
+     -->
+    <footer>
+      <p><a href="politique.html">Politique de protection des données personnelles</a></p>
+    </footer>
+
+  </div>
+
+<script src="js/index.js"></script>
+</body>
+</html>

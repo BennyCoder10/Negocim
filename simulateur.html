@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Negocim</title>
+
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+  <link rel="stylesheet" href="css/default.css">
+  <link rel="stylesheet" href="css/simulateur_steps.css">
+  <link rel="stylesheet" href="css/responsive.css">
+
+</head>
+
+<body>
+  <div class="wrapper">
+    <header class="clear">
+      <h1><a href="index.html"><img src="images/main_logo.jpg" alt="Negocim logo"><span class="hide">Negocim</span></a></h1>
+      <h2 class="hide">menu</h2>
+      <nav class="menu" id="menu">
+        <ul>
+          <li><a href="index.html">Terrains</a></li>
+          <li><a href="vendez.html">Vendez votre terrain</a></li>
+          <li><a href="simulateur.html" class="active">Simulateur de crédit</a></li>
+          <li><a href="qui_sommes_nous.html">Qui sommes-nous</a></li>
+          <li><a href="contact.html">Contactez-nous</a></li>
+          <li><a href="lexique.html">Lexique</a></li>            
+        </ul>
+      </nav>
+      <div id="menu-toggle" onclick="menuToggle(this)">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+      </div>
+    </header>
+
+    <!-- Calculator -->
+    <main id="simulateur">
+      <h2>Quel est votre projet ?</h2>
+      <div class="choice clear">
+        <div class="left">
+          <a href="simulateur_steps.html">
+            <div>
+              <p>Financer un terrain</p>
+            </div>          
+          </a>
+          <p></p>
+        </div>
+        <div class="right">
+          <a href="simulateur_steps.html">
+            <div>
+              <p>Financer le terrain</br>et la construction</p>
+            </div>          
+          </a>
+        </div>
+      </div>
+
+      <p class="btm-txt">
+        Cette information non contractuelle est donnée à titre indicatif.</br>
+        * Nous vous garantissons qu'aucune donnée n'est transmise à nos serveurs.</br>
+        Elles sont seulement utilisées pour les calculs des différentes simulations proposées et le calcul de votre taux d'endettement.
+      </p>
+    </main>
+    
+    <!-- 
+      FOOTER AT THE BOTTOM
+     -->
+     <footer>
+      <p><a href="politique.html">Politique de protection des données personnelles</a></p>
+    </footer>
+
+  </div>
+
+  <script src="js/index.js"></script>
+
+</body>
+</html>

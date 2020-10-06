@@ -1,0 +1,51 @@
+@charset "utf-8";
+@import "index.scss";
+
+
+// TERRAINS SUB 1
+#orleanais { position: relative; 
+  // div { 
+    #sidebar-left { position: absolute; width: 14rem; left: 0; top: 0; height: 100%; background-color: $main; border: .5px solid $bars; z-index: 1000;
+      animation: fadeInRight .3s ease-in;
+      h2 { padding: 1rem;
+        a { font-size: 1.9rem; font-weight: bold; color: white;}
+        &:hover a { color: $text-dark;}  
+      }
+      .menu { overflow-y: auto; height: 65%; margin-right: .5rem; 
+  
+        .dropdown-btn { display: block; width: 100%; text-align: left; font-size: 1rem; cursor: pointer; color: white; background: $main; padding: .5rem 1rem .5rem 1.4rem;  font-size: 1rem;
+            &:hover { color: $text-dark;}    
+            &:focus { outline: none; }  // remove the button selector border
+        }
+        .dropdown-content { display: none; padding: 0 2.45rem .3rem; animation: slowAppear .3s ease-in-out;
+          ul li {
+            a {
+              span{ display: block; color: white; background: $main; padding: .2rem 0;  font-size: .6rem; transition: all .3s;
+                &:hover { color: $text-dark;}
+              }
+              &:focus { outline: none;}
+            }
+            
+          }
+        }
+        
+        @include scrollbar(auto);
+  
+      }    
+      .goback { @include buttons; margin: 0 auto; position: absolute; left: 0; right: 0; bottom: 1rem;
+       padding: 0.4rem 2.5rem; color: $text; font-size: .8rem;
+          i { font-size: .7rem; color: white; padding-right: .3rem;}
+      
+      }
+    }
+
+
+  // SPACE ON THE RIGHT FOR MAP IMAGE & GOOGLE MAP API
+  .main-right { padding-left: 14rem; text-align: center; height: 100%; width: 100%; overflow: auto;
+    .map { height: 100%; width: 100%; padding: 5px; position: relative;
+      img { height: 100%; }
+      p { position: absolute; left: 0; right: 0; bottom: 1.5rem; font-size: .8rem; font-weight: bold; padding: 0 1rem;} 
+      iframe { height: 100%; width: 100%; border: 1px solid $sub;}
+    }
+  }
+}

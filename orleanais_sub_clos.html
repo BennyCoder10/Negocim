@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Negocim</title>
+
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+  <link rel="stylesheet" href="css/default.css">
+  <link rel="stylesheet" href="css/terrain_sub_sub.css">
+  <link rel="stylesheet" href="css/responsive.css">
+
+</head>
+
+<body>
+  <div class="wrapper">
+    <header class="clear">
+      <h1><a href="index.html"><img src="images/main_logo.jpg" alt="Negocim logo"><span class="hide">Negocim</span></a></h1>
+      <h2 class="hide">menu</h2>
+      <nav class="menu" id="menu">
+        <ul>
+          <li><a href="index.html" class="active">Terrains</a></li>
+          <li><a href="vendez.html">Vendez votre terrain</a></li>
+          <li><a href="simulateur.html">Simulateur de crédit</a></li>
+          <li><a href="qui_sommes_nous.html">Qui sommes-nous</a></li>
+          <li><a href="contact.html">Contactez-nous</a></li>
+          <li><a href="lexique.html">Lexique</a></li>            
+        </ul>
+      </nav>
+      <div id="menu-toggle" onclick="menuToggle(this)">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+      </div>
+    </header>
+  
+  
+    <main id="">
+      <div id="sidebar-left">
+        <h2><a href="orleanais_sub_info.html">Orléanais</a></h2>
+        <div class="menu">
+          <h4>Commune de Rebréchien</br><strong>Clos du Caquet</strong></h4>
+          <p class="info sub">En lisière de forêt, Rebréchien n'est pourtant qu'à 17km du centre ville d'Orléans et à 5-7km de la zone d'activité de Boigny-sur-Bionne / arigny-les-Usages / Saint-Jean-de-Braye.</br></br>
+
+          Vous apprécierez ce village, ses écoles, ses commerces et sa qualité de vie.</br></br>
+            
+          Nous vous proposons une première tranche de 27 lots de 500 à 728m² situés à deux pas des écoles !</p>
+        </div> 
+
+
+        <button type="button" class="goback" onclick="goBack()"><i class="xi-angle-left"></i>Retour</button>
+      </div> 
+
+      <div class="main-right" >
+        <div class="map" id="terrain_map">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2827.3514515377574!2d-0.5823211844621834!3d44.8754962790984!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd5528464d2e1995%3A0xd6ebb7d73e822d68!2s6%20Avenue%20de%20Chavailles%20Bat%207%2C%2033520%20Bruges!5e0!3m2!1sen!2sfr!4v1600162211424!5m2!1sen!2sfr" frameborder="0" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+        </div>
+      </div>
+    </main>
+    
+    <!-- 
+      FOOTER AT THE BOTTOM
+     -->
+     <footer>
+      <p><a href="politique.html">Politique de protection des données personnelles</a></p>
+    </footer>
+
+  
+  </div>
+ 
+  <script src="js/index.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Negocim</title>
+
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+  <link rel="stylesheet" href="css/default.css">
+  <link rel="stylesheet" href="css/terrain_sub.css">
+  <link rel="stylesheet" href="css/responsive.css">
+
+</head>
+
+<body>
+  <div class="wrapper">
+    <header class="clear">
+      <h1><a href="index.html"><img src="images/main_logo.jpg" alt="Negocim logo"><span class="hide">Negocim</span></a></h1>
+      <h2 class="hide">menu</h2>
+      <nav class="menu" id="menu">
+        <ul>
+          <li><a href="index.html" class="active">Terrains</a></li>
+          <li><a href="vendez.html">Vendez votre terrain</a></li>
+          <li><a href="simulateur.html">Simulateur de crédit</a></li>
+          <li><a href="qui_sommes_nous.html">Qui sommes-nous</a></li>
+          <li><a href="contact.html">Contactez-nous</a></li>
+          <li><a href="lexique.html">Lexique</a></li>            
+        </ul>
+      </nav>
+      <div id="menu-toggle" onclick="menuToggle(this)">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+      </div>
+    </header>
+  
+  
+    <main id="orleanais">
+      <div id="sidebar-left">
+        <h2><a href="orleanais.html">Orléanais</a></h2>
+        <div class="menu">
+          <button class="dropdown-btn" id="Donnery">Donnery</button>
+          <div class="dropdown-content">
+            <ul>
+              <li><a href="orleanais_sub_info.html"><span>Le Clos Canard</span></a></li>
+            </ul>              
+          </div>
+
+          <button class="dropdown-btn">Lamotte-Beuvron</button>
+          <div class="dropdown-content" id="Mer">
+            <ul>
+              <li><a href="orleanais_sub_info.html"><span>La Saulnerie Extension A</a></button></li>
+              <li><a href="orleanais_sub_info.html"><span>La Saulnerie Extension B</a></button></li>
+            </ul>                
+            
+          </div>
+
+          <button class="dropdown-btn">Orléans</button>
+          <div class="dropdown-content" id="Mer">
+            <ul>
+              <li><a href="#a"><span>Clos des 3 Fontaines</a></button></li>
+            </ul>
+          </div>
+
+          <button class="dropdown-btn">Rebréchien</button>
+          <div class="dropdown-content" id="Mer">
+            <ul>
+              <li><a href="#a"><span>Clos du Caquet</span></a></li>
+            </ul>
+          </div>
+          <button class="dropdown-btn">Saint-Ay</button>
+          <div class="dropdown-content" id="Mer">
+            <ul>
+              <li><a href="#a"><span>Le Rivage Tranche 1</span></a></li>
+              <li><a href="#a"><span>Le Rivage Tranche 2</span></a></li>
+              <li><a href="#a"><span>Le Rivage Tranche 3</span></a></li>
+            </ul>
+          </div>
+          <button class="dropdown-btn">Saint-Martin-du-Tertre</button>
+          <div class="dropdown-content" id="Mer">
+            <ul>
+              <li><a href="#a"><span>Le Val du Glacier</span></a></li>
+            </ul>
+          </div>
+          <button class="dropdown-btn">Souvigny-en-Sologne</button>
+          <div class="dropdown-content" id="Mer">
+            <ul>
+              <li><a href="#a"><span>Route de Vannes</span></a></li>
+              <li><a href="#a"><span>Chemin des Sentes</span></a></li>
+            </ul>
+          </div>
+        </div>         
+        <button type="button" class="goback" onclick="goBack()"><i class="xi-angle-left"></i>Retour</button>
+      </div> 
+
+      <div class="main-right" >
+        <div class="map" id="terrain_map">
+          <img src="images/carte_france.jpg" alt="map of france" class="france">
+          <!-- <span><a href="#a">Vannes</a></span> -->
+          <p>Nous vendons des terrains à bâtir viabilisés, tout en vous laissant le choix de votre constructeur, entreprise ou architecte</p>
+        </div>
+      </div>
+    </main>
+    
+    <!-- 
+      FOOTER AT THE BOTTOM
+     -->
+     <footer>
+      <p><a href="politique.html">Politique de protection des données personnelles</a></p>
+    </footer>
+
+  
+  </div>
+ 
+  <script src="js/index.js"></script>
+
+</body>
+</html>

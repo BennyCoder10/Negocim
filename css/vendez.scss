@@ -1,0 +1,15 @@
+@charset "utf-8";
+@import "index.scss";
+
+// MAIN
+main { 
+  .agencies {float: left; width: 50%; height: auto; position:relative; border: 1px solid $bars; box-sizing: border-box;
+    img { width: 100%; height: 12.9rem;}
+    button { 
+      @include buttons; @include transition;
+      position: absolute; left: 50%; bottom: .95rem; transform: translateX(-50%);}     
+  }
+  p { font-size: .55rem; text-align: center; padding: .5rem; color: black; line-height: 1.5;
+    a { color: $sub; font-weight: bold;}
+  }
+}

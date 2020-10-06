@@ -1,0 +1,58 @@
+@charset "utf-8";
+@import "index.scss";
+
+#lexique {
+  > div { padding: .8rem 4.5rem;
+    .search { text-align: right;
+      form { display: inline-block; border-bottom: 2.5px solid $sub;
+        input { width: 3rem; padding: 0; font-size: .8rem; text-indent: 5px; border: none; 
+        &:focus { outline: none;}
+        }
+        button { padding: .5rem 0 0 .5rem; cursor: pointer; background: white; vertical-align: bottom;
+          &:focus { outline: none;}
+          i {           
+          font-size: 17px;
+          color: $sub;
+          }                
+        }
+      }      
+    }
+    
+    .index { padding: 1rem 0 4.3rem; vertical-align: middle;
+      #lexique-nav {
+        display: flex; 
+        flex-wrap: wrap;
+
+        
+        // flex-wrap: nowrap; 
+        // overflow-x: auto;
+
+        height: auto;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 1rem;       
+        a { display: block; padding: .5rem;
+          // &:first-child { padding-left: 0;}
+          // &:last-child { padding-right: 0;}
+          span { padding: 0 .2rem; text-align: center; color: $sub; font-weight: bold; transition: color .5s;}
+          &:hover span { color:  #5a9b00;  border-bottom: 3px solid #5a9b00;}
+        }    
+      }
+    }
+    #lexique-contents { height: 16.7rem; overflow-y: scroll;
+      .texts { padding-right: 1.65rem;
+        h3 { font-size: .9555rem; color: $sub; font-weight: 600; padding-bottom: 3.5rem;}
+        p { font-size: .9555rem; color: $text-dark; font-weight: 600; padding-bottom: 3.5rem; line-height: 2.5; word-break: keep-all;
+        }        
+      }
+
+      // SCROLLBAR MODIFICATION  
+      @include scrollbar(4.3rem)    
+      // &::-webkit-scrollbar { width: 6px;}
+      // &::-webkit-scrollbar-track { background: #bcbdbc;}
+      // &::-webkit-scrollbar-thumb { background: $sub; height: 4.3rem;
+      //   &:hover { background: #5a9b00;}
+      // }
+    }
+  }
+}

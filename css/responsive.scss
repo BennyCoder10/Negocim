@@ -1,0 +1,156 @@
+@charset "utf-8";
+@import "index.scss";
+
+
+
+@media only screen and (max-width: 1240px) {
+  #lexique > div .index #lexique-nav { justify-content: flex-start;}
+  .simulateur_steps { min-height: 550px;}
+
+}
+
+// 1. LARGER DEVICES (DESKTOPS) 
+//
+// @media only screen and (max-width: 1100px) {
+//   html 
+//   .step4 .summary table { width: 80%;}
+// }
+
+// 2. LARGE DEVICES (LAPTOPS) 
+//
+@media only screen and (max-width: 1120px) {
+  html { font-size: 18px;
+    body {
+      header h1 { padding-right: 0rem;}
+      .menu { float: right; padding-right: 1rem;}
+
+    }
+    .step3 .help > div span:first-child { padding-right: 2rem;}
+    .step4 .summary table { width: 80%;}
+
+  }
+  #terrains .main-right .map img { text-align: right;}
+  #agence-bordeaux-1 div .contact .services { font-size: 1.6vw;}
+}
+
+
+
+// 3. MIDDLE SIZE DEVICES (TABLETS) 
+//
+@media only screen and (max-width: 940px) {
+  body { width: 100%;}
+  header {
+    .menu {
+      padding-right: 0rem;
+      position: fixed; /* Stay in place */
+      z-index: 100; /* Sit on top */
+      right: 0;
+      top: 64px;
+      width: 17rem;
+      height: 100%; /* Full height */
+      overflow: auto; /* Enable scroll if needed */
+      background-color: rgb(0,0,0); /* Fallback color */
+      background-color: rgba(0, 0, 0, 0.9); /* Black w/ opacity */
+      transition: transform .5s ease-in-out;
+      transform: translateX(100%);
+      ul { margin-left: 1rem;
+        li { float: none;}
+      }
+      ul li {
+        .active:before { width: none;}
+        a { display: inline-block;
+          &:hover { color: white;}        
+        }
+      }
+    }    
+
+    .appear { 
+      transform: translateX(0);            
+    }
+
+    #menu-toggle { display: inline-block;}      
+   
+  }
+  .overlay{ position: fixed;}   
+
+  .simulateur_steps { margin: 1.2rem 1rem;}
+  .simulateur_steps .récapitulatif { width: 100%;}
+  .steps > div { margin: 0; width: 100%;}
+
+  .step2 .bottom table tr th, .step2 .bottom table tr td {
+    padding: 1.3rem 1.5vw 0;
+  }
+  .step3 .selectors, .step3 .help { width: 100%;
+  }
+
+  #terrains #float-left { position: static;  
+    ul { display: flex; justify-content: space-around; 
+      margin: 1rem 1rem;
+      border: 1px solid $sub;}
+  }
+  .main-right { height: auto !important; padding-left: 0 !important;}
+  .main-right .map img { width: 100%; height: auto;}
+
+  #sidebar-left { left: -14rem !important;}
+
+  #qui_sommes-nous .text .text_right { width: 80vw;}
+
+  #lexique > div { padding: .8rem 1rem;}
+
+}
+
+
+// 4. SMALL DEVICES (SMARTPHONES) 
+//
+@media only screen and (max-width: 770px) {
+  html { font-size: 16px;}
+  header .menu {top: 60px;}
+
+  #qui_sommes-nous .text .list_left { display: none; }
+  #qui_sommes-nous .text .text_right { width: 100%; direction: ltr; margin: 1.5rem auto; float: none; overflow-y: auto; height: auto;}
+  #simulateur .choice > div {width: 100%;}
+  
+}
+
+
+@media only screen and (max-width: 560px) {
+  main .agencies { width: 100%;}
+
+  #contact .left { display: none;}
+  #contact .right { float: none; width: 100%;}
+
+  main .main-right { display: none;}
+
+ #orleanais #sidebar-left { width: 100%; position: static; background: white; border: none;
+   animation: fadeInRight .3s ease-in;
+  h2 { text-align: center; background: url(../images/pic_1.jpg) 100%; padding: 3rem 0 .5rem;
+    a { font-size: 1.5rem; font-weight: bold; color: $text; background: $sub; border-radius: 20px; padding: 0 1rem;}
+    &:hover a { color: $text-dark;}  
+  }
+  .menu { overflow-y: visible; height: auto; margin-right: 0; 
+
+    .dropdown-btn { text-align: center; color: $text-dark; background: white;
+    }
+    .dropdown-content { text-align: center; padding-bottom: 1.5rem;
+      ul li {
+        a {
+          span{ color: $text-dark; background: white;  }  
+        }}}
+
+  }    
+  .goback { margin: 2rem auto .5rem; position: static;}
+}
+
+#simulateur .choice > div { height: 190px; border: 1px solid $bars; }
+
+
+#lexique > div .index { padding-bottom: 2rem;} 
+#lexique > div { padding-bottom: 2rem;}
+#lexique > div #lexique-contents .texts h3 { padding-bottom: 1.5rem;}
+#lexique > div #lexique-contents .texts p { padding-bottom: 1.5rem; line-height: 1.5;}
+
+
+}
+
+
+

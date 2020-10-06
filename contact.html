@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Negocim</title>
+
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+  <link rel="stylesheet" href="css/default.css">
+  <link rel="stylesheet" href="css/contact.css">
+  <link rel="stylesheet" href="css/responsive.css">
+
+</head>
+
+<body>
+  <div class="wrapper"> <!-- FOR FLEXBOX -->
+    <!-- 
+      HEADER 
+      -->
+    <header>
+      <h1><a href="index.html"><img src="images/main_logo.jpg" alt="Negocim logo"><span class="hide">Negocim</span></a></h1>
+      <h2 class="hide">menu</h2>
+      <nav class="menu" id="menu">
+        <ul>
+          <li><a href="index.html">Terrains</a></li>
+          <li><a href="vendez.html">Vendez votre terrain</a></li>
+          <li><a href="simulateur.html">Simulateur de crédit</a></li>
+          <li><a href="qui_sommes_nous.html">Qui sommes-nous</a></li>
+          <li><a href="contact.html" class="active">Contactez-nous</a></li>
+          <li><a href="lexique.html">Lexique</a></li>            
+        </ul>
+      </nav>
+      <div id="menu-toggle" onclick="menuToggle(this)">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+      </div>
+    </header>
+
+
+    <main id="contact">   
+      <div class="clear">
+        <div class="left">
+          <img src="images/pic_1.jpg" alt="agence de bordeaux">
+        </div>
+        <div class="right">
+          <p>
+            Responsable : Norbert Pithois</br>
+            <a href="mailto:norbert.pithois@negocim.fr">Email : norbert.pithois@negocim.fr</a></br>
+            <a href="tel:+33614402105">Tel : 06.14.40.21.05</a></br>
+            Départements : 33, 40, 64 & 17
+
+            <button class="buttons"><a href="#">Retour</a></button>
+          </p>       
+        </div>
+      </div>
+      <p>
+        Nous sommes en permanence à la <a href="#a">recherche de terrains</a> constructibles afin de réaliser des lotissements.</br>
+        Vous êtes <a href="#a">propriétaire</a> d'un ou de plusieurs terrains constructibles.</br>
+        Vous avez <a href="#a">décidé de vendre</a> ce ou ces terrains.</br>
+        Vous trouverez ci-après la liste des départements susceptibles de nous intéresser pour réaliser nos opérations.</br>
+        <a href="#a">Contactez-nous</a> et nous étudierons ensemble la faisabilité d'une opération sur votre propriété.</br>
+      </p>
+    </main>
+      
+    <footer>
+      <p>Politique de protection des données personnelles</p>
+    </footer>
+  </div>
+
+  <script src="js/index.js"></script>
+</body>
+</html>
