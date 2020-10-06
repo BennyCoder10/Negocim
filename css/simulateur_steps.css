@@ -403,7 +403,7 @@ a, button {
 }
 
 #simulateur .choice .left {
-  background: url(../images/simuler_terrain.jpg) no-repeat 0 90%/100%;
+  background: url(/images/simuler_terrain.jpg) no-repeat 0 90%/100%;
 }
 
 #simulateur .choice .left a div {
@@ -415,7 +415,7 @@ a, button {
 }
 
 #simulateur .choice .right {
-  background: url(../images/simuler_terrain_construction.jpg) no-repeat 0 60%/100%;
+  background: url(/images/simuler_terrain_construction.jpg) no-repeat 0 60%/100%;
 }
 
 #simulateur .choice .right a div {
