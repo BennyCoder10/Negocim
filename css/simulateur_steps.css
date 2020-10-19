@@ -596,9 +596,9 @@ a, button {
 
 .step1 .selectors .unit span {
   position: absolute;
-  font-size: .65rem;
+  font-size: 1rem;
   right: 10px;
-  top: 7px;
+  top: 3px;
 }
 
 .step1 .bottom p {
@@ -663,9 +663,9 @@ a, button {
 
 .step2 .selectors .unit span {
   position: absolute;
-  font-size: .65rem;
+  font-size: 1rem;
   right: 35px;
-  top: 7px;
+  top: 3px;
 }
 
 .step2 > p {
@@ -793,9 +793,9 @@ a, button {
 
 .step3 .selectors .unit span {
   position: absolute;
-  font-size: .65rem;
+  font-size: 1rem;
   right: 35px;
-  top: 7px;
+  top: 3px;
 }
 
 .step3 .help {
@@ -919,9 +919,9 @@ a, button {
 
 .step4 .final_price > div > div span {
   position: absolute;
-  font-size: .65rem;
+  font-size: 1rem;
   right: 7px;
-  top: 7px;
+  top: 3px;
 }
 
 .step4 .final_price .taux {
@@ -942,4 +942,8 @@ a, button {
   display: none;
   -webkit-animation: slowAppear .5s ease-out;
           animation: slowAppear .5s ease-out;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
 }

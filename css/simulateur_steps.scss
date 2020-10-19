@@ -118,7 +118,7 @@
 .step1 {
   .selectors { 
     .unit { position: relative;
-      span { position: absolute; font-size: .65rem; right: 10px; top: 7px;}
+      span { position: absolute; font-size: 1rem; right: 10px; top: 3px;}
     }    
   }
 
@@ -145,10 +145,11 @@
     } 
 
     .unit { position: relative;
-       span { position: absolute; font-size: .65rem; right: 35px; top: 7px;}
+       span { position: absolute; font-size: 1rem; right: 35px; top: 3px;} 
     }
   }     
   
+
 
   > p { font-size: .65rem; padding-top: 1rem;}
 
@@ -193,7 +194,7 @@
       }
     } 
     .unit { position: relative;       
-        span { position: absolute; font-size: .65rem; right: 35px; top: 7px};
+        span { position: absolute; font-size: 1rem; right: 35px; top: 3px};
       }    
   }
 
@@ -242,7 +243,7 @@
       h4 { color: $text-dark; font-size: 1rem; padding-bottom: .5rem;}
 
       > div { padding: 0 .5rem; width: 9.9rem; height: 1.7rem; border: 1px solid $bars; border-radius: 1rem; position: relative;
-          span { position: absolute; font-size: .65rem; right: 7px; top: 7px;}
+          span { position: absolute; font-size: 1rem; right: 7px; top: 3px;}
         }
       }
     .taux { margin-right: 0;}
@@ -256,3 +257,6 @@
 .steps { display: none; animation: slowAppear .5s ease-out;}
 
 
+input[type="number"]{
+  -moz-appearance: textfield;
+};
