@@ -5,6 +5,7 @@ html {
 body {
   font-size: 1rem;
   max-width: 1440px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 * {
@@ -126,6 +127,85 @@ header .change .bar2 {
 header .change .bar3 {
   -webkit-transform: rotate(45deg) translate(-8px, -8px);
   transform: rotate(45deg) translate(-8px, -8px);
+}
+
+#terrains {
+  position: relative;
+}
+
+#terrains #float-left {
+  position: absolute;
+  left: 3.5rem;
+  top: 30%;
+  z-index: 1;
+}
+
+#terrains #float-left ul li {
+  margin: .2rem 0;
+}
+
+#terrains #float-left ul li:nth-child(1) i {
+  color: #2e60ff;
+}
+
+#terrains #float-left ul li:nth-child(2) i {
+  color: #929d3b;
+}
+
+#terrains #float-left ul li:nth-child(3) i {
+  color: #149700;
+}
+
+#terrains #float-left ul li:nth-child(4) i {
+  color: #930000;
+}
+
+#terrains #float-left ul li a {
+  display: block;
+  padding: .2rem 0 .8rem;
+  border: none;
+}
+
+#terrains #float-left ul li a i {
+  padding-right: .55rem;
+  font-size: 1rem;
+}
+
+#terrains #float-left ul li a span {
+  font-size: .9rem;
+  font-weight: bold;
+}
+
+#terrains #float-left ul li a:hover span {
+  color: #808080;
+}
+
+#terrains .main-right {
+  text-align: center;
+  height: 100%;
+  width: 100%;
+  overflow: auto;
+}
+
+#terrains .main-right .map {
+  height: 100%;
+  width: 100%;
+  padding: 5px;
+  position: relative;
+}
+
+#terrains .main-right .map img {
+  height: 100%;
+}
+
+#terrains .main-right .map p {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 1.5rem;
+  font-size: .8rem;
+  font-weight: bold;
+  padding: 0 1rem;
 }
 
 footer {
@@ -264,122 +344,40 @@ a, button {
   }
 }
 
-#terrains {
-  position: relative;
-}
-
-#terrains #float-left {
-  position: absolute;
-  left: 3.5rem;
-  top: 30%;
-  z-index: 1;
-}
-
-#terrains #float-left ul li {
-  margin: .2rem 0;
-}
-
-#terrains #float-left ul li:nth-child(1) i {
-  color: #2e60ff;
-}
-
-#terrains #float-left ul li:nth-child(2) i {
-  color: #929d3b;
-}
-
-#terrains #float-left ul li:nth-child(3) i {
-  color: #149700;
-}
-
-#terrains #float-left ul li:nth-child(4) i {
-  color: #930000;
-}
-
-#terrains #float-left ul li a {
-  display: block;
-  padding: .2rem 0 .8rem;
-  border: none;
-}
-
-#terrains #float-left ul li a i {
-  padding-right: .55rem;
-  font-size: 1rem;
-}
-
-#terrains #float-left ul li a span {
-  font-size: .9rem;
-  font-weight: bold;
-}
-
-#terrains #float-left ul li a:hover span {
-  color: #808080;
-}
-
-#terrains .main-right {
-  text-align: center;
-  height: 100%;
-  width: 100%;
-  overflow: auto;
-}
-
-#terrains .main-right .map {
-  height: 100%;
-  width: 100%;
-  padding: 5px;
-  position: relative;
-}
-
-#terrains .main-right .map img {
-  height: 100%;
-}
-
-#terrains .main-right .map p {
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: 1.5rem;
-  font-size: .8rem;
-  font-weight: bold;
-  padding: 0 1rem;
-}
-
 #lexique > div {
   padding: .8rem 4.5rem;
 }
 
-#lexique > div .search {
+#lexique > div .searchWrapper {
   text-align: right;
-}
-
-#lexique > div .search form {
   display: inline-block;
   border-bottom: 2.5px solid #87c133;
 }
 
-#lexique > div .search form input {
-  width: 3rem;
+#lexique > div .searchWrapper input {
+  width: 5rem;
   padding: 0;
   font-size: .8rem;
   text-indent: 5px;
   border: none;
 }
 
-#lexique > div .search form input:focus {
+#lexique > div .searchWrapper input:focus {
   outline: none;
 }
 
-#lexique > div .search form button {
+#lexique > div .searchWrapper button {
   padding: .5rem 0 0 .5rem;
   cursor: pointer;
   background: white;
   vertical-align: bottom;
 }
 
-#lexique > div .search form button:focus {
+#lexique > div .searchWrapper button:focus {
   outline: none;
 }
 
-#lexique > div .search form button i {
+#lexique > div .searchWrapper button i {
   font-size: 17px;
   color: #87c133;
 }
@@ -433,20 +431,33 @@ a, button {
   padding-right: 1.65rem;
 }
 
-#lexique > div #lexique-contents .texts h3 {
+#lexique > div #lexique-contents .texts .content {
+  padding-bottom: 2rem;
+}
+
+#lexique > div #lexique-contents .texts .content h3 {
   font-size: .9555rem;
   color: #87c133;
   font-weight: 600;
-  padding-bottom: 3.5rem;
+  padding-bottom: 2rem;
 }
 
-#lexique > div #lexique-contents .texts p {
+#lexique > div #lexique-contents .texts .content p {
   font-size: .9555rem;
   color: #525451;
   font-weight: 600;
-  padding-bottom: 3.5rem;
-  line-height: 2.5;
+  padding-bottom: 1.5rem;
+  line-height: 2;
   word-break: keep-all;
+}
+
+#lexique > div #lexique-contents .texts .content ul {
+  margin: 0 0 1.5rem 2rem;
+}
+
+#lexique > div #lexique-contents .texts .content ul li {
+  list-style: disc outside none;
+  line-height: 2;
 }
 
 #lexique > div #lexique-contents::-webkit-scrollbar {

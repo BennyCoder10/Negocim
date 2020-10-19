@@ -16,14 +16,12 @@
       }
     }
 
-    .left { background: url(/images/simuler_terrain.jpg) no-repeat;
-      // 0 90% / 100%;
+    .left { background: url(/images/simuler_terrain.jpg) no-repeat 0% 80% / 100%;
       a div { background: $sub;
         p { line-height: 5.5rem;}
       }
     }
-    .right { background: url(/images/simuler_terrain_construction.jpg) no-repeat;
-      // 0 60% / 100%; 
+    .right { background: url(/images/simuler_terrain_construction.jpg) no-repeat 0% 54% / 100%;
       a div { background: $main; 
         p {  line-height: 1.5;}
       }
@@ -103,11 +101,10 @@
       display: block; background: $sub; border-radius: 1.4rem; border: none; transition: all .5s;
       span { display: block; font-size: .65rem; color: white; padding: .35rem .9rem;}
       &:hover { background: #5a9b00;}
-      &:focus { outline: none;}
-      
+      &:focus { outline: none;}      
     }
-    #previous { left: 0;}
-    #next { right: 0;}
+  #previous { left: 0;}
+  #next { right: 0;}
 }
 // 
 // COMMON CODES FOR ALL STEPS FINISH

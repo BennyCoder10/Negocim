@@ -88,10 +88,15 @@
       margin: 1rem 1rem;
       border: 1px solid $sub;}
   }
-  .main-right { height: auto !important; padding-left: 0 !important;}
-  .main-right .map img { width: 100%; height: auto;}
+  // .main-right { height: auto; padding-left: 0 !important;}
+  // .main-right .map img { width: 100%; height: auto;}
 
-  #sidebar-left { left: -14rem !important;}
+  #terrain #sidebar-left { width: 12rem;}
+  #terrain .main-right { width: calc(100% - 12rem);}
+  main #sidebar-left { width: 12rem;}
+  main #sidebar-left h2 a { font-size: 1.75rem;}
+  main .main-right { width: calc(100% - 12rem);}
+ 
 
   #qui_sommes-nous .text .text_right { width: 75vw;}
 
@@ -108,7 +113,7 @@
 
   #qui_sommes-nous .text .list_left { display: none; }
   #qui_sommes-nous .text .text_right { width: 100%; direction: ltr; margin: 1.5rem auto; float: none; overflow-y: auto; height: auto;}
-  #simulateur .choice > div {width: 100%;}
+  #simulateur .choice > div {width: 100%;} 
   .step2 .bottom { display: block;}
   .step2 .bottom .montant { justify-content: center;}
   .step2 .bottom table { width: auto;}
@@ -125,7 +130,7 @@
 
   main .main-right { display: none;}
 
- #orleanais #sidebar-left { width: 100%; position: static; background: white; border: none;
+ #terrain #sidebar-left { width: 100%; position: static; background: white; border: none;
    animation: fadeInRight .3s ease-in;
   h2 { text-align: center; background: url(../images/pic_1.jpg) 100%; padding: 3rem 0 .5rem;
     a { font-size: 1.5rem; font-weight: bold; color: $text; background: $sub; border-radius: 20px; padding: 0 1rem;}

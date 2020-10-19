@@ -14,7 +14,6 @@
 </head>
 
 <body>
-
   <!-- FLEXBOX -->
   <div class="wrapper">
     <!-- HEADER -->
@@ -41,13 +40,13 @@
   <!-- MAIN IN THE MIDDLE -->
     <main id="lexique">
       <div>
-        <div class="search">
-          <form action="">
-            <input type="text" id="search-input" placeholder="" name="search" onkeyup="searchText()">
-            <button type="submit" onclick="searchText()">
+        <div class="searchWrapper">
+          <!-- <form action=""> -->
+            <input type="text" id="search" name="searchBar">
+            <button type="button" onclick="search()">
               <i class="xi-search"></i><span class="hide">search</span>
             </button>
-          </form>         
+          <!-- </form>          -->
         </div>
 
         <div class="index">
@@ -83,118 +82,112 @@
 
         <div id="lexique-contents">
           <div class="texts" id="A">
-            <h3>Abattage d'Arbre </h3>
-            <p>
-              Sous réserve de certaines exceptions (arbres morts, malades ou présentant un quelconque danger), les coupes et abattages d'arbres sont soumis à autorisation préalable dans les bois, forêts ou parcs situés sur le territoire de communes où l'établissement d'un PLU ou d'un POS a été prescrit, ainsi que dans tout espace boisé classé (E.B.C.).
-            </p>     
-            <h3>Abri de Jardin</h3>
-            <p>
-              Ils sont soumis à permis de construire, comme toute construction, même s'ils ne sont pas destinés à l'habitation et ne comportent pas de fondations. Cependant, les abris d'une surface hors oeuvre brute supérieure à 2 m² et inférieure ou égale à 20 m² édifiés sur un terrain comportant déjà un bâtiment relève de la simple déclaration de travaux.
-            </p>  
-            <h3>Achèvement des Travaux</h3>
-            <p>
-              Un immeuble est considéré comme achevé lorsque l'état d'avancement des travaux est tel qu'il permet une utilisation effective du bâtiment pour l'usage auquel il est destiné.
-            </p>
-            <h3>Acte Authentique</h3>
-            <p>
-              Acte signé chez le notaire et entérinant l'acquisition. Cet acte détermine le transfert de propriété. L'acquéreur paye l'intégralité du prix du terrain (déduction faite de l'acompte versé lors de la réservation), le vendeur lui remet les éventuelles clefs. Le notaire remet à l'acquéreur ses titres de propriété après les avoir fait enregistrer.
-            </p>
-            <h3>Adaptation Mineure</h3>
-            <p>
-              Ce sont les assouplissements apportés à certaines règles d'urbanisme en vue d'éviter une mauvaise utilisation du sol tenant le plus souvent à la nature du sol, la configuration des parcelles ou le caractères des constructions avoisinantes.
-            </p>
-            <h3>Affichage du Permis de Construire</h3>
-            <p>
-              Un permis d'aménager, de construire, de démolir ou une déclaration doit faire l'objet d'un affichage sur le terrain et d'un affichage en mairie.<br>
-
-              L'affichage sur le terrain doit se faire de façon a être lisible du domaine public, sur un panneau rectangulaire dont les dimensions sont supérieures à 80 cm, et doit apparaître clairement le nom du bénéficiaire, la date et le N° du permis, la nature du projet et la superficie du terrain, ainsi que l'adresse de la mairie qui a délivré le permis.</br>
-
-              De plus, le panneau doit comporter les indications légales suivantes :</br>
-              
-              « Le délai de recours contentieux est de deux mois à compter du premier jour d’une période continue de deux mois d’affichage sur le terrain du présent panneau (article R 600-2 du Code de l’Urbanisme) »</br>
-              
-              « Tout recours administratif ou tout recours contentieux doit, à peine d’irrecevabilité, être notifié à l’auteur de la décision et au bénéficiaire du permis ou de la décision prise sur la déclaration préalable. Cette notification doit être adressée par lettre recommandée avec accusé de réception dans un délai de quinze jours francs à compter du dépôt du recours (article R 600-1 du Code de l’Urbanisme) »</br>
-              
-              En fonction de la nature du projet, le panneau indique clairement : </br>
-
-              <ul>
-                <li>
-                  pour une construction, la Surface de plancher autorisée ainsi que la hauteur du bâtiment
-                </li>
-                <li>
-                  pour un lotissement, le nombre maximum de lots prévus
-                </li>
-                <li>
-                  pour une démolition, la surface démolie
-                </li>
-              </ul>
-
-              <strong>L'affichage en mairie est celui du permis lui même.</br>
-              
-              Ces deux affichages doivent rester deux mois continus en place, et permettent à d'éventuels tiers de s'opposer à la mise en oeuvre du permis.</strong>
-            </p>
-
-            <h3>Alignement</h3>
-            <p>
-              C'est la détermination par l'autorité administrative des limites du droit de construire par rapport aux voies publiques au moyen d'un plan d'alignement ou d'un alignement individuel.
-            </p>
-            <h3>Annulation du Permis de construire</h3>
-            <p>
-              Sanction prononcée par le juge administratif à la suite d'un recours contentieux exercé par un tiers. Si le juge estime le permis illégal, ce dernier est alors frappé d'annulation. En conséquence, les travaux doivent s'arrêter immédiatement, dans certains cas, le juge peut aller jusqu’à demander la remise en l’état antérieur aux travaux du terrain.
-            </p>
-            <h3>Antenne</h3>
-            <p>
-              Ne sont pas soumis à permis de construire les antennes d'émission ou de réception de signaux radioélectriques dont aucune dimension n'excède 4 mètres et, dans le cas où l'antenne comporte un réflecteur lorsque aucune dimension de ce dernier n'excède 1 mètre.
-            </p>
-            <h3>Archéologie Préventive</h3>
-            <p>
-              Mission d'archéologie ayant pour objet de détecter l'éventuelle présence d'éléments d'intérêt archéologique avant que ne soient réalisés des travaux en surface dont les conséquences seraient entre autres de rendre le sous-sol inaccessible, et donc de mettre hors de portée l'éventuel patrimoine archéologique.
-            </p>
-            <h3>Architecte</h3>
-            <p>
-              Professionnel qualifié, inscrit à un ordre et soumis à un code des devoirs professionnels, dont la mission consiste essentiellement à établir des projets de construction mais peut s'étendre à la maîtrise d'oeuvre et recouvrir des activités d'urbanisme. Leur intervention doit permettre, notamment, d'assurer la qualité des constructions et leur insertion harmonieuse dans le milieu environnant.
-            </p>
-            <h3>Aspect Extérieur</h3>
-            <p>
-              L'aspect extérieur concerne les formes, les matériaux employés et leur couleur, les toitures, les ouvertures, les clôtures. L'examen est fait au regard du règlement de zone qui peut imposer des prescriptions.
-            </p>
-            <h3>Assainissement</h3>
-            <p>
-              Réseaux de collecte des eaux usées et pluviales.
-            </p>
-            <h3>Association Syndicale d'un lotissement</h3>
-            <p>
-              Entité sous laquelle sont regroupés l'ensemble des acquéreurs des lots et à qui sera dévolu la propriété, la gestion et l'entretien des parties communes du lotissement, jusqu'à leur transfert éventuel à la commune ou à la communauté urbaine.
-            </p>       
-                       
+            <div class="content">
+              <h3>Abattage d'Arbre </h3>
+              <p>
+                Sous réserve de certaines exceptions (arbres morts, malades ou présentant un quelconque danger), les coupes et abattages d'arbres sont soumis à autorisation préalable dans les bois, forêts ou parcs situés sur le territoire de communes où l'établissement d'un PLU ou d'un POS a été prescrit, ainsi que dans tout espace boisé classé (E.B.C.).
+              </p>
             </div>
+            <div class="content">
+              <h3>Abri de Jardin</h3>
+              <p>
+                Ils sont soumis à permis de construire, comme toute construction, même s'ils ne sont pas destinés à l'habitation et ne comportent pas de fondations. Cependant, les abris d'une surface hors oeuvre brute supérieure à 2 m² et inférieure ou égale à 20 m² édifiés sur un terrain comportant déjà un bâtiment relève de la simple déclaration de travaux.
+              </p>  
+            </div>
+            <div class="content">
+              <h3>Achèvement des Travaux</h3>
+              <p>
+                Un immeuble est considéré comme achevé lorsque l'état d'avancement des travaux est tel qu'il permet une utilisation effective du bâtiment pour l'usage auquel il est destiné.
+              </p>
+            </div>
+            <div class="content">
+              <h3>Acte Authentique</h3>
+              <p>
+                Acte signé chez le notaire et entérinant l'acquisition. Cet acte détermine le transfert de propriété. L'acquéreur paye l'intégralité du prix du terrain (déduction faite de l'acompte versé lors de la réservation), le vendeur lui remet les éventuelles clefs. Le notaire remet à l'acquéreur ses titres de propriété après les avoir fait enregistrer.
+              </p>
+            </div>
+            <div class="content">
+              <h3>Adaptation Mineure</h3>
+              <p>
+                Ce sont les assouplissements apportés à certaines règles d'urbanisme en vue d'éviter une mauvaise utilisation du sol tenant le plus souvent à la nature du sol, la configuration des parcelles ou le caractères des constructions avoisinantes.
+              </p>
+            </div>
+            <div class="content">
+              <h3>Affichage du Permis de Construire</h3>
+              <div>
+                <p>
+                  Un permis d'aménager, de construire, de démolir ou une déclaration doit faire l'objet d'un affichage sur le terrain et d'un affichage en mairie.
+                </p>
+  
+                <p>L'affichage sur le terrain doit se faire de façon a être lisible du domaine public, sur un panneau rectangulaire dont les dimensions sont supérieures à 80 cm, et doit apparaître clairement le nom du bénéficiaire, la date et le N° du permis, la nature du projet et la superficie du terrain, ainsi que l'adresse de la mairie qui a délivré le permis.
+                </p>
+                <p>
+                  De plus, le panneau doit comporter les indications légales suivantes :
+                </p>
+                <p>
+                  <i>« Le délai de recours contentieux est de deux mois à compter du premier jour d’une période continue de deux mois d’affichage sur le terrain du présent panneau (article R 600-2 du Code de l’Urbanisme) »</i>
+                </p>
+                <p>
+                  <i>« Tout recours administratif ou tout recours contentieux doit, à peine d’irrecevabilité, être notifié à l’auteur de la décision et au bénéficiaire du permis ou de la décision prise sur la déclaration préalable. Cette notification doit être adressée par lettre recommandée avec accusé de réception dans un délai de quinze jours francs à compter du dépôt du recours (article R 600-1 du Code de l’Urbanisme) »</i>
+                </p>    
+                <p>
+                  En fonction de la nature du projet, le panneau indique clairement :
+                </p>         
+                <ul>
+                  <li>
+                    pour une construction, la Surface de plancher autorisée ainsi que la hauteur du bâtiment
+                  </li>
+                  <li>
+                    pour un lotissement, le nombre maximum de lots prévus
+                  </li>
+                  <li>
+                    pour une démolition, la surface démolie
+                  </li>
+                </ul>
+                <p>L'affichage en mairie est celui du permis lui même.</p>
+                <p> Ces deux affichages doivent rester deux mois continus en place, et permettent à d'éventuels tiers de s'opposer à la mise en oeuvre du permis.</p>
+              </div>
+              
+            </div>  
+          </div> 
           <div class="texts" id="B">
-            <h3>Bbattage d'Arbre </h3>
-            <p>Sous réserve de certaines exceptions (arbres morts, malades ou présentant un quelconque danger), les coupes et
-              abattages d'arbres sont soumis à autorisation préalable dans les bois, forêts ou parcs situés sur le territoire de
-              communes où l'établissement d'un PLU ou d'un POS a été prescrit, ainsi que dans tout espace boisé classé (E.B.C.).</p>      
+            <div class="content">
+              <h3>Bornage</h3>
+              <p>Le bornage est une opération qui consiste à fixer les limites d'un terrain par la pose de bornes; ceci permet d'éviter toute situation conflictuelle avec son voisinage. Seul un géomètre expert, inscrit à l'ordre des géomètres est habilité à effectuer cette opération. La destruction ou l'arrachage d'une borne sont considérés par les tribunaux comme ''une dégradation de l'immeuble foncier dont elle fixe les limites'' et son auteur s'expose à une condamnation. Un bornage peut être :                
+              </p>                 
+              <ul>
+                <li>Amiable et contradictoire, il est effectué par un géomètre expert qui conclut son travail de délimitation en recueillant, dans un procès-verbal, l'accord de tous les propriétaires concernés.</li>
+                <li>Judiciaire, il relève de la compétence du tribunal d'instance.</li>
+              </ul>
+            </div>          
           </div>
           <div class="texts" id="C">
-            <h3>Cbattage d'Arbre </h3>
-            <p>Sous réserve de certaines exceptions (arbres morts, malades ou présentant un quelconque danger), les coupes et
-              abattages d'arbres sont soumis à autorisation préalable dans les bois, forêts ou parcs situés sur le territoire de
-              communes où l'établissement d'un PLU ou d'un POS a été prescrit, ainsi que dans tout espace boisé classé (E.B.C.).</p>      
+            <div class="content">
+              <h3>Cadastre</h3>
+              <p>Ensemble de cartes et d'écrits permettant de situer géographiquement les propriétés, de représenter le découpage des parcelles et d'identifier les propriétaires. Document fiscal, un plan cadastral ne définit pas les limites de propriété, par contre, c'est le document de base pour le calcul des impôts locaux.</p> 
+            </div>
+            <div class="content">
+              <h3>Caducité du Permis</h3>
+              <p>Pour un permis de construire, de démolir ou un permis d’aménager en lotissement, elle intervient si les travaux ne sont pas entrepris dans un délai de 2 ans à compter de la signature du permis ou en cas d'interruption des travaux pendant plus d'un an.</p>
+            </div>
+            <div class="content">
+              <h3>Cahier des Charges du Lotissement</h3>
+              <p>Définit les droits et obligations des propriétaires de lots. Il ne peut contenir ni règles de construction, ni dispositions contraires au droit de l'urbanisme (voir aussi règlement de lotissement).
+                Ce document, de droit privé, reste applicable sans limitation dans le temps.</p>
+            </div>
+            <div class="content">
+              <h3>Certificat d'Urbanisme</h3>
+              <p>Délivré par l'Administration, il permet d'informer le demandeur sur la constructibilité d'un terrain donné, ses possibilités de desserte par les différents réseaux, sur les règles d'urbanisme qui y sont applicables ainsi que sur les taxes inhérentes à une éventuelle construction.</p>
+            </div>             
           </div>
           <div class="texts" id="D">
-            <h3>Abattage d'Arbre </h3>
-            <p>Sous réserve de certaines exceptions (arbres morts, malades ou présentant un quelconque danger), les coupes et
-              abattages d'arbres sont soumis à autorisation préalable dans les bois, forêts ou parcs situés sur le territoire de
-              communes où l'établissement d'un PLU ou d'un POS a été prescrit, ainsi que dans tout espace boisé classé (E.B.C.).</p>      
+            <div class="content">
+              <h3>Déclaration d'Achèvement et de Conformité des Travaux (D.A.C.T.)</h3>
+              <p>Déclaration attestant de l’achèvement et de la conformité des travaux que le bénéficiaire d'un permis (de construire ou d’aménager) doit adresser à la mairie. La déclaration précisera si l'achèvement concerne la totalité des travaux, si elle ne concerne qu’une tranche de travaux, ou encore si elle concerne les travaux hors partie différée.</p>
+              <p>A compter de la date de réception en mairie de cette déclaration, celle-ci dispose d’un délai de 3 mois pour contester cette déclaration.</p>
+            </div>
           </div>
-          <div class="texts">
-            <h3>Abattage d'Arbre </h3>
-            <p>Sous réserve de certaines exceptions (arbres morts, malades ou présentant un quelconque danger), les coupes et
-              abattages d'arbres sont soumis à autorisation préalable dans les bois, forêts ou parcs situés sur le territoire de
-              communes où l'établissement d'un PLU ou d'un POS a été prescrit, ainsi que dans tout espace boisé classé (E.B.C.).</p>      
-          </div>        
-             
         </div>
-      </div>
      
     </main>
     
@@ -208,5 +201,8 @@
   </div>
 
 <script src="js/index.js"></script>
+<script src="js/lexique.js"></script>
+
+
 </body>
 </html>

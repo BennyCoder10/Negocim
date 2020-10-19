@@ -5,6 +5,7 @@ html {
 body {
   font-size: 1rem;
   max-width: 1440px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 * {
@@ -126,6 +127,85 @@ header .change .bar2 {
 header .change .bar3 {
   -webkit-transform: rotate(45deg) translate(-8px, -8px);
   transform: rotate(45deg) translate(-8px, -8px);
+}
+
+#terrains {
+  position: relative;
+}
+
+#terrains #float-left {
+  position: absolute;
+  left: 3.5rem;
+  top: 30%;
+  z-index: 1;
+}
+
+#terrains #float-left ul li {
+  margin: .2rem 0;
+}
+
+#terrains #float-left ul li:nth-child(1) i {
+  color: #2e60ff;
+}
+
+#terrains #float-left ul li:nth-child(2) i {
+  color: #929d3b;
+}
+
+#terrains #float-left ul li:nth-child(3) i {
+  color: #149700;
+}
+
+#terrains #float-left ul li:nth-child(4) i {
+  color: #930000;
+}
+
+#terrains #float-left ul li a {
+  display: block;
+  padding: .2rem 0 .8rem;
+  border: none;
+}
+
+#terrains #float-left ul li a i {
+  padding-right: .55rem;
+  font-size: 1rem;
+}
+
+#terrains #float-left ul li a span {
+  font-size: .9rem;
+  font-weight: bold;
+}
+
+#terrains #float-left ul li a:hover span {
+  color: #808080;
+}
+
+#terrains .main-right {
+  text-align: center;
+  height: 100%;
+  width: 100%;
+  overflow: auto;
+}
+
+#terrains .main-right .map {
+  height: 100%;
+  width: 100%;
+  padding: 5px;
+  position: relative;
+}
+
+#terrains .main-right .map img {
+  height: 100%;
+}
+
+#terrains .main-right .map p {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 1.5rem;
+  font-size: .8rem;
+  font-weight: bold;
+  padding: 0 1rem;
 }
 
 footer {
@@ -264,98 +344,17 @@ a, button {
   }
 }
 
-#terrains {
-  position: relative;
-}
-
-#terrains #float-left {
-  position: absolute;
-  left: 3.5rem;
-  top: 30%;
-  z-index: 1;
-}
-
-#terrains #float-left ul li {
-  margin: .2rem 0;
-}
-
-#terrains #float-left ul li:nth-child(1) i {
-  color: #2e60ff;
-}
-
-#terrains #float-left ul li:nth-child(2) i {
-  color: #929d3b;
-}
-
-#terrains #float-left ul li:nth-child(3) i {
-  color: #149700;
-}
-
-#terrains #float-left ul li:nth-child(4) i {
-  color: #930000;
-}
-
-#terrains #float-left ul li a {
-  display: block;
-  padding: .2rem 0 .8rem;
-  border: none;
-}
-
-#terrains #float-left ul li a i {
-  padding-right: .55rem;
-  font-size: 1rem;
-}
-
-#terrains #float-left ul li a span {
-  font-size: .9rem;
-  font-weight: bold;
-}
-
-#terrains #float-left ul li a:hover span {
-  color: #808080;
-}
-
-#terrains .main-right {
-  text-align: center;
-  height: 100%;
-  width: 100%;
-  overflow: auto;
-}
-
-#terrains .main-right .map {
-  height: 100%;
-  width: 100%;
-  padding: 5px;
-  position: relative;
-}
-
-#terrains .main-right .map img {
-  height: 100%;
-}
-
-#terrains .main-right .map p {
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: 1.5rem;
-  font-size: .8rem;
-  font-weight: bold;
-  padding: 0 1rem;
-}
-
 main {
   position: relative;
 }
 
 main #sidebar-left {
-  position: absolute;
+  position: relative;
+  float: left;
   width: 14rem;
-  left: 0;
-  top: 0;
   height: 100%;
   background-color: #4cb0b2;
   border: 0.5px solid #707070;
-  z-index: 1000;
   padding: 1rem;
 }
 
@@ -373,29 +372,28 @@ main #sidebar-left h2:hover a {
   color: #525451;
 }
 
-main #sidebar-left .menu {
-  height: 65%;
-  position: relative;
+main #sidebar-left .sidebar-menu {
+  margin-bottom: 4rem;
 }
 
-main #sidebar-left .menu::-webkit-scrollbar {
+main #sidebar-left .sidebar-menu::-webkit-scrollbar {
   width: 6px;
 }
 
-main #sidebar-left .menu::-webkit-scrollbar-track {
+main #sidebar-left .sidebar-menu::-webkit-scrollbar-track {
   background: #bcbdbc;
 }
 
-main #sidebar-left .menu::-webkit-scrollbar-thumb {
+main #sidebar-left .sidebar-menu::-webkit-scrollbar-thumb {
   background: #87c133;
   height: auto;
 }
 
-main #sidebar-left .menu::-webkit-scrollbar-thumb:hover {
+main #sidebar-left .sidebar-menu::-webkit-scrollbar-thumb:hover {
   background: #5a9b00;
 }
 
-main #sidebar-left .menu h4 {
+main #sidebar-left .sidebar-menu h4 {
   text-align: left;
   font-size: 1rem;
   color: white;
@@ -403,11 +401,11 @@ main #sidebar-left .menu h4 {
   line-height: 1.3;
 }
 
-main #sidebar-left .menu h4 strong {
+main #sidebar-left .sidebar-menu h4 strong {
   color: white;
 }
 
-main #sidebar-left .menu p {
+main #sidebar-left .sidebar-menu p {
   margin: 1.5rem .5rem 0 0;
   font-weight: 100;
   text-align: left;
@@ -416,40 +414,40 @@ main #sidebar-left .menu p {
   word-break: normal;
 }
 
-main #sidebar-left .menu .info {
+main #sidebar-left .sidebar-menu .info {
   font-size: .7rem;
   height: 60%;
   overflow-y: auto;
 }
 
-main #sidebar-left .menu .info::-webkit-scrollbar {
+main #sidebar-left .sidebar-menu .info::-webkit-scrollbar {
   width: 6px;
 }
 
-main #sidebar-left .menu .info::-webkit-scrollbar-track {
+main #sidebar-left .sidebar-menu .info::-webkit-scrollbar-track {
   background: #bcbdbc;
 }
 
-main #sidebar-left .menu .info::-webkit-scrollbar-thumb {
+main #sidebar-left .sidebar-menu .info::-webkit-scrollbar-thumb {
   background: #87c133;
   height: auto;
 }
 
-main #sidebar-left .menu .info::-webkit-scrollbar-thumb:hover {
+main #sidebar-left .sidebar-menu .info::-webkit-scrollbar-thumb:hover {
   background: #5a9b00;
 }
 
-main #sidebar-left .menu .sub {
+main #sidebar-left .sidebar-menu .sub {
   height: 90%;
 }
 
-main #sidebar-left .menu .projet {
+main #sidebar-left .sidebar-menu .projet {
   font-size: .8rem;
 }
 
-main #sidebar-left .menu a {
+main #sidebar-left .sidebar-menu .look {
   display: block;
-  margin-top: .6rem;
+  margin-top: 1rem;
   font-size: 1rem;
   text-align: left;
   background: none;
@@ -457,40 +455,69 @@ main #sidebar-left .menu a {
   font-weight: bold;
 }
 
-main #sidebar-left .menu a:hover {
+main #sidebar-left .sidebar-menu .look:hover {
   color: #525451;
 }
 
-main #sidebar-left .menu button {
-  margin-top: 1.5rem;
+main #sidebar-left .sidebar-menu button {
+  margin-bottom: 1rem;
+  text-align: left;
+  display: block;
+  width: 100%;
+  border-radius: 0;
+  padding: .25rem 0 0 .5rem;
+  font-size: 1rem;
+  color: #ffffff;
+  background: none;
+  cursor: pointer;
+  outline: none;
+}
+
+main #sidebar-left .sidebar-menu button:hover {
+  color: #525451;
+  font-weight: bold;
+}
+
+main #sidebar-left .sidebar-menu #simulaer_un_credit, main #sidebar-left .sidebar-menu #imprimer {
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: .8rem;
   display: block;
   display: block;
   background: #87c133;
   border-radius: 1.4rem;
   border: none;
-  border-radius: 0;
-  padding: 5px 14px;
-  font-size: .8rem;
+  border-radius: 3px;
+  padding: .3rem .2rem;
+  font-size: 1rem;
   color: #ffffff;
-  font-weight: bold;
 }
 
-main #sidebar-left .menu button a {
+main #sidebar-left .sidebar-menu #simulaer_un_credit a, main #sidebar-left .sidebar-menu #imprimer a {
   display: block;
   font-size: .95rem;
   color: white;
   padding: .75rem 3rem;
 }
 
-main #sidebar-left .menu button:hover {
+main #sidebar-left .sidebar-menu #simulaer_un_credit:hover, main #sidebar-left .sidebar-menu #imprimer:hover {
   background: #5a9b00;
 }
 
-main #sidebar-left .menu button:focus {
+main #sidebar-left .sidebar-menu #simulaer_un_credit:focus, main #sidebar-left .sidebar-menu #imprimer:focus {
   outline: none;
 }
 
-main #sidebar-left .goback {
+main #sidebar-left .sidebar-menu #simulaer_un_credit a, main #sidebar-left .sidebar-menu #imprimer a {
+  display: inline;
+  padding: 0;
+}
+
+main #sidebar-left .sidebar-menu #simulaer_un_credit:hover, main #sidebar-left .sidebar-menu #imprimer:hover {
+  font-weight: normal;
+}
+
+main #sidebar-left #goback {
   display: block;
   background: #87c133;
   border-radius: 1.4rem;
@@ -499,39 +526,41 @@ main #sidebar-left .goback {
   position: absolute;
   left: 0;
   right: 0;
+  width: auto;
   bottom: 1rem;
   padding: 0.4rem 2.5rem;
   color: #ffffff;
   font-size: .8rem;
 }
 
-main #sidebar-left .goback a {
+main #sidebar-left #goback a {
   display: block;
   font-size: .95rem;
   color: white;
   padding: .75rem 3rem;
 }
 
-main #sidebar-left .goback:hover {
+main #sidebar-left #goback:hover {
   background: #5a9b00;
 }
 
-main #sidebar-left .goback:focus {
+main #sidebar-left #goback:focus {
   outline: none;
 }
 
-main #sidebar-left .goback i {
+main #sidebar-left #goback i {
   font-size: .7rem;
   color: white;
   padding-right: .3rem;
 }
 
 main .main-right {
-  padding-left: 14rem;
+  float: right;
   text-align: center;
   height: 100%;
   width: 100%;
   overflow: auto;
+  width: calc(100% - 14rem);
 }
 
 main .main-right .map {
@@ -545,17 +574,167 @@ main .main-right .map img {
   height: 100%;
 }
 
-main .main-right .map p {
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: 1.5rem;
-  font-size: .8rem;
-  font-weight: bold;
-}
-
 main .main-right .map iframe {
   height: 100%;
   width: 100%;
   border: 1px solid #87c133;
+}
+
+main .main-right #lotissement {
+  padding: 1rem;
+}
+
+main .main-right #lotissement h3 {
+  font-weight: normal;
+}
+
+main .main-right #lotissement h2 i {
+  color: #87c133;
+}
+
+main .main-right #lotissement p {
+  padding: 1rem;
+  text-align: left;
+}
+
+#lotissement {
+  /* Create four equal columns that floats next to each other */
+  /* The Modal (background) */
+  /* Modal Content */
+  /* The Close Button */
+  /* Hide the slides by default */
+  /* Next & previous buttons */
+  /* Position the "next button" to the right */
+  /* On hover, add a black background color with a little bit see-through */
+}
+
+#lotissement .row {
+  margin-top: 1.5rem;
+}
+
+#lotissement .row > .column {
+  padding: 0 8px;
+}
+
+#lotissement .row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+#lotissement .column {
+  display: inline-block;
+  width: 25%;
+}
+
+#lotissement .column img {
+  width: 100%;
+}
+
+#lotissement .column:hover {
+  cursor: pointer;
+}
+
+#lotissement .column:hover img {
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  -webkit-transition: all .4s ease-out;
+  transition: all .4s ease-out;
+}
+
+#lotissement .modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.664);
+  -webkit-animation: slowAppear .2s ease-in-out;
+          animation: slowAppear .2s ease-in-out;
+}
+
+#lotissement .modal-content {
+  display: inline-block;
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  border-radius: .5rem;
+}
+
+#lotissement .close {
+  position: absolute;
+  top: -29px;
+  right: -23px;
+  font-size: 35px;
+  z-index: 1;
+}
+
+#lotissement .close:hover,
+#lotissement .close:focus {
+  color: #999;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#lotissement .mySlides {
+  display: none;
+  height: auto;
+  max-width: 90vw;
+  max-height: 90vh;
+  padding: 1rem;
+}
+
+#lotissement .arrow {
+  padding: 20% 40%;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+#lotissement .arrow_prev {
+  left: 0;
+  padding-left: 0;
+}
+
+#lotissement .arrow_next {
+  right: 0;
+  padding-right: 0;
+}
+
+#lotissement .prev,
+#lotissement .next {
+  cursor: pointer;
+  width: auto;
+  color: #87c133;
+  font-weight: bold;
+  font-size: 2rem;
+  -webkit-transition: 0.6s ease;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  -moz-user-select: none;
+   -ms-user-select: none;
+       user-select: none;
+  -webkit-user-select: none;
+  opacity: 0;
+}
+
+#lotissement .prev i {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+}
+
+#lotissement .arrow_prev:hover .prev {
+  opacity: 1;
+}
+
+#lotissement .arrow_next:hover .next {
+  opacity: 1;
 }

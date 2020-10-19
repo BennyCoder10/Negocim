@@ -6,6 +6,7 @@ html {
 body {
   font-size: 1rem;
   max-width: 1440px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 * {
@@ -127,6 +128,85 @@ header .change .bar2 {
 header .change .bar3 {
   -webkit-transform: rotate(45deg) translate(-8px, -8px);
   transform: rotate(45deg) translate(-8px, -8px);
+}
+
+#terrains {
+  position: relative;
+}
+
+#terrains #float-left {
+  position: absolute;
+  left: 3.5rem;
+  top: 30%;
+  z-index: 1;
+}
+
+#terrains #float-left ul li {
+  margin: .2rem 0;
+}
+
+#terrains #float-left ul li:nth-child(1) i {
+  color: #2e60ff;
+}
+
+#terrains #float-left ul li:nth-child(2) i {
+  color: #929d3b;
+}
+
+#terrains #float-left ul li:nth-child(3) i {
+  color: #149700;
+}
+
+#terrains #float-left ul li:nth-child(4) i {
+  color: #930000;
+}
+
+#terrains #float-left ul li a {
+  display: block;
+  padding: .2rem 0 .8rem;
+  border: none;
+}
+
+#terrains #float-left ul li a i {
+  padding-right: .55rem;
+  font-size: 1rem;
+}
+
+#terrains #float-left ul li a span {
+  font-size: .9rem;
+  font-weight: bold;
+}
+
+#terrains #float-left ul li a:hover span {
+  color: #808080;
+}
+
+#terrains .main-right {
+  text-align: center;
+  height: 100%;
+  width: 100%;
+  overflow: auto;
+}
+
+#terrains .main-right .map {
+  height: 100%;
+  width: 100%;
+  padding: 5px;
+  position: relative;
+}
+
+#terrains .main-right .map img {
+  height: 100%;
+}
+
+#terrains .main-right .map p {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 1.5rem;
+  font-size: .8rem;
+  font-weight: bold;
+  padding: 0 1rem;
 }
 
 footer {
@@ -265,85 +345,6 @@ a, button {
   }
 }
 
-#terrains {
-  position: relative;
-}
-
-#terrains #float-left {
-  position: absolute;
-  left: 3.5rem;
-  top: 30%;
-  z-index: 1;
-}
-
-#terrains #float-left ul li {
-  margin: .2rem 0;
-}
-
-#terrains #float-left ul li:nth-child(1) i {
-  color: #2e60ff;
-}
-
-#terrains #float-left ul li:nth-child(2) i {
-  color: #929d3b;
-}
-
-#terrains #float-left ul li:nth-child(3) i {
-  color: #149700;
-}
-
-#terrains #float-left ul li:nth-child(4) i {
-  color: #930000;
-}
-
-#terrains #float-left ul li a {
-  display: block;
-  padding: .2rem 0 .8rem;
-  border: none;
-}
-
-#terrains #float-left ul li a i {
-  padding-right: .55rem;
-  font-size: 1rem;
-}
-
-#terrains #float-left ul li a span {
-  font-size: .9rem;
-  font-weight: bold;
-}
-
-#terrains #float-left ul li a:hover span {
-  color: #808080;
-}
-
-#terrains .main-right {
-  text-align: center;
-  height: 100%;
-  width: 100%;
-  overflow: auto;
-}
-
-#terrains .main-right .map {
-  height: 100%;
-  width: 100%;
-  padding: 5px;
-  position: relative;
-}
-
-#terrains .main-right .map img {
-  height: 100%;
-}
-
-#terrains .main-right .map p {
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: 1.5rem;
-  font-size: .8rem;
-  font-weight: bold;
-  padding: 0 1rem;
-}
-
 @media only screen and (max-width: 1240px) {
   #lexique > div .index #lexique-nav {
     -webkit-box-pack: start;
@@ -461,16 +462,20 @@ a, button {
     margin: 1rem 1rem;
     border: 1px solid #87c133;
   }
-  .main-right {
-    height: auto !important;
-    padding-left: 0 !important;
+  #terrain #sidebar-left {
+    width: 12rem;
   }
-  .main-right .map img {
-    width: 100%;
-    height: auto;
+  #terrain .main-right {
+    width: calc(100% - 12rem);
   }
-  #sidebar-left {
-    left: -14rem !important;
+  main #sidebar-left {
+    width: 12rem;
+  }
+  main #sidebar-left h2 a {
+    font-size: 1.75rem;
+  }
+  main .main-right {
+    width: calc(100% - 12rem);
   }
   #qui_sommes-nous .text .text_right {
     width: 75vw;
@@ -528,7 +533,7 @@ a, button {
   main .main-right {
     display: none;
   }
-  #orleanais #sidebar-left {
+  #terrain #sidebar-left {
     width: 100%;
     position: static;
     background: white;
@@ -536,12 +541,12 @@ a, button {
     -webkit-animation: fadeInRight .3s ease-in;
             animation: fadeInRight .3s ease-in;
   }
-  #orleanais #sidebar-left h2 {
+  #terrain #sidebar-left h2 {
     text-align: center;
     background: url(../images/pic_1.jpg) 100%;
     padding: 3rem 0 .5rem;
   }
-  #orleanais #sidebar-left h2 a {
+  #terrain #sidebar-left h2 a {
     font-size: 1.5rem;
     font-weight: bold;
     color: #ffffff;
@@ -549,28 +554,28 @@ a, button {
     border-radius: 20px;
     padding: 0 1rem;
   }
-  #orleanais #sidebar-left h2:hover a {
+  #terrain #sidebar-left h2:hover a {
     color: #525451;
   }
-  #orleanais #sidebar-left .menu {
+  #terrain #sidebar-left .menu {
     overflow-y: visible;
     height: auto;
     margin-right: 0;
   }
-  #orleanais #sidebar-left .menu .dropdown-btn {
+  #terrain #sidebar-left .menu .dropdown-btn {
     text-align: center;
     color: #525451;
     background: white;
   }
-  #orleanais #sidebar-left .menu .dropdown-content {
+  #terrain #sidebar-left .menu .dropdown-content {
     text-align: center;
     padding-bottom: 1.5rem;
   }
-  #orleanais #sidebar-left .menu .dropdown-content ul li a span {
+  #terrain #sidebar-left .menu .dropdown-content ul li a span {
     color: #525451;
     background: white;
   }
-  #orleanais #sidebar-left .goback {
+  #terrain #sidebar-left .goback {
     margin: 2rem auto .5rem;
     position: static;
   }

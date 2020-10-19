@@ -11,7 +11,7 @@ $bars: #707070;
 
 // DEFAULT FONT-SIZE 
 html { font-size: 20px;}
-body { font-size: 1rem; max-width: 1440px;}
+body { font-size: 1rem; max-width: 1440px; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;}
 
 * { color: $text-dark; box-sizing: border-box;}
 
@@ -73,7 +73,38 @@ header { background: $main;
 // MAIN (MIDDLE)
 
 
+// TERRAINS MAIN
+#terrains { position: relative;
+  #float-left { position: absolute; left: 3.5rem; top: 30%; 
+    // transform: translateY(-50%);
+     z-index: 1;
+    ul li { margin: .2rem 0;
+      &:nth-child(1) i { color: #2e60ff;}
+      &:nth-child(2) i { color: #929d3b;}
+      &:nth-child(3) i { color: #149700;}
+      &:nth-child(4) i { color: #930000;}    
+    
+      a { display: block; padding: .2rem 0 .8rem; border: none;
+        i { padding-right: .55rem; font-size: 1rem;}
+        span { font-size: .9rem; font-weight: bold;}
+        &:hover span { color: $text-hovered;}
+      }
+    }
+  }
 
+  // .main-right { padding-left: 3.5rem; text-align: center; height: 100%; width: 100%; position: relative;
+  //   // .map { position: relative;
+  //     // img { height: 100%;}
+  //     p { position: absolute; left: 3.5rem; right: 0; bottom: 1.6rem; font-size: .8rem; font-weight: bold;} 
+  //   // }
+  // }
+  .main-right { text-align: center; height: 100%; width: 100%; overflow: auto;
+    .map { height: 100%; width: 100%; padding: 5px; position: relative;
+      img { height: 100%; }
+      p { position: absolute; left: 0; right: 0; bottom: 1.5rem; font-size: .8rem; font-weight: bold; padding: 0 1rem;} 
+    }
+  }
+}
 
 
 // FOOTER
@@ -86,6 +117,8 @@ footer { text-align: center; background: $main; height: 2.35rem; line-height: 2.
     #legales { margin-right: 3rem; display: none;}
   } 
 }
+
+
 
 // INDEX
 #politique {
@@ -168,39 +201,4 @@ a, button { transition: all .5s ease;}
 // space &nbsp;
 
 
-
-
-
-// TERRAINS MAIN
-#terrains { position: relative;
-  #float-left { position: absolute; left: 3.5rem; top: 30%; 
-    // transform: translateY(-50%);
-     z-index: 1;
-    ul li { margin: .2rem 0;
-      &:nth-child(1) i { color: #2e60ff;}
-      &:nth-child(2) i { color: #929d3b;}
-      &:nth-child(3) i { color: #149700;}
-      &:nth-child(4) i { color: #930000;}    
-    
-      a { display: block; padding: .2rem 0 .8rem; border: none;
-        i { padding-right: .55rem; font-size: 1rem;}
-        span { font-size: .9rem; font-weight: bold;}
-        &:hover span { color: $text-hovered;}
-      }
-    }
-  }
-
-  // .main-right { padding-left: 3.5rem; text-align: center; height: 100%; width: 100%; position: relative;
-  //   // .map { position: relative;
-  //     // img { height: 100%;}
-  //     p { position: absolute; left: 3.5rem; right: 0; bottom: 1.6rem; font-size: .8rem; font-weight: bold;} 
-  //   // }
-  // }
-  .main-right { text-align: center; height: 100%; width: 100%; overflow: auto;
-    .map { height: 100%; width: 100%; padding: 5px; position: relative;
-      img { height: 100%; }
-      p { position: absolute; left: 0; right: 0; bottom: 1.5rem; font-size: .8rem; font-weight: bold; padding: 0 1rem;} 
-    }
-  }
-}
 

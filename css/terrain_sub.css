@@ -5,6 +5,7 @@ html {
 body {
   font-size: 1rem;
   max-width: 1440px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 * {
@@ -126,6 +127,85 @@ header .change .bar2 {
 header .change .bar3 {
   -webkit-transform: rotate(45deg) translate(-8px, -8px);
   transform: rotate(45deg) translate(-8px, -8px);
+}
+
+#terrains {
+  position: relative;
+}
+
+#terrains #float-left {
+  position: absolute;
+  left: 3.5rem;
+  top: 30%;
+  z-index: 1;
+}
+
+#terrains #float-left ul li {
+  margin: .2rem 0;
+}
+
+#terrains #float-left ul li:nth-child(1) i {
+  color: #2e60ff;
+}
+
+#terrains #float-left ul li:nth-child(2) i {
+  color: #929d3b;
+}
+
+#terrains #float-left ul li:nth-child(3) i {
+  color: #149700;
+}
+
+#terrains #float-left ul li:nth-child(4) i {
+  color: #930000;
+}
+
+#terrains #float-left ul li a {
+  display: block;
+  padding: .2rem 0 .8rem;
+  border: none;
+}
+
+#terrains #float-left ul li a i {
+  padding-right: .55rem;
+  font-size: 1rem;
+}
+
+#terrains #float-left ul li a span {
+  font-size: .9rem;
+  font-weight: bold;
+}
+
+#terrains #float-left ul li a:hover span {
+  color: #808080;
+}
+
+#terrains .main-right {
+  text-align: center;
+  height: 100%;
+  width: 100%;
+  overflow: auto;
+}
+
+#terrains .main-right .map {
+  height: 100%;
+  width: 100%;
+  padding: 5px;
+  position: relative;
+}
+
+#terrains .main-right .map img {
+  height: 100%;
+}
+
+#terrains .main-right .map p {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 1.5rem;
+  font-size: .8rem;
+  font-weight: bold;
+  padding: 0 1rem;
 }
 
 footer {
@@ -264,123 +344,43 @@ a, button {
   }
 }
 
-#terrains {
+#terrain {
   position: relative;
 }
 
-#terrains #float-left {
-  position: absolute;
-  left: 3.5rem;
-  top: 30%;
-  z-index: 1;
-}
-
-#terrains #float-left ul li {
-  margin: .2rem 0;
-}
-
-#terrains #float-left ul li:nth-child(1) i {
-  color: #2e60ff;
-}
-
-#terrains #float-left ul li:nth-child(2) i {
-  color: #929d3b;
-}
-
-#terrains #float-left ul li:nth-child(3) i {
-  color: #149700;
-}
-
-#terrains #float-left ul li:nth-child(4) i {
-  color: #930000;
-}
-
-#terrains #float-left ul li a {
-  display: block;
-  padding: .2rem 0 .8rem;
-  border: none;
-}
-
-#terrains #float-left ul li a i {
-  padding-right: .55rem;
-  font-size: 1rem;
-}
-
-#terrains #float-left ul li a span {
-  font-size: .9rem;
-  font-weight: bold;
-}
-
-#terrains #float-left ul li a:hover span {
-  color: #808080;
-}
-
-#terrains .main-right {
-  text-align: center;
-  height: 100%;
-  width: 100%;
-  overflow: auto;
-}
-
-#terrains .main-right .map {
-  height: 100%;
-  width: 100%;
-  padding: 5px;
+#terrain #sidebar-left {
   position: relative;
-}
-
-#terrains .main-right .map img {
-  height: 100%;
-}
-
-#terrains .main-right .map p {
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: 1.5rem;
-  font-size: .8rem;
-  font-weight: bold;
-  padding: 0 1rem;
-}
-
-#orleanais {
-  position: relative;
-}
-
-#orleanais #sidebar-left {
-  position: absolute;
+  float: left;
   width: 14rem;
-  left: 0;
-  top: 0;
   height: 100%;
   background-color: #4cb0b2;
   border: 0.5px solid #707070;
-  z-index: 1000;
   -webkit-animation: fadeInRight .3s ease-in;
           animation: fadeInRight .3s ease-in;
 }
 
-#orleanais #sidebar-left h2 {
+#terrain #sidebar-left h2 {
   padding: 1rem;
 }
 
-#orleanais #sidebar-left h2 a {
+#terrain #sidebar-left h2 a {
   font-size: 1.9rem;
   font-weight: bold;
   color: white;
 }
 
-#orleanais #sidebar-left h2:hover a {
+#terrain #sidebar-left h2:hover a {
   color: #525451;
 }
 
-#orleanais #sidebar-left .menu {
+#terrain #sidebar-left .sidebar-menu {
   overflow-y: auto;
   height: 65%;
   margin-right: .5rem;
+  margin-bottom: 4rem;
 }
 
-#orleanais #sidebar-left .menu .dropdown-btn {
+#terrain #sidebar-left .sidebar-menu .dropdown-btn {
   display: block;
   width: 100%;
   text-align: left;
@@ -389,25 +389,24 @@ a, button {
   color: white;
   background: #4cb0b2;
   padding: .5rem 1rem .5rem 1.4rem;
-  font-size: 1rem;
 }
 
-#orleanais #sidebar-left .menu .dropdown-btn:hover {
+#terrain #sidebar-left .sidebar-menu .dropdown-btn:hover {
   color: #525451;
 }
 
-#orleanais #sidebar-left .menu .dropdown-btn:focus {
+#terrain #sidebar-left .sidebar-menu .dropdown-btn:focus {
   outline: none;
 }
 
-#orleanais #sidebar-left .menu .dropdown-content {
+#terrain #sidebar-left .sidebar-menu .dropdown-content {
   display: none;
   padding: 0 2.45rem .3rem;
   -webkit-animation: slowAppear .3s ease-in-out;
           animation: slowAppear .3s ease-in-out;
 }
 
-#orleanais #sidebar-left .menu .dropdown-content ul li a span {
+#terrain #sidebar-left .sidebar-menu .dropdown-content ul li a span {
   display: block;
   color: white;
   background: #4cb0b2;
@@ -417,32 +416,32 @@ a, button {
   transition: all .3s;
 }
 
-#orleanais #sidebar-left .menu .dropdown-content ul li a span:hover {
+#terrain #sidebar-left .sidebar-menu .dropdown-content ul li a span:hover {
   color: #525451;
 }
 
-#orleanais #sidebar-left .menu .dropdown-content ul li a:focus {
+#terrain #sidebar-left .sidebar-menu .dropdown-content ul li a:focus {
   outline: none;
 }
 
-#orleanais #sidebar-left .menu::-webkit-scrollbar {
+#terrain #sidebar-left .sidebar-menu::-webkit-scrollbar {
   width: 6px;
 }
 
-#orleanais #sidebar-left .menu::-webkit-scrollbar-track {
+#terrain #sidebar-left .sidebar-menu::-webkit-scrollbar-track {
   background: #bcbdbc;
 }
 
-#orleanais #sidebar-left .menu::-webkit-scrollbar-thumb {
+#terrain #sidebar-left .sidebar-menu::-webkit-scrollbar-thumb {
   background: #87c133;
   height: auto;
 }
 
-#orleanais #sidebar-left .menu::-webkit-scrollbar-thumb:hover {
+#terrain #sidebar-left .sidebar-menu::-webkit-scrollbar-thumb:hover {
   background: #5a9b00;
 }
 
-#orleanais #sidebar-left .goback {
+#terrain #sidebar-left #goback {
   display: block;
   background: #87c133;
   border-radius: 1.4rem;
@@ -457,47 +456,47 @@ a, button {
   font-size: .8rem;
 }
 
-#orleanais #sidebar-left .goback a {
+#terrain #sidebar-left #goback a {
   display: block;
   font-size: .95rem;
   color: white;
   padding: .75rem 3rem;
 }
 
-#orleanais #sidebar-left .goback:hover {
+#terrain #sidebar-left #goback:hover {
   background: #5a9b00;
 }
 
-#orleanais #sidebar-left .goback:focus {
+#terrain #sidebar-left #goback:focus {
   outline: none;
 }
 
-#orleanais #sidebar-left .goback i {
+#terrain #sidebar-left #goback i {
   font-size: .7rem;
   color: white;
   padding-right: .3rem;
 }
 
-#orleanais .main-right {
-  padding-left: 14rem;
+#terrain .main-right {
+  float: right;
+  width: calc(100% - 14rem);
   text-align: center;
   height: 100%;
-  width: 100%;
   overflow: auto;
 }
 
-#orleanais .main-right .map {
+#terrain .main-right .map {
   height: 100%;
   width: 100%;
   padding: 5px;
   position: relative;
 }
 
-#orleanais .main-right .map img {
+#terrain .main-right .map img {
   height: 100%;
 }
 
-#orleanais .main-right .map p {
+#terrain .main-right .map p {
   position: absolute;
   left: 0;
   right: 0;
@@ -507,7 +506,7 @@ a, button {
   padding: 0 1rem;
 }
 
-#orleanais .main-right .map iframe {
+#terrain .main-right .map iframe {
   height: 100%;
   width: 100%;
   border: 1px solid #87c133;

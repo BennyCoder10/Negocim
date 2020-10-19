@@ -8,8 +8,8 @@
     span { color: $sub;}
   }
   div { box-sizing: border-box;
-    img { float: left; width: 48%; height: auto;}
-    .contact { float: left; width: 50%; text-align: center; padding: 0;
+    img { float: left; width: 48%; height: 22rem; object-fit: cover;}
+    .contact { float: left; width: 50%; text-align: center; padding: 0; margin: 0 .5rem;
       // > div { 
         h3 { font-size: 1rem; padding: .9rem 0 1.8rem;
           a { color: $text-dark;

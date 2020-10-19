@@ -5,6 +5,7 @@ html {
 body {
   font-size: 1rem;
   max-width: 1440px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 * {
@@ -126,6 +127,85 @@ header .change .bar2 {
 header .change .bar3 {
   -webkit-transform: rotate(45deg) translate(-8px, -8px);
   transform: rotate(45deg) translate(-8px, -8px);
+}
+
+#terrains {
+  position: relative;
+}
+
+#terrains #float-left {
+  position: absolute;
+  left: 3.5rem;
+  top: 30%;
+  z-index: 1;
+}
+
+#terrains #float-left ul li {
+  margin: .2rem 0;
+}
+
+#terrains #float-left ul li:nth-child(1) i {
+  color: #2e60ff;
+}
+
+#terrains #float-left ul li:nth-child(2) i {
+  color: #929d3b;
+}
+
+#terrains #float-left ul li:nth-child(3) i {
+  color: #149700;
+}
+
+#terrains #float-left ul li:nth-child(4) i {
+  color: #930000;
+}
+
+#terrains #float-left ul li a {
+  display: block;
+  padding: .2rem 0 .8rem;
+  border: none;
+}
+
+#terrains #float-left ul li a i {
+  padding-right: .55rem;
+  font-size: 1rem;
+}
+
+#terrains #float-left ul li a span {
+  font-size: .9rem;
+  font-weight: bold;
+}
+
+#terrains #float-left ul li a:hover span {
+  color: #808080;
+}
+
+#terrains .main-right {
+  text-align: center;
+  height: 100%;
+  width: 100%;
+  overflow: auto;
+}
+
+#terrains .main-right .map {
+  height: 100%;
+  width: 100%;
+  padding: 5px;
+  position: relative;
+}
+
+#terrains .main-right .map img {
+  height: 100%;
+}
+
+#terrains .main-right .map p {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 1.5rem;
+  font-size: .8rem;
+  font-weight: bold;
+  padding: 0 1rem;
 }
 
 footer {
@@ -262,83 +342,4 @@ a, button {
   100% {
     opacity: 1;
   }
-}
-
-#terrains {
-  position: relative;
-}
-
-#terrains #float-left {
-  position: absolute;
-  left: 3.5rem;
-  top: 30%;
-  z-index: 1;
-}
-
-#terrains #float-left ul li {
-  margin: .2rem 0;
-}
-
-#terrains #float-left ul li:nth-child(1) i {
-  color: #2e60ff;
-}
-
-#terrains #float-left ul li:nth-child(2) i {
-  color: #929d3b;
-}
-
-#terrains #float-left ul li:nth-child(3) i {
-  color: #149700;
-}
-
-#terrains #float-left ul li:nth-child(4) i {
-  color: #930000;
-}
-
-#terrains #float-left ul li a {
-  display: block;
-  padding: .2rem 0 .8rem;
-  border: none;
-}
-
-#terrains #float-left ul li a i {
-  padding-right: .55rem;
-  font-size: 1rem;
-}
-
-#terrains #float-left ul li a span {
-  font-size: .9rem;
-  font-weight: bold;
-}
-
-#terrains #float-left ul li a:hover span {
-  color: #808080;
-}
-
-#terrains .main-right {
-  text-align: center;
-  height: 100%;
-  width: 100%;
-  overflow: auto;
-}
-
-#terrains .main-right .map {
-  height: 100%;
-  width: 100%;
-  padding: 5px;
-  position: relative;
-}
-
-#terrains .main-right .map img {
-  height: 100%;
-}
-
-#terrains .main-right .map p {
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: 1.5rem;
-  font-size: .8rem;
-  font-weight: bold;
-  padding: 0 1rem;
 }

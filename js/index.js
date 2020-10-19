@@ -49,8 +49,7 @@ function orleanaisSidebar() {
   document.getElementById("float-left").style.display = "none";
   document.getElementById("sidebar-orleanais").style.display = "block";
   document.getElementsByClassName("main-right")[0].style.marginLeft = "5rem";
-}
-
+};
 
 
 
@@ -116,11 +115,3 @@ if (currentStep == 0)
     }
   }
 } 
-
-
-
-
-
-
-// LEXIQUE 
-// SEARCH 
