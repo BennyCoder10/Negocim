@@ -629,6 +629,7 @@ main .main-right #lotissement p {
 
 #lotissement .column img {
   width: 100%;
+  border: 1px solid #707070;
 }
 
 #lotissement .column:hover {
