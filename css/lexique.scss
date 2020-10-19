@@ -4,10 +4,10 @@
 #lexique {
   > div { padding: .8rem 4.5rem;
     .searchWrapper { text-align: right;
-      display: inline-block; border-bottom: 2.5px solid $sub;
+      // display: inline-block; border-bottom: 2.5px solid $sub;
 
-      // form { 
-        // display: inline-block; border-bottom: 2.5px solid $sub;
+      div { 
+        display: inline-block; border-bottom: 2.5px solid $sub;
         input { width: 5rem; padding: 0; font-size: .8rem; text-indent: 5px; border: none; 
         &:focus { outline: none;}
         }
@@ -18,7 +18,7 @@
           color: $sub;
           }                
         }
-      // }      
+      }      
     }
     
     .index { padding: 1rem 0 4.3rem; vertical-align: middle;

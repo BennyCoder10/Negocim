@@ -350,11 +350,14 @@ a, button {
 
 #lexique > div .searchWrapper {
   text-align: right;
+}
+
+#lexique > div .searchWrapper div {
   display: inline-block;
   border-bottom: 2.5px solid #87c133;
 }
 
-#lexique > div .searchWrapper input {
+#lexique > div .searchWrapper div input {
   width: 5rem;
   padding: 0;
   font-size: .8rem;
@@ -362,22 +365,22 @@ a, button {
   border: none;
 }
 
-#lexique > div .searchWrapper input:focus {
+#lexique > div .searchWrapper div input:focus {
   outline: none;
 }
 
-#lexique > div .searchWrapper button {
+#lexique > div .searchWrapper div button {
   padding: .5rem 0 0 .5rem;
   cursor: pointer;
   background: white;
   vertical-align: bottom;
 }
 
-#lexique > div .searchWrapper button:focus {
+#lexique > div .searchWrapper div button:focus {
   outline: none;
 }
 
-#lexique > div .searchWrapper button i {
+#lexique > div .searchWrapper div button i {
   font-size: 17px;
   color: #87c133;
 }
