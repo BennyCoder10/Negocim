@@ -348,6 +348,174 @@ main {
   position: relative;
 }
 
+main .main-right {
+  float: right;
+  text-align: center;
+  height: 100%;
+  width: calc(100% - 14rem);
+  overflow: auto;
+}
+
+main .main-right .map {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  padding: 5px;
+}
+
+main .main-right .map img {
+  height: 100%;
+}
+
+main .main-right .map iframe {
+  width: 100%;
+  height: 100%;
+  border: 1px solid #87c133;
+}
+
+main .main-right h3 {
+  font-weight: normal;
+}
+
+main .main-right h2 i {
+  color: #87c133;
+}
+
+main .main-right p {
+  padding: 1rem;
+  text-align: left;
+}
+
+main .main-right #lotissement {
+  padding: 1rem;
+  /* Modal Content */
+}
+
+main .main-right #lotissement .row {
+  margin-top: 1.5rem;
+  overflow-x: auto;
+}
+
+main .main-right #lotissement .row > .column {
+  padding: 0 8px;
+}
+
+main .main-right #lotissement .column {
+  display: inline-block;
+  width: 24%;
+}
+
+main .main-right #lotissement .column img {
+  width: 100%;
+  -webkit-box-shadow: 0 2px 2px 0 #5f5f5f;
+          box-shadow: 0 2px 2px 0 #5f5f5f;
+}
+
+main .main-right #lotissement .column:hover {
+  cursor: pointer;
+}
+
+main .main-right #lotissement .column:hover img {
+  -webkit-box-shadow: 0 4px 8px 0 #5a5a5a;
+          box-shadow: 0 4px 8px 0 #5a5a5a;
+  -webkit-transition: all .3s ease-out;
+  transition: all .3s ease-out;
+}
+
+main .main-right #lotissement .modal {
+  display: none;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.664);
+  -webkit-animation: slowAppear .2s ease-in-out;
+          animation: slowAppear .2s ease-in-out;
+  z-index: 1;
+}
+
+main .main-right #lotissement .modal-content {
+  display: inline-block;
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  border-radius: .5rem;
+}
+
+main .main-right #lotissement .close {
+  position: absolute;
+  top: -29px;
+  right: -23px;
+  font-size: 35px;
+}
+
+main .main-right #lotissement .close i {
+  color: white;
+}
+
+main .main-right #lotissement .close:hover,
+main .main-right #lotissement .close:focus {
+  color: #999;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+main .main-right #lotissement .mySlides {
+  display: none;
+  height: auto;
+  max-width: 85vw;
+  max-height: 85vh;
+  padding: .5rem;
+}
+
+main .main-right #lotissement .arrow {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  padding: 20% 40%;
+}
+
+main .main-right #lotissement .arrow_prev {
+  left: 0;
+  padding-left: .5rem;
+}
+
+main .main-right #lotissement .arrow_next {
+  right: 0;
+  padding-right: .5rem;
+}
+
+main .main-right #lotissement .arrow_prev:hover .prev,
+main .main-right #lotissement .arrow_next:hover .next {
+  opacity: 1;
+}
+
+main .main-right #lotissement .prev,
+main .main-right #lotissement .next {
+  font-size: 2rem;
+  font-weight: bold;
+  padding: .5rem;
+  width: auto;
+  border-radius: 3px;
+  background-color: rgba(90, 88, 88, 0.76);
+  cursor: pointer;
+  opacity: 0;
+  -webkit-transition: 0.6s ease;
+  transition: 0.6s ease;
+}
+
+main .main-right #lotissement .prev i,
+main .main-right #lotissement .next i {
+  color: white;
+}
+
 main #sidebar-left {
   position: relative;
   float: left;
@@ -552,190 +720,4 @@ main #sidebar-left #goback i {
   font-size: .7rem;
   color: white;
   padding-right: .3rem;
-}
-
-main .main-right {
-  float: right;
-  text-align: center;
-  height: 100%;
-  width: 100%;
-  overflow: auto;
-  width: calc(100% - 14rem);
-}
-
-main .main-right .map {
-  height: 100%;
-  width: 100%;
-  padding: 5px;
-  position: relative;
-}
-
-main .main-right .map img {
-  height: 100%;
-}
-
-main .main-right .map iframe {
-  height: 100%;
-  width: 100%;
-  border: 1px solid #87c133;
-}
-
-main .main-right #lotissement {
-  padding: 1rem;
-}
-
-main .main-right #lotissement h3 {
-  font-weight: normal;
-}
-
-main .main-right #lotissement h2 i {
-  color: #87c133;
-}
-
-main .main-right #lotissement p {
-  padding: 1rem;
-  text-align: left;
-}
-
-#lotissement {
-  /* Create four equal columns that floats next to each other */
-  /* The Modal (background) */
-  /* Modal Content */
-  /* The Close Button */
-  /* Hide the slides by default */
-  /* Next & previous buttons */
-  /* Position the "next button" to the right */
-  /* On hover, add a black background color with a little bit see-through */
-}
-
-#lotissement .row {
-  margin-top: 1.5rem;
-}
-
-#lotissement .row > .column {
-  padding: 0 8px;
-}
-
-#lotissement .row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-#lotissement .column {
-  display: inline-block;
-  width: 25%;
-}
-
-#lotissement .column img {
-  width: 100%;
-  border: 1px solid #707070;
-}
-
-#lotissement .column:hover {
-  cursor: pointer;
-}
-
-#lotissement .column:hover img {
-  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  -webkit-transition: all .4s ease-out;
-  transition: all .4s ease-out;
-}
-
-#lotissement .modal {
-  display: none;
-  position: fixed;
-  z-index: 1;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  overflow: auto;
-  background-color: rgba(0, 0, 0, 0.664);
-  -webkit-animation: slowAppear .2s ease-in-out;
-          animation: slowAppear .2s ease-in-out;
-}
-
-#lotissement .modal-content {
-  display: inline-block;
-  position: relative;
-  background-color: #fefefe;
-  margin: auto;
-  padding: 0;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
-  border-radius: .5rem;
-}
-
-#lotissement .close {
-  position: absolute;
-  top: -29px;
-  right: -23px;
-  font-size: 35px;
-  z-index: 1;
-}
-
-#lotissement .close:hover,
-#lotissement .close:focus {
-  color: #999;
-  text-decoration: none;
-  cursor: pointer;
-}
-
-#lotissement .mySlides {
-  display: none;
-  height: auto;
-  max-width: 90vw;
-  max-height: 90vh;
-  padding: 1rem;
-}
-
-#lotissement .arrow {
-  padding: 20% 40%;
-  position: absolute;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
-}
-
-#lotissement .arrow_prev {
-  left: 0;
-  padding-left: 0;
-}
-
-#lotissement .arrow_next {
-  right: 0;
-  padding-right: 0;
-}
-
-#lotissement .prev,
-#lotissement .next {
-  cursor: pointer;
-  width: auto;
-  color: #87c133;
-  font-weight: bold;
-  font-size: 2rem;
-  -webkit-transition: 0.6s ease;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-  -moz-user-select: none;
-   -ms-user-select: none;
-       user-select: none;
-  -webkit-user-select: none;
-  opacity: 0;
-}
-
-#lotissement .prev i {
-  -webkit-transform: rotateY(180deg);
-          transform: rotateY(180deg);
-}
-
-#lotissement .arrow_prev:hover .prev {
-  opacity: 1;
-}
-
-#lotissement .arrow_next:hover .next {
-  opacity: 1;
 }

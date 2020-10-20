@@ -36,52 +36,44 @@
     </header>
   
   
-    <main id="">
-     
-
+    <main>
       <div class="main-right">
         <div class="map" id="lotissement">
           <h3>Commune de Kervignac</h3>
           <h2><i>Les QUATRE VENTS</i></h2>
 
-
-          <!-- Images used to open the lightbox -->
-          <div class="row">
+          <div class="row clear">
             <div class="column">
-              <img src="images/lotissement/photo_409.jpg" onclick="openModal();currentSlide(1)" class="hover-shadow">
+              <img src="images/lotissement/photo_409.jpg" onclick="openModal();currentSlide(1)">
             </div>
             <div class="column">
-              <img src="images/lotissement/photo_410.jpg" onclick="openModal();currentSlide(2)" class="hover-shadow">
+              <img src="images/lotissement/photo_410.jpg" onclick="openModal();currentSlide(2)">
             </div>
-
-
           </div>
 
           <!-- The Modal/Lightbox -->
           <div id="myModal" class="modal">
             <div class="modal-content">
+              <!-- CLOSE BUTTON -->
               <span class="close cursor" onclick="closeModal()"><i class="xi-close-circle-o"></i></span>
 
-              <div >
-                <img src="images/lotissement/photo_409.jpg" class="mySlides">
-              
+              <div>
+                <img src="images/lotissement/photo_409.jpg" class="mySlides">              
                 <img src="images/lotissement/photo_410.jpg" class="mySlides">
-
               </div>
 
-              <!-- Next/previous controls -->
+              <!--  PREV, NEXT BUTTONS -->
               <span class="arrow arrow_prev" onclick="plusSlides(-1)">
-                <a class="prev" ><i class="xi-play-circle-o"></i></a>
+                <a class="prev"><i class="xi-angle-left"></i></a>
               </span>
               <span class="arrow arrow_next" onclick="plusSlides(1)">
-                <a class="next" ><i class="xi-play-circle-o"></i></a>
+                <a class="next"><i class="xi-angle-right"></i></a>
               </span>
                            
             </div>
           </div>
           <!-- MODAL END -->
          
-
           <div>
             <p>Avec près de 7 000 habitants, un tissu associatif dense, un bassin d'emplois significatif et la proximité des voies rapides, <strong>KERVIGNAC</strong> fait partie des communes les plus dynamiques du Pays de LORIENT.</p>
             <p>Le lotissement <strong>"Les Quatre Vents"</strong> est situé à l'entrée du centre-bourg, à proximité des commerces, des écoles et des équipements sportifs.</p>
@@ -101,27 +93,20 @@
           <button id="simulaer_un_credit"><a href="simulateur_steps.html">Simuler un crédit</a></button>
           <button id="poser_une_option">Poser une option</button>
           <button id="itineraire">Itinéraire</button>
-          <button id="imprimer" onclick="window.print()">Imprimer cette page</button>
-
-         
+          <button id="imprimer" onclick="window.print()">Imprimer cette page</button>         
 
           <button type="button" id="goback" onclick="goBack()"><i class="xi-angle-left"></i>Retour</button>
         </div>            
       </div>
     </main>
     
-    <!-- 
-      FOOTER AT THE BOTTOM
-     -->
+    <!-- FOOTER AT THE BOTTOM -->
      <footer>
       <p><a href="politique.html">Politique de protection des données personnelles</a></p>
-    </footer>
-
-  
+    </footer>  
   </div>
  
   <script src="js/index.js"></script>
   <script src="js/terrains.js"></script>
-
 </body>
 </html>

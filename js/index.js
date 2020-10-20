@@ -12,7 +12,6 @@ function menuToggle(x) {
 }
 
 
-
 // SIDEBAR MENU DROP DOWN
 var dropdown = document.getElementsByClassName("dropdown-btn");
 var i;
@@ -62,6 +61,7 @@ function rebrechien() {
 function saintAy() {
   mapTerrain.innerHTML = '<iframe src="https://maps.googleapis.com/maps/api/js?v=3.38&key=AIzaSyD-Prsm3tG6Vv5XkuDrVY8yfRC57-LuAbE" frameborder="0" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>';
 };
+
 
 // SIMULATEUR STEPS 
 var steps = document.getElementsByClassName("steps");
