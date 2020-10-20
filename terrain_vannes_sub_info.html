@@ -8,7 +8,7 @@
 
   <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
   <link rel="stylesheet" href="css/default.css">
-  <link rel="stylesheet" href="css/index.css">
+  <link rel="stylesheet" href="css/terrain_sub_sub.css">
   <link rel="stylesheet" href="css/responsive.css">
 
 </head>
@@ -23,7 +23,7 @@
           <li><a href="index.html" class="active">Terrains</a></li>
           <li><a href="vendez.html">Vendez votre terrain</a></li>
           <li><a href="simulateur.html">Simulateur de crédit</a></li>
-          <li><a href="qui_sommes-nous.html">Qui sommes-nous</a></li>
+          <li><a href="qui_sommes_nous.html">Qui sommes-nous</a></li>
           <li><a href="contact.html">Contactez-nous</a></li>
           <li><a href="lexique.html">Lexique</a></li>            
         </ul>
@@ -34,26 +34,29 @@
         <div class="bar3"></div>
       </div>
     </header>
+  
+  
+    <main id="">     
 
+      <div class="main-right" >
+        <div class="map" id="terrain_map">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d5363.636149163178!2d-3.242871!3d47.765583!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sko!2sus!4v1602672275398!5m2!1sko!2sus" width="800" height="600" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>        
+        </div>
+      </div>
 
-    <main id="terrains" class="clear">
-      <div id="float-left">
-        <ul>
-          <li><a href="terrain_vannes.html"><i class="xi-full-moon"></i><span>Vannes</span></a></li>
-          <li><a href="terrain_vannes.html"><i class="xi-full-moon"></i><span>La Touraine</span></a></li>
-          <li><a href="terrain_orleanais.html"><i class="xi-full-moon"></i><span>L'Orléanais</span></a></li>
-          <li><a href="terrain_orleanais.html"><i class="xi-full-moon"></i><span>Sud-Ouest</span></a></li>
-        </ul>
-      </div>  
+      <div id="sidebar-left">
+        <h2><a href="terrain_vannes.html">La Bretagne</a></h2>
+        <div class="sidebar-menu">
+          <h4>Les Quatre Vents</br>à Kervignac</h4>
+          <p>Information</p>       
+          <p class="info">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vulputate, tellus in rutrum vulputate, diam diam ultricies lectus, sed sagittis lacus sapien eget ipsum.</p>
+          <a href="terrain_vannes_sub_detail.html" class="look">Voir le lotissement</a>      
+        </div> 
 
-      <div class="main-right">
-        <div class="map">
-          <img src="images/carte_france.jpg" alt="map of france" class="france">
-          <p>Nous vendons des terrains à bâtir viabilisés, tout en vous laissant le choix de votre constructeur, entreprise ou architecte</p>
-        </div>       
+        <button type="button" id="goback" onclick="goBack()"><i class="xi-angle-left"></i>Retour</button>
       </div> 
-  </main>
-
+    </main>
+    
     <!-- 
       FOOTER AT THE BOTTOM
      -->
@@ -61,8 +64,10 @@
       <p><a href="politique.html">Politique de protection des données personnelles</a></p>
     </footer>
 
+  
   </div>
-
+ 
   <script src="js/index.js"></script>
+
 </body>
 </html>
