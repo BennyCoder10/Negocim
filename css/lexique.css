@@ -426,7 +426,7 @@ a, button {
 }
 
 #lexique > div #lexique-contents {
-  height: 16.7rem;
+  height: 50vh;
   overflow-y: scroll;
 }
 

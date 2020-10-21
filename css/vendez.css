@@ -373,6 +373,7 @@ main .agencies button {
   bottom: .95rem;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
+  min-width: 14.5rem;
 }
 
 main .agencies button a {

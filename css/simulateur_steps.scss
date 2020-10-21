@@ -16,7 +16,7 @@
       }
     }
 
-    .left { background: url(../images/simuler_terrain.jpg) no-repeat 0% 80% / 100%;
+    .left { background: url(../images/simuler_terrain.jpg) no-repeat 0% 75% / 100%;
       a div { background: $sub;
         p { line-height: 5.5rem;}
       }
@@ -39,7 +39,8 @@
 // 
 
 .simulateur_steps {
-  margin: 1.2rem 3.65rem; text-align: center; position: relative; min-height: 590px;
+  margin: 1.2rem 3.65rem; padding-bottom: 2rem; text-align: center; position: relative; 
+
   h1 { font-size: 1.7rem; color: $sub; text-align: center;}
 
   // STEP INDICATOR

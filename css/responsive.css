@@ -351,9 +351,6 @@ a, button {
         -ms-flex-pack: start;
             justify-content: flex-start;
   }
-  .simulateur_steps {
-    min-height: 550px;
-  }
 }
 
 @media only screen and (max-width: 1120px) {
@@ -440,6 +437,7 @@ a, button {
   }
   .simulateur_steps {
     margin: 1.2rem 1rem;
+    padding-bottom: 3rem;
   }
   .simulateur_steps .récapitulatif {
     width: 100%;
@@ -496,6 +494,16 @@ a, button {
   header .menu {
     top: 60px;
   }
+  #agence .agenceTable tr .left {
+    display: none;
+  }
+  #agence .agenceTable .right {
+    padding-bottom: 3rem;
+  }
+  #agence .agenceTable .right tr td {
+    width: 100%;
+    padding-bottom: 3rem;
+  }
   #qui_sommes-nous .text .list_left {
     display: none;
   }
@@ -525,6 +533,16 @@ a, button {
 
 @media only screen and (max-width: 560px) {
   main .agencies {
+    width: 100%;
+    border-bottom: 5px solid white;
+  }
+  main .agencies img {
+    height: 9rem;
+  }
+  #agence .agenceTable .right table, #agence .agenceTable .right thead, #agence .agenceTable .right tbody, #agence .agenceTable .right th, #agence .agenceTable .right td, #agence .agenceTable .right tr {
+    display: block;
+  }
+  #agence .agenceTable .right .services tr td {
     width: 100%;
   }
   #contact .left {

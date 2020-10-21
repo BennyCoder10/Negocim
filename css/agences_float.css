@@ -344,89 +344,243 @@ a, button {
   }
 }
 
-main .left {
-  float: left;
-  width: 50%;
-  height: 23rem;
-  border: 1px solid #707070;
+#agence h2 {
+  padding: 1.4rem 0 1.4rem;
+  font-size: 1.8rem;
+  font-weight: 600;
+  text-align: center;
+}
+
+#agence h2 span {
+  color: #87c133;
+}
+
+#agence div {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
 
-main .left img {
-  width: 100%;
-  height: 100%;
+#agence div img {
+  float: left;
+  width: 48%;
+  height: 22rem;
   -o-object-fit: cover;
      object-fit: cover;
+  margin-bottom: 1.4rem;
 }
 
-main .right {
+#agence div .contact {
   float: left;
   width: 50%;
-  height: 23rem;
   text-align: center;
-  padding: 5rem 0 9rem;
-  position: relative;
+  padding: 0;
+  margin: 0 .5rem;
+  margin-bottom: 1.4rem;
 }
 
-main .right p {
+#agence div .contact h3 {
   font-size: 1rem;
-  line-height: 2.5rem;
-  font-weight: bold;
+  padding: .9rem 0 1.8rem;
+}
+
+#agence div .contact h3 a {
   color: #525451;
 }
 
-main .right p a {
-  color: #525451;
-  font-weight: bold;
-}
-
-main .right p a:hover {
+#agence div .contact h3 a:hover {
   color: #87c133;
 }
 
-main .right p .buttons {
+#agence div .contact .services {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+#agence div .contact .service h4 {
+  font-weight: normal;
+}
+
+#agence div .contact .service > div {
+  padding: 1.3rem .3rem 0;
+}
+
+#agence div .contact .service > div .person-name {
+  color: #87c133;
+}
+
+#agence div .contact .service > div a {
+  color: #525451;
+}
+
+#agence div .contact .service > div a:hover {
+  color: #87c133;
+}
+
+#agence div .contact .service > div .email {
+  font-size: .8rem;
+}
+
+#agence div .buttons {
   display: block;
   background: #87c133;
   border-radius: 1.4rem;
   border: none;
+  margin: 1.8rem auto 0;
   -webkit-transition: all .5s ease;
   transition: all .5s ease;
-  position: absolute;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
-  bottom: 0;
 }
 
-main .right p .buttons a {
+#agence div .buttons a {
   display: block;
   font-size: .95rem;
   color: white;
   padding: .75rem 3rem;
 }
 
-main .right p .buttons:hover {
+#agence div .buttons:hover {
   background: #5a9b00;
 }
 
-main .right p .buttons:focus {
+#agence div .buttons:focus {
   outline: none;
 }
 
-main .right p .buttons a {
-  padding: .75rem 4.5rem;
+#agence-map {
+  text-align: center;
 }
 
-main > p {
+#agence-map h2 {
+  padding: 2rem 0 1.4rem;
+  font-size: 1.8rem;
+  font-weight: 600;
+  text-align: center;
+}
+
+#agence-map h2 span {
+  color: #87c133;
+}
+
+#agence-map .map iframe {
+  width: 100%;
+  height: 360px;
+  border: 1px solid #707070;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+#agence-map .buttons {
+  display: block;
+  background: #87c133;
+  border-radius: 1.4rem;
+  border: none;
+  margin: 1rem auto;
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
+}
+
+#agence-map .buttons a {
+  display: block;
+  font-size: .95rem;
+  color: white;
+  padding: .75rem 3rem;
+}
+
+#agence-map .buttons:hover {
+  background: #5a9b00;
+}
+
+#agence-map .buttons:focus {
+  outline: none;
+}
+
+#agence-map .buttons a {
+  padding: .6rem 2.5rem;
+}
+
+#agence-bordeaux-3 div {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+#agence-bordeaux-3 div img {
+  float: left;
+  width: 48%;
+  height: auto;
+}
+
+#agence-bordeaux-3 div .contact {
+  float: left;
+  width: 50%;
+  text-align: center;
+  padding: 0;
+}
+
+#agence-bordeaux-3 div .contact h3 {
+  font-size: 1rem;
+  padding: .9rem 0 1.8rem;
+}
+
+#agence-bordeaux-3 div .contact .service {
+  float: left;
+}
+
+#agence-bordeaux-3 div .contact .service h4 {
+  font-weight: normal;
+}
+
+#agence-bordeaux-3 div .contact .service > div {
+  padding: 1.3rem .3rem 0;
+}
+
+#agence-bordeaux-3 div .contact .service > div .person-name {
+  color: #87c133;
+}
+
+#agence-bordeaux-3 div .contact .service > div a {
+  color: #525451;
+}
+
+#agence-bordeaux-3 div .contact .service > div a:hover {
+  color: #87c133;
+}
+
+#agence-bordeaux-3 div .contact .buttons {
+  display: block;
+  background: #87c133;
+  border-radius: 1.4rem;
+  border: none;
+  margin-top: 1.7rem auto;
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
+}
+
+#agence-bordeaux-3 div .contact .buttons a {
+  display: block;
+  font-size: .95rem;
+  color: white;
+  padding: .75rem 3rem;
+}
+
+#agence-bordeaux-3 div .contact .buttons:hover {
+  background: #5a9b00;
+}
+
+#agence-bordeaux-3 div .contact .buttons:focus {
+  outline: none;
+}
+
+#agence-bordeaux-3 p {
   font-size: .55rem;
   text-align: center;
-  padding: 1.3rem 0 .5rem;
+  padding: .5rem;
   color: black;
   line-height: 1.5;
 }
 
-main > p a {
+#agence-bordeaux-3 p a {
   color: #87c133;
   font-weight: bold;
 }
