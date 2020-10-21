@@ -415,11 +415,15 @@ a, button {
   header .menu ul li {
     float: none;
   }
+  header .menu ul li {
+    padding: 0 0 .6rem 0;
+  }
   header .menu ul li .active:before {
     width: none;
   }
   header .menu ul li a {
     display: inline-block;
+    padding: 1rem .6rem .4rem;
   }
   header .menu ul li a:hover {
     color: white;

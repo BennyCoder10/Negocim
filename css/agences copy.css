@@ -355,71 +355,28 @@ a, button {
   color: #87c133;
 }
 
-#agence .agenceTable {
+#agence table {
   width: 100%;
-  margin-bottom: 1.4rem;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
 }
 
-#agence .agenceTable tr td {
+#agence table > tr > td {
   width: 50%;
   text-align: center;
-  padding: 0;
-  vertical-align: top;
 }
 
-#agence .agenceTable .right {
-  position: relative;
-  padding-bottom: 3rem;
-}
-
-#agence .agenceTable .right h3 {
-  font-size: 1rem;
-  padding: .9rem 0 1.8rem;
-}
-
-#agence .agenceTable .right h3 a {
-  color: #525451;
-}
-
-#agence .agenceTable .right h3 a:hover {
-  color: #87c133;
-}
-
-#agence .agenceTable .right .services {
+#agence table > tr > td .services {
   width: 100%;
 }
 
-#agence .agenceTable .right .services tr td {
+#agence table > tr > td .services tr td {
   width: 50%;
   text-align: center;
-  vertical-align: top;
 }
 
-#agence .agenceTable .right .services tr td h4 {
-  font-weight: normal;
-}
-
-#agence .agenceTable .right .services tr td > div {
-  padding: 1.3rem .3rem 0;
-}
-
-#agence .agenceTable .right .services tr td > div .person-name {
-  color: #87c133;
-}
-
-#agence .agenceTable .right .services tr td > div a {
-  color: #525451;
-}
-
-#agence .agenceTable .right .services tr td > div a:hover {
-  color: #87c133;
-}
-
-#agence .agenceTable .right .buttons {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
+#agence table > tr > td .services .buttons {
   display: block;
   background: #87c133;
   border-radius: 1.4rem;
@@ -429,26 +386,19 @@ a, button {
   transition: all .5s ease;
 }
 
-#agence .agenceTable .right .buttons a {
+#agence table > tr > td .services .buttons a {
   display: block;
   font-size: .95rem;
   color: white;
   padding: .75rem 3rem;
 }
 
-#agence .agenceTable .right .buttons:hover {
+#agence table > tr > td .services .buttons:hover {
   background: #5a9b00;
 }
 
-#agence .agenceTable .right .buttons:focus {
+#agence table > tr > td .services .buttons:focus {
   outline: none;
-}
-
-#agence .agenceTable .left img {
-  width: 100%;
-  height: 22rem;
-  -o-object-fit: cover;
-     object-fit: cover;
 }
 
 #agence-map {
