@@ -4,9 +4,8 @@
 
 
 @media only screen and (max-width: 1240px) {
-  #lexique > div .index #lexique-nav { justify-content: flex-start;}
-  
-
+  // LEXIQUE
+  #lexique > div .index #lexique-nav { justify-content: flex-start;} 
 }
 
 // 1. LARGER DEVICES (DESKTOPS) 
@@ -18,7 +17,9 @@
 
 // 2. LARGE DEVICES (LAPTOPS) 
 //
+
 @media only screen and (max-width: 1120px) {
+  // GENERAL
   html { font-size: 18px;
     body {
       header h1 { padding-right: 0rem;}
@@ -29,7 +30,10 @@
     .step4 .summary table { width: 80%;}
 
   }
+  
+  // TERRAINS
   #terrains .main-right .map img { text-align: right;}
+
   #agence-bordeaux-1 div .contact .services { font-size: 1.6vw;}
 }
 
@@ -38,8 +42,10 @@
 // 3. MIDDLE SIZE DEVICES (TABLETS) 
 //
 @media only screen and (max-width: 940px) {
+  // GENERAL
   body { width: 100%;}
   header {
+    // MENU 
     .menu {
       padding-right: 0rem;
       position: fixed; /* Stay in place */
@@ -71,8 +77,12 @@
     #menu-toggle { display: inline-block;}      
    
   }
+
+  // OVERLAY WHEN MENU APPEARS
   .overlay{ position: fixed;}   
 
+
+  // SIMULATEUR
   .simulateur_steps { margin: 1.2rem 1rem; padding-bottom: 3rem;}
   .simulateur_steps .récapitulatif { width: 100%;}
   .steps > div { margin: 0; width: 100%;}
@@ -83,23 +93,34 @@
   .step3 .selectors, .step3 .help { width: 100%;
   }
 
-  #terrains #float-left { position: static;  
-    ul { display: flex; justify-content: space-around; 
-      margin: 1rem 1rem;
-      border: 1px solid $sub;}
+  // TERRAINS
+  #terrains {
+    #float-left { position: static;  
+      ul { 
+        display: flex; 
+        justify-content: space-around; 
+        margin: 1rem;
+        border: 1px solid $sub;
+        li a { padding: .5rem 0;}
+      }
+    }
+    .main-right { height: auto;
+      .map img { max-width: 100%; height: auto;}
+    }
   }
-  // .main-right { height: auto; padding-left: 0 !important;}
-  // .main-right .map img { width: 100%; height: auto;}
 
+  // TERRAINS SUBS
   #terrain #sidebar-left { width: 12rem;}
   #terrain .main-right { width: calc(100% - 12rem);}
+
   main #sidebar-left { width: 12rem;}
   main #sidebar-left h2 a { font-size: 1.75rem;}
   main .main-right { width: calc(100% - 12rem);}
  
-
+  // qui_sommes-nous
   #qui_sommes-nous .text .text_right { width: 75vw;}
 
+  // LEXIQUE
   #lexique > div { padding: .8rem 1rem;}
 
 }
@@ -108,17 +129,24 @@
 // 4. SMALL DEVICES (SMARTPHONES) 
 //
 @media only screen and (max-width: 770px) {
-  html { font-size: 16px;}
-  header .menu {top: 60px;}
+  // GENERAL
+  header .menu {top: 63px;}
+
+  // VENDES & CONTACT_SUB
   #agence .agenceTable tr .left { display: none;}
   #agence .agenceTable .right { padding-bottom: 3rem;
-    tr td { width: 100%; padding-bottom: 3rem;}
+    tr td { width: 100%; padding: 1.5rem 0 3rem;}
   }
 
-
+  // QUI SOMMES
   #qui_sommes-nous .text .list_left { display: none; }
   #qui_sommes-nous .text .text_right { width: 100%; direction: ltr; margin: 1.5rem auto; float: none; overflow-y: auto; height: auto;}
-  #simulateur .choice > div {width: 100%;} 
+
+  // SIMULATEUR
+  #simulateur .choice .left { background-position: 44% 75%; background-size:  129%;}
+  #simulateur .choice .right { background-position: 19% 54%; background-size:  129%;}
+  #simulateur .choice > div div p { padding-left: 0; text-align: center;}
+  
   .step2 .bottom { display: block;}
   .step2 .bottom .montant { justify-content: center;}
   .step2 .bottom table { width: auto;}  
@@ -126,49 +154,88 @@
 
 
 @media only screen and (max-width: 560px) {
+  // TERRAINS 
+  #terrains .main-right { display: none;}
+  #terrains #float-left { height: 100%;
+    ul { flex-direction: column; height: 100%; margin: 0; justify-content: center; border: none;
+      li { margin: 1rem 2rem; text-align: center; background-color: $sub; border-radius: 0 .5rem; @include transition;
+        a { padding: 1rem 0;
+          i {display: none;}
+          span { font-size: 1.2rem; color: white;}
+        }
+        &:hover { background-color: white; @include transition;
+          a i span { color: $text-dark; }
+        }
+      }
+    }
+  }
+
+  // TERRAINS SUB
+  // #terrain #sidebar-left .sidebar-menu { 
+  //   margin-right: 0rem;
+  // }
+
+    // TERRAINS_SUB
+ #terrain #sidebar-left { width: 100%; position: static; background: white; border: none;
+  animation: fadeInRight .3s ease-in;
+   h2 { text-align: center; background: url(../images/pic_1.jpg) 100%; padding: 3rem 0 .5rem;
+     a { font-size: 1.5rem; font-weight: bold; color: $text; background: $sub; border-radius: 20px; padding: 0 1rem;}
+     &:hover a { color: $text-dark;}  
+   }
+   .sidebar-menu { overflow-y: visible; height: auto; margin-right: 0; margin-top: 1.5rem;
+
+     .dropdown-btn { text-align: center; color: $text-dark; background: white;
+     }
+     .dropdown-content { text-align: center; padding-bottom: 1.5rem;
+       ul li {
+         a {
+           span{ color: $text-dark; background: white;  }  
+         }}}
+
+   }    
+   .goback { margin: 2rem auto .5rem; position: static;}
+ }
+
+  // VENDES
   main .agencies { width: 100%; border-bottom: 5px solid white;
     img { height: 9rem;}
   }
 
-   #agence .agenceTable .right { 
+  // VENDES & CONTACT_SUB
+  #agence .agenceTable .right { 
     table, thead, tbody, th, td, tr { display: block;}
     .services tr td { width: 100%;}
   }
 
-  #contact .left { display: none;}
-  #contact .right { float: none; width: 100%;}
+  // CONTACT 
+  #contact .agencies { width: 100%; border-bottom: 5px solid white;
+    img { height: 9rem;}
+  }
+  // #contact .left { display: none;}
+  // #contact .right { float: none; width: 100%;}
+
+ 
+
 
   main .main-right { display: none;}
 
- #terrain #sidebar-left { width: 100%; position: static; background: white; border: none;
-   animation: fadeInRight .3s ease-in;
-  h2 { text-align: center; background: url(../images/pic_1.jpg) 100%; padding: 3rem 0 .5rem;
-    a { font-size: 1.5rem; font-weight: bold; color: $text; background: $sub; border-radius: 20px; padding: 0 1rem;}
-    &:hover a { color: $text-dark;}  
-  }
-  .menu { overflow-y: visible; height: auto; margin-right: 0; 
 
-    .dropdown-btn { text-align: center; color: $text-dark; background: white;
-    }
-    .dropdown-content { text-align: center; padding-bottom: 1.5rem;
-      ul li {
-        a {
-          span{ color: $text-dark; background: white;  }  
-        }}}
-
-  }    
-  .goback { margin: 2rem auto .5rem; position: static;}
-}
-
-#simulateur .choice > div { height: 190px; border: 1px solid $bars; }
+  // SIMULATEUR
+  #simulateur .choice > div { width: 100%; height: 50vw; border: 1px solid $bars; margin-bottom: 5px;}
+  // #simulateur .choice > div > a > div { height: 20vw;}
+  #simulateur .choice .left { background-position: 0% 75%; background-size:  100%;}
+  #simulateur .choice .right { background-position: 0% 54%; background-size:  100%;}
+  #simulateur .btm-txt { padding: .8rem 0;}
+  // QUI SOMMES NOUS
+  #qui_sommes-nous .text .text_right article h3 { font-size: 1.2rem;}
 
 
-#lexique > div .index { padding-bottom: 2rem;} 
-#lexique > div { padding-bottom: 2rem;}
-#lexique > div #lexique-contents .texts h3 { padding-bottom: 1.5rem;}
-#lexique > div #lexique-contents .texts p { padding-bottom: 1.5rem; line-height: 1.5;}
 
-
+  // LEXIQUE
+  #lexique > div .index { padding-bottom: 2rem;} 
+  #lexique > div { padding-bottom: 2rem;}
+  #lexique > div #lexique-contents .texts h3 { padding-bottom: 1.5rem;}
+  #lexique > div #lexique-contents .texts p { padding-bottom: 1.5rem; line-height: 1.5;}
 }
 
 

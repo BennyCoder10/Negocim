@@ -351,7 +351,7 @@ a, button {
 
 #simulateur h2 {
   padding: 1.25rem 0;
-  font-size: 1.9rem;
+  font-size: 1.7rem;
   font-weight: 600;
   text-align: center;
 }
@@ -366,8 +366,6 @@ a, button {
   height: 360px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  -webkit-transition: all .5s ease;
-  transition: all .5s ease;
 }
 
 #simulateur .choice > div a {

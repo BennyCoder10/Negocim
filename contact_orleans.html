@@ -8,7 +8,7 @@
 
   <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
   <link rel="stylesheet" href="css/default.css">
-  <link rel="stylesheet" href="css/agences.css">
+  <link rel="stylesheet" href="css/contact.css">
   <link rel="stylesheet" href="css/responsive.css">
 
 </head>
@@ -24,7 +24,7 @@
           <li><a href="vendez.html">Vendez votre terrain</a></li>
           <li><a href="simulateur.html">Simulateur de crédit</a></li>
           <li><a href="qui_sommes_nous.html">Qui sommes-nous</a></li>
-          <li><a href="contact.html">Contactez-nous</a></li>
+          <li><a href="contact.html" class="active">Contactez-nous</a></li>
           <li><a href="lexique.html">Lexique</a></li>            
         </ul>
       </nav>
@@ -35,12 +35,31 @@
       </div>
     </header>
 
-    <main id="agence-map">
-      <h2>Agence de <span>Tour</span></h2>
-      <div class="map">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10803.523517732558!2d0.6919562276329265!3d47.39475703561573!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47fcd44b159c7e05%3A0xd23201638ef9b1c4!2s52%20Boulevard%20Heurteloup%2C%2037000%20Tours!5e0!3m2!1sen!2sfr!4v1603171333379!5m2!1sen!2sfr" frameborder="0"  allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>       
-      </div>
-      <button class="buttons" onclick="goBack()"><a>Retour à l'agence</a></button>
+
+    <main id="agence">
+      <h2>Agence de <span>ORLEANS</span></h2>
+      <table class="agenceTable">
+        <tr>
+          <td class="left">
+            <img src="images/photo_agence3.jpg" alt="agence de orleans">
+          </td>
+          <td class="right">                           
+            <table class="services">
+              <tr>
+                <td>
+                  <div>
+                    <p>Responsable : <span class="person-name">Chintana Bounmee</span></p>
+                    <p>Email : <a href="mailto:chintana.bounmee@negocim.fr" class="email">chintana.bounmee@negocim.fr</a></p>
+                    <p>Tel : <a href="tel:+33625554963">06.25.55.49.63</a></p>
+                    <p>Départements : 45</p> 
+                  </div>
+                </td>                
+              </tr>                 
+            </table>                 
+            <button class="buttons"><a href="agence_orleans_map.html">Plan d'accès</a></button>
+          </td>
+        </tr>       
+      </table>
     </main>
     
     <!-- 
