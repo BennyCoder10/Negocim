@@ -108,7 +108,10 @@ header { background: $main;
 
 
 // FOOTER
-footer { text-align: center; background: $main; height: 2.35rem; line-height: 2.35rem; 
+footer { text-align: center; background: $main; 
+  // height: 2.35rem; 
+  height: auto;
+  line-height: 2.35rem; 
   // border: .5px solid $bars; PROBLEM WITH UNWANTED SCROLLBAR APPEAR
   p { font-size: .8rem; color: $text;  
     a { font-size: .8rem; color: $text;

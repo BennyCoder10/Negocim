@@ -38,7 +38,6 @@
 // 
 // COMMON CODES FOR ALL STEPS
 // 
-
 .simulateur_steps {
   margin: 1.2rem 3.65rem; padding-bottom: 2rem; text-align: center; position: relative; 
 
@@ -84,8 +83,7 @@
       }
       input[type="number"]{
         -moz-appearance: textfield;
-      }  
-      
+      }        
     }      
   }
 
@@ -102,6 +100,11 @@
       }
     }
   }
+
+
+
+
+
   
   // BUTTONS AT THE BOTTOM
   .btn_btm button { position: absolute; bottom: 0; min-width: 4.8rem; min-height: 1.65rem;
@@ -266,4 +269,24 @@
 
 .simulateur_steps .selectors > div input[type="number"] {
   padding: 0 1rem 0 3px;
+}
+
+
+
+.simulateur_steps .flex { 
+  display: flex; flex-wrap: wrap; width: auto; font-size: .6rem; padding: 1rem;
+  > div { align-items: flex-start;
+    h4, p { margin: 1rem 0;}
+  }
+  .flex1 { flex: 1;
+  }
+  .flex2 { flex: 8;
+    h4 { text-align: left; padding-left: 3vw;}
+    .grid { display: grid; grid-template-rows: 2rem;
+      .grid-item1, .grid-item2 { display: grid; grid-template-columns: repeat(6, 1fr); column-gap: .5rem;}
+    
+    }  
+  }
+  .flex3 { flex: 1;   
+  }
 }

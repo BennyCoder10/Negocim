@@ -212,7 +212,7 @@ header .change .bar3 {
 footer {
   text-align: center;
   background: #4cb0b2;
-  height: 2.35rem;
+  height: auto;
   line-height: 2.35rem;
 }
 
@@ -411,8 +411,6 @@ a, button {
   }
   header .menu ul li {
     float: none;
-  }
-  header .menu ul li {
     padding: 0 0 .6rem 0;
   }
   header .menu ul li .active:before {
@@ -420,10 +418,13 @@ a, button {
   }
   header .menu ul li a {
     display: inline-block;
-    padding: 1rem .6rem .4rem;
+    width: 100%;
   }
   header .menu ul li a:hover {
     color: white;
+  }
+  header .menu ul li a:before {
+    content: none;
   }
   header .appear {
     -webkit-transform: translateX(0);
@@ -447,7 +448,7 @@ a, button {
     width: 100%;
   }
   .step2 .bottom table tr th, .step2 .bottom table tr td {
-    padding: 1.3rem 1.5vw 0;
+    padding: 1.3rem .5rem 0;
   }
   .step3 .selectors, .step3 .help {
     width: 100%;
@@ -498,9 +499,6 @@ a, button {
 }
 
 @media only screen and (max-width: 770px) {
-  header .menu {
-    top: 63px;
-  }
   #agence .agenceTable tr .left {
     display: none;
   }
@@ -534,6 +532,29 @@ a, button {
     padding-left: 0;
     text-align: center;
   }
+  .simulateur_steps {
+    margin: .3rem;
+  }
+  .simulateur_steps h1, .simulateur_steps h2 {
+    font-size: 1.3rem;
+  }
+  .simulateur_steps .selectors {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    padding: .5rem .5rem 1.5rem;
+  }
+  .simulateur_steps .selectors > div {
+    padding: .3rem;
+    min-width: 250px;
+  }
+  .simulateur_steps .selectors > div:last-child {
+    padding-right: .3rem;
+    max-width: 50%;
+  }
+  .simulateur_steps .selectors .unit span {
+    right: 14px;
+    top: 7px;
+  }
   .step2 .bottom {
     display: block;
   }
@@ -544,6 +565,64 @@ a, button {
   }
   .step2 .bottom table {
     width: auto;
+  }
+  .step2 .selectors > div {
+    text-align: left;
+  }
+  .step2 .selectors > div label {
+    position: static;
+    display: block;
+    padding: 0 0 .5rem .3rem;
+  }
+  .step2 .selectors > div:last-child {
+    text-align: right;
+    margin-top: 1rem;
+  }
+  .step2 .selectors > div:last-child .calculer {
+    width: 100%;
+    margin-left: 0;
+  }
+  .step2 .selectors .unit span {
+    right: 16px;
+    top: 32px;
+  }
+  .step3 .selectors > div {
+    text-align: left;
+  }
+  .step3 .selectors > div label {
+    position: static;
+    display: block;
+    padding: 0 0 .5rem .3rem;
+  }
+  .step3 .selectors > div:last-child {
+    text-align: right;
+    margin-top: 1.4rem;
+  }
+  .step3 .selectors > div:last-child .calculer {
+    width: 100%;
+    margin-left: 0;
+  }
+  .step3 .selectors .unit span {
+    right: 16px;
+    top: 32px;
+  }
+  .step3 .help {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 0 .7rem;
+  }
+  .step3 .help div span br {
+    display: none;
+  }
+  .step3 .help button {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+  .step3 .help > div span:first-child {
+    font-size: .9rem;
   }
 }
 
@@ -567,12 +646,11 @@ a, button {
     border: none;
   }
   #terrains #float-left ul li {
-    margin: 1rem 2rem;
     text-align: center;
+    margin: 1rem 2rem;
     background-color: #87c133;
-    border-radius: 0 .5rem;
-    -webkit-transition: all .5s ease;
-    transition: all .5s ease;
+    border: 2px solid #87c133;
+    border-radius: 0 5rem  5rem 0;
   }
   #terrains #float-left ul li a {
     padding: 1rem 0;
@@ -602,7 +680,6 @@ a, button {
   }
   #terrain #sidebar-left h2 {
     text-align: center;
-    background: url(../images/pic_1.jpg) 100%;
     padding: 3rem 0 .5rem;
   }
   #terrain #sidebar-left h2 a {
@@ -616,22 +693,43 @@ a, button {
   #terrain #sidebar-left h2:hover a {
     color: #525451;
   }
+  #terrain #sidebar-left .tour {
+    background: url(../images/AgenceTours.jpg) 0 46%/100%;
+  }
+  #terrain #sidebar-left .bordeaux {
+    background: url(../images/Agencebordeaux-4.jpg) 0 46%/100%;
+  }
+  #terrain #sidebar-left .vannes {
+    background: url(../images/AgenceVannes.jpg) 0 35%/100%;
+  }
+  #terrain #sidebar-left .orleanais {
+    background: url(../images/AgenceOrleans.jpg) 0 46%/100%;
+  }
   #terrain #sidebar-left .sidebar-menu {
     overflow-y: visible;
     height: auto;
     margin-right: 0;
-    margin-top: 1.5rem;
+    margin-top: 0;
   }
   #terrain #sidebar-left .sidebar-menu .dropdown-btn {
+    font-size: 1.2rem;
     text-align: center;
     color: #525451;
     background: white;
+    padding: 1rem 0;
+    -webkit-transition: none;
+    transition: none;
+  }
+  #terrain #sidebar-left .sidebar-menu .active {
+    font-weight: 600;
   }
   #terrain #sidebar-left .sidebar-menu .dropdown-content {
     text-align: center;
+    padding: 0;
     padding-bottom: 1.5rem;
   }
   #terrain #sidebar-left .sidebar-menu .dropdown-content ul li a span {
+    font-size: .9rem;
     color: #525451;
     background: white;
   }
@@ -678,6 +776,89 @@ a, button {
   }
   #simulateur .btm-txt {
     padding: .8rem 0;
+  }
+  .simulateur_steps .selectors > div:last-child {
+    max-width: none;
+  }
+  .step2 .bottom .montant {
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+  .step2 .bottom .montant span {
+    margin-right: 0;
+  }
+  .step3 .help button {
+    width: 100%;
+  }
+  .step3 .help > div {
+    padding-top: 1rem;
+  }
+  .step3 .help > div span:first-child {
+    padding-right: .5rem !important;
+  }
+  .step4 .summary table th, .step4 .summary table td {
+    font-size: .9rem;
+  }
+  .step4 .final_price > div {
+    display: block;
+    margin-top: 1rem;
+    margin-right: 0;
+  }
+  .step4 .final_price > div > div {
+    width: 60%;
+    margin: 0 auto;
+  }
+  .simulateur_steps .flex {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 0;
+  }
+  .simulateur_steps .flex > div {
+    width: 100%;
+  }
+  .simulateur_steps .flex > div h4 {
+    font-size: .8rem;
+  }
+  .simulateur_steps .flex .flex1 {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+  }
+  .simulateur_steps .flex .flex2 {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    margin-bottom: 1rem;
+  }
+  .simulateur_steps .flex .flex2 h4 {
+    text-align: center;
+    padding-left: 0;
+  }
+  .simulateur_steps .flex .flex2 .grid {
+    display: -ms-grid;
+    display: grid;
+  }
+  .simulateur_steps .flex .flex2 .grid .grid-item1, .simulateur_steps .flex .flex2 .grid .grid-item2 {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[6];
+        grid-template-columns: repeat(6, 1fr);
+    -webkit-column-gap: .5rem;
+            column-gap: .5rem;
+  }
+  .simulateur_steps .flex .flex3 {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+  }
+  footer p a {
+    display: block;
+  }
+  footer p #legales {
+    margin-right: 0;
   }
   #qui_sommes-nous .text .text_right article h3 {
     font-size: 1.2rem;

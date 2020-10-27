@@ -15,6 +15,7 @@
             &:hover { color: $text-dark;}    
             &:focus { outline: none; }  // remove the button selector border
         }
+        .active { color: $text-dark;}
         .dropdown-content { display: none; padding: 0 2.45rem .3rem; animation: slowAppear .3s ease-in-out;
           ul li {
             a {
@@ -47,3 +48,4 @@
     }
   }
 }
+

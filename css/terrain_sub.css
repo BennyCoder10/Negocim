@@ -399,6 +399,10 @@ a, button {
   outline: none;
 }
 
+#terrain #sidebar-left .sidebar-menu .active {
+  color: #525451;
+}
+
 #terrain #sidebar-left .sidebar-menu .dropdown-content {
   display: none;
   padding: 0 2.45rem .3rem;

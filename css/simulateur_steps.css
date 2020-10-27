@@ -212,7 +212,7 @@ header .change .bar3 {
 footer {
   text-align: center;
   background: #4cb0b2;
-  height: 2.35rem;
+  height: auto;
   line-height: 2.35rem;
 }
 
@@ -949,4 +949,64 @@ a, button {
 
 .simulateur_steps .selectors > div input[type="number"] {
   padding: 0 1rem 0 3px;
+}
+
+.simulateur_steps .flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: auto;
+  font-size: .6rem;
+  padding: 1rem;
+}
+
+.simulateur_steps .flex > div {
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.simulateur_steps .flex > div h4, .simulateur_steps .flex > div p {
+  margin: 1rem 0;
+}
+
+.simulateur_steps .flex .flex1 {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.simulateur_steps .flex .flex2 {
+  -webkit-box-flex: 8;
+      -ms-flex: 8;
+          flex: 8;
+}
+
+.simulateur_steps .flex .flex2 h4 {
+  text-align: left;
+  padding-left: 3vw;
+}
+
+.simulateur_steps .flex .flex2 .grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 2rem;
+      grid-template-rows: 2rem;
+}
+
+.simulateur_steps .flex .flex2 .grid .grid-item1, .simulateur_steps .flex .flex2 .grid .grid-item2 {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[6];
+      grid-template-columns: repeat(6, 1fr);
+  -webkit-column-gap: .5rem;
+          column-gap: .5rem;
+}
+
+.simulateur_steps .flex .flex3 {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
 }

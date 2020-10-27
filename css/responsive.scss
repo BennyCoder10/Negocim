@@ -59,23 +59,23 @@
       background-color: rgba(0, 0, 0, 0.9); /* Black w/ opacity */
       transition: transform .5s ease-in-out;
       transform: translateX(100%);
+      
       ul { margin-left: 1rem;
-        li { float: none;}
-      }
-      ul li { padding: 0 0 .6rem 0;
-        .active:before { width: none;}
-        a { display: inline-block; padding: 1rem .6rem .4rem;
-          &:hover { color: white;}        
+        li { float: none; padding: 0 0 .6rem 0;
+          .active:before { width: none;}
+          a { display: inline-block; 
+            width: 100%;
+            // padding: 1rem .6rem .4rem;
+            &:hover { color: white; }    
+            &:before { content: none;}    
+          }
         }
-      }
+      }  
     }    
 
-    .appear { 
-      transform: translateX(0);            
-    }
+    .appear { transform: translateX(0);}
 
     #menu-toggle { display: inline-block;}      
-   
   }
 
   // OVERLAY WHEN MENU APPEARS
@@ -88,10 +88,10 @@
   .steps > div { margin: 0; width: 100%;}
 
   .step2 .bottom table tr th, .step2 .bottom table tr td {
-    padding: 1.3rem 1.5vw 0;
+    padding: 1.3rem .5rem 0;
   }
-  .step3 .selectors, .step3 .help { width: 100%;
-  }
+  
+  .step3 .selectors, .step3 .help { width: 100%;}
 
   // TERRAINS
   #terrains {
@@ -129,8 +129,6 @@
 // 4. SMALL DEVICES (SMARTPHONES) 
 //
 @media only screen and (max-width: 770px) {
-  // GENERAL
-  header .menu {top: 63px;}
 
   // VENDES & CONTACT_SUB
   #agence .agenceTable tr .left { display: none;}
@@ -146,19 +144,61 @@
   #simulateur .choice .left { background-position: 44% 75%; background-size:  129%;}
   #simulateur .choice .right { background-position: 19% 54%; background-size:  129%;}
   #simulateur .choice > div div p { padding-left: 0; text-align: center;}
+
+
   
+  // SIMULATEUR STEPS
+  .simulateur_steps { margin: .3rem;
+    h1, h2 { font-size: 1.3rem;}
+    .selectors { flex-wrap: wrap; padding: .5rem .5rem 1.5rem;
+      > div { padding: .3rem; min-width: 250px;
+        &:last-child { padding-right: .3rem; max-width: 50%; }
+      }
+      .unit span { right: 14px; top: 7px;}
+    }      
+  }
+
   .step2 .bottom { display: block;}
   .step2 .bottom .montant { justify-content: center;}
   .step2 .bottom table { width: auto;}  
+
+  .step2 .selectors {
+    > div { text-align: left;
+      label { position: static; display: block; padding: 0 0 .5rem .3rem;}
+      &:last-child { text-align: right; margin-top: 1rem;
+        .calculer { width: 100%; margin-left: 0;}
+      }
+    }
+    .unit span { right: 16px; top: 32px;}  
+  }
+
+  .step3 .selectors {
+    > div { text-align: left;
+      label { position: static; display: block; padding: 0 0 .5rem .3rem;}
+      &:last-child { text-align: right; margin-top: 1.4rem;
+        .calculer { width: 100%; margin-left: 0;}
+      }
+    }
+    .unit span { right: 16px; top: 32px;}  
+  }
+
+  .step3 .help { flex-direction: column; padding: 0 .7rem;
+    div span br {display: none;}
+    button { width: fit-content;}    
+    > div span:first-child { font-size: .9rem;}
+  }
 }
+
 
 
 @media only screen and (max-width: 560px) {
   // TERRAINS 
   #terrains .main-right { display: none;}
+
+  //ORIGINAL Li BACKGROUND ($SUB COLOR)
   #terrains #float-left { height: 100%;
     ul { flex-direction: column; height: 100%; margin: 0; justify-content: center; border: none;
-      li { margin: 1rem 2rem; text-align: center; background-color: $sub; border-radius: 0 .5rem; @include transition;
+      li { text-align: center; margin: 1rem 2rem; background-color: $sub; border: 2px solid $sub; border-radius: 0 5rem  5rem 0; 
         a { padding: 1rem 0;
           i {display: none;}
           span { font-size: 1.2rem; color: white;}
@@ -170,6 +210,26 @@
     }
   }
 
+  // Li BACKGROUND USING IMAGES
+  // #terrains #float-left { height: 100%;
+  //   ul { flex-direction: column; height: 100%; margin: 0; justify-content: center; border: none;
+  //     li { text-align: center; margin: .7rem 1rem; background-color: $sub; border: 2px solid $sub; border-radius: 0 5rem  5rem 0; 
+  //       a { padding: 1.5rem 0;
+  //         i {display: none;}
+  //         span { font-size: 1.5rem; color: white; padding: 0 1rem; border-radius: .5rem; background-color: #87c133f5;}
+  //       }
+  //       &:hover { background-color: white; @include transition;
+  //         a i span { color: $text-dark; }
+  //       }
+  //     }
+  //   .tour { background: url(../images/AgenceTours.jpg) 0 63% / 100%;}
+  //   .bordeaux { background: url(../images/Agencebordeaux-4.jpg) 0 46% / 100%;}
+  //   .vannes { background: url(../images/AgenceVannes.jpg) 0 27% / 100%;}
+  //   .orleanais { background: url(../images/AgenceOrleans.jpg) 0 46% / 100%;}
+  
+  //   }
+  // }
+
   // TERRAINS SUB
   // #terrain #sidebar-left .sidebar-menu { 
   //   margin-right: 0rem;
@@ -178,21 +238,29 @@
     // TERRAINS_SUB
  #terrain #sidebar-left { width: 100%; position: static; background: white; border: none;
   animation: fadeInRight .3s ease-in;
-   h2 { text-align: center; background: url(../images/pic_1.jpg) 100%; padding: 3rem 0 .5rem;
+   h2 { text-align: center; padding: 3rem 0 .5rem;
      a { font-size: 1.5rem; font-weight: bold; color: $text; background: $sub; border-radius: 20px; padding: 0 1rem;}
      &:hover a { color: $text-dark;}  
    }
-   .sidebar-menu { overflow-y: visible; height: auto; margin-right: 0; margin-top: 1.5rem;
 
-     .dropdown-btn { text-align: center; color: $text-dark; background: white;
-     }
-     .dropdown-content { text-align: center; padding-bottom: 1.5rem;
+   // H2 BACKGROUND IMAGES
+   .tour { background: url(../images/AgenceTours.jpg) 0 46% / 100%;}
+   .bordeaux { background: url(../images/Agencebordeaux-4.jpg) 0 46% / 100%;}
+   .vannes { background: url(../images/AgenceVannes.jpg) 0 35% / 100%;}
+   .orleanais { background: url(../images/AgenceOrleans.jpg) 0 46% / 100%;}
+   //
+
+   .sidebar-menu { overflow-y: visible; height: auto; margin-right: 0; margin-top: 0;
+     .dropdown-btn { font-size: 1.2rem; text-align: center; color: $text-dark; background: white; padding: 1rem 0; transition: none;}
+     .active { font-weight: 600;}
+     .dropdown-content { text-align: center; padding: 0; padding-bottom: 1.5rem;           
        ul li {
          a {
-           span{ color: $text-dark; background: white;  }  
-         }}}
-
-   }    
+           span{ font-size: .9rem; color: $text-dark; background: white;  }  
+         }
+       }
+     }
+   }
    .goback { margin: 2rem auto .5rem; position: static;}
  }
 
@@ -226,6 +294,63 @@
   #simulateur .choice .left { background-position: 0% 75%; background-size:  100%;}
   #simulateur .choice .right { background-position: 0% 54%; background-size:  100%;}
   #simulateur .btm-txt { padding: .8rem 0;}
+
+  .simulateur_steps { 
+    .selectors { 
+      > div { 
+        &:last-child { max-width: none;}
+      }
+    }      
+  }
+
+  .step2 .bottom .montant { justify-content: space-evenly;
+    span { margin-right: 0; }
+  } 
+
+  .step3 .help { 
+    button { width: 100%;}
+    > div { padding-top: 1rem;
+      span:first-child { padding-right: .5rem !important;}
+    }
+  }
+
+
+  .step4 {
+    .summary {
+      table th, table td { font-size: .9rem;}
+    }
+    .final_price > div { display: block; margin-top: 1rem; margin-right: 0;
+      > div {  width: 60%;  margin: 0 auto;}
+    }  
+  }
+
+  .simulateur_steps .flex { 
+    flex-direction: column; padding: 0;
+    > div { width: 100%;
+      h4 { font-size: .8rem;}
+    }
+    .flex1 { flex: 1; 
+    }
+    .flex2 { flex: 1;  margin-bottom: 1rem;
+      h4 { text-align: center; padding-left: 0;}
+      .grid { display: grid;
+        .grid-item1, .grid-item2 { display: grid; grid-template-columns: repeat(6, 1fr); column-gap: .5rem;}
+      }  
+    }
+    .flex3 { flex: 1;   
+    }
+  }
+
+
+  footer { 
+    // height: 100%;
+    p { 
+      a { display: block;}
+      #legales { margin-right: 0;}
+    }
+  }
+
+
   // QUI SOMMES NOUS
   #qui_sommes-nous .text .text_right article h3 { font-size: 1.2rem;}
 
