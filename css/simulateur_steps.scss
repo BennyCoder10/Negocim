@@ -87,19 +87,19 @@
     }      
   }
 
-  .récapitulatif { width: 80%; margin-top: .8rem;
-    table {
-      th { text-align: left;} 
-      th, td { font-size: .65rem; padding: .5rem 0; }
-      th:nth-child(2) { padding-left: 1.6rem;}
-      th:last-child { text-align: right; padding-left: 5rem;}
-      td:last-child { text-align: right; padding-left: 5rem;}
-      td:first-child { text-align: left;}
-      .result { 
-        td i { font-size: 1.5rem; color: $bars;}
-      }
-    }
-  }
+  // .récapitulatif { width: 80%; margin-top: .8rem;
+  //   table {
+  //     th { text-align: left;} 
+  //     th, td { font-size: .65rem; padding: .5rem 0; }
+  //     th:nth-child(2) { padding-left: 1.6rem;}
+  //     th:last-child { text-align: right; padding-left: 5rem;}
+  //     td:last-child { text-align: right; padding-left: 5rem;}
+  //     td:first-child { text-align: left;}
+  //     .result { 
+  //       td i { font-size: 1.5rem; color: $bars;}
+  //     }
+  //   }
+  // }
 
 
 
@@ -223,9 +223,9 @@
 
   }
 
-  h2:nth-of-type(2) { padding-left: 3.5em;}
+  // h2:nth-of-type(2) { padding-left: 3.5em;}
 
-  .récapitulatif {margin: .8rem auto 0.2555rem;}
+  // .récapitulatif {margin: .8rem auto 0.2555rem;}
 
   > p { font-size: .65rem; padding-top: 1rem;}
 
@@ -274,13 +274,13 @@
 
 
 .simulateur_steps .flex { 
-  display: flex; flex-wrap: wrap; width: auto; font-size: .6rem; padding: 1rem;
+  display: flex; flex-wrap: wrap; width: auto; font-size: .6rem; padding: 1rem 0;
   > div { align-items: flex-start;
     h4, p { margin: 1rem 0;}
   }
   .flex1 { flex: 1;
   }
-  .flex2 { flex: 8;
+  .flex2 { flex: 8; margin: 0 2rem;
     h4 { text-align: left; padding-left: 3vw;}
     .grid { display: grid; grid-template-rows: 2rem;
       .grid-item1, .grid-item2 { display: grid; grid-template-columns: repeat(6, 1fr); column-gap: .5rem;}

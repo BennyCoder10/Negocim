@@ -1,4 +1,3 @@
-@charset "UTF-8";
 html {
   font-size: 20px;
 }
@@ -520,43 +519,6 @@ a, button {
   -moz-appearance: textfield;
 }
 
-.simulateur_steps .récapitulatif {
-  width: 80%;
-  margin-top: .8rem;
-}
-
-.simulateur_steps .récapitulatif table th {
-  text-align: left;
-}
-
-.simulateur_steps .récapitulatif table th, .simulateur_steps .récapitulatif table td {
-  font-size: .65rem;
-  padding: .5rem 0;
-}
-
-.simulateur_steps .récapitulatif table th:nth-child(2) {
-  padding-left: 1.6rem;
-}
-
-.simulateur_steps .récapitulatif table th:last-child {
-  text-align: right;
-  padding-left: 5rem;
-}
-
-.simulateur_steps .récapitulatif table td:last-child {
-  text-align: right;
-  padding-left: 5rem;
-}
-
-.simulateur_steps .récapitulatif table td:first-child {
-  text-align: left;
-}
-
-.simulateur_steps .récapitulatif table .result td i {
-  font-size: 1.5rem;
-  color: #707070;
-}
-
 .simulateur_steps .btn_btm button {
   position: absolute;
   bottom: 0;
@@ -852,14 +814,6 @@ a, button {
   color: #87c133;
 }
 
-.step3 h2:nth-of-type(2) {
-  padding-left: 3.5em;
-}
-
-.step3 .récapitulatif {
-  margin: .8rem auto 0.2555rem;
-}
-
 .step3 > p {
   font-size: .65rem;
   padding-top: 1rem;
@@ -959,7 +913,7 @@ a, button {
       flex-wrap: wrap;
   width: auto;
   font-size: .6rem;
-  padding: 1rem;
+  padding: 1rem 0;
 }
 
 .simulateur_steps .flex > div {
@@ -982,6 +936,7 @@ a, button {
   -webkit-box-flex: 8;
       -ms-flex: 8;
           flex: 8;
+  margin: 0 2rem;
 }
 
 .simulateur_steps .flex .flex2 h4 {

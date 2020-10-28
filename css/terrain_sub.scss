@@ -10,7 +10,7 @@
         a { font-size: 1.9rem; font-weight: bold; color: white;}
         &:hover a { color: $text-dark;}  
       }
-      .sidebar-menu { overflow-y: auto; height: 65%; margin-right: .5rem; margin-bottom: 4rem;  
+      .sidebar-menu { overflow-y: auto; min-height: 30%; max-height: 65%; margin-right: .5rem; margin-bottom: 4rem;  
         .dropdown-btn { display: block; width: 100%; text-align: left; font-size: 1rem; cursor: pointer; color: white; background: $main; padding: .5rem 1rem .5rem 1.4rem;
             &:hover { color: $text-dark;}    
             &:focus { outline: none; }  // remove the button selector border

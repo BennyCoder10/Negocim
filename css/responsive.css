@@ -1,4 +1,3 @@
-@charset "UTF-8";
 html {
   font-size: 20px;
 }
@@ -426,6 +425,9 @@ a, button {
   header .menu ul li a:before {
     content: none;
   }
+  header .menu ul li:last-child {
+    margin-bottom: 70px;
+  }
   header .appear {
     -webkit-transform: translateX(0);
             transform: translateX(0);
@@ -439,9 +441,6 @@ a, button {
   .simulateur_steps {
     margin: 1.2rem 1rem;
     padding-bottom: 3rem;
-  }
-  .simulateur_steps .récapitulatif {
-    width: 100%;
   }
   .steps > div {
     margin: 0;
@@ -477,6 +476,9 @@ a, button {
   }
   #terrain #sidebar-left {
     width: 12rem;
+  }
+  #terrain #sidebar-left h2 a {
+    font-size: 1.5rem;
   }
   #terrain .main-right {
     width: calc(100% - 12rem);
@@ -816,26 +818,31 @@ a, button {
             flex-direction: column;
     padding: 0;
   }
-  .simulateur_steps .flex > div {
-    width: 100%;
-  }
   .simulateur_steps .flex > div h4 {
     font-size: .8rem;
+    padding: 0 20px;
+  }
+  .simulateur_steps .flex > div h4, .simulateur_steps .flex > div p {
+    display: inline-block;
   }
   .simulateur_steps .flex .flex1 {
     -webkit-box-flex: 1;
         -ms-flex: 1;
             flex: 1;
+    -ms-flex-item-align: start;
+        align-self: flex-start;
   }
   .simulateur_steps .flex .flex2 {
     -webkit-box-flex: 1;
         -ms-flex: 1;
             flex: 1;
+    margin: 0;
     margin-bottom: 1rem;
   }
   .simulateur_steps .flex .flex2 h4 {
-    text-align: center;
-    padding-left: 0;
+    display: block;
+    text-align: left;
+    padding-left: 20px;
   }
   .simulateur_steps .flex .flex2 .grid {
     display: -ms-grid;
@@ -853,6 +860,8 @@ a, button {
     -webkit-box-flex: 1;
         -ms-flex: 1;
             flex: 1;
+    -ms-flex-item-align: start;
+        align-self: flex-start;
   }
   footer p a {
     display: block;

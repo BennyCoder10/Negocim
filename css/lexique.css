@@ -211,7 +211,7 @@ header .change .bar3 {
 footer {
   text-align: center;
   background: #4cb0b2;
-  height: 2.35rem;
+  height: auto;
   line-height: 2.35rem;
 }
 
