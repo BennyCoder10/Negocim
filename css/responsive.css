@@ -648,29 +648,60 @@ a, button {
     border: none;
   }
   #terrains #float-left ul li {
+    position: relative;
     text-align: center;
-    margin: 1rem 2rem;
-    background-color: #87c133;
+    margin: .7rem 1rem;
+    background-color: white;
     border: 2px solid #87c133;
-    border-radius: 0 5rem  5rem 0;
+    border-radius: 2px;
   }
   #terrains #float-left ul li a {
-    padding: 1rem 0;
+    padding: 1.5rem 0;
+    z-index: 2;
+    position: relative;
   }
   #terrains #float-left ul li a i {
     display: none;
   }
   #terrains #float-left ul li a span {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     color: white;
+    padding: 0 1rem;
+    border-radius: .5rem;
+    background-color: #87c133;
+    border: 2px solid #87c133;
   }
   #terrains #float-left ul li:hover {
-    background-color: white;
     -webkit-transition: all .5s ease;
     transition: all .5s ease;
   }
-  #terrains #float-left ul li:hover a i span {
-    color: #525451;
+  #terrains #float-left ul li:hover a span {
+    -webkit-transition: all .5s ease;
+    transition: all .5s ease;
+    color: #87c133;
+    background-color: white;
+  }
+  #terrains #float-left ul li:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: .5;
+    z-index: 1;
+  }
+  #terrains #float-left ul .tour:before {
+    background: url(../images/AgenceTours.jpg) 0 63%/100%;
+  }
+  #terrains #float-left ul .bordeaux:before {
+    background: url(../images/Agencebordeaux-4.jpg) 0 46%/100%;
+  }
+  #terrains #float-left ul .vannes:before {
+    background: url(../images/AgenceVannes.jpg) 0 27%/100%;
+  }
+  #terrains #float-left ul .orleanais:before {
+    background: url(../images/AgenceOrleans.jpg) 0 46%/100%;
   }
   #terrain #sidebar-left {
     width: 100%;

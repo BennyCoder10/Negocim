@@ -40,7 +40,7 @@
 
 
   // SPACE ON THE RIGHT FOR MAP IMAGE & GOOGLE MAP API
-  .main-right { float: right; width: calc(100% - 14rem); text-align: center; height: 100%; overflow: auto;
+  .main-right { float: right; width: calc(100% - 14rem); text-align: center; min-height: 20rem; height: 100%; overflow: auto;
     .map { height: 100%; width: 100%; padding: 5px; position: relative;
       img { height: 100%; }
       p { position: absolute; left: 0; right: 0; bottom: 1.5rem; font-size: .8rem; font-weight: bold; padding: 0 1rem;} 

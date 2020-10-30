@@ -486,6 +486,7 @@ a, button {
   float: right;
   width: calc(100% - 14rem);
   text-align: center;
+  min-height: 20rem;
   height: 100%;
   overflow: auto;
 }
