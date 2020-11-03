@@ -138,45 +138,11 @@
             .number { margin: -0.4rem 0; font-weight: bold;}
           }
         }
-        
-
-        // INDIVIDUAL OPTION BUTTONS
-        // #lot1868  { left: 389px; top: 255px;}
-
       }
     }   
     
     //  LOT OPTION DETAIL PAGES
-    .lot_option { margin: .5rem;
-
-      // original
-      // .wrapper { background-color: #e0e0e0;
-      //   .up { display: flex;
-      //     .lot_info {  width: 100%; border: 1px solid $bars; margin: .5rem; background-color: white;
-      //       header { background-color: $sub; padding: .5rem 0;
-      //         * { color: white;}
-      //         p { font-size: .7rem;}
-      //       }
-      //       .content { display: grid; grid-template-rows: auto;
-      //         p { text-align: left; position: relative; margin: .3rem; font-size: .7rem;
-      //           span { position: absolute; right: 0; top: 50%; transform: translateY(-50%); text-align: right;
-      //             > span { font-size: .6rem; font-style: italic; line-height: 1;}
-      //           }
-      //         }           
-      //       }
-      //     }
-      //     .lot_image { margin: .5rem; margin-left: 0;
-      //       img {border: 1px solid $bars;}
-      //       button { position: relative; top: .7rem;
-      //         margin: 0 auto; background: #87c133; border-radius: 41rem; padding: .3rem 1rem;
-      //         a { font-size: .9rem; color: white;}
-      //       }
-      //     }
-      //   }
-      //   .btm { font-size: .8rem; padding: .5rem; border: 1px solid $bars; margin: .5rem; margin-top: 0; background-color: white;}
-      // } 
-
-      // version 1
+    .lot_option { margin: .5rem;     
       .wrapper { background-color: #e0e0e0;
         .up { display: flex;
           .lot_info {  width: 100%; border: 1px solid $bars; margin: .5rem; background-color: white;
