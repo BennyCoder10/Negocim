@@ -82,11 +82,11 @@ header { background: $main;
       &:nth-child(1) i { color: #2e60ff;}
       &:nth-child(2) i { color: #929d3b;}
       &:nth-child(3) i { color: #149700;}
-      &:nth-child(4) i { color: #930000;}    
+      &:nth-child(4) i { color: #930000;} 
     
       a { display: block; padding: .2rem 0 .8rem; border: none;
         i { padding-right: .55rem; font-size: 1rem;}
-        span { font-size: .9rem; font-weight: bold;}
+        span { font-size: 1rem; font-weight: bold;}
         &:hover span { color: $text-hovered;}
       }
     }

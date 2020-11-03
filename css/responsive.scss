@@ -267,7 +267,7 @@
   // Li BACKGROUND USING IMAGES
   #terrains #float-left { height: 100%;
     ul { flex-direction: column; height: 100%; margin: 0; justify-content: center; border: none;
-      li { position: relative; text-align: center; margin: .7rem 1rem; background-color: white; border: 2px solid $sub; border-radius: 2px;
+      li { position: relative; text-align: center; margin: .7rem 1rem; background-color: white; border: 2px solid $main; border-radius: 2px;
         a { padding: 1.5rem 0; z-index: 2; position: relative;
           i {display: none;}
           span { font-size: 1.5rem; color: white; padding: 0 1rem; border-radius: .5rem; background-color: $main; border: 2px solid $main;}
