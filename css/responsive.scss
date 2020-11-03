@@ -32,7 +32,7 @@
   }
   
   // TERRAINS
-  #terrains .main-right .map img { text-align: right;}
+  #terrains .main-right .map img { text-align: right;}  
 
   #agence-bordeaux-1 div .contact .services { font-size: 1.6vw;}
 }
@@ -111,15 +111,18 @@
   }
 
   // TERRAINS SUBS
-  #terrain #sidebar-left { width: 12rem;}
-  #terrain #sidebar-left h2 a { font-size: 1.5rem;}
-  #terrain .main-right { width: calc(100% - 12rem);}
+  #terrain, #terrain_presentation {
+    #sidebar-left { width: 12rem;
+    h2 a { font-size: 1.5rem;}
+    }
+    .main-right { width: calc(100% - 12rem);}
+  }
 
+  #terrain_plan .main-right .lot_option .wrapper .up .lot_info header h2 { font-size: 1.4rem;}
  
-
-  main #sidebar-left { width: 12rem;}
-  main #sidebar-left h2 a { font-size: 1.75rem;}
-  main .main-right { width: calc(100% - 12rem);}
+  // main #sidebar-left { width: 12rem;}
+  // main #sidebar-left h2 a { font-size: 1.75rem;}
+  // main .main-right { width: calc(100% - 12rem);}
  
   // qui_sommes-nous
   #qui_sommes-nous .text .text_right { width: 75vw;}
@@ -133,6 +136,54 @@
 // 4. SMALL DEVICES (SMARTPHONES) 
 //
 @media only screen and (max-width: 770px) {
+
+  #terrain_presentation, #terrain_plan {
+    .main-right { width: 100%; height: auto; padding: .3rem; padding-top: 4rem;
+      #presentation { padding: 0;
+        > div > p { padding-top: 0;}    
+      }
+    }
+  
+    #sidebar-left { width: 100%; position: static; background: white; border: none; height: auto;
+      animation: fadeInRight .3s ease-in;
+       h2 { text-align: center; padding: 0; position: absolute; top: .5rem; left: 0; right: 0;
+         a { font-size: 1.5rem; font-weight: bold; color: $text; background: $sub; border-radius: 20px; padding: 0 1rem;}
+         &:hover a { color: $text-dark;}  
+       }
+    
+       .sidebar-menu { overflow-y: visible; height: auto; margin-right: 0; margin-top: 0;
+        button { color: white; background-color: $sub; padding: .8rem 1rem; width: 80%; text-align: center; margin: .5rem auto;}
+       
+        #simulaer_un_credit, #imprimer 
+          { margin: .5rem auto; padding: .6rem 1rem; border-radius: 30px; border: 2px solid $sub; background: none; color: $sub;
+            a { color: $sub;}
+          }
+        }
+       .goback { margin: 2rem auto .5rem; position: static;}
+     }   
+   } 
+
+  // TERRAIN_PLAN DU LOTISSEMENT
+  #terrain_plan .main-right { width: 100%;}
+  #terrain_plan .main-right .lot_option .wrapper .up { display: block; margin: .5rem;}
+  #terrain_plan .main-right .lot_option .wrapper .up .lot_info #lot_image_mobile { display: inline-block;}
+  #terrain_plan .main-right .lot_option .wrapper .up .lot_image img { display: none;}
+  #terrain_plan .main-right .lot_option .wrapper .up .lot_image button { position: static; padding: .7rem 1.5rem;
+    br { display: none;}
+  }
+  #terrain_plan .main-right .lot_option .wrapper .up .lot_info { margin: 0 auto;}
+  #terrain_plan .main-right .lot_option .wrapper .up .lot_info .content {padding: 1rem 0.5rem;
+    p { text-align: right; padding-right: 50%;
+      span { text-align: left; left: 53%;
+        span { left: 0;}
+      }
+    }
+  }
+
+
+
+
+
 
   // VENDES & CONTACT_SUB
   #agence .agenceTable tr .left { display: none;}
@@ -193,11 +244,10 @@
   }
 }
 
-
-
 @media only screen and (max-width: 560px) {
   // TERRAINS 
-  #terrains .main-right { display: none;}
+  #terrains .main-right {display: none;}
+
 
   //ORIGINAL Li BACKGROUND ($SUB COLOR)
   // #terrains #float-left { height: 100%;
@@ -220,19 +270,19 @@
       li { position: relative; text-align: center; margin: .7rem 1rem; background-color: white; border: 2px solid $sub; border-radius: 2px;
         a { padding: 1.5rem 0; z-index: 2; position: relative;
           i {display: none;}
-          span { font-size: 1.5rem; color: white; padding: 0 1rem; border-radius: .5rem; background-color: $sub; border: 2px solid $sub;}
+          span { font-size: 1.5rem; color: white; padding: 0 1rem; border-radius: .5rem; background-color: $main; border: 2px solid $main;}
         }
         &:hover { @include transition;
-          a span { @include transition; color: $sub; background-color: white;}
+          a span { @include transition; color: $main; background-color: white;}
           
         }
-        &:before { content: ""; position: absolute; top: 0; bottom: 0; left: 0; right: 0; opacity: .5; z-index: 1;}
+        // &:before { content: ""; position: absolute; top: 0; bottom: 0; left: 0; right: 0; opacity: .5; z-index: 1;}
       }
       // SELECTION TABS BACKGROUND IMAGES
-      .tour:before { background: url(../images/AgenceTours.jpg) 0 63% / 100%;}
-      .bordeaux:before { background: url(../images/Agencebordeaux-4.jpg) 0 46% / 100%;}
-      .vannes:before { background: url(../images/AgenceVannes.jpg) 0 27% / 100%;}
-      .orleanais:before { background: url(../images/AgenceOrleans.jpg) 0 46% / 100%;}
+      .tour { background: url(../images/AgenceTours.jpg) 0 63% / 100%;}
+      .bordeaux { background: url(../images/Agencebordeaux-4.jpg) 0 46% / 100%;}
+      .vannes { background: url(../images/AgenceVannes.jpg) 0 27% / 100%;}
+      .orleanais { background: url(../images/AgenceOrleans.jpg) 0 46% / 100%;}
     }      
   } 
 
@@ -241,34 +291,45 @@
   //   margin-right: 0rem;
   // }
 
+  #terrain .main-right {display: none;}
+
     // TERRAINS_SUB
- #terrain #sidebar-left { width: 100%; position: static; background: white; border: none;
-  animation: fadeInRight .3s ease-in;
-   h2 { text-align: center; padding: 3rem 0 .5rem;
-     a { font-size: 1.5rem; font-weight: bold; color: $text; background: $sub; border-radius: 20px; padding: 0 1rem;}
-     &:hover a { color: $text-dark;}  
-   }
-
-   // H2 BACKGROUND IMAGES
-   .tour { background: url(../images/AgenceTours.jpg) 0 46% / 100%;}
-   .bordeaux { background: url(../images/Agencebordeaux-4.jpg) 0 46% / 100%;}
-   .vannes { background: url(../images/AgenceVannes.jpg) 0 35% / 100%;}
-   .orleanais { background: url(../images/AgenceOrleans.jpg) 0 46% / 100%;}
-   //
-
-   .sidebar-menu { overflow-y: visible; height: auto; margin-right: 0; margin-top: 0;
-     .dropdown-btn { font-size: 1.2rem; text-align: center; color: $text-dark; background: white; padding: 1rem 0; transition: none;}
-     .active { font-weight: 600;}
-     .dropdown-content { text-align: center; padding: 0; padding-bottom: 1.5rem;           
-       ul li {
-         a {
-           span{ font-size: .9rem; color: $text-dark; background: white;  }  
+ #terrain {
+  #sidebar-left { width: 100%; position: static; background: white; border: none;
+    animation: fadeInRight .3s ease-in;
+     h2 { text-align: center; padding: 3rem 0 .5rem;
+       a { font-size: 1.5rem; font-weight: bold; color: $text; background: $sub; border-radius: 20px; padding: 0 1rem;}
+       &:hover a { color: $text-dark;}  
+     }
+  
+     // H2 BACKGROUND IMAGES
+     .tour { background: url(../images/AgenceTours.jpg) 0 46% / 100%;}
+     .bordeaux { background: url(../images/Agencebordeaux-4.jpg) 0 46% / 100%;}
+     .vannes { background: url(../images/AgenceVannes.jpg) 0 35% / 100%;}
+     .orleanais { background: url(../images/AgenceOrleans.jpg) 0 46% / 100%;}
+     //
+  
+     .sidebar-menu { overflow-y: visible; height: auto; margin-right: 0; margin-top: 0;
+       .dropdown-btn { font-size: 1.2rem; text-align: center; color: $text-dark; background: white; padding: 1rem 0; transition: none;}
+       .active { font-weight: 600;}
+       .dropdown-content { text-align: center; padding: 0; padding-bottom: 1.5rem;           
+         ul li {
+           a {
+             span{ font-size: .9rem; color: $text-dark; background: white;  }  
+           }
          }
        }
      }
-   }
-   .goback { margin: 2rem auto .5rem; position: static;}
+     .goback { margin: 2rem auto .5rem; position: static;}
+   }   
  }
+ 
+ #terrain_plan .main-right .lot_option .wrapper .up .lot_info #lot_image_mobile { width: 70%;}
+ #terrain_plan .main-right #lotissement_right .plan .plan_img { width: 539px; height: 630px;}
+
+
+ #terrain_presentation #sidebar-left .sidebar-menu button, 
+ #terrain_plan #sidebar-left .sidebar-menu button { width: 100%; }
 
   // VENDES
   main .agencies { width: 100%; border-bottom: 5px solid white;
@@ -287,12 +348,6 @@
   }
   // #contact .left { display: none;}
   // #contact .right { float: none; width: 100%;}
-
- 
-
-
-  main .main-right { display: none;}
-
 
   // SIMULATEUR
   #simulateur .choice > div { width: 100%; height: 50vw; border: 1px solid $bars; margin-bottom: 5px;}

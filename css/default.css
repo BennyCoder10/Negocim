@@ -73,6 +73,14 @@ select {
   background: #fff;
 }
 
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background: url(../images/dropdown.png) right/20px no-repeat #fff;
+  padding-right: 20px;
+}
+
 input[type=tel],
 input[type=time],
 input[type=text],

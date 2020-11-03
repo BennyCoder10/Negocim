@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Negocim</title>
+
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+  <link rel="stylesheet" href="css/default.css">
+  <link rel="stylesheet" href="css/terrain_sub.css">
+  <link rel="stylesheet" href="css/responsive.css">
+
+</head>
+
+<body>
+  <div class="wrapper">
+    <header class="clear">
+      <h1><a href="index.html"><img src="images/main_logo.jpg" alt="Negocim logo"><span class="hide">Negocim</span></a></h1>
+      <h2 class="hide">menu</h2>
+      <nav class="menu" id="menu">
+        <ul>
+          <li><a href="index.html" class="active">Terrains</a></li>
+          <li><a href="vendez.html">Vendez votre terrain</a></li>
+          <li><a href="simulateur.html">Simulateur de crédit</a></li>
+          <li><a href="qui_sommes_nous.html">Qui sommes-nous</a></li>
+          <li><a href="contact.html">Contactez-nous</a></li>
+          <li><a href="lexique.html">Lexique</a></li>            
+        </ul>
+      </nav>
+      <div id="menu-toggle" onclick="menuToggle(this)">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+      </div>
+    </header>
+  
+    <main>
+      <div class="main-right">
+        <div class="map" id="lotissement">
+          <h3>Commune de Donnery</h3>
+          <h2><i>Le Clos Canard</i></h2>
+
+          <div class="row clear">
+            <div class="column">
+              <img src="images/lotissement/photo_414.jpg" onclick="openModal();currentSlide(1)">
+            </div>
+            <div class="column">
+              <img src="images/lotissement/photo_415.jpg" onclick="openModal();currentSlide(2)">
+            </div>       
+          </div>
+
+          <!-- The Modal/Lightbox -->
+          <div id="myModal" class="modal">
+            <div class="modal-content" id="modal-content">
+              <!-- CLOSE BUTTON -->
+              <span class="close cursor" onclick="closeModal()"><i class="xi-close-circle-o"></i></span>
+
+              <div>
+                <img src="images/lotissement/photo_414.jpg" class="mySlides">              
+                <img src="images/lotissement/photo_415.jpg" class="mySlides">
+              </div>
+
+              <!--  PREV, NEXT BUTTONS -->
+              <span id="arrow" class="arrow arrow_prev" onclick="plusSlides(-1)">
+                <a class="prev"><i class="xi-angle-left"></i></a>
+              </span>
+              <span id="arrow" class="arrow arrow_next" onclick="plusSlides(1)">
+                <a class="next"><i class="xi-angle-right"></i></a>
+              </span>                           
+            </div>
+          </div>
+          <!-- MODAL END -->
+         
+          <div>
+            <p>
+              A 500 mètres des forêts, à 13 Km de bordeaux,  ce lotissement vous propose des terrains à bâtir entièrement viabilisés face au bassin de Grimoine dans un environnement maîtrisé.
+            </p>
+            <p>
+              Petit lotissement destiné à rester privé, ces lots, libres de constructeur, ont la surface idéale pour la construction de votre résidence principale.
+            </p>                             
+          </div>
+        </div>
+      </div>
+
+      <div id="sidebar-left">
+        <h2><a href="terrain_sudouest.html">Le Sud-Ouest</a></h2>
+        
+        <div class="sidebar-menu">
+          <button id="presentation" onclick="window.location='terrain_sudouest_sub_detail.html'">Présentation</button>
+          <button id="plan_du_lotissement">Plan du lotissement</button>
+          <button id="grille_de_prix">Grille de prix</button>
+          <button id="documents">Documents</button>
+          <button id="simulaer_un_credit"><a href="simulateur_steps.html">Simuler un crédit</a></button>
+          <button id="poser_une_option">Poser une option</button>
+          <button id="itineraire">Itinéraire</button>
+          <button id="imprimer" onclick="window.print()">Imprimer cette page</button>         
+
+          <button type="button" id="goback" onclick="goBack()"><i class="xi-angle-left"></i>Retour</button>
+        </div>            
+      </div>
+    </main>
+    
+    <!-- FOOTER AT THE BOTTOM -->
+     <footer>
+      <p><a href="politique.html">Politique de protection des données personnelles</a></p>
+    </footer>  
+  </div>
+ 
+  <script src="js/index.js"></script>
+  <script src="js/terrains.js"></script>
+</body>
+</html>

@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Negocim</title>
+
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+  <link rel="stylesheet" href="css/default.css">
+  <link rel="stylesheet" href="css/terrain_sub.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <style>
+    /* position of the option buttons */
+    #lot1868 { left: 389px; top: 255px;}
+    #lot1869 { left: 380px; top: 385px;}
+    #lot1870 { left: 380px; top: 522px;}
+    #lot1871 { left: 396px; top: 682px;}
+    #lot1872 { left: 278px; top: 685px;}
+    #lot1873 { left: 155px; top: 642px;}
+    #lot1874 { left: 167px; top: 510px;}
+    #lot1875 { left: 167px; top: 386px;}
+    #lot1876 { left: 167px; top: 269px;}
+    #lot1877 { left: 167px; top: 162px;}
+
+
+    @media only screen and (max-width: 560px) {
+      #lot1868 { left: 281px; top: 185px;}
+      #lot1869 { left: 277px; top: 279px;}
+      #lot1870 { left: 277px; top: 375px;}
+      #lot1871 { left: 289px; top: 500px;}
+      #lot1872 { left: 203px; top: 500px;}
+      #lot1873 { left: 109px; top: 471px;}
+      #lot1874 { left: 119px; top: 372px;}
+      #lot1875 { left: 119px; top: 287px;}
+      #lot1876 { left: 119px; top: 199px;}
+      #lot1877 { left: 119px; top: 114px;}
+    }
+
+  </style>
+
+</head>
+
+<body>
+  <div class="wrapper">
+    <header class="clear">
+      <h1><a href="index.html"><img src="images/main_logo.jpg" alt="Negocim logo"><span class="hide">Negocim</span></a></h1>
+      <h2 class="hide">menu</h2>
+      <nav class="menu" id="menu">
+        <ul>
+          <li><a href="index.html" class="active">Terrains</a></li>
+          <li><a href="vendez.html">Vendez votre terrain</a></li>
+          <li><a href="simulateur.html">Simulateur de crédit</a></li>
+          <li><a href="qui_sommes_nous.html">Qui sommes-nous</a></li>
+          <li><a href="contact.html">Contactez-nous</a></li>
+          <li><a href="lexique.html">Lexique</a></li>            
+        </ul>
+      </nav>
+      <div id="menu-toggle" onclick="menuToggle(this)">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+      </div>
+    </header>
+  
+    <main id="terrain_plan">
+      <div class="main-right">
+        <div id="lotissement_right">
+          <p class="click">Cliquez sur les n° des lots pour plus d'informations</p>
+          <div class="plan">
+            <div class="plan_img">
+
+              <!-- OPTION BUTTONS -->
+              <a id="lot1868" class="lot">
+                <div class="number">1</div>
+                <img class="tag" src="/images/lotissement/vignette_vendu_16.png" alt="">
+              </a>     
+              <a id="lot1869" class="lot">
+                <div class="number">2</div>
+                <img class="tag" src="/images/lotissement/vignette_vendu_16.png" alt="">
+              </a>     
+              <a id="lot1870" class="lot">
+                <div class="number">3</div>
+                <img class="tag" src="/images/lotissement/vignette_vendu_16.png" alt="">
+              </a>     
+              <a id="lot1871" class="lot">
+                <div class="number">4</div>
+                <img class="tag" src="/images/lotissement/vignette_vendu_16.png" alt="">
+              </a>     
+              <a id="lot1872" class="lot">
+                <div class="number">5</div>
+                <img class="tag" src="/images/lotissement/vignette_vendu_16.png" alt="">
+              </a>     
+              <a id="lot1873" class="lot">
+                <div class="number">6</div>
+                <img class="tag" src="/images/lotissement/vignette_vendu_16.png" alt="">
+              </a>     
+              <a id="lot1874" class="lot">
+                <div class="number">7</div>
+                <img class="tag" src="/images/lotissement/vignette_vendu_16.png" alt="">
+              </a>     
+              <a id="lot1875" class="lot">
+                <div class="number">8</div>
+                <img class="tag" src="/images/lotissement/vignette_vendu_16.png" alt="">
+              </a>     
+              <a id="lot1876" class="lot">
+                <div class="number">9</div>
+                <img class="tag" src="/images/lotissement/vignette_vendu_16.png" alt="">
+              </a>     
+              <a id="lot1877" class="lot" href="terrain_sudouest_plan_lot.html">
+                <div class="number">10</div>
+                <img class="tag" src="/images/lotissement/vignette_option_16.png" alt="">
+              </a>  
+            </div>                        
+          </div> 
+         
+
+
+          <div class="lot_notice">
+            <p>
+              Les côtes et les superficies sont données à titre indicatif, et n'ont pas de valeur contractuelle.
+              <br>Seules celles figurant sur le plan de bornage, joint à l'acte de vente, font foi.
+            </p>
+            <span>Dernière mise à jour le : 31/10/2020 à 10:51</span>
+          </div>                 
+        </div>      
+      </div>
+
+      <div id="sidebar-left">
+        <h2><a href="terrain_sudouest.html">Le Sud-Ouest</a></h2>
+        
+        <div class="sidebar-menu">
+          <button id="presentation" onclick="window.location='terrain_sudouest_presentation.html'">Présentation</button>
+          <button id="plan_du_lotissement" onclick="window.location='terrain_sudouest_plan.html'">Plan du lotissement</button>
+          <button id="grille_de_prix" onclick="window.location='terrain_sudouest_grille.html'">Grille de prix</button>
+          <button id="documents" onclick="window.location='terrain_sudouest_documents.html'">Documents</button>
+          <button id="simulaer_un_credit"><a href="simulateur_steps.html">Simuler un crédit</a></button>
+          <button id="poser_une_option" onclick="window.location='terrain_sudouest_option.html'">Poser une option</button>
+          <button id="itineraire">Itinéraire</button>
+          <button id="imprimer" onclick="window.print()">Imprimer cette page</button>         
+
+          <button type="button" id="goback" onclick="goBack()"><i class="xi-angle-left"></i>Retour</button>
+        </div>            
+      </div>
+    </main>
+    
+    <!-- FOOTER AT THE BOTTOM -->
+     <footer>
+      <p><a href="politique.html">Politique de protection des données personnelles</a></p>
+    </footer>  
+  </div>
+ 
+  <script src="js/index.js"></script>
+  <script src="js/terrains.js"></script>
+</body>
+</html>

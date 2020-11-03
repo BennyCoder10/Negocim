@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Negocim</title>
+
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+  <link rel="stylesheet" href="css/default.css">
+  <link rel="stylesheet" href="css/terrain_sub.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+
+<body>
+  <div class="wrapper">
+    <header class="clear">
+      <h1><a href="index.html"><img src="images/main_logo.jpg" alt="Negocim logo"><span class="hide">Negocim</span></a></h1>
+      <h2 class="hide">menu</h2>
+      <nav class="menu" id="menu">
+        <ul>
+          <li><a href="index.html" class="active">Terrains</a></li>
+          <li><a href="vendez.html">Vendez votre terrain</a></li>
+          <li><a href="simulateur.html">Simulateur de crédit</a></li>
+          <li><a href="qui_sommes_nous.html">Qui sommes-nous</a></li>
+          <li><a href="contact.html">Contactez-nous</a></li>
+          <li><a href="lexique.html">Lexique</a></li>            
+        </ul>
+      </nav>
+      <div id="menu-toggle" onclick="menuToggle(this)">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+      </div>
+    </header>
+  
+    <main id="terrain_plan">
+      <div class="main-right">       
+
+        <!-- lot1868 detail page -->
+        <div id="plan_lot1877" class="lot_option">
+          <div class="wrapper">                       
+            <div class="up">
+              <div class="lot_info">
+                <header>
+                  <h2>Taillan-Médoc (Le)</h2>
+                  <p>
+                    Le Clos de Cante Gric
+                    <br>LOT N° 10
+                  </p>
+                </header>
+                <img id="lot_image_mobile" src="images/lotissement/plan_lot_1877.png" alt="">
+
+                <div class="content">                   
+                    <p>Prix : <span>246 000 €</span></p>
+                    <p>Surface : <span>511 m²</span></p>
+                    <p>Surface de Plancher : <span>199 m²</span></p>
+                    <p>Emprise au Sol : <span>262 m²</span></p>
+                    <p>Frais de plan : <span>300 €</span></p>
+                    <p>Frais d'association syndicale : <span>500 €</span></p>
+                    <p>Frais de notaire : <span>7 % environ</span></p>
+                    <p>Provision pour dégradations<br>
+                      des parties communes : 
+                      <span>500 €</span>
+                    </p>          
+                    <p>P.R.E / P.F.A.C. :<br><br><br> 
+                      <span>Non Comprise<br>
+                        1000 € environ<br>
+                        (information non contractuelle)
+                      </span>
+                    </p> 
+                    <p>
+                      T.L.E. /<br>
+                      Taxe d'Aménagement :<br>
+                      <span>
+                        6.30 %<br>
+                        <span>(comprend les parts communale et départementale)</span><br>
+                        (information non contractuelle)
+                      </span>
+                    </p>           
+                </div>
+              </div>
+              <div class="lot_image">
+                <img src="images/lotissement/plan_lot_1877.png" alt="">
+                <button><a href="simulateur_steps.html">Simuler un crédit <br>pour le lot</a></button>
+              </div>
+            </div>
+            <div class="btm">
+              <p>
+                Ces terrains seront livrés entièrement viabilisés, il convient d'ajouter à ces prix : - Les frais de pose compteurs - Les frais de raccordement aux réseaux divers (liaison coffrets/construction) - La réalisation d'un massif drainant pour l'infiltration des eaux de toiture sur le terrain
+              </p>
+            </div> 
+          </div>   
+              
+          <div class="lot_notice">
+            <p>
+              Les côtes et les superficies sont données à titre indicatif, et n'ont pas de valeur contractuelle.
+              <br>Seules celles figurant sur le plan de bornage, joint à l'acte de vente, font foi.
+            </p>
+          </div>         
+        </div>
+      </div>
+
+      <div id="sidebar-left">
+        <h2><a href="terrain_sudouest.html">Le Sud-Ouest</a></h2>
+        
+        <div class="sidebar-menu">
+          <button id="presentation" onclick="window.location='terrain_sudouest_presentation.html'">Présentation</button>
+          <button id="plan_du_lotissement" onclick="window.location='terrain_sudouest_plan.html'">Plan du lotissement</button>
+          <button id="grille_de_prix" onclick="window.location='terrain_sudouest_grille.html'">Grille de prix</button>
+          <button id="documents" onclick="window.location='terrain_sudouest_documents.html'">Documents</button>
+          <button id="simulaer_un_credit"><a href="simulateur_steps.html">Simuler un crédit</a></button>
+          <button id="poser_une_option" onclick="window.location='terrain_sudouest_option.html'">Poser une option</button>
+          <button id="itineraire">Itinéraire</button>
+          <button id="imprimer" onclick="window.print()">Imprimer cette page</button>         
+
+          <button type="button" id="goback" onclick="goBack()"><i class="xi-angle-left"></i>Retour</button>
+        </div>            
+      </div>
+    </main>
+    
+    <!-- FOOTER AT THE BOTTOM -->
+     <footer>
+      <p><a href="politique.html">Politique de protection des données personnelles</a></p>
+    </footer>  
+  </div>
+ 
+  <script src="js/index.js"></script>
+  <script src="js/terrains.js"></script>
+</body>
+</html>
