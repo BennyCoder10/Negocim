@@ -61,7 +61,7 @@
       transform: translateX(100%);
       
       ul { margin-left: 1rem;
-        li { float: none; padding: 0 0 .6rem 0;
+        li { float: none; padding: 0 0 .8rem 0;
           .active:before { width: none;}
           a { display: inline-block; 
             width: 100%;
@@ -84,15 +84,16 @@
 
 
   // SIMULATEUR
-  .simulateur_steps { margin: 1.2rem 1rem; padding-bottom: 3rem;}
+  #simulateur_steps { margin: 1.2rem 1rem; padding-bottom: 3rem;}
   // .simulateur_steps .récapitulatif { width: 100%;}
   .steps > div { margin: 0; width: 100%;}
 
   .step2 .bottom table tr th, .step2 .bottom table tr td {
     padding: 1.3rem .5rem 0;
-  }
-  
+      
   .step3 .selectors, .step3 .help { width: 100%;}
+  }
+
 
   // TERRAINS
   #terrains {
@@ -181,10 +182,6 @@
   }
 
 
-
-
-
-
   // VENDES & CONTACT_SUB
   #agence .agenceTable tr .left { display: none;}
   #agence .agenceTable .right { padding-bottom: 3rem;
@@ -203,48 +200,51 @@
 
   
   // SIMULATEUR STEPS
-  .simulateur_steps { margin: .3rem;
+  #simulateur_steps { margin: .3rem;
     h1, h2 { font-size: 1.3rem;}
     .selectors { flex-wrap: wrap; padding: .5rem .5rem 1.5rem;
       > div { padding: .3rem; min-width: 250px;
-        &:last-child { padding-right: .3rem; max-width: 50%; }
-      }
-      .unit span { right: 14px; top: 7px;}
-    }      
-  }
-
-  .step2 .bottom { display: block;}
-  .step2 .bottom .montant { justify-content: center;}
-  .step2 .bottom table { width: auto;}  
-
-  .step2 .selectors {
-    > div { text-align: left;
-      label { position: static; display: block; padding: 0 0 .5rem .3rem;}
-      &:last-child { text-align: right; margin-top: 1rem;
-        .calculer { width: 100%; margin-left: 0;}
-      }
+        &:last-child { padding-right: .3rem; 
+          // max-width: 50%; 
+        }
+      }      
     }
-    .unit span { right: 16px; top: 32px;}  
-  }
+    .step1 .selectors .unit span { right: 14px; top: 7px;}
+    .step2 .bottom { display: block;}
+    .step2 .bottom .montant { justify-content: center;}
+    .step2 .bottom table { width: auto;}  
 
-  .step3 .selectors {
-    > div { text-align: left;
-      label { position: static; display: block; padding: 0 0 .5rem .3rem;}
-      &:last-child { text-align: right; margin-top: 1.4rem;
-        .calculer { width: 100%; margin-left: 0;}
+    .step2 .selectors {
+      > div { text-align: left;
+        label { position: static; display: block; padding: 0 0 .5rem .3rem;}
+        &:last-child { text-align: right; margin-top: 1rem;
+          .calculer { width: 100%; margin-left: 0;}
+        }
       }
+      .unit span { right: 16px; top: 32px;}  
     }
-    .unit span { right: 16px; top: 32px;}  
-  }
 
-  .step3 .help { flex-direction: column; padding: 0 .7rem;
-    div span br {display: none;}
-    button { width: fit-content;}    
-    > div span:first-child { font-size: .9rem;}
-  }
+    .step3 .selectors {
+      > div { text-align: left;
+        label { position: static; display: block; padding: 0 0 .5rem .3rem;}
+        &:last-child { text-align: right; margin-top: 1.4rem;
+          .calculer { width: 100%; margin-left: 0;}
+        }
+      }
+      .unit span { right: 16px; top: 32px;}  
+    }
+
+    .step3 .help { flex-direction: column; padding: 0 .3rem;
+      // padding: 0 .7rem;
+      div span br {display: none;}
+      button { width: fit-content;}    
+      > div span:first-child { font-size: .8rem;}
+    }   
+  }  
 }
 
 @media only screen and (max-width: 560px) {
+
   // TERRAINS 
   #terrains .main-right {display: none;}
 
@@ -356,54 +356,52 @@
   #simulateur .choice .right { background-position: 0% 54%; background-size:  100%;}
   #simulateur .btm-txt { padding: .8rem 0;}
 
-  .simulateur_steps { 
+  #simulateur_steps { 
     .selectors { 
       > div { 
         &:last-child { max-width: none;}
       }
-    }      
-  }
-
-  .step2 .bottom .montant { justify-content: space-evenly;
-    span { margin-right: 0; }
-  } 
-
-  .step3 .help { 
-    button { width: 100%;}
-    > div { padding-top: 1rem;
-      span:first-child { padding-right: .5rem !important;}
+    } 
+    .step2 .bottom .montant { justify-content: space-evenly;
+      span { margin-right: 0; }
+    } 
+  
+    .step3 .help { 
+      button { width: 100%;}
+      > div { padding-top: 1rem;
+        span:first-child { padding-right: .5rem !important;}
+      }
     }
-  }
-
-
-  .step4 {
-    .summary {
-      table th, table td { font-size: .9rem;}
-    }
-    .final_price > div { display: block; margin-top: 1rem; margin-right: 0;
-      > div {  width: 60%;  margin: 0 auto;}
-    }  
-  }
-
-  .simulateur_steps .flex { 
-    flex-direction: column; padding: 0;
-    > div { 
-      // width: 100%;
-      h4 { font-size: .8rem; padding: 0 20px;}
-      h4, p { display: inline-block;}
-    }
-    .flex1 { flex: 1; align-self: flex-start; 
-    }
-    .flex2 { flex: 1; margin: 0;  margin-bottom: 1rem;
-      h4 { display: block; text-align: left; padding-left: 20px;}
-      .grid { display: grid;
-        .grid-item1, .grid-item2 { display: grid; grid-template-columns: repeat(6, 1fr); column-gap: .5rem;}
+  
+  
+    .step4 {
+      .summary {
+        table th, table td { font-size: .9rem;}
+      }
+      .final_price > div { display: block; margin-top: 1rem; margin-right: 0;
+        > div {  width: 60%;  margin: 0 auto;}
       }  
     }
-    .flex3 { flex: 1; align-self: flex-start; 
+    
+    .recap_table { 
+      flex-direction: column; padding: 0;
+      > div { 
+        // width: 100%;
+        h4 { font-size: .8rem; padding: 0 20px;}
+        h4, p { display: inline-block;}
+      }
+      .flex1 { flex: 1; align-self: flex-start; 
+      }
+      .flex2 { flex: 1; margin: 0;  margin-bottom: 1rem;
+        h4 { display: block; text-align: left; padding-left: 20px;}
+        .grid { display: grid;
+          .grid-item1, .grid-item2 { display: grid; grid-template-columns: repeat(6, 1fr); column-gap: .5rem;}
+        }  
+      }
+      .flex3 { flex: 1; align-self: flex-start; 
+      }
     }
-  }
-
+  } 
 
   footer { 
     // height: 100%;

@@ -4,7 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Negocim</title>
+  <meta name="keywords" lang="fr" content="negocim, contact, terrain, terrains, lotisseur, lotissement, lotissements, batir, promoteur, promoteurs, prometeur, foncier, fonciere, propriete, viabilise, parcelle, morcellement, construction, constructeur, amenageur">
+  <title>Negocim - Vendez votre terrain</title>
 
   <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
   <link rel="stylesheet" href="css/default.css">
@@ -13,13 +14,15 @@
 </head>
 
 <body>  
-  <div class="wrapper"> <!-- FOR FLEXBOX -->
-    <!-- 
-      HEADER 
-      -->
+  <!-- WRAPPER FOR FULL HEIGHT ON THE SCREEN -->
+  <div class="wrapper">    
     <header>
+
+      <!-- NEGOCIM LOGO -->
       <h1><a href="index.html"><img src="images/main_logo.jpg" alt="Negocim logo"><span class="hide">Negocim</span></a></h1>
       <h2 class="hide">menu</h2>
+
+      <!-- NAV MENU  -->
       <nav class="menu" id="menu">
         <ul>
           <li><a href="index.html">Terrains</a></li>
@@ -30,35 +33,36 @@
           <li><a href="lexique.html">Lexique</a></li>            
         </ul>
       </nav>
+      <!-- MENU BAR ON MOBILE VERSION -->
       <div id="menu-toggle" onclick="menuToggle(this)">
         <div class="bar1"></div>
         <div class="bar2"></div>
         <div class="bar3"></div>
       </div>
     </header>
+    <!-- END OF HEADER -->
   
-    <!-- 
-      MAIN IN THE MIDDLE 
-      -->
+    <!-- MAIN -->
     <main>
-      <!-- <div class="clear"> -->
-        <div class="agencies clear">
-          <img src="images/Agencebordeaux-4.jpg" alt="Bordeaux">
-          <button class="buttons"><a href="agence_bordeaux.html">Agence de Bordeaux</a></button>
-        </div>
-        <div class="agencies">
-          <img src="images/AgenceTours.jpg" alt="Tours">
-          <button class="buttons"><a href="agence_tour.html">Agence de Tours</a></button>
-        </div>
-        <div class="agencies">
-          <img src="images/AgenceOrleans.jpg" alt="Orléans">
-          <button class="buttons"><a href="agence_orleans.html">Agence de Orléans</a></button>
-        </div>
-        <div class="agencies">
-          <img src="images/AgenceVannes.jpg" alt="Vannes">
-          <button class="buttons"><a href="agence_vannes.html">Agence de Vannes</a></button>
-        </div>
-      <!-- </div> -->
+      <!-- AGENCE BUTTONS -->
+      <div class="agencies">
+        <img src="images/Agencebordeaux-4.jpg" alt="Bordeaux">
+        <button class="buttons"><a href="agence_bordeaux.html">Agence de Bordeaux</a></button>
+      </div>
+      <div class="agencies">
+        <img src="images/AgenceTours.jpg" alt="Tours">
+        <button class="buttons"><a href="agence_tour.html">Agence de Tours</a></button>
+      </div>
+      <div class="agencies">
+        <img src="images/AgenceOrleans.jpg" alt="Orléans">
+        <button class="buttons"><a href="agence_orleans.html">Agence de Orléans</a></button>
+      </div>
+      <div class="agencies">
+        <img src="images/AgenceVannes.jpg" alt="Vannes">
+        <button class="buttons"><a href="agence_vannes.html">Agence de Vannes</a></button>
+      </div>
+
+      <!-- NOTICE AT THE BOTTOM -->
       <p>
         Nous sommes en permanence à la <a href="#a">recherche de terrains</a> constructibles afin de réaliser des lotissements.</br>
         Vous êtes <a href="#a">propriétaire</a> d'un ou de plusieurs terrains constructibles.</br>
@@ -67,15 +71,19 @@
         <a href="#a">Contactez-nous</a> et nous étudierons ensemble la faisabilité d'une opération sur votre propriété.</br>
       </p>
     </main>
-    <!-- 
-      FOOTER AT THE BOTTOM
-     -->
+    <!-- END OF MAIN -->
+
+    <!-- FOOTER -->
     <footer>
       <p><a href="politique.html">Politique de protection des données personnelles</a></p>
     </footer>
+    <!-- END OF FOOTER -->
 
   </div>
+  <!-- END OF WRAPPER -->
 
+  <!-- JAVASCRIPT -->
   <script src="js/index.js"></script>
+  
 </body>
 </html>
