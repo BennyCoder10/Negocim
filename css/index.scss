@@ -12,15 +12,12 @@ $bars: #707070;
 // DEFAULT FONT-SIZE
 html { font-size: 20px;}
 body { font-size: 1rem; max-width: 1440px; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;}
-
 * { color: $text-dark; box-sizing: border-box;}
-
 
 // FLEXBOX FOR FULL HEIGHT
 html, body { height: 100%; padding: 0; margin: 0 auto;}
 .wrapper { display: flex; flex-direction: column; height: 100%;}
 main { flex: 1;}
-
 
 
 // HEADER
@@ -68,7 +65,7 @@ header { background: $main;
 
 // MAIN
 #terrains { position: relative;
-  // FLOATING LINKS 
+  // FLOATING LINKS ON THE LEFT
   #float-left { position: absolute; left: 3.5rem; top: 30%; z-index: 1;
     ul li { margin: .2rem 0;
       &:nth-child(1) i { color: #2e60ff;}

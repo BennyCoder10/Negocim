@@ -363,17 +363,11 @@ a, button {
     float: right;
     padding-right: 1rem;
   }
-  html .step3 .help > div span:first-child {
-    padding-right: 2rem;
-  }
-  html .step4 .summary table {
+  #simulateur_steps .step4 .summary table {
     width: 80%;
   }
   #terrains .main-right .map img {
     text-align: right;
-  }
-  #agence-bordeaux-1 div .contact .services {
-    font-size: 1.6vw;
   }
 }
 
@@ -438,20 +432,6 @@ a, button {
   .overlay {
     position: fixed;
   }
-  #simulateur_steps {
-    margin: 1.2rem 1rem;
-    padding-bottom: 3rem;
-  }
-  .steps > div {
-    margin: 0;
-    width: 100%;
-  }
-  .step2 .bottom table tr th, .step2 .bottom table tr td {
-    padding: 1.3rem .5rem 0;
-  }
-  .step2 .bottom table tr th .step3 .selectors, .step2 .bottom table tr th .step3 .help, .step2 .bottom table tr td .step3 .selectors, .step2 .bottom table tr td .step3 .help {
-    width: 100%;
-  }
   #terrains #float-left {
     position: static;
   }
@@ -486,6 +466,21 @@ a, button {
   #terrain_plan .main-right .lot_option .wrapper .up .lot_info header h2 {
     font-size: 1.4rem;
   }
+  #simulateur_steps {
+    padding-bottom: 3rem;
+    margin: 1.2rem 1rem;
+  }
+  #simulateur_steps .steps > div {
+    margin: 0;
+    width: 100%;
+  }
+  #simulateur_steps .step2 .bottom table tr th,
+  #simulateur_steps .step2 .bottom table tr td {
+    padding: 1.3rem .5rem 0;
+  }
+  #simulateur_steps .step3 .help > div span:first-child {
+    padding-right: 2rem;
+  }
   #qui_sommes-nous .text .text_right {
     width: 75vw;
   }
@@ -495,19 +490,23 @@ a, button {
 }
 
 @media only screen and (max-width: 770px) {
-  #terrain_presentation .main-right, #terrain_plan .main-right {
+  #terrain_presentation .main-right,
+  #terrain_plan .main-right {
     width: 100%;
     height: auto;
     padding: .3rem;
     padding-top: 4rem;
   }
-  #terrain_presentation .main-right #presentation, #terrain_plan .main-right #presentation {
+  #terrain_presentation .main-right #presentation,
+  #terrain_plan .main-right #presentation {
     padding: 0;
   }
-  #terrain_presentation .main-right #presentation > div > p, #terrain_plan .main-right #presentation > div > p {
+  #terrain_presentation .main-right #presentation > div > p,
+  #terrain_plan .main-right #presentation > div > p {
     padding-top: 0;
   }
-  #terrain_presentation #sidebar-left, #terrain_plan #sidebar-left {
+  #terrain_presentation #sidebar-left,
+  #terrain_plan #sidebar-left {
     width: 100%;
     position: static;
     background: white;
@@ -516,7 +515,8 @@ a, button {
     -webkit-animation: fadeInRight .3s ease-in;
             animation: fadeInRight .3s ease-in;
   }
-  #terrain_presentation #sidebar-left h2, #terrain_plan #sidebar-left h2 {
+  #terrain_presentation #sidebar-left h2,
+  #terrain_plan #sidebar-left h2 {
     text-align: center;
     padding: 0;
     position: absolute;
@@ -524,7 +524,8 @@ a, button {
     left: 0;
     right: 0;
   }
-  #terrain_presentation #sidebar-left h2 a, #terrain_plan #sidebar-left h2 a {
+  #terrain_presentation #sidebar-left h2 a,
+  #terrain_plan #sidebar-left h2 a {
     font-size: 1.5rem;
     font-weight: bold;
     color: #ffffff;
@@ -532,16 +533,19 @@ a, button {
     border-radius: 20px;
     padding: 0 1rem;
   }
-  #terrain_presentation #sidebar-left h2:hover a, #terrain_plan #sidebar-left h2:hover a {
+  #terrain_presentation #sidebar-left h2:hover a,
+  #terrain_plan #sidebar-left h2:hover a {
     color: #525451;
   }
-  #terrain_presentation #sidebar-left .sidebar-menu, #terrain_plan #sidebar-left .sidebar-menu {
+  #terrain_presentation #sidebar-left .sidebar-menu,
+  #terrain_plan #sidebar-left .sidebar-menu {
     overflow-y: visible;
     height: auto;
     margin-right: 0;
     margin-top: 0;
   }
-  #terrain_presentation #sidebar-left .sidebar-menu button, #terrain_plan #sidebar-left .sidebar-menu button {
+  #terrain_presentation #sidebar-left .sidebar-menu button,
+  #terrain_plan #sidebar-left .sidebar-menu button {
     color: white;
     background-color: #87c133;
     padding: .8rem 1rem;
@@ -549,7 +553,9 @@ a, button {
     text-align: center;
     margin: .5rem auto;
   }
-  #terrain_presentation #sidebar-left .sidebar-menu #simulaer_un_credit, #terrain_presentation #sidebar-left .sidebar-menu #imprimer, #terrain_plan #sidebar-left .sidebar-menu #simulaer_un_credit, #terrain_plan #sidebar-left .sidebar-menu #imprimer {
+  #terrain_presentation #sidebar-left .sidebar-menu #simulaer_un_credit, #terrain_presentation #sidebar-left .sidebar-menu #imprimer,
+  #terrain_plan #sidebar-left .sidebar-menu #simulaer_un_credit,
+  #terrain_plan #sidebar-left .sidebar-menu #imprimer {
     margin: .5rem auto;
     padding: .6rem 1rem;
     border-radius: 30px;
@@ -557,10 +563,13 @@ a, button {
     background: none;
     color: #87c133;
   }
-  #terrain_presentation #sidebar-left .sidebar-menu #simulaer_un_credit a, #terrain_presentation #sidebar-left .sidebar-menu #imprimer a, #terrain_plan #sidebar-left .sidebar-menu #simulaer_un_credit a, #terrain_plan #sidebar-left .sidebar-menu #imprimer a {
+  #terrain_presentation #sidebar-left .sidebar-menu #simulaer_un_credit a, #terrain_presentation #sidebar-left .sidebar-menu #imprimer a,
+  #terrain_plan #sidebar-left .sidebar-menu #simulaer_un_credit a,
+  #terrain_plan #sidebar-left .sidebar-menu #imprimer a {
     color: #87c133;
   }
-  #terrain_presentation #sidebar-left .goback, #terrain_plan #sidebar-left .goback {
+  #terrain_presentation #sidebar-left .goback,
+  #terrain_plan #sidebar-left .goback {
     margin: 2rem auto .5rem;
     position: static;
   }
