@@ -790,6 +790,7 @@ a, button {
   -webkit-box-flex: 6;
       -ms-flex: 6;
           flex: 6;
+  width: 100%;
   margin: .5rem;
   background-color: white;
   border: 1px solid #707070;
@@ -813,7 +814,7 @@ a, button {
   width: auto;
 }
 
-#terrain_plan .main-right .lot_option .wrapper .up .lot_info .info_table p {
+#terrain_plan .main-right .lot_option .wrapper .up .lot_info .content p {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -823,15 +824,15 @@ a, button {
   padding: .1rem .3rem;
 }
 
-#terrain_plan .main-right .lot_option .wrapper .up .lot_info .info_table p > span {
+#terrain_plan .main-right .lot_option .wrapper .up .lot_info .content p > span {
   font-size: .8rem;
 }
 
-#terrain_plan .main-right .lot_option .wrapper .up .lot_info .info_table p > span:first-child {
+#terrain_plan .main-right .lot_option .wrapper .up .lot_info .content p > span:first-child {
   text-align: left;
 }
 
-#terrain_plan .main-right .lot_option .wrapper .up .lot_info .info_table p > span:nth-child(2) {
+#terrain_plan .main-right .lot_option .wrapper .up .lot_info .content p > span:nth-child(2) {
   text-align: right;
 }
 
@@ -839,7 +840,9 @@ a, button {
   -webkit-box-flex: 4;
       -ms-flex: 4;
           flex: 4;
-  margin: .5rem 0 0;
+  -ms-flex-negative: 3;
+      flex-shrink: 3;
+  margin: .5rem;
   margin-left: 0;
 }
 
@@ -850,10 +853,11 @@ a, button {
 
 #terrain_plan .main-right .lot_option .wrapper .up .lot_image button {
   position: relative;
-  padding: .3rem 1rem;
-  margin: .5rem auto;
+  top: .7rem;
+  margin: 0 auto;
   background: #87c133;
   border-radius: 41rem;
+  padding: .3rem 1rem;
 }
 
 #terrain_plan .main-right .lot_option .wrapper .up .lot_image button a {

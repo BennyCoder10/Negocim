@@ -556,7 +556,7 @@ a, button {
   #terrain_presentation #sidebar-left .sidebar-menu #simulaer_un_credit, #terrain_presentation #sidebar-left .sidebar-menu #imprimer,
   #terrain_plan #sidebar-left .sidebar-menu #simulaer_un_credit,
   #terrain_plan #sidebar-left .sidebar-menu #imprimer {
-    margin: .5rem auto;
+    margin: .5rm auto;
     padding: .6rem 1rem;
     border-radius: 30px;
     border: 2px solid #87c133;
@@ -596,19 +596,24 @@ a, button {
   #terrain_plan .main-right .lot_option .wrapper .up .lot_info {
     margin: 0 auto;
   }
-  #terrain_plan .main-right .lot_option .wrapper .up .lot_info .content {
-    padding: 1rem 0.5rem;
+  #terrain_plan .main-right .lot_option .wrapper .up .lot_info .info_table {
+    margin: 1.5rem 0;
   }
-  #terrain_plan .main-right .lot_option .wrapper .up .lot_info .content p {
+  #terrain_plan .main-right .lot_option .wrapper .up .lot_info .info_table p {
+    display: block;
+  }
+  #terrain_plan .main-right .lot_option .wrapper .up .lot_info .info_table p > span {
+    display: inline-block;
+    width: 49%;
+    vertical-align: top;
+  }
+  #terrain_plan .main-right .lot_option .wrapper .up .lot_info .info_table p > span:first-child {
+    font-weight: 600;
     text-align: right;
-    padding-right: 50%;
+    padding-right: .5rem;
   }
-  #terrain_plan .main-right .lot_option .wrapper .up .lot_info .content p span {
+  #terrain_plan .main-right .lot_option .wrapper .up .lot_info .info_table p > span:nth-child(2) {
     text-align: left;
-    left: 53%;
-  }
-  #terrain_plan .main-right .lot_option .wrapper .up .lot_info .content p span span {
-    left: 0;
   }
   #agence .agenceTable tr .left {
     display: none;
@@ -619,17 +624,6 @@ a, button {
   #agence .agenceTable .right tr td {
     width: 100%;
     padding: 1.5rem 0 3rem;
-  }
-  #qui_sommes-nous .text .list_left {
-    display: none;
-  }
-  #qui_sommes-nous .text .text_right {
-    width: 100%;
-    direction: ltr;
-    margin: 1.5rem auto;
-    float: none;
-    overflow-y: auto;
-    height: auto;
   }
   #simulateur .choice .left {
     background-position: 44% 75%;
@@ -733,6 +727,17 @@ a, button {
   }
   #simulateur_steps .step3 .help > div span:first-child {
     font-size: .8rem;
+  }
+  #qui_sommes-nous .text .list_left {
+    display: none;
+  }
+  #qui_sommes-nous .text .text_right {
+    width: 100%;
+    direction: ltr;
+    margin: 1.5rem auto;
+    float: none;
+    overflow-y: auto;
+    height: auto;
   }
 }
 

@@ -1,7 +1,9 @@
 @charset "utf-8";
 @import "index.scss";
 
-// MAIN
+// 
+// MAIN #SIMULATEUR
+// 
 #simulateur { margin: 0;
   h2 { font-size: 1.7rem; font-weight: 600; text-align: center;  padding: 1.25rem 0;}
 
@@ -36,11 +38,12 @@
   // NOTICE AT THE BOTTOM
   .btm-txt { font-size: .7rem; padding: 2rem 0 .8rem; text-align: center;}
 }
-// END OF MAIN
+// END OF MAIN #SIMULATEUR
 
 
-
-// MAIN ID: SIMULATEUR STEPS
+// 
+// MAIN #SIMULATEUR STEPS
+// 
 
 // COMMON CODES FOR ALL STEPS
 #simulateur_steps { text-align: center; padding-bottom: 2rem; margin: 1.2rem 3.65rem; position: relative; 
@@ -254,5 +257,10 @@
     // NOTICE AT THE BOTTOM
     .bottom p { font-size: .55rem; padding-top: 1rem;}
   }
+
+  // END OF CODE FOR INDIVIDUAL STEP
+
 }
-// END OF CODE FOR INDIVIDUAL STEP
+// 
+// END OF MAIN #SIMULATEUR STEPS
+// 

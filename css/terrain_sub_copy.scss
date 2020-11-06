@@ -148,25 +148,46 @@
     .lot_option { margin: .5rem;     
       .wrapper { background-color: #e0e0e0;
         .up { display: flex;
-          .lot_info {  flex: 6; margin: .5rem; background-color: white; border: 1px solid $bars; 
+          .lot_info { flex: 6; width: 100%; margin: .5rem; background-color: white; border: 1px solid $bars; 
             header { background-color: $sub; padding: .5rem 0;
               * { color: white;}
               p { font-size: .7rem;}
             }
             #lot_image_mobile { display: none; width: auto;}
 
-            // LOT INFORMATION TABLE
-            .info_table { 
+            // .content { display: grid; grid-template-rows: auto;
+            //   p { text-align: left; position: relative; margin: .3rem; font-size: .7rem;
+            //     span { position: absolute; right: 0; top: 50%; transform: translateY(-50%); text-align: right;
+            //       > span { font-size: .6rem; font-style: italic; line-height: 1;}
+            //     }
+            //   }           
+            // }
+
+
+
+            .content { 
               p { display: flex; justify-content: space-between; padding: .1rem .3rem;}             
               p > span { font-size: .8rem;
                 &:first-child { text-align: left;}
                 &:nth-child(2) { text-align: right;}   
               }
             }
+            
+            //  .content { 
+            //   p { padding: .1rem .3rem;}             
+            //   p > span { font-size: .8rem; display: inline-block; width: 49%; vertical-align: top;
+            //     &:first-child { text-align: right; padding-right: .5rem;}
+            //     &:nth-child(2) { text-align: left;}   
+            //   }
+            // }
+
+
+
           }
-          .lot_image { flex: 4; margin: .5rem 0 0; margin-left: 0;
+          .lot_image { flex: 4; flex-shrink: 3; margin: .5rem; margin-left: 0;
             img {border: 1px solid $bars; width: 100%;}
-            button { position: relative; padding: .3rem 1rem; margin: .5rem auto; background: #87c133; border-radius: 41rem;
+            button { position: relative; top: .7rem;
+              margin: 0 auto; background: #87c133; border-radius: 41rem; padding: .3rem 1rem;
               a { font-size: .9rem; color: white;}
             }
           }

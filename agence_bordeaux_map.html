@@ -12,14 +12,20 @@
   <link rel="stylesheet" href="css/default.css">
   <link rel="stylesheet" href="css/agences.css">
   <link rel="stylesheet" href="css/responsive.css">
-
 </head>
 
 <body>
+  <!-- WRAPPER FOR FULL HEIGHT ON THE SCREEN -->
   <div class="wrapper">
+
+    <!-- HEADER -->
     <header class="clear">
+
+      <!-- NEGOCIM LOGO -->
       <h1><a href="index.html"><img src="images/main_logo.jpg" alt="Negocim logo"><span class="hide">Negocim</span></a></h1>
       <h2 class="hide">menu</h2>
+
+      <!-- NAV MENU  -->
       <nav class="menu" id="menu">
         <ul>
           <li><a href="index.html">Terrains</a></li>
@@ -30,13 +36,16 @@
           <li><a href="lexique.html">Lexique</a></li>            
         </ul>
       </nav>
+      <!-- MENU BAR ON MOBILE VERSION -->
       <div id="menu-toggle" onclick="menuToggle(this)">
         <div class="bar1"></div>
         <div class="bar2"></div>
         <div class="bar3"></div>
       </div>
     </header>
+    <!-- END OF HEADER -->
 
+    <!-- MAIN -->
     <main id="agence-map">
       <h2>Agence de <span>Bordeaux</span></h2>
       <div class="map">
@@ -44,15 +53,18 @@
       </div>
       <button class="buttons" onclick="goBack()"><a>Retour à l'agence</a></button>
     </main>
+    <!-- END OF MAIN -->
     
-    <!-- 
-      FOOTER AT THE BOTTOM
-     -->
+    <!-- FOOTER -->
     <footer>
       <p><a href="politique.html">Politique de protection des données personnelles</a></p>
     </footer>
+    <!-- END OF FOOTER -->
 
   </div>
+  <!-- END OF WRAPPER -->
+
+  <!-- JAVASCRIPT -->
   <script src="js/index.js"></script>
 
 </body>

@@ -63,7 +63,7 @@ header { background: $main;
 // END OF HEADER
 
 
-// MAIN
+// MAIN #TERRAINS
 #terrains { position: relative;
   // FLOATING LINKS ON THE LEFT
   #float-left { position: absolute; left: 3.5rem; top: 30%; z-index: 1;
@@ -126,6 +126,7 @@ footer { text-align: center; height: auto; line-height: 2.35rem; background: $ma
 
 // SMOOTH HOVER EFFECT FOR ALL LINKS AND BUTTONS
 a, button { transition: all .5s ease;}
+
 
 // 
 // MIXINS

@@ -157,7 +157,7 @@
         button { color: white; background-color: $sub; padding: .8rem 1rem; width: 80%; text-align: center; margin: .5rem auto;}
        
         #simulaer_un_credit, #imprimer 
-          { margin: .5rem auto; padding: .6rem 1rem; border-radius: 30px; border: 2px solid $sub; background: none; color: $sub;
+          { margin: .5rm auto; padding: .6rem 1rem; border-radius: 30px; border: 2px solid $sub; background: none; color: $sub;
             a { color: $sub;}
           }
         }
@@ -174,10 +174,11 @@
     br { display: none;}
   }
   #terrain_plan .main-right .lot_option .wrapper .up .lot_info { margin: 0 auto;}
-  #terrain_plan .main-right .lot_option .wrapper .up .lot_info .content {padding: 1rem 0.5rem;
-    p { text-align: right; padding-right: 50%;
-      span { text-align: left; left: 53%;
-        span { left: 0;}
+  #terrain_plan .main-right .lot_option .wrapper .up .lot_info .info_table { margin: 1.5rem 0;
+    p { display: block;
+      > span { display: inline-block; width: 49%; vertical-align: top;
+        &:first-child { font-weight: 600; text-align: right; padding-right: .5rem;}
+        &:nth-child(2) { text-align: left;}   
       }
     }
   }
@@ -188,10 +189,6 @@
   #agence .agenceTable .right { padding-bottom: 3rem;
     tr td { width: 100%; padding: 1.5rem 0 3rem;}
   }
-
-  // QUI SOMMES
-  #qui_sommes-nous .text .list_left { display: none; }
-  #qui_sommes-nous .text .text_right { width: 100%; direction: ltr; margin: 1.5rem auto; float: none; overflow-y: auto; height: auto;}
 
   // SIMULATEUR
   #simulateur .choice .left { background-position: 44% 75%; background-size:  129%;}
@@ -242,8 +239,17 @@
       > div span:first-child { font-size: .8rem;}
     }   
   }  
+
+  // QUI SOMMES
+  #qui_sommes-nous .text .list_left { display: none; }
+  #qui_sommes-nous .text .text_right { width: 100%; direction: ltr; margin: 1.5rem auto; float: none; overflow-y: auto; height: auto;}
+
 }
 
+
+// 
+// FOR SMALLER SIZE DEVICES (SMARTPHONES)
+// 
 @media only screen and (max-width: 560px) {
 
   // INDEX PAGE > MAIN 
