@@ -102,7 +102,7 @@
   }
 
   // TERRAIN_ PAGE / TERRAIN_PRESENTATION PAGE > MAIN
-  #terrain, #terrain_presentation {
+  main {
     #sidebar-left { width: 12rem;
       h2 a { font-size: 1.5rem;}
     }
@@ -112,6 +112,14 @@
   // TERRAIN_PLAN PAGE > MAIN
   #terrain_plan .main-right .lot_option .wrapper .up .lot_info header h2 { font-size: 1.4rem;}
  
+  
+  #terrain_grille .main-right .grille .wrapper table tr {
+    th span:nth-child(1) { display: none;}
+    th span:nth-child(2) { display: block;}
+    th:last-child,
+    td:last-child { display: none;}  
+  }
+
 
   // SIMULATEUR
   #simulateur_steps { padding-bottom: 3rem; margin: 1.2rem 1rem;
@@ -138,22 +146,30 @@
 
   // TERRAIN_SUB PAGES
   #terrain_presentation, 
-  #terrain_plan {
-    .main-right { width: 100%; height: auto; padding: .3rem; padding-top: 4rem;
+  #terrain_plan,
+  #terrain_grille, 
+  #terrain_document
+   {
+    // CONTENT ON THE RIGHT
+    .main-right { width: 100%; height: auto; padding: .3rem; padding-top: 3rem;
+      
+      // LOTISSEMENT NAME ON MOBILE
+      .lotissement_name { display: block;}
+      
       #presentation { padding: 0;
         > div > p { padding-top: 0;}    
-      }
+      }      
     }
   
-    // 
-    #sidebar-left { width: 100%; position: static; background: white; border: none; height: auto;
-      animation: fadeInRight .3s ease-in;
+    // SIDEBAR ON THE LEFT
+    #sidebar-left { width: 100%; height: auto; position: static; background: white; border: none; 
+      // animation: fadeInRight .3s ease-in;
        h2 { text-align: center; padding: 0; position: absolute; top: .5rem; left: 0; right: 0;
-         a { font-size: 1.5rem; font-weight: bold; color: $text; background: $sub; border-radius: 20px; padding: 0 1rem;}
+         a { font-size: 1.5rem; font-weight: bold; color: $text; padding: 0 1rem; background: $sub; border-radius: 20px; }
          &:hover a { color: $text-dark;}  
        }
     
-       .sidebar-menu { overflow-y: visible; height: auto; margin-right: 0; margin-top: 0;
+       .sidebar-menu { height: auto; margin-right: 0; margin-top: 0; overflow-y: visible;
         button { color: white; background-color: $sub; padding: .8rem 1rem; width: 80%; text-align: center; margin: .5rem auto;}
        
         #simulaer_un_credit, #imprimer 
@@ -161,27 +177,55 @@
             a { color: $sub;}
           }
         }
+
+        // GOBACK BUTTON AT THE BOTTOM
        .goback { margin: 2rem auto .5rem; position: static;}
      }   
    } 
 
+
   // TERRAIN_PLAN DU LOTISSEMENT
-  #terrain_plan .main-right { width: 100%;}
-  #terrain_plan .main-right .lot_option .wrapper .up { display: block; margin: .5rem;}
-  #terrain_plan .main-right .lot_option .wrapper .up .lot_info #lot_image_mobile { display: inline-block;}
-  #terrain_plan .main-right .lot_option .wrapper .up .lot_image img { display: none;}
-  #terrain_plan .main-right .lot_option .wrapper .up .lot_image button { position: static; padding: .7rem 1.5rem;
-    br { display: none;}
-  }
-  #terrain_plan .main-right .lot_option .wrapper .up .lot_info { margin: 0 auto;}
-  #terrain_plan .main-right .lot_option .wrapper .up .lot_info .info_table { margin: 1.5rem 0;
-    p { display: block;
-      > span { display: inline-block; width: 49%; vertical-align: top;
-        &:first-child { font-weight: 600; text-align: right; padding-right: .5rem;}
-        &:nth-child(2) { text-align: left;}   
+  #terrain_plan .main-right { width: 100%;
+    .lot_option .wrapper .up { display: block; margin: .5rem;
+      .lot_info { margin: 0 auto;
+        #lot_image_mobile { display: inline-block;}
+
+        // LOT INFORMATION TABLE
+        .info_table { margin: 1.5rem 0;
+          p { display: block;
+            > span { display: inline-block; width: 49%; vertical-align: top;
+              &:first-child { font-weight: bold; text-align: right; padding-right: .5rem;}
+              &:nth-child(2) { text-align: left;}   
+            }
+          }
+        }
+      }
+
+      .lot_image {
+        img { display: none;}
+        button { position: static; padding: .7rem 1.5rem; 
+          br { display: none;}
+        }
       }
     }
   }
+
+
+  // #terrain_plan .main-right .lot_option .wrapper .up { display: block; margin: .5rem;}
+  // #terrain_plan .main-right .lot_option .wrapper .up .lot_info #lot_image_mobile { display: inline-block;}
+  // #terrain_plan .main-right .lot_option .wrapper .up .lot_image img { display: none;}
+  // #terrain_plan .main-right .lot_option .wrapper .up .lot_image button { position: static; padding: .7rem 1.5rem;
+  //   br { display: none;}
+  // }
+  // #terrain_plan .main-right .lot_option .wrapper .up .lot_info { margin: 0 auto;}
+  // #terrain_plan .main-right .lot_option .wrapper .up .lot_info .info_table { margin: 1.5rem 0;
+  //   p { display: block;
+  //     > span { display: inline-block; width: 49%; vertical-align: top;
+  //       &:first-child { font-weight: 600; text-align: right; padding-right: .5rem;}
+  //       &:nth-child(2) { text-align: left;}   
+  //     }
+  //   }
+  // }
 
 
   // VENDES & CONTACT_SUB
@@ -193,7 +237,7 @@
   // SIMULATEUR
   #simulateur .choice .left { background-position: 44% 75%; background-size:  129%;}
   #simulateur .choice .right { background-position: 19% 54%; background-size:  129%;}
-  #simulateur .choice > div div p { padding-left: 0; text-align: center;}
+  #simulateur .choice > div div p { text-align: center; padding-left: 0;}
 
 
   
@@ -241,8 +285,10 @@
   }  
 
   // QUI SOMMES
-  #qui_sommes-nous .text .list_left { display: none; }
-  #qui_sommes-nous .text .text_right { width: 100%; direction: ltr; margin: 1.5rem auto; float: none; overflow-y: auto; height: auto;}
+  #qui_sommes-nous .text {
+    .list_left { display: none; }
+    .text .text_right { width: 100%; height: auto; margin: 1.5rem auto; float: none; overflow-y: auto; direction: ltr;}
+  } 
 
 }
 
@@ -332,11 +378,19 @@
  }
  
  #terrain_plan .main-right .lot_option .wrapper .up .lot_info #lot_image_mobile { width: 70%;}
- #terrain_plan .main-right #lotissement_right .plan .plan_img { width: 539px; height: 630px;}
+ #terrain_plan .main-right #plan_right .plan .plan_img { width: 539px; height: 630px;}
 
 
  #terrain_presentation #sidebar-left .sidebar-menu button, 
  #terrain_plan #sidebar-left .sidebar-menu button { width: 100%; }
+
+
+ #terrain_grille .main-right .grille .wrapper .notaire_geometre { display: block;}
+
+ #terrain_document .main-right .document { margin: 0;
+  .wrapper div p { font-size: .8rem;}
+} 
+
 
   // VENDES
   main .agencies { width: 100%; border-bottom: 5px solid white;

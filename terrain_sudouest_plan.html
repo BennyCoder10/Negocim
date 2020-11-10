@@ -82,17 +82,25 @@
 
       <!-- CONTENT ON THE RIGHT -->
       <div class="main-right">
-        <div id="lotissement_right">
+
+         <!-- LOTISSEMENT NAME ON MOBILE -->
+         <div class="lotissement_name">
+          <h3>Commune de Taillan-Médoc (Le)</h3>
+          <h2><i>Le Clos de Cante Gric</i></h2>
+        </div>  
+        
+        <div id="plan_right">
           <p class="click">Cliquez sur les n° des lots pour plus d'informations</p>
           
           <div class="plan">
-            <div class="plan_img">
+            <div class="plan_img" id="plan_img">
 
               <!-- VENDU & OPTION BUTTONS -->
+              <!-- add class "active" to make it clickable -->
               <a id="lot1868" class="lot">
                 <div class="number">1</div>
                 <img class="tag" src="images/lotissement/vignette_vendu_16.png" alt="">
-              </a>     
+              </a>
               <a id="lot1869" class="lot">
                 <div class="number">2</div>
                 <img class="tag" src="images/lotissement/vignette_vendu_16.png" alt="">
@@ -125,7 +133,7 @@
                 <div class="number">9</div>
                 <img class="tag" src="images/lotissement/vignette_vendu_16.png" alt="">
               </a>     
-              <a id="lot1877" class="lot" href="terrain_sudouest_plan_lot.html">
+              <a id="lot1877" class="lot active" href="terrain_sudouest_plan_lot_1877.html">
                 <div class="number">10</div>
                 <img class="tag" src="images/lotissement/vignette_option_16.png" alt="">
               </a>  
@@ -178,6 +186,7 @@
   <!-- JAVASCRIPT --> 
   <script src="js/index.js"></script>
   <script src="js/terrains.js"></script>
+  <script src="js/terrain_lot.js"></script>
 
 </body>
 </html>
