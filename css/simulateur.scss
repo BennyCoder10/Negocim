@@ -171,7 +171,7 @@
       }
 
       //  QUESTION SECTION
-      table { display: inline-block; text-align: left;
+      table { display: inline-block; text-align: left; width: auto;
         tr th, tr td { font-size: .6rem; font-weight: bold; height: 2rem;  padding: 1.3rem 1.3rem 0; vertical-align: bottom;}   
         td input { margin-right: .4rem;}
       }

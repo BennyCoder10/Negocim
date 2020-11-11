@@ -356,10 +356,10 @@ a, button {
   html {
     font-size: 18px;
   }
-  html body header h1 {
-    padding-right: 0rem;
+  html body .wrapper header h1 {
+    padding-right: 0;
   }
-  html body header .menu {
+  html body .wrapper header .menu {
     float: right;
     padding-right: 1rem;
   }
@@ -466,14 +466,21 @@ a, button {
   #terrain_plan .main-right .lot_option .wrapper .up .lot_info header h2 {
     font-size: 1.4rem;
   }
-  #terrain_grille .main-right .grille .wrapper table tr th span:nth-child(1) {
+  #terrain_grille .main-right .grille .wrapper table tr:nth-child(1) th span:nth-child(1) {
     display: none;
   }
-  #terrain_grille .main-right .grille .wrapper table tr th span:nth-child(2) {
+  #terrain_grille .main-right .grille .wrapper table tr:nth-child(1) th span:nth-child(2) {
     display: block;
   }
-  #terrain_grille .main-right .grille .wrapper table tr th:last-child,
-  #terrain_grille .main-right .grille .wrapper table tr td:last-child {
+  #terrain_grille .main-right .grille .wrapper table tr:nth-child(1) th:nth-child(6),
+  #terrain_grille .main-right .grille .wrapper table tr:nth-child(1) th:last-child {
+    display: none;
+  }
+  #terrain_grille .main-right .grille .wrapper table tr:nth-child(n+1) td:nth-child(6),
+  #terrain_grille .main-right .grille .wrapper table tr:nth-child(n+1) td:last-child {
+    display: none;
+  }
+  #terrain_grille .main-right .grille .wrapper table tr:nth-child(n+1):not(.active) td:nth-child(1), #terrain_grille .main-right .grille .wrapper table tr:nth-child(n+1):not(.active) td:nth-child(2), #terrain_grille .main-right .grille .wrapper table tr:nth-child(n+1):not(.active) td:nth-child(3), #terrain_grille .main-right .grille .wrapper table tr:nth-child(n+1):not(.active) td:nth-child(4), #terrain_grille .main-right .grille .wrapper table tr:nth-child(n+1):not(.active) td:nth-child(5), #terrain_grille .main-right .grille .wrapper table tr:nth-child(n+1):not(.active) td:nth-child(6) {
     display: none;
   }
   #simulateur_steps {
@@ -925,6 +932,9 @@ a, button {
   #terrain_presentation #sidebar-left .sidebar-menu button,
   #terrain_plan #sidebar-left .sidebar-menu button {
     width: 100%;
+  }
+  #terrain_grille .main-right .grille {
+    margin: 0;
   }
   #terrain_grille .main-right .grille .wrapper .notaire_geometre {
     display: block;

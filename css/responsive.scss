@@ -19,11 +19,15 @@
   // GLOBAL
   html { font-size: 18px;
     body {
-      // NEGOCIM LOGO
-      header h1 { padding-right: 0rem;}
+      .wrapper {
+        header {
+          // NEGOCIM LOGO
+          h1 { padding-right: 0;}
 
-      // NAV MENU
-      header .menu { float: right; padding-right: 1rem;}
+          // NAV MENU
+          .menu { float: right; padding-right: 1rem;}
+        }      
+      }        
     }
   }
 
@@ -48,6 +52,7 @@
   body { width: 100%;}
 
   header {
+
     // NAV MENU
     .menu {
       padding-right: 0rem;
@@ -111,13 +116,23 @@
 
   // TERRAIN_PLAN PAGE > MAIN
   #terrain_plan .main-right .lot_option .wrapper .up .lot_info header h2 { font-size: 1.4rem;}
- 
   
-  #terrain_grille .main-right .grille .wrapper table tr {
+  #terrain_grille .main-right .grille .wrapper table tr:nth-child(1) {
     th span:nth-child(1) { display: none;}
     th span:nth-child(2) { display: block;}
-    th:last-child,
-    td:last-child { display: none;}  
+    th:nth-child(6),
+    th:last-child { display: none;}
+  }
+
+  #terrain_grille .main-right .grille .wrapper table tr:nth-child(n+1) {
+    td:nth-child(6),
+    td:last-child { display: none;}
+  }
+
+  #terrain_grille .main-right .grille .wrapper table tr:nth-child(n+1):not(.active) {
+    td:nth-child(1), td:nth-child(2), td:nth-child(3), td:nth-child(4), td:nth-child(5), td:nth-child(6)
+    // td:last-child 
+    { display: none;}
   }
 
 
@@ -386,8 +401,9 @@
  #terrain_presentation #sidebar-left .sidebar-menu button, 
  #terrain_plan #sidebar-left .sidebar-menu button { width: 100%; }
 
-
+ #terrain_grille .main-right .grille { margin: 0;}
  #terrain_grille .main-right .grille .wrapper .notaire_geometre { display: block;}
+
 
  #terrain_document .main-right .document { margin: 0;
   .wrapper div p { font-size: .8rem;}

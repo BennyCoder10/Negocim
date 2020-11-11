@@ -735,6 +735,7 @@ a, button {
 #simulateur_steps .step2 .bottom table {
   display: inline-block;
   text-align: left;
+  width: auto;
 }
 
 #simulateur_steps .step2 .bottom table tr th, #simulateur_steps .step2 .bottom table tr td {
