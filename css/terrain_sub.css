@@ -344,6 +344,216 @@ a, button {
   }
 }
 
+main #sidebar-left {
+  position: relative;
+  float: left;
+  width: 14rem;
+  height: 100%;
+  background-color: #4cb0b2;
+  border: 0.5px solid #707070;
+  padding: 1rem;
+}
+
+main #sidebar-left h2 {
+  padding-bottom: 1.4rem;
+}
+
+main #sidebar-left h2 a {
+  font-size: 1.9rem;
+  font-weight: bold;
+  color: white;
+}
+
+main #sidebar-left h2:hover a {
+  color: #525451;
+}
+
+main #sidebar-left .sidebar-menu {
+  margin-bottom: 4rem;
+}
+
+main #sidebar-left .sidebar-menu::-webkit-scrollbar {
+  width: 6px;
+}
+
+main #sidebar-left .sidebar-menu::-webkit-scrollbar-track {
+  background: #bcbdbc;
+}
+
+main #sidebar-left .sidebar-menu::-webkit-scrollbar-thumb {
+  background: #87c133;
+  height: auto;
+}
+
+main #sidebar-left .sidebar-menu::-webkit-scrollbar-thumb:hover {
+  background: #5a9b00;
+}
+
+main #sidebar-left .sidebar-menu h4 {
+  text-align: left;
+  font-size: 1rem;
+  color: white;
+  font-weight: 400;
+  line-height: 1.3;
+}
+
+main #sidebar-left .sidebar-menu h4 strong {
+  color: white;
+}
+
+main #sidebar-left .sidebar-menu p {
+  margin: 1.5rem .5rem 0 0;
+  font-weight: 100;
+  text-align: left;
+  font-size: 1rem;
+  color: white;
+  word-break: normal;
+}
+
+main #sidebar-left .sidebar-menu .info {
+  font-size: .7rem;
+  height: 60%;
+  overflow-y: auto;
+}
+
+main #sidebar-left .sidebar-menu .info::-webkit-scrollbar {
+  width: 6px;
+}
+
+main #sidebar-left .sidebar-menu .info::-webkit-scrollbar-track {
+  background: #bcbdbc;
+}
+
+main #sidebar-left .sidebar-menu .info::-webkit-scrollbar-thumb {
+  background: #87c133;
+  height: auto;
+}
+
+main #sidebar-left .sidebar-menu .info::-webkit-scrollbar-thumb:hover {
+  background: #5a9b00;
+}
+
+main #sidebar-left .sidebar-menu .sub {
+  height: 90%;
+}
+
+main #sidebar-left .sidebar-menu .projet {
+  font-size: .8rem;
+}
+
+main #sidebar-left .sidebar-menu .look {
+  display: block;
+  margin-top: 1rem;
+  font-size: 1rem;
+  text-align: left;
+  background: none;
+  color: #ffffff;
+  font-weight: bold;
+}
+
+main #sidebar-left .sidebar-menu .look:hover {
+  color: #525451;
+}
+
+main #sidebar-left .sidebar-menu button {
+  margin-bottom: 1rem;
+  text-align: left;
+  display: block;
+  width: 100%;
+  border-radius: 0;
+  padding: .25rem 0 0 .5rem;
+  font-size: .9rem;
+  color: #ffffff;
+  background: none;
+  cursor: pointer;
+  outline: none;
+}
+
+main #sidebar-left .sidebar-menu button:hover {
+  color: #525451;
+  font-weight: bold;
+}
+
+main #sidebar-left .sidebar-menu #simulaer_un_credit, main #sidebar-left .sidebar-menu #imprimer {
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: .8rem;
+  display: block;
+  display: block;
+  background: #87c133;
+  border: none;
+  border-radius: 1.4rem;
+  border-radius: 3px;
+  padding: .3rem .2rem;
+  font-size: 1rem;
+  color: #ffffff;
+}
+
+main #sidebar-left .sidebar-menu #simulaer_un_credit a, main #sidebar-left .sidebar-menu #imprimer a {
+  display: block;
+  font-size: .95rem;
+  color: white;
+  padding: .75rem 3rem;
+}
+
+main #sidebar-left .sidebar-menu #simulaer_un_credit:hover, main #sidebar-left .sidebar-menu #imprimer:hover {
+  background: #5a9b00;
+}
+
+main #sidebar-left .sidebar-menu #simulaer_un_credit:focus, main #sidebar-left .sidebar-menu #imprimer:focus {
+  outline: none;
+}
+
+main #sidebar-left .sidebar-menu #simulaer_un_credit a, main #sidebar-left .sidebar-menu #imprimer a {
+  display: inline;
+  padding: 0;
+}
+
+main #sidebar-left .sidebar-menu #simulaer_un_credit:hover, main #sidebar-left .sidebar-menu #imprimer:hover {
+  font-weight: normal;
+}
+
+main #sidebar-left .sidebar-menu #goback {
+  display: block;
+  background: #87c133;
+  border: none;
+  border-radius: 1.4rem;
+  margin: 0 auto;
+  position: absolute;
+  left: 0;
+  right: 0;
+  width: auto;
+  bottom: 1rem;
+  padding: 0.4rem 2.5rem;
+  color: #ffffff;
+  font-size: .8rem;
+}
+
+main #sidebar-left .sidebar-menu #goback a {
+  display: block;
+  font-size: .95rem;
+  color: white;
+  padding: .75rem 3rem;
+}
+
+main #sidebar-left .sidebar-menu #goback:hover {
+  background: #5a9b00;
+}
+
+main #sidebar-left .sidebar-menu #goback:focus {
+  outline: none;
+}
+
+main #sidebar-left .sidebar-menu #goback i {
+  font-size: .7rem;
+  color: white;
+  padding-right: .3rem;
+}
+
+main .main-right {
+  width: calc(100% - 14rem);
+}
+
 #terrain_presentation {
   position: relative;
 }
@@ -352,7 +562,6 @@ a, button {
   float: right;
   text-align: center;
   height: 100%;
-  width: calc(100% - 14rem);
   overflow: auto;
 }
 
@@ -516,212 +725,6 @@ a, button {
   color: white;
 }
 
-#terrain_presentation #sidebar-left {
-  position: relative;
-  float: left;
-  width: 14rem;
-  height: 100%;
-  background-color: #4cb0b2;
-  border: 0.5px solid #707070;
-  padding: 1rem;
-}
-
-#terrain_presentation #sidebar-left h2 {
-  padding-bottom: 1.4rem;
-}
-
-#terrain_presentation #sidebar-left h2 a {
-  font-size: 1.9rem;
-  font-weight: bold;
-  color: white;
-}
-
-#terrain_presentation #sidebar-left h2:hover a {
-  color: #525451;
-}
-
-#terrain_presentation #sidebar-left .sidebar-menu {
-  margin-bottom: 4rem;
-}
-
-#terrain_presentation #sidebar-left .sidebar-menu::-webkit-scrollbar {
-  width: 6px;
-}
-
-#terrain_presentation #sidebar-left .sidebar-menu::-webkit-scrollbar-track {
-  background: #bcbdbc;
-}
-
-#terrain_presentation #sidebar-left .sidebar-menu::-webkit-scrollbar-thumb {
-  background: #87c133;
-  height: auto;
-}
-
-#terrain_presentation #sidebar-left .sidebar-menu::-webkit-scrollbar-thumb:hover {
-  background: #5a9b00;
-}
-
-#terrain_presentation #sidebar-left .sidebar-menu h4 {
-  text-align: left;
-  font-size: 1rem;
-  color: white;
-  font-weight: 400;
-  line-height: 1.3;
-}
-
-#terrain_presentation #sidebar-left .sidebar-menu h4 strong {
-  color: white;
-}
-
-#terrain_presentation #sidebar-left .sidebar-menu p {
-  margin: 1.5rem .5rem 0 0;
-  font-weight: 100;
-  text-align: left;
-  font-size: 1rem;
-  color: white;
-  word-break: normal;
-}
-
-#terrain_presentation #sidebar-left .sidebar-menu .info {
-  font-size: .7rem;
-  height: 60%;
-  overflow-y: auto;
-}
-
-#terrain_presentation #sidebar-left .sidebar-menu .info::-webkit-scrollbar {
-  width: 6px;
-}
-
-#terrain_presentation #sidebar-left .sidebar-menu .info::-webkit-scrollbar-track {
-  background: #bcbdbc;
-}
-
-#terrain_presentation #sidebar-left .sidebar-menu .info::-webkit-scrollbar-thumb {
-  background: #87c133;
-  height: auto;
-}
-
-#terrain_presentation #sidebar-left .sidebar-menu .info::-webkit-scrollbar-thumb:hover {
-  background: #5a9b00;
-}
-
-#terrain_presentation #sidebar-left .sidebar-menu .sub {
-  height: 90%;
-}
-
-#terrain_presentation #sidebar-left .sidebar-menu .projet {
-  font-size: .8rem;
-}
-
-#terrain_presentation #sidebar-left .sidebar-menu .look {
-  display: block;
-  margin-top: 1rem;
-  font-size: 1rem;
-  text-align: left;
-  background: none;
-  color: #ffffff;
-  font-weight: bold;
-}
-
-#terrain_presentation #sidebar-left .sidebar-menu .look:hover {
-  color: #525451;
-}
-
-#terrain_presentation #sidebar-left .sidebar-menu button {
-  margin-bottom: 1rem;
-  text-align: left;
-  display: block;
-  width: 100%;
-  border-radius: 0;
-  padding: .25rem 0 0 .5rem;
-  font-size: .9rem;
-  color: #ffffff;
-  background: none;
-  cursor: pointer;
-  outline: none;
-}
-
-#terrain_presentation #sidebar-left .sidebar-menu button:hover {
-  color: #525451;
-  font-weight: bold;
-}
-
-#terrain_presentation #sidebar-left .sidebar-menu #simulaer_un_credit, #terrain_presentation #sidebar-left .sidebar-menu #imprimer {
-  margin: 0 auto;
-  text-align: center;
-  margin-bottom: .8rem;
-  display: block;
-  display: block;
-  background: #87c133;
-  border: none;
-  border-radius: 1.4rem;
-  border-radius: 3px;
-  padding: .3rem .2rem;
-  font-size: 1rem;
-  color: #ffffff;
-}
-
-#terrain_presentation #sidebar-left .sidebar-menu #simulaer_un_credit a, #terrain_presentation #sidebar-left .sidebar-menu #imprimer a {
-  display: block;
-  font-size: .95rem;
-  color: white;
-  padding: .75rem 3rem;
-}
-
-#terrain_presentation #sidebar-left .sidebar-menu #simulaer_un_credit:hover, #terrain_presentation #sidebar-left .sidebar-menu #imprimer:hover {
-  background: #5a9b00;
-}
-
-#terrain_presentation #sidebar-left .sidebar-menu #simulaer_un_credit:focus, #terrain_presentation #sidebar-left .sidebar-menu #imprimer:focus {
-  outline: none;
-}
-
-#terrain_presentation #sidebar-left .sidebar-menu #simulaer_un_credit a, #terrain_presentation #sidebar-left .sidebar-menu #imprimer a {
-  display: inline;
-  padding: 0;
-}
-
-#terrain_presentation #sidebar-left .sidebar-menu #simulaer_un_credit:hover, #terrain_presentation #sidebar-left .sidebar-menu #imprimer:hover {
-  font-weight: normal;
-}
-
-#terrain_presentation #sidebar-left #goback {
-  display: block;
-  background: #87c133;
-  border: none;
-  border-radius: 1.4rem;
-  margin: 0 auto;
-  position: absolute;
-  left: 0;
-  right: 0;
-  width: auto;
-  bottom: 1rem;
-  padding: 0.4rem 2.5rem;
-  color: #ffffff;
-  font-size: .8rem;
-}
-
-#terrain_presentation #sidebar-left #goback a {
-  display: block;
-  font-size: .95rem;
-  color: white;
-  padding: .75rem 3rem;
-}
-
-#terrain_presentation #sidebar-left #goback:hover {
-  background: #5a9b00;
-}
-
-#terrain_presentation #sidebar-left #goback:focus {
-  outline: none;
-}
-
-#terrain_presentation #sidebar-left #goback i {
-  font-size: .7rem;
-  color: white;
-  padding-right: .3rem;
-}
-
 #terrain_plan {
   position: relative;
 }
@@ -730,7 +733,6 @@ a, button {
   float: right;
   text-align: center;
   height: 100%;
-  width: calc(100% - 14rem);
 }
 
 #terrain_plan .main-right .lotissement_name {
@@ -907,212 +909,6 @@ a, button {
   padding: .5rem;
 }
 
-#terrain_plan #sidebar-left {
-  position: relative;
-  float: left;
-  width: 14rem;
-  height: 100%;
-  background-color: #4cb0b2;
-  border: 0.5px solid #707070;
-  padding: 1rem;
-}
-
-#terrain_plan #sidebar-left h2 {
-  padding-bottom: 1.4rem;
-}
-
-#terrain_plan #sidebar-left h2 a {
-  font-size: 1.9rem;
-  font-weight: bold;
-  color: white;
-}
-
-#terrain_plan #sidebar-left h2:hover a {
-  color: #525451;
-}
-
-#terrain_plan #sidebar-left .sidebar-menu {
-  margin-bottom: 4rem;
-}
-
-#terrain_plan #sidebar-left .sidebar-menu::-webkit-scrollbar {
-  width: 6px;
-}
-
-#terrain_plan #sidebar-left .sidebar-menu::-webkit-scrollbar-track {
-  background: #bcbdbc;
-}
-
-#terrain_plan #sidebar-left .sidebar-menu::-webkit-scrollbar-thumb {
-  background: #87c133;
-  height: auto;
-}
-
-#terrain_plan #sidebar-left .sidebar-menu::-webkit-scrollbar-thumb:hover {
-  background: #5a9b00;
-}
-
-#terrain_plan #sidebar-left .sidebar-menu h4 {
-  text-align: left;
-  font-size: 1rem;
-  color: white;
-  font-weight: 400;
-  line-height: 1.3;
-}
-
-#terrain_plan #sidebar-left .sidebar-menu h4 strong {
-  color: white;
-}
-
-#terrain_plan #sidebar-left .sidebar-menu p {
-  margin: 1.5rem .5rem 0 0;
-  font-weight: 100;
-  text-align: left;
-  font-size: 1rem;
-  color: white;
-  word-break: normal;
-}
-
-#terrain_plan #sidebar-left .sidebar-menu .info {
-  font-size: .7rem;
-  height: 60%;
-  overflow-y: auto;
-}
-
-#terrain_plan #sidebar-left .sidebar-menu .info::-webkit-scrollbar {
-  width: 6px;
-}
-
-#terrain_plan #sidebar-left .sidebar-menu .info::-webkit-scrollbar-track {
-  background: #bcbdbc;
-}
-
-#terrain_plan #sidebar-left .sidebar-menu .info::-webkit-scrollbar-thumb {
-  background: #87c133;
-  height: auto;
-}
-
-#terrain_plan #sidebar-left .sidebar-menu .info::-webkit-scrollbar-thumb:hover {
-  background: #5a9b00;
-}
-
-#terrain_plan #sidebar-left .sidebar-menu .sub {
-  height: 90%;
-}
-
-#terrain_plan #sidebar-left .sidebar-menu .projet {
-  font-size: .8rem;
-}
-
-#terrain_plan #sidebar-left .sidebar-menu .look {
-  display: block;
-  margin-top: 1rem;
-  font-size: 1rem;
-  text-align: left;
-  background: none;
-  color: #ffffff;
-  font-weight: bold;
-}
-
-#terrain_plan #sidebar-left .sidebar-menu .look:hover {
-  color: #525451;
-}
-
-#terrain_plan #sidebar-left .sidebar-menu button {
-  margin-bottom: 1rem;
-  text-align: left;
-  display: block;
-  width: 100%;
-  border-radius: 0;
-  padding: .25rem 0 0 .5rem;
-  font-size: .9rem;
-  color: #ffffff;
-  background: none;
-  cursor: pointer;
-  outline: none;
-}
-
-#terrain_plan #sidebar-left .sidebar-menu button:hover {
-  color: #525451;
-  font-weight: bold;
-}
-
-#terrain_plan #sidebar-left .sidebar-menu #simulaer_un_credit, #terrain_plan #sidebar-left .sidebar-menu #imprimer {
-  margin: 0 auto;
-  text-align: center;
-  margin-bottom: .8rem;
-  display: block;
-  display: block;
-  background: #87c133;
-  border: none;
-  border-radius: 1.4rem;
-  border-radius: 3px;
-  padding: .3rem .2rem;
-  font-size: 1rem;
-  color: #ffffff;
-}
-
-#terrain_plan #sidebar-left .sidebar-menu #simulaer_un_credit a, #terrain_plan #sidebar-left .sidebar-menu #imprimer a {
-  display: block;
-  font-size: .95rem;
-  color: white;
-  padding: .75rem 3rem;
-}
-
-#terrain_plan #sidebar-left .sidebar-menu #simulaer_un_credit:hover, #terrain_plan #sidebar-left .sidebar-menu #imprimer:hover {
-  background: #5a9b00;
-}
-
-#terrain_plan #sidebar-left .sidebar-menu #simulaer_un_credit:focus, #terrain_plan #sidebar-left .sidebar-menu #imprimer:focus {
-  outline: none;
-}
-
-#terrain_plan #sidebar-left .sidebar-menu #simulaer_un_credit a, #terrain_plan #sidebar-left .sidebar-menu #imprimer a {
-  display: inline;
-  padding: 0;
-}
-
-#terrain_plan #sidebar-left .sidebar-menu #simulaer_un_credit:hover, #terrain_plan #sidebar-left .sidebar-menu #imprimer:hover {
-  font-weight: normal;
-}
-
-#terrain_plan #sidebar-left #goback {
-  display: block;
-  background: #87c133;
-  border: none;
-  border-radius: 1.4rem;
-  margin: 0 auto;
-  position: absolute;
-  left: 0;
-  right: 0;
-  width: auto;
-  bottom: 1rem;
-  padding: 0.4rem 2.5rem;
-  color: #ffffff;
-  font-size: .8rem;
-}
-
-#terrain_plan #sidebar-left #goback a {
-  display: block;
-  font-size: .95rem;
-  color: white;
-  padding: .75rem 3rem;
-}
-
-#terrain_plan #sidebar-left #goback:hover {
-  background: #5a9b00;
-}
-
-#terrain_plan #sidebar-left #goback:focus {
-  outline: none;
-}
-
-#terrain_plan #sidebar-left #goback i {
-  font-size: .7rem;
-  color: white;
-  padding-right: .3rem;
-}
-
 #terrain_grille {
   position: relative;
 }
@@ -1121,7 +917,6 @@ a, button {
   float: right;
   text-align: center;
   height: 100%;
-  width: calc(100% - 14rem);
   overflow: auto;
 }
 
@@ -1247,7 +1042,7 @@ a, button {
 
 #terrain_grille .main-right .grille .wrapper .notaire_geometre > div {
   padding: .3rem 2rem;
-  border: 1px solid #707070;
+  border: 1px dashed #707070;
 }
 
 #terrain_grille .main-right .grille .wrapper .notaire_geometre > div h5 {
@@ -1292,212 +1087,6 @@ a, button {
   border: 1px solid #707070;
 }
 
-#terrain_grille #sidebar-left {
-  position: relative;
-  float: left;
-  width: 14rem;
-  height: 100%;
-  background-color: #4cb0b2;
-  border: 0.5px solid #707070;
-  padding: 1rem;
-}
-
-#terrain_grille #sidebar-left h2 {
-  padding-bottom: 1.4rem;
-}
-
-#terrain_grille #sidebar-left h2 a {
-  font-size: 1.9rem;
-  font-weight: bold;
-  color: white;
-}
-
-#terrain_grille #sidebar-left h2:hover a {
-  color: #525451;
-}
-
-#terrain_grille #sidebar-left .sidebar-menu {
-  margin-bottom: 4rem;
-}
-
-#terrain_grille #sidebar-left .sidebar-menu::-webkit-scrollbar {
-  width: 6px;
-}
-
-#terrain_grille #sidebar-left .sidebar-menu::-webkit-scrollbar-track {
-  background: #bcbdbc;
-}
-
-#terrain_grille #sidebar-left .sidebar-menu::-webkit-scrollbar-thumb {
-  background: #87c133;
-  height: auto;
-}
-
-#terrain_grille #sidebar-left .sidebar-menu::-webkit-scrollbar-thumb:hover {
-  background: #5a9b00;
-}
-
-#terrain_grille #sidebar-left .sidebar-menu h4 {
-  text-align: left;
-  font-size: 1rem;
-  color: white;
-  font-weight: 400;
-  line-height: 1.3;
-}
-
-#terrain_grille #sidebar-left .sidebar-menu h4 strong {
-  color: white;
-}
-
-#terrain_grille #sidebar-left .sidebar-menu p {
-  margin: 1.5rem .5rem 0 0;
-  font-weight: 100;
-  text-align: left;
-  font-size: 1rem;
-  color: white;
-  word-break: normal;
-}
-
-#terrain_grille #sidebar-left .sidebar-menu .info {
-  font-size: .7rem;
-  height: 60%;
-  overflow-y: auto;
-}
-
-#terrain_grille #sidebar-left .sidebar-menu .info::-webkit-scrollbar {
-  width: 6px;
-}
-
-#terrain_grille #sidebar-left .sidebar-menu .info::-webkit-scrollbar-track {
-  background: #bcbdbc;
-}
-
-#terrain_grille #sidebar-left .sidebar-menu .info::-webkit-scrollbar-thumb {
-  background: #87c133;
-  height: auto;
-}
-
-#terrain_grille #sidebar-left .sidebar-menu .info::-webkit-scrollbar-thumb:hover {
-  background: #5a9b00;
-}
-
-#terrain_grille #sidebar-left .sidebar-menu .sub {
-  height: 90%;
-}
-
-#terrain_grille #sidebar-left .sidebar-menu .projet {
-  font-size: .8rem;
-}
-
-#terrain_grille #sidebar-left .sidebar-menu .look {
-  display: block;
-  margin-top: 1rem;
-  font-size: 1rem;
-  text-align: left;
-  background: none;
-  color: #ffffff;
-  font-weight: bold;
-}
-
-#terrain_grille #sidebar-left .sidebar-menu .look:hover {
-  color: #525451;
-}
-
-#terrain_grille #sidebar-left .sidebar-menu button {
-  margin-bottom: 1rem;
-  text-align: left;
-  display: block;
-  width: 100%;
-  border-radius: 0;
-  padding: .25rem 0 0 .5rem;
-  font-size: .9rem;
-  color: #ffffff;
-  background: none;
-  cursor: pointer;
-  outline: none;
-}
-
-#terrain_grille #sidebar-left .sidebar-menu button:hover {
-  color: #525451;
-  font-weight: bold;
-}
-
-#terrain_grille #sidebar-left .sidebar-menu #simulaer_un_credit, #terrain_grille #sidebar-left .sidebar-menu #imprimer {
-  margin: 0 auto;
-  text-align: center;
-  margin-bottom: .8rem;
-  display: block;
-  display: block;
-  background: #87c133;
-  border: none;
-  border-radius: 1.4rem;
-  border-radius: 3px;
-  padding: .3rem .2rem;
-  font-size: 1rem;
-  color: #ffffff;
-}
-
-#terrain_grille #sidebar-left .sidebar-menu #simulaer_un_credit a, #terrain_grille #sidebar-left .sidebar-menu #imprimer a {
-  display: block;
-  font-size: .95rem;
-  color: white;
-  padding: .75rem 3rem;
-}
-
-#terrain_grille #sidebar-left .sidebar-menu #simulaer_un_credit:hover, #terrain_grille #sidebar-left .sidebar-menu #imprimer:hover {
-  background: #5a9b00;
-}
-
-#terrain_grille #sidebar-left .sidebar-menu #simulaer_un_credit:focus, #terrain_grille #sidebar-left .sidebar-menu #imprimer:focus {
-  outline: none;
-}
-
-#terrain_grille #sidebar-left .sidebar-menu #simulaer_un_credit a, #terrain_grille #sidebar-left .sidebar-menu #imprimer a {
-  display: inline;
-  padding: 0;
-}
-
-#terrain_grille #sidebar-left .sidebar-menu #simulaer_un_credit:hover, #terrain_grille #sidebar-left .sidebar-menu #imprimer:hover {
-  font-weight: normal;
-}
-
-#terrain_grille #sidebar-left #goback {
-  display: block;
-  background: #87c133;
-  border: none;
-  border-radius: 1.4rem;
-  margin: 0 auto;
-  position: absolute;
-  left: 0;
-  right: 0;
-  width: auto;
-  bottom: 1rem;
-  padding: 0.4rem 2.5rem;
-  color: #ffffff;
-  font-size: .8rem;
-}
-
-#terrain_grille #sidebar-left #goback a {
-  display: block;
-  font-size: .95rem;
-  color: white;
-  padding: .75rem 3rem;
-}
-
-#terrain_grille #sidebar-left #goback:hover {
-  background: #5a9b00;
-}
-
-#terrain_grille #sidebar-left #goback:focus {
-  outline: none;
-}
-
-#terrain_grille #sidebar-left #goback i {
-  font-size: .7rem;
-  color: white;
-  padding-right: .3rem;
-}
-
 #terrain_document {
   position: relative;
 }
@@ -1506,7 +1095,6 @@ a, button {
   float: right;
   text-align: center;
   height: 100%;
-  width: calc(100% - 14rem);
   overflow: auto;
 }
 
@@ -1525,12 +1113,10 @@ a, button {
 
 #terrain_document .main-right .document {
   margin: .5rem;
-  background-color: #e0e0e0;
 }
 
 #terrain_document .main-right .document .wrapper {
-  margin: .5rem;
-  background: white;
+  border: 1px solid #707070;
 }
 
 #terrain_document .main-right .document .wrapper h2 {
@@ -1569,211 +1155,5 @@ a, button {
 }
 
 #terrain_document .main-right .document .wrapper div p a img {
-  padding-right: .3rem;
-}
-
-#terrain_document #sidebar-left {
-  position: relative;
-  float: left;
-  width: 14rem;
-  height: 100%;
-  background-color: #4cb0b2;
-  border: 0.5px solid #707070;
-  padding: 1rem;
-}
-
-#terrain_document #sidebar-left h2 {
-  padding-bottom: 1.4rem;
-}
-
-#terrain_document #sidebar-left h2 a {
-  font-size: 1.9rem;
-  font-weight: bold;
-  color: white;
-}
-
-#terrain_document #sidebar-left h2:hover a {
-  color: #525451;
-}
-
-#terrain_document #sidebar-left .sidebar-menu {
-  margin-bottom: 4rem;
-}
-
-#terrain_document #sidebar-left .sidebar-menu::-webkit-scrollbar {
-  width: 6px;
-}
-
-#terrain_document #sidebar-left .sidebar-menu::-webkit-scrollbar-track {
-  background: #bcbdbc;
-}
-
-#terrain_document #sidebar-left .sidebar-menu::-webkit-scrollbar-thumb {
-  background: #87c133;
-  height: auto;
-}
-
-#terrain_document #sidebar-left .sidebar-menu::-webkit-scrollbar-thumb:hover {
-  background: #5a9b00;
-}
-
-#terrain_document #sidebar-left .sidebar-menu h4 {
-  text-align: left;
-  font-size: 1rem;
-  color: white;
-  font-weight: 400;
-  line-height: 1.3;
-}
-
-#terrain_document #sidebar-left .sidebar-menu h4 strong {
-  color: white;
-}
-
-#terrain_document #sidebar-left .sidebar-menu p {
-  margin: 1.5rem .5rem 0 0;
-  font-weight: 100;
-  text-align: left;
-  font-size: 1rem;
-  color: white;
-  word-break: normal;
-}
-
-#terrain_document #sidebar-left .sidebar-menu .info {
-  font-size: .7rem;
-  height: 60%;
-  overflow-y: auto;
-}
-
-#terrain_document #sidebar-left .sidebar-menu .info::-webkit-scrollbar {
-  width: 6px;
-}
-
-#terrain_document #sidebar-left .sidebar-menu .info::-webkit-scrollbar-track {
-  background: #bcbdbc;
-}
-
-#terrain_document #sidebar-left .sidebar-menu .info::-webkit-scrollbar-thumb {
-  background: #87c133;
-  height: auto;
-}
-
-#terrain_document #sidebar-left .sidebar-menu .info::-webkit-scrollbar-thumb:hover {
-  background: #5a9b00;
-}
-
-#terrain_document #sidebar-left .sidebar-menu .sub {
-  height: 90%;
-}
-
-#terrain_document #sidebar-left .sidebar-menu .projet {
-  font-size: .8rem;
-}
-
-#terrain_document #sidebar-left .sidebar-menu .look {
-  display: block;
-  margin-top: 1rem;
-  font-size: 1rem;
-  text-align: left;
-  background: none;
-  color: #ffffff;
-  font-weight: bold;
-}
-
-#terrain_document #sidebar-left .sidebar-menu .look:hover {
-  color: #525451;
-}
-
-#terrain_document #sidebar-left .sidebar-menu button {
-  margin-bottom: 1rem;
-  text-align: left;
-  display: block;
-  width: 100%;
-  border-radius: 0;
-  padding: .25rem 0 0 .5rem;
-  font-size: .9rem;
-  color: #ffffff;
-  background: none;
-  cursor: pointer;
-  outline: none;
-}
-
-#terrain_document #sidebar-left .sidebar-menu button:hover {
-  color: #525451;
-  font-weight: bold;
-}
-
-#terrain_document #sidebar-left .sidebar-menu #simulaer_un_credit, #terrain_document #sidebar-left .sidebar-menu #imprimer {
-  margin: 0 auto;
-  text-align: center;
-  margin-bottom: .8rem;
-  display: block;
-  display: block;
-  background: #87c133;
-  border: none;
-  border-radius: 1.4rem;
-  border-radius: 3px;
-  padding: .3rem .2rem;
-  font-size: 1rem;
-  color: #ffffff;
-}
-
-#terrain_document #sidebar-left .sidebar-menu #simulaer_un_credit a, #terrain_document #sidebar-left .sidebar-menu #imprimer a {
-  display: block;
-  font-size: .95rem;
-  color: white;
-  padding: .75rem 3rem;
-}
-
-#terrain_document #sidebar-left .sidebar-menu #simulaer_un_credit:hover, #terrain_document #sidebar-left .sidebar-menu #imprimer:hover {
-  background: #5a9b00;
-}
-
-#terrain_document #sidebar-left .sidebar-menu #simulaer_un_credit:focus, #terrain_document #sidebar-left .sidebar-menu #imprimer:focus {
-  outline: none;
-}
-
-#terrain_document #sidebar-left .sidebar-menu #simulaer_un_credit a, #terrain_document #sidebar-left .sidebar-menu #imprimer a {
-  display: inline;
-  padding: 0;
-}
-
-#terrain_document #sidebar-left .sidebar-menu #simulaer_un_credit:hover, #terrain_document #sidebar-left .sidebar-menu #imprimer:hover {
-  font-weight: normal;
-}
-
-#terrain_document #sidebar-left #goback {
-  display: block;
-  background: #87c133;
-  border: none;
-  border-radius: 1.4rem;
-  margin: 0 auto;
-  position: absolute;
-  left: 0;
-  right: 0;
-  width: auto;
-  bottom: 1rem;
-  padding: 0.4rem 2.5rem;
-  color: #ffffff;
-  font-size: .8rem;
-}
-
-#terrain_document #sidebar-left #goback a {
-  display: block;
-  font-size: .95rem;
-  color: white;
-  padding: .75rem 3rem;
-}
-
-#terrain_document #sidebar-left #goback:hover {
-  background: #5a9b00;
-}
-
-#terrain_document #sidebar-left #goback:focus {
-  outline: none;
-}
-
-#terrain_document #sidebar-left #goback i {
-  font-size: .7rem;
-  color: white;
   padding-right: .3rem;
 }

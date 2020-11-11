@@ -131,8 +131,10 @@
     .step3 .help > div span:first-child { padding-right: 2rem;} 
   }
 
-  // qui_sommes-nous
-  #qui_sommes-nous .text .text_right { width: 75vw;}
+  // QUI_SOMMES_NOUS
+  // LIST CONTENT ON THE RIGHT
+  #qui_sommes_nous .text .text_right { width: 75vw;}
+
 
   // LEXIQUE
   #lexique > div { padding: .8rem 1rem;}
@@ -169,7 +171,7 @@
          &:hover a { color: $text-dark;}  
        }
     
-       .sidebar-menu { height: auto; margin-right: 0; margin-top: 0; overflow-y: visible;
+       .sidebar-menu { height: auto; margin: 0; overflow-y: visible;
         button { color: white; background-color: $sub; padding: .8rem 1rem; width: 80%; text-align: center; margin: .5rem auto;}
        
         #simulaer_un_credit, #imprimer 
@@ -179,7 +181,7 @@
         }
 
         // GOBACK BUTTON AT THE BOTTOM
-       .goback { margin: 2rem auto .5rem; position: static;}
+       #goback { width: auto; padding: .4rem 2.5rem; margin: 2rem auto .5rem; position: static;}
      }   
    } 
 
@@ -203,7 +205,7 @@
 
       .lot_image {
         img { display: none;}
-        button { position: static; padding: .7rem 1.5rem; 
+        button { position: static; padding: 0.5rem 1.5rem; 
           br { display: none;}
         }
       }
@@ -285,9 +287,10 @@
   }  
 
   // QUI SOMMES
-  #qui_sommes-nous .text {
+  #qui_sommes_nous .text {
     .list_left { display: none; }
-    .text .text_right { width: 100%; height: auto; margin: 1.5rem auto; float: none; overflow-y: auto; direction: ltr;}
+    .text_right { width: 100%; height: auto; margin: 1.5rem auto; float: none; overflow-y: auto; direction: ltr;
+    }
   } 
 
 }
@@ -373,7 +376,6 @@
          }
        }
      }
-     .goback { margin: 2rem auto .5rem; position: static;}
    }   
  }
  
@@ -474,8 +476,14 @@
 
 
   // QUI SOMMES NOUS
-  #qui_sommes-nous .text .text_right article h3 { font-size: 1.2rem;}
-
+  #qui_sommes_nous .text {
+    .list_left { display: none; }
+    .text_right { width: 100%; height: auto; margin: 1.5rem auto; float: none; overflow-y: auto; direction: ltr;
+      article { padding: .8rem .5rem;
+        h3 { font-size: 1.2rem;}
+      }
+    }
+  } 
 
 
   // LEXIQUE

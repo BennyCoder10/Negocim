@@ -491,7 +491,7 @@ a, button {
   #simulateur_steps .step3 .help > div span:first-child {
     padding-right: 2rem;
   }
-  #qui_sommes-nous .text .text_right {
+  #qui_sommes_nous .text .text_right {
     width: 75vw;
   }
   #lexique > div {
@@ -570,8 +570,7 @@ a, button {
   #terrain_grille #sidebar-left .sidebar-menu,
   #terrain_document #sidebar-left .sidebar-menu {
     height: auto;
-    margin-right: 0;
-    margin-top: 0;
+    margin: 0;
     overflow-y: visible;
   }
   #terrain_presentation #sidebar-left .sidebar-menu button,
@@ -608,10 +607,12 @@ a, button {
   #terrain_document #sidebar-left .sidebar-menu #imprimer a {
     color: #87c133;
   }
-  #terrain_presentation #sidebar-left .goback,
-  #terrain_plan #sidebar-left .goback,
-  #terrain_grille #sidebar-left .goback,
-  #terrain_document #sidebar-left .goback {
+  #terrain_presentation #sidebar-left #goback,
+  #terrain_plan #sidebar-left #goback,
+  #terrain_grille #sidebar-left #goback,
+  #terrain_document #sidebar-left #goback {
+    width: auto;
+    padding: .4rem 2.5rem;
     margin: 2rem auto .5rem;
     position: static;
   }
@@ -652,7 +653,7 @@ a, button {
   }
   #terrain_plan .main-right .lot_option .wrapper .up .lot_image button {
     position: static;
-    padding: .7rem 1.5rem;
+    padding: 0.5rem 1.5rem;
   }
   #terrain_plan .main-right .lot_option .wrapper .up .lot_image button br {
     display: none;
@@ -770,10 +771,10 @@ a, button {
   #simulateur_steps .step3 .help > div span:first-child {
     font-size: .8rem;
   }
-  #qui_sommes-nous .text .list_left {
+  #qui_sommes_nous .text .list_left {
     display: none;
   }
-  #qui_sommes-nous .text .text .text_right {
+  #qui_sommes_nous .text .text_right {
     width: 100%;
     height: auto;
     margin: 1.5rem auto;
@@ -913,10 +914,6 @@ a, button {
     font-size: .9rem;
     color: #525451;
     background: white;
-  }
-  #terrain #sidebar-left .goback {
-    margin: 2rem auto .5rem;
-    position: static;
   }
   #terrain_plan .main-right .lot_option .wrapper .up .lot_info #lot_image_mobile {
     width: 70%;
@@ -1065,7 +1062,21 @@ a, button {
   footer p #legales {
     margin-right: 0;
   }
-  #qui_sommes-nous .text .text_right article h3 {
+  #qui_sommes_nous .text .list_left {
+    display: none;
+  }
+  #qui_sommes_nous .text .text_right {
+    width: 100%;
+    height: auto;
+    margin: 1.5rem auto;
+    float: none;
+    overflow-y: auto;
+    direction: ltr;
+  }
+  #qui_sommes_nous .text .text_right article {
+    padding: .8rem .5rem;
+  }
+  #qui_sommes_nous .text .text_right article h3 {
     font-size: 1.2rem;
   }
   #lexique > div .index {

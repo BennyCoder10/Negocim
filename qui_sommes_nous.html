@@ -12,16 +12,20 @@
   <link rel="stylesheet" href="css/default.css">
   <link rel="stylesheet" href="css/qui_sommes-nous.css">
   <link rel="stylesheet" href="css/responsive.css">
-
 </head>
 
 <body>
-  <!-- FLEXBOX -->
+  <!-- WRAPPER FOR FULL HEIGHT ON THE SCREEN -->
   <div class="wrapper">
+
     <!-- HEADER -->
     <header>
+
+      <!-- NEGOCIM LOGO -->
       <h1><a href="index.html"><img src="images/main_logo.jpg" alt="Negocim logo"><span class="hide">Negocim</span></a></h1>
       <h2 class="hide">menu</h2>
+
+      <!-- NAV MENU  -->
       <nav class="menu" id="menu">
         <ul>
           <li><a href="index.html">Terrains</a></li>
@@ -32,6 +36,8 @@
           <li><a href="lexique.html">Lexique</a></li>            
         </ul>
       </nav>
+
+      <!-- MENU BAR ON MOBILE VERSION -->
       <div id="menu-toggle" onclick="menuToggle(this)">
         <div class="bar1"></div>
         <div class="bar2"></div>
@@ -39,18 +45,25 @@
       </div>
     </header>
   
-  <!-- MAIN IN THE MIDDLE -->
-    <main id="qui_sommes-nous">
+  <!-- MAIN -->
+    <main id="qui_sommes_nous">
+
+      <!-- BANNER IMAGE ON THE TOP -->
       <div>
         <img src="images/banner.jpg" alt="houses">
       </div>
+
       <div class="text clear">
+
+        <!-- LIST ON THE LEFT -->
         <ul class="list_left">
           <li><a href="#activité"><span>Activité et savoir-faire</span></a></li>
           <li><a href="#historique"><span>Historique</span></a></li>
           <li><a href="#réalisations"><span>Réalisations</span></a></li>
           <li><a href="#financiers"><span>Les moyens financiers</span></a></li>
         </ul>
+
+        <!-- LIST CONTENT ON THE RIGHT -->
         <div class="text_right">
           <article id="activité">
             <h3>Activité et Savoir-Faire</h3>
@@ -81,16 +94,19 @@
         </div>
       </div>
     </main>
+    <!-- END OF MAIN -->
     
-    <!-- 
-      FOOTER AT THE BOTTOM
-     -->
+    <!-- FOOTER -->
      <footer>
       <p><a href="politique.html">Politique de protection des données personnelles</a></p>
     </footer>
+    <!-- END OF FOOTER -->
 
   </div>
+  <!-- END OF WRAPPER -->
 
+  <!-- JAVASCRIPT -->
   <script src="js/index.js"></script>
+
 </body>
 </html>
