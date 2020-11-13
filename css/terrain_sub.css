@@ -344,6 +344,13 @@ a, button {
   }
 }
 
+@media print and (max-width: 770px) {
+  body {
+    -webkit-print-color-adjust: exact;
+    color-adjust: exact;
+  }
+}
+
 main #sidebar-left {
   position: relative;
   float: left;
@@ -474,6 +481,25 @@ main #sidebar-left .sidebar-menu button:hover {
   font-weight: bold;
 }
 
+main #sidebar-left .sidebar-menu #itineraire {
+  -webkit-transition: none;
+  transition: none;
+}
+
+main #sidebar-left .sidebar-menu #itineraire a {
+  display: inline;
+  color: white;
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
+}
+
+main #sidebar-left .sidebar-menu #itineraire:hover a {
+  color: #525451;
+  font-weight: bold;
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
+}
+
 main #sidebar-left .sidebar-menu #simulaer_un_credit, main #sidebar-left .sidebar-menu #imprimer {
   margin: 0 auto;
   text-align: center;
@@ -506,6 +532,7 @@ main #sidebar-left .sidebar-menu #simulaer_un_credit:focus, main #sidebar-left .
 
 main #sidebar-left .sidebar-menu #simulaer_un_credit a, main #sidebar-left .sidebar-menu #imprimer a {
   display: inline;
+  font-size: 1rem;
   padding: 0;
 }
 
@@ -1156,4 +1183,128 @@ main .main-right {
 
 #terrain_document .main-right .document .wrapper div p a img {
   padding-right: .3rem;
+}
+
+#terrain_option {
+  position: relative;
+}
+
+#terrain_option .main-right {
+  float: right;
+  text-align: center;
+  height: 100%;
+}
+
+#terrain_option .main-right .lotissement_name {
+  display: none;
+  padding: .5rem 0;
+}
+
+#terrain_option .main-right .lotissement_name h3 {
+  font-weight: normal;
+}
+
+#terrain_option .main-right .lotissement_name h2 i {
+  color: #87c133;
+}
+
+#terrain_option .main-right > div {
+  margin: .5rem;
+}
+
+#terrain_option .main-right > div .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  background-color: #e0e0e08a;
+}
+
+#terrain_option .main-right > div .wrapper .option_left {
+  -webkit-box-flex: 7;
+      -ms-flex: 7;
+          flex: 7;
+}
+
+#terrain_option .main-right > div .wrapper .option_left > h2 {
+  padding: .5rem 1.5rem;
+  margin: .5rem;
+  background-color: #87c133;
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+#terrain_option .main-right > div .wrapper .option_left > h2 span {
+  display: block;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: white;
+  line-height: 1;
+  padding: 0 .3rem;
+}
+
+#terrain_option .main-right > div .wrapper .option_left > h2 span:nth-child(1) {
+  text-align: left;
+}
+
+#terrain_option .main-right > div .wrapper .option_left > h2 span:nth-child(3) {
+  text-align: right;
+  padding-top: .3rem;
+}
+
+#terrain_option .main-right > div .wrapper .option_left > div {
+  margin: .5rem;
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+#terrain_option .main-right > div .wrapper .option_left > div h2 {
+  text-align: left;
+  color: white;
+  padding: 1px .5rem;
+  background-color: #87c133;
+}
+
+#terrain_option .main-right > div .wrapper .option_left > div p {
+  font-size: .8rem;
+  text-align: left;
+  padding: .5rem 1rem;
+  background: white;
+}
+
+#terrain_option .main-right > div .wrapper .option_right {
+  -webkit-box-flex: 3;
+      -ms-flex: 3;
+          flex: 3;
+}
+
+#terrain_option .main-right > div .wrapper .option_right > h2 {
+  display: none;
+  color: white;
+  padding: 1px .5rem;
+  margin: .5rem;
+  background-color: #87c133;
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+#terrain_option .main-right > div .wrapper .option_right > div {
+  padding: .5rem;
+  margin: .5rem;
+  margin-left: 0;
+  background: white;
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+#terrain_option .main-right > div .wrapper .option_right > div h4 {
+  color: #87c133;
+  padding-bottom: .5rem;
+}
+
+#terrain_option .main-right > div .wrapper .option_right > div p {
+  font-size: .8rem;
 }

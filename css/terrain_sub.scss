@@ -2,8 +2,6 @@
 @import "index.scss";
 
 
-
-
 // 
 // COMMON SIDEBAR MENU ON THE LEFT 
 // 
@@ -35,9 +33,14 @@ main {
         &:hover { color: $text-dark; font-weight: bold;}  
       }
 
+      #itineraire { transition: none;
+        a { display: inline; color: white; transition: all .5s ease;}
+        &:hover a { color: $text-dark; font-weight: bold; transition: all .5s ease;}
+      }
+
       #simulaer_un_credit, #imprimer 
       { margin: 0 auto; text-align: center; margin-bottom: .8rem; display: block; @include buttons; border-radius: 3px; padding: .3rem .2rem; font-size: 1rem; color: $text;
-        a { display: inline; padding: 0;}
+        a { display: inline; font-size: 1rem; padding: 0;}
         &:hover { font-weight: normal;}
       }  
       #goback { @include buttons; margin: 0 auto; position: absolute; left: 0; right: 0; width: auto; bottom: 1rem; padding: 0.4rem 2.5rem; color: $text; font-size: .8rem;
@@ -482,4 +485,56 @@ main {
   //     i { font-size: .7rem; color: white; padding-right: .3rem;}       
   //   }       
   // }
+}
+
+
+//
+// MAIN #TERRAIN_OPTION 
+//
+#terrain_option { position: relative; 
+
+  // CONTENT ON THE RIGHT
+  .main-right {
+    float: right; text-align: center; height: 100%; 
+    // width: calc(100% - 14rem); 
+    // overflow: auto; 
+
+     // LOTISSEMENT NAME ON MOBILE
+     .lotissement_name { display: none; padding: .5rem 0;
+      h3 { font-weight: normal;}
+      h2 i { color: $sub;}
+    }
+    
+    //  LOT OPTION DETAIL PAGES
+    > div { margin: .5rem;  
+      .wrapper { display: flex; flex-direction: row; background-color: $background;
+
+        // OPTION & RESERVE ON THE LEFT
+        .option_left { flex: 7;
+          // HEADER
+          > h2 { padding: .5rem 1.5rem; margin: .5rem; background-color: $sub; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            span { display: block; font-size: 1.5rem; font-weight: bold; color: white; line-height: 1; padding: 0 .3rem;}
+            span:nth-child(1) { text-align: left;}
+            span:nth-child(3) { text-align: right; padding-top: .3rem ;}
+          }
+          // END OF HEADER
+
+          > div { margin: .5rem; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            h2 { text-align: left; color: white; padding: 1px .5rem; background-color: $sub;}
+            p { font-size: .8rem; text-align: left; padding: .5rem 1rem; background: white;}
+          }    
+        }
+
+        // OPTION CONTACT ON THE RIGHT
+        .option_right { flex: 3;
+          > h2 { display: none; color: white; padding: 1px .5rem; margin: .5rem; background-color: $sub; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);}
+          > div { padding: .5rem; margin: .5rem; margin-left: 0; background: white; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            h4 { color: $sub; padding-bottom: .5rem;}
+            p { font-size: .8rem;}
+          }
+        }
+      }         
+    }  
+  }
+  // END OF CONTENT ON THE RIGHT
 }

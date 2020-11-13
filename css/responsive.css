@@ -344,6 +344,13 @@ a, button {
   }
 }
 
+@media print and (max-width: 770px) {
+  body {
+    -webkit-print-color-adjust: exact;
+    color-adjust: exact;
+  }
+}
+
 @media only screen and (max-width: 1240px) {
   #lexique > div .index #lexique-nav {
     -webkit-box-pack: start;
@@ -510,7 +517,8 @@ a, button {
   #terrain_presentation .main-right,
   #terrain_plan .main-right,
   #terrain_grille .main-right,
-  #terrain_document .main-right {
+  #terrain_document .main-right,
+  #terrain_option .main-right {
     width: 100%;
     height: auto;
     padding: .3rem;
@@ -519,25 +527,29 @@ a, button {
   #terrain_presentation .main-right .lotissement_name,
   #terrain_plan .main-right .lotissement_name,
   #terrain_grille .main-right .lotissement_name,
-  #terrain_document .main-right .lotissement_name {
+  #terrain_document .main-right .lotissement_name,
+  #terrain_option .main-right .lotissement_name {
     display: block;
   }
   #terrain_presentation .main-right #presentation,
   #terrain_plan .main-right #presentation,
   #terrain_grille .main-right #presentation,
-  #terrain_document .main-right #presentation {
+  #terrain_document .main-right #presentation,
+  #terrain_option .main-right #presentation {
     padding: 0;
   }
   #terrain_presentation .main-right #presentation > div > p,
   #terrain_plan .main-right #presentation > div > p,
   #terrain_grille .main-right #presentation > div > p,
-  #terrain_document .main-right #presentation > div > p {
+  #terrain_document .main-right #presentation > div > p,
+  #terrain_option .main-right #presentation > div > p {
     padding-top: 0;
   }
   #terrain_presentation #sidebar-left,
   #terrain_plan #sidebar-left,
   #terrain_grille #sidebar-left,
-  #terrain_document #sidebar-left {
+  #terrain_document #sidebar-left,
+  #terrain_option #sidebar-left {
     width: 100%;
     height: auto;
     position: static;
@@ -547,7 +559,8 @@ a, button {
   #terrain_presentation #sidebar-left h2,
   #terrain_plan #sidebar-left h2,
   #terrain_grille #sidebar-left h2,
-  #terrain_document #sidebar-left h2 {
+  #terrain_document #sidebar-left h2,
+  #terrain_option #sidebar-left h2 {
     text-align: center;
     padding: 0;
     position: absolute;
@@ -558,7 +571,8 @@ a, button {
   #terrain_presentation #sidebar-left h2 a,
   #terrain_plan #sidebar-left h2 a,
   #terrain_grille #sidebar-left h2 a,
-  #terrain_document #sidebar-left h2 a {
+  #terrain_document #sidebar-left h2 a,
+  #terrain_option #sidebar-left h2 a {
     font-size: 1.5rem;
     font-weight: bold;
     color: #ffffff;
@@ -569,13 +583,15 @@ a, button {
   #terrain_presentation #sidebar-left h2:hover a,
   #terrain_plan #sidebar-left h2:hover a,
   #terrain_grille #sidebar-left h2:hover a,
-  #terrain_document #sidebar-left h2:hover a {
+  #terrain_document #sidebar-left h2:hover a,
+  #terrain_option #sidebar-left h2:hover a {
     color: #525451;
   }
   #terrain_presentation #sidebar-left .sidebar-menu,
   #terrain_plan #sidebar-left .sidebar-menu,
   #terrain_grille #sidebar-left .sidebar-menu,
-  #terrain_document #sidebar-left .sidebar-menu {
+  #terrain_document #sidebar-left .sidebar-menu,
+  #terrain_option #sidebar-left .sidebar-menu {
     height: auto;
     margin: 0;
     overflow-y: visible;
@@ -583,7 +599,8 @@ a, button {
   #terrain_presentation #sidebar-left .sidebar-menu button,
   #terrain_plan #sidebar-left .sidebar-menu button,
   #terrain_grille #sidebar-left .sidebar-menu button,
-  #terrain_document #sidebar-left .sidebar-menu button {
+  #terrain_document #sidebar-left .sidebar-menu button,
+  #terrain_option #sidebar-left .sidebar-menu button {
     color: white;
     background-color: #87c133;
     padding: .8rem 1rem;
@@ -591,13 +608,43 @@ a, button {
     text-align: center;
     margin: .5rem auto;
   }
+  #terrain_presentation #sidebar-left .sidebar-menu #itineraire,
+  #terrain_plan #sidebar-left .sidebar-menu #itineraire,
+  #terrain_grille #sidebar-left .sidebar-menu #itineraire,
+  #terrain_document #sidebar-left .sidebar-menu #itineraire,
+  #terrain_option #sidebar-left .sidebar-menu #itineraire {
+    -webkit-transition: none;
+    transition: none;
+  }
+  #terrain_presentation #sidebar-left .sidebar-menu #itineraire a,
+  #terrain_plan #sidebar-left .sidebar-menu #itineraire a,
+  #terrain_grille #sidebar-left .sidebar-menu #itineraire a,
+  #terrain_document #sidebar-left .sidebar-menu #itineraire a,
+  #terrain_option #sidebar-left .sidebar-menu #itineraire a {
+    display: block;
+    color: white;
+    -webkit-transition: all .5s ease;
+    transition: all .5s ease;
+  }
+  #terrain_presentation #sidebar-left .sidebar-menu #itineraire a:hover,
+  #terrain_plan #sidebar-left .sidebar-menu #itineraire a:hover,
+  #terrain_grille #sidebar-left .sidebar-menu #itineraire a:hover,
+  #terrain_document #sidebar-left .sidebar-menu #itineraire a:hover,
+  #terrain_option #sidebar-left .sidebar-menu #itineraire a:hover {
+    color: white;
+    font-weight: bold;
+    -webkit-transition: all .5s ease;
+    transition: all .5s ease;
+  }
   #terrain_presentation #sidebar-left .sidebar-menu #simulaer_un_credit, #terrain_presentation #sidebar-left .sidebar-menu #imprimer,
   #terrain_plan #sidebar-left .sidebar-menu #simulaer_un_credit,
   #terrain_plan #sidebar-left .sidebar-menu #imprimer,
   #terrain_grille #sidebar-left .sidebar-menu #simulaer_un_credit,
   #terrain_grille #sidebar-left .sidebar-menu #imprimer,
   #terrain_document #sidebar-left .sidebar-menu #simulaer_un_credit,
-  #terrain_document #sidebar-left .sidebar-menu #imprimer {
+  #terrain_document #sidebar-left .sidebar-menu #imprimer,
+  #terrain_option #sidebar-left .sidebar-menu #simulaer_un_credit,
+  #terrain_option #sidebar-left .sidebar-menu #imprimer {
     margin: .5rm auto;
     padding: .6rem 1rem;
     border-radius: 30px;
@@ -611,13 +658,16 @@ a, button {
   #terrain_grille #sidebar-left .sidebar-menu #simulaer_un_credit a,
   #terrain_grille #sidebar-left .sidebar-menu #imprimer a,
   #terrain_document #sidebar-left .sidebar-menu #simulaer_un_credit a,
-  #terrain_document #sidebar-left .sidebar-menu #imprimer a {
+  #terrain_document #sidebar-left .sidebar-menu #imprimer a,
+  #terrain_option #sidebar-left .sidebar-menu #simulaer_un_credit a,
+  #terrain_option #sidebar-left .sidebar-menu #imprimer a {
     color: #87c133;
   }
   #terrain_presentation #sidebar-left #goback,
   #terrain_plan #sidebar-left #goback,
   #terrain_grille #sidebar-left #goback,
-  #terrain_document #sidebar-left #goback {
+  #terrain_document #sidebar-left #goback,
+  #terrain_option #sidebar-left #goback {
     width: auto;
     padding: .4rem 2.5rem;
     margin: 2rem auto .5rem;
@@ -664,6 +714,38 @@ a, button {
   }
   #terrain_plan .main-right .lot_option .wrapper .up .lot_image button br {
     display: none;
+  }
+  #terrain_option .main-right .lotissement_name {
+    display: none;
+  }
+  #terrain_option .main-right > div .wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #terrain_option .main-right > div .wrapper .option_left > h2 {
+    padding: 0;
+    background: #e0e0e000;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+  #terrain_option .main-right > div .wrapper .option_left > h2 span {
+    text-align: center !important;
+    color: #87c133;
+  }
+  #terrain_option .main-right > div .wrapper .option_left > div h2 {
+    text-align: center;
+  }
+  #terrain_option .main-right > div .wrapper .option_right {
+    margin-bottom: .5rem;
+  }
+  #terrain_option .main-right > div .wrapper .option_right h2 {
+    display: block;
+    margin: 0 .5rem;
+  }
+  #terrain_option .main-right > div .wrapper .option_right > div {
+    margin: 0 .5rem;
   }
   #agence .agenceTable tr .left {
     display: none;
@@ -929,8 +1011,7 @@ a, button {
     width: 539px;
     height: 630px;
   }
-  #terrain_presentation #sidebar-left .sidebar-menu button,
-  #terrain_plan #sidebar-left .sidebar-menu button {
+  main #sidebar-left .sidebar-menu button {
     width: 100%;
   }
   #terrain_grille .main-right .grille {
@@ -944,6 +1025,9 @@ a, button {
   }
   #terrain_document .main-right .document .wrapper div p {
     font-size: .8rem;
+  }
+  #terrain_option .main-right > div {
+    margin: .5rem 0;
   }
   main .agencies {
     width: 100%;

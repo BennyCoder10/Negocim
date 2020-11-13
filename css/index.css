@@ -343,3 +343,10 @@ a, button {
     opacity: 1;
   }
 }
+
+@media print {
+  body {
+    -webkit-print-color-adjust: exact;
+    color-adjust: exact;
+  }
+}

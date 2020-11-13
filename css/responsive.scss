@@ -165,7 +165,8 @@
   #terrain_presentation, 
   #terrain_plan,
   #terrain_grille, 
-  #terrain_document
+  #terrain_document, 
+  #terrain_option
    {
     // CONTENT ON THE RIGHT
     .main-right { width: 100%; height: auto; padding: .3rem; padding-top: 3rem;
@@ -189,6 +190,12 @@
        .sidebar-menu { height: auto; margin: 0; overflow-y: visible;
         button { color: white; background-color: $sub; padding: .8rem 1rem; width: 80%; text-align: center; margin: .5rem auto;}
        
+        #itineraire { transition: none;
+          a { display: block; color: white; transition: all .5s ease;
+            &:hover { color: white; font-weight: bold; transition: all .5s ease;}
+          }
+        }
+
         #simulaer_un_credit, #imprimer 
           { margin: .5rm auto; padding: .6rem 1rem; border-radius: 30px; border: 2px solid $sub; background: none; color: $sub;
             a { color: $sub;}
@@ -244,6 +251,25 @@
   //   }
   // }
 
+
+  #terrain_option .main-right {
+    .lotissement_name { display: none;}
+    > div .wrapper { flex-direction: column;
+      .option_left {
+        > h2 { padding: 0; background: #e0e0e000; box-shadow: none;
+          span { text-align: center !important; color: $sub; }
+        }
+        > div h2 { text-align: center;}
+      }
+      
+      .option_right { margin-bottom: .5rem;
+        h2 { display: block; margin: 0 .5rem;}
+        > div { margin: 0 .5rem;}
+      }    
+    }
+  }
+  
+  
 
   // VENDES & CONTACT_SUB
   #agence .agenceTable tr .left { display: none;}
@@ -398,8 +424,10 @@
  #terrain_plan .main-right #plan_right .plan .plan_img { width: 539px; height: 630px;}
 
 
- #terrain_presentation #sidebar-left .sidebar-menu button, 
- #terrain_plan #sidebar-left .sidebar-menu button { width: 100%; }
+//  #terrain_presentation #sidebar-left .sidebar-menu button, 
+//  #terrain_plan #sidebar-left .sidebar-menu button { width: 100%; }
+
+ main #sidebar-left .sidebar-menu button { width: 100%;}
 
  #terrain_grille .main-right .grille { margin: 0;}
  #terrain_grille .main-right .grille .wrapper .notaire_geometre { display: block;}
@@ -409,6 +437,7 @@
   .wrapper div p { font-size: .8rem;}
 } 
 
+ #terrain_option .main-right > div { margin: .5rem 0;}
 
   // VENDES
   main .agencies { width: 100%; border-bottom: 5px solid white;

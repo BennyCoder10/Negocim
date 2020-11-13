@@ -7,6 +7,7 @@ $text: #ffffff;
 $text-dark: #525451;
 $text-hovered: #808080;
 $bars: #707070;
+$background: #e0e0e08a;
 
 
 // DEFAULT FONT-SIZE
@@ -174,4 +175,10 @@ a, button { transition: all .5s ease;}
 
 // END OF GLOBAL EFFECTS AND ACTIONS
 
-
+// PRINT A PAGE WITH BACKGROUND IMAGES AND COLORS
+@media print {
+  body { 
+    -webkit-print-color-adjust: exact; 
+    color-adjust: exact; // For Firefox
+  }
+}
