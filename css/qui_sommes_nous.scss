@@ -12,9 +12,9 @@
   .text { margin: 1.4rem 0 1.4rem; 
 
     // LIST ON THE LEFT
-    .list_left { float: left; width: 9.25rem; padding-top: 3.2rem;
+    .list_left { float: left; width: 11rem; padding-top: 3.2rem;
       li {
-        a { display: block; font-size: .65rem; font-weight: bold; padding: .4rem 0 .4rem .65rem; margin-right: .3rem;
+        a { display: block; font-size: .9rem; font-weight: bold; padding: .4rem 0 .4rem .65rem; margin-right: .3rem;
         &:hover span, 
         &:active { color: $sub;}        
         }
@@ -22,11 +22,12 @@
     }
 
     // LIST CONTENT ON THE RIGHT
-    .text_right { float: left; height: 18.5rem; width: 37rem; direction: rtl; overflow-y: scroll; 
+    .text_right { float: left; height: 18.5rem; width: calc(100% - 11rem); max-width: 900px; padding-right: 1rem; margin-top: 1rem; direction: rtl; overflow-y: scroll; 
      
       article { text-align: left; padding: 0 1.15rem 2.5rem 1.5rem;
         h3 { font-size: 1.8rem; color: $sub; padding-bottom: 1.3rem;}
         p { font-size: .65rem; line-height: 1.4; word-break: keep-all;}
+        &:last-child { padding-bottom: 13rem;}
       }
 
       // SCROLLBAR MODIFICATION

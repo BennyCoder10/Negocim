@@ -344,6 +344,13 @@ a, button {
   }
 }
 
+@media print and (max-width: 900px) {
+  body {
+    -webkit-print-color-adjust: exact;
+    color-adjust: exact;
+  }
+}
+
 #simulateur {
   margin: 0;
 }

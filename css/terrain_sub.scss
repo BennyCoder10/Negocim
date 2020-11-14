@@ -48,7 +48,9 @@ main {
       }      
     }     
   }  
-  .main-right { width: calc(100% - 14rem);}
+  .main-right { width: calc(100% - 14rem);
+    .wrapper { padding: .5rem; background-color: $background;}
+  }
 }
 // END OF COMMON SIDEBAR MENU ON THE LEFT 
 
@@ -59,31 +61,39 @@ main {
 #terrain_presentation { position: relative; 
 
   // SECTION ON THE RIGHT FOR MAP IMAGE & GOOGLE MAP API
-  .main-right { 
+  .main-right { padding: .5rem;
     float: right; text-align: center; height: 100%; 
     // width: calc(100% - 14rem); 
-    overflow: auto; 
+    // overflow: auto; 
 
-    .map { position: relative; height: 100%; width: 100%; padding: 5px;
+    .map { position: relative; height: 100%; width: 100%;
       img { height: 100%;}
       iframe { width: 100%; height: 100%; border: 1px solid $sub;}
     }
-    h3 { font-weight: normal;}
-    h2 i { color: $sub;}
-    p { margin: 1rem; text-align: left;}
+   
 
 
-    #presentation { padding: 1rem;  
+
+    #presentation { padding: .5rem; background-color: $background;
+
+      .header { padding: .5rem; background: white; @include box-shadow;
+        h3 { font-weight: normal;}
+        h2 i { color: $sub;}
+      }
+
+      .btm { background: white; @include box-shadow;
+        p { padding: .5rem; text-align: left;}
+      }
+      
       // PICTURES
-      .row { padding: 1.5rem 0;  overflow-x: auto;}
-      .row > .column {
-        padding: 0 8px;
+      .row { padding: 1.5rem 0; overflow-x: auto;
       }
 
       .column {
+        padding: .4rem;
         display: inline-block;
         width: 24%;
-        img { width: 100%; box-shadow: 0 2px 2px 0 rgb(95, 95, 95);}
+        img { width: 100%; @include box-shadow;}
         &:hover { cursor: pointer; 
           img { box-shadow: 0 4px 8px 0 rgb(90, 90, 90); transition: all .3s ease-out;
           }
@@ -92,7 +102,8 @@ main {
 
       // MODAL PICTURES
       .modal {
-        display: none; position: fixed; left: 0; top: 0; width: 100%; height: 100%; overflow: auto; background-color:rgba(0, 0, 0, 0.664); animation: slowAppear .2s ease-in-out; z-index: 1;
+        display: none; position: fixed; left: 0; top: 0; width: 100%; height: 100%; overflow: auto; 
+        background-color:rgba(0, 0, 0, 0.664); animation: slowAppear .2s ease-in-out; z-index: 1;
       }
 
       /* Modal Content */
@@ -185,7 +196,7 @@ main {
 
   // CONTENT ON THE RIGHT
   .main-right {
-    float: right; text-align: center; height: 100%; 
+    float: right; text-align: center;
     // width: calc(100% - 14rem); 
     // overflow: auto; 
 
@@ -195,11 +206,11 @@ main {
       h2 i { color: $sub;}
     }
 
-    #plan_right { position: relative; height: 100%; padding: 5px;
-      .click { color: white; max-width: 730px; padding: .5rem 0;  margin: 0 auto; background-color: $sub;}
+    #plan_right { position: relative; height: 100%; padding: .5rem; margin: .5rem; background-color: $background;
+      .click { color: white; max-width: 730px; padding: .5rem; margin: 0 auto 1rem; background-color: $sub; @include box-shadow;}
       // p { margin: .5rem 0; text-align: center;}
       .plan { margin: 0; overflow-x: auto;
-        .plan_img { position: relative; margin: 0 auto; width: 730px; height: 842px; background: url(../images/lotissement/plan_masse_120.png) no-repeat 0 0 / 100%;
+        .plan_img { position: relative; margin: 0 auto 1rem; width: 730px; height: 842px; background: url(../images/lotissement/plan_masse_120.png) no-repeat 0 0 / 100%; @include box-shadow;
           .lot { display: block; position: absolute; transition: none;    
             .number { margin: -0.4rem 0; font-weight: bold;}
           }
@@ -208,21 +219,30 @@ main {
           .active { cursor: pointer;}
         }
       }
+
+      // NOTICE AT THE BOTTOM IN THE PLAN PAGE
+      .lot_notice { font-size: .8rem; max-width: 730px; padding: .5rem; margin: 0 auto; background: white; border: 1px solid $bars;
+        p { text-align: center; font-style: italic;}  
+        span { text-align: center; display: block; padding: .5rem; }
+      } 
     }   
     
     //  LOT OPTION DETAIL PAGES
-    .lot_option { margin: .5rem;     
-      .wrapper { background-color: #e0e0e0;
-        .up { display: flex;
-          .lot_info {  flex: 6; margin: .5rem; background-color: white; border: 1px solid $bars; 
-            header { background-color: $sub; padding: .5rem 0;
+    .lot_option { margin: .5rem;   
+      // WRAPPER
+      .wrapper { 
+        .up { display: flex; margin-bottom: .5rem;
+          .lot_info {  flex: 6;
+            header { background-color: $sub; padding: .5rem 0; margin-bottom: 1rem; @include box-shadow;
               * { color: white;}
               p { font-size: .7rem;}
             }
-            #lot_image_mobile { display: none; width: auto;}
+            .lot_image_mobile { display: none; background: white; @include box-shadow;
+              img { width: 100%; max-width: 352px;}
+            }
 
             // LOT INFORMATION TABLE
-            .info_table { 
+            .info_table { background-color: white; @include box-shadow;
               p { display: flex; justify-content: space-between; padding: .1rem .3rem;}             
               p > span { font-size: .8rem;
                 &:first-child { text-align: left;}
@@ -232,7 +252,7 @@ main {
           }
 
           // LOT IMAGE ON THE RIGHT
-          .lot_image { flex: 4; margin: .5rem .5rem 0; margin-left: 0;
+          .lot_image { flex: 4; margin-left: .5rem;
             img {border: 1px solid $bars; width: 100%;}
             button { position: relative; margin: .5rem auto; background: #87c133; border-radius: 20px; 
               a { display: inline-block; font-size: .9rem; color: white; padding: .3rem 1rem;}
@@ -240,14 +260,20 @@ main {
             }
           }
         }
-        .btm { font-size: .8rem; padding: .5rem; border: 1px solid $bars; margin: .5rem; margin-top: 0; background-color: white;}
-      }         
+        .btm { font-size: .8rem; text-align: left; padding: .5rem; margin: .5rem 0 1rem; background-color: white; @include box-shadow;}
+
+        // NOTICE AT THE BOTTOM IN THE PLAN PAGE
+        .lot_notice { font-size: .8rem; padding: .5rem; background: white; border: 1px solid $bars;
+          p { text-align: center; font-style: italic;}  
+          span { text-align: center; display: block; padding: .5rem; }
+        }   
+      }
+      // END OF WRAPPER   
+
+      
     }
 
-    .lot_notice { font-size: .8rem;  
-      p { text-align: center; font-style: italic;}  
-      span { text-align: center; display: block; padding: .5rem;}
-    }
+   
   }
 
   // SIDEBAR MENU ON THE LEFT
@@ -311,15 +337,17 @@ main {
       h2 i { color: $sub;}
     }
         
-    .grille { margin: .5rem; background-color: #e0e0e0;
-      .wrapper { margin: .5rem; background: white;
+    .grille { margin: .5rem; 
+      // background-color: #e0e0e0;
+      .wrapper {
+        > * { background-color: white;}
 
-        h2 { color: white; padding: .5rem 0; background-color: $sub;}
+        h2 { color: white; padding: .5rem 0; margin-bottom: 1rem; background-color: $sub; @include box-shadow;}
         > p { font-size: .8rem; text-align: left; padding: 0 2rem;}
         .update_date { font-size: .6rem; text-align: right; padding-right: 1rem;}
 
         // LOT INFORMATION TABLE ON THE GRILLE DE PRIX PAGE
-        table { font-size: .8rem; width: 99%; padding: 1rem; margin: 0 auto; background: white; border-collapse: collapse;
+        table { font-size: .8rem; width: auto; background: white; border-collapse: collapse;
           th, td { border: 1px solid $bars; padding: 0 .3rem;}
           th span:nth-child(2) { display: none;}
           td { white-space: nowrap;}
@@ -339,15 +367,16 @@ main {
           }         
         }
 
-        .notaire_geometre { display: grid; grid-template-columns: 1fr 1fr; text-align: left; padding: .3rem;
-          > div { padding: .3rem 2rem; border: 1px dashed $bars;
-            h5 { font-weight: bold;}
+        .notaire_geometre { display: grid; grid-template-columns: 1fr 1fr; text-align: left; margin: .5rem 0; @include box-shadow;
+          > div { padding: 1rem 2rem;
+            h5 { color: $sub; font-weight: bold;}
             p { font-size: .8rem; padding-left: .5rem;}
           }
+          .notaire { border-right: .5px dashed $bars;}
         }
          
         // LOT PRICE INFORMATION TABLE ON THE GRILLE DE PRIX PAGE
-        .info_table { margin: .5rem 0;
+        .info_table { padding: .5rem 0; @include box-shadow;
           p { display: block;          
             > span { display: inline-block; font-size: .8rem; width: 49%; vertical-align: top;
             &:first-child { text-align: right; padding-right: .5rem;}
@@ -355,10 +384,8 @@ main {
             }
           }
         }
-
-      } 
-      .btm { font-size: .8rem; text-align: left; padding: .5rem; margin: .5rem; background-color: white; border: 1px solid $bars;}
-     
+        .btm { font-size: .8rem; text-align: left; padding: .5rem; margin-top: 1rem; background-color: white; border: 1px solid $bars;}
+      }      
     }    
   }
 
@@ -424,13 +451,12 @@ main {
         
     // DOCUMENT
     .document { margin: .5rem;
-      .wrapper { border: 1px solid $bars;
-
-        h2 { color: white; padding: .5rem 0; background-color: $sub;}
-        > p { font-size: .8rem; text-align: left; padding: 0 1rem;}
+      .wrapper { 
+        h2 { color: white; padding: .5rem 0; margin-bottom: 1rem; background-color: $sub; @include box-shadow;}
+        > p { font-size: .8rem; text-align: left; padding: .5rem; background-color: white;}
 
         // DOWNLOAD DOCUMENT SECTION
-        div { display: flex; flex-direction: column; justify-content: space-around; text-align: left; padding: .5rem 0;
+        div { display: flex; flex-direction: column; justify-content: space-around; text-align: left; padding: .5rem 0; background-color: white; @include box-shadow;
           p { padding: .5rem .5rem .5rem 1rem;
             a { display: inline-block; text-decoration: underline;
               img { padding-right: .3rem;}
@@ -506,32 +532,34 @@ main {
     }
     
     //  LOT OPTION DETAIL PAGES
-    > div { margin: .5rem;  
+    > div { margin: .5rem; 
       .wrapper { display: flex; flex-direction: row; background-color: $background;
 
         // OPTION & RESERVE ON THE LEFT
         .option_left { flex: 7;
           // HEADER
-          > h2 { padding: .5rem 1.5rem; margin: .5rem; background-color: $sub; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+          > h2 { padding: .5rem 1.5rem; margin-bottom: 1rem; background-color: $sub; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
             span { display: block; font-size: 1.5rem; font-weight: bold; color: white; line-height: 1; padding: 0 .3rem;}
             span:nth-child(1) { text-align: left;}
             span:nth-child(3) { text-align: right; padding-top: .3rem ;}
           }
           // END OF HEADER
 
-          > div { margin: .5rem; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+          > div { box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
             h2 { text-align: left; color: white; padding: 1px .5rem; background-color: $sub;}
             p { font-size: .8rem; text-align: left; padding: .5rem 1rem; background: white;}
-          }    
+          }   
+          .option { margin-bottom: 1rem;} 
         }
 
         // OPTION CONTACT ON THE RIGHT
         .option_right { flex: 3;
-          > h2 { display: none; color: white; padding: 1px .5rem; margin: .5rem; background-color: $sub; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);}
-          > div { padding: .5rem; margin: .5rem; margin-left: 0; background: white; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+          > h2 { display: none; color: white; padding: 1px .5rem; margin-top: 1rem; background-color: $sub; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);}
+          > div { padding: .5rem; margin-left: .5rem; background: white; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
             h4 { color: $sub; padding-bottom: .5rem;}
             p { font-size: .8rem;}
           }
+          .option_contact-up { margin-bottom: 1rem;}
         }
       }         
     }  

@@ -148,7 +148,7 @@
 
   // QUI_SOMMES_NOUS
   // LIST CONTENT ON THE RIGHT
-  #qui_sommes_nous .text .text_right { width: 75vw;}
+  // #qui_sommes_nous .text .text_right { width: 75vw;}
 
 
   // LEXIQUE
@@ -210,12 +210,12 @@
 
   // TERRAIN_PLAN DU LOTISSEMENT
   #terrain_plan .main-right { width: 100%;
-    .lot_option .wrapper .up { display: block; margin: .5rem;
+    .lot_option .wrapper .up { display: block;
       .lot_info { margin: 0 auto;
-        #lot_image_mobile { display: inline-block;}
+        .lot_image_mobile { display: block;}
 
         // LOT INFORMATION TABLE
-        .info_table { margin: 1.5rem 0;
+        .info_table { padding: .5rem 0; margin: 0 0 1rem;
           p { display: block;
             > span { display: inline-block; width: 49%; vertical-align: top;
               &:first-child { font-weight: bold; text-align: right; padding-right: .5rem;}
@@ -260,11 +260,13 @@
           span { text-align: center !important; color: $sub; }
         }
         > div h2 { text-align: center;}
+        .option { margin: 1rem 0;}
       }
       
-      .option_right { margin-bottom: .5rem;
-        h2 { display: block; margin: 0 .5rem;}
-        > div { margin: 0 .5rem;}
+      .option_right {
+        h2 { display: block; }
+        .option_contact-up { margin-bottom: 0;}
+        > div { margin-left: 0;}
       }    
     }
   }
@@ -423,6 +425,7 @@
  #terrain_plan .main-right .lot_option .wrapper .up .lot_info #lot_image_mobile { width: 70%;}
  #terrain_plan .main-right #plan_right .plan .plan_img { width: 539px; height: 630px;}
 
+ #terrain_plan .main-right .lot_option { margin: 0;}
 
 //  #terrain_presentation #sidebar-left .sidebar-menu button, 
 //  #terrain_plan #sidebar-left .sidebar-menu button { width: 100%; }
@@ -431,6 +434,7 @@
 
  #terrain_grille .main-right .grille { margin: 0;}
  #terrain_grille .main-right .grille .wrapper .notaire_geometre { display: block;}
+ #terrain_grille .main-right .grille .wrapper .notaire_geometre .notaire { border-right: none; border-bottom: .5px dashed $bars;}
 
 
  #terrain_document .main-right .document { margin: 0;

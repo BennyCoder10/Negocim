@@ -344,6 +344,13 @@ a, button {
   }
 }
 
+@media print {
+  body {
+    -webkit-print-color-adjust: exact;
+    color-adjust: exact;
+  }
+}
+
 #qui_sommes_nous div img {
   width: 100%;
   height: auto;
@@ -355,13 +362,13 @@ a, button {
 
 #qui_sommes_nous .text .list_left {
   float: left;
-  width: 9.25rem;
+  width: 11rem;
   padding-top: 3.2rem;
 }
 
 #qui_sommes_nous .text .list_left li a {
   display: block;
-  font-size: .65rem;
+  font-size: .9rem;
   font-weight: bold;
   padding: .4rem 0 .4rem .65rem;
   margin-right: .3rem;
@@ -374,7 +381,10 @@ a, button {
 #qui_sommes_nous .text .text_right {
   float: left;
   height: 18.5rem;
-  width: 37rem;
+  width: calc(100% - 11rem);
+  max-width: 900px;
+  padding-right: 1rem;
+  margin-top: 1rem;
   direction: rtl;
   overflow-y: scroll;
 }
@@ -394,6 +404,10 @@ a, button {
   font-size: .65rem;
   line-height: 1.4;
   word-break: keep-all;
+}
+
+#qui_sommes_nous .text .text_right article:last-child {
+  padding-bottom: 13rem;
 }
 
 #qui_sommes_nous .text .text_right::-webkit-scrollbar {

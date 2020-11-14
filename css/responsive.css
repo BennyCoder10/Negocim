@@ -344,7 +344,7 @@ a, button {
   }
 }
 
-@media print and (max-width: 770px) {
+@media print {
   body {
     -webkit-print-color-adjust: exact;
     color-adjust: exact;
@@ -504,9 +504,6 @@ a, button {
   }
   #simulateur_steps .step3 .help > div span:first-child {
     padding-right: 2rem;
-  }
-  #qui_sommes_nous .text .text_right {
-    width: 75vw;
   }
   #lexique > div {
     padding: .8rem 1rem;
@@ -678,16 +675,16 @@ a, button {
   }
   #terrain_plan .main-right .lot_option .wrapper .up {
     display: block;
-    margin: .5rem;
   }
   #terrain_plan .main-right .lot_option .wrapper .up .lot_info {
     margin: 0 auto;
   }
-  #terrain_plan .main-right .lot_option .wrapper .up .lot_info #lot_image_mobile {
-    display: inline-block;
+  #terrain_plan .main-right .lot_option .wrapper .up .lot_info .lot_image_mobile {
+    display: block;
   }
   #terrain_plan .main-right .lot_option .wrapper .up .lot_info .info_table {
-    margin: 1.5rem 0;
+    padding: .5rem 0;
+    margin: 0 0 1rem;
   }
   #terrain_plan .main-right .lot_option .wrapper .up .lot_info .info_table p {
     display: block;
@@ -737,15 +734,17 @@ a, button {
   #terrain_option .main-right > div .wrapper .option_left > div h2 {
     text-align: center;
   }
-  #terrain_option .main-right > div .wrapper .option_right {
-    margin-bottom: .5rem;
+  #terrain_option .main-right > div .wrapper .option_left .option {
+    margin: 1rem 0;
   }
   #terrain_option .main-right > div .wrapper .option_right h2 {
     display: block;
-    margin: 0 .5rem;
+  }
+  #terrain_option .main-right > div .wrapper .option_right .option_contact-up {
+    margin-bottom: 0;
   }
   #terrain_option .main-right > div .wrapper .option_right > div {
-    margin: 0 .5rem;
+    margin-left: 0;
   }
   #agence .agenceTable tr .left {
     display: none;
@@ -1011,6 +1010,9 @@ a, button {
     width: 539px;
     height: 630px;
   }
+  #terrain_plan .main-right .lot_option {
+    margin: 0;
+  }
   main #sidebar-left .sidebar-menu button {
     width: 100%;
   }
@@ -1019,6 +1021,10 @@ a, button {
   }
   #terrain_grille .main-right .grille .wrapper .notaire_geometre {
     display: block;
+  }
+  #terrain_grille .main-right .grille .wrapper .notaire_geometre .notaire {
+    border-right: none;
+    border-bottom: 0.5px dashed #707070;
   }
   #terrain_document .main-right .document {
     margin: 0;

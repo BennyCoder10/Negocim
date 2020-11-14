@@ -344,6 +344,13 @@ a, button {
   }
 }
 
+@media print and (max-width: 900px) {
+  body {
+    -webkit-print-color-adjust: exact;
+    color-adjust: exact;
+  }
+}
+
 #contact .agencies {
   float: left;
   width: 50%;
@@ -712,6 +719,13 @@ a, button {
   }
   100% {
     opacity: 1;
+  }
+}
+
+@media print and (max-width: 900px) {
+  body {
+    -webkit-print-color-adjust: exact;
+    color-adjust: exact;
   }
 }
 

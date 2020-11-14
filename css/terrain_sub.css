@@ -344,7 +344,7 @@ a, button {
   }
 }
 
-@media print and (max-width: 770px) {
+@media print {
   body {
     -webkit-print-color-adjust: exact;
     color-adjust: exact;
@@ -581,22 +581,26 @@ main .main-right {
   width: calc(100% - 14rem);
 }
 
+main .main-right .wrapper {
+  padding: .5rem;
+  background-color: #e0e0e08a;
+}
+
 #terrain_presentation {
   position: relative;
 }
 
 #terrain_presentation .main-right {
+  padding: .5rem;
   float: right;
   text-align: center;
   height: 100%;
-  overflow: auto;
 }
 
 #terrain_presentation .main-right .map {
   position: relative;
   height: 100%;
   width: 100%;
-  padding: 5px;
 }
 
 #terrain_presentation .main-right .map img {
@@ -609,22 +613,36 @@ main .main-right {
   border: 1px solid #87c133;
 }
 
-#terrain_presentation .main-right h3 {
+#terrain_presentation .main-right #presentation {
+  padding: .5rem;
+  background-color: #e0e0e08a;
+  /* Modal Content */
+}
+
+#terrain_presentation .main-right #presentation .header {
+  padding: .5rem;
+  background: white;
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+#terrain_presentation .main-right #presentation .header h3 {
   font-weight: normal;
 }
 
-#terrain_presentation .main-right h2 i {
+#terrain_presentation .main-right #presentation .header h2 i {
   color: #87c133;
 }
 
-#terrain_presentation .main-right p {
-  margin: 1rem;
-  text-align: left;
+#terrain_presentation .main-right #presentation .btm {
+  background: white;
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
-#terrain_presentation .main-right #presentation {
-  padding: 1rem;
-  /* Modal Content */
+#terrain_presentation .main-right #presentation .btm p {
+  padding: .5rem;
+  text-align: left;
 }
 
 #terrain_presentation .main-right #presentation .row {
@@ -632,19 +650,16 @@ main .main-right {
   overflow-x: auto;
 }
 
-#terrain_presentation .main-right #presentation .row > .column {
-  padding: 0 8px;
-}
-
 #terrain_presentation .main-right #presentation .column {
+  padding: .4rem;
   display: inline-block;
   width: 24%;
 }
 
 #terrain_presentation .main-right #presentation .column img {
   width: 100%;
-  -webkit-box-shadow: 0 2px 2px 0 #5f5f5f;
-          box-shadow: 0 2px 2px 0 #5f5f5f;
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
 #terrain_presentation .main-right #presentation .column:hover {
@@ -759,7 +774,6 @@ main .main-right {
 #terrain_plan .main-right {
   float: right;
   text-align: center;
-  height: 100%;
 }
 
 #terrain_plan .main-right .lotissement_name {
@@ -778,15 +792,19 @@ main .main-right {
 #terrain_plan .main-right #plan_right {
   position: relative;
   height: 100%;
-  padding: 5px;
+  padding: .5rem;
+  margin: .5rem;
+  background-color: #e0e0e08a;
 }
 
 #terrain_plan .main-right #plan_right .click {
   color: white;
   max-width: 730px;
-  padding: .5rem 0;
-  margin: 0 auto;
+  padding: .5rem;
+  margin: 0 auto 1rem;
   background-color: #87c133;
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
 #terrain_plan .main-right #plan_right .plan {
@@ -796,10 +814,12 @@ main .main-right {
 
 #terrain_plan .main-right #plan_right .plan .plan_img {
   position: relative;
-  margin: 0 auto;
+  margin: 0 auto 1rem;
   width: 730px;
   height: 842px;
   background: url(../images/lotissement/plan_masse_120.png) no-repeat 0 0/100%;
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
 #terrain_plan .main-right #plan_right .plan .plan_img .lot {
@@ -818,32 +838,49 @@ main .main-right {
   cursor: pointer;
 }
 
-#terrain_plan .main-right .lot_option {
-  margin: .5rem;
+#terrain_plan .main-right #plan_right .lot_notice {
+  font-size: .8rem;
+  max-width: 730px;
+  padding: .5rem;
+  margin: 0 auto;
+  background: white;
+  border: 1px solid #707070;
 }
 
-#terrain_plan .main-right .lot_option .wrapper {
-  background-color: #e0e0e0;
+#terrain_plan .main-right #plan_right .lot_notice p {
+  text-align: center;
+  font-style: italic;
+}
+
+#terrain_plan .main-right #plan_right .lot_notice span {
+  text-align: center;
+  display: block;
+  padding: .5rem;
+}
+
+#terrain_plan .main-right .lot_option {
+  margin: .5rem;
 }
 
 #terrain_plan .main-right .lot_option .wrapper .up {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin-bottom: .5rem;
 }
 
 #terrain_plan .main-right .lot_option .wrapper .up .lot_info {
   -webkit-box-flex: 6;
       -ms-flex: 6;
           flex: 6;
-  margin: .5rem;
-  background-color: white;
-  border: 1px solid #707070;
 }
 
 #terrain_plan .main-right .lot_option .wrapper .up .lot_info header {
   background-color: #87c133;
   padding: .5rem 0;
+  margin-bottom: 1rem;
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
 #terrain_plan .main-right .lot_option .wrapper .up .lot_info header * {
@@ -854,9 +891,22 @@ main .main-right {
   font-size: .7rem;
 }
 
-#terrain_plan .main-right .lot_option .wrapper .up .lot_info #lot_image_mobile {
+#terrain_plan .main-right .lot_option .wrapper .up .lot_info .lot_image_mobile {
   display: none;
-  width: auto;
+  background: white;
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+#terrain_plan .main-right .lot_option .wrapper .up .lot_info .lot_image_mobile img {
+  width: 100%;
+  max-width: 352px;
+}
+
+#terrain_plan .main-right .lot_option .wrapper .up .lot_info .info_table {
+  background-color: white;
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
 #terrain_plan .main-right .lot_option .wrapper .up .lot_info .info_table p {
@@ -885,8 +935,7 @@ main .main-right {
   -webkit-box-flex: 4;
       -ms-flex: 4;
           flex: 4;
-  margin: .5rem .5rem 0;
-  margin-left: 0;
+  margin-left: .5rem;
 }
 
 #terrain_plan .main-right .lot_option .wrapper .up .lot_image img {
@@ -914,23 +963,27 @@ main .main-right {
 
 #terrain_plan .main-right .lot_option .wrapper .btm {
   font-size: .8rem;
+  text-align: left;
   padding: .5rem;
-  border: 1px solid #707070;
-  margin: .5rem;
-  margin-top: 0;
+  margin: .5rem 0 1rem;
   background-color: white;
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
-#terrain_plan .main-right .lot_notice {
+#terrain_plan .main-right .lot_option .wrapper .lot_notice {
   font-size: .8rem;
+  padding: .5rem;
+  background: white;
+  border: 1px solid #707070;
 }
 
-#terrain_plan .main-right .lot_notice p {
+#terrain_plan .main-right .lot_option .wrapper .lot_notice p {
   text-align: center;
   font-style: italic;
 }
 
-#terrain_plan .main-right .lot_notice span {
+#terrain_plan .main-right .lot_option .wrapper .lot_notice span {
   text-align: center;
   display: block;
   padding: .5rem;
@@ -962,18 +1015,19 @@ main .main-right {
 
 #terrain_grille .main-right .grille {
   margin: .5rem;
-  background-color: #e0e0e0;
 }
 
-#terrain_grille .main-right .grille .wrapper {
-  margin: .5rem;
-  background: white;
+#terrain_grille .main-right .grille .wrapper > * {
+  background-color: white;
 }
 
 #terrain_grille .main-right .grille .wrapper h2 {
   color: white;
   padding: .5rem 0;
+  margin-bottom: 1rem;
   background-color: #87c133;
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
 #terrain_grille .main-right .grille .wrapper > p {
@@ -990,9 +1044,7 @@ main .main-right {
 
 #terrain_grille .main-right .grille .wrapper table {
   font-size: .8rem;
-  width: 99%;
-  padding: 1rem;
-  margin: 0 auto;
+  width: auto;
   background: white;
   border-collapse: collapse;
 }
@@ -1064,15 +1116,17 @@ main .main-right {
   -ms-grid-columns: 1fr 1fr;
       grid-template-columns: 1fr 1fr;
   text-align: left;
-  padding: .3rem;
+  margin: .5rem 0;
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
 #terrain_grille .main-right .grille .wrapper .notaire_geometre > div {
-  padding: .3rem 2rem;
-  border: 1px dashed #707070;
+  padding: 1rem 2rem;
 }
 
 #terrain_grille .main-right .grille .wrapper .notaire_geometre > div h5 {
+  color: #87c133;
   font-weight: bold;
 }
 
@@ -1081,8 +1135,14 @@ main .main-right {
   padding-left: .5rem;
 }
 
+#terrain_grille .main-right .grille .wrapper .notaire_geometre .notaire {
+  border-right: 0.5px dashed #707070;
+}
+
 #terrain_grille .main-right .grille .wrapper .info_table {
-  margin: .5rem 0;
+  padding: .5rem 0;
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
 #terrain_grille .main-right .grille .wrapper .info_table p {
@@ -1105,11 +1165,11 @@ main .main-right {
   text-align: left;
 }
 
-#terrain_grille .main-right .grille .btm {
+#terrain_grille .main-right .grille .wrapper .btm {
   font-size: .8rem;
   text-align: left;
   padding: .5rem;
-  margin: .5rem;
+  margin-top: 1rem;
   background-color: white;
   border: 1px solid #707070;
 }
@@ -1142,20 +1202,20 @@ main .main-right {
   margin: .5rem;
 }
 
-#terrain_document .main-right .document .wrapper {
-  border: 1px solid #707070;
-}
-
 #terrain_document .main-right .document .wrapper h2 {
   color: white;
   padding: .5rem 0;
+  margin-bottom: 1rem;
   background-color: #87c133;
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
 #terrain_document .main-right .document .wrapper > p {
   font-size: .8rem;
   text-align: left;
-  padding: 0 1rem;
+  padding: .5rem;
+  background-color: white;
 }
 
 #terrain_document .main-right .document .wrapper div {
@@ -1170,6 +1230,9 @@ main .main-right {
       justify-content: space-around;
   text-align: left;
   padding: .5rem 0;
+  background-color: white;
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
 #terrain_document .main-right .document .wrapper div p {
@@ -1231,7 +1294,7 @@ main .main-right {
 
 #terrain_option .main-right > div .wrapper .option_left > h2 {
   padding: .5rem 1.5rem;
-  margin: .5rem;
+  margin-bottom: 1rem;
   background-color: #87c133;
   -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
           box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
@@ -1256,7 +1319,6 @@ main .main-right {
 }
 
 #terrain_option .main-right > div .wrapper .option_left > div {
-  margin: .5rem;
   -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
           box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
@@ -1275,6 +1337,10 @@ main .main-right {
   background: white;
 }
 
+#terrain_option .main-right > div .wrapper .option_left .option {
+  margin-bottom: 1rem;
+}
+
 #terrain_option .main-right > div .wrapper .option_right {
   -webkit-box-flex: 3;
       -ms-flex: 3;
@@ -1285,7 +1351,7 @@ main .main-right {
   display: none;
   color: white;
   padding: 1px .5rem;
-  margin: .5rem;
+  margin-top: 1rem;
   background-color: #87c133;
   -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
           box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
@@ -1293,8 +1359,7 @@ main .main-right {
 
 #terrain_option .main-right > div .wrapper .option_right > div {
   padding: .5rem;
-  margin: .5rem;
-  margin-left: 0;
+  margin-left: .5rem;
   background: white;
   -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
           box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
@@ -1307,4 +1372,8 @@ main .main-right {
 
 #terrain_option .main-right > div .wrapper .option_right > div p {
   font-size: .8rem;
+}
+
+#terrain_option .main-right > div .wrapper .option_right .option_contact-up {
+  margin-bottom: 1rem;
 }

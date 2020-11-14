@@ -133,6 +133,12 @@ a, button { transition: all .5s ease;}
 // MIXINS
 // 
 
+
+// BOX SHADOW
+@mixin box-shadow {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
 // BUTTONS
 @mixin buttons { display: block; background: $sub; border: none; border-radius: 1.4rem; 
   a { display: block; font-size: .95rem; color: white; padding: .75rem 3rem;}
@@ -181,4 +187,5 @@ a, button { transition: all .5s ease;}
     -webkit-print-color-adjust: exact; 
     color-adjust: exact; // For Firefox
   }
+
 }
