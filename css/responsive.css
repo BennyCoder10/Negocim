@@ -528,13 +528,6 @@ a, button {
   #terrain_option .main-right .lotissement_name {
     display: block;
   }
-  #terrain_presentation .main-right #presentation,
-  #terrain_plan .main-right #presentation,
-  #terrain_grille .main-right #presentation,
-  #terrain_document .main-right #presentation,
-  #terrain_option .main-right #presentation {
-    padding: 0;
-  }
   #terrain_presentation .main-right #presentation > div > p,
   #terrain_plan .main-right #presentation > div > p,
   #terrain_grille .main-right #presentation > div > p,
@@ -1006,15 +999,15 @@ a, button {
   #terrain_plan .main-right .lot_option .wrapper .up .lot_info #lot_image_mobile {
     width: 70%;
   }
+  #terrain_plan .main-right #plan_right {
+    margin: 0;
+  }
   #terrain_plan .main-right #plan_right .plan .plan_img {
     width: 539px;
     height: 630px;
   }
   #terrain_plan .main-right .lot_option {
     margin: 0;
-  }
-  main #sidebar-left .sidebar-menu button {
-    width: 100%;
   }
   #terrain_grille .main-right .grille {
     margin: 0;

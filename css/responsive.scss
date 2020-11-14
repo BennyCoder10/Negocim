@@ -174,7 +174,7 @@
       // LOTISSEMENT NAME ON MOBILE
       .lotissement_name { display: block;}
       
-      #presentation { padding: 0;
+      #presentation {
         > div > p { padding-top: 0;}    
       }      
     }
@@ -423,14 +423,16 @@
  }
  
  #terrain_plan .main-right .lot_option .wrapper .up .lot_info #lot_image_mobile { width: 70%;}
- #terrain_plan .main-right #plan_right .plan .plan_img { width: 539px; height: 630px;}
+ #terrain_plan .main-right #plan_right { margin: 0;
+  .plan .plan_img { width: 539px; height: 630px;}
+ }
 
  #terrain_plan .main-right .lot_option { margin: 0;}
 
 //  #terrain_presentation #sidebar-left .sidebar-menu button, 
 //  #terrain_plan #sidebar-left .sidebar-menu button { width: 100%; }
 
- main #sidebar-left .sidebar-menu button { width: 100%;}
+//  main #sidebar-left .sidebar-menu button { width: 100%;}
 
  #terrain_grille .main-right .grille { margin: 0;}
  #terrain_grille .main-right .grille .wrapper .notaire_geometre { display: block;}

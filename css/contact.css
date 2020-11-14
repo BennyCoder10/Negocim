@@ -344,7 +344,7 @@ a, button {
   }
 }
 
-@media print and (max-width: 900px) {
+@media print {
   body {
     -webkit-print-color-adjust: exact;
     color-adjust: exact;
@@ -722,7 +722,7 @@ a, button {
   }
 }
 
-@media print and (max-width: 900px) {
+@media print {
   body {
     -webkit-print-color-adjust: exact;
     color-adjust: exact;
