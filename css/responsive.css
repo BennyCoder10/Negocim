@@ -1,3 +1,80 @@
+@-webkit-keyframes fadeInRight {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+            transform: none;
+  }
+}
+
+@keyframes fadeInRight {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+            transform: none;
+  }
+}
+
+@-webkit-keyframes fadeInLeft {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+            transform: none;
+  }
+}
+
+@keyframes fadeInLeft {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+            transform: none;
+  }
+}
+
+@-webkit-keyframes slowAppear {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes slowAppear {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@media print {
+  body {
+    -webkit-print-color-adjust: exact;
+    color-adjust: exact;
+  }
+}
+
 html {
   font-size: 20px;
 }
@@ -235,19 +312,20 @@ footer p #legales {
 }
 
 #politique > div {
-  margin: 2rem;
   padding: 1rem;
-  background: #f7f5f5;
-  border: 1px solid #707070;
+  margin: 1rem;
+  background: #e0e0e0ad;
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
 #politique > div h2 {
   font-size: 1rem;
   text-align: center;
-  padding: 1.5rem;
+  padding: 1rem;
   margin-bottom: 1.5rem;
   background: white;
-  border: 1px solid;
+  border: 1px solid #707070;
 }
 
 #politique > div .politique_content {
@@ -256,6 +334,7 @@ footer p #legales {
 }
 
 #politique > div .politique_content h2, #politique > div .politique_content h4, #politique > div .politique_content h5, #politique > div .politique_content p {
+  text-align: justify;
   padding-bottom: 1.3rem;
 }
 
@@ -272,83 +351,6 @@ footer p #legales {
 a, button {
   -webkit-transition: all .5s ease;
   transition: all .5s ease;
-}
-
-@-webkit-keyframes fadeInRight {
-  0% {
-    opacity: 0;
-    -webkit-transform: translateX(-100%);
-            transform: translateX(-100%);
-  }
-  100% {
-    opacity: 1;
-    -webkit-transform: none;
-            transform: none;
-  }
-}
-
-@keyframes fadeInRight {
-  0% {
-    opacity: 0;
-    -webkit-transform: translateX(-100%);
-            transform: translateX(-100%);
-  }
-  100% {
-    opacity: 1;
-    -webkit-transform: none;
-            transform: none;
-  }
-}
-
-@-webkit-keyframes fadeInLeft {
-  0% {
-    opacity: 0;
-    -webkit-transform: translateX(100%);
-            transform: translateX(100%);
-  }
-  100% {
-    opacity: 1;
-    -webkit-transform: none;
-            transform: none;
-  }
-}
-
-@keyframes fadeInLeft {
-  0% {
-    opacity: 0;
-    -webkit-transform: translateX(100%);
-            transform: translateX(100%);
-  }
-  100% {
-    opacity: 1;
-    -webkit-transform: none;
-            transform: none;
-  }
-}
-
-@-webkit-keyframes slowAppear {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-@keyframes slowAppear {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-@media print {
-  body {
-    -webkit-print-color-adjust: exact;
-    color-adjust: exact;
-  }
 }
 
 @media only screen and (max-width: 1240px) {
@@ -1004,7 +1006,7 @@ a, button {
   }
   #terrain_plan .main-right #plan_right .plan .plan_img {
     width: 539px;
-    height: 630px;
+    height: 623px;
   }
   #terrain_plan .main-right .lot_option {
     margin: 0;
@@ -1184,5 +1186,8 @@ a, button {
   #lexique > div #lexique-contents .texts p {
     padding-bottom: 1.5rem;
     line-height: 1.5;
+  }
+  #politique > div {
+    margin: .5rem;
   }
 }

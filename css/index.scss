@@ -10,6 +10,67 @@ $bars: #707070;
 $background: #e0e0e0ad;
 
 
+
+// 
+// MIXINS
+// 
+
+// BOX SHADOW
+@mixin box-shadow {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+// BUTTONS
+@mixin buttons { display: block; background: $sub; border: none; border-radius: 1.4rem;
+  a { display: block; font-size: .95rem; color: white; padding: .75rem 3rem;}
+  &:hover { background: #5a9b00;}
+  &:focus { outline: none;}
+}
+
+// TRANSITION EFFECT
+@mixin transition { 
+  transition: all .5s ease;
+}
+
+// SCROLLBAR 
+@mixin scrollbar($height) {
+  &::-webkit-scrollbar { width: 6px;}
+  &::-webkit-scrollbar-track { background: #bcbdbc;}
+  &::-webkit-scrollbar-thumb { background: $sub; height: $height;
+    &:hover { background: #5a9b00;}
+  }
+}
+
+// SMOOTH PAGE TRANSITIONS
+// APPEAR FROM RIGHT SIDE
+@keyframes fadeInRight {
+  0% { opacity: 0; transform: translateX(-100%);}
+  100% { opacity: 1; transform: none;}
+}
+
+// APPEAR FROM LEFT SIDE
+@keyframes fadeInLeft {
+  0% { opacity: 0; transform: translateX(100%);}
+  100% { opacity: 1; transform: none;}
+}
+
+// APPEAR FROM SLOWLY
+@keyframes slowAppear {
+  0% { opacity: 0;}
+  100% { opacity: 1;}
+}
+
+// END OF GLOBAL EFFECTS AND ACTIONS
+
+// PRINT A PAGE WITH BACKGROUND IMAGES AND COLORS
+@media print {
+  body { 
+    -webkit-print-color-adjust: exact; 
+    color-adjust: exact; // For Firefox
+  }
+}
+
+
 // DEFAULT FONT-SIZE
 html { font-size: 20px;}
 body { font-size: 1rem; max-width: 1440px; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;}
@@ -103,15 +164,14 @@ footer { text-align: center; height: auto; line-height: 2.35rem; background: $ma
 }
 // END OF FOOTER
 
-
 // 
 // POLITIQUE PAGE
 // 
 #politique {
-  > div { margin: 2rem; padding: 1rem; background: rgb(247, 245, 245); border: 1px solid $bars;
-    h2 { font-size: 1rem; text-align: center; padding: 1.5rem; margin-bottom: 1.5rem; background: white; border: 1px solid;}
+  > div { padding: 1rem; margin: 1rem; background: $background; @include box-shadow;
+    h2 { font-size: 1rem; text-align: center; padding: 1rem; margin-bottom: 1.5rem; background: white; border: 1px solid $bars;}
     .politique_content { font-size: 1rem; color: $text-dark;
-      h2, h4, h5, p { padding-bottom: 1.3rem;}
+      h2, h4, h5, p { text-align: justify; padding-bottom: 1.3rem;}
       h5 { text-decoration: underline; font-style: italic;}
       li { list-style: disc inside; padding-left: 1rem;}
     }
@@ -128,64 +188,3 @@ footer { text-align: center; height: auto; line-height: 2.35rem; background: $ma
 // SMOOTH HOVER EFFECT FOR ALL LINKS AND BUTTONS
 a, button { transition: all .5s ease;}
 
-
-// 
-// MIXINS
-// 
-
-
-// BOX SHADOW
-@mixin box-shadow {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-}
-
-// BUTTONS
-@mixin buttons { display: block; background: $sub; border: none; border-radius: 1.4rem; 
-  a { display: block; font-size: .95rem; color: white; padding: .75rem 3rem;}
-  &:hover { background: #5a9b00;}
-  &:focus { outline: none;}
-}
-
-// TRANSITION EFFECT
-@mixin transition { 
-  transition: all .5s ease;
-}
-
-// SCROLLBAR 
-@mixin scrollbar($height) {
-  &::-webkit-scrollbar { width: 6px;}
-  &::-webkit-scrollbar-track { background: #bcbdbc;}
-  &::-webkit-scrollbar-thumb { background: $sub; height: $height;
-    &:hover { background: #5a9b00;}
-  }
-}
-
-// SMOOTH PAGE TRANSITIONS
-// APPEAR FROM RIGHT SIDE
-@keyframes fadeInRight {
-  0% { opacity: 0; transform: translateX(-100%);}
-  100% { opacity: 1; transform: none;}
-}
-
-// APPEAR FROM LEFT SIDE
-@keyframes fadeInLeft {
-  0% { opacity: 0; transform: translateX(100%);}
-  100% { opacity: 1; transform: none;}
-}
-
-// APPEAR FROM SLOWLY
-@keyframes slowAppear {
-  0% { opacity: 0;}
-  100% { opacity: 1;}
-}
-
-// END OF GLOBAL EFFECTS AND ACTIONS
-
-// PRINT A PAGE WITH BACKGROUND IMAGES AND COLORS
-@media print {
-  body { 
-    -webkit-print-color-adjust: exact; 
-    color-adjust: exact; // For Firefox
-  }
-
-}

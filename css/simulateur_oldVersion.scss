@@ -10,7 +10,7 @@
   // CHOICE AREA
   .choice {  text-align: center;
     > div { float: left; width: 50%; height: 360px; box-sizing: border-box;
-      > a { display: block; width: 100%; height: 100%; position: relative;
+      a { display: block; width: 100%; height: 100%; position: relative;
        div { height: 5.5rem; width: 100%; position: absolute; left: 0; bottom: 0;
         p { font-size: 1.7rem; color: white; font-weight: bold; text-align: left; padding-left: 1.5rem;}
        }
@@ -20,15 +20,15 @@
       }
     }
 
-    // CHOICE OF TERRAIN ON THE LEFT
-    #choice_terrain { background: url(../images/simuler_terrain.jpg) no-repeat 0% 75% / 100%;
+    // CHOICE ON THE LEFT
+    .left { background: url(../images/simuler_terrain.jpg) no-repeat 0% 75% / 100%;
       a div { background: $sub;
         p { line-height: 5.5rem;}
       }
     }
 
-    // CHOICE OF TERRAIN ET CONSTRUCTION ON THE RIGHT
-    #choice_terrainConst { background: url(../images/simuler_terrain_construction.jpg) no-repeat 0% 54% / 100%;
+    // CHOICE ON THE RIGHT
+    .right { background: url(../images/simuler_terrain_construction.jpg) no-repeat 0% 54% / 100%;
       a div { background: $main; 
         p {  line-height: 1.5;}
       }
@@ -46,7 +46,7 @@
 // 
 
 // COMMON CODES FOR ALL STEPS
-#simulateur_steps { display: none; text-align: center; padding-bottom: 2rem; margin: 1.2rem 3.65rem; position: relative; 
+#simulateur_steps { text-align: center; padding-bottom: 2rem; margin: 1.2rem 3.65rem; position: relative; 
   h1 { font-size: 1.7rem; color: $sub; text-align: center;}
 
   // STEP INDICATOR
@@ -59,11 +59,7 @@
     .step:first-child span { width: 30px; height: 3px; left: -10px; }
   }
 
-  .steps { display: none; animation: slowAppear .5s ease-out;
-    .step_wrapper_up, 
-    .step_wrapper_down 
-    { display: none; animation: slowAppear .5s ease-out;}  
-  }
+  .steps { display: none; animation: slowAppear .5s ease-out;}
 
   // SECTION TITLES
   h2 { font-size: 1.6rem; color: $sub; text-align: left;}

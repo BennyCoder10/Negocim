@@ -9,7 +9,7 @@
   <title>Negocim.fr - Simulateur de crédit</title>
 
   <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
-  <link rel="stylesheet" href="css/default.css">
+  <link rel="stylesheet" href="css/default.css">  
   <link rel="stylesheet" href="css/simulateur.css">
   <link rel="stylesheet" href="css/responsive.css">
 </head>
@@ -45,44 +45,387 @@
     </header>
     <!-- END OF HEADER -->
 
+        <!-- MAIN -->
+        <main id="simulateur">
+          <h2>Quel est votre projet ?</h2>
+    
+          <!-- CHOICE AREA -->
+          <div class="choice clear">
+    
+            <!-- CHOICE ON THE LEFT -->
+            <div class="left" id="choice_terrain" onclick="myChoice(this.id)" >
+              <a>
+                <div>
+                  <p>Financer un terrain</p>
+                </div>          
+              </a>
+            </div>
+            
+            <!-- CHOICE ON THE LEFT -->
+            <div class="right" id="choice_terrainConst" onclick="myChoice(this.id)">
+              <a>
+                <div>
+                  <p>Financer le terrain</br>et la construction</p>
+                </div>          
+              </a>
+            </div>
+          </div>
+    
+          <!-- NOTICE AT THE BOTTOM -->
+          <p class="btm-txt">
+            Cette information non contractuelle est donnée à titre indicatif.</br>
+            * Nous vous garantissons qu'aucune donnée n'est transmise à nos serveurs.</br>
+            Elles sont seulement utilisées pour les calculs des différentes simulations proposées et le calcul de votre taux d'endettement.
+          </p>
+        </main>
+        <!-- END OF MAIN -->
+
+
+
     <!-- MAIN -->
-    <main id="simulateur">
-      <h2>Quel est votre projet ?</h2>
+    <main id="simulateur_steps">
 
-      <!-- CHOICE AREA -->
-      <div class="choice clear">
-
-        <!-- CHOICE ON THE LEFT -->
-        <div class="left">
-          <a href="simulateur_steps.html">
-            <div>
-              <p>Financer un terrain</p>
-            </div>          
-          </a>
-        </div>
-        
-        <!-- CHOICE ON THE LEFT -->
-        <div class="right">
-          <a href="simulateur_steps.html">
-            <div>
-              <p>Financer le terrain</br>et la construction</p>
-            </div>          
-          </a>
-        </div>
+      <!-- HEADER FOR ALL SIMULATEUR STEPS -->
+      <h1 id="step-name">Étape 1</h1>
+      <div class="indicator">
+          <p class="step"><span id="bar"></span></p>
+          <p class="step"><span></span></p> 
+          <p class="step"><span></span></p>
+          <p class="step"><span></span></p>
       </div>
 
-      <!-- NOTICE AT THE BOTTOM -->
-      <p class="btm-txt">
-        Cette information non contractuelle est donnée à titre indicatif.</br>
-        * Nous vous garantissons qu'aucune donnée n'est transmise à nos serveurs.</br>
-        Elles sont seulement utilisées pour les calculs des différentes simulations proposées et le calcul de votre taux d'endettement.
-      </p>
+      <!-- SIMULATUER STEPS -->
+      <div class="steps">
+
+        <!-- step_wrapper_up 1 -->
+        <div class="step_wrapper_up step1">
+          <!-- SELECTION SECTION -->
+          <h2>Choisissez votre terrain</h2>
+          <div class="selectors">
+
+            <div class="region">
+              <label for="region" class="hide">Région</label>
+              <select name="region" id="agences_select">
+                <option value="" disabled selected hidden>Région</option>
+                <option value="3">L'Orléanais</option>
+                <option value="2">La Touraine</option>
+                <option value="4">La Bretagne</option>
+                <option value="1">Le Sud-Ouest</option>
+              </select>
+            </div>
+
+            <div class="commune">
+              <label for="commune" class="hide">Commune</label>
+              <select name="commune" id="cities_select">
+                <option value="" disabled selected hidden>Commune</option>
+                <option value="13070">Taillan-Médoc (Le) (33)</option>
+              </select>
+            </div>
+
+            <div class="lotissement">
+              <label for="lotissement" class="hide">Lotissement</label>
+              <select name="lotissement" id="lotissements_select">
+                <option value="" disabled selected hidden>Lotissement</option>
+                <option value="359">Le Clos de Cante Gric</option>
+              </select>
+            </div>
+
+            <div class="lot">
+              <label for="lot" class="hide">Lot</label>
+              <select name="lot" id="lots_select">
+                <option value="" disabled selected hidden>Lot</option>
+                <option value="1877">Lot n°10 - 246 000 €</option>
+              </select>
+            </div>
+
+            <div class="montant unit">  
+              <label for="montant" class="hide">Montant de l'apport*</label>
+              <input type="number" id="apport" maxlength="99999999" placeholder="Montant de l'apport" ><span>€</span>
+            </div>
+          </div>
+        </div>
+        <!-- END OF step_wrapper_up 1 -->
+
+        <!-- step_wrapper_up 2 -->
+        <div class="step_wrapper_up step2">
+
+          <!-- SELECTION SECTION -->
+          <h2>Choisissez votre terrain</h2>
+          <div class="selectors">
+  
+            <div class="projet">
+              <label for="projet">Projet</label>
+              <select id="projet" name="projet">
+                <option value="" disabled selected hidden>Achat de terrain seul</option>
+                <option value="projet"></option>
+              </select>
+            </div>
+  
+            <div class="commune">
+              <label for="45">Département</label>
+              <select name="45" id="45">
+                <option value="" disabled selected hidden>Commune</option>
+                <option value="45">45 - Loiret</option>
+              </select>
+            </div>
+  
+            <div class="terrain unit">
+              <label for="terrain">Prix du terrain</label>
+             <input type="number" placeholder=""><span>€</span>
+            </div>
+  
+            <div class="sollicité unit">
+              <label for="sollicité">Montant du prêt sollicité</label>
+              <input type="number" placeholder=""><span>€</span>
+            </div>
+  
+            <!-- CALCULER -->
+            <div>
+              <button id="calc1" class="calculer" onclick="calculate1()">
+                <span>Calculer</span>
+             </button>
+            </div>  
+  
+          </div>
+          </div>
+        <!-- END OF step_wrapper_up 2 -->
+
+
+        <!-- step_wrapper_up 3 -->
+        <div class="step_wrapper_up step3">
+          <h2>Calculez le montant de votre mensualité</h2>
+          <div class="selectors">
+
+            <div class="Montant unit">
+              <label for="Montant">Montant de l'emprunt</label>
+              <input type="number"><span>€</span>
+            </div>
+
+            <div class="Durée unit">
+              <label for="Durée">Durée du prêt</label>
+              <input type="number"><span>ans</span>
+            </div>
+
+            <div class="Taux unit">
+              <label for="Taux">Taux du prêt</label>
+              <input type="number"><span>%</span>
+            </div>      
+
+            <!-- CALCULER -->
+            <div>
+              <button class="calculer">
+                <span>Calculer</span>
+            </button>
+            </div>        
+          </div>
+    
+          <div class="help">
+            <button>
+              <span>Taux moyens observés pour un crédit immobilier de : ? ans : ? %</span>
+            </button>
+            <div>
+              <span>Montant de <br>votre mensualité :</span>
+              <span class="price">0€</span>    
+            </div>             
+          </div>  
+        </div>
+        <!-- END OF step_wrapper_up 3 -->
+
+
+        <!-- step_wrapper_up 4 -->
+        <div class="step_wrapper_up step4">
+
+          <!-- SUMMARY -->
+          <div class="summary">    
+            <table>
+              <tr>
+                <th></th>
+                <th></th>
+                <th>Montant</th>
+                <th>Mensualité</th>
+              </tr>
+              <tr>
+                <td>PTZ</td>
+                <td><i class="xi-minus"></i></td>
+                <td><i class="xi-minus"></i></td>
+                <td><i class="xi-minus"></i></td>
+              </tr>
+              <tr>
+                <td>Crédit</td>
+                <td><i class="xi-minus"></i></td>
+                <td>1 000 €</td>
+                <td>84,69 €</td>           
+              </tr>
+              <tr>
+                <td>APL</td>
+                <td><i class="xi-minus"></i></td>
+                <td><i class="xi-minus"></i></td>
+                <td><i class="xi-minus"></i></td>
+              </tr>
+              <tr>
+                <td></td>
+                <td>TOTAL</td>
+                <td>1 000 €</td>
+                <td>84,69 €</td>  
+              </tr>
+            </table>       
+          </div>
+
+          <div class="final_price">
+            <div class="revenus unit">
+              <h4>Revenus mensuels actuels*</h4>
+              <div><span>€</span></div>
+            </div>       
+            <div class="taux unit">
+              <h4>Taux d'endettement</h4>
+              <div><span>€</span></div>
+            </div>               
+          </div>
+          <p>*Le PTZ n'est pas pris en compte dans le calcul du taux d'endettement</p>     
+        </div>
+        <!-- END OF step_wrapper_up 4 -->
+
+
+
+        <!-- Récapitulatif SECTION -->
+        <div id="recap">
+          <h2>Récapitulatif</h2> 
+          <div class="recap_table">
+  
+            <!-- NATURE SLOT -->
+            <div class="flex1">
+              <h4>Nature</h4>
+              <p id="nature"></p>
+              <p></p>
+            </div>
+  
+            <!-- PROJECT SLOT -->
+            <div class="flex2">
+              <h4>Projet</h4>
+              <div class="grid">
+                <div class="grid-item1">
+                  <span>Commune</span>
+                  <span>Terrain</span>
+                  <span>Prix</span>
+                  <span>Notaire</span>
+                  <span>Hypothèque</span>
+                  <span>Apport</span>
+                </div>
+                <div class="grid-item2">
+                  <span id="commune_value"></span>
+                  <span id="lotissement_value"></span>
+                  <span id="lot_value"></span>
+                  <span><i class="xi-minus"></i></span>
+                  <span><i class="xi-minus"></i></span>
+                  <span id="apport_value"></span>
+                </div>
+              </div>           
+            </div>
+  
+            <!-- TOTAL SLOT -->
+            <div class="flex3">
+              <h4>Total</h4>
+              <p></p>
+              <p><i class="xi-minus"></i></p>
+            </div>
+          </div>
+        </div>
+        <!-- END OF Récapitulatif SECTION -->
+
+
+        <!-- step_wrapper_down 1 -->
+        <div class="step_wrapper_down step1">
+          <!-- NOTICE AT THE BOTTOM -->
+          <div class="bottom">
+            <p>
+              Le <strong>financement</strong> d'un <strong>terrain seul</strong> n'ouvre pas droit à un <strong>Prêt à taux zéro</strong>.</br></br>
+              Cette information non contractuelle est donnée à titre indicatif.</br>
+              * Nous vous garantissons qu'aucune donnée n'est transmise à nos serveurs.</br>
+              Elles sont seulement utilisées pour les calculs des différentes simulations proposées et le calcul de votre taux d'endettement
+            </p>
+          </div>
+        </div>
+        <!-- END OF step_wrapper_down 1 -->
+
+        <!-- step_wrapper_down 2 -->
+        <div class="step_wrapper_down step2">
+
+          <div class="bottom">
+            <!-- MONTANT SECTION -->
+            <div class="montant">
+              <span>
+                Montant estimé</br>
+                des frais de notaire</br>
+                sur l’acquisition
+                <p id="notaire">0€</p>
+              </span>          
+              <span>
+                Montant estimé</br>
+                des frais d’hypothèque</br>
+                sur le prêt
+                <p id="hypo">0€</p>
+              </span>
+            </div>
+                
+            <!-- QUESTION SECTION -->
+            <table class="questions">
+              <tr>
+                <th>Voulez-vous ajouter vos frais de notaire à votre crédit ?</th>
+                <td><input type="radio" name="Q1" id="Q1_yes"><label for="Q1_yes">Oui</label></td>
+                <td><input type="radio" name="Q1" id="Q1_no"><label for="Q1_no">Non</label></td>
+              </tr>
+              <tr>
+                <th>Voulez-vous ajouter vos frais d'hypothèque à votre crédit ?</th>
+                <td><input type="radio" name="Q2" id="Q2_yes"><label for="Q2_yes">Oui</label></td>
+                <td><input type="radio" name="Q2" id="Q2_no"><label for="Q2_no">Non</label></td>            
+              </tr>      
+            </table>
+          </div>   
+        </div> 
+        <!-- END OF step_wrapper_down 2 -->
+
+
+        <!-- step_wrapper_down 3 -->
+        <div class="step_wrapper_down step3">
+          <!-- NOTICE AT THE BOTTOM -->
+          <div class="bottom">
+            <p>Vous pouvez également simuler <span>votre capacité d'emprunt</span> ou la <span>durée de remboursement</span></p>
+          </div>  
+        </div>
+        <!-- END OF step_wrapper_down 3 -->
+
+
+        <!-- step_wrapper_down 4 -->
+        <div class="step_wrapper_down step4">
+          <!-- NOTICE AT THE BOTTOM -->          
+          <div class="bottom">
+            <p>          
+              Cette information non contractuelle est donnée à titre indicatif.</br>
+              * Nous vous garantissons qu'aucune donnée n'est transmise à nos serveurs.</br>
+              Elles sont seulement utilisées pour les calculs des différentes simulations proposées et le calcul de votre taux d'endettement        
+            </p>
+          </div> 
+        </div>
+        <!-- END OF step_wrapper_down 4 -->
+
+
+
+      </div>
+      <!-- END OF SIMULATUER STEPS -->        
+      
+      <!-- PREV & NEXT BUTTONS FOR ALL SIMULATUER STEPS -->
+      <div class="btn_btm">
+        <button type="button" id="prev"><span>Précédent</span></button>
+        <button type="button" id="next"><span>Suivant</span></button>
+      </div>
+      <!-- END OF PREV & NEXT BUTTONS -->
+      
     </main>
     <!-- END OF MAIN -->
-
+   
     <!-- FOOTER -->
-    <footer>
-      <p><a href="politique.html">Politique de protection des données personnelles</a></p>
+     <footer>
+      <p><a href="#a" id="legales">Mentions Légales</a><a href="politique.html">Politique de protection des données personnelles</a></p>
     </footer>
     <!-- END OF FOOTER -->
 
@@ -91,6 +434,7 @@
 
   <!-- JAVASCRIPT -->
   <script src="js/index.js"></script>
+  <script src="js/simulateur.js"></script>
 
 </body>
 </html>

@@ -60,6 +60,11 @@ a {
   text-decoration: none;
 }
 
+button {
+  outline: none;
+  cursor: pointer;
+}
+
 /* Form */
 textarea {
   border: 1px solid #dbdbdb;
