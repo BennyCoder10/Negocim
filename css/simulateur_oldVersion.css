@@ -376,27 +376,27 @@ a, button {
           box-sizing: border-box;
 }
 
-#simulateur .choice > div > a {
+#simulateur .choice > div a {
   display: block;
   width: 100%;
   height: 100%;
   position: relative;
 }
 
-#simulateur .choice > div > a div {
-  height: 4.5rem;
+#simulateur .choice > div a div {
+  height: 5.5rem;
   width: 100%;
   position: absolute;
   left: 0;
   bottom: 0;
 }
 
-#simulateur .choice > div > a div p {
-  font-size: 1.6rem;
+#simulateur .choice > div a div p {
+  font-size: 1.7rem;
   color: white;
   font-weight: bold;
   text-align: left;
-  padding-left: 1rem;
+  padding-left: 1.5rem;
 }
 
 #simulateur .choice > div:hover {
@@ -409,24 +409,28 @@ a, button {
   transition: all .5s ease;
 }
 
-#simulateur .choice #choice_terrain {
+#simulateur .choice .left {
   background: url(../images/simuler_terrain.jpg) no-repeat 0% 75%/100%;
 }
 
-#simulateur .choice #choice_terrain a div {
+#simulateur .choice .left a div {
   background: #87c133;
 }
 
-#simulateur .choice #choice_terrain a div p {
-  line-height: 4.5rem;
+#simulateur .choice .left a div p {
+  line-height: 5.5rem;
 }
 
-#simulateur .choice #choice_terrainConst {
+#simulateur .choice .right {
   background: url(../images/simuler_terrain_construction.jpg) no-repeat 0% 54%/100%;
 }
 
-#simulateur .choice #choice_terrainConst a div {
+#simulateur .choice .right a div {
   background: #4cb0b2;
+}
+
+#simulateur .choice .right a div p {
+  line-height: 1.5;
 }
 
 #simulateur .btm-txt {
@@ -436,7 +440,6 @@ a, button {
 }
 
 #simulateur_steps {
-  display: none;
   text-align: center;
   padding-bottom: 2rem;
   margin: 1.2rem 3.65rem;
@@ -481,13 +484,6 @@ a, button {
           animation: slowAppear .5s ease-out;
 }
 
-#simulateur_steps .steps .step_wrapper_up,
-#simulateur_steps .steps .step_wrapper_down {
-  display: none;
-  -webkit-animation: slowAppear .5s ease-out;
-          animation: slowAppear .5s ease-out;
-}
-
 #simulateur_steps h2 {
   font-size: 1.6rem;
   color: #87c133;
@@ -519,7 +515,7 @@ a, button {
   text-align: center;
   width: 100%;
   height: 1.7rem;
-  padding: 0 1rem 0 .3rem;
+  padding: 0 .5rem;
   border: 1px solid #707070;
   border-radius: 1rem;
 }

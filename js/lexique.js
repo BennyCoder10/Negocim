@@ -1,6 +1,7 @@
+const input = document.getElementById("search");
+
 function search() {
-  var input, filter, contentsArea, content, a, i, txtValue;
-  input = document.getElementById("search");
+  var filter, contentsArea, content, a, i, txtValue;
   filter = input.value.toUpperCase();
   contentsArea = document.getElementById("lexique-contents");
   content = contentsArea.getElementsByClassName("content");
@@ -18,3 +19,10 @@ function search() {
   };
 };
 
+
+// ENABLE "ENTER" BUTTON TO START SEARCH
+input.addEventListener("keyup", function(event) {
+  if (event.keyCode === 13) {
+    search();
+  }
+});

@@ -513,6 +513,9 @@ a, button {
 }
 
 @media only screen and (max-width: 770px) {
+  #terrains #float-left ul li a i {
+    padding-right: .2rem;
+  }
   #terrain_presentation .main-right,
   #terrain_plan .main-right,
   #terrain_grille .main-right,
@@ -697,6 +700,9 @@ a, button {
   #terrain_plan .main-right .lot_option .wrapper .up .lot_info .info_table p > span:nth-child(2) {
     text-align: left;
   }
+  #terrain_plan .main-right .lot_option .wrapper .up .lot_image {
+    margin-left: 0;
+  }
   #terrain_plan .main-right .lot_option .wrapper .up .lot_image img {
     display: none;
   }
@@ -751,11 +757,11 @@ a, button {
     width: 100%;
     padding: 1.5rem 0 3rem;
   }
-  #simulateur .choice .left {
+  #simulateur .choice #choice_terrain {
     background-position: 44% 75%;
     background-size: 129%;
   }
-  #simulateur .choice .right {
+  #simulateur .choice #choice_terrainConst {
     background-position: 19% 54%;
     background-size: 129%;
   }
@@ -1052,15 +1058,15 @@ a, button {
   }
   #simulateur .choice > div {
     width: 100%;
-    height: 50vw;
+    height: 57vw;
     border: 1px solid #707070;
     margin-bottom: 5px;
   }
-  #simulateur .choice .left {
+  #simulateur .choice #choice_terrain {
     background-position: 0% 75%;
     background-size: 100%;
   }
-  #simulateur .choice .right {
+  #simulateur .choice #choice_terrainConst {
     background-position: 0% 54%;
     background-size: 100%;
   }

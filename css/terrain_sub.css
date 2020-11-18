@@ -511,7 +511,6 @@ main #sidebar-left .sidebar-menu #simulaer_un_credit, main #sidebar-left .sideba
   background: #87c133;
   border: none;
   border-radius: 1.4rem;
-  cursor: pointer;
   border-radius: 3px;
   padding: .3rem .2rem;
   font-size: 1rem;
@@ -548,7 +547,6 @@ main #sidebar-left .sidebar-menu #goback {
   background: #87c133;
   border: none;
   border-radius: 1.4rem;
-  cursor: pointer;
   margin: 0 auto;
   position: absolute;
   left: 0;
@@ -921,7 +919,11 @@ main .main-right .wrapper {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: .1rem .3rem;
+  padding: .3rem .3rem;
+}
+
+#terrain_plan .main-right .lot_option .wrapper .up .lot_info .info_table p:nth-child(odd) {
+  background: #66ccce1f;
 }
 
 #terrain_plan .main-right .lot_option .wrapper .up .lot_info .info_table p > span {
@@ -952,7 +954,7 @@ main .main-right .wrapper {
   position: relative;
   margin: .5rem auto;
   background: #87c133;
-  border-radius: 20px;
+  border-radius: 3px;
 }
 
 #terrain_plan .main-right .lot_option .wrapper .up .lot_image button a {
@@ -1068,11 +1070,21 @@ main .main-right .wrapper {
 }
 
 #terrain_grille .main-right .grille .wrapper table tr:hover {
-  background-color: #a2df4cda;
+  background-color: #4cb0b29d;
+  -webkit-transition: all .3s ease-out;
+  transition: all .3s ease-out;
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#terrain_grille .main-right .grille .wrapper table tr:hover th, #terrain_grille .main-right .grille .wrapper table tr:hover td {
+  font-weight: bold;
 }
 
 #terrain_grille .main-right .grille .wrapper table tr:first-child:hover {
   background-color: white;
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 
 #terrain_grille .main-right .grille .wrapper table tr .simuler_un_credit {
@@ -1080,10 +1092,9 @@ main .main-right .wrapper {
   background: #87c133;
   border: none;
   border-radius: 1.4rem;
-  cursor: pointer;
   color: #ffffff;
   margin: .2rem auto;
-  border-radius: 7px;
+  border-radius: 3px;
   cursor: pointer;
 }
 
@@ -1109,7 +1120,7 @@ main .main-right .wrapper {
 }
 
 #terrain_grille .main-right .grille .wrapper table tr .simuler_un_credit:hover {
-  background-color: #ff8c00;
+  background-color: #5a9b00;
 }
 
 #terrain_grille .main-right .grille .wrapper table .active:hover {
@@ -1128,17 +1139,19 @@ main .main-right .wrapper {
 }
 
 #terrain_grille .main-right .grille .wrapper .notaire_geometre > div {
-  padding: 1rem 2rem;
+  padding: .5rem 2rem;
 }
 
 #terrain_grille .main-right .grille .wrapper .notaire_geometre > div h5 {
   color: #87c133;
   font-weight: bold;
+  text-align: center;
+  padding-bottom: .5rem;
 }
 
 #terrain_grille .main-right .grille .wrapper .notaire_geometre > div p {
   font-size: .8rem;
-  padding-left: .5rem;
+  padding-bottom: .5rem;
 }
 
 #terrain_grille .main-right .grille .wrapper .notaire_geometre .notaire {
@@ -1378,6 +1391,17 @@ main .main-right .wrapper {
 
 #terrain_option .main-right > div .wrapper .option_right > div p {
   font-size: .8rem;
+}
+
+#terrain_option .main-right > div .wrapper .option_right > div p a {
+  color: #525451;
+  -webkit-transition: color .5s ease;
+  transition: color .5s ease;
+}
+
+#terrain_option .main-right > div .wrapper .option_right > div p a:hover {
+  color: #87c133;
+  font-weight: bold;
 }
 
 #terrain_option .main-right > div .wrapper .option_right .option_contact-up {

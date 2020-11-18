@@ -17,14 +17,16 @@
         }
         .active { color: $text-dark;}
         .dropdown-content { display: none; padding: 0 2.45rem .3rem; animation: slowAppear .3s ease-in-out;
-          ul li {
+          ul li { 
             a {
-              span{ display: block; color: white; background: $main; padding: .2rem 0;  font-size: .6rem; transition: all .3s;
+              span{ position: relative; display: inline-block; color: white; background: $main; padding: .2rem 0;  font-size: .6rem; transition: all .3s;
                 &:hover { color: $text-dark;}
               }
               &:focus { outline: none;}
-            }
+            } 
             
+            // VIRTUAL VISIT ICON (ADD CLASS NAME VISIT TO <li>)
+            &.visit a span:before { content: url(../images/lotissement/vr_icon.png); position: absolute; top: 0; left: -30px; }     
           }
         }
         

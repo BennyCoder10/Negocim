@@ -93,8 +93,6 @@ if (currentStep == 0)
     }       
   }
 };
-
-
 // END OF SIMULATEUR STEPS
 
 
@@ -106,18 +104,51 @@ const lotissement = document.getElementById("lotissements_select");
 const lot = document.getElementById("lots_select");
 const apport = document.getElementById("apport");
 
+
 // OUTPUT FIELD
 const communeValue = document.getElementById("commune_value");
 const lotissementValue = document.getElementById("lotissement_value");
 const lotValue = document.getElementById("lot_value");
 const apportValue = document.getElementById("apport_value");
 
+const total = document.getElementById("total");
 
-commune.addEventListener('change', ($event) => {
-  communeValue.textContent = $event.target.options[$event.target.selectedIndex].text;
+// SELECT ONLY OPTION AUTOMATICALLY
+region.addEventListener('change', () => {
+  if (commune.options.length < 3) {
+    commune.value = commune.options[1].value;
+    communeValue.textContent = commune.options[commune.selectedIndex].text;
+
+    if (lotissement.options.length < 3) {
+      lotissement.value = lotissement.options[1].value;
+      lotissementValue.textContent = lotissement.options[lotissement.selectedIndex].text;
+
+
+      if (lot.options.length < 3) {
+        lot.value = lot.options[1].value;
+        lotValue.textContent = lot.options[lot.selectedIndex].text;
+      } 
+    }
+  } else {
+    commune.addEventListener('input', ($event) => {    
+      communeValue.textContent = $event.target.options[$event.target.selectedIndex].text;
+    });
+  }
 });
 
-lotissement.addEventListener('change', ($event) => {
+// commune.addEventListener('input', ($event) => {
+  // if (lotissement.options.length < 3) {
+  //   // lotissement.value = lotissement.options[1].value;
+  //   lotissement.options[lotissement.options.selectedIndex].selected = true;
+  // };  
+
+//   communeValue.textContent = $event.target.options[$event.target.selectedIndex].text;
+// });
+
+lotissement.addEventListener('input', ($event) => {
+  // if (lot.options.length < 3) {
+  //   lot.value = lot.options[1].value;
+  // }; 
   lotissementValue.textContent = $event.target.options[$event.target.selectedIndex].text;
 });
 
@@ -125,13 +156,17 @@ lot.addEventListener('change', ($event) => {
   lotValue.textContent = $event.target.options[$event.target.selectedIndex].text;
 });
 
-apport.addEventListener('input', ($event) => {
-  apportValue.textContent = "- " + $event.target.value + " €";
+apport.addEventListener('input', () => {
+  apportValue.textContent = "- " + apport.value + " €";
+  total.textContent = ("246000" - apport.value) + " €";
+
+  if (! apport.value.length) {
+    apportValue.textContent = '\&ndash';
+  }
 });
 
 
 // CALCULATE BUTTON 
-// const calc = document.getElementById("calc");
 const notaire = document.getElementById("notaire");
 const hypo = document.getElementById("hypo");
 
@@ -141,6 +176,12 @@ function calculate1() {
 }
 
 
+
+
+
+
+// test 
+// console.log(options);
 
 
 
