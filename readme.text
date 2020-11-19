@@ -1,0 +1,7 @@
+
+# Visite Virtuelle Icon
+add class("visit") to <li>* tag 
+
+*path:  terrain_sudouest.html -> #terrain #sidebar-left .sidebar-menu .dropdown-content ul li
+
+

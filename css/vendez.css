@@ -354,13 +354,14 @@ a, button {
 }
 
 main .agencies {
+  position: relative;
   float: left;
   width: 50%;
   height: auto;
   border: 1px solid #707070;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  position: relative;
+  overflow: hidden;
 }
 
 main .agencies img {
@@ -374,9 +375,9 @@ main .agencies button {
   position: absolute;
   left: 50%;
   bottom: .95rem;
+  min-width: 14.5rem;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
-  min-width: 14.5rem;
   display: block;
   background: #87c133;
   border: none;
@@ -400,12 +401,22 @@ main .agencies button:focus {
   outline: none;
 }
 
+main .agencies:hover img {
+  -webkit-transform: scale(1.15);
+          transform: scale(1.15);
+  cursor: pointer;
+  -webkit-transition: -webkit-transform .5s ease;
+  transition: -webkit-transform .5s ease;
+  transition: transform .5s ease;
+  transition: transform .5s ease, -webkit-transform .5s ease;
+}
+
 main p {
   font-size: .55rem;
   color: black;
-  line-height: 1.5;
   text-align: center;
   padding: .5rem;
+  line-height: 1.5;
 }
 
 main p a {

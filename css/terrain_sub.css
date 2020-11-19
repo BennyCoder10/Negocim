@@ -68,13 +68,6 @@
   }
 }
 
-@media print {
-  body {
-    -webkit-print-color-adjust: exact;
-    color-adjust: exact;
-  }
-}
-
 html {
   font-size: 20px;
 }
@@ -593,30 +586,15 @@ main .main-right .wrapper {
 }
 
 #terrain_presentation .main-right {
-  padding: .5rem;
   float: right;
   text-align: center;
   height: 100%;
 }
 
-#terrain_presentation .main-right .map {
-  position: relative;
-  height: 100%;
-  width: 100%;
-}
-
-#terrain_presentation .main-right .map img {
-  height: 100%;
-}
-
-#terrain_presentation .main-right .map iframe {
-  width: 100%;
-  height: 100%;
-  border: 1px solid #87c133;
-}
-
 #terrain_presentation .main-right #presentation {
+  position: relative;
   padding: .5rem;
+  margin: .5rem;
   background-color: #e0e0e0ad;
   /* Modal Content */
 }
@@ -813,8 +791,6 @@ main .main-right .wrapper {
 #terrain_plan .main-right #plan_right .plan {
   margin: 0;
   overflow-x: auto;
-  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
 #terrain_plan .main-right #plan_right .plan .plan_img {
@@ -823,6 +799,8 @@ main .main-right .wrapper {
   width: 730px;
   height: 842px;
   background: url(../images/lotissement/plan_masse_120.png) no-repeat 0 0/100%;
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
 #terrain_plan .main-right #plan_right .plan .plan_img .lot {
@@ -1406,4 +1384,26 @@ main .main-right .wrapper {
 
 #terrain_option .main-right > div .wrapper .option_right .option_contact-up {
   margin-bottom: 1rem;
+}
+
+@media print {
+  body {
+    -webkit-print-color-adjust: exact;
+    color-adjust: exact;
+  }
+  body > div header nav {
+    display: none;
+  }
+  body > div main .main-right {
+    width: 100% !important;
+  }
+  body > div main .main-right > div {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+  body > div main #sidebar-left {
+    display: none !important;
+  }
 }

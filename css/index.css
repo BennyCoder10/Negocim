@@ -68,13 +68,6 @@
   }
 }
 
-@media print {
-  body {
-    -webkit-print-color-adjust: exact;
-    color-adjust: exact;
-  }
-}
-
 html {
   font-size: 20px;
 }

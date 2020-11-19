@@ -61,20 +61,16 @@ main {
 #terrain_presentation { position: relative; 
 
   // SECTION ON THE RIGHT FOR MAP IMAGE & GOOGLE MAP API
-  .main-right { padding: .5rem;
-    float: right; text-align: center; height: 100%; 
+  .main-right { float: right; text-align: center; height: 100%; 
     // width: calc(100% - 14rem); 
     // overflow: auto; 
 
-    .map { position: relative; height: 100%; width: 100%;
-      img { height: 100%;}
-      iframe { width: 100%; height: 100%; border: 1px solid $sub;}
-    }
-   
+    // .map { 
+      // img { height: 100%;}
+      // iframe { width: 100%; height: 100%; border: 1px solid $sub;}
+    // }   
 
-
-
-    #presentation { padding: .5rem; background-color: $background;
+    #presentation { position: relative; padding: .5rem; margin: .5rem; background-color: $background;
 
       .header { padding: .5rem; background: white; @include box-shadow;
         h3 { font-weight: normal;}
@@ -209,8 +205,8 @@ main {
     #plan_right { position: relative; height: 100%; padding: .5rem; margin: .5rem; background-color: $background;
       .click { color: white; max-width: 730px; padding: .5rem; margin: 0 auto 1rem; background-color: $sub; @include box-shadow;}
       // p { margin: .5rem 0; text-align: center;}
-      .plan { margin: 0; overflow-x: auto; @include box-shadow;
-        .plan_img { position: relative; margin: 0 auto; width: 730px; height: 842px; background: url(../images/lotissement/plan_masse_120.png) no-repeat 0 0 / 100%;
+      .plan { margin: 0; overflow-x: auto;
+        .plan_img { position: relative; margin: 0 auto; width: 730px; height: 842px; background: url(../images/lotissement/plan_masse_120.png) no-repeat 0 0 / 100%; @include box-shadow;
           .lot { display: block; position: absolute; transition: none;    
             .number { margin: -0.4rem 0; font-weight: bold;}
           }
@@ -368,7 +364,7 @@ main {
           // WHEN "ACTIVE" CLASS ADDED
           .active {
             &:hover { cursor: pointer;}
-          }         
+          } 
         }
 
         .notaire_geometre { display: grid; grid-template-columns: 1fr 1fr; text-align: left; margin: .5rem 0; @include box-shadow;
@@ -573,4 +569,25 @@ main {
     }  
   }
   // END OF CONTENT ON THE RIGHT
+}
+
+
+// PRINT A PAGE WITH BACKGROUND IMAGES AND COLORS
+@media print {
+  body { 
+    -webkit-print-color-adjust: exact; 
+    color-adjust: exact; // For Firefox
+
+    // PRINT ONLY SELECTED ELEMENTS
+    > div {
+      header nav { display: none;}
+      main {
+        .main-right { width: 100% !important;
+          > div { padding-left: 0 !important; padding-right: 0 !important; margin-left: 0 !important; margin-right: 0 !important;}
+        }
+        #sidebar-left { display: none !important;}
+      }
+      // footer { display: none;}
+    }                      
+  }
 }

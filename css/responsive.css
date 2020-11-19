@@ -68,13 +68,6 @@
   }
 }
 
-@media print {
-  body {
-    -webkit-print-color-adjust: exact;
-    color-adjust: exact;
-  }
-}
-
 html {
   font-size: 20px;
 }
@@ -507,9 +500,6 @@ a, button {
   #simulateur_steps .step3 .help > div span:first-child {
     padding-right: 2rem;
   }
-  #lexique > div {
-    padding: .8rem 1rem;
-  }
 }
 
 @media only screen and (max-width: 770px) {
@@ -871,6 +861,9 @@ a, button {
     overflow-y: auto;
     direction: ltr;
   }
+  #lexique > div {
+    padding: .8rem 1rem;
+  }
 }
 
 @media only screen and (max-width: 560px) {
@@ -1003,6 +996,9 @@ a, button {
     font-size: .9rem;
     color: #525451;
     background: white;
+  }
+  #terrain_presentation .main-right #presentation {
+    margin: 0;
   }
   #terrain_plan .main-right .lot_option .wrapper .up .lot_info #lot_image_mobile {
     width: 70%;
@@ -1169,10 +1165,9 @@ a, button {
   #qui_sommes_nous .text .text_right {
     width: 100%;
     height: auto;
+    padding: 0;
     margin: 1.5rem auto;
     float: none;
-    overflow-y: auto;
-    direction: ltr;
   }
   #qui_sommes_nous .text .text_right article {
     padding: .8rem .5rem;
@@ -1180,16 +1175,19 @@ a, button {
   #qui_sommes_nous .text .text_right article h3 {
     font-size: 1.2rem;
   }
-  #lexique > div .index {
-    padding-bottom: 2rem;
-  }
   #lexique > div {
     padding-bottom: 2rem;
   }
-  #lexique > div #lexique-contents .texts h3 {
+  #lexique > div .index {
+    padding-bottom: 2rem;
+  }
+  #lexique > div #lexique > div #lexique-contents .texts {
+    padding-right: .5rem;
+  }
+  #lexique > div #lexique > div #lexique-contents .texts h3 {
     padding-bottom: 1.5rem;
   }
-  #lexique > div #lexique-contents .texts p {
+  #lexique > div #lexique > div #lexique-contents .texts p {
     padding-bottom: 1.5rem;
     line-height: 1.5;
   }

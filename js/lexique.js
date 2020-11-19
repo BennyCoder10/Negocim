@@ -22,7 +22,7 @@ function search() {
 
 // ENABLE "ENTER" BUTTON TO START SEARCH
 input.addEventListener("keyup", function(event) {
-  if (event.keyCode === 13) {
+  if (event.keyCode === 13 || event.keyCode === 229) {
     search();
   }
 });
