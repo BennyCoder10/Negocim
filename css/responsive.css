@@ -346,6 +346,46 @@ a, button {
   transition: all .5s ease;
 }
 
+@media print {
+  body {
+    -webkit-print-color-adjust: exact;
+    color-adjust: exact;
+  }
+  body > div header h1 {
+    padding: .5rem 1rem;
+  }
+  body > div header nav {
+    display: none;
+  }
+  body > div main .main-right {
+    width: 100% !important;
+  }
+  body > div main .main-right > div {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+  body > div main #sidebar-left {
+    display: none !important;
+  }
+  body > div #qui_sommes_nous .text .list_left {
+    display: none;
+  }
+  body > div #qui_sommes_nous .text .text_right {
+    width: 100%;
+    padding: 0;
+  }
+  body > div footer {
+    line-height: .7rem;
+  }
+  body > div footer p {
+    font-size: 1px;
+  }
+  body > div footer p a {
+    font-size: 1px;
+    visibility: hidden;
+  }
+}
+
 @media only screen and (max-width: 1240px) {
   #lexique > div .index #lexique-nav {
     -webkit-box-pack: start;
@@ -747,17 +787,21 @@ a, button {
     width: 100%;
     padding: 1.5rem 0 3rem;
   }
-  #simulateur .choice #choice_terrain {
-    background-position: 44% 75%;
-    background-size: 129%;
-  }
-  #simulateur .choice #choice_terrainConst {
-    background-position: 19% 54%;
-    background-size: 129%;
-  }
   #simulateur .choice > div div p {
     text-align: center;
     padding-left: 0;
+  }
+  #simulateur .choice #choice_terrain {
+    background: url(../images/simuler_terrain.jpg) no-repeat center 67%/129%;
+  }
+  #simulateur .choice #choice_terrain:hover {
+    background: url(../images/simuler_terrain.jpg) no-repeat center 67%/138%;
+  }
+  #simulateur .choice #choice_terrainConst {
+    background: url(../images/simuler_terrain_construction.jpg) no-repeat center 82%/129%;
+  }
+  #simulateur .choice #choice_terrainConst:hover {
+    background: url(../images/simuler_terrain_construction.jpg) no-repeat center 82%/135%;
   }
   #simulateur_steps {
     margin: .3rem;
@@ -1000,6 +1044,9 @@ a, button {
   #terrain_presentation .main-right #presentation {
     margin: 0;
   }
+  #terrain_presentation .main-right #presentation .btm {
+    padding: .5rem .3rem;
+  }
   #terrain_plan .main-right .lot_option .wrapper .up .lot_info #lot_image_mobile {
     width: 70%;
   }
@@ -1059,12 +1106,16 @@ a, button {
     margin-bottom: 5px;
   }
   #simulateur .choice #choice_terrain {
-    background-position: 0% 75%;
-    background-size: 100%;
+    background: url(../images/simuler_terrain.jpg) no-repeat center 67%/100%;
+  }
+  #simulateur .choice #choice_terrain:hover {
+    background: url(../images/simuler_terrain.jpg) no-repeat center 67%/108%;
   }
   #simulateur .choice #choice_terrainConst {
-    background-position: 0% 54%;
-    background-size: 100%;
+    background: url(../images/simuler_terrain_construction.jpg) no-repeat center 82%/100%;
+  }
+  #simulateur .choice #choice_terrainConst:hover {
+    background: url(../images/simuler_terrain_construction.jpg) no-repeat center 82%/106%;
   }
   #simulateur .btm-txt {
     padding: .8rem 0;

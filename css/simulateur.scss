@@ -16,22 +16,24 @@
         p { font-size: 1.6rem; color: white; font-weight: bold; text-align: left; padding-left: 1rem;}
        }
       }
-      &:hover { border: 1px solid $sub;
-        &:hover a div p { color: $text-dark; @include transition;}
+      &:hover { overflow: hidden; cursor: pointer;
+        a div p { color: $text-dark; @include transition;}
       }
     }
 
     // CHOICE OF TERRAIN ON THE LEFT
-    #choice_terrain { background: url(../images/simuler_terrain.jpg) no-repeat 0% 75% / 100%;
+    #choice_terrain { background: url(../images/simuler_terrain.jpg) no-repeat center 67% / 100%;
       a div { background: $sub;
         p { line-height: 4.5rem;}
       }
+      &:hover { background: url(../images/simuler_terrain.jpg) no-repeat center 67% / 108%; transition: all .5s ease;}
     }
 
     // CHOICE OF TERRAIN ET CONSTRUCTION ON THE RIGHT
-    #choice_terrainConst { background: url(../images/simuler_terrain_construction.jpg) no-repeat 0% 54% / 100%;
+    #choice_terrainConst { background: url(../images/simuler_terrain_construction.jpg) no-repeat center 82% / 100%;
       a div { background: $main; 
       }
+      &:hover { background: url(../images/simuler_terrain_construction.jpg) no-repeat center 82% / 106%; transition: all .5s ease;}
     }
   }  
 

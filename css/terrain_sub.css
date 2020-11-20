@@ -346,6 +346,46 @@ a, button {
   transition: all .5s ease;
 }
 
+@media print {
+  body {
+    -webkit-print-color-adjust: exact;
+    color-adjust: exact;
+  }
+  body > div header h1 {
+    padding: .5rem 1rem;
+  }
+  body > div header nav {
+    display: none;
+  }
+  body > div main .main-right {
+    width: 100% !important;
+  }
+  body > div main .main-right > div {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+  body > div main #sidebar-left {
+    display: none !important;
+  }
+  body > div #qui_sommes_nous .text .list_left {
+    display: none;
+  }
+  body > div #qui_sommes_nous .text .text_right {
+    width: 100%;
+    padding: 0;
+  }
+  body > div footer {
+    line-height: .7rem;
+  }
+  body > div footer p {
+    font-size: 1px;
+  }
+  body > div footer p a {
+    font-size: 1px;
+    visibility: hidden;
+  }
+}
+
 main #sidebar-left {
   position: relative;
   float: left;
@@ -615,6 +655,7 @@ main .main-right .wrapper {
 }
 
 #terrain_presentation .main-right #presentation .btm {
+  padding: 1rem;
   background: white;
   -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
           box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
@@ -1021,6 +1062,10 @@ main .main-right .wrapper {
   padding: 0 2rem;
 }
 
+#terrain_grille .main-right .grille .wrapper > p:first-child {
+  padding-top: .5rem;
+}
+
 #terrain_grille .main-right .grille .wrapper .update_date {
   font-size: .6rem;
   text-align: right;
@@ -1384,26 +1429,4 @@ main .main-right .wrapper {
 
 #terrain_option .main-right > div .wrapper .option_right .option_contact-up {
   margin-bottom: 1rem;
-}
-
-@media print {
-  body {
-    -webkit-print-color-adjust: exact;
-    color-adjust: exact;
-  }
-  body > div header nav {
-    display: none;
-  }
-  body > div main .main-right {
-    width: 100% !important;
-  }
-  body > div main .main-right > div {
-    padding-left: 0 !important;
-    padding-right: 0 !important;
-    margin-left: 0 !important;
-    margin-right: 0 !important;
-  }
-  body > div main #sidebar-left {
-    display: none !important;
-  }
 }

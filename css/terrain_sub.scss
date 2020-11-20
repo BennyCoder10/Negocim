@@ -77,7 +77,7 @@ main {
         h2 i { color: $sub;}
       }
 
-      .btm { background: white; @include box-shadow;
+      .btm { padding: 1rem; background: white; @include box-shadow;
         p { padding: .5rem; text-align: left;}
       }
       
@@ -341,7 +341,9 @@ main {
         > * { background-color: white;}
 
         h2 { color: white; padding: .5rem 0; margin-bottom: 1rem; background-color: $sub; @include box-shadow;}
-        > p { font-size: .8rem; text-align: left; padding: 0 2rem;}
+        > p { font-size: .8rem; text-align: left; padding: 0 2rem;
+            &:first-child { padding-top: .5rem;}
+          }
         .update_date { font-size: .6rem; text-align: right; padding-right: 1rem;}
 
         // LOT INFORMATION TABLE ON THE GRILLE DE PRIX PAGE
@@ -572,22 +574,4 @@ main {
 }
 
 
-// PRINT A PAGE WITH BACKGROUND IMAGES AND COLORS
-@media print {
-  body { 
-    -webkit-print-color-adjust: exact; 
-    color-adjust: exact; // For Firefox
 
-    // PRINT ONLY SELECTED ELEMENTS
-    > div {
-      header nav { display: none;}
-      main {
-        .main-right { width: 100% !important;
-          > div { padding-left: 0 !important; padding-right: 0 !important; margin-left: 0 !important; margin-right: 0 !important;}
-        }
-        #sidebar-left { display: none !important;}
-      }
-      // footer { display: none;}
-    }                      
-  }
-}

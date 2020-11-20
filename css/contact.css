@@ -68,13 +68,6 @@
   }
 }
 
-@media print {
-  body {
-    -webkit-print-color-adjust: exact;
-    color-adjust: exact;
-  }
-}
-
 html {
   font-size: 20px;
 }
@@ -353,6 +346,46 @@ a, button {
   transition: all .5s ease;
 }
 
+@media print {
+  body {
+    -webkit-print-color-adjust: exact;
+    color-adjust: exact;
+  }
+  body > div header h1 {
+    padding: .5rem 1rem;
+  }
+  body > div header nav {
+    display: none;
+  }
+  body > div main .main-right {
+    width: 100% !important;
+  }
+  body > div main .main-right > div {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+  body > div main #sidebar-left {
+    display: none !important;
+  }
+  body > div #qui_sommes_nous .text .list_left {
+    display: none;
+  }
+  body > div #qui_sommes_nous .text .text_right {
+    width: 100%;
+    padding: 0;
+  }
+  body > div footer {
+    line-height: .7rem;
+  }
+  body > div footer p {
+    font-size: 1px;
+  }
+  body > div footer p a {
+    font-size: 1px;
+    visibility: hidden;
+  }
+}
+
 #contact .agencies {
   position: relative;
   float: left;
@@ -401,9 +434,13 @@ a, button {
   outline: none;
 }
 
+#contact .agencies button a {
+  padding: .75rem;
+}
+
 #contact .agencies:hover img {
-  -webkit-transform: scale(1.15);
-          transform: scale(1.15);
+  -webkit-transform: scale(1.08);
+          transform: scale(1.08);
   cursor: pointer;
   -webkit-transition: -webkit-transform .5s ease;
   transition: -webkit-transform .5s ease;

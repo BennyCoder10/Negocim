@@ -285,9 +285,18 @@
   }
 
   // SIMULATEUR
-  #simulateur .choice #choice_terrain { background-position: 44% 75%; background-size:  129%;}
-  #simulateur .choice #choice_terrainConst { background-position: 19% 54%; background-size:  129%;}
   #simulateur .choice > div div p { text-align: center; padding-left: 0;}
+  #simulateur .choice {
+    #choice_terrain { background: url(../images/simuler_terrain.jpg) no-repeat center 67% / 129%;
+      &:hover { background: url(../images/simuler_terrain.jpg) no-repeat center 67% / 138%;}
+    }
+  
+    // CHOICE OF TERRAIN ET CONSTRUCTION ON THE RIGHT
+    #choice_terrainConst { background: url(../images/simuler_terrain_construction.jpg) no-repeat center 82% / 129%;
+      &:hover { background: url(../images/simuler_terrain_construction.jpg) no-repeat center 82% / 135%;}
+    }
+  }
+  
 
 
   
@@ -429,8 +438,10 @@
    }   
  }
 
- #terrain_presentation .main-right #presentation { margin: 0;}
- 
+ #terrain_presentation .main-right #presentation { margin: 0;
+  .btm { padding: .5rem .3rem;}
+}
+
  #terrain_plan .main-right .lot_option .wrapper .up .lot_info #lot_image_mobile { width: 70%;}
  #terrain_plan .main-right #plan_right { margin: 0;
   .plan .plan_img { width: 539px; height: 623px;}
@@ -475,10 +486,19 @@
   // SIMULATEUR
   #simulateur .choice > div { width: 100%; height: 57vw; border: 1px solid $bars; margin-bottom: 5px;}
   // #simulateur .choice > div > a > div { height: 20vw;}
+  #simulateur .choice {
+    #choice_terrain { background: url(../images/simuler_terrain.jpg) no-repeat center 67% / 100%;
+      &:hover { background: url(../images/simuler_terrain.jpg) no-repeat center 67% / 108%;}
+    }
+  
+    // CHOICE OF TERRAIN ET CONSTRUCTION ON THE RIGHT
+    #choice_terrainConst { background: url(../images/simuler_terrain_construction.jpg) no-repeat center 82% / 100%;
+      &:hover { background: url(../images/simuler_terrain_construction.jpg) no-repeat center 82% / 106%;}
+    }
+  }
 
-
-  #simulateur .choice #choice_terrain { background-position: 0% 75%; background-size:  100%;}
-  #simulateur .choice #choice_terrainConst { background-position: 0% 54%; background-size:  100%;}
+  // #simulateur .choice #choice_terrain { background-position: 0% 75%; background-size:  100%;}
+  // #simulateur .choice #choice_terrainConst { background-position: 0% 54%; background-size:  100%;}
   #simulateur .btm-txt { padding: .8rem 0;}
 
   #simulateur_steps { 

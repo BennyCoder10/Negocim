@@ -68,13 +68,6 @@
   }
 }
 
-@media print {
-  body {
-    -webkit-print-color-adjust: exact;
-    color-adjust: exact;
-  }
-}
-
 html {
   font-size: 20px;
 }
@@ -353,6 +346,46 @@ a, button {
   transition: all .5s ease;
 }
 
+@media print {
+  body {
+    -webkit-print-color-adjust: exact;
+    color-adjust: exact;
+  }
+  body > div header h1 {
+    padding: .5rem 1rem;
+  }
+  body > div header nav {
+    display: none;
+  }
+  body > div main .main-right {
+    width: 100% !important;
+  }
+  body > div main .main-right > div {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+  body > div main #sidebar-left {
+    display: none !important;
+  }
+  body > div #qui_sommes_nous .text .list_left {
+    display: none;
+  }
+  body > div #qui_sommes_nous .text .text_right {
+    width: 100%;
+    padding: 0;
+  }
+  body > div footer {
+    line-height: .7rem;
+  }
+  body > div footer p {
+    font-size: 1px;
+  }
+  body > div footer p a {
+    font-size: 1px;
+    visibility: hidden;
+  }
+}
+
 #simulateur {
   margin: 0;
 }
@@ -400,17 +433,18 @@ a, button {
 }
 
 #simulateur .choice > div:hover {
-  border: 1px solid #87c133;
+  overflow: hidden;
+  cursor: pointer;
 }
 
-#simulateur .choice > div:hover:hover a div p {
+#simulateur .choice > div:hover a div p {
   color: #525451;
   -webkit-transition: all .5s ease;
   transition: all .5s ease;
 }
 
 #simulateur .choice #choice_terrain {
-  background: url(../images/simuler_terrain.jpg) no-repeat 0% 75%/100%;
+  background: url(../images/simuler_terrain.jpg) no-repeat center 67%/100%;
 }
 
 #simulateur .choice #choice_terrain a div {
@@ -421,12 +455,24 @@ a, button {
   line-height: 4.5rem;
 }
 
+#simulateur .choice #choice_terrain:hover {
+  background: url(../images/simuler_terrain.jpg) no-repeat center 67%/108%;
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
+}
+
 #simulateur .choice #choice_terrainConst {
-  background: url(../images/simuler_terrain_construction.jpg) no-repeat 0% 54%/100%;
+  background: url(../images/simuler_terrain_construction.jpg) no-repeat center 82%/100%;
 }
 
 #simulateur .choice #choice_terrainConst a div {
   background: #4cb0b2;
+}
+
+#simulateur .choice #choice_terrainConst:hover {
+  background: url(../images/simuler_terrain_construction.jpg) no-repeat center 82%/106%;
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
 }
 
 #simulateur .btm-txt {

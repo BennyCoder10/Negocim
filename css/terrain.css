@@ -68,13 +68,6 @@
   }
 }
 
-@media print {
-  body {
-    -webkit-print-color-adjust: exact;
-    color-adjust: exact;
-  }
-}
-
 html {
   font-size: 20px;
 }
@@ -351,6 +344,46 @@ footer p #legales {
 a, button {
   -webkit-transition: all .5s ease;
   transition: all .5s ease;
+}
+
+@media print {
+  body {
+    -webkit-print-color-adjust: exact;
+    color-adjust: exact;
+  }
+  body > div header h1 {
+    padding: .5rem 1rem;
+  }
+  body > div header nav {
+    display: none;
+  }
+  body > div main .main-right {
+    width: 100% !important;
+  }
+  body > div main .main-right > div {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+  body > div main #sidebar-left {
+    display: none !important;
+  }
+  body > div #qui_sommes_nous .text .list_left {
+    display: none;
+  }
+  body > div #qui_sommes_nous .text .text_right {
+    width: 100%;
+    padding: 0;
+  }
+  body > div footer {
+    line-height: .7rem;
+  }
+  body > div footer p {
+    font-size: 1px;
+  }
+  body > div footer p a {
+    font-size: 1px;
+    visibility: hidden;
+  }
 }
 
 #terrain {
