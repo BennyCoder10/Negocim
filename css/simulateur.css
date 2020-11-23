@@ -367,6 +367,9 @@ a, button {
   body > div main #sidebar-left {
     display: none !important;
   }
+  body > div #simulateur_steps {
+    margin: 1.2rem;
+  }
   body > div #qui_sommes_nous .text .list_left {
     display: none;
   }

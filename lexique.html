@@ -12,16 +12,20 @@
   <link rel="stylesheet" href="css/default.css">
   <link rel="stylesheet" href="css/lexique.css">
   <link rel="stylesheet" href="css/responsive.css">
-
 </head>
 
 <body>
-  <!-- FLEXBOX -->
+  <!-- WRAPPER FOR FULL HEIGHT ON THE SCREEN -->
   <div class="wrapper">
+
     <!-- HEADER -->
     <header>
+
+      <!-- NEGOCIM LOGO -->
       <h1><a href="index.html"><img src="images/main_logo.jpg" alt="Negocim logo"><span class="hide">Negocim</span></a></h1>
       <h2 class="hide">menu</h2>
+
+      <!-- NAV MENU  -->
       <nav class="menu" id="menu">
         <ul>
           <li><a href="index.html">Terrains</a></li>
@@ -32,16 +36,21 @@
           <li><a href="lexique.html" class="active">Lexique</a></li>            
         </ul>
       </nav>
+
+      <!-- MENU BAR ON MOBILE VERSION -->
       <div id="menu-toggle" onclick="menuToggle(this)">
         <div class="bar1"></div>
         <div class="bar2"></div>
         <div class="bar3"></div>
       </div>
     </header>
+    <!-- END OF HEADER -->
   
-  <!-- MAIN IN THE MIDDLE -->
+    <!-- MAIN -->
     <main id="lexique">
       <div>
+
+        <!-- SEARCH BAR -->
         <div class="searchWrapper">
           <div>
             <input type="text" id="search" name="searchBar">
@@ -51,6 +60,7 @@
           </div>         
         </div>
 
+        <!-- INDEX ALPHABETS -->
         <div class="index">
           <div id="lexique-nav" class="CharacterContainer">
             <a href="#A"><span>A</span></a>
@@ -201,6 +211,7 @@
     </footer>
 
   </div>
+  <!-- END OF WRAPPER -->
 
 <script src="js/index.js"></script>
 <script src="js/lexique.js"></script>
