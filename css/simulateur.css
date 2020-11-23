@@ -410,6 +410,8 @@ a, button {
   height: 360px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
 }
 
 #simulateur .choice > div > a {
@@ -433,6 +435,8 @@ a, button {
   font-weight: bold;
   text-align: left;
   padding-left: 1rem;
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
 }
 
 #simulateur .choice > div:hover {
@@ -442,8 +446,6 @@ a, button {
 
 #simulateur .choice > div:hover a div p {
   color: #525451;
-  -webkit-transition: all .5s ease;
-  transition: all .5s ease;
 }
 
 #simulateur .choice #choice_terrain {

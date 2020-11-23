@@ -367,6 +367,9 @@ a, button {
   body > div main #sidebar-left {
     display: none !important;
   }
+  body > div #simulateur_steps {
+    margin: 1.2rem;
+  }
   body > div #qui_sommes_nous .text .list_left {
     display: none;
   }
@@ -402,6 +405,10 @@ main .agencies img {
   height: 13rem;
   -o-object-fit: cover;
      object-fit: cover;
+  -webkit-transition: -webkit-transform .5s ease;
+  transition: -webkit-transform .5s ease;
+  transition: transform .5s ease;
+  transition: transform .5s ease, -webkit-transform .5s ease;
 }
 
 main .agencies button {
@@ -442,10 +449,6 @@ main .agencies:hover img {
   -webkit-transform: scale(1.08);
           transform: scale(1.08);
   cursor: pointer;
-  -webkit-transition: -webkit-transform .5s ease;
-  transition: -webkit-transform .5s ease;
-  transition: transform .5s ease;
-  transition: transform .5s ease, -webkit-transform .5s ease;
 }
 
 main p {

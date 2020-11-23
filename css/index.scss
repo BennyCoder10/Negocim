@@ -206,7 +206,8 @@ a, button { transition: all .5s ease;}
         #sidebar-left { display: none !important;}
       }
 
-      #simulateur_steps { margin: 1.2rem}
+      // HAVE TO MODIFY AGAIN
+      #terrain_plan .main-right #plan_right .click { display: none;}
 
       // REMOVE SIDEBAR ON THE LEFT & MAKE THE CONTENT ON THE RIGHT FULL WIDTH
       #qui_sommes_nous .text {

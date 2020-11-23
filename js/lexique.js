@@ -1,5 +1,6 @@
 const input = document.getElementById("search");
 
+// SEARCH AND DISPLAY 
 function search() {
   var filter, contentsArea, content, a, i, txtValue;
   filter = input.value.toUpperCase();
@@ -18,7 +19,6 @@ function search() {
       }  
   };
 };
-
 
 // ENABLE "ENTER" BUTTON TO START SEARCH
 input.addEventListener("keyup", function(event) {

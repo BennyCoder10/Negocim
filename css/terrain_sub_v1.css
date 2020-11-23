@@ -367,8 +367,8 @@ a, button {
   body > div main #sidebar-left {
     display: none !important;
   }
-  body > div #terrain_plan .main-right #plan_right .click {
-    display: none;
+  body > div #simulateur_steps {
+    margin: 1.2rem;
   }
   body > div #qui_sommes_nous .text .list_left {
     display: none;
@@ -873,7 +873,7 @@ main .main-right .wrapper {
 
 #terrain_plan .main-right #plan_right .lot_notice {
   font-size: .8rem;
-  max-width: 730px;
+  max-width: 36.5rem;
   padding: .5rem;
   margin: 1rem auto 0;
   background: white;
