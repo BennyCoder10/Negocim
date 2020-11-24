@@ -113,17 +113,19 @@ header {
 
 header h1 {
   float: left;
-  padding: 1rem 5rem .8rem 1.3rem;
+  padding: .5rem;
+  padding-left: 2rem;
 }
 
 header h1 a img {
   display: block;
-  width: 8.5rem;
-  height: 1.75rem;
+  width: 17rem;
+  height: auto;
 }
 
 header .menu {
-  float: left;
+  float: right;
+  padding-right: 6vw;
 }
 
 header .menu ul li {
@@ -134,7 +136,7 @@ header .menu ul li a {
   display: block;
   font-size: .8rem;
   color: #ffffff;
-  padding: 1.3rem .6rem .4rem;
+  padding: 1.3rem .5rem .3rem;
   position: relative;
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
@@ -171,7 +173,7 @@ header .menu ul li .active:before {
 header #menu-toggle {
   display: none;
   float: right;
-  padding: 0.8rem .8rem .5rem 1.3rem;
+  padding: 1rem 1rem 1rem 0;
   cursor: pointer;
   z-index: 2;
 }
@@ -252,20 +254,12 @@ header .change .bar3 {
 
 #terrains .main-right {
   text-align: center;
-  height: 100%;
-  width: 100%;
   overflow: auto;
 }
 
 #terrains .main-right .map {
   position: relative;
-  height: 100%;
-  width: 100%;
   padding: 5px;
-}
-
-#terrains .main-right .map img {
-  height: 100%;
 }
 
 #terrains .main-right .map p {
@@ -276,6 +270,10 @@ header .change .bar3 {
   font-size: .8rem;
   font-weight: bold;
   padding: 0 1rem;
+}
+
+#terrains .main-right #test area {
+  background-color: red;
 }
 
 footer {
@@ -394,6 +392,15 @@ a, button {
 }
 
 @media only screen and (max-width: 1240px) {
+  body .wrapper header h1 {
+    padding-left: .5rem;
+  }
+  body .wrapper header h1 a img {
+    width: 15rem;
+  }
+  body .wrapper header .menu {
+    padding-right: 3vw;
+  }
   #lexique > div .index #lexique-nav {
     -webkit-box-pack: start;
         -ms-flex-pack: start;
@@ -405,12 +412,11 @@ a, button {
   html {
     font-size: 18px;
   }
-  html body .wrapper header h1 {
-    padding-right: 0;
+  html body .wrapper header h1 a img {
+    width: 13.5rem;
   }
   html body .wrapper header .menu {
-    float: right;
-    padding-right: 1rem;
+    padding-right: 0;
   }
   #simulateur_steps .step4 .summary table {
     width: 80%;
@@ -424,14 +430,17 @@ a, button {
   body {
     width: 100%;
   }
-  header .menu {
+  html body .wrapper header h1 a img {
+    width: 17rem;
+  }
+  html body .wrapper header .menu {
     padding-right: 0rem;
     position: fixed;
     /* Stay in place */
     z-index: 100;
     /* Sit on top */
     right: 0;
-    top: 64px;
+    top: 76px;
     width: 17rem;
     height: 100%;
     /* Full height */
@@ -448,34 +457,34 @@ a, button {
     -webkit-transform: translateX(100%);
             transform: translateX(100%);
   }
-  header .menu ul {
+  html body .wrapper header .menu ul {
     margin-left: 1rem;
   }
-  header .menu ul li {
+  html body .wrapper header .menu ul li {
     float: none;
     padding: 0 0 .8rem 0;
   }
-  header .menu ul li .active:before {
+  html body .wrapper header .menu ul li .active:before {
     width: none;
   }
-  header .menu ul li a {
+  html body .wrapper header .menu ul li a {
     display: inline-block;
     width: 100%;
   }
-  header .menu ul li a:hover {
+  html body .wrapper header .menu ul li a:hover {
     color: white;
   }
-  header .menu ul li a:before {
+  html body .wrapper header .menu ul li a:before {
     content: none;
   }
-  header .menu ul li:last-child {
+  html body .wrapper header .menu ul li:last-child {
     margin-bottom: 70px;
   }
-  header .appear {
+  html body .wrapper header .appear {
     -webkit-transform: translateX(0);
             transform: translateX(0);
   }
-  header #menu-toggle {
+  html body .wrapper header #menu-toggle {
     display: inline-block;
   }
   .overlay {
@@ -912,12 +921,18 @@ a, button {
     overflow-y: auto;
     direction: ltr;
   }
+  #qui_sommes_nous .text .text_right article:last-child {
+    padding-bottom: 1rem;
+  }
   #lexique > div {
     padding: .8rem 1rem;
   }
 }
 
 @media only screen and (max-width: 560px) {
+  html body .wrapper header h1 a img {
+    width: 13.5rem;
+  }
   #terrains .main-right {
     display: none;
   }

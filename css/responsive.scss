@@ -6,6 +6,15 @@
 // FOR LARGER SIZE DEVICES (DESKTOPS)
 // 
 @media only screen and (max-width: 1240px) {  
+ body .wrapper header {
+    h1 { padding-left: .5rem;
+      a img { width: 15rem;}
+    }
+   
+    .menu { padding-right: 3vw;}
+ }
+ 
+
   // LEXIQUE
   #lexique > div .index #lexique-nav { justify-content: flex-start;} 
 }
@@ -18,18 +27,15 @@
 
   // GLOBAL
   html { font-size: 18px;
-    body {
-      .wrapper {
-        header {
-          // NEGOCIM LOGO
-          h1 { padding-right: 0;}
+    body .wrapper header {
+      // NEGOCIM LOGO
+      h1 a img { width: 13.5rem;}
 
-          // NAV MENU
-          .menu { float: right; padding-right: 1rem;}
-        }      
-      }        
+      // NAV MENU
+      .menu { padding-right: 0;}        
     }
   }
+
 
   // SIMULATEUR_STEPS > INDIVIDUAL STEP
   #simulateur_steps {
@@ -51,7 +57,9 @@
   // GLOBAL
   body { width: 100%;}
 
-  header {
+  html body .wrapper header {
+
+    h1 a img { width: 17rem;}
 
     // NAV MENU
     .menu {
@@ -59,7 +67,7 @@
       position: fixed; /* Stay in place */
       z-index: 100; /* Sit on top */
       right: 0;
-      top: 64px;
+      top: 76px;
       width: 17rem;
       height: 100%; /* Full height */
       overflow: auto; /* Enable scroll if needed */
@@ -347,6 +355,7 @@
   #qui_sommes_nous .text {
     .list_left { display: none; }
     .text_right { width: 100%; height: auto; margin: 1.5rem auto; float: none; overflow-y: auto; direction: ltr;
+      article:last-child { padding-bottom: 1rem;}
     }
   } 
 
@@ -359,6 +368,10 @@
 // FOR SMALLER SIZE DEVICES (SMARTPHONES)
 // 
 @media only screen and (max-width: 560px) {
+
+  html body .wrapper header {
+    h1 a img { width: 13.5rem;}
+  }
 
   // INDEX PAGE > MAIN 
   #terrains .main-right {display: none;}
