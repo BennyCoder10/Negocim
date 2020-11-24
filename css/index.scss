@@ -137,10 +137,17 @@ header { background: $main;
   }
 
   // MAP OF FRANCE
-  .main-right { text-align: center; height: 100%; width: 100%; overflow: auto;
-    .map { position: relative; height: 100%; width: 100%; padding: 5px;
-      img { height: 100%; }
+  .main-right { text-align: center;
+    //  height: 100%; width: 100%; 
+     overflow: auto;
+    .map { position: relative; 
+      // height: 100%; width: 100%;
+       padding: 5px;
+      // img { height: 100%; }
       p { position: absolute; left: 0; right: 0; bottom: 1.5rem; font-size: .8rem; font-weight: bold; padding: 0 1rem;} 
+    }
+    #test {
+      area { background-color: red;}
     }
   }
 }
@@ -206,8 +213,11 @@ a, button { transition: all .5s ease;}
         #sidebar-left { display: none !important;}
       }
 
-      // HAVE TO MODIFY AGAIN
-      #terrain_plan .main-right #plan_right .click { display: none;}
+      // PLAN DU LOTISSEMENT PAGE
+      #terrain_plan .main-right #plan_right {
+        width: 90%; margin: 0 auto !important;
+        .click { display: none;}
+      }
 
       // REMOVE SIDEBAR ON THE LEFT & MAKE THE CONTENT ON THE RIGHT FULL WIDTH
       #qui_sommes_nous .text {

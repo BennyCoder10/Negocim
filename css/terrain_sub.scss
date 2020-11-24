@@ -224,9 +224,15 @@ main {
       .plan { margin: 0;
         .plan_img { position: relative; @include box-shadow; max-width: 730px; margin: 0 auto;
           > img { display: block; width: 100%;}
-          .lot { display: block; position: absolute; transition: none; width: 6%;
-            .number { font-size: 100%; font-weight: bold; margin: -0.4rem 0;}
-            .tag { width: 100%;}
+          .lot { display: block; position: absolute; transition: none; 
+            width: 7%; 
+            display: grid; 
+            .number { 
+              font-size: 100%; font-weight: bold; margin-top: -.3rem;
+            }
+            .tag { 
+              width: 100%; 
+            }
           }
 
           // WHEN "ACTIVE" CLASS ADDED

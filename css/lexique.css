@@ -367,6 +367,9 @@ a, button {
   body > div main #sidebar-left {
     display: none !important;
   }
+  body > div #terrain_plan .main-right #plan_right .click {
+    display: none;
+  }
   body > div #qui_sommes_nous .text .list_left {
     display: none;
   }

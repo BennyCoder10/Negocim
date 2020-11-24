@@ -252,20 +252,12 @@ header .change .bar3 {
 
 #terrains .main-right {
   text-align: center;
-  height: 100%;
-  width: 100%;
   overflow: auto;
 }
 
 #terrains .main-right .map {
   position: relative;
-  height: 100%;
-  width: 100%;
   padding: 5px;
-}
-
-#terrains .main-right .map img {
-  height: 100%;
 }
 
 #terrains .main-right .map p {
@@ -276,6 +268,10 @@ header .change .bar3 {
   font-size: .8rem;
   font-weight: bold;
   padding: 0 1rem;
+}
+
+#terrains .main-right #test area {
+  background-color: red;
 }
 
 footer {
@@ -366,6 +362,10 @@ a, button {
   }
   body > div main #sidebar-left {
     display: none !important;
+  }
+  body > div #terrain_plan .main-right #plan_right {
+    width: 90%;
+    margin: 0 auto !important;
   }
   body > div #terrain_plan .main-right #plan_right .click {
     display: none;

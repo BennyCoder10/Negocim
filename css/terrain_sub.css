@@ -367,6 +367,10 @@ a, button {
   body > div main #sidebar-left {
     display: none !important;
   }
+  body > div #terrain_plan .main-right #plan_right {
+    width: 90%;
+    margin: 0 auto !important;
+  }
   body > div #terrain_plan .main-right #plan_right .click {
     display: none;
   }
@@ -854,13 +858,15 @@ main .main-right .wrapper {
   position: absolute;
   -webkit-transition: none;
   transition: none;
-  width: 6%;
+  width: 7%;
+  display: -ms-grid;
+  display: grid;
 }
 
 #terrain_plan .main-right #plan_right .plan .plan_img .lot .number {
   font-size: 100%;
   font-weight: bold;
-  margin: -0.4rem 0;
+  margin-top: -.3rem;
 }
 
 #terrain_plan .main-right #plan_right .plan .plan_img .lot .tag {

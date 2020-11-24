@@ -442,10 +442,11 @@
   .btm { padding: .5rem .3rem;}
 }
 
- #terrain_plan .main-right .lot_option .wrapper .up .lot_info #lot_image_mobile { width: 70%;}
+//  #terrain_plan .main-right .lot_option .wrapper .up .lot_info #lot_image_mobile { width: 70%;}
  #terrain_plan .main-right #plan_right { margin: 0;
-  .plan .plan_img { width: 539px; height: 623px;}
+  // .plan .plan_img { width: 539px; height: 623px;}
  }
+ #terrain_plan .main-right #plan_right .plan .plan_img .lot .number { font-size: 50%;}
 
  #terrain_plan .main-right .lot_option { margin: 0;}
 
