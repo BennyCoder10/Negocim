@@ -173,7 +173,7 @@ header .menu ul li .active:before {
 header #menu-toggle {
   display: none;
   float: right;
-  padding: 1rem 1rem 1rem 0;
+  padding: 0.8rem .8rem .5rem 1.3rem;
   cursor: pointer;
   z-index: 2;
 }
@@ -254,12 +254,20 @@ header .change .bar3 {
 
 #terrains .main-right {
   text-align: center;
+  height: 100%;
+  width: 100%;
   overflow: auto;
 }
 
 #terrains .main-right .map {
   position: relative;
+  height: 100%;
+  width: 100%;
   padding: 5px;
+}
+
+#terrains .main-right .map img {
+  height: 100%;
 }
 
 #terrains .main-right .map p {
@@ -270,10 +278,6 @@ header .change .bar3 {
   font-size: .8rem;
   font-weight: bold;
   padding: 0 1rem;
-}
-
-#terrains .main-right #test area {
-  background-color: red;
 }
 
 footer {

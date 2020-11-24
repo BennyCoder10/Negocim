@@ -259,7 +259,13 @@ header .change .bar3 {
 
 #terrains .main-right .map {
   position: relative;
+  height: 100%;
+  width: 100%;
   padding: 5px;
+}
+
+#terrains .main-right .map img {
+  height: 100%;
 }
 
 #terrains .main-right .map p {
@@ -270,10 +276,6 @@ header .change .bar3 {
   font-size: .8rem;
   font-weight: bold;
   padding: 0 1rem;
-}
-
-#terrains .main-right #test area {
-  background-color: red;
 }
 
 footer {
