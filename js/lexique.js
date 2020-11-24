@@ -23,7 +23,6 @@ function search() {
 // ENABLE "ENTER" BUTTON TO START SEARCH
 input.addEventListener("keyup", function(event) {
   if (event.keyCode === 13) {
-    search();
-    
+    document.getElementById("searchButton").click();    
   }
 });
