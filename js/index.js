@@ -65,3 +65,28 @@ function orleanaisSidebar() {
 // function saintAy() {
 //   mapTerrain.innerHTML = '<iframe src="https://maps.googleapis.com/maps/api/js?v=3.38&key=AIzaSyD-Prsm3tG6Vv5XkuDrVY8yfRC57-LuAbE" frameborder="0" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>';
 // };
+
+
+
+
+// CREATE A BUTTON VISITE VIRTUELLE WHEN MAIN TAG HAS A CLASS "VISIT"
+const main = document.getElementsByTagName("main")[0];
+
+
+if (main.classList.contains("visit")) {
+  const sidebarMenu = document.getElementsByClassName("sidebar-menu")[0];
+  const presentationButton = document.getElementById("presentation");
+  var value = main.getAttribute('data-visit_name');
+
+  var visitButton = document.createElement("button");
+  visitButton.setAttribute("id", "visit");
+  visitButton.setAttribute("style", "position: relative");
+  visitButton.setAttribute("style", "span:before");
+  
+  visitButton.innerHTML = "<span>Visit virtuelle</span>";
+  // visitButton.textContent += ;
+
+  visitButton.setAttribute("onclick", "window.location='http://www.negocim.fr/lotissements/" + value + "/lots/01/visite'");
+
+  sidebarMenu.insertBefore(visitButton, sidebarMenu.childNodes[2]);
+}

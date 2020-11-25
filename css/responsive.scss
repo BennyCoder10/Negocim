@@ -8,10 +8,10 @@
 @media only screen and (max-width: 1240px) {  
  body .wrapper header {
     h1 { padding-left: .5rem;
-      a img { width: 15rem;}
+      a img { width: 16rem;}
     }
    
-    .menu { padding-right: 3vw;}
+    .menu { padding-right: 0;}
  }
  
 
@@ -59,7 +59,9 @@
 
   html body .wrapper header {
 
-    h1 a img { width: 17rem;}
+    h1 { padding-left: 2rem;
+      a img { width: 17rem;}
+    } 
 
     // NAV MENU
     .menu {
@@ -67,7 +69,7 @@
       position: fixed; /* Stay in place */
       z-index: 100; /* Sit on top */
       right: 0;
-      top: 76px;
+      top: 78px;
       width: 17rem;
       height: 100%; /* Full height */
       overflow: auto; /* Enable scroll if needed */
@@ -209,11 +211,13 @@
           }
         }
 
-        #simulaer_un_credit, #imprimer 
+        #visit, #simulaer_un_credit, #imprimer 
           { margin: .5rm auto; padding: .6rem 1rem; border-radius: 30px; border: 2px solid $sub; background: none; color: $sub;
             a { color: $sub;}
           }
         }
+
+        #visit span { color: $sub;}
 
         // GOBACK BUTTON AT THE BOTTOM
        #goback { width: auto; padding: .4rem 2.5rem; margin: 2rem auto .5rem; position: static;}
@@ -352,7 +356,7 @@
   }  
 
   // QUI SOMMES
-  #qui_sommes_nous .text {
+  #qui_sommes_nous .text { padding: .8rem 1rem;
     .list_left { display: none; }
     .text_right { width: 100%; height: auto; margin: 1.5rem auto; float: none; overflow-y: auto; direction: ltr;
       article:last-child { padding-bottom: 1rem;}
@@ -370,7 +374,10 @@
 @media only screen and (max-width: 560px) {
 
   html body .wrapper header {
-    h1 a img { width: 13.5rem;}
+    h1 { padding-left: 1rem;
+      a img { width: 13.5rem;}
+    } 
+    .menu { top: 66px}
   }
 
   // INDEX PAGE > MAIN 

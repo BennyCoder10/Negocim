@@ -173,7 +173,7 @@ header .menu ul li .active:before {
 header #menu-toggle {
   display: none;
   float: right;
-  padding: 1rem 1rem 1rem 0;
+  padding: .8rem .8rem .5rem 0rem;
   cursor: pointer;
   z-index: 2;
 }
@@ -254,6 +254,8 @@ header .change .bar3 {
 
 #terrains .main-right {
   text-align: center;
+  height: 100%;
+  width: 100%;
   overflow: auto;
 }
 
@@ -354,6 +356,9 @@ a, button {
   body > div header h1 {
     padding: .5rem 1rem;
   }
+  body > div header h1 a img {
+    width: 7rem;
+  }
   body > div header nav {
     display: none;
   }
@@ -398,10 +403,10 @@ a, button {
     padding-left: .5rem;
   }
   body .wrapper header h1 a img {
-    width: 15rem;
+    width: 16rem;
   }
   body .wrapper header .menu {
-    padding-right: 3vw;
+    padding-right: 0;
   }
   #lexique > div .index #lexique-nav {
     -webkit-box-pack: start;
@@ -432,6 +437,9 @@ a, button {
   body {
     width: 100%;
   }
+  html body .wrapper header h1 {
+    padding-left: 2rem;
+  }
   html body .wrapper header h1 a img {
     width: 17rem;
   }
@@ -442,7 +450,7 @@ a, button {
     z-index: 100;
     /* Sit on top */
     right: 0;
-    top: 76px;
+    top: 78px;
     width: 17rem;
     height: 100%;
     /* Full height */
@@ -679,13 +687,17 @@ a, button {
     -webkit-transition: all .5s ease;
     transition: all .5s ease;
   }
-  #terrain_presentation #sidebar-left .sidebar-menu #simulaer_un_credit, #terrain_presentation #sidebar-left .sidebar-menu #imprimer,
+  #terrain_presentation #sidebar-left .sidebar-menu #visit, #terrain_presentation #sidebar-left .sidebar-menu #simulaer_un_credit, #terrain_presentation #sidebar-left .sidebar-menu #imprimer,
+  #terrain_plan #sidebar-left .sidebar-menu #visit,
   #terrain_plan #sidebar-left .sidebar-menu #simulaer_un_credit,
   #terrain_plan #sidebar-left .sidebar-menu #imprimer,
+  #terrain_grille #sidebar-left .sidebar-menu #visit,
   #terrain_grille #sidebar-left .sidebar-menu #simulaer_un_credit,
   #terrain_grille #sidebar-left .sidebar-menu #imprimer,
+  #terrain_document #sidebar-left .sidebar-menu #visit,
   #terrain_document #sidebar-left .sidebar-menu #simulaer_un_credit,
   #terrain_document #sidebar-left .sidebar-menu #imprimer,
+  #terrain_option #sidebar-left .sidebar-menu #visit,
   #terrain_option #sidebar-left .sidebar-menu #simulaer_un_credit,
   #terrain_option #sidebar-left .sidebar-menu #imprimer {
     margin: .5rm auto;
@@ -695,15 +707,26 @@ a, button {
     background: none;
     color: #87c133;
   }
-  #terrain_presentation #sidebar-left .sidebar-menu #simulaer_un_credit a, #terrain_presentation #sidebar-left .sidebar-menu #imprimer a,
+  #terrain_presentation #sidebar-left .sidebar-menu #visit a, #terrain_presentation #sidebar-left .sidebar-menu #simulaer_un_credit a, #terrain_presentation #sidebar-left .sidebar-menu #imprimer a,
+  #terrain_plan #sidebar-left .sidebar-menu #visit a,
   #terrain_plan #sidebar-left .sidebar-menu #simulaer_un_credit a,
   #terrain_plan #sidebar-left .sidebar-menu #imprimer a,
+  #terrain_grille #sidebar-left .sidebar-menu #visit a,
   #terrain_grille #sidebar-left .sidebar-menu #simulaer_un_credit a,
   #terrain_grille #sidebar-left .sidebar-menu #imprimer a,
+  #terrain_document #sidebar-left .sidebar-menu #visit a,
   #terrain_document #sidebar-left .sidebar-menu #simulaer_un_credit a,
   #terrain_document #sidebar-left .sidebar-menu #imprimer a,
+  #terrain_option #sidebar-left .sidebar-menu #visit a,
   #terrain_option #sidebar-left .sidebar-menu #simulaer_un_credit a,
   #terrain_option #sidebar-left .sidebar-menu #imprimer a {
+    color: #87c133;
+  }
+  #terrain_presentation #sidebar-left #visit span,
+  #terrain_plan #sidebar-left #visit span,
+  #terrain_grille #sidebar-left #visit span,
+  #terrain_document #sidebar-left #visit span,
+  #terrain_option #sidebar-left #visit span {
     color: #87c133;
   }
   #terrain_presentation #sidebar-left #goback,
@@ -912,6 +935,9 @@ a, button {
   #simulateur_steps .step3 .help > div span:first-child {
     font-size: .8rem;
   }
+  #qui_sommes_nous .text {
+    padding: .8rem 1rem;
+  }
   #qui_sommes_nous .text .list_left {
     display: none;
   }
@@ -932,8 +958,14 @@ a, button {
 }
 
 @media only screen and (max-width: 560px) {
+  html body .wrapper header h1 {
+    padding-left: 1rem;
+  }
   html body .wrapper header h1 a img {
     width: 13.5rem;
+  }
+  html body .wrapper header .menu {
+    top: 66px;
   }
   #terrains .main-right {
     display: none;

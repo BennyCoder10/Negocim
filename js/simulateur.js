@@ -16,11 +16,9 @@ function myChoice(clicked_id) {
     nature.innerText = "Terrain + Construction";
   }  
 }
-
 // END OF SIMULATEUR CHOICE PAGE
 
 // SIMULATEUR STEPS
-
 var steps = document.getElementsByClassName("steps")[0];
 var stepWrapperUp = document.getElementsByClassName("step_wrapper_up");
 var stepWrapperDown = document.getElementsByClassName("step_wrapper_down");
@@ -112,6 +110,7 @@ const lotValue = document.getElementById("lot_value");
 const apportValue = document.getElementById("apport_value");
 
 const total = document.getElementById("total");
+
 
 // SELECT ONLY OPTION AUTOMATICALLY
 region.addEventListener('change', () => {

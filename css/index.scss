@@ -121,11 +121,10 @@ header { background: $main;
       }
     }
   }  
-
   // END OF NEGOCIM LOGO V1 
 
   // MENU BAR ON MOBILE VERSION
-  #menu-toggle { display: none; float: right; padding: 0.8rem .8rem .5rem 1.3rem; cursor: pointer; z-index: 2;  
+  #menu-toggle { display: none; float: right; padding: .8rem .8rem .5rem 0rem; cursor: pointer; z-index: 2;  
     .bar1, .bar2, .bar3 { 
       width: 35px; height: 5px; margin: 6px 0; background-color: $text; transition: 0.4s;
     }    
@@ -219,7 +218,9 @@ a, button { transition: all .5s ease;}
 
       // MAKE HEADER HEIGHT SMALLER
       header { 
-        h1 { padding: .5rem 1rem;}
+        h1 { padding: .5rem 1rem;
+          a img { width: 7rem}
+        }
         nav { display: none;}
       } 
 

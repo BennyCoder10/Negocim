@@ -113,17 +113,19 @@ header {
 
 header h1 {
   float: left;
-  padding: 1rem 5rem .8rem 1.3rem;
+  padding: .5rem;
+  padding-left: 2rem;
 }
 
 header h1 a img {
   display: block;
-  width: 8.5rem;
-  height: 1.75rem;
+  width: 17rem;
+  height: auto;
 }
 
 header .menu {
-  float: left;
+  float: right;
+  padding-right: 6vw;
 }
 
 header .menu ul li {
@@ -134,7 +136,7 @@ header .menu ul li a {
   display: block;
   font-size: .8rem;
   color: #ffffff;
-  padding: 1.3rem .6rem .4rem;
+  padding: 1.3rem .5rem .3rem;
   position: relative;
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
@@ -171,7 +173,7 @@ header .menu ul li .active:before {
 header #menu-toggle {
   display: none;
   float: right;
-  padding: 0.8rem .8rem .5rem 1.3rem;
+  padding: .8rem .8rem .5rem 0rem;
   cursor: pointer;
   z-index: 2;
 }
@@ -353,6 +355,9 @@ a, button {
   }
   body > div header h1 {
     padding: .5rem 1rem;
+  }
+  body > div header h1 a img {
+    width: 7rem;
   }
   body > div header nav {
     display: none;
@@ -630,6 +635,158 @@ main .main-right .wrapper {
 
 #terrain_presentation {
   position: relative;
+}
+
+#terrain_presentation .slider {
+  position: relative;
+  width: 100%;
+  max-width: 100%;
+}
+
+#terrain_presentation .slider .slider__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: 750px;
+  height: 400px;
+  margin: 0 auto;
+}
+
+#terrain_presentation .slider .slider__inner .slider__item {
+  position: absolute;
+  height: 150px;
+  width: 150px;
+  opacity: 0;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  z-index: -1;
+  pointer-events: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+#terrain_presentation .slider .slider__inner .slider__item-trigger-next {
+  left: 15%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+#terrain_presentation .slider .slider__inner .slider__item-trigger-previous {
+  left: 85%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+#terrain_presentation .slider .slider__inner .slider__item-selected {
+  -webkit-box-shadow: 0 0 30px rgba(255, 255, 255, 0.6), 0 0 60px rgba(255, 255, 255, 0.45), 0 0 110px rgba(255, 255, 255, 0.25), 0 0 100px rgba(255, 255, 255, 0.1);
+          box-shadow: 0 0 30px rgba(255, 255, 255, 0.6), 0 0 60px rgba(255, 255, 255, 0.45), 0 0 110px rgba(255, 255, 255, 0.25), 0 0 100px rgba(255, 255, 255, 0.1);
+  height: 300px;
+  opacity: 1;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  width: 300px;
+  z-index: 2;
+}
+
+#terrain_presentation .slider .slider__inner .slider__item-previous, #terrain_presentation .slider .slider__inner .slider__item-next {
+  height: 200px;
+  opacity: 1;
+  width: 200px;
+  z-index: 1;
+}
+
+#terrain_presentation .slider .slider__inner .slider__item-last, #terrain_presentation .slider .slider__inner .slider__item-first {
+  opacity: .4;
+  z-index: 0;
+}
+
+#terrain_presentation .slider .slider__inner .slider__item-previous {
+  left: 30%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+#terrain_presentation .slider .slider__inner .slider__item-next {
+  left: 70%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+#terrain_presentation .slider .slider__inner .slider__item-first {
+  left: 15%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+#terrain_presentation .slider .slider__inner .slider__item-last {
+  left: 85%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+#terrain_presentation .slider .slider__inner .slider__item-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+#terrain_presentation .slider .slider__inner .slider__item-img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+
+#terrain_presentation .slider .slider__inner .slider__item-datas {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: .5rem 0;
+  background-color: rgba(255, 255, 255, 0.75);
+  text-align: center;
+  font-family: 'Arial';
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+#terrain_presentation .slider .slider__controls {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  left: 0;
+  right: 0;
+  width: 100%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#terrain_presentation .slider .slider__controls-previous, #terrain_presentation .slider .slider__controls-next {
+  border: 0;
+  cursor: pointer;
+  font-size: 50px;
+  background-color: transparent;
+  color: rgba(0, 0, 0, 0.75);
+  padding: 0;
+}
+
+#terrain_presentation .slider .slider__controls-previous:focus, #terrain_presentation .slider .slider__controls-next:focus {
+  outline: none;
 }
 
 #terrain_presentation .main-right {
