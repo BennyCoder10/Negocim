@@ -118,7 +118,7 @@
 
   // TERRAIN_ PAGE / TERRAIN_PRESENTATION PAGE > MAIN
   main {
-    #sidebar-left { width: 12rem;
+    #sidebar-left { width: 12rem; padding: 1rem .5rem;
       h2 a { font-size: 1.5rem;}
     }
     .main-right { width: calc(100% - 12rem);}
@@ -170,6 +170,40 @@
 // 
 @media only screen and (max-width: 770px) {
 
+   // TERRAINS_SUB
+ #terrain {
+  #sidebar-left { width: 100%; position: static; background: white; border: none;
+    animation: fadeInRight .3s ease-in;
+     h2 { text-align: center; padding: 3rem 0 .5rem;
+       a { font-size: 1.5rem; font-weight: bold; color: $text; background: $sub; border-radius: 20px; padding: 0 1rem;}
+       &:hover a { color: $text-dark;}  
+     }
+  
+     // H2 BACKGROUND IMAGES
+     .tour { background: url(../images/AgenceTours.jpg) 0 46% / 100%;}
+     .bordeaux { background: url(../images/Agencebordeaux-4.jpg) 0 46% / 100%;}
+     .vannes { background: url(../images/AgenceVannes.jpg) 0 35% / 100%;}
+     .orleanais { background: url(../images/AgenceOrleans.jpg) 0 46% / 100%;}
+     //
+  
+     .sidebar-menu { overflow-y: visible; height: auto; margin-right: 0; margin-top: 0; margin-bottom: 4rem;
+       .dropdown-btn { font-size: 1.2rem; text-align: center; color: $text-dark; background: white; padding: 1rem 0; transition: none;}
+       .active { font-weight: 600;}
+       .dropdown-content { text-align: center; padding: 0; padding-bottom: 1.5rem;           
+         ul li {
+           a {
+             span{ font-size: .9rem; color: $text-dark; background: white;  }  
+           }
+         }
+       }
+     }
+   }   
+ }
+
+ #terrain .main-right {display: none;}
+
+
+
   #terrains #float-left ul li a i { padding-right: .2rem;}
 
 
@@ -205,8 +239,8 @@
        .sidebar-menu { height: auto; margin: 0; overflow-y: visible;
         button { color: white; background-color: $sub; padding: .8rem 1rem; width: 80%; text-align: center; margin: .5rem auto;}
        
-        #itineraire { transition: none;
-          a { display: block; color: white; transition: all .5s ease;
+        #itineraire { transition: none;transition: all .5s ease;
+          a { display: block; color: white; 
             &:hover { color: white; font-weight: bold; transition: all .5s ease;}
           }
         }
@@ -356,12 +390,13 @@
   }  
 
   // QUI SOMMES
-  #qui_sommes_nous .text { padding: .8rem 1rem;
+  #qui_sommes_nous .text { padding: 0; margin: 0;
     .list_left { display: none; }
     .text_right { width: 100%; height: auto; margin: 1.5rem auto; float: none; overflow-y: auto; direction: ltr;
       article:last-child { padding-bottom: 1rem;}
     }
   } 
+
 
   // LEXIQUE
   #lexique > div { padding: .8rem 1rem;}
@@ -426,39 +461,8 @@
   //   margin-right: 0rem;
   // }
 
-  #terrain .main-right {display: none;}
 
-    // TERRAINS_SUB
- #terrain {
-  #sidebar-left { width: 100%; position: static; background: white; border: none;
-    animation: fadeInRight .3s ease-in;
-     h2 { text-align: center; padding: 3rem 0 .5rem;
-       a { font-size: 1.5rem; font-weight: bold; color: $text; background: $sub; border-radius: 20px; padding: 0 1rem;}
-       &:hover a { color: $text-dark;}  
-     }
-  
-     // H2 BACKGROUND IMAGES
-     .tour { background: url(../images/AgenceTours.jpg) 0 46% / 100%;}
-     .bordeaux { background: url(../images/Agencebordeaux-4.jpg) 0 46% / 100%;}
-     .vannes { background: url(../images/AgenceVannes.jpg) 0 35% / 100%;}
-     .orleanais { background: url(../images/AgenceOrleans.jpg) 0 46% / 100%;}
-     //
-  
-     .sidebar-menu { overflow-y: visible; height: auto; margin-right: 0; margin-top: 0;
-       .dropdown-btn { font-size: 1.2rem; text-align: center; color: $text-dark; background: white; padding: 1rem 0; transition: none;}
-       .active { font-weight: 600;}
-       .dropdown-content { text-align: center; padding: 0; padding-bottom: 1.5rem;           
-         ul li {
-           a {
-             span{ font-size: .9rem; color: $text-dark; background: white;  }  
-           }
-         }
-       }
-     }
-   }   
- }
-
- #terrain_presentation .main-right #presentation { margin: 0;
+#terrain_presentation .main-right #presentation { margin: 0;
   .btm { padding: .5rem .3rem;}
 }
 

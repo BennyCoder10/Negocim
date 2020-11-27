@@ -173,7 +173,7 @@ header .menu ul li .active:before {
 header #menu-toggle {
   display: none;
   float: right;
-  padding: 0.8rem .8rem .5rem 1.3rem;
+  padding: .8rem .8rem .5rem 0rem;
   cursor: pointer;
   z-index: 2;
 }
@@ -356,6 +356,9 @@ a, button {
   body > div header h1 {
     padding: .5rem 1rem;
   }
+  body > div header h1 a img {
+    width: 7rem;
+  }
   body > div header nav {
     display: none;
   }
@@ -384,14 +387,10 @@ a, button {
     padding: 0;
   }
   body > div footer {
-    line-height: .7rem;
+    height: 5px;
   }
   body > div footer p {
-    font-size: 1px;
-  }
-  body > div footer p a {
-    font-size: 1px;
-    visibility: hidden;
+    display: none;
   }
 }
 
@@ -404,20 +403,20 @@ a, button {
   float: left;
   width: 14rem;
   height: 100%;
-  background-color: #4cb0b2;
-  border: 0.5px solid #707070;
+  background-color: white;
   -webkit-animation: fadeInRight .3s ease-in;
           animation: fadeInRight .3s ease-in;
 }
 
 #terrain #sidebar-left h2 {
-  padding: 1rem;
+  padding: 1rem 0;
+  text-align: center;
 }
 
 #terrain #sidebar-left h2 a {
   font-size: 1.9rem;
   font-weight: bold;
-  color: white;
+  color: #4cb0b2;
 }
 
 #terrain #sidebar-left h2:hover a {
@@ -429,7 +428,7 @@ a, button {
   min-height: 30%;
   max-height: 65%;
   margin-right: .5rem;
-  margin-bottom: 4rem;
+  margin-bottom: 1rem;
 }
 
 #terrain #sidebar-left .sidebar-menu .dropdown-btn {
@@ -438,9 +437,9 @@ a, button {
   text-align: left;
   font-size: 1rem;
   cursor: pointer;
-  color: white;
-  background: #4cb0b2;
-  padding: .5rem 1rem .5rem 1.4rem;
+  color: #4cb0b2;
+  background: white;
+  padding: 1rem .5rem .3rem 1.4rem;
 }
 
 #terrain #sidebar-left .sidebar-menu .dropdown-btn:hover {
@@ -452,12 +451,13 @@ a, button {
 }
 
 #terrain #sidebar-left .sidebar-menu .active {
+  font-weight: bold;
   color: #525451;
 }
 
 #terrain #sidebar-left .sidebar-menu .dropdown-content {
   display: none;
-  padding: 0 2.45rem .3rem;
+  padding: 0 .5rem .3rem 2rem;
   -webkit-animation: slowAppear .3s ease-in-out;
           animation: slowAppear .3s ease-in-out;
 }
@@ -465,10 +465,10 @@ a, button {
 #terrain #sidebar-left .sidebar-menu .dropdown-content ul li a span {
   position: relative;
   display: inline-block;
-  color: white;
-  background: #4cb0b2;
+  color: #4cb0b2;
+  background: white;
   padding: .2rem 0;
-  font-size: .6rem;
+  font-size: .9rem;
   -webkit-transition: all .3s;
   transition: all .3s;
 }
@@ -484,7 +484,7 @@ a, button {
 #terrain #sidebar-left .sidebar-menu .dropdown-content ul li.visit a span:before {
   content: url(../images/lotissement/vr_icon.png);
   position: absolute;
-  top: 0;
+  top: 4px;
   left: -30px;
 }
 
@@ -553,7 +553,7 @@ a, button {
 #terrain .main-right .map {
   height: 100%;
   width: 100%;
-  padding: 5px;
+  padding: .5rem;
   position: relative;
 }
 
@@ -575,4 +575,6 @@ a, button {
   height: 100%;
   width: 100%;
   border: 1px solid #87c133;
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }

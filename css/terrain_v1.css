@@ -387,14 +387,10 @@ a, button {
     padding: 0;
   }
   body > div footer {
-    line-height: .7rem;
+    height: 5px;
   }
   body > div footer p {
-    font-size: 1px;
-  }
-  body > div footer p a {
-    font-size: 1px;
-    visibility: hidden;
+    display: none;
   }
 }
 
@@ -408,8 +404,6 @@ a, button {
   width: 14rem;
   height: 100%;
   background-color: white;
-  border-left: 0.5px solid #4cb0b2;
-  border-right: 0.5px solid #4cb0b2;
   -webkit-animation: fadeInRight .3s ease-in;
           animation: fadeInRight .3s ease-in;
 }
@@ -444,7 +438,7 @@ a, button {
   cursor: pointer;
   color: #4cb0b2;
   background: white;
-  padding: .5rem 1rem .5rem 1.4rem;
+  padding: .5rem .5rem .5rem 1.4rem;
 }
 
 #terrain #sidebar-left .sidebar-menu .dropdown-btn:hover {
@@ -461,7 +455,7 @@ a, button {
 
 #terrain #sidebar-left .sidebar-menu .dropdown-content {
   display: none;
-  padding: 0 2.45rem .3rem;
+  padding: 0 .5rem .3rem 2.45rem;
   -webkit-animation: slowAppear .3s ease-in-out;
           animation: slowAppear .3s ease-in-out;
 }
@@ -472,7 +466,7 @@ a, button {
   color: #4cb0b2;
   background: white;
   padding: .2rem 0;
-  font-size: .6rem;
+  font-size: .9rem;
   -webkit-transition: all .3s;
   transition: all .3s;
 }
@@ -488,7 +482,7 @@ a, button {
 #terrain #sidebar-left .sidebar-menu .dropdown-content ul li.visit a span:before {
   content: url(../images/lotissement/vr_icon.png);
   position: absolute;
-  top: 0;
+  top: 4px;
   left: -30px;
 }
 

@@ -1,12 +1,11 @@
 @charset "utf-8";
 @import "index.scss";
 
-
 // 
 // COMMON SIDEBAR MENU ON THE LEFT 
 // 
 main {
-  #sidebar-left { position: relative; float: left; width: 14rem; height: 100%; background-color: white; border-left: .5px solid $main; border-right: .5px solid $main; padding: 1rem; 
+  #sidebar-left { position: relative; float: left; width: 14rem; height: 100%; background-color: white; padding: 1rem; 
     h2 { padding-bottom: 1.4rem;
       a { font-size: 1.9rem; font-weight: bold; color: $main;}
       &:hover a { color: $text-dark;}
@@ -35,9 +34,8 @@ main {
 
       #itineraire { transition: none;
         a { display: inline; color: $main; transition: all .5s ease;}
-        &:hover a { color: black; font-weight: bold; transition: all .5s ease;}
+        &:hover a { color: black; transition: all .5s ease;}
       }
-
 
       #simulaer_un_credit, #imprimer 
       { margin: 0 auto; text-align: center; margin-bottom: .8rem; display: block; @include buttons; border-radius: 3px; padding: .3rem .2rem; font-size: 1rem; color: $text;
@@ -231,7 +229,7 @@ main {
       }
 
       // NOTICE AT THE BOTTOM IN THE PLAN PAGE
-      .lot_notice { font-size: .8rem; max-width: 36.5rem; padding: .5rem; margin: 1rem auto 0; background: white; border: 1px solid $bars;
+      .lot_notice { font-size: .8rem; max-width: 730px; padding: .5rem; margin: 1rem auto 0; background: white; border: 1px solid $bars;
         p { text-align: center; font-style: italic;}  
         span { text-align: center; display: block; padding: .5rem; }
       } 

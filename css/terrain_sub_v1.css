@@ -387,14 +387,10 @@ a, button {
     padding: 0;
   }
   body > div footer {
-    line-height: .7rem;
+    height: 5px;
   }
   body > div footer p {
-    font-size: 1px;
-  }
-  body > div footer p a {
-    font-size: 1px;
-    visibility: hidden;
+    display: none;
   }
 }
 
@@ -404,8 +400,6 @@ main #sidebar-left {
   width: 14rem;
   height: 100%;
   background-color: white;
-  border-left: 0.5px solid #4cb0b2;
-  border-right: 0.5px solid #4cb0b2;
   padding: 1rem;
 }
 
@@ -542,7 +536,6 @@ main #sidebar-left .sidebar-menu #itineraire a {
 
 main #sidebar-left .sidebar-menu #itineraire:hover a {
   color: black;
-  font-weight: bold;
   -webkit-transition: all .5s ease;
   transition: all .5s ease;
 }
@@ -935,7 +928,7 @@ main .main-right .wrapper {
 
 #terrain_plan .main-right #plan_right .lot_notice {
   font-size: .8rem;
-  max-width: 36.5rem;
+  max-width: 730px;
   padding: .5rem;
   margin: 1rem auto 0;
   background: white;

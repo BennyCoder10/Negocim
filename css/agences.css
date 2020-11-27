@@ -173,7 +173,7 @@ header .menu ul li .active:before {
 header #menu-toggle {
   display: none;
   float: right;
-  padding: 0.8rem .8rem .5rem 1.3rem;
+  padding: .8rem .8rem .5rem 0rem;
   cursor: pointer;
   z-index: 2;
 }
@@ -356,6 +356,9 @@ a, button {
   body > div header h1 {
     padding: .5rem 1rem;
   }
+  body > div header h1 a img {
+    width: 7rem;
+  }
   body > div header nav {
     display: none;
   }
@@ -384,14 +387,10 @@ a, button {
     padding: 0;
   }
   body > div footer {
-    line-height: .7rem;
+    height: 5px;
   }
   body > div footer p {
-    font-size: 1px;
-  }
-  body > div footer p a {
-    font-size: 1px;
-    visibility: hidden;
+    display: none;
   }
 }
 

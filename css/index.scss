@@ -10,11 +10,9 @@ $bars: #707070;
 $background: #e0e0e0ad;
 
 
-
 // 
 // MIXINS
 // 
-
 // BOX SHADOW
 @mixin box-shadow {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
@@ -245,10 +243,11 @@ a, button { transition: all .5s ease;}
       }
 
       // MAKE FOOTER HEIGHT SMALLER
-      footer { line-height: .7rem;
-        p { font-size: 1px;
-          a { font-size: 1px; visibility: hidden;}
-        }        
+      footer { height: 5px;
+        p { display: none;}
+        // p { font-size: 1px;
+        //   a { font-size: 1px; visibility: hidden;}
+        // }        
       }      
     }                      
   }

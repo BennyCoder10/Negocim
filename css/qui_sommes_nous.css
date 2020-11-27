@@ -356,6 +356,9 @@ a, button {
   body > div header h1 {
     padding: .5rem 1rem;
   }
+  body > div header h1 a img {
+    width: 7rem;
+  }
   body > div header nav {
     display: none;
   }
@@ -384,14 +387,10 @@ a, button {
     padding: 0;
   }
   body > div footer {
-    line-height: .7rem;
+    height: 5px;
   }
   body > div footer p {
-    font-size: 1px;
-  }
-  body > div footer p a {
-    font-size: 1px;
-    visibility: hidden;
+    display: none;
   }
 }
 
@@ -401,18 +400,21 @@ a, button {
 }
 
 #qui_sommes_nous .text {
-  padding: .8rem 4.5rem;
+  margin: 1.4rem 1rem;
 }
 
 #qui_sommes_nous .text .list_left {
-  padding: 1rem 0 3rem;
+  float: left;
+  width: 12rem;
+  padding: 1.4rem .5rem 0;
 }
 
 #qui_sommes_nous .text .list_left li a {
   display: inline-block;
   font-size: .9rem;
   font-weight: bold;
-  padding: .5rem 1rem .5rem .5rem;
+  padding: .4rem 0 .4rem .65rem;
+  margin-right: .3rem;
 }
 
 #qui_sommes_nous .text .list_left li a:hover span, #qui_sommes_nous .text .list_left li a:active {
@@ -420,8 +422,13 @@ a, button {
 }
 
 #qui_sommes_nous .text .text_right {
-  overflow-y: scroll;
   height: 18.5rem;
+  float: left;
+  width: calc(100% - 12rem);
+  max-width: 1000px;
+  padding: 1rem;
+  direction: rtl;
+  height: 100%;
 }
 
 #qui_sommes_nous .text .text_right article {
@@ -442,7 +449,7 @@ a, button {
 }
 
 #qui_sommes_nous .text .text_right article:last-child {
-  padding-bottom: 13rem;
+  padding-bottom: .5rem;
 }
 
 #qui_sommes_nous .text .text_right::-webkit-scrollbar {

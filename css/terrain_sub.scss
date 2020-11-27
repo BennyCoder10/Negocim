@@ -5,17 +5,67 @@
 // 
 // COMMON SIDEBAR MENU ON THE LEFT 
 // 
+// VERSION (ORIGINAL)
+// main {
+//   #sidebar-left { position: relative; float: left; width: 14rem; height: 100%; background-color: $main; border: .5px solid $bars; padding: 1rem; 
+//     h2 { padding-bottom: 1.4rem;
+//       a { font-size: 1.9rem; font-weight: bold; color: white;}
+//       &:hover a { color: $text-dark;}
+//     }
+//     .sidebar-menu { @include scrollbar(auto); margin-bottom: 4rem; 
+//       h4 { text-align: left; font-size: 1rem; color: white; font-weight: 400; line-height: 1.3;
+//         strong { color: white;}
+//       }
+//       p { margin: 1.5rem .5rem 0 0; font-weight: 100; text-align: left; font-size: 1rem; color: white; word-break: normal;}
+//       .info { font-size: .7rem; height: 60%; overflow-y: auto; @include scrollbar(auto)} 
+      
+//       // TERRAIN SUB TEXT
+//       .sub { height: 90%;}
+
+//       // TERRAIN SUB PROJECT TEXT
+//       .projet { font-size: .8rem;}
+
+//       .look { display: block; margin-top: 1rem; font-size: 1rem; text-align: left; background: none; color: $text; font-weight: bold;
+//         &:hover { color: $text-dark;}
+//       }
+
+//       // TERRAIN SUB PROJECT INFORM BUTTON
+//       button { margin-bottom: 1rem; text-align: left; display: block; width:100%; border-radius: 0; padding: .25rem 0 0 .5rem; font-size: .9rem; color: $text; background: none; cursor: pointer; outline: none;
+//         &:hover { color: $text-dark; font-weight: bold;}  
+//       }
+
+//       #itineraire { transition: none;
+//         a { display: inline; color: white; transition: all .5s ease;}
+//         &:hover a { color: $text-dark; font-weight: bold; transition: all .5s ease;}
+//       }
+
+//       #simulaer_un_credit, #imprimer 
+//       { margin: 0 auto; text-align: center; margin-bottom: .8rem; display: block; @include buttons; border-radius: 3px; padding: .3rem .2rem; font-size: 1rem; color: $text;
+//         a { display: inline; font-size: 1rem; padding: 0;}
+//         &:hover { font-weight: normal;}
+//       }  
+//       #goback { @include buttons; margin: 0 auto; position: absolute; left: 0; right: 0; width: auto; bottom: 1rem; padding: 0.4rem 2.5rem; color: $text; font-size: .8rem;
+//         i { font-size: .7rem; color: white; padding-right: .3rem;}       
+//       }      
+//     }     
+//   }  
+//   .main-right { width: calc(100% - 14rem);
+//     .wrapper { padding: .5px; background-color: $background;}
+//   }
+// }
+
+// VERSION 1
 main {
-  #sidebar-left { position: relative; float: left; width: 14rem; height: 100%; background-color: $main; border: .5px solid $bars; padding: 1rem; 
-    h2 { padding-bottom: 1.4rem;
-      a { font-size: 1.9rem; font-weight: bold; color: white;}
+  #sidebar-left { position: relative; float: left; width: 14rem; height: 100%; background-color: white; padding: 1rem; 
+    h2 { padding-bottom: 1.4rem; text-align: center;
+      a { font-size: 1.9rem; font-weight: bold; color: $main;}
       &:hover a { color: $text-dark;}
     }
     .sidebar-menu { @include scrollbar(auto); margin-bottom: 4rem; 
-      h4 { text-align: left; font-size: 1rem; color: white; font-weight: 400; line-height: 1.3;
-        strong { color: white;}
+      h4 { text-align: left; font-size: 1rem; color: $main; font-weight: 400; line-height: 1.3;
+        strong { color: $main;}
       }
-      p { margin: 1.5rem .5rem 0 0; font-weight: 100; text-align: left; font-size: 1rem; color: white; word-break: normal;}
+      p { margin: 1.5rem .5rem 0 0; font-weight: 100; text-align: left; font-size: 1rem; color: $main; word-break: normal;}
       .info { font-size: .7rem; height: 60%; overflow-y: auto; @include scrollbar(auto)} 
       
       // TERRAIN SUB TEXT
@@ -29,27 +79,39 @@ main {
       }
 
       // TERRAIN SUB PROJECT INFORM BUTTON
-      button { margin-bottom: 1rem; text-align: left; display: block; width:100%; border-radius: 0; padding: .25rem 0 0 .5rem; font-size: .9rem; color: $text; background: none; cursor: pointer; outline: none;
-        &:hover { color: $text-dark; font-weight: bold;}  
+      button { margin-bottom: 1rem; text-align: left; display: block; width:100%; border-radius: 0; padding: .25rem 0 0 .5rem; font-size: .9rem; color: $main; background: white; cursor: pointer; outline: none;
+        &:hover { color: black;}  
       }
 
       #itineraire { transition: none;
-        a { display: inline; color: white; transition: all .5s ease;}
-        &:hover a { color: $text-dark; font-weight: bold; transition: all .5s ease;}
+        a { display: inline; color: $main; transition: all .5s ease;}
+        &:hover a { color: black; transition: all .5s ease;}
       }
 
       #simulaer_un_credit, #imprimer 
       { margin: 0 auto; text-align: center; margin-bottom: .8rem; display: block; @include buttons; border-radius: 3px; padding: .3rem .2rem; font-size: 1rem; color: $text;
         a { display: inline; font-size: 1rem; padding: 0;}
         &:hover { font-weight: normal;}
-      }  
+      } 
+      
+      // CREATED VISITE VIRTUELLE BUTTON WHEN MAIN TAG HAS A CLASS "VISIT"
+      #visit { margin: 0 auto; text-align: center; margin-bottom: .8rem; display: block; @include buttons; border-radius: 3px; padding: .3rem .2rem; font-size: 1rem; color: $text;
+        a { display: inline; font-size: 1rem; padding: 0;}
+        &:hover { font-weight: normal;}
+        
+        span { position: relative; color: white; font-weight: bold;}
+        span:before { content: url(../images/lotissement/vr_icon.png); position: absolute; top: 0; left: -36px;}
+      } 
+
+
       #goback { @include buttons; margin: 0 auto; position: absolute; left: 0; right: 0; width: auto; bottom: 1rem; padding: 0.4rem 2.5rem; color: $text; font-size: .8rem;
         i { font-size: .7rem; color: white; padding-right: .3rem;}       
       }      
     }     
   }  
-  .main-right { width: calc(100% - 14rem);
-    .wrapper { padding: .5rem; background-color: $background;}
+  .main-right { width: calc(100% - 14rem); padding: .5rem; height: 100%;
+    // .wrapper { padding: .5rem; background-color: $background;}
+    > * { height: 100%; padding: .5rem; margin: 0 !important; background-color: $background;}
   }
 }
 // END OF COMMON SIDEBAR MENU ON THE LEFT 
@@ -68,7 +130,6 @@ main {
 #terrain_presentation { position: relative; 
 
 
-  
 
 
 
@@ -214,7 +275,7 @@ main {
 
 
   // SECTION ON THE RIGHT FOR MAP IMAGE & GOOGLE MAP API
-  .main-right { float: right; text-align: center; height: 100%; 
+  .main-right { float: right; text-align: center;
     // width: calc(100% - 14rem); 
     // overflow: auto; 
 
@@ -223,7 +284,7 @@ main {
       // iframe { width: 100%; height: 100%; border: 1px solid $sub;}
     // }   
 
-    #presentation { position: relative; padding: .5rem; margin: .5rem; background-color: $background;
+    #presentation { position: relative; padding: .5rem; background-color: $background; height: 100%;
 
       .header { padding: .5rem; background: white; @include box-shadow;
         h3 { font-weight: normal;}
@@ -355,7 +416,7 @@ main {
       h2 i { color: $sub;}
     }
 
-    #plan_right { position: relative; height: 100%; padding: .5rem; margin: .5rem; background-color: $background;
+    #plan_right { position: relative; height: 100%; padding: .5rem; background-color: $background;
       .click { color: white; max-width: 730px; padding: .5rem; margin: 0 auto 1rem; background-color: $sub; @include box-shadow;}
       // p { margin: .5rem 0; text-align: center;}
 
@@ -714,7 +775,7 @@ main {
     
     //  LOT OPTION DETAIL PAGES
     > div { margin: .5rem; 
-      .wrapper { display: flex; flex-direction: row; background-color: $background;
+      .wrapper { display: flex; flex-direction: row;
 
         // OPTION & RESERVE ON THE LEFT
         .option_left { flex: 7;
