@@ -7,7 +7,7 @@
 // 
 @media only screen and (max-width: 1240px) {  
  body .wrapper header {
-    h1 { padding-left: .5rem;
+    h1 { padding: .5rem 0 .5rem .5rem;
       a img { width: 16rem;}
     }
    
@@ -30,6 +30,8 @@
     body .wrapper header {
       // NEGOCIM LOGO
       h1 a img { width: 13.5rem;}
+      
+      .menu ul li a { padding: 1.3rem .45rem .3rem;}
 
       // NAV MENU
       .menu { padding-right: 0;}        
@@ -225,8 +227,6 @@
         // .column img { min-height: 81px;}
       }      
     }
-
-
   
     // SIDEBAR ON THE LEFT
     #sidebar-left { width: 100%; height: auto; position: static; background: white; border: none; 
@@ -237,24 +237,34 @@
        }
     
        .sidebar-menu { height: auto; margin: 0; overflow-y: visible;
-        button { color: white; background-color: $sub; padding: .8rem 1rem; width: 80%; text-align: center; margin: .5rem auto;}
-       
-        #itineraire { transition: none;transition: all .5s ease;
-          a { display: block; color: white; 
-            &:hover { color: white; font-weight: bold; transition: all .5s ease;}
+          button { background-color: $sub;  width: 80%; text-align: center; margin: .5rem auto;
+            a { color: white; padding: .8rem 1rem;}
+            i { color: white;}
+            &:hover { background: $button_hover;}
           }
-        }
+        
+          // #itineraire { 
+          //   a span { color: white;}           
+          // }
 
-        #visit, #simulaer_un_credit, #imprimer 
-          { margin: .5rm auto; padding: .6rem 1rem; border-radius: 30px; border: 2px solid $sub; background: none; color: $sub;
-            a { color: $sub;}
+          #visit, 
+          #simulaer_un_credit, 
+          #imprimer 
+            { margin: .5rm auto; border-radius: 30px; border: 2px solid $sub; background: none; color: $sub;
+              a { color: $sub; padding: .6rem 1rem;}
+            }
+          
+          
+
+          #visit a span { color: $sub;}
+
+          #imprimer { padding: .6rem 1rem;;}
+
+          // GOBACK BUTTON AT THE BOTTOM
+          #goback { width: auto; margin: 2rem auto .5rem; position: static;
+            a { padding: .4rem 2.5rem;}
           }
-        }
-
-        #visit span { color: $sub;}
-
-        // GOBACK BUTTON AT THE BOTTOM
-       #goback { width: auto; padding: .4rem 2.5rem; margin: 2rem auto .5rem; position: static;}
+       }
      }   
    } 
 

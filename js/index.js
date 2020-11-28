@@ -72,21 +72,24 @@ function orleanaisSidebar() {
 // CREATE A BUTTON VISITE VIRTUELLE WHEN MAIN TAG HAS A CLASS "VISIT"
 const main = document.getElementsByTagName("main")[0];
 
+// ABLE TO CHOOSE FROM CLASS NAME OR DATA- NAMES
+// if (main.getAttribute("data-visit_name") === "418-languidic-les-champs-fleuris") {
 
 if (main.classList.contains("visit")) {
   const sidebarMenu = document.getElementsByClassName("sidebar-menu")[0];
   const presentationButton = document.getElementById("presentation");
-  var value = main.getAttribute('data-visit_name');
+  var visitValue = main.getAttribute('data-visit_name');
 
   var visitButton = document.createElement("button");
+  var aLink = document.createElement("a");
   visitButton.setAttribute("id", "visit");
-  visitButton.setAttribute("style", "position: relative");
-  visitButton.setAttribute("style", "span:before");
-  
-  visitButton.innerHTML = "<span>Visit virtuelle</span>";
+  // visitButton.setAttribute("style", "position: relative");
+  // visitButton.setAttribute("style", "span:before");
+
+  aLink.setAttribute("href", "http://www.negocim.fr/lotissements/" + visitValue + "/lots/01/visite");
+  aLink.innerHTML = "<img src='images/lotissement/vr_icon.png'>Visit virtuelle";
   // visitButton.textContent += ;
 
-  visitButton.setAttribute("onclick", "window.location='http://www.negocim.fr/lotissements/" + value + "/lots/01/visite'");
-
+  visitButton.appendChild(aLink)
   sidebarMenu.insertBefore(visitButton, sidebarMenu.childNodes[2]);
 }

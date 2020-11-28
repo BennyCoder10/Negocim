@@ -8,6 +8,8 @@ $text-dark: #525451;
 $text-hovered: #808080;
 $bars: #707070;
 $background: #e0e0e0ad;
+$button_hover: #5a9b00;
+
 
 
 // 
@@ -116,6 +118,9 @@ header { background: $main;
         .active { color: $text;
           &:before { width: 40%;}
         }
+
+        &:first-child a {padding-left: 0;} 
+        // &:last-child a {padding-right: 0;}     
       }
     }
   }  

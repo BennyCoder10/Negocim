@@ -170,6 +170,10 @@ header .menu ul li .active:before {
   width: 40%;
 }
 
+header .menu ul li:first-child a {
+  padding-left: 0;
+}
+
 header #menu-toggle {
   display: none;
   float: right;
@@ -404,7 +408,7 @@ main #sidebar-left {
 }
 
 main #sidebar-left h2 {
-  padding-bottom: 1.4rem;
+  padding-bottom: 1rem;
   text-align: center;
 }
 
@@ -506,132 +510,70 @@ main #sidebar-left .sidebar-menu .look:hover {
 }
 
 main #sidebar-left .sidebar-menu button {
-  margin-bottom: 1rem;
+  margin-bottom: .5rem;
   text-align: left;
   display: block;
   width: 100%;
   border-radius: 0;
-  padding: .25rem 0 0 .5rem;
+  background: white;
+  outline: none;
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
+  position: relative;
+}
+
+main #sidebar-left .sidebar-menu button a {
+  display: block;
   font-size: .9rem;
   color: #4cb0b2;
-  background: white;
-  cursor: pointer;
-  outline: none;
+  padding: .4rem .5rem;
 }
 
-main #sidebar-left .sidebar-menu button:hover {
-  color: black;
+main #sidebar-left .sidebar-menu button:hover a {
+  color: #525451;
 }
 
-main #sidebar-left .sidebar-menu #itineraire {
-  -webkit-transition: none;
-  transition: none;
-}
-
-main #sidebar-left .sidebar-menu #itineraire a {
-  display: inline;
+main #sidebar-left .sidebar-menu #itineraire i {
   color: #4cb0b2;
+  padding-left: 10px;
   -webkit-transition: all .5s ease;
   transition: all .5s ease;
 }
 
-main #sidebar-left .sidebar-menu #itineraire:hover a {
-  color: black;
-  -webkit-transition: all .5s ease;
-  transition: all .5s ease;
+main #sidebar-left .sidebar-menu #itineraire:hover i {
+  color: #525451;
 }
 
-main #sidebar-left .sidebar-menu #simulaer_un_credit, main #sidebar-left .sidebar-menu #imprimer {
-  margin: 0 auto;
+main #sidebar-left .sidebar-menu #visit,
+main #sidebar-left .sidebar-menu #simulaer_un_credit,
+main #sidebar-left .sidebar-menu #imprimer {
   text-align: center;
-  margin-bottom: .8rem;
-  display: block;
-  display: block;
-  background: #87c133;
-  border: none;
-  border-radius: 1.4rem;
   border-radius: 3px;
-  padding: .3rem .2rem;
-  font-size: 1rem;
-  color: #ffffff;
+  background: #87c133;
 }
 
-main #sidebar-left .sidebar-menu #simulaer_un_credit a, main #sidebar-left .sidebar-menu #imprimer a {
-  display: block;
-  font-size: .95rem;
-  color: white;
-  padding: .75rem 3rem;
-}
-
-main #sidebar-left .sidebar-menu #simulaer_un_credit:hover, main #sidebar-left .sidebar-menu #imprimer:hover {
+main #sidebar-left .sidebar-menu #visit:hover,
+main #sidebar-left .sidebar-menu #simulaer_un_credit:hover,
+main #sidebar-left .sidebar-menu #imprimer:hover {
   background: #5a9b00;
 }
 
-main #sidebar-left .sidebar-menu #simulaer_un_credit:focus, main #sidebar-left .sidebar-menu #imprimer:focus {
-  outline: none;
-}
-
-main #sidebar-left .sidebar-menu #simulaer_un_credit a, main #sidebar-left .sidebar-menu #imprimer a {
-  display: inline;
-  font-size: 1rem;
-  padding: 0;
-}
-
-main #sidebar-left .sidebar-menu #simulaer_un_credit:hover, main #sidebar-left .sidebar-menu #imprimer:hover {
-  font-weight: normal;
-}
-
-main #sidebar-left .sidebar-menu #visit {
-  margin: 0 auto;
-  text-align: center;
-  margin-bottom: .8rem;
-  display: block;
-  display: block;
-  background: #87c133;
-  border: none;
-  border-radius: 1.4rem;
-  border-radius: 3px;
-  padding: .3rem .2rem;
-  font-size: 1rem;
-  color: #ffffff;
-}
-
-main #sidebar-left .sidebar-menu #visit a {
-  display: block;
-  font-size: .95rem;
+main #sidebar-left .sidebar-menu #visit a,
+main #sidebar-left .sidebar-menu #simulaer_un_credit a,
+main #sidebar-left .sidebar-menu #imprimer a {
   color: white;
-  padding: .75rem 3rem;
-}
-
-main #sidebar-left .sidebar-menu #visit:hover {
-  background: #5a9b00;
-}
-
-main #sidebar-left .sidebar-menu #visit:focus {
-  outline: none;
-}
-
-main #sidebar-left .sidebar-menu #visit a {
-  display: inline;
   font-size: 1rem;
-  padding: 0;
 }
 
-main #sidebar-left .sidebar-menu #visit:hover {
-  font-weight: normal;
+main #sidebar-left .sidebar-menu #visit img {
+  padding-right: 10px;
+  margin-left: -2rem;
 }
 
-main #sidebar-left .sidebar-menu #visit span {
-  position: relative;
+main #sidebar-left .sidebar-menu #imprimer {
+  font-size: 1rem;
   color: white;
-  font-weight: bold;
-}
-
-main #sidebar-left .sidebar-menu #visit span:before {
-  content: url(../images/lotissement/vr_icon.png);
-  position: absolute;
-  top: 0;
-  left: -36px;
+  padding: .4rem .5rem;
 }
 
 main #sidebar-left .sidebar-menu #goback {
@@ -645,9 +587,7 @@ main #sidebar-left .sidebar-menu #goback {
   right: 0;
   width: auto;
   bottom: 1rem;
-  padding: 0.4rem 2.5rem;
   color: #ffffff;
-  font-size: .8rem;
 }
 
 main #sidebar-left .sidebar-menu #goback a {
@@ -665,7 +605,12 @@ main #sidebar-left .sidebar-menu #goback:focus {
   outline: none;
 }
 
-main #sidebar-left .sidebar-menu #goback i {
+main #sidebar-left .sidebar-menu #goback a {
+  padding: .4rem 2.5rem;
+  font-size: .8rem;
+}
+
+main #sidebar-left .sidebar-menu #goback a i {
   font-size: .7rem;
   color: white;
   padding-right: .3rem;

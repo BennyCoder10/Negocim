@@ -1,4 +1,3 @@
-
 // LOTISSEMENT IMAGES
 // Open the Modal
 function openModal() {
@@ -43,24 +42,10 @@ function showSlides(n) {
 // });
 
 
-// CREATE A BUTTON VISITE VIRTUELLE WHEN MAIN TAG HAS A CLASS "VISIT"
-// const main = document.getElementsByTagName("main")[0];
+// CREATE A RETOUR BUTTON RESPECTIVELY ACCORDING TO AGENCE
+const goback = document.getElementById("goback").getElementsByTagName("a")[0];
+var aTag = document.getElementById("sidebar-left").getElementsByTagName("h2")[0].getElementsByTagName("a")[0];
+var hrefValue = aTag.getAttribute('href');
 
+goback.setAttribute("href", hrefValue);
 
-// if (main.classList.contains("visit")) {
-//   const sidebarMenu = document.getElementsByClassName("sidebar-menu")[0];
-//   const presentationButton = document.getElementById("presentation");
-//   var value = main.getAttribute('data-visit_name');
-
-//   var visitButton = document.createElement("button");
-//   visitButton.setAttribute("id", "visit");
-//   visitButton.setAttribute("style", "position: relative");
-//   visitButton.setAttribute("style", "span:before");
-  
-//   visitButton.innerHTML = "<span>Visit virtuelle</span>";
-//   // visitButton.textContent += ;
-
-//   visitButton.setAttribute("onclick", "window.location='http://www.negocim.fr/lotissements/" + value + "/lots/01/visite'");
-
-//   sidebarMenu.insertBefore(visitButton, sidebarMenu.childNodes[2]);
-// }

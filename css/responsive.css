@@ -170,6 +170,10 @@ header .menu ul li .active:before {
   width: 40%;
 }
 
+header .menu ul li:first-child a {
+  padding-left: 0;
+}
+
 header #menu-toggle {
   display: none;
   float: right;
@@ -396,7 +400,7 @@ a, button {
 
 @media only screen and (max-width: 1240px) {
   body .wrapper header h1 {
-    padding-left: .5rem;
+    padding: .5rem 0 .5rem .5rem;
   }
   body .wrapper header h1 a img {
     width: 16rem;
@@ -417,6 +421,9 @@ a, button {
   }
   html body .wrapper header h1 a img {
     width: 13.5rem;
+  }
+  html body .wrapper header .menu ul li a {
+    padding: 1.3rem .45rem .3rem;
   }
   html body .wrapper header .menu {
     padding-right: 0;
@@ -716,42 +723,36 @@ a, button {
   #terrain_grille #sidebar-left .sidebar-menu button,
   #terrain_document #sidebar-left .sidebar-menu button,
   #terrain_option #sidebar-left .sidebar-menu button {
-    color: white;
     background-color: #87c133;
-    padding: .8rem 1rem;
     width: 80%;
     text-align: center;
     margin: .5rem auto;
   }
-  #terrain_presentation #sidebar-left .sidebar-menu #itineraire,
-  #terrain_plan #sidebar-left .sidebar-menu #itineraire,
-  #terrain_grille #sidebar-left .sidebar-menu #itineraire,
-  #terrain_document #sidebar-left .sidebar-menu #itineraire,
-  #terrain_option #sidebar-left .sidebar-menu #itineraire {
-    -webkit-transition: none;
-    transition: none;
-    -webkit-transition: all .5s ease;
-    transition: all .5s ease;
+  #terrain_presentation #sidebar-left .sidebar-menu button a,
+  #terrain_plan #sidebar-left .sidebar-menu button a,
+  #terrain_grille #sidebar-left .sidebar-menu button a,
+  #terrain_document #sidebar-left .sidebar-menu button a,
+  #terrain_option #sidebar-left .sidebar-menu button a {
+    color: white;
+    padding: .8rem 1rem;
   }
-  #terrain_presentation #sidebar-left .sidebar-menu #itineraire a,
-  #terrain_plan #sidebar-left .sidebar-menu #itineraire a,
-  #terrain_grille #sidebar-left .sidebar-menu #itineraire a,
-  #terrain_document #sidebar-left .sidebar-menu #itineraire a,
-  #terrain_option #sidebar-left .sidebar-menu #itineraire a {
-    display: block;
+  #terrain_presentation #sidebar-left .sidebar-menu button i,
+  #terrain_plan #sidebar-left .sidebar-menu button i,
+  #terrain_grille #sidebar-left .sidebar-menu button i,
+  #terrain_document #sidebar-left .sidebar-menu button i,
+  #terrain_option #sidebar-left .sidebar-menu button i {
     color: white;
   }
-  #terrain_presentation #sidebar-left .sidebar-menu #itineraire a:hover,
-  #terrain_plan #sidebar-left .sidebar-menu #itineraire a:hover,
-  #terrain_grille #sidebar-left .sidebar-menu #itineraire a:hover,
-  #terrain_document #sidebar-left .sidebar-menu #itineraire a:hover,
-  #terrain_option #sidebar-left .sidebar-menu #itineraire a:hover {
-    color: white;
-    font-weight: bold;
-    -webkit-transition: all .5s ease;
-    transition: all .5s ease;
+  #terrain_presentation #sidebar-left .sidebar-menu button:hover,
+  #terrain_plan #sidebar-left .sidebar-menu button:hover,
+  #terrain_grille #sidebar-left .sidebar-menu button:hover,
+  #terrain_document #sidebar-left .sidebar-menu button:hover,
+  #terrain_option #sidebar-left .sidebar-menu button:hover {
+    background: #5a9b00;
   }
-  #terrain_presentation #sidebar-left .sidebar-menu #visit, #terrain_presentation #sidebar-left .sidebar-menu #simulaer_un_credit, #terrain_presentation #sidebar-left .sidebar-menu #imprimer,
+  #terrain_presentation #sidebar-left .sidebar-menu #visit,
+  #terrain_presentation #sidebar-left .sidebar-menu #simulaer_un_credit,
+  #terrain_presentation #sidebar-left .sidebar-menu #imprimer,
   #terrain_plan #sidebar-left .sidebar-menu #visit,
   #terrain_plan #sidebar-left .sidebar-menu #simulaer_un_credit,
   #terrain_plan #sidebar-left .sidebar-menu #imprimer,
@@ -765,13 +766,14 @@ a, button {
   #terrain_option #sidebar-left .sidebar-menu #simulaer_un_credit,
   #terrain_option #sidebar-left .sidebar-menu #imprimer {
     margin: .5rm auto;
-    padding: .6rem 1rem;
     border-radius: 30px;
     border: 2px solid #87c133;
     background: none;
     color: #87c133;
   }
-  #terrain_presentation #sidebar-left .sidebar-menu #visit a, #terrain_presentation #sidebar-left .sidebar-menu #simulaer_un_credit a, #terrain_presentation #sidebar-left .sidebar-menu #imprimer a,
+  #terrain_presentation #sidebar-left .sidebar-menu #visit a,
+  #terrain_presentation #sidebar-left .sidebar-menu #simulaer_un_credit a,
+  #terrain_presentation #sidebar-left .sidebar-menu #imprimer a,
   #terrain_plan #sidebar-left .sidebar-menu #visit a,
   #terrain_plan #sidebar-left .sidebar-menu #simulaer_un_credit a,
   #terrain_plan #sidebar-left .sidebar-menu #imprimer a,
@@ -785,23 +787,37 @@ a, button {
   #terrain_option #sidebar-left .sidebar-menu #simulaer_un_credit a,
   #terrain_option #sidebar-left .sidebar-menu #imprimer a {
     color: #87c133;
+    padding: .6rem 1rem;
   }
-  #terrain_presentation #sidebar-left #visit span,
-  #terrain_plan #sidebar-left #visit span,
-  #terrain_grille #sidebar-left #visit span,
-  #terrain_document #sidebar-left #visit span,
-  #terrain_option #sidebar-left #visit span {
+  #terrain_presentation #sidebar-left .sidebar-menu #visit a span,
+  #terrain_plan #sidebar-left .sidebar-menu #visit a span,
+  #terrain_grille #sidebar-left .sidebar-menu #visit a span,
+  #terrain_document #sidebar-left .sidebar-menu #visit a span,
+  #terrain_option #sidebar-left .sidebar-menu #visit a span {
     color: #87c133;
   }
-  #terrain_presentation #sidebar-left #goback,
-  #terrain_plan #sidebar-left #goback,
-  #terrain_grille #sidebar-left #goback,
-  #terrain_document #sidebar-left #goback,
-  #terrain_option #sidebar-left #goback {
+  #terrain_presentation #sidebar-left .sidebar-menu #imprimer,
+  #terrain_plan #sidebar-left .sidebar-menu #imprimer,
+  #terrain_grille #sidebar-left .sidebar-menu #imprimer,
+  #terrain_document #sidebar-left .sidebar-menu #imprimer,
+  #terrain_option #sidebar-left .sidebar-menu #imprimer {
+    padding: .6rem 1rem;
+  }
+  #terrain_presentation #sidebar-left .sidebar-menu #goback,
+  #terrain_plan #sidebar-left .sidebar-menu #goback,
+  #terrain_grille #sidebar-left .sidebar-menu #goback,
+  #terrain_document #sidebar-left .sidebar-menu #goback,
+  #terrain_option #sidebar-left .sidebar-menu #goback {
     width: auto;
-    padding: .4rem 2.5rem;
     margin: 2rem auto .5rem;
     position: static;
+  }
+  #terrain_presentation #sidebar-left .sidebar-menu #goback a,
+  #terrain_plan #sidebar-left .sidebar-menu #goback a,
+  #terrain_grille #sidebar-left .sidebar-menu #goback a,
+  #terrain_document #sidebar-left .sidebar-menu #goback a,
+  #terrain_option #sidebar-left .sidebar-menu #goback a {
+    padding: .4rem 2.5rem;
   }
   #terrain_plan .main-right {
     width: 100%;
