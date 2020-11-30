@@ -380,7 +380,7 @@ a, button {
     width: 90%;
     margin: 0 auto !important;
   }
-  body > div #terrain_plan .main-right #plan_right .click {
+  body > div #terrain_plan .main-right #plan_right > P {
     display: none;
   }
   body > div #qui_sommes_nous .text .list_left {
@@ -535,7 +535,7 @@ a, button {
   main .main-right {
     width: calc(100% - 12rem);
   }
-  #terrain_plan .main-right .lot_option .wrapper .up .lot_info header h2 {
+  #terrain_plan_lot .main-right .lot_option .wrapper .up .lot_info header h2 {
     font-size: 1.4rem;
   }
   #terrain_grille .main-right .grille .wrapper table tr:nth-child(1) th span:nth-child(1) {
@@ -645,6 +645,7 @@ a, button {
   }
   #terrain_presentation .main-right,
   #terrain_plan .main-right,
+  #terrain_plan_lot .main-right,
   #terrain_grille .main-right,
   #terrain_document .main-right,
   #terrain_option .main-right {
@@ -655,6 +656,7 @@ a, button {
   }
   #terrain_presentation .main-right .lotissement_name,
   #terrain_plan .main-right .lotissement_name,
+  #terrain_plan_lot .main-right .lotissement_name,
   #terrain_grille .main-right .lotissement_name,
   #terrain_document .main-right .lotissement_name,
   #terrain_option .main-right .lotissement_name {
@@ -662,6 +664,7 @@ a, button {
   }
   #terrain_presentation .main-right #presentation > div > p,
   #terrain_plan .main-right #presentation > div > p,
+  #terrain_plan_lot .main-right #presentation > div > p,
   #terrain_grille .main-right #presentation > div > p,
   #terrain_document .main-right #presentation > div > p,
   #terrain_option .main-right #presentation > div > p {
@@ -669,6 +672,7 @@ a, button {
   }
   #terrain_presentation #sidebar-left,
   #terrain_plan #sidebar-left,
+  #terrain_plan_lot #sidebar-left,
   #terrain_grille #sidebar-left,
   #terrain_document #sidebar-left,
   #terrain_option #sidebar-left {
@@ -680,6 +684,7 @@ a, button {
   }
   #terrain_presentation #sidebar-left h2,
   #terrain_plan #sidebar-left h2,
+  #terrain_plan_lot #sidebar-left h2,
   #terrain_grille #sidebar-left h2,
   #terrain_document #sidebar-left h2,
   #terrain_option #sidebar-left h2 {
@@ -692,6 +697,7 @@ a, button {
   }
   #terrain_presentation #sidebar-left h2 a,
   #terrain_plan #sidebar-left h2 a,
+  #terrain_plan_lot #sidebar-left h2 a,
   #terrain_grille #sidebar-left h2 a,
   #terrain_document #sidebar-left h2 a,
   #terrain_option #sidebar-left h2 a {
@@ -704,6 +710,7 @@ a, button {
   }
   #terrain_presentation #sidebar-left h2:hover a,
   #terrain_plan #sidebar-left h2:hover a,
+  #terrain_plan_lot #sidebar-left h2:hover a,
   #terrain_grille #sidebar-left h2:hover a,
   #terrain_document #sidebar-left h2:hover a,
   #terrain_option #sidebar-left h2:hover a {
@@ -711,6 +718,7 @@ a, button {
   }
   #terrain_presentation #sidebar-left .sidebar-menu,
   #terrain_plan #sidebar-left .sidebar-menu,
+  #terrain_plan_lot #sidebar-left .sidebar-menu,
   #terrain_grille #sidebar-left .sidebar-menu,
   #terrain_document #sidebar-left .sidebar-menu,
   #terrain_option #sidebar-left .sidebar-menu {
@@ -720,6 +728,7 @@ a, button {
   }
   #terrain_presentation #sidebar-left .sidebar-menu button,
   #terrain_plan #sidebar-left .sidebar-menu button,
+  #terrain_plan_lot #sidebar-left .sidebar-menu button,
   #terrain_grille #sidebar-left .sidebar-menu button,
   #terrain_document #sidebar-left .sidebar-menu button,
   #terrain_option #sidebar-left .sidebar-menu button {
@@ -730,6 +739,7 @@ a, button {
   }
   #terrain_presentation #sidebar-left .sidebar-menu button a,
   #terrain_plan #sidebar-left .sidebar-menu button a,
+  #terrain_plan_lot #sidebar-left .sidebar-menu button a,
   #terrain_grille #sidebar-left .sidebar-menu button a,
   #terrain_document #sidebar-left .sidebar-menu button a,
   #terrain_option #sidebar-left .sidebar-menu button a {
@@ -738,6 +748,7 @@ a, button {
   }
   #terrain_presentation #sidebar-left .sidebar-menu button i,
   #terrain_plan #sidebar-left .sidebar-menu button i,
+  #terrain_plan_lot #sidebar-left .sidebar-menu button i,
   #terrain_grille #sidebar-left .sidebar-menu button i,
   #terrain_document #sidebar-left .sidebar-menu button i,
   #terrain_option #sidebar-left .sidebar-menu button i {
@@ -745,6 +756,7 @@ a, button {
   }
   #terrain_presentation #sidebar-left .sidebar-menu button:hover,
   #terrain_plan #sidebar-left .sidebar-menu button:hover,
+  #terrain_plan_lot #sidebar-left .sidebar-menu button:hover,
   #terrain_grille #sidebar-left .sidebar-menu button:hover,
   #terrain_document #sidebar-left .sidebar-menu button:hover,
   #terrain_option #sidebar-left .sidebar-menu button:hover {
@@ -756,6 +768,9 @@ a, button {
   #terrain_plan #sidebar-left .sidebar-menu #visit,
   #terrain_plan #sidebar-left .sidebar-menu #simulaer_un_credit,
   #terrain_plan #sidebar-left .sidebar-menu #imprimer,
+  #terrain_plan_lot #sidebar-left .sidebar-menu #visit,
+  #terrain_plan_lot #sidebar-left .sidebar-menu #simulaer_un_credit,
+  #terrain_plan_lot #sidebar-left .sidebar-menu #imprimer,
   #terrain_grille #sidebar-left .sidebar-menu #visit,
   #terrain_grille #sidebar-left .sidebar-menu #simulaer_un_credit,
   #terrain_grille #sidebar-left .sidebar-menu #imprimer,
@@ -777,6 +792,9 @@ a, button {
   #terrain_plan #sidebar-left .sidebar-menu #visit a,
   #terrain_plan #sidebar-left .sidebar-menu #simulaer_un_credit a,
   #terrain_plan #sidebar-left .sidebar-menu #imprimer a,
+  #terrain_plan_lot #sidebar-left .sidebar-menu #visit a,
+  #terrain_plan_lot #sidebar-left .sidebar-menu #simulaer_un_credit a,
+  #terrain_plan_lot #sidebar-left .sidebar-menu #imprimer a,
   #terrain_grille #sidebar-left .sidebar-menu #visit a,
   #terrain_grille #sidebar-left .sidebar-menu #simulaer_un_credit a,
   #terrain_grille #sidebar-left .sidebar-menu #imprimer a,
@@ -791,6 +809,7 @@ a, button {
   }
   #terrain_presentation #sidebar-left .sidebar-menu #visit a span,
   #terrain_plan #sidebar-left .sidebar-menu #visit a span,
+  #terrain_plan_lot #sidebar-left .sidebar-menu #visit a span,
   #terrain_grille #sidebar-left .sidebar-menu #visit a span,
   #terrain_document #sidebar-left .sidebar-menu #visit a span,
   #terrain_option #sidebar-left .sidebar-menu #visit a span {
@@ -798,6 +817,7 @@ a, button {
   }
   #terrain_presentation #sidebar-left .sidebar-menu #imprimer,
   #terrain_plan #sidebar-left .sidebar-menu #imprimer,
+  #terrain_plan_lot #sidebar-left .sidebar-menu #imprimer,
   #terrain_grille #sidebar-left .sidebar-menu #imprimer,
   #terrain_document #sidebar-left .sidebar-menu #imprimer,
   #terrain_option #sidebar-left .sidebar-menu #imprimer {
@@ -805,6 +825,7 @@ a, button {
   }
   #terrain_presentation #sidebar-left .sidebar-menu #goback,
   #terrain_plan #sidebar-left .sidebar-menu #goback,
+  #terrain_plan_lot #sidebar-left .sidebar-menu #goback,
   #terrain_grille #sidebar-left .sidebar-menu #goback,
   #terrain_document #sidebar-left .sidebar-menu #goback,
   #terrain_option #sidebar-left .sidebar-menu #goback {
@@ -814,55 +835,62 @@ a, button {
   }
   #terrain_presentation #sidebar-left .sidebar-menu #goback a,
   #terrain_plan #sidebar-left .sidebar-menu #goback a,
+  #terrain_plan_lot #sidebar-left .sidebar-menu #goback a,
   #terrain_grille #sidebar-left .sidebar-menu #goback a,
   #terrain_document #sidebar-left .sidebar-menu #goback a,
   #terrain_option #sidebar-left .sidebar-menu #goback a {
     padding: .4rem 2.5rem;
   }
-  #terrain_plan .main-right {
+  #terrain_plan_lot .main-right {
     width: 100%;
   }
-  #terrain_plan .main-right .lot_option .wrapper .up {
+  #terrain_plan_lot .main-right .lot_option .wrapper .up {
     display: block;
   }
-  #terrain_plan .main-right .lot_option .wrapper .up .lot_info {
+  #terrain_plan_lot .main-right .lot_option .wrapper .up .lot_info {
     margin: 0 auto;
   }
-  #terrain_plan .main-right .lot_option .wrapper .up .lot_info .lot_image_mobile {
+  #terrain_plan_lot .main-right .lot_option .wrapper .up .lot_info .lot_image_mobile {
     display: block;
   }
-  #terrain_plan .main-right .lot_option .wrapper .up .lot_info .info_table {
+  #terrain_plan_lot .main-right .lot_option .wrapper .up .lot_info .info_table {
     padding: .5rem 0;
     margin: 0 0 1rem;
   }
-  #terrain_plan .main-right .lot_option .wrapper .up .lot_info .info_table p {
+  #terrain_plan_lot .main-right .lot_option .wrapper .up .lot_info .info_table p {
     display: block;
   }
-  #terrain_plan .main-right .lot_option .wrapper .up .lot_info .info_table p > span {
+  #terrain_plan_lot .main-right .lot_option .wrapper .up .lot_info .info_table p > span {
     display: inline-block;
     width: 49%;
     vertical-align: top;
   }
-  #terrain_plan .main-right .lot_option .wrapper .up .lot_info .info_table p > span:first-child {
+  #terrain_plan_lot .main-right .lot_option .wrapper .up .lot_info .info_table p > span:first-child {
     font-weight: bold;
     text-align: right;
     padding-right: .5rem;
   }
-  #terrain_plan .main-right .lot_option .wrapper .up .lot_info .info_table p > span:nth-child(2) {
+  #terrain_plan_lot .main-right .lot_option .wrapper .up .lot_info .info_table p > span:nth-child(2) {
     text-align: left;
   }
-  #terrain_plan .main-right .lot_option .wrapper .up .lot_image {
+  #terrain_plan_lot .main-right .lot_option .wrapper .up .lot_image {
     margin-left: 0;
   }
-  #terrain_plan .main-right .lot_option .wrapper .up .lot_image img {
+  #terrain_plan_lot .main-right .lot_option .wrapper .up .lot_image > img {
     display: none;
   }
-  #terrain_plan .main-right .lot_option .wrapper .up .lot_image button {
+  #terrain_plan_lot .main-right .lot_option .wrapper .up .lot_image button {
+    display: block;
     position: static;
-    padding: 0.5rem 1.5rem;
   }
-  #terrain_plan .main-right .lot_option .wrapper .up .lot_image button br {
+  #terrain_plan_lot .main-right .lot_option .wrapper .up .lot_image button a {
+    padding: 1rem 2.5rem;
+  }
+  #terrain_plan_lot .main-right .lot_option .wrapper .up .lot_image button br {
     display: none;
+  }
+  #terrain_plan_lot .main-right .lot_option .wrapper .up .lot_image .visite_virtuelle {
+    width: 16rem;
   }
   #terrain_option .main-right .lotissement_name {
     display: none;
@@ -1124,7 +1152,7 @@ a, button {
   #terrain_plan .main-right #plan_right .plan .plan_img .lot .number {
     font-size: 50%;
   }
-  #terrain_plan .main-right .lot_option {
+  #terrain_plan_lot .main-right .lot_option {
     margin: 0;
   }
   #terrain_grille .main-right .grille {

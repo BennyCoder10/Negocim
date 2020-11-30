@@ -80,7 +80,7 @@ main {
       }
 
       // TERRAIN SUB PROJECT INFORM BUTTON
-      button { margin-bottom: .5rem; text-align: left; display: block; width:100%; border-radius: 0;  background: white; outline: none; transition: all .5s ease; position: relative;
+      button { margin-bottom: .5rem; text-align: left; display: block; width:100%; border-radius: 0;  background: white; outline: none; transition: all .5s ease;
         a { display: block; font-size: .9rem; color: $main; padding: .4rem .5rem;}
         &:hover a { color: $text-dark;}        
       }
@@ -99,7 +99,7 @@ main {
       //   // &:hover a { color: black; transition: all .5s ease;}
       // }
 
-      #visit,
+      .visite_virtuelle,
       #simulaer_un_credit, 
       #imprimer { text-align: center; border-radius: 3px; background: $sub; 
         &:hover { background: $button_hover;}
@@ -110,13 +110,10 @@ main {
       } 
 
       // CREATED VISITE VIRTUELLE BUTTON WHEN MAIN TAG HAS A CLASS "VISIT"
-      #visit { 
-        //  margin: 0 auto; text-align: center; margin-bottom: .8rem; display: block; @include buttons; border-radius: 3px; padding: .3rem .2rem; font-size: 1rem; color: $text;
-        // &:hover { font-weight: normal;}
-        // a span { position: relative; color: white; font-weight: bold; font-style: italic;}
-        // a span:before { content: url(../images/lotissement/vr_icon.png); position: absolute; top: 0; left: -36px;}
+      .visite_virtuelle { font-style: italic; font-weight: bold;
+        &:hover a { color: white;}
         img { padding-right: 10px; margin-left: -2rem;}
-      }   
+      }
       
       #imprimer { font-size: 1rem; color: white; padding: .4rem .5rem;}
  
@@ -309,6 +306,15 @@ main {
         h2 i { color: $sub;}
       }
 
+      // VISITE VIRTUELLE BUTTON WHEN MAIN TAG HAS A CLASS "VISIT"
+      .visite_virtuelle { display: inline-block; text-align: center; font-style: italic; font-weight: bold; width: 12rem; padding: .4rem .5rem; margin-bottom: 2rem; border-radius: 1rem; background: $sub; outline: none; transition: all .5s ease; 
+        &:hover { background: $button_hover;}        
+        a {  font-size: 1rem; color: white; margin-left: 1.3rem;
+          img { padding-right: 10px; margin-left: -2rem;}
+        }
+      }
+      // END OF VISITE VIRTUELLE
+
       .btm { padding: 1rem; background: white; @include box-shadow;
         p { padding: .5rem; text-align: left;}
       }
@@ -480,6 +486,69 @@ main {
         span { text-align: center; display: block; padding: .5rem; }
       } 
     }   
+       
+  }
+
+  // SIDEBAR MENU ON THE LEFT
+  // #sidebar-left { position: relative; float: left; width: 14rem; height: 100%; background-color: $main; border: .5px solid $bars; padding: 1rem; 
+  //   h2 { padding-bottom: 1.4rem;
+  //     a { font-size: 1.9rem; font-weight: bold; color: white;}
+  //     &:hover a { color: $text-dark;}
+  //   }
+  //   .sidebar-menu { @include scrollbar(auto); margin-bottom: 4rem; 
+  //     h4 { text-align: left; font-size: 1rem; color: white; font-weight: 400; line-height: 1.3;
+  //       strong { color: white;}
+  //     }
+  //     p { margin: 1.5rem .5rem 0 0; font-weight: 100; text-align: left; font-size: 1rem; color: white; word-break: normal;}
+  //     .info { font-size: .7rem; height: 60%; overflow-y: auto; @include scrollbar(auto)} 
+      
+      // TERRAIN SUB TEXT
+      // .sub { height: 90%;}
+
+      // TERRAIN SUB PROJECT TEXT
+      // .projet { font-size: .8rem;}
+
+      // .look { display: block; margin-top: 1rem; font-size: 1rem; text-align: left; background: none; color: $text; font-weight: bold;
+      //   &:hover { color: $text-dark;}
+      // }
+
+      // TERRAIN SUB PROJECT INFORM BUTTON
+    //   button { margin-bottom: 1rem; text-align: left; display: block; width:100%; border-radius: 0; padding: .25rem 0 0 .5rem; font-size: .9rem; color: $text; background: none; cursor: pointer; outline: none;
+    //     &:hover { color: $text-dark; font-weight: bold;}  
+    //   }
+
+    //   #simulaer_un_credit, #imprimer 
+    //   { margin: 0 auto; text-align: center; margin-bottom: .8rem; display: block; @include buttons; border-radius: 3px; padding: .3rem .2rem; font-size: 1rem; color: $text;
+    //     a { display: inline; padding: 0;}
+    //     &:hover { font-weight: normal;}
+    //   }
+    // }  
+
+    // GOBACK BUTTON AT THE BOTTOM
+  //   #goback { @include buttons; margin: 0 auto; position: absolute; left: 0; right: 0; width: auto; bottom: 1rem; padding: 0.4rem 2.5rem; color: $text; font-size: .8rem;
+  //     i { font-size: .7rem; color: white; padding-right: .3rem;}       
+  //   }       
+  // }
+}
+// END OF MAIN #TERRAIN_PLAN (PLAN DU LOTISSEMENT)
+
+
+//
+// MAIN #TERRAIN_PLAN_LOT (PLAN DU LOTISSEMENT SINGLE)
+//
+#terrain_plan_lot { position: relative; 
+
+  // CONTENT ON THE RIGHT
+  .main-right {
+    float: right; text-align: center;
+    // width: calc(100% - 14rem); 
+    // overflow: auto; 
+
+     // LOTISSEMENT NAME ON MOBILE
+     .lotissement_name { display: none; padding: .5rem 0;
+      h3 { font-weight: normal;}
+      h2 i { color: $sub;}
+    }
     
     //  LOT OPTION DETAIL PAGES
     .lot_option { margin: .5rem;   
@@ -509,11 +578,20 @@ main {
 
           // LOT IMAGE ON THE RIGHT
           .lot_image { flex: 4; margin-left: .5rem;
-            img {border: 1px solid $bars; width: 100%;}
-            button { position: relative; margin: .5rem auto; background: #87c133; border-radius: 3px; 
-              a { display: inline-block; font-size: .9rem; color: white; padding: .3rem 1rem;}
+            > img {border: 1px solid $bars; width: 100%;}
+            button { position: relative; display: block; margin: .5rem auto; background: #87c133; border-radius: 3px; 
+              a { display: block; font-size: .9rem; color: white; padding: .3rem 1rem;}
               &:hover { background-color: #5a9b00;}
             }
+
+            // VISITE VIRTUELLE BUTTON WHEN MAIN TAG HAS A CLASS "VISIT"
+            .visite_virtuelle { border-radius: 1.5rem; margin-top: 1rem;
+              a { font-style: italic; font-weight: bold; padding: .7rem 1rem; 
+                img { width: 1rem; margin-right: 6px;}
+              }
+            }
+           // END OF VISITE VIRTUELLE
+
           }
         }
         .btm { font-size: .8rem; text-align: left; padding: .5rem; margin: .5rem 0 1rem; background-color: white; @include box-shadow;}
@@ -615,8 +693,10 @@ main {
               th, td { font-weight: bold;}
             }
             &:first-child:hover { background-color: white; box-shadow: none; }
-            .simuler_un_credit { @include buttons; color: $text; margin: .2rem auto; border-radius: 3px; cursor: pointer;
-              a { font-size: .8rem; display: inline-block; padding: .3rem .5rem;}
+            button { @include buttons; color: $text; margin: .2rem auto; border-radius: 3px; cursor: pointer;
+              a { font-size: .8rem; display: inline-block; padding: .3rem .5rem;
+                img { width: 1rem; margin-right: 10px;}
+              }
               &:hover { background-color:#5a9b00;}              
             }
           }

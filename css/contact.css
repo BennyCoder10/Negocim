@@ -170,6 +170,10 @@ header .menu ul li .active:before {
   width: 40%;
 }
 
+header .menu ul li:first-child a {
+  padding-left: 0;
+}
+
 header #menu-toggle {
   display: none;
   float: right;

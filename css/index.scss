@@ -238,7 +238,7 @@ a, button { transition: all .5s ease;}
       // PLAN DU LOTISSEMENT PAGE
       #terrain_plan .main-right #plan_right {
         width: 90%; margin: 0 auto !important;
-        .click { display: none;}
+        > P { display: none;}
       }
 
       // REMOVE SIDEBAR ON THE LEFT & MAKE THE CONTENT ON THE RIGHT FULL WIDTH

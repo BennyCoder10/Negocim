@@ -9,11 +9,9 @@
  body .wrapper header {
     h1 { padding: .5rem 0 .5rem .5rem;
       a img { width: 16rem;}
-    }
-   
+    }   
     .menu { padding-right: 0;}
- }
- 
+ } 
 
   // LEXIQUE
   #lexique > div .index #lexique-nav { justify-content: flex-start;} 
@@ -127,7 +125,7 @@
   }
 
   // TERRAIN_PLAN PAGE > MAIN
-  #terrain_plan .main-right .lot_option .wrapper .up .lot_info header h2 { font-size: 1.4rem;}
+  #terrain_plan_lot .main-right .lot_option .wrapper .up .lot_info header h2 { font-size: 1.4rem;}
   
   #terrain_grille .main-right .grille .wrapper table tr:nth-child(1) {
     th span:nth-child(1) { display: none;}
@@ -212,6 +210,7 @@
   // TERRAIN_SUB PAGES
   #terrain_presentation, 
   #terrain_plan,
+  #terrain_plan_lot,
   #terrain_grille, 
   #terrain_document, 
   #terrain_option
@@ -270,7 +269,7 @@
 
 
   // TERRAIN_PLAN DU LOTISSEMENT
-  #terrain_plan .main-right { width: 100%;
+  #terrain_plan_lot .main-right { width: 100%;
     .lot_option .wrapper .up { display: block;
       .lot_info { margin: 0 auto;
         .lot_image_mobile { display: block;}
@@ -287,10 +286,15 @@
       }
 
       .lot_image { margin-left: 0;
-        img { display: none;}
-        button { position: static; padding: 0.5rem 1.5rem; 
+        > img { display: none;}
+        button { display: block; position: static;
+          a { padding: 1rem 2.5rem;}
+          // padding: 0.5rem 1.5rem; 
           br { display: none;}
         }
+        // VISITE VIRTUELLE BUTTON WHEN MAIN TAG HAS A CLASS "VISIT"
+        .visite_virtuelle { width: 16rem;}
+        // END OF VISITE VIRTUELLE
       }
     }
   }
@@ -482,7 +486,7 @@
  }
  #terrain_plan .main-right #plan_right .plan .plan_img .lot .number { font-size: 50%;}
 
- #terrain_plan .main-right .lot_option { margin: 0;}
+ #terrain_plan_lot .main-right .lot_option { margin: 0;}
 
 //  #terrain_presentation #sidebar-left .sidebar-menu button, 
 //  #terrain_plan #sidebar-left .sidebar-menu button { width: 100%; }

@@ -380,7 +380,7 @@ a, button {
     width: 90%;
     margin: 0 auto !important;
   }
-  body > div #terrain_plan .main-right #plan_right .click {
+  body > div #terrain_plan .main-right #plan_right > P {
     display: none;
   }
   body > div #qui_sommes_nous .text .list_left {

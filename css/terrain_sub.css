@@ -380,7 +380,7 @@ a, button {
     width: 90%;
     margin: 0 auto !important;
   }
-  body > div #terrain_plan .main-right #plan_right .click {
+  body > div #terrain_plan .main-right #plan_right > P {
     display: none;
   }
   body > div #qui_sommes_nous .text .list_left {
@@ -519,7 +519,6 @@ main #sidebar-left .sidebar-menu button {
   outline: none;
   -webkit-transition: all .5s ease;
   transition: all .5s ease;
-  position: relative;
 }
 
 main #sidebar-left .sidebar-menu button a {
@@ -544,7 +543,7 @@ main #sidebar-left .sidebar-menu #itineraire:hover i {
   color: #525451;
 }
 
-main #sidebar-left .sidebar-menu #visit,
+main #sidebar-left .sidebar-menu .visite_virtuelle,
 main #sidebar-left .sidebar-menu #simulaer_un_credit,
 main #sidebar-left .sidebar-menu #imprimer {
   text-align: center;
@@ -552,20 +551,29 @@ main #sidebar-left .sidebar-menu #imprimer {
   background: #87c133;
 }
 
-main #sidebar-left .sidebar-menu #visit:hover,
+main #sidebar-left .sidebar-menu .visite_virtuelle:hover,
 main #sidebar-left .sidebar-menu #simulaer_un_credit:hover,
 main #sidebar-left .sidebar-menu #imprimer:hover {
   background: #5a9b00;
 }
 
-main #sidebar-left .sidebar-menu #visit a,
+main #sidebar-left .sidebar-menu .visite_virtuelle a,
 main #sidebar-left .sidebar-menu #simulaer_un_credit a,
 main #sidebar-left .sidebar-menu #imprimer a {
   color: white;
   font-size: 1rem;
 }
 
-main #sidebar-left .sidebar-menu #visit img {
+main #sidebar-left .sidebar-menu .visite_virtuelle {
+  font-style: italic;
+  font-weight: bold;
+}
+
+main #sidebar-left .sidebar-menu .visite_virtuelle:hover a {
+  color: white;
+}
+
+main #sidebar-left .sidebar-menu .visite_virtuelle img {
   padding-right: 10px;
   margin-left: -2rem;
 }
@@ -813,6 +821,36 @@ main .main-right > * {
   color: #87c133;
 }
 
+#terrain_presentation .main-right #presentation .visite_virtuelle {
+  display: inline-block;
+  text-align: center;
+  font-style: italic;
+  font-weight: bold;
+  width: 12rem;
+  padding: .4rem .5rem;
+  margin-bottom: 2rem;
+  border-radius: 1rem;
+  background: #87c133;
+  outline: none;
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
+}
+
+#terrain_presentation .main-right #presentation .visite_virtuelle:hover {
+  background: #5a9b00;
+}
+
+#terrain_presentation .main-right #presentation .visite_virtuelle a {
+  font-size: 1rem;
+  color: white;
+  margin-left: 1.3rem;
+}
+
+#terrain_presentation .main-right #presentation .visite_virtuelle a img {
+  padding-right: 10px;
+  margin-left: -2rem;
+}
+
 #terrain_presentation .main-right #presentation .btm {
   padding: 1rem;
   background: white;
@@ -1048,24 +1086,46 @@ main .main-right > * {
   padding: .5rem;
 }
 
-#terrain_plan .main-right .lot_option {
+#terrain_plan_lot {
+  position: relative;
+}
+
+#terrain_plan_lot .main-right {
+  float: right;
+  text-align: center;
+}
+
+#terrain_plan_lot .main-right .lotissement_name {
+  display: none;
+  padding: .5rem 0;
+}
+
+#terrain_plan_lot .main-right .lotissement_name h3 {
+  font-weight: normal;
+}
+
+#terrain_plan_lot .main-right .lotissement_name h2 i {
+  color: #87c133;
+}
+
+#terrain_plan_lot .main-right .lot_option {
   margin: .5rem;
 }
 
-#terrain_plan .main-right .lot_option .wrapper .up {
+#terrain_plan_lot .main-right .lot_option .wrapper .up {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   margin-bottom: .5rem;
 }
 
-#terrain_plan .main-right .lot_option .wrapper .up .lot_info {
+#terrain_plan_lot .main-right .lot_option .wrapper .up .lot_info {
   -webkit-box-flex: 6;
       -ms-flex: 6;
           flex: 6;
 }
 
-#terrain_plan .main-right .lot_option .wrapper .up .lot_info header {
+#terrain_plan_lot .main-right .lot_option .wrapper .up .lot_info header {
   background-color: #87c133;
   padding: .5rem 0;
   margin-bottom: 1rem;
@@ -1073,33 +1133,33 @@ main .main-right > * {
           box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
-#terrain_plan .main-right .lot_option .wrapper .up .lot_info header * {
+#terrain_plan_lot .main-right .lot_option .wrapper .up .lot_info header * {
   color: white;
 }
 
-#terrain_plan .main-right .lot_option .wrapper .up .lot_info header p {
+#terrain_plan_lot .main-right .lot_option .wrapper .up .lot_info header p {
   font-size: .7rem;
 }
 
-#terrain_plan .main-right .lot_option .wrapper .up .lot_info .lot_image_mobile {
+#terrain_plan_lot .main-right .lot_option .wrapper .up .lot_info .lot_image_mobile {
   display: none;
   background: white;
   -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
           box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
-#terrain_plan .main-right .lot_option .wrapper .up .lot_info .lot_image_mobile img {
+#terrain_plan_lot .main-right .lot_option .wrapper .up .lot_info .lot_image_mobile img {
   width: 100%;
   max-width: 352px;
 }
 
-#terrain_plan .main-right .lot_option .wrapper .up .lot_info .info_table {
+#terrain_plan_lot .main-right .lot_option .wrapper .up .lot_info .info_table {
   background-color: white;
   -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
           box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
-#terrain_plan .main-right .lot_option .wrapper .up .lot_info .info_table p {
+#terrain_plan_lot .main-right .lot_option .wrapper .up .lot_info .info_table p {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1109,53 +1169,70 @@ main .main-right > * {
   padding: .3rem .3rem;
 }
 
-#terrain_plan .main-right .lot_option .wrapper .up .lot_info .info_table p:nth-child(odd) {
+#terrain_plan_lot .main-right .lot_option .wrapper .up .lot_info .info_table p:nth-child(odd) {
   background: #66ccce1f;
 }
 
-#terrain_plan .main-right .lot_option .wrapper .up .lot_info .info_table p > span {
+#terrain_plan_lot .main-right .lot_option .wrapper .up .lot_info .info_table p > span {
   font-size: .8rem;
 }
 
-#terrain_plan .main-right .lot_option .wrapper .up .lot_info .info_table p > span:first-child {
+#terrain_plan_lot .main-right .lot_option .wrapper .up .lot_info .info_table p > span:first-child {
   text-align: left;
 }
 
-#terrain_plan .main-right .lot_option .wrapper .up .lot_info .info_table p > span:nth-child(2) {
+#terrain_plan_lot .main-right .lot_option .wrapper .up .lot_info .info_table p > span:nth-child(2) {
   text-align: right;
 }
 
-#terrain_plan .main-right .lot_option .wrapper .up .lot_image {
+#terrain_plan_lot .main-right .lot_option .wrapper .up .lot_image {
   -webkit-box-flex: 4;
       -ms-flex: 4;
           flex: 4;
   margin-left: .5rem;
 }
 
-#terrain_plan .main-right .lot_option .wrapper .up .lot_image img {
+#terrain_plan_lot .main-right .lot_option .wrapper .up .lot_image > img {
   border: 1px solid #707070;
   width: 100%;
 }
 
-#terrain_plan .main-right .lot_option .wrapper .up .lot_image button {
+#terrain_plan_lot .main-right .lot_option .wrapper .up .lot_image button {
   position: relative;
+  display: block;
   margin: .5rem auto;
   background: #87c133;
   border-radius: 3px;
 }
 
-#terrain_plan .main-right .lot_option .wrapper .up .lot_image button a {
-  display: inline-block;
+#terrain_plan_lot .main-right .lot_option .wrapper .up .lot_image button a {
+  display: block;
   font-size: .9rem;
   color: white;
   padding: .3rem 1rem;
 }
 
-#terrain_plan .main-right .lot_option .wrapper .up .lot_image button:hover {
+#terrain_plan_lot .main-right .lot_option .wrapper .up .lot_image button:hover {
   background-color: #5a9b00;
 }
 
-#terrain_plan .main-right .lot_option .wrapper .btm {
+#terrain_plan_lot .main-right .lot_option .wrapper .up .lot_image .visite_virtuelle {
+  border-radius: 1.5rem;
+  margin-top: 1rem;
+}
+
+#terrain_plan_lot .main-right .lot_option .wrapper .up .lot_image .visite_virtuelle a {
+  font-style: italic;
+  font-weight: bold;
+  padding: .7rem 1rem;
+}
+
+#terrain_plan_lot .main-right .lot_option .wrapper .up .lot_image .visite_virtuelle a img {
+  width: 1rem;
+  margin-right: 6px;
+}
+
+#terrain_plan_lot .main-right .lot_option .wrapper .btm {
   font-size: .8rem;
   text-align: left;
   padding: .5rem;
@@ -1165,19 +1242,19 @@ main .main-right > * {
           box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
-#terrain_plan .main-right .lot_option .wrapper .lot_notice {
+#terrain_plan_lot .main-right .lot_option .wrapper .lot_notice {
   font-size: .8rem;
   padding: .5rem;
   background: white;
   border: 1px solid #707070;
 }
 
-#terrain_plan .main-right .lot_option .wrapper .lot_notice p {
+#terrain_plan_lot .main-right .lot_option .wrapper .lot_notice p {
   text-align: center;
   font-style: italic;
 }
 
-#terrain_plan .main-right .lot_option .wrapper .lot_notice span {
+#terrain_plan_lot .main-right .lot_option .wrapper .lot_notice span {
   text-align: center;
   display: block;
   padding: .5rem;
@@ -1278,7 +1355,7 @@ main .main-right > * {
           box-shadow: none;
 }
 
-#terrain_grille .main-right .grille .wrapper table tr .simuler_un_credit {
+#terrain_grille .main-right .grille .wrapper table tr button {
   display: block;
   background: #87c133;
   border: none;
@@ -1289,28 +1366,33 @@ main .main-right > * {
   cursor: pointer;
 }
 
-#terrain_grille .main-right .grille .wrapper table tr .simuler_un_credit a {
+#terrain_grille .main-right .grille .wrapper table tr button a {
   display: block;
   font-size: .95rem;
   color: white;
   padding: .75rem 3rem;
 }
 
-#terrain_grille .main-right .grille .wrapper table tr .simuler_un_credit:hover {
+#terrain_grille .main-right .grille .wrapper table tr button:hover {
   background: #5a9b00;
 }
 
-#terrain_grille .main-right .grille .wrapper table tr .simuler_un_credit:focus {
+#terrain_grille .main-right .grille .wrapper table tr button:focus {
   outline: none;
 }
 
-#terrain_grille .main-right .grille .wrapper table tr .simuler_un_credit a {
+#terrain_grille .main-right .grille .wrapper table tr button a {
   font-size: .8rem;
   display: inline-block;
   padding: .3rem .5rem;
 }
 
-#terrain_grille .main-right .grille .wrapper table tr .simuler_un_credit:hover {
+#terrain_grille .main-right .grille .wrapper table tr button a img {
+  width: 1rem;
+  margin-right: 10px;
+}
+
+#terrain_grille .main-right .grille .wrapper table tr button:hover {
   background-color: #5a9b00;
 }
 
