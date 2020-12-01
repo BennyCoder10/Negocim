@@ -1,87 +1,5 @@
 const main = document.getElementsByTagName("main")[0];
 
-// CREATE A BUTTON VISITE VIRTUELLE WHEN MAIN TAG HAS A CLASS "VISIT"
-
-// ABLE TO CHOOSE FROM CLASS NAME OR DATA- NAMES
-// if (main.getAttribute("data-visit_name") === "418-languidic-les-champs-fleuris") {
-
-if (main.classList.contains("visit")) {
-  const sidebarMenu = document.getElementsByClassName("sidebar-menu")[0];
-  const visitButton = document.createElement("button");
-  const aLink = document.createElement("a");
-  var visitValue = main.getAttribute('data-visit_name');
- 
-  visitButton.setAttribute("class", "visite_virtuelle");
-  // visitButton.setAttribute("style", "position: relative");
-  // visitButton.setAttribute("style", "span:before");
-
-  aLink.setAttribute("href", "http://negocim.fr/lotissements/460-plouhinec-ar-ti-gar-kozh/lots/06/visite");
-  aLink.innerHTML = "<img src='images/lotissement/vr_icon.png'>Visit virtuelle";
-  // visitButton.textContent += ;
-
-  visitButton.appendChild(aLink)
-  sidebarMenu.insertBefore(visitButton, sidebarMenu.childNodes[2]);
-
-
-  // CREATE VISITE VIRTUELLE BUTTON IN THE MAIN-RIGHT SECTION FOR EACH TERRAIN PAGE
-  // FOR terrain_presentation PAGE
-  if (main.getAttribute("id") === "terrain_presentation") {
-      // CREATE VISITE VIRTUELLE BUTTON IN THE MAIN RIGHT PAGE
-      const btm = document.getElementsByClassName("btm")[0];
-      const visitButton = document.createElement("button");
-      const aLink = document.createElement("a");
-      // var visitValue = main.getAttribute('data-visit_name');
-    
-      visitButton.setAttribute("class", "visite_virtuelle");
-  
-      aLink.setAttribute("href", "http://negocim.fr/lotissements/460-plouhinec-ar-ti-gar-kozh/lots/06/visite");
-      aLink.innerHTML = "<img src='images/lotissement/vr_icon.png'>Visit virtuelle";
-      // visitButton.textContent += ;
-  
-      visitButton.appendChild(aLink);
-      btm.parentNode.insertBefore(visitButton, btm);
-    }
-
-  // FOR terrain_plan PAGE
-  if (main.getAttribute("id") === "terrain_plan") {
-
-    const click = document.getElementsByClassName("click")[0];
-    const pTag = document.createElement("p");
-    pTag.innerHTML = "Cliquez sur &nbsp;<img src='images/lotissement/vr_icon.png'>&nbsp; pour visiter le lot comme si vous y étiez";
-    pTag.setAttribute("style", "padding-bottom: 0.5rem; font-size: .9rem; font-style: italic;");
-    
-    click.parentNode.insertBefore(pTag, click.nextSibling);    
-  }
-
-
-  // FOR terrain_plan_lot PAGE
-  if (main.getAttribute("id") === "terrain_plan_lot") {
-
-    const visitButton = document.createElement("button");
-    const aLink = document.createElement("a");
-    const lotImage = document.getElementsByClassName("lot_image")[0];
-  
-    visitButton.setAttribute("class", "visite_virtuelle");
-
-    aLink.setAttribute("href", "http://negocim.fr/lotissements/460-plouhinec-ar-ti-gar-kozh/lots/06/visite");
-    aLink.innerHTML = "<img src='images/lotissement/vr_icon.png'>Visit virtuelle";
-    // visitButton.textContent += ;
-
-    visitButton.appendChild(aLink);
-    lotImage.appendChild(visitButton);
-    // lotImage.insertBefore(visitButton, lotImage.childNodes(-1));    
-  }
-}
-
-
-
-// CREATE A RETOUR BUTTON RESPECTIVELY ACCORDING TO EACH AGENCE
-const goback = document.getElementById("goback").getElementsByTagName("a")[0];
-var aTag = document.getElementById("sidebar-left").getElementsByTagName("h2")[0].getElementsByTagName("a")[0];
-var hrefValue = aTag.getAttribute('href');
-
-goback.setAttribute("href", hrefValue);
-
 
 // FOR TERRRAINS_PRESENTATION PAGE
 if (main.getAttribute("id") === "terrain_presentation") {
@@ -164,22 +82,7 @@ if (main.getAttribute("id") === "terrain_grille") {
       rowTd[rowTd.length-1].innerHTML = "<button class='simuler_un_credit'><a href='simulateur.html'>Simuler un crédit</a></button>";
       reserve.textContent = "";
 
-      if (tableRow[i].classList.contains("visite_virtuelle")) {
-        const visitButton = document.createElement("button");
-        const aLink = document.createElement("a");
-    
-        // visitButton.setAttribute("class", "visite_virtuelle");
-  
-        aLink.innerHTML = "<img src='images/lotissement/vr_icon.png'>Visit virtuelle";
-        aLink.setAttribute("style", "font-style: italic");
-        aLink.setAttribute("href", "http://negocim.fr/lotissements/460-plouhinec-ar-ti-gar-kozh/lots/06/visite");
-
-        
-        // visitButton.textContent += ;
-    
-        visitButton.appendChild(aLink);
-        rowTd[rowTd.length-1].appendChild(visitButton);
-      }
+     
       //   <button class="simuler_un_credit">
 //   <a href="simulateur.html">Visite Virtuelle</a>
 // </button>

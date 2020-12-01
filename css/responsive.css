@@ -762,22 +762,22 @@ a, button {
   #terrain_option #sidebar-left .sidebar-menu button:hover {
     background: #5a9b00;
   }
-  #terrain_presentation #sidebar-left .sidebar-menu #visit,
+  #terrain_presentation #sidebar-left .sidebar-menu .visite_virtuelle,
   #terrain_presentation #sidebar-left .sidebar-menu #simulaer_un_credit,
   #terrain_presentation #sidebar-left .sidebar-menu #imprimer,
-  #terrain_plan #sidebar-left .sidebar-menu #visit,
+  #terrain_plan #sidebar-left .sidebar-menu .visite_virtuelle,
   #terrain_plan #sidebar-left .sidebar-menu #simulaer_un_credit,
   #terrain_plan #sidebar-left .sidebar-menu #imprimer,
-  #terrain_plan_lot #sidebar-left .sidebar-menu #visit,
+  #terrain_plan_lot #sidebar-left .sidebar-menu .visite_virtuelle,
   #terrain_plan_lot #sidebar-left .sidebar-menu #simulaer_un_credit,
   #terrain_plan_lot #sidebar-left .sidebar-menu #imprimer,
-  #terrain_grille #sidebar-left .sidebar-menu #visit,
+  #terrain_grille #sidebar-left .sidebar-menu .visite_virtuelle,
   #terrain_grille #sidebar-left .sidebar-menu #simulaer_un_credit,
   #terrain_grille #sidebar-left .sidebar-menu #imprimer,
-  #terrain_document #sidebar-left .sidebar-menu #visit,
+  #terrain_document #sidebar-left .sidebar-menu .visite_virtuelle,
   #terrain_document #sidebar-left .sidebar-menu #simulaer_un_credit,
   #terrain_document #sidebar-left .sidebar-menu #imprimer,
-  #terrain_option #sidebar-left .sidebar-menu #visit,
+  #terrain_option #sidebar-left .sidebar-menu .visite_virtuelle,
   #terrain_option #sidebar-left .sidebar-menu #simulaer_un_credit,
   #terrain_option #sidebar-left .sidebar-menu #imprimer {
     margin: .5rm auto;
@@ -786,34 +786,42 @@ a, button {
     background: none;
     color: #87c133;
   }
-  #terrain_presentation #sidebar-left .sidebar-menu #visit a,
+  #terrain_presentation #sidebar-left .sidebar-menu .visite_virtuelle a,
   #terrain_presentation #sidebar-left .sidebar-menu #simulaer_un_credit a,
   #terrain_presentation #sidebar-left .sidebar-menu #imprimer a,
-  #terrain_plan #sidebar-left .sidebar-menu #visit a,
+  #terrain_plan #sidebar-left .sidebar-menu .visite_virtuelle a,
   #terrain_plan #sidebar-left .sidebar-menu #simulaer_un_credit a,
   #terrain_plan #sidebar-left .sidebar-menu #imprimer a,
-  #terrain_plan_lot #sidebar-left .sidebar-menu #visit a,
+  #terrain_plan_lot #sidebar-left .sidebar-menu .visite_virtuelle a,
   #terrain_plan_lot #sidebar-left .sidebar-menu #simulaer_un_credit a,
   #terrain_plan_lot #sidebar-left .sidebar-menu #imprimer a,
-  #terrain_grille #sidebar-left .sidebar-menu #visit a,
+  #terrain_grille #sidebar-left .sidebar-menu .visite_virtuelle a,
   #terrain_grille #sidebar-left .sidebar-menu #simulaer_un_credit a,
   #terrain_grille #sidebar-left .sidebar-menu #imprimer a,
-  #terrain_document #sidebar-left .sidebar-menu #visit a,
+  #terrain_document #sidebar-left .sidebar-menu .visite_virtuelle a,
   #terrain_document #sidebar-left .sidebar-menu #simulaer_un_credit a,
   #terrain_document #sidebar-left .sidebar-menu #imprimer a,
-  #terrain_option #sidebar-left .sidebar-menu #visit a,
+  #terrain_option #sidebar-left .sidebar-menu .visite_virtuelle a,
   #terrain_option #sidebar-left .sidebar-menu #simulaer_un_credit a,
   #terrain_option #sidebar-left .sidebar-menu #imprimer a {
     color: #87c133;
     padding: .6rem 1rem;
   }
-  #terrain_presentation #sidebar-left .sidebar-menu #visit a span,
-  #terrain_plan #sidebar-left .sidebar-menu #visit a span,
-  #terrain_plan_lot #sidebar-left .sidebar-menu #visit a span,
-  #terrain_grille #sidebar-left .sidebar-menu #visit a span,
-  #terrain_document #sidebar-left .sidebar-menu #visit a span,
-  #terrain_option #sidebar-left .sidebar-menu #visit a span {
+  #terrain_presentation #sidebar-left .sidebar-menu .visite_virtuelle a,
+  #terrain_plan #sidebar-left .sidebar-menu .visite_virtuelle a,
+  #terrain_plan_lot #sidebar-left .sidebar-menu .visite_virtuelle a,
+  #terrain_grille #sidebar-left .sidebar-menu .visite_virtuelle a,
+  #terrain_document #sidebar-left .sidebar-menu .visite_virtuelle a,
+  #terrain_option #sidebar-left .sidebar-menu .visite_virtuelle a {
     color: #87c133;
+  }
+  #terrain_presentation #sidebar-left .sidebar-menu .visite_virtuelle:hover,
+  #terrain_plan #sidebar-left .sidebar-menu .visite_virtuelle:hover,
+  #terrain_plan_lot #sidebar-left .sidebar-menu .visite_virtuelle:hover,
+  #terrain_grille #sidebar-left .sidebar-menu .visite_virtuelle:hover,
+  #terrain_document #sidebar-left .sidebar-menu .visite_virtuelle:hover,
+  #terrain_option #sidebar-left .sidebar-menu .visite_virtuelle:hover {
+    background: none;
   }
   #terrain_presentation #sidebar-left .sidebar-menu #imprimer,
   #terrain_plan #sidebar-left .sidebar-menu #imprimer,

@@ -81,12 +81,12 @@
         }
         
         @include scrollbar(auto);
-  
-      }    
-      #goback { @include buttons; margin: 0 auto; position: absolute; left: 0; right: 0; bottom: 1rem;
-       padding: 0.4rem 2.5rem; color: $text; font-size: .8rem;
-          i { font-size: .7rem; color: white; padding-right: .3rem;}
-      
+
+        #goback { @include buttons; margin: 0 auto; position: absolute; left: 0; right: 0; width: auto; bottom: 1rem; color: $text; 
+          a { padding: .4rem 2.5rem; font-size: .8rem;
+            i { font-size: .7rem; color: white; padding-right: .3rem;} 
+          }
+        }
       }
     }
 

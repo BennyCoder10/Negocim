@@ -380,7 +380,7 @@ a, button {
     width: 90%;
     margin: 0 auto !important;
   }
-  body > div #terrain_plan .main-right #plan_right .click {
+  body > div #terrain_plan .main-right #plan_right > P {
     display: none;
   }
   body > div #qui_sommes_nous .text .list_left {
@@ -509,7 +509,7 @@ a, button {
   background: #5a9b00;
 }
 
-#terrain #sidebar-left #goback {
+#terrain #sidebar-left .sidebar-menu #goback {
   display: block;
   background: #87c133;
   border: none;
@@ -518,28 +518,32 @@ a, button {
   position: absolute;
   left: 0;
   right: 0;
+  width: auto;
   bottom: 1rem;
-  padding: 0.4rem 2.5rem;
   color: #ffffff;
-  font-size: .8rem;
 }
 
-#terrain #sidebar-left #goback a {
+#terrain #sidebar-left .sidebar-menu #goback a {
   display: block;
   font-size: .95rem;
   color: white;
   padding: .75rem 3rem;
 }
 
-#terrain #sidebar-left #goback:hover {
+#terrain #sidebar-left .sidebar-menu #goback:hover {
   background: #5a9b00;
 }
 
-#terrain #sidebar-left #goback:focus {
+#terrain #sidebar-left .sidebar-menu #goback:focus {
   outline: none;
 }
 
-#terrain #sidebar-left #goback i {
+#terrain #sidebar-left .sidebar-menu #goback a {
+  padding: .4rem 2.5rem;
+  font-size: .8rem;
+}
+
+#terrain #sidebar-left .sidebar-menu #goback a i {
   font-size: .7rem;
   color: white;
   padding-right: .3rem;

@@ -100,7 +100,7 @@ main {
       // }
 
       .visite_virtuelle,
-      #simulaer_un_credit, 
+      #simulaer_un_credit,
       #imprimer { text-align: center; border-radius: 3px; background: $sub; 
         &:hover { background: $button_hover;}
         a { color: white; font-size: 1rem;}
@@ -111,8 +111,9 @@ main {
 
       // CREATED VISITE VIRTUELLE BUTTON WHEN MAIN TAG HAS A CLASS "VISIT"
       .visite_virtuelle { font-style: italic; font-weight: bold;
+        // &:hover a { color: white;}
         &:hover a { color: white;}
-        img { padding-right: 10px; margin-left: -2rem;}
+        img { width: 30px; padding-right: 10px; margin-left: -2rem;}
       }
       
       #imprimer { font-size: 1rem; color: white; padding: .4rem .5rem;}
@@ -442,6 +443,8 @@ main {
 
     #plan_right { position: relative; height: 100%; padding: .5rem; background-color: $background;
       .click { color: white; max-width: 730px; padding: .5rem; margin: 0 auto 1rem; background-color: $sub; @include box-shadow;}
+      .visit-notice { font-size: .9rem; font-style: italic; padding-bottom: 0.5rem;}
+      
       // p { margin: .5rem 0; text-align: center;}
 
 
@@ -586,7 +589,7 @@ main {
 
             // VISITE VIRTUELLE BUTTON WHEN MAIN TAG HAS A CLASS "VISIT"
             .visite_virtuelle { border-radius: 1.5rem; margin-top: 1rem;
-              a { font-style: italic; font-weight: bold; padding: .7rem 1rem; 
+              a { font-style: italic; font-weight: bold; padding: .5rem 1rem; 
                 img { width: 1rem; margin-right: 6px;}
               }
             }
@@ -683,7 +686,7 @@ main {
         .update_date { font-size: .6rem; text-align: right; padding-right: 1rem;}
 
         // LOT INFORMATION TABLE ON THE GRILLE DE PRIX PAGE
-        table { font-size: .8rem; width: auto; background: white; border-collapse: collapse;
+        table { font-size: .8rem; background: white; border-collapse: collapse;
           th, td { border: 1px solid $bars; padding: 0 .3rem;}
           th span:nth-child(2) { display: none;}
           td { white-space: nowrap;}
@@ -704,7 +707,7 @@ main {
           // WHEN "ACTIVE" CLASS ADDED
           .active {
             &:hover { cursor: pointer;}
-          } 
+          }
         }
 
         .notaire_geometre { display: grid; grid-template-columns: 1fr 1fr; text-align: left; margin: .5rem 0; @include box-shadow;

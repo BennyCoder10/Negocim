@@ -574,6 +574,7 @@ main #sidebar-left .sidebar-menu .visite_virtuelle:hover a {
 }
 
 main #sidebar-left .sidebar-menu .visite_virtuelle img {
+  width: 30px;
   padding-right: 10px;
   margin-left: -2rem;
 }
@@ -1025,6 +1026,12 @@ main .main-right > * {
           box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
+#terrain_plan .main-right #plan_right .visit-notice {
+  font-size: .9rem;
+  font-style: italic;
+  padding-bottom: 0.5rem;
+}
+
 #terrain_plan .main-right #plan_right .plan {
   margin: 0;
 }
@@ -1224,7 +1231,7 @@ main .main-right > * {
 #terrain_plan_lot .main-right .lot_option .wrapper .up .lot_image .visite_virtuelle a {
   font-style: italic;
   font-weight: bold;
-  padding: .7rem 1rem;
+  padding: .5rem 1rem;
 }
 
 #terrain_plan_lot .main-right .lot_option .wrapper .up .lot_image .visite_virtuelle a img {
@@ -1319,7 +1326,6 @@ main .main-right > * {
 
 #terrain_grille .main-right .grille .wrapper table {
   font-size: .8rem;
-  width: auto;
   background: white;
   border-collapse: collapse;
 }
