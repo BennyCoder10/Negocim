@@ -506,10 +506,13 @@
 
  #terrain_option .main-right > div { margin: .5rem 0;}
 
-  // VENDES
-  main .agencies { width: 100%; border-bottom: 5px solid white;
-    img { height: 9rem;}
-  }
+  // VENDEZ & CONTACT
+  #vendez, 
+  #contact {
+    div .agencies { width: 100%; border-bottom: 5px solid white;
+      img { height: 9rem;}
+    }
+  } 
 
   // VENDES & CONTACT_SUB
   #agence .agenceTable .right { 
@@ -518,9 +521,9 @@
   }
 
   // CONTACT 
-  #contact .agencies { width: 100%; border-bottom: 5px solid white;
-    img { height: 9rem;}
-  }
+  // #contact div .agencies { width: 100%; border-bottom: 5px solid white;
+  //   img { height: 9rem;}
+  // }
   // #contact .left { display: none;}
   // #contact .right { float: none; width: 100%;}
 

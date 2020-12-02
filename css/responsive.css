@@ -1182,11 +1182,13 @@ a, button {
   #terrain_option .main-right > div {
     margin: .5rem 0;
   }
-  main .agencies {
+  #vendez div .agencies,
+  #contact div .agencies {
     width: 100%;
     border-bottom: 5px solid white;
   }
-  main .agencies img {
+  #vendez div .agencies img,
+  #contact div .agencies img {
     height: 9rem;
   }
   #agence .agenceTable .right table, #agence .agenceTable .right thead, #agence .agenceTable .right tbody, #agence .agenceTable .right th, #agence .agenceTable .right td, #agence .agenceTable .right tr {
@@ -1194,13 +1196,6 @@ a, button {
   }
   #agence .agenceTable .right .services tr td {
     width: 100%;
-  }
-  #contact .agencies {
-    width: 100%;
-    border-bottom: 5px solid white;
-  }
-  #contact .agencies img {
-    height: 9rem;
   }
   #simulateur .choice > div {
     width: 100%;

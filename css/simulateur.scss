@@ -22,18 +22,18 @@
     }
 
     // CHOICE OF TERRAIN ON THE LEFT
-    #choice_terrain { background: url(../images/simuler_terrain.jpg) no-repeat center 67% / 100%;
+    #choice_terrain { background: url(../images/simuler_terrain.jpg) no-repeat center 67% / 100%; transition: all .5s ease;
       a div { background: $sub;
         p { line-height: 4.5rem;}
       }
-      &:hover { background: url(../images/simuler_terrain.jpg) no-repeat center 67% / 108%; transition: all .5s ease;}
+      &:hover { background: url(../images/simuler_terrain.jpg) no-repeat center 67% / 108%;}
     }
 
     // CHOICE OF TERRAIN ET CONSTRUCTION ON THE RIGHT
-    #choice_terrainConst { background: url(../images/simuler_terrain_construction.jpg) no-repeat center 82% / 100%;
+    #choice_terrainConst { background: url(../images/simuler_terrain_construction.jpg) no-repeat center 82% / 100%; transition: all .5s ease;
       a div { background: $main; 
       }
-      &:hover { background: url(../images/simuler_terrain_construction.jpg) no-repeat center 82% / 106%; transition: all .5s ease;}
+      &:hover { background: url(../images/simuler_terrain_construction.jpg) no-repeat center 82% / 106%;}
     }
   }  
 

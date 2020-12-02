@@ -459,6 +459,8 @@ a, button {
 
 #simulateur .choice #choice_terrain {
   background: url(../images/simuler_terrain.jpg) no-repeat center 67%/100%;
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
 }
 
 #simulateur .choice #choice_terrain a div {
@@ -471,12 +473,12 @@ a, button {
 
 #simulateur .choice #choice_terrain:hover {
   background: url(../images/simuler_terrain.jpg) no-repeat center 67%/108%;
-  -webkit-transition: all .5s ease;
-  transition: all .5s ease;
 }
 
 #simulateur .choice #choice_terrainConst {
   background: url(../images/simuler_terrain_construction.jpg) no-repeat center 82%/100%;
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
 }
 
 #simulateur .choice #choice_terrainConst a div {
@@ -485,8 +487,6 @@ a, button {
 
 #simulateur .choice #choice_terrainConst:hover {
   background: url(../images/simuler_terrain_construction.jpg) no-repeat center 82%/106%;
-  -webkit-transition: all .5s ease;
-  transition: all .5s ease;
 }
 
 #simulateur .btm-txt {

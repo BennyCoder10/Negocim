@@ -398,7 +398,7 @@ a, button {
   }
 }
 
-#contact .agencies {
+#contact div .agencies {
   position: relative;
   float: left;
   width: 50%;
@@ -409,7 +409,7 @@ a, button {
   overflow: hidden;
 }
 
-#contact .agencies img {
+#contact div .agencies img {
   width: 100%;
   height: 13rem;
   -o-object-fit: cover;
@@ -420,7 +420,7 @@ a, button {
   transition: transform .5s ease, -webkit-transform .5s ease;
 }
 
-#contact .agencies button {
+#contact div .agencies button {
   position: absolute;
   left: 50%;
   bottom: .95rem;
@@ -435,26 +435,26 @@ a, button {
   transition: all .5s ease;
 }
 
-#contact .agencies button a {
+#contact div .agencies button a {
   display: block;
   font-size: .95rem;
   color: white;
   padding: .75rem 3rem;
 }
 
-#contact .agencies button:hover {
+#contact div .agencies button:hover {
   background: #5a9b00;
 }
 
-#contact .agencies button:focus {
+#contact div .agencies button:focus {
   outline: none;
 }
 
-#contact .agencies button a {
+#contact div .agencies button a {
   padding: .75rem;
 }
 
-#contact .agencies:hover img {
+#contact div .agencies:hover img {
   -webkit-transform: scale(1.08);
           transform: scale(1.08);
   cursor: pointer;
