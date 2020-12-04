@@ -127,23 +127,29 @@
   // TERRAIN_PLAN PAGE > MAIN
   #terrain_plan_lot .main-right .lot_option .wrapper .up .lot_info header h2 { font-size: 1.4rem;}
   
+  #terrain_grille .main-right .grille .wrapper table { font-size: .7rem;}
   #terrain_grille .main-right .grille .wrapper table tr:nth-child(1) {
     th span:nth-child(1) { display: none;}
     th span:nth-child(2) { display: block;}
-    th:nth-child(6),
-    th:last-child { display: none;}
   }
 
-  #terrain_grille .main-right .grille .wrapper table tr:nth-child(n+1) {
-    td:nth-child(6),
-    td:last-child { display: none;}
-  }
+  // #terrain_grille .main-right .grille .wrapper table tr:nth-child(1) {
+  //   th span:nth-child(1) { display: none;}
+  //   th span:nth-child(2) { display: block;}
+  //   th:nth-child(6),
+  //   th:last-child { display: none;}
+  // }
 
-  #terrain_grille .main-right .grille .wrapper table tr:nth-child(n+1):not(.active) {
-    td:nth-child(1), td:nth-child(2), td:nth-child(3), td:nth-child(4), td:nth-child(5), td:nth-child(6)
-    // td:last-child 
-    { display: none;}
-  }
+  // #terrain_grille .main-right .grille .wrapper table tr:nth-child(n+1) {
+  //   td:nth-child(6),
+  //   td:last-child { display: none;}
+  // }
+
+  // #terrain_grille .main-right .grille .wrapper table tr:nth-child(n+1):not(.active) {
+  //   td:nth-child(1), td:nth-child(2), td:nth-child(3), td:nth-child(4), td:nth-child(5), td:nth-child(6)
+  //   // td:last-child 
+  //   { display: none;}
+  // }
 
 
   // SIMULATEUR
@@ -300,6 +306,7 @@
       }
     }
   }
+
 
 
   // #terrain_plan .main-right .lot_option .wrapper .up { display: block; margin: .5rem;}
@@ -487,6 +494,10 @@
   // .plan .plan_img { width: 539px; height: 623px;}
  }
  #terrain_plan .main-right #plan_right .plan .plan_img .lot .number { font-size: 50%;}
+ #terrain_plan .main-right #plan_right .plan .plan_img .lot .tag span { font-size: 5px;}
+ #terrain_plan .main-right #plan_right .plan .plan_img .lot .tag img { width: 77%;}
+ #terrain_plan .main-right #plan_right .plan .plan_img .lot .visit img { width: 35%;}
+
 
  #terrain_plan_lot .main-right .lot_option { margin: 0;}
 
@@ -496,9 +507,31 @@
 //  main #sidebar-left .sidebar-menu button { width: 100%;}
 
  #terrain_grille .main-right .grille { margin: 0;}
+ #terrain_grille .main-right .grille .wrapper > p { padding: 0 !important;}
  #terrain_grille .main-right .grille .wrapper .notaire_geometre { display: block;}
  #terrain_grille .main-right .grille .wrapper .notaire_geometre .notaire { border-right: none; border-bottom: .5px dashed $bars;}
 
+ #terrain_grille .main-right .grille .wrapper table { font-size: 11px;}
+
+  #terrain_grille .main-right .grille .wrapper table tr:nth-child(1) {
+    th span:nth-child(1) { display: none;}
+    th span:nth-child(2) { display: block;}
+    th:nth-child(6),
+    th:last-child { display: none;}
+  }
+
+  #terrain_grille .main-right .grille .wrapper table tr:nth-child(n+1) {
+    td:nth-child(6),
+    td:last-child { display: none;}
+  }
+
+  // #terrain_grille .main-right .grille .wrapper table tr:nth-child(n+1):not(.active) {
+  //   td:nth-child(1), td:nth-child(2), td:nth-child(3), td:nth-child(4), td:nth-child(5), td:nth-child(6)
+  //   // td:last-child 
+  //   { display: none;}
+  // }
+
+   
 
  #terrain_document .main-right .document { margin: 0;
   .wrapper div p { font-size: .8rem;}

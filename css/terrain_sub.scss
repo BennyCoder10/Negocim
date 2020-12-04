@@ -465,16 +465,23 @@ main {
       .plan { margin: 0;
         .plan_img { position: relative; @include box-shadow; max-width: 730px; margin: 0 auto;
           > img { display: block; width: 100%;}
-          .lot { display: block; position: absolute; transition: none; 
-            width: 7%; 
-            display: grid; 
-            .number { 
-              font-size: 100%; font-weight: bold; margin-top: -.3rem;
+          .lot { position: absolute; transition: none;
+            line-height: 1; width: 14%;
+             display: grid; grid-gap: 2px;
+           > a { display: inline-grid; justify-items: center; text-align: center;}
+            
+            .number { font-size: 1rem; font-weight: bold;}
+
+            .tag { position: relative;
+              img { width: auto;}
+              span { font-size: 12px; color: white; position: absolute; left: 0; right: 0; top: 50%; transform: translateY(-50%);}
             }
-            .tag { 
-              width: 100%; 
+
+            .visit {
+              img { width: auto;}
             }
-          }
+          }          
+          
 
           // WHEN "ACTIVE" CLASS ADDED
           .active { cursor: pointer;}
@@ -683,7 +690,7 @@ main {
         > p { font-size: .8rem; text-align: left; padding: 0 2rem;
             &:first-child { padding-top: .5rem;}
           }
-        .update_date { font-size: .6rem; text-align: right; padding-right: 1rem;}
+        .update_date { font-size: .6rem; text-align: right; padding: 0 1rem;}
 
         // LOT INFORMATION TABLE ON THE GRILLE DE PRIX PAGE
         table { font-size: .8rem; background: white; border-collapse: collapse;
