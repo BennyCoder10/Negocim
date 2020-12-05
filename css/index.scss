@@ -171,14 +171,13 @@ header { background: $main;
       // CLICKABLE AREAS IN THE MAP
       map {
         area { 
-          &:hover { outline-color: $button_hover; }
-          // &:focus { outline: none;}
+          // &:hover { outline-color: $button_hover; }
+          &:focus { outline: none;}
         }
       }
       
       p { position: absolute; left: 0; right: 0; bottom: 1.5rem; font-size: .8rem; font-weight: bold; padding: 0 1rem;} 
     }
-
   }
 }
 // END OF MAIN

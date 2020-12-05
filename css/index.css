@@ -274,8 +274,8 @@ header .change .bar3 {
   height: 100%;
 }
 
-#terrains .main-right .map map area:hover {
-  outline-color: #5a9b00;
+#terrains .main-right .map map area:focus {
+  outline: none;
 }
 
 #terrains .main-right .map p {
