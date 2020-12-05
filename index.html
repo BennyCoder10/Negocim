@@ -59,18 +59,20 @@
       <!-- MAP OF FRANCE -->
       <div class="main-right">
         <div class="map">
-          <img src="images/carte_france.jpg" alt="map of france" class="france">
-          <!-- <svg height="210" width="500">
-            <polygon points="200,10 250,190 160,210" style="fill:lime;stroke:purple;stroke-width:1" />
-          </svg> -->
+          <img src="images/carte_france.jpg" alt="map of france" class="france" usemap="#mapFrance">
+          
+          <!-- CLICKABLE AREAS IN THE MAP -->
+          <map name="mapFrance">
+            <area shape="poly" href="terrain_bretagne.html" coords="96,82,106,93,121,101,133,105,157,108,175,104,183,119,187,135,187,152,187,165,183,177,174,187,162,201,141,219,117,188,95,166,81,156,59,146,31,143,28,121,19,97" alt="La Bretagne" title="La Bretagne">
+            <area shape="poly" href="terrain_tour.html" coords="199,165,249,150,290,147,310,149,326,156,334,172,354,185,350,198,343,215,312,240,284,249,242,256,229,246,210,235,192,225,171,220,154,217,175,199" alt="La Touraine" title="La Touraine">
+            <area shape="poly" href="terrain_orleanais.html" coords="393,67,378,75,361,91,347,115,338,140,334,154,350,171,366,178,391,179,404,174,412,156,416,132,416,114,419,101,421,90,410,71" alt="L'Orléanais" title="L'Orléanais">
+            <area shape="poly" href="terrain_sudouest.html" coords="148,228,159,228,181,234,201,242,223,260,240,283,251,315,258,354,260,396,256,434,242,473,218,510,197,536,148,498,165,471,178,458,178,432,187,402,193,373,194,349,199,327,188,315,195,294,191,275,179,264,165,256,156,245" alt="Sud-Ouest" title="Sud-Ouest">
+        </map>
+
           <p>Nous vendons des terrains à bâtir viabilisés, tout en vous laissant le choix de votre constructeur, entreprise ou architecte</p>
         </div>   
-       
         
-        <!-- <map id="test" name="carteFrance">
-          <area shape="poly" coords="0.02%, 0.17%, 98, 79, 175, 102, 191, 161, 140, 223, 92, 174, 28, 146" href="terrain_vannes.html" alt="">
-         
-        </map> -->
+
 
       </div> 
     </main>
@@ -87,6 +89,12 @@
 
   <!-- JAVASCRIPT -->
   <script src="js/index.js"></script>
+
+  <!-- FOR MAKING CLICKABLE AREAS IN THE RESPONSIVE FRANCE MAP -->
+  <script src="js/map.js"></script>
+  <script>
+    ImageMap('img[usemap]')
+  </script>
 
 </body>
 </html>

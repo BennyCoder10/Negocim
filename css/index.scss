@@ -167,8 +167,18 @@ header { background: $main;
   .main-right { text-align: center; height: 100%; width: 100%; overflow: auto;
     .map { position: relative; height: 100%; width: 100%; padding: 5px;
       img { height: 100%; }
+
+      // CLICKABLE AREAS IN THE MAP
+      map {
+        area { 
+          &:hover { outline-color: $button_hover; }
+          // &:focus { outline: none;}
+        }
+      }
+      
       p { position: absolute; left: 0; right: 0; bottom: 1.5rem; font-size: .8rem; font-weight: bold; padding: 0 1rem;} 
     }
+
   }
 }
 // END OF MAIN

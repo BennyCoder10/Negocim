@@ -1242,7 +1242,7 @@ main .main-right > * {
   display: block;
   font-size: .9rem;
   color: white;
-  padding: .3rem 1rem;
+  padding: .5rem 1rem;
 }
 
 #terrain_plan_lot .main-right .lot_option .wrapper .up .lot_image button:hover {

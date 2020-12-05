@@ -884,7 +884,7 @@ a, button {
     position: static;
   }
   #terrain_plan_lot .main-right .lot_option .wrapper .up .lot_image button a {
-    padding: 1rem 2.5rem;
+    padding: .5rem 2.5rem;
   }
   #terrain_plan_lot .main-right .lot_option .wrapper .up .lot_image button br {
     display: none;

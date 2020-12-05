@@ -590,7 +590,7 @@ main {
           .lot_image { flex: 4; margin-left: .5rem;
             > img {border: 1px solid $bars; width: 100%;}
             button { position: relative; display: block; margin: .5rem auto; background: #87c133; border-radius: 3px; 
-              a { display: block; font-size: .9rem; color: white; padding: .3rem 1rem;}
+              a { display: block; font-size: .9rem; color: white; padding: .5rem 1rem;}
               &:hover { background-color: #5a9b00;}
             }
 
