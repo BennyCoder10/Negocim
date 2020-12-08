@@ -179,100 +179,116 @@ main {
       }
       
       // PICTURES
-      .row { padding: 1.5rem 0; overflow-x: auto;
-        img {
-          display: inline-block;
-          margin: .5rem;
-          width: 30%;
-          border: 1px solid $bars; @include box-shadow;
-          &:hover { cursor: pointer; box-shadow: 0 4px 8px 0 rgb(90, 90, 90); transition: all .3s ease-out;
+      // .row { padding: 1.5rem 0; overflow-x: auto;
+      //   img {
+      //     display: inline-block;
+      //     margin: .5rem;
+      //     width: 30%;
+      //     border: 1px solid $bars; 
+      //     @include box-shadow;
+      //     &:hover { cursor: pointer; box-shadow: 0 4px 8px 0 rgb(90, 90, 90); transition: all .3s ease-out;}
+      //   }
+      // }
+      
+
+
+      // CAROUSEL TEST 1     
+      // Carousel configuration parameters
+      $item-width: 40%; // Now we can use percentages!
+      $item-separation: 0px; // This now is set with Js
+      $viewer-distance: 500px;
+      
+      .carousel {
+        // padding: 20px;
+        position: relative;
+      
+        perspective: $viewer-distance;
+        overflow: hidden;
+        
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        > * {
+          flex: 0 0 auto;
+        }
+        
+        figure {
+          margin: 1rem 0;
+          
+          width: $item-width;
+          transform-style: preserve-3d;
+          transition: transform 0.5s;
+          
+          img {
+            width: 100%;
+            box-sizing: border-box;
+            padding: 0 $item-separation / 2;
+            
+            &:not(:first-of-type) {
+              position: absolute;
+              left: 0;
+              top: 0;  
+            }
+
+            &:hover { cursor: pointer; transition: all .3s ease-out;}
+          }
+
+          // WHEN THERE ARE LESS THAN 3 IMAGES
+          img.mini_img {
+            position: static;
+            width: 40%;
+            margin: .5rem;
+            padding: 0;
+            border: 1px solid $bars; 
+            @include box-shadow;
+            &:hover { cursor: pointer; box-shadow: 0 4px 8px 0 rgb(90, 90, 90); transition: all .3s ease-out;}
           }
         }
+        
+        nav {
+          display: flex;
+          // flex-direction: column;
+          justify-content: space-between;
+          margin: 20px 0 0;
+                    
+          button {
+            // flex: 0 0 auto;
+            margin: 0 5px;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            padding: 3rem 5px;
+            border-radius: 5px;
+            // background: $main;
+            background: none;
+            transition: all .3s ease-in-out;
+            font-size: 1.5rem;
+            &:hover { background: $main; color: white;
+              
+            }      
+                     
+            cursor: pointer;
+
+            // i {
+            //   z-index: -1;
+            //   font-size: 2rem;
+            //   color: $text-dark;
+            //   transition: all .3s ease-in-out;
+            // }
+
+            span { display: none; font-size: 1rem; font-weight: bold;}
+            
+          }
+
+          .carousel_prev {
+            left: 0;
+          }
+          .carousel_next {
+            right: 0;
+          }
+        }        
       }
-
-      // .column {
-      //   padding: .4rem;
-      //   display: inline-block;
-      //   width: 24%;
-      //   img { width: 100%; border: 1px solid $bars; @include box-shadow;}
-      //   &:hover { cursor: pointer; 
-      //     img { box-shadow: 0 4px 8px 0 rgb(90, 90, 90); transition: all .3s ease-out;
-      //     }
-      //   }
-      // }
-
-      
-
-
-      // CAROUSEL TEST      
-   
-      
-      // Carousel configuration parameters
-      // $item-width: 40%; // Now we can use percentages!
-      // $item-separation: 0px; // This now is set with Js
-      // $viewer-distance: 500px;
-      
-      // .carousel {
-      //   padding: 20px;
-      
-      //   perspective: $viewer-distance;
-      //   overflow: hidden;
-        
-      //   display: flex;
-      //   flex-direction: column;
-      //   align-items: center;
-      //   > * {
-      //     flex: 0 0 auto;
-      //   }
-        
-      //   figure {
-      //     margin: 0;
-          
-      //     width: $item-width;
-      //     transform-style: preserve-3d;
-      //     transition: transform 0.5s;
-          
-      //     img {
-      //       width: 100%;
-      //       box-sizing: border-box;
-      //       padding: 0 $item-separation / 2;
-            
-      //       &:not(:first-of-type) {
-      //         position: absolute;
-      //         left: 0;
-      //         top: 0;
-      //       }
-      //     }
-      //   }
-        
-      //   nav {
-      //     display: flex;
-      //     justify-content: center;
-      //     margin: 20px 0 0;
-          
-      //     button {
-      //       flex: 0 0 auto;
-      //       margin: 0 5px;
-            
-      //       cursor: pointer;
-            
-      //       color: #333;
-      //       background: none;
-      //       border: 1px solid;
-      //       letter-spacing: 1px;
-      //       padding: 5px 10px;
-      //     }
-      //   }        
-      // }
-      // END OF CAROUSEL TEST
-
-
- 
-
-
-
-
-
+      // END OF CAROUSEL TEST 1
 
 
       // MODAL PICTURES
