@@ -831,6 +831,14 @@ main .main-right > * {
   right: 0;
 }
 
+#terrain_presentation .main-right #presentation .splide {
+  margin: 1rem .5rem;
+}
+
+#terrain_presentation .main-right #presentation .splide .splide__track .splide__list .splide__slide img {
+  border: 1px solid #707070;
+}
+
 #terrain_presentation .main-right #presentation .modal {
   display: none;
   position: fixed;
