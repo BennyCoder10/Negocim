@@ -831,12 +831,34 @@ main .main-right > * {
   right: 0;
 }
 
-#terrain_presentation .main-right #presentation .splide {
-  margin: 1rem .5rem;
+#terrain_presentation .main-right #presentation .splide__slide img {
+  width: 100%;
+  height: auto;
+  padding: 0 1vw;
 }
 
-#terrain_presentation .main-right #presentation .splide .splide__track .splide__list .splide__slide img {
+#terrain_presentation .main-right #presentation .carousel {
+  padding: 1rem 0;
+}
+
+#terrain_presentation .main-right #presentation .carousel .splide__track, #terrain_presentation .main-right #presentation .carousel .splide__list, #terrain_presentation .main-right #presentation .carousel .splide__slide, #terrain_presentation .main-right #presentation .carousel img {
+  all: unset;
+}
+
+#terrain_presentation .main-right #presentation .carousel .splide__slide img {
+  width: 35%;
+  margin: 3vw 2vw;
   border: 1px solid #707070;
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+#terrain_presentation .main-right #presentation .carousel .splide__slide img:hover {
+  cursor: pointer;
+  -webkit-box-shadow: 0 4px 8px 0 #5a5a5a;
+          box-shadow: 0 4px 8px 0 #5a5a5a;
+  -webkit-transition: all .3s ease-out;
+  transition: all .3s ease-out;
 }
 
 #terrain_presentation .main-right #presentation .modal {

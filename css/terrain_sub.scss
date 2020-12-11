@@ -293,18 +293,37 @@ main {
 
       // CAROUSEL TEST 2
 
-      .splide { margin: 1rem .5rem;
-        .splide__track .splide__list .splide__slide img {
-          // display: inline-block;
-          // margin: .5rem;
-          // // width: 300px;
-          // // height: auto;
-          border: 1px solid $bars; 
-        }
+      // .splide { margin: 1rem .5rem;
+      //   .splide__track .splide__list .splide__slide img {
+      //     // display: inline-block;
+      //     // margin: .5rem;
+      //     // // width: 300px;
+      //     // // height: auto;
+      //     border: 1px solid $bars; 
+      //   }
+      // }
+      
+      
+      .splide__slide img {
+        width : 100%;
+        height: auto;
+        padding: 0 1vw;
       }
-      
-      
-      
+
+      // WHEN THERE ARE LESS THAN 3 IMAGES
+      .carousel { padding: 1rem 0;
+        .splide__track, .splide__list, .splide__slide, img {
+          all: unset;
+        }
+        .splide__slide { 
+          img { width: 35%; margin: 3vw 2vw;
+          
+            border: 1px solid $bars; 
+            @include box-shadow;
+            &:hover { cursor: pointer; box-shadow: 0 4px 8px 0 rgb(90, 90, 90); transition: all .3s ease-out;}
+          }
+        }
+      }       
 
       // END OF CAROUSEL TEST 2
 

@@ -244,7 +244,7 @@
 }
 
 .splide {
-  padding: 2rem 0;
+  padding: 3em;
 }
 
 .splide__slide {
@@ -335,4 +335,12 @@
 .splide--ttb > .splide__pagination .splide__pagination__page {
   width: 5px;
   height: 20px;
+}
+
+.splide__arrow--prev {
+  left: 0;
+}
+
+.splide__arrow--next {
+  right: 0;
 }

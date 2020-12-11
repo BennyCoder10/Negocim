@@ -16,10 +16,14 @@
   <link rel="stylesheet" href="css/default.css">
   <link rel="stylesheet" href="css/terrain_sub.css">
   <link rel="stylesheet" href="css/responsive.css">
+
+  <!-- SPLIDE -->
   <!-- <link rel="stylesheet" href="css/splide.min.css"> -->
   <link rel="stylesheet" href="css/splide-core.min.css">
   <link rel="stylesheet" href="css/splide-sea-green.min.css">
-  
+  <!-- END OF SPLIDE -->
+
+ 
 
 </head>
 
@@ -98,11 +102,17 @@
 
 
 
-          <!-- CAROUSEL TEST 2-->
-
-          <div class="splide">
+          <!-- CAROUSEL TEST 2 SPLIDE -->
+          <div id="carousel" class="splide">
             <div class="splide__track">
               <ul class="splide__list">
+                <li class="splide__slide">
+                  <img src="images/lotissement/photo_414.jpg" onclick="openModal();currentSlide(1)">    
+                </li>
+                <li class="splide__slide">
+                  <img src="images/lotissement/photo_415.jpg" onclick="openModal();currentSlide(2)">
+
+                </li>
                 <li class="splide__slide">
                   <img src="images/lotissement/photo_414.jpg" onclick="openModal();currentSlide(1)">    
 
@@ -115,19 +125,10 @@
                   <img src="images/lotissement/photo_414.jpg" onclick="openModal();currentSlide(1)">    
 
                 </li>
-                <li class="splide__slide">
-                  <img src="images/lotissement/photo_414.jpg" onclick="openModal();currentSlide(1)">    
-
-                </li>
-                <li class="splide__slide">
-                  <img src="images/lotissement/photo_414.jpg" onclick="openModal();currentSlide(1)">    
-
-                </li>
               </ul>
             </div>
           </div>
-
-          <!-- END OF CAROUSEL TEST 2 -->
+          <!-- END OF CAROUSEL TEST 2 SPLIDE -->
 
 
           <!-- The Modal/Lightbox -->
@@ -222,19 +223,8 @@
   <script src="js/terrain.js"></script>
   <script src="js/splide.min.js"></script>
 
-<!-- <script src="js/jquery.js"></script> -->
+
 <script>
-	document.addEventListener( 'DOMContentLoaded', function () {
-    new Splide( '.splide', {
-      type   : 'loop',
-      // cover  : true,
-	    height : '10rem',
-      padding: {
-        right: '5rem',
-        left : '5rem',
-      },
-    } ).mount();
-  } ); 
 
 </script>
 

@@ -38,107 +38,32 @@ if (main.getAttribute("id") === "terrain_presentation") {
     } 
     slides[slideIndex-1].style.display = "block";
   };
-
   // END OF MODAL FOR PRESENTATION IMAGES
 
 
-
   // CAROUSEL TEST 1
-  // const carouselImages = document.getElementsByTagName("figure")[0].getElementsByTagName("img");
+  const carousel = document.getElementById("carousel");
+  const splideSlide = document.getElementsByClassName("splide__slide");
+  
+  console.log(splideSlide.length);
 
-  // // WHEN THERE ARE LESS THAN 3 IMAGES
-  // if (carouselImages.length < 3) {
-  //   var i;
-  //   var nav = document.getElementById("carousel_nav");
-  //   var figure = document.querySelector('figure');
-
-  //   figure.style.width = "100%";
-  //   nav.style.display = "none";
-
-
-  //   for (i = 0; i < carouselImages.length; i++) { 
-  //     carouselImages[i].classList.add("mini_img");
-  //   }
+  // WHEN THERE ARE LESS THAN 3 IMAGES
+  if (splideSlide.length < 3) {
+    carousel.classList.remove("splide");
+    carousel.classList.add("carousel");   
      
   
-  // } else { // WHEN THERE ARE MORE THAN 2 IMAGES
-
-  //   window.addEventListener('load', () => {
-  //     var
-  //       carousels = document.querySelectorAll('.carousel')
-  //     ;
-
-  //     for (var i = 0; i < carousels.length; i++) {
-  //       carousel(carousels[i]);
-  //     }
-  //   });
-
-  //   function carousel(root) {
-  //     var
-  //       figure = root.querySelector('figure'),
-  //       nav = root.querySelector('nav'),
-  //       images = figure.children,
-  //       n = images.length,
-  //       gap = root.dataset.gap || 0,
-  //       bfc = 'bfc' in root.dataset,
-        
-  //       theta =  2 * Math.PI / n,
-  //       currImage = 0
-  //     ;
-      
-  //     setupCarousel(n, parseFloat(getComputedStyle(images[0]).width));
-  //     window.addEventListener('resize', () => { 
-  //       setupCarousel(n, parseFloat(getComputedStyle(images[0]).width)) 
-  //     });
-
-  //     setupNavigation();
-
-  //     function setupCarousel(n, s) {
-  //       var	
-  //         apothem = s / (2 * Math.tan(Math.PI / n))
-  //       ;
-        
-  //       figure.style.transformOrigin = `50% 50% ${- apothem}px`;
-
-  //       for (var i = 0; i < n; i++)
-  //         images[i].style.padding = `${gap}px`;
-  //       for (i = 1; i < n; i++) {
-  //         images[i].style.transformOrigin = `50% 50% ${- apothem}px`;
-  //         images[i].style.transform = `rotateY(${i * theta}rad)`;
-  //       }
-  //       if (bfc)
-  //         for (i = 0; i < n; i++)
-  //           images[i].style.backfaceVisibility = 'hidden';
-        
-  //       rotateCarousel(currImage);
-  //     }
-
-  //     function setupNavigation() {
-  //       nav.addEventListener('click', onClick, true);
-        
-  //       function onClick(e) {
-  //         e.stopPropagation();
-          
-  //         var t = e.target;
-  //         if (t.tagName.toUpperCase() != 'BUTTON')
-  //           return;
-          
-  //         if (t.classList.contains('carousel_next')) {
-  //           currImage++;
-  //         }
-  //         else {
-  //           currImage--;
-  //         }
-          
-  //         rotateCarousel(currImage);
-  //       }        
-  //     }
-
-  //     function rotateCarousel(imageIndex) {
-  //       figure.style.transform = `rotateY(${imageIndex * -theta}rad)`;
-  //     }    
-  //   }
-  // } 
+  } else { // WHEN THERE ARE MORE THAN 2 IMAGES
+    document.addEventListener( 'DOMContentLoaded', function () {
+      new Splide( '.splide', {
+        type   : 'loop',
+        // cover  : true,
+        // fixedWidth : '10rem',
+        perPage: 3,
+        focus  : 'center',      
+      } ).mount();
+    }); 
+  } 
   // END OF CAROUSEL TEST 1
   
 
