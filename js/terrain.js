@@ -59,14 +59,14 @@ if (main.getAttribute("id") === "terrain_presentation") {
           type   : 'loop',
           perPage: 3,
           perMove: 1,
-          focus  : 'center',      
+          focus  : 'center',
         } ).mount();
       } else { // WHEN SCREEN WIDTH IS LESS THAN 500PX
         new Splide( '.splide', {
           type   : 'loop',
           perPage: 2,
           perMove: 1,
-          focus  : 'center',      
+          focus  : 'center', 
         } ).mount();
       }      
     }); 
