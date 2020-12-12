@@ -17,14 +17,10 @@
   <link rel="stylesheet" href="css/terrain_sub.css">
   <link rel="stylesheet" href="css/responsive.css">
 
-  <!-- SPLIDE -->
-  <!-- <link rel="stylesheet" href="css/splide.min.css"> -->
+  <!-- SPLIDE CAROUSEL -->
   <link rel="stylesheet" href="css/splide-core.min.css">
-  <link rel="stylesheet" href="css/splide-sea-green.min.css">
-  <!-- END OF SPLIDE -->
-
- 
-
+  <link rel="stylesheet" href="css/splide-skyblue.min.css">
+  <!-- END OF SPLIDE CAROUSEL -->
 </head>
 
 <body>
@@ -74,35 +70,7 @@
             <h2><i>Le Clos de Cante Gric</i></h2>
           </div>
 
-          <!-- <div class="row clear">
-              <img src="images/lotissement/photo_414.jpg" onclick="openModal();currentSlide(1)">
-              <img src="images/lotissement/photo_415.jpg" onclick="openModal();currentSlide(2)">
-          </div> -->
-
-
-          <!-- CAROUSEL TEST 1 -->
-          <!-- <div id="carousel" class="carousel" data-gap="20">
-            <figure>
-              <img src="images/lotissement/photo_414.jpg" onclick="openModal();currentSlide(1)">    
-              <img src="images/lotissement/photo_415.jpg" onclick="openModal();currentSlide(2)">
-              <img src="images/lotissement/photo_414.jpg" onclick="openModal();currentSlide(1)">
-              <img src="images/lotissement/photo_415.jpg" onclick="openModal();currentSlide(2)">
-              <img src="images/lotissement/photo_414.jpg" onclick="openModal();currentSlide(1)">
-              <img src="images/lotissement/photo_415.jpg" onclick="openModal();currentSlide(2)">
-              <img src="images/lotissement/photo_414.jpg" onclick="openModal();currentSlide(1)">    
-              <img src="images/lotissement/photo_415.jpg" onclick="openModal();currentSlide(2)">
-            </figure>
-            <nav id="carousel_nav">
-              <button class="nav carousel_prev">&#10094;</button>
-              <button class="nav carousel_next">&#10095;</button>
-            </nav>
-          </div> -->
-
-          <!-- END OF CAROUSEL TEST -->
-
-
-
-          <!-- CAROUSEL TEST 2 SPLIDE -->
+          <!-- SPLIDE CAROUSEL -->
           <div id="carousel" class="splide">
             <div class="splide__track">
               <ul class="splide__list">
@@ -114,21 +82,17 @@
                 </li>
                 <li class="splide__slide">
                   <img src="images/lotissement/photo_414.jpg" onclick="openModal();currentSlide(1)">    
-
                 </li>
                 <li class="splide__slide">
                   <img src="images/lotissement/photo_415.jpg" onclick="openModal();currentSlide(2)">
-
                 </li>
                 <li class="splide__slide">
                   <img src="images/lotissement/photo_414.jpg" onclick="openModal();currentSlide(1)">    
-
                 </li>
               </ul>
             </div>
           </div>
-          <!-- END OF CAROUSEL TEST 2 SPLIDE -->
-
+          <!-- END OF SPLIDE CAROUSEL -->
 
           <!-- The Modal/Lightbox -->
           <div id="myModal" class="modal">
@@ -221,60 +185,6 @@
   <script src="js/index.js"></script>
   <script src="js/terrain.js"></script>
   <script src="js/splide.min.js"></script>
-
-
-<script>
-
-</script>
-
-
-  <!-- <script>
-    function shiftLeft() {
-    const boxes = document.querySelectorAll(".box");
-    const tmpNode = boxes[0];
-    boxes[0].className = "box move-out-from-left";
-
-    setTimeout(function() {
-        if (boxes.length > 5) {
-            tmpNode.classList.add("box--hide");
-            boxes[5].className = "box move-to-position5-from-left";
-        }
-        boxes[1].className = "box move-to-position1-from-left";
-        boxes[2].className = "box move-to-position2-from-left";
-        boxes[3].className = "box move-to-position3-from-left";
-        boxes[4].className = "box move-to-position4-from-left";
-        boxes[0].remove();
-
-        document.querySelector(".cards_container").appendChild(tmpNode);
-
-    }, 500);
-
-    }
-
-    function shiftRight() {
-    const boxes = document.querySelectorAll(".box");
-    boxes[4].className = "box move-out-from-right";
-    setTimeout(function() {
-        const noOfCards = boxes.length;
-        if (noOfCards > 4) {
-            boxes[4].className = "box box--hide";
-        }
-
-        const tmpNode = boxes[noOfCards - 1];
-        tmpNode.classList.remove("box--hide");
-        boxes[noOfCards - 1].remove();
-        let parentObj = document.querySelector(".cards_container");
-        parentObj.insertBefore(tmpNode, parentObj.firstChild);
-        tmpNode.className = "box move-to-position1-from-right";
-        boxes[0].className = "box move-to-position2-from-right";
-        boxes[1].className = "box move-to-position3-from-right";
-        boxes[2].className = "box move-to-position4-from-right";
-        boxes[3].className = "box move-to-position5-from-right";
-    }, 500);
-
-    }
-  </script> -->
-
   
 </body>
 </html>

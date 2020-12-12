@@ -41,32 +41,32 @@ if (main.getAttribute("id") === "terrain_presentation") {
   // END OF MODAL FOR PRESENTATION IMAGES
 
 
-  // CAROUSEL TEST 1
+  // SPLIDE CAROUSEL 
   const carousel = document.getElementById("carousel");
   const splideSlide = document.getElementsByClassName("splide__slide");
   
   console.log(splideSlide.length);
 
-  // WHEN THERE ARE LESS THAN 3 IMAGES
+  // LESS THAN 3 IMAGES
   if (splideSlide.length < 3) {
     carousel.classList.remove("splide");
     carousel.classList.add("carousel");   
      
   
-  } else { // WHEN THERE ARE MORE THAN 2 IMAGES
+  } else { // MORE THAN 2 IMAGES
+    carousel.classList.add("splide"); 
+    carousel.classList.remove("carousel");
+
     document.addEventListener( 'DOMContentLoaded', function () {
       new Splide( '.splide', {
         type   : 'loop',
-        // cover  : true,
-        // fixedWidth : '10rem',
         perPage: 3,
+        flickPower: 500,
         focus  : 'center',      
       } ).mount();
     }); 
   } 
-  // END OF CAROUSEL TEST 1
-  
-
+  // END OF SPLIDE CAROUSEL 
 }
 
 
