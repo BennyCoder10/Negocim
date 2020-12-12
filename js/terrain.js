@@ -1,6 +1,5 @@
 const main = document.getElementsByTagName("main")[0];
 
-
 // FOR TERRRAINS_PRESENTATION PAGE
 if (main.getAttribute("id") === "terrain_presentation") {
 
@@ -45,25 +44,31 @@ if (main.getAttribute("id") === "terrain_presentation") {
   const carousel = document.getElementById("carousel");
   const splideSlide = document.getElementsByClassName("splide__slide");
   
-  console.log(splideSlide.length);
-
   // LESS THAN 3 IMAGES
   if (splideSlide.length < 3) {
     carousel.classList.remove("splide");
-    carousel.classList.add("carousel");   
-     
-  
+    carousel.classList.add("carousel");    
   } else { // MORE THAN 2 IMAGES
     carousel.classList.add("splide"); 
     carousel.classList.remove("carousel");
 
     document.addEventListener( 'DOMContentLoaded', function () {
-      new Splide( '.splide', {
-        type   : 'loop',
-        perPage: 3,
-        flickPower: 500,
-        focus  : 'center',      
-      } ).mount();
+      
+      if (window.innerWidth > 500) {
+        new Splide( '.splide', {
+          type   : 'loop',
+          perPage: 3,
+          perMove: 1,
+          focus  : 'center',      
+        } ).mount();
+      } else { // WHEN SCREEN WIDTH IS LESS THAN 500PX
+        new Splide( '.splide', {
+          type   : 'loop',
+          perPage: 2,
+          perMove: 1,
+          focus  : 'center',      
+        } ).mount();
+      }      
     }); 
   } 
   // END OF SPLIDE CAROUSEL 
