@@ -841,7 +841,7 @@ main .main-right > * {
   color: white;
 }
 
-#terrain_single_page .main-right #plan_du_lotissement {
+#terrain_single_page .main-right #plan_right {
   position: relative;
   height: auto;
   padding: .5rem;
@@ -849,7 +849,7 @@ main .main-right > * {
   margin-bottom: .7rem;
 }
 
-#terrain_single_page .main-right #plan_du_lotissement .click {
+#terrain_single_page .main-right #plan_right .click {
   color: white;
   width: -webkit-fit-content;
   width: -moz-fit-content;
@@ -861,17 +861,17 @@ main .main-right > * {
           box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
-#terrain_single_page .main-right #plan_du_lotissement .visit-notice {
+#terrain_single_page .main-right #plan_right .visit-notice {
   font-size: .9rem;
   font-style: italic;
   padding-bottom: 0.5rem;
 }
 
-#terrain_single_page .main-right #plan_du_lotissement .plan {
+#terrain_single_page .main-right #plan_right .plan {
   margin: 0;
 }
 
-#terrain_single_page .main-right #plan_du_lotissement .plan .plan_img {
+#terrain_single_page .main-right #plan_right .plan .plan_img {
   position: relative;
   -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
           box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
@@ -880,12 +880,12 @@ main .main-right > * {
   /* MAP IMG VERSION */
 }
 
-#terrain_single_page .main-right #plan_du_lotissement .plan .plan_img > img {
+#terrain_single_page .main-right #plan_right .plan .plan_img > img {
   display: block;
   width: 100%;
 }
 
-#terrain_single_page .main-right #plan_du_lotissement .plan .plan_img .lot {
+#terrain_single_page .main-right #plan_right .plan .plan_img .lot {
   position: absolute;
   -webkit-transition: none;
   transition: none;
@@ -896,27 +896,27 @@ main .main-right > * {
   grid-gap: 2px;
 }
 
-#terrain_single_page .main-right #plan_du_lotissement .plan .plan_img .lot > a {
+#terrain_single_page .main-right #plan_right .plan .plan_img .lot > a {
   display: -ms-inline-grid;
   display: inline-grid;
   justify-items: center;
   text-align: center;
 }
 
-#terrain_single_page .main-right #plan_du_lotissement .plan .plan_img .lot .number {
+#terrain_single_page .main-right #plan_right .plan .plan_img .lot .number {
   font-size: 1rem;
   font-weight: bold;
 }
 
-#terrain_single_page .main-right #plan_du_lotissement .plan .plan_img .lot .tag {
+#terrain_single_page .main-right #plan_right .plan .plan_img .lot .tag {
   position: relative;
 }
 
-#terrain_single_page .main-right #plan_du_lotissement .plan .plan_img .lot .tag img {
+#terrain_single_page .main-right #plan_right .plan .plan_img .lot .tag img {
   width: auto;
 }
 
-#terrain_single_page .main-right #plan_du_lotissement .plan .plan_img .lot .tag span {
+#terrain_single_page .main-right #plan_right .plan .plan_img .lot .tag span {
   font-size: 12px;
   color: white;
   position: absolute;
@@ -927,65 +927,65 @@ main .main-right > * {
           transform: translateY(-50%);
 }
 
-#terrain_single_page .main-right #plan_du_lotissement .plan .plan_img .lot .visit img {
+#terrain_single_page .main-right #plan_right .plan .plan_img .lot .visit img {
   width: auto;
 }
 
-#terrain_single_page .main-right #plan_du_lotissement .plan .plan_img #lot1868 {
+#terrain_single_page .main-right #plan_right .plan .plan_img #lot1868 {
   left: 49%;
   top: 28%;
 }
 
-#terrain_single_page .main-right #plan_du_lotissement .plan .plan_img #lot1869 {
+#terrain_single_page .main-right #plan_right .plan .plan_img #lot1869 {
   left: 48%;
   top: 44%;
 }
 
-#terrain_single_page .main-right #plan_du_lotissement .plan .plan_img #lot1870 {
+#terrain_single_page .main-right #plan_right .plan .plan_img #lot1870 {
   left: 48%;
   top: 60%;
 }
 
-#terrain_single_page .main-right #plan_du_lotissement .plan .plan_img #lot1871 {
+#terrain_single_page .main-right #plan_right .plan .plan_img #lot1871 {
   left: 50%;
   top: 78%;
 }
 
-#terrain_single_page .main-right #plan_du_lotissement .plan .plan_img #lot1872 {
+#terrain_single_page .main-right #plan_right .plan .plan_img #lot1872 {
   left: 34%;
   top: 79%;
 }
 
-#terrain_single_page .main-right #plan_du_lotissement .plan .plan_img #lot1873 {
+#terrain_single_page .main-right #plan_right .plan .plan_img #lot1873 {
   left: 17%;
   top: 73%;
 }
 
-#terrain_single_page .main-right #plan_du_lotissement .plan .plan_img #lot1874 {
+#terrain_single_page .main-right #plan_right .plan .plan_img #lot1874 {
   left: 19%;
   top: 58%;
 }
 
-#terrain_single_page .main-right #plan_du_lotissement .plan .plan_img #lot1875 {
+#terrain_single_page .main-right #plan_right .plan .plan_img #lot1875 {
   left: 19%;
   top: 44.5%;
 }
 
-#terrain_single_page .main-right #plan_du_lotissement .plan .plan_img #lot1876 {
+#terrain_single_page .main-right #plan_right .plan .plan_img #lot1876 {
   left: 19%;
   top: 31%;
 }
 
-#terrain_single_page .main-right #plan_du_lotissement .plan .plan_img #lot1877 {
+#terrain_single_page .main-right #plan_right .plan .plan_img #lot1877 {
   left: 19%;
   top: 17%;
 }
 
-#terrain_single_page .main-right #plan_du_lotissement .plan .plan_img .active {
+#terrain_single_page .main-right #plan_right .plan .plan_img .active {
   cursor: pointer;
 }
 
-#terrain_single_page .main-right #plan_du_lotissement .lot_notice {
+#terrain_single_page .main-right #plan_right .lot_notice {
   font-size: .8rem;
   max-width: 730px;
   padding: .5rem;
@@ -994,12 +994,12 @@ main .main-right > * {
   border: 1px solid #707070;
 }
 
-#terrain_single_page .main-right #plan_du_lotissement .lot_notice p {
+#terrain_single_page .main-right #plan_right .lot_notice p {
   text-align: center;
   font-style: italic;
 }
 
-#terrain_single_page .main-right #plan_du_lotissement .lot_notice span {
+#terrain_single_page .main-right #plan_right .lot_notice span {
   text-align: center;
   display: block;
   padding: .5rem;

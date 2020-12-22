@@ -127,8 +127,8 @@
   // TERRAIN_PLAN PAGE > MAIN
   #terrain_plan_lot .main-right .lot_option .wrapper .up .lot_info header h2 { font-size: 1.4rem;}
   
-  #terrain_single_page .main-right .grille .wrapper table { font-size: .7rem;}
-  #terrain_single_page .main-right .grille .wrapper table tr:nth-child(1) {
+  #terrain_grille .main-right .grille .wrapper table { font-size: .7rem;}
+  #terrain_grille .main-right .grille .wrapper table tr:nth-child(1) {
     th span:nth-child(1) { display: none;}
     th span:nth-child(2) { display: block;}
   }
@@ -215,10 +215,10 @@
 
   // TERRAIN_SUB PAGES
   #terrain_single_page,
-  // #terrain_presentation, 
-  // #terrain_plan,
+  #terrain_presentation, 
+  #terrain_plan,
   #terrain_plan_lot,
-  // #terrain_grille, 
+  #terrain_grille, 
   #terrain_document, 
   #terrain_option
    {
@@ -485,23 +485,37 @@
   //   margin-right: 0rem;
   // }
 
-
-#terrain_single_page .main-right #presentation { 
-  // margin: 0;
-// #terrain_presentation .main-right #presentation { margin: 0;
+#terrain_presentation .main-right #presentation { margin: 0;}
+#terrain_single_page .main-right #presentation { margin: 0;
   
   .btm { padding: .5rem .3rem;}
 
 }
 
 //  #terrain_plan .main-right .lot_option .wrapper .up .lot_info #lot_image_mobile { width: 70%;}
- #terrain_plan .main-right #plan_right { margin: 0;
-  // .plan .plan_img { width: 539px; height: 623px;}
- }
- #terrain_plan .main-right #plan_right .plan .plan_img .lot .number { font-size: 50%;}
- #terrain_plan .main-right #plan_right .plan .plan_img .lot .tag span { font-size: 5px;}
- #terrain_plan .main-right #plan_right .plan .plan_img .lot .tag img { width: 77%;}
- #terrain_plan .main-right #plan_right .plan .plan_img .lot .visit img { width: 35%;}
+#terrain_single_page,
+#terrain_plan {
+  .main-right {
+    #plan_right { margin: 0;
+      // .plan .plan_img { width: 539px; height: 623px;}
+      .plan .plan_img .lot {
+        .tag {
+          span { font-size: 5px;}
+          img { width: 77%;}
+        }
+        .visit img { width: 35%;}
+        .number { font-size: 50%;}
+      }
+    }
+  } 
+}
+
+
+ 
+//  .plan .plan_img .lot .tag span { font-size: 5px;}
+//  .plan .plan_img .lot .tag img { width: 77%;}
+//  .plan .plan_img .lot .visit img { width: 35%;}
+//  .plan .plan_img .lot .number { font-size: 50%;}
 
 
  #terrain_plan_lot .main-right .lot_option { margin: 0;}
@@ -511,31 +525,37 @@
 
 //  main #sidebar-left .sidebar-menu button { width: 100%;}
 
- #terrain_single_page .main-right .grille { margin: 0;}
- #terrain_single_page .main-right .grille .wrapper > p { padding: 0 !important;}
- #terrain_single_page .main-right .grille .wrapper .notaire_geometre { display: block;}
- #terrain_single_page .main-right .grille .wrapper .notaire_geometre .notaire { border-right: none; border-bottom: .5px dashed $bars;}
 
- #terrain_single_page .main-right .grille .wrapper table { font-size: 11px;}
-
-  #terrain_single_page .main-right .grille .wrapper table tr:nth-child(1) {
-    th span:nth-child(1) { display: none;}
-    th span:nth-child(2) { display: block;}
-    th:nth-child(6),
-    th:last-child { display: none;}
-  }
-
-  #terrain_single_page .main-right .grille .wrapper table tr:nth-child(n+1) {
-    td:nth-child(6),
-    td:last-child { display: none;}
-  }
+#terrain_single_page, 
+#terrain_grille {
+  .main-right .grille { margin: 0;
+    .wrapper {
+      > p { padding: 0 !important;}
+      .notaire_geometre { display: block;
+        .notaire { border-right: none; border-bottom: .5px dashed $bars;}
+      }
+      table { font-size: 11px;
+        tr:nth-child(1) {
+          th span:nth-child(1) { display: none;}
+          th span:nth-child(2) { display: block;}
+          th:nth-child(6),
+          th:last-child { display: none;}
+        }   
+        
+        tr:nth-child(n+1) {
+          td:nth-child(6),
+          td:last-child { display: none;}
+        }
+      }
+    } 
+  } 
+}
 
   // #terrain_grille .main-right .grille .wrapper table tr:nth-child(n+1):not(.active) {
   //   td:nth-child(1), td:nth-child(2), td:nth-child(3), td:nth-child(4), td:nth-child(5), td:nth-child(6)
   //   // td:last-child 
   //   { display: none;}
   // }
-
    
 
  #terrain_document .main-right .document { margin: 0;
