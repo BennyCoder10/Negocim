@@ -447,7 +447,7 @@ a, button {
   cursor: pointer;
   color: #4cb0b2;
   background: white;
-  padding: 1rem .5rem .3rem 1.4rem;
+  padding: .6rem .5rem .6rem 1.4rem;
 }
 
 #terrain #sidebar-left .sidebar-menu .dropdown-btn:hover {

@@ -1,7 +1,7 @@
 const main = document.getElementsByTagName("main")[0];
 
 // FOR TERRRAINS_PRESENTATION PAGE
-if (main.getAttribute("id") === "terrain_presentation") {
+if (main.getAttribute("id") === "terrain_single_page") {
 
   // MODAL FOR PRESENTATION IMAGES
   // Open the Modal

@@ -640,43 +640,49 @@ main .main-right {
 main .main-right > * {
   height: 100%;
   padding: .5rem;
-  margin: 0 !important;
   background-color: #e0e0e0ad;
 }
 
-#terrain_presentation {
+#terrain_single_page {
   position: relative;
 }
 
-#terrain_presentation .main-right {
+#terrain_single_page .main-right {
   float: right;
   text-align: center;
 }
 
-#terrain_presentation .main-right #presentation {
-  position: relative;
-  padding: .5rem;
-  background-color: #e0e0e0ad;
-  height: 100%;
-  /* Modal Content */
+#terrain_single_page .main-right .header {
+  height: auto;
+  margin-bottom: .5rem;
+  background: white;
+  border-top: .3rem solid #e0e0e0;
+  border-bottom: .3rem solid #e0e0e0;
 }
 
-#terrain_presentation .main-right #presentation .header {
-  padding: .5rem;
-  background: white;
+#terrain_single_page .main-right .header h2 i {
+  color: #87c133;
+}
+
+#terrain_single_page .main-right .subtitle {
+  color: white;
+  padding: .5rem 0;
+  margin-bottom: 1rem;
+  background-color: #87c133 !important;
   -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
           box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
-#terrain_presentation .main-right #presentation .header h3 {
-  font-weight: normal;
+#terrain_single_page .main-right #presentation {
+  position: relative;
+  padding: .5rem;
+  background-color: #e0e0e0ad;
+  height: auto;
+  margin-bottom: .7rem;
+  /* Modal Content */
 }
 
-#terrain_presentation .main-right #presentation .header h2 i {
-  color: #87c133;
-}
-
-#terrain_presentation .main-right #presentation .visite_virtuelle {
+#terrain_single_page .main-right #presentation .visite_virtuelle {
   display: inline-block;
   text-align: center;
   font-style: italic;
@@ -691,42 +697,42 @@ main .main-right > * {
   transition: all .5s ease;
 }
 
-#terrain_presentation .main-right #presentation .visite_virtuelle:hover {
+#terrain_single_page .main-right #presentation .visite_virtuelle:hover {
   background: #5a9b00;
 }
 
-#terrain_presentation .main-right #presentation .visite_virtuelle a {
+#terrain_single_page .main-right #presentation .visite_virtuelle a {
   font-size: 1rem;
   color: white;
   margin-left: 1.3rem;
 }
 
-#terrain_presentation .main-right #presentation .visite_virtuelle a img {
+#terrain_single_page .main-right #presentation .visite_virtuelle a img {
   padding-right: 10px;
   margin-left: -2rem;
 }
 
-#terrain_presentation .main-right #presentation .btm {
+#terrain_single_page .main-right #presentation .btm {
   padding: 1rem;
   background: white;
   -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
           box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
-#terrain_presentation .main-right #presentation .btm p {
+#terrain_single_page .main-right #presentation .btm p {
   padding: .5rem;
   text-align: left;
 }
 
-#terrain_presentation .main-right #presentation .carousel {
+#terrain_single_page .main-right #presentation .carousel {
   padding: 1rem 0;
 }
 
-#terrain_presentation .main-right #presentation .carousel .splide__track, #terrain_presentation .main-right #presentation .carousel .splide__list, #terrain_presentation .main-right #presentation .carousel .splide__slide, #terrain_presentation .main-right #presentation .carousel img {
+#terrain_single_page .main-right #presentation .carousel .splide__track, #terrain_single_page .main-right #presentation .carousel .splide__list, #terrain_single_page .main-right #presentation .carousel .splide__slide, #terrain_single_page .main-right #presentation .carousel img {
   all: unset;
 }
 
-#terrain_presentation .main-right #presentation .carousel .splide__slide img {
+#terrain_single_page .main-right #presentation .carousel .splide__slide img {
   width: 35%;
   margin: 3vw 2vw;
   border: 1px solid #707070;
@@ -734,7 +740,7 @@ main .main-right > * {
           box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
-#terrain_presentation .main-right #presentation .carousel .splide__slide img:hover {
+#terrain_single_page .main-right #presentation .carousel .splide__slide img:hover {
   cursor: pointer;
   -webkit-box-shadow: 0 4px 8px 0 #5a5a5a;
           box-shadow: 0 4px 8px 0 #5a5a5a;
@@ -742,7 +748,7 @@ main .main-right > * {
   transition: all .3s ease-out;
 }
 
-#terrain_presentation .main-right #presentation .modal {
+#terrain_single_page .main-right #presentation .modal {
   display: none;
   position: fixed;
   left: 0;
@@ -756,7 +762,7 @@ main .main-right > * {
   z-index: 1;
 }
 
-#terrain_presentation .main-right #presentation .modal-content {
+#terrain_single_page .main-right #presentation .modal-content {
   display: inline-block;
   position: relative;
   background-color: #fefefe;
@@ -768,25 +774,25 @@ main .main-right > * {
   border-radius: .5rem;
 }
 
-#terrain_presentation .main-right #presentation .close {
+#terrain_single_page .main-right #presentation .close {
   position: absolute;
   top: -29px;
   right: -23px;
   font-size: 35px;
 }
 
-#terrain_presentation .main-right #presentation .close i {
+#terrain_single_page .main-right #presentation .close i {
   color: white;
 }
 
-#terrain_presentation .main-right #presentation .close:hover,
-#terrain_presentation .main-right #presentation .close:focus {
+#terrain_single_page .main-right #presentation .close:hover,
+#terrain_single_page .main-right #presentation .close:focus {
   color: #999;
   text-decoration: none;
   cursor: pointer;
 }
 
-#terrain_presentation .main-right #presentation .mySlides {
+#terrain_single_page .main-right #presentation .mySlides {
   display: none;
   height: auto;
   max-width: 85vw;
@@ -794,7 +800,7 @@ main .main-right > * {
   padding: .5rem;
 }
 
-#terrain_presentation .main-right #presentation .arrow {
+#terrain_single_page .main-right #presentation .arrow {
   position: absolute;
   top: 50%;
   -webkit-transform: translateY(-50%);
@@ -802,23 +808,23 @@ main .main-right > * {
   padding: 20% 40%;
 }
 
-#terrain_presentation .main-right #presentation .arrow_prev {
+#terrain_single_page .main-right #presentation .arrow_prev {
   left: 0;
   padding-left: .5rem;
 }
 
-#terrain_presentation .main-right #presentation .arrow_next {
+#terrain_single_page .main-right #presentation .arrow_next {
   right: 0;
   padding-right: .5rem;
 }
 
-#terrain_presentation .main-right #presentation .arrow_prev:hover .prev,
-#terrain_presentation .main-right #presentation .arrow_next:hover .next {
+#terrain_single_page .main-right #presentation .arrow_prev:hover .prev,
+#terrain_single_page .main-right #presentation .arrow_next:hover .next {
   opacity: 1;
 }
 
-#terrain_presentation .main-right #presentation .prev,
-#terrain_presentation .main-right #presentation .next {
+#terrain_single_page .main-right #presentation .prev,
+#terrain_single_page .main-right #presentation .next {
   font-size: 2rem;
   font-weight: bold;
   padding: .5rem;
@@ -831,43 +837,24 @@ main .main-right > * {
   transition: 0.6s ease;
 }
 
-#terrain_presentation .main-right #presentation .prev i,
-#terrain_presentation .main-right #presentation .next i {
+#terrain_single_page .main-right #presentation .prev i,
+#terrain_single_page .main-right #presentation .next i {
   color: white;
 }
 
-#terrain_plan {
+#terrain_single_page .main-right #plan_du_lotissement {
   position: relative;
-}
-
-#terrain_plan .main-right {
-  float: right;
-  text-align: center;
-}
-
-#terrain_plan .main-right .lotissement_name {
-  display: none;
-  padding: .5rem 0;
-}
-
-#terrain_plan .main-right .lotissement_name h3 {
-  font-weight: normal;
-}
-
-#terrain_plan .main-right .lotissement_name h2 i {
-  color: #87c133;
-}
-
-#terrain_plan .main-right #plan_right {
-  position: relative;
-  height: 100%;
+  height: auto;
   padding: .5rem;
   background-color: #e0e0e0ad;
+  margin-bottom: .7rem;
 }
 
-#terrain_plan .main-right #plan_right .click {
+#terrain_single_page .main-right #plan_du_lotissement .click {
   color: white;
-  max-width: 730px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
   padding: .5rem;
   margin: 0 auto 1rem;
   background-color: #87c133;
@@ -875,30 +862,31 @@ main .main-right > * {
           box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
-#terrain_plan .main-right #plan_right .visit-notice {
+#terrain_single_page .main-right #plan_du_lotissement .visit-notice {
   font-size: .9rem;
   font-style: italic;
   padding-bottom: 0.5rem;
 }
 
-#terrain_plan .main-right #plan_right .plan {
+#terrain_single_page .main-right #plan_du_lotissement .plan {
   margin: 0;
 }
 
-#terrain_plan .main-right #plan_right .plan .plan_img {
+#terrain_single_page .main-right #plan_du_lotissement .plan .plan_img {
   position: relative;
   -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
           box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   max-width: 730px;
   margin: 0 auto;
+  /* MAP IMG VERSION */
 }
 
-#terrain_plan .main-right #plan_right .plan .plan_img > img {
+#terrain_single_page .main-right #plan_du_lotissement .plan .plan_img > img {
   display: block;
   width: 100%;
 }
 
-#terrain_plan .main-right #plan_right .plan .plan_img .lot {
+#terrain_single_page .main-right #plan_du_lotissement .plan .plan_img .lot {
   position: absolute;
   -webkit-transition: none;
   transition: none;
@@ -909,27 +897,27 @@ main .main-right > * {
   grid-gap: 2px;
 }
 
-#terrain_plan .main-right #plan_right .plan .plan_img .lot > a {
+#terrain_single_page .main-right #plan_du_lotissement .plan .plan_img .lot > a {
   display: -ms-inline-grid;
   display: inline-grid;
   justify-items: center;
   text-align: center;
 }
 
-#terrain_plan .main-right #plan_right .plan .plan_img .lot .number {
+#terrain_single_page .main-right #plan_du_lotissement .plan .plan_img .lot .number {
   font-size: 1rem;
   font-weight: bold;
 }
 
-#terrain_plan .main-right #plan_right .plan .plan_img .lot .tag {
+#terrain_single_page .main-right #plan_du_lotissement .plan .plan_img .lot .tag {
   position: relative;
 }
 
-#terrain_plan .main-right #plan_right .plan .plan_img .lot .tag img {
+#terrain_single_page .main-right #plan_du_lotissement .plan .plan_img .lot .tag img {
   width: auto;
 }
 
-#terrain_plan .main-right #plan_right .plan .plan_img .lot .tag span {
+#terrain_single_page .main-right #plan_du_lotissement .plan .plan_img .lot .tag span {
   font-size: 12px;
   color: white;
   position: absolute;
@@ -940,15 +928,65 @@ main .main-right > * {
           transform: translateY(-50%);
 }
 
-#terrain_plan .main-right #plan_right .plan .plan_img .lot .visit img {
+#terrain_single_page .main-right #plan_du_lotissement .plan .plan_img .lot .visit img {
   width: auto;
 }
 
-#terrain_plan .main-right #plan_right .plan .plan_img .active {
+#terrain_single_page .main-right #plan_du_lotissement .plan .plan_img #lot1868 {
+  left: 49%;
+  top: 28%;
+}
+
+#terrain_single_page .main-right #plan_du_lotissement .plan .plan_img #lot1869 {
+  left: 48%;
+  top: 44%;
+}
+
+#terrain_single_page .main-right #plan_du_lotissement .plan .plan_img #lot1870 {
+  left: 48%;
+  top: 60%;
+}
+
+#terrain_single_page .main-right #plan_du_lotissement .plan .plan_img #lot1871 {
+  left: 50%;
+  top: 78%;
+}
+
+#terrain_single_page .main-right #plan_du_lotissement .plan .plan_img #lot1872 {
+  left: 34%;
+  top: 79%;
+}
+
+#terrain_single_page .main-right #plan_du_lotissement .plan .plan_img #lot1873 {
+  left: 17%;
+  top: 73%;
+}
+
+#terrain_single_page .main-right #plan_du_lotissement .plan .plan_img #lot1874 {
+  left: 19%;
+  top: 58%;
+}
+
+#terrain_single_page .main-right #plan_du_lotissement .plan .plan_img #lot1875 {
+  left: 19%;
+  top: 44.5%;
+}
+
+#terrain_single_page .main-right #plan_du_lotissement .plan .plan_img #lot1876 {
+  left: 19%;
+  top: 31%;
+}
+
+#terrain_single_page .main-right #plan_du_lotissement .plan .plan_img #lot1877 {
+  left: 19%;
+  top: 17%;
+}
+
+#terrain_single_page .main-right #plan_du_lotissement .plan .plan_img .active {
   cursor: pointer;
 }
 
-#terrain_plan .main-right #plan_right .lot_notice {
+#terrain_single_page .main-right #plan_du_lotissement .lot_notice {
   font-size: .8rem;
   max-width: 730px;
   padding: .5rem;
@@ -957,268 +995,61 @@ main .main-right > * {
   border: 1px solid #707070;
 }
 
-#terrain_plan .main-right #plan_right .lot_notice p {
+#terrain_single_page .main-right #plan_du_lotissement .lot_notice p {
   text-align: center;
   font-style: italic;
 }
 
-#terrain_plan .main-right #plan_right .lot_notice span {
+#terrain_single_page .main-right #plan_du_lotissement .lot_notice span {
   text-align: center;
   display: block;
   padding: .5rem;
 }
 
-#terrain_plan_lot {
-  position: relative;
+#terrain_single_page .main-right .grille {
+  height: auto;
 }
 
-#terrain_plan_lot .main-right {
-  float: right;
-  text-align: center;
-}
-
-#terrain_plan_lot .main-right .lotissement_name {
-  display: none;
-  padding: .5rem 0;
-}
-
-#terrain_plan_lot .main-right .lotissement_name h3 {
-  font-weight: normal;
-}
-
-#terrain_plan_lot .main-right .lotissement_name h2 i {
-  color: #87c133;
-}
-
-#terrain_plan_lot .main-right .lot_option {
-  margin: .5rem;
-}
-
-#terrain_plan_lot .main-right .lot_option .wrapper .up {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin-bottom: .5rem;
-}
-
-#terrain_plan_lot .main-right .lot_option .wrapper .up .lot_info {
-  -webkit-box-flex: 6;
-      -ms-flex: 6;
-          flex: 6;
-}
-
-#terrain_plan_lot .main-right .lot_option .wrapper .up .lot_info header {
-  background-color: #87c133;
-  padding: .5rem 0;
-  margin-bottom: 1rem;
-  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-}
-
-#terrain_plan_lot .main-right .lot_option .wrapper .up .lot_info header * {
-  color: white;
-}
-
-#terrain_plan_lot .main-right .lot_option .wrapper .up .lot_info header p {
-  font-size: .7rem;
-}
-
-#terrain_plan_lot .main-right .lot_option .wrapper .up .lot_info .lot_image_mobile {
-  display: none;
-  background: white;
-  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-}
-
-#terrain_plan_lot .main-right .lot_option .wrapper .up .lot_info .lot_image_mobile img {
-  width: 100%;
-  max-width: 352px;
-}
-
-#terrain_plan_lot .main-right .lot_option .wrapper .up .lot_info .info_table {
-  background-color: white;
-  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-}
-
-#terrain_plan_lot .main-right .lot_option .wrapper .up .lot_info .info_table p {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  padding: .3rem .3rem;
-}
-
-#terrain_plan_lot .main-right .lot_option .wrapper .up .lot_info .info_table p:nth-child(odd) {
-  background: #66ccce1f;
-}
-
-#terrain_plan_lot .main-right .lot_option .wrapper .up .lot_info .info_table p > span {
-  font-size: .8rem;
-}
-
-#terrain_plan_lot .main-right .lot_option .wrapper .up .lot_info .info_table p > span:first-child {
-  text-align: left;
-}
-
-#terrain_plan_lot .main-right .lot_option .wrapper .up .lot_info .info_table p > span:nth-child(2) {
-  text-align: right;
-}
-
-#terrain_plan_lot .main-right .lot_option .wrapper .up .lot_image {
-  -webkit-box-flex: 4;
-      -ms-flex: 4;
-          flex: 4;
-  margin-left: .5rem;
-}
-
-#terrain_plan_lot .main-right .lot_option .wrapper .up .lot_image > img {
-  border: 1px solid #707070;
-  width: 100%;
-}
-
-#terrain_plan_lot .main-right .lot_option .wrapper .up .lot_image button {
-  position: relative;
-  display: block;
-  margin: .5rem auto;
-  background: #87c133;
-  border-radius: 3px;
-}
-
-#terrain_plan_lot .main-right .lot_option .wrapper .up .lot_image button a {
-  display: block;
-  font-size: .9rem;
-  color: white;
-  padding: .5rem 1rem;
-}
-
-#terrain_plan_lot .main-right .lot_option .wrapper .up .lot_image button:hover {
-  background-color: #5a9b00;
-}
-
-#terrain_plan_lot .main-right .lot_option .wrapper .up .lot_image .visite_virtuelle {
-  border-radius: 1.5rem;
-  margin-top: 1rem;
-}
-
-#terrain_plan_lot .main-right .lot_option .wrapper .up .lot_image .visite_virtuelle a {
-  font-style: italic;
-  font-weight: bold;
-  padding: .5rem 1rem;
-}
-
-#terrain_plan_lot .main-right .lot_option .wrapper .up .lot_image .visite_virtuelle a img {
-  width: 1rem;
-  margin-right: 6px;
-}
-
-#terrain_plan_lot .main-right .lot_option .wrapper .btm {
-  font-size: .8rem;
-  text-align: left;
-  padding: .5rem;
-  margin: .5rem 0 1rem;
-  background-color: white;
-  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-}
-
-#terrain_plan_lot .main-right .lot_option .wrapper .lot_notice {
-  font-size: .8rem;
-  padding: .5rem;
-  background: white;
-  border: 1px solid #707070;
-}
-
-#terrain_plan_lot .main-right .lot_option .wrapper .lot_notice p {
-  text-align: center;
-  font-style: italic;
-}
-
-#terrain_plan_lot .main-right .lot_option .wrapper .lot_notice span {
-  text-align: center;
-  display: block;
-  padding: .5rem;
-}
-
-#terrain_grille {
-  position: relative;
-}
-
-#terrain_grille .main-right {
-  float: right;
-  text-align: center;
-  height: 100%;
-  overflow: auto;
-}
-
-#terrain_grille .main-right .lotissement_name {
-  display: none;
-  padding: .5rem 0;
-}
-
-#terrain_grille .main-right .lotissement_name h3 {
-  font-weight: normal;
-}
-
-#terrain_grille .main-right .lotissement_name h2 i {
-  color: #87c133;
-}
-
-#terrain_grille .main-right .grille {
-  margin: .5rem;
-}
-
-#terrain_grille .main-right .grille .wrapper > * {
+#terrain_single_page .main-right .grille .wrapper > * {
   background-color: white;
 }
 
-#terrain_grille .main-right .grille .wrapper h2 {
-  color: white;
-  padding: .5rem 0;
-  margin-bottom: 1rem;
-  background-color: #87c133;
-  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-}
-
-#terrain_grille .main-right .grille .wrapper > p {
+#terrain_single_page .main-right .grille .wrapper > p {
   font-size: .8rem;
   text-align: left;
   padding: 0 2rem;
 }
 
-#terrain_grille .main-right .grille .wrapper > p:first-child {
+#terrain_single_page .main-right .grille .wrapper > p:first-child {
   padding-top: .5rem;
 }
 
-#terrain_grille .main-right .grille .wrapper .update_date {
+#terrain_single_page .main-right .grille .wrapper .update_date {
   font-size: .6rem;
   text-align: right;
   padding: 0 1rem;
 }
 
-#terrain_grille .main-right .grille .wrapper table {
+#terrain_single_page .main-right .grille .wrapper table {
   font-size: .8rem;
   background: white;
   border-collapse: collapse;
 }
 
-#terrain_grille .main-right .grille .wrapper table th, #terrain_grille .main-right .grille .wrapper table td {
+#terrain_single_page .main-right .grille .wrapper table th, #terrain_single_page .main-right .grille .wrapper table td {
   border: 1px solid #707070;
   padding: 0 .3rem;
 }
 
-#terrain_grille .main-right .grille .wrapper table th span:nth-child(2) {
+#terrain_single_page .main-right .grille .wrapper table th span:nth-child(2) {
   display: none;
 }
 
-#terrain_grille .main-right .grille .wrapper table td {
+#terrain_single_page .main-right .grille .wrapper table td {
   white-space: nowrap;
 }
 
-#terrain_grille .main-right .grille .wrapper table tr:hover {
+#terrain_single_page .main-right .grille .wrapper table tr:hover {
   background-color: #4cb0b29d;
   -webkit-transition: all .3s ease-out;
   transition: all .3s ease-out;
@@ -1226,17 +1057,17 @@ main .main-right > * {
           box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-#terrain_grille .main-right .grille .wrapper table tr:hover th, #terrain_grille .main-right .grille .wrapper table tr:hover td {
+#terrain_single_page .main-right .grille .wrapper table tr:hover th, #terrain_single_page .main-right .grille .wrapper table tr:hover td {
   font-weight: bold;
 }
 
-#terrain_grille .main-right .grille .wrapper table tr:first-child:hover {
+#terrain_single_page .main-right .grille .wrapper table tr:first-child:hover {
   background-color: white;
   -webkit-box-shadow: none;
           box-shadow: none;
 }
 
-#terrain_grille .main-right .grille .wrapper table tr button {
+#terrain_single_page .main-right .grille .wrapper table tr button {
   display: block;
   background: #87c133;
   border: none;
@@ -1247,41 +1078,41 @@ main .main-right > * {
   cursor: pointer;
 }
 
-#terrain_grille .main-right .grille .wrapper table tr button a {
+#terrain_single_page .main-right .grille .wrapper table tr button a {
   display: block;
   font-size: .95rem;
   color: white;
   padding: .75rem 3rem;
 }
 
-#terrain_grille .main-right .grille .wrapper table tr button:hover {
+#terrain_single_page .main-right .grille .wrapper table tr button:hover {
   background: #5a9b00;
 }
 
-#terrain_grille .main-right .grille .wrapper table tr button:focus {
+#terrain_single_page .main-right .grille .wrapper table tr button:focus {
   outline: none;
 }
 
-#terrain_grille .main-right .grille .wrapper table tr button a {
+#terrain_single_page .main-right .grille .wrapper table tr button a {
   font-size: .8rem;
   display: inline-block;
   padding: .3rem .5rem;
 }
 
-#terrain_grille .main-right .grille .wrapper table tr button a img {
+#terrain_single_page .main-right .grille .wrapper table tr button a img {
   width: 1rem;
   margin-right: 10px;
 }
 
-#terrain_grille .main-right .grille .wrapper table tr button:hover {
+#terrain_single_page .main-right .grille .wrapper table tr button:hover {
   background-color: #5a9b00;
 }
 
-#terrain_grille .main-right .grille .wrapper table .active:hover {
+#terrain_single_page .main-right .grille .wrapper table .active:hover {
   cursor: pointer;
 }
 
-#terrain_grille .main-right .grille .wrapper .notaire_geometre {
+#terrain_single_page .main-right .grille .wrapper .notaire_geometre {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 1fr;
@@ -1292,271 +1123,57 @@ main .main-right > * {
           box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
-#terrain_grille .main-right .grille .wrapper .notaire_geometre > div {
+#terrain_single_page .main-right .grille .wrapper .notaire_geometre > div {
   padding: .5rem 2rem;
 }
 
-#terrain_grille .main-right .grille .wrapper .notaire_geometre > div h5 {
+#terrain_single_page .main-right .grille .wrapper .notaire_geometre > div h5 {
   color: #87c133;
   font-weight: bold;
   text-align: center;
   padding-bottom: .5rem;
 }
 
-#terrain_grille .main-right .grille .wrapper .notaire_geometre > div p {
+#terrain_single_page .main-right .grille .wrapper .notaire_geometre > div p {
   font-size: .8rem;
   padding-bottom: .5rem;
 }
 
-#terrain_grille .main-right .grille .wrapper .notaire_geometre .notaire {
+#terrain_single_page .main-right .grille .wrapper .notaire_geometre .notaire {
   border-right: 0.5px dashed #707070;
 }
 
-#terrain_grille .main-right .grille .wrapper .info_table {
+#terrain_single_page .main-right .grille .wrapper .info_table {
   padding: .5rem 0;
   -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
           box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
-#terrain_grille .main-right .grille .wrapper .info_table p {
+#terrain_single_page .main-right .grille .wrapper .info_table p {
   display: block;
 }
 
-#terrain_grille .main-right .grille .wrapper .info_table p > span {
+#terrain_single_page .main-right .grille .wrapper .info_table p > span {
   display: inline-block;
   font-size: .8rem;
   width: 49%;
   vertical-align: top;
 }
 
-#terrain_grille .main-right .grille .wrapper .info_table p > span:first-child {
+#terrain_single_page .main-right .grille .wrapper .info_table p > span:first-child {
   text-align: right;
   padding-right: .5rem;
 }
 
-#terrain_grille .main-right .grille .wrapper .info_table p > span:nth-child(2) {
+#terrain_single_page .main-right .grille .wrapper .info_table p > span:nth-child(2) {
   text-align: left;
 }
 
-#terrain_grille .main-right .grille .wrapper .btm {
+#terrain_single_page .main-right .grille .wrapper .btm {
   font-size: .8rem;
   text-align: left;
   padding: .5rem;
   margin-top: 1rem;
   background-color: white;
   border: 1px solid #707070;
-}
-
-#terrain_document {
-  position: relative;
-}
-
-#terrain_document .main-right {
-  float: right;
-  text-align: center;
-  height: 100%;
-  overflow: auto;
-}
-
-#terrain_document .main-right .lotissement_name {
-  display: none;
-  padding: .5rem 0;
-}
-
-#terrain_document .main-right .lotissement_name h3 {
-  font-weight: normal;
-}
-
-#terrain_document .main-right .lotissement_name h2 i {
-  color: #87c133;
-}
-
-#terrain_document .main-right .document {
-  margin: .5rem;
-}
-
-#terrain_document .main-right .document .wrapper h2 {
-  color: white;
-  padding: .5rem 0;
-  margin-bottom: 1rem;
-  background-color: #87c133;
-  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-}
-
-#terrain_document .main-right .document .wrapper > p {
-  font-size: .8rem;
-  text-align: left;
-  padding: .5rem;
-  background-color: white;
-}
-
-#terrain_document .main-right .document .wrapper div {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  text-align: left;
-  padding: .5rem 0;
-  background-color: white;
-  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-}
-
-#terrain_document .main-right .document .wrapper div p {
-  padding: .5rem .5rem .5rem 1rem;
-}
-
-#terrain_document .main-right .document .wrapper div p a {
-  display: inline-block;
-  text-decoration: underline;
-}
-
-#terrain_document .main-right .document .wrapper div p a img {
-  padding-right: .3rem;
-}
-
-#terrain_option {
-  position: relative;
-}
-
-#terrain_option .main-right {
-  float: right;
-  text-align: center;
-  height: 100%;
-}
-
-#terrain_option .main-right .lotissement_name {
-  display: none;
-  padding: .5rem 0;
-}
-
-#terrain_option .main-right .lotissement_name h3 {
-  font-weight: normal;
-}
-
-#terrain_option .main-right .lotissement_name h2 i {
-  color: #87c133;
-}
-
-#terrain_option .main-right > div {
-  margin: .5rem;
-}
-
-#terrain_option .main-right > div .wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-}
-
-#terrain_option .main-right > div .wrapper .option_left {
-  -webkit-box-flex: 7;
-      -ms-flex: 7;
-          flex: 7;
-}
-
-#terrain_option .main-right > div .wrapper .option_left > h2 {
-  padding: .5rem 1.5rem;
-  margin-bottom: 1rem;
-  background-color: #87c133;
-  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-}
-
-#terrain_option .main-right > div .wrapper .option_left > h2 span {
-  display: block;
-  font-size: 1.5rem;
-  font-weight: bold;
-  color: white;
-  line-height: 1;
-  padding: 0 .3rem;
-}
-
-#terrain_option .main-right > div .wrapper .option_left > h2 span:nth-child(1) {
-  text-align: left;
-}
-
-#terrain_option .main-right > div .wrapper .option_left > h2 span:nth-child(3) {
-  text-align: right;
-  padding-top: .3rem;
-}
-
-#terrain_option .main-right > div .wrapper .option_left > div {
-  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-}
-
-#terrain_option .main-right > div .wrapper .option_left > div h2 {
-  text-align: left;
-  color: white;
-  padding: 1px .5rem;
-  background-color: #87c133;
-}
-
-#terrain_option .main-right > div .wrapper .option_left > div p {
-  font-size: .8rem;
-  text-align: left;
-  padding: .5rem 1rem;
-  background: white;
-}
-
-#terrain_option .main-right > div .wrapper .option_left .option {
-  margin-bottom: 1rem;
-}
-
-#terrain_option .main-right > div .wrapper .option_right {
-  -webkit-box-flex: 3;
-      -ms-flex: 3;
-          flex: 3;
-}
-
-#terrain_option .main-right > div .wrapper .option_right > h2 {
-  display: none;
-  color: white;
-  padding: 1px .5rem;
-  margin-top: 1rem;
-  background-color: #87c133;
-  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-}
-
-#terrain_option .main-right > div .wrapper .option_right > div {
-  padding: .5rem;
-  margin-left: .5rem;
-  background: white;
-  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-}
-
-#terrain_option .main-right > div .wrapper .option_right > div h4 {
-  color: #87c133;
-  padding-bottom: .5rem;
-}
-
-#terrain_option .main-right > div .wrapper .option_right > div p {
-  font-size: .8rem;
-}
-
-#terrain_option .main-right > div .wrapper .option_right > div p a {
-  color: #525451;
-  -webkit-transition: color .5s ease;
-  transition: color .5s ease;
-}
-
-#terrain_option .main-right > div .wrapper .option_right > div p a:hover {
-  color: #87c133;
-  font-weight: bold;
-}
-
-#terrain_option .main-right > div .wrapper .option_right .option_contact-up {
-  margin-bottom: 1rem;
 }

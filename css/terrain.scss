@@ -61,7 +61,7 @@
         &:hover a { color: $text-dark;}  
       }
       .sidebar-menu { overflow-y: auto; min-height: 30%; max-height: 65%; margin-right: .5rem; margin-bottom: 1rem; 
-        .dropdown-btn { display: block; width: 100%; text-align: left; font-size: 1rem; cursor: pointer; color: $main; background: white; padding: 1rem .5rem .3rem 1.4rem; 
+        .dropdown-btn { display: block; width: 100%; text-align: left; font-size: 1rem; cursor: pointer; color: $main; background: white; padding: .6rem .5rem .6rem 1.4rem; 
             &:hover { color: $text-dark;}
             &:focus { outline: none; }  // remove the button selector border
         }

@@ -56,7 +56,8 @@
 
 // VERSION 1
 main {
-  #sidebar-left { position: relative; float: left; width: 14rem; height: 100%; background-color: white; padding: 1rem; 
+  #sidebar-left { position: sticky; top: 0; float: left; width: 14rem; height: 100vh; background-color: white; padding: 1rem;
+    // position: relative; float: left; width: 14rem; height: 100%; background-color: white; padding: 1rem; 
     h2 { padding-bottom: 1rem; text-align: center;
       a { font-size: 1.9rem; font-weight: bold; color: $main;}
       &:hover a { color: $text-dark;}
