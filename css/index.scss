@@ -65,7 +65,7 @@ $button_hover: #5a9b00;
 
 
 // DEFAULT FONT-SIZE
-html { font-size: 20px;}
+html { font-size: 20px; scroll-behavior: smooth;}
 body { font-size: 1rem; max-width: 1440px; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;}
 * { color: $text-dark; box-sizing: border-box;}
 

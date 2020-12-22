@@ -70,6 +70,7 @@
 
 html {
   font-size: 20px;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -542,13 +543,13 @@ a, button {
   #terrain_plan_lot .main-right .lot_option .wrapper .up .lot_info header h2 {
     font-size: 1.4rem;
   }
-  #terrain_grille .main-right .grille .wrapper table {
+  #terrain_single_page .main-right .grille .wrapper table {
     font-size: .7rem;
   }
-  #terrain_grille .main-right .grille .wrapper table tr:nth-child(1) th span:nth-child(1) {
+  #terrain_single_page .main-right .grille .wrapper table tr:nth-child(1) th span:nth-child(1) {
     display: none;
   }
-  #terrain_grille .main-right .grille .wrapper table tr:nth-child(1) th span:nth-child(2) {
+  #terrain_single_page .main-right .grille .wrapper table tr:nth-child(1) th span:nth-child(2) {
     display: block;
   }
   #simulateur_steps {
@@ -639,10 +640,8 @@ a, button {
   #terrains #float-left ul li a i {
     padding-right: .2rem;
   }
-  #terrain_presentation .main-right,
-  #terrain_plan .main-right,
+  #terrain_single_page .main-right,
   #terrain_plan_lot .main-right,
-  #terrain_grille .main-right,
   #terrain_document .main-right,
   #terrain_option .main-right {
     width: 100%;
@@ -650,26 +649,20 @@ a, button {
     padding: .3rem;
     padding-top: 3rem;
   }
-  #terrain_presentation .main-right .lotissement_name,
-  #terrain_plan .main-right .lotissement_name,
+  #terrain_single_page .main-right .lotissement_name,
   #terrain_plan_lot .main-right .lotissement_name,
-  #terrain_grille .main-right .lotissement_name,
   #terrain_document .main-right .lotissement_name,
   #terrain_option .main-right .lotissement_name {
     display: block;
   }
-  #terrain_presentation .main-right #presentation > div > p,
-  #terrain_plan .main-right #presentation > div > p,
+  #terrain_single_page .main-right #presentation > div > p,
   #terrain_plan_lot .main-right #presentation > div > p,
-  #terrain_grille .main-right #presentation > div > p,
   #terrain_document .main-right #presentation > div > p,
   #terrain_option .main-right #presentation > div > p {
     padding-top: 0;
   }
-  #terrain_presentation #sidebar-left,
-  #terrain_plan #sidebar-left,
+  #terrain_single_page #sidebar-left,
   #terrain_plan_lot #sidebar-left,
-  #terrain_grille #sidebar-left,
   #terrain_document #sidebar-left,
   #terrain_option #sidebar-left {
     width: 100%;
@@ -678,10 +671,8 @@ a, button {
     background: white;
     border: none;
   }
-  #terrain_presentation #sidebar-left h2,
-  #terrain_plan #sidebar-left h2,
+  #terrain_single_page #sidebar-left h2,
   #terrain_plan_lot #sidebar-left h2,
-  #terrain_grille #sidebar-left h2,
   #terrain_document #sidebar-left h2,
   #terrain_option #sidebar-left h2 {
     text-align: center;
@@ -691,10 +682,8 @@ a, button {
     left: 0;
     right: 0;
   }
-  #terrain_presentation #sidebar-left h2 a,
-  #terrain_plan #sidebar-left h2 a,
+  #terrain_single_page #sidebar-left h2 a,
   #terrain_plan_lot #sidebar-left h2 a,
-  #terrain_grille #sidebar-left h2 a,
   #terrain_document #sidebar-left h2 a,
   #terrain_option #sidebar-left h2 a {
     font-size: 1.5rem;
@@ -704,28 +693,22 @@ a, button {
     background: #87c133;
     border-radius: 20px;
   }
-  #terrain_presentation #sidebar-left h2:hover a,
-  #terrain_plan #sidebar-left h2:hover a,
+  #terrain_single_page #sidebar-left h2:hover a,
   #terrain_plan_lot #sidebar-left h2:hover a,
-  #terrain_grille #sidebar-left h2:hover a,
   #terrain_document #sidebar-left h2:hover a,
   #terrain_option #sidebar-left h2:hover a {
     color: #525451;
   }
-  #terrain_presentation #sidebar-left .sidebar-menu,
-  #terrain_plan #sidebar-left .sidebar-menu,
+  #terrain_single_page #sidebar-left .sidebar-menu,
   #terrain_plan_lot #sidebar-left .sidebar-menu,
-  #terrain_grille #sidebar-left .sidebar-menu,
   #terrain_document #sidebar-left .sidebar-menu,
   #terrain_option #sidebar-left .sidebar-menu {
     height: auto;
     margin: 0;
     overflow-y: visible;
   }
-  #terrain_presentation #sidebar-left .sidebar-menu button,
-  #terrain_plan #sidebar-left .sidebar-menu button,
+  #terrain_single_page #sidebar-left .sidebar-menu button,
   #terrain_plan_lot #sidebar-left .sidebar-menu button,
-  #terrain_grille #sidebar-left .sidebar-menu button,
   #terrain_document #sidebar-left .sidebar-menu button,
   #terrain_option #sidebar-left .sidebar-menu button {
     background-color: #87c133;
@@ -733,43 +716,31 @@ a, button {
     text-align: center;
     margin: .5rem auto;
   }
-  #terrain_presentation #sidebar-left .sidebar-menu button a,
-  #terrain_plan #sidebar-left .sidebar-menu button a,
+  #terrain_single_page #sidebar-left .sidebar-menu button a,
   #terrain_plan_lot #sidebar-left .sidebar-menu button a,
-  #terrain_grille #sidebar-left .sidebar-menu button a,
   #terrain_document #sidebar-left .sidebar-menu button a,
   #terrain_option #sidebar-left .sidebar-menu button a {
     color: white;
     padding: .8rem 1rem;
   }
-  #terrain_presentation #sidebar-left .sidebar-menu button i,
-  #terrain_plan #sidebar-left .sidebar-menu button i,
+  #terrain_single_page #sidebar-left .sidebar-menu button i,
   #terrain_plan_lot #sidebar-left .sidebar-menu button i,
-  #terrain_grille #sidebar-left .sidebar-menu button i,
   #terrain_document #sidebar-left .sidebar-menu button i,
   #terrain_option #sidebar-left .sidebar-menu button i {
     color: white;
   }
-  #terrain_presentation #sidebar-left .sidebar-menu button:hover,
-  #terrain_plan #sidebar-left .sidebar-menu button:hover,
+  #terrain_single_page #sidebar-left .sidebar-menu button:hover,
   #terrain_plan_lot #sidebar-left .sidebar-menu button:hover,
-  #terrain_grille #sidebar-left .sidebar-menu button:hover,
   #terrain_document #sidebar-left .sidebar-menu button:hover,
   #terrain_option #sidebar-left .sidebar-menu button:hover {
     background: #5a9b00;
   }
-  #terrain_presentation #sidebar-left .sidebar-menu .visite_virtuelle,
-  #terrain_presentation #sidebar-left .sidebar-menu #simulaer_un_credit,
-  #terrain_presentation #sidebar-left .sidebar-menu #imprimer,
-  #terrain_plan #sidebar-left .sidebar-menu .visite_virtuelle,
-  #terrain_plan #sidebar-left .sidebar-menu #simulaer_un_credit,
-  #terrain_plan #sidebar-left .sidebar-menu #imprimer,
+  #terrain_single_page #sidebar-left .sidebar-menu .visite_virtuelle,
+  #terrain_single_page #sidebar-left .sidebar-menu #simulaer_un_credit,
+  #terrain_single_page #sidebar-left .sidebar-menu #imprimer,
   #terrain_plan_lot #sidebar-left .sidebar-menu .visite_virtuelle,
   #terrain_plan_lot #sidebar-left .sidebar-menu #simulaer_un_credit,
   #terrain_plan_lot #sidebar-left .sidebar-menu #imprimer,
-  #terrain_grille #sidebar-left .sidebar-menu .visite_virtuelle,
-  #terrain_grille #sidebar-left .sidebar-menu #simulaer_un_credit,
-  #terrain_grille #sidebar-left .sidebar-menu #imprimer,
   #terrain_document #sidebar-left .sidebar-menu .visite_virtuelle,
   #terrain_document #sidebar-left .sidebar-menu #simulaer_un_credit,
   #terrain_document #sidebar-left .sidebar-menu #imprimer,
@@ -782,18 +753,12 @@ a, button {
     background: none;
     color: #87c133;
   }
-  #terrain_presentation #sidebar-left .sidebar-menu .visite_virtuelle a,
-  #terrain_presentation #sidebar-left .sidebar-menu #simulaer_un_credit a,
-  #terrain_presentation #sidebar-left .sidebar-menu #imprimer a,
-  #terrain_plan #sidebar-left .sidebar-menu .visite_virtuelle a,
-  #terrain_plan #sidebar-left .sidebar-menu #simulaer_un_credit a,
-  #terrain_plan #sidebar-left .sidebar-menu #imprimer a,
+  #terrain_single_page #sidebar-left .sidebar-menu .visite_virtuelle a,
+  #terrain_single_page #sidebar-left .sidebar-menu #simulaer_un_credit a,
+  #terrain_single_page #sidebar-left .sidebar-menu #imprimer a,
   #terrain_plan_lot #sidebar-left .sidebar-menu .visite_virtuelle a,
   #terrain_plan_lot #sidebar-left .sidebar-menu #simulaer_un_credit a,
   #terrain_plan_lot #sidebar-left .sidebar-menu #imprimer a,
-  #terrain_grille #sidebar-left .sidebar-menu .visite_virtuelle a,
-  #terrain_grille #sidebar-left .sidebar-menu #simulaer_un_credit a,
-  #terrain_grille #sidebar-left .sidebar-menu #imprimer a,
   #terrain_document #sidebar-left .sidebar-menu .visite_virtuelle a,
   #terrain_document #sidebar-left .sidebar-menu #simulaer_un_credit a,
   #terrain_document #sidebar-left .sidebar-menu #imprimer a,
@@ -803,44 +768,34 @@ a, button {
     color: #87c133;
     padding: .6rem 1rem;
   }
-  #terrain_presentation #sidebar-left .sidebar-menu .visite_virtuelle a,
-  #terrain_plan #sidebar-left .sidebar-menu .visite_virtuelle a,
+  #terrain_single_page #sidebar-left .sidebar-menu .visite_virtuelle a,
   #terrain_plan_lot #sidebar-left .sidebar-menu .visite_virtuelle a,
-  #terrain_grille #sidebar-left .sidebar-menu .visite_virtuelle a,
   #terrain_document #sidebar-left .sidebar-menu .visite_virtuelle a,
   #terrain_option #sidebar-left .sidebar-menu .visite_virtuelle a {
     color: #87c133;
   }
-  #terrain_presentation #sidebar-left .sidebar-menu .visite_virtuelle:hover,
-  #terrain_plan #sidebar-left .sidebar-menu .visite_virtuelle:hover,
+  #terrain_single_page #sidebar-left .sidebar-menu .visite_virtuelle:hover,
   #terrain_plan_lot #sidebar-left .sidebar-menu .visite_virtuelle:hover,
-  #terrain_grille #sidebar-left .sidebar-menu .visite_virtuelle:hover,
   #terrain_document #sidebar-left .sidebar-menu .visite_virtuelle:hover,
   #terrain_option #sidebar-left .sidebar-menu .visite_virtuelle:hover {
     background: none;
   }
-  #terrain_presentation #sidebar-left .sidebar-menu #imprimer,
-  #terrain_plan #sidebar-left .sidebar-menu #imprimer,
+  #terrain_single_page #sidebar-left .sidebar-menu #imprimer,
   #terrain_plan_lot #sidebar-left .sidebar-menu #imprimer,
-  #terrain_grille #sidebar-left .sidebar-menu #imprimer,
   #terrain_document #sidebar-left .sidebar-menu #imprimer,
   #terrain_option #sidebar-left .sidebar-menu #imprimer {
     padding: .6rem 1rem;
   }
-  #terrain_presentation #sidebar-left .sidebar-menu #goback,
-  #terrain_plan #sidebar-left .sidebar-menu #goback,
+  #terrain_single_page #sidebar-left .sidebar-menu #goback,
   #terrain_plan_lot #sidebar-left .sidebar-menu #goback,
-  #terrain_grille #sidebar-left .sidebar-menu #goback,
   #terrain_document #sidebar-left .sidebar-menu #goback,
   #terrain_option #sidebar-left .sidebar-menu #goback {
     width: auto;
     margin: 2rem auto .5rem;
     position: static;
   }
-  #terrain_presentation #sidebar-left .sidebar-menu #goback a,
-  #terrain_plan #sidebar-left .sidebar-menu #goback a,
+  #terrain_single_page #sidebar-left .sidebar-menu #goback a,
   #terrain_plan_lot #sidebar-left .sidebar-menu #goback a,
-  #terrain_grille #sidebar-left .sidebar-menu #goback a,
   #terrain_document #sidebar-left .sidebar-menu #goback a,
   #terrain_option #sidebar-left .sidebar-menu #goback a {
     padding: .4rem 2.5rem;
@@ -1144,10 +1099,7 @@ a, button {
   #terrains #float-left ul .orleanais {
     background: url(../images/AgenceOrleans.jpg) 0 46%/100%;
   }
-  #terrain_presentation .main-right #presentation {
-    margin: 0;
-  }
-  #terrain_presentation .main-right #presentation .btm {
+  #terrain_single_page .main-right #presentation .btm {
     padding: .5rem .3rem;
   }
   #terrain_plan .main-right #plan_right {
@@ -1168,34 +1120,34 @@ a, button {
   #terrain_plan_lot .main-right .lot_option {
     margin: 0;
   }
-  #terrain_grille .main-right .grille {
+  #terrain_single_page .main-right .grille {
     margin: 0;
   }
-  #terrain_grille .main-right .grille .wrapper > p {
+  #terrain_single_page .main-right .grille .wrapper > p {
     padding: 0 !important;
   }
-  #terrain_grille .main-right .grille .wrapper .notaire_geometre {
+  #terrain_single_page .main-right .grille .wrapper .notaire_geometre {
     display: block;
   }
-  #terrain_grille .main-right .grille .wrapper .notaire_geometre .notaire {
+  #terrain_single_page .main-right .grille .wrapper .notaire_geometre .notaire {
     border-right: none;
     border-bottom: 0.5px dashed #707070;
   }
-  #terrain_grille .main-right .grille .wrapper table {
+  #terrain_single_page .main-right .grille .wrapper table {
     font-size: 11px;
   }
-  #terrain_grille .main-right .grille .wrapper table tr:nth-child(1) th span:nth-child(1) {
+  #terrain_single_page .main-right .grille .wrapper table tr:nth-child(1) th span:nth-child(1) {
     display: none;
   }
-  #terrain_grille .main-right .grille .wrapper table tr:nth-child(1) th span:nth-child(2) {
+  #terrain_single_page .main-right .grille .wrapper table tr:nth-child(1) th span:nth-child(2) {
     display: block;
   }
-  #terrain_grille .main-right .grille .wrapper table tr:nth-child(1) th:nth-child(6),
-  #terrain_grille .main-right .grille .wrapper table tr:nth-child(1) th:last-child {
+  #terrain_single_page .main-right .grille .wrapper table tr:nth-child(1) th:nth-child(6),
+  #terrain_single_page .main-right .grille .wrapper table tr:nth-child(1) th:last-child {
     display: none;
   }
-  #terrain_grille .main-right .grille .wrapper table tr:nth-child(n+1) td:nth-child(6),
-  #terrain_grille .main-right .grille .wrapper table tr:nth-child(n+1) td:last-child {
+  #terrain_single_page .main-right .grille .wrapper table tr:nth-child(n+1) td:nth-child(6),
+  #terrain_single_page .main-right .grille .wrapper table tr:nth-child(n+1) td:last-child {
     display: none;
   }
   #terrain_document .main-right .document {

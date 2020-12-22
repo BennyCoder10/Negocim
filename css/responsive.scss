@@ -127,8 +127,8 @@
   // TERRAIN_PLAN PAGE > MAIN
   #terrain_plan_lot .main-right .lot_option .wrapper .up .lot_info header h2 { font-size: 1.4rem;}
   
-  #terrain_grille .main-right .grille .wrapper table { font-size: .7rem;}
-  #terrain_grille .main-right .grille .wrapper table tr:nth-child(1) {
+  #terrain_single_page .main-right .grille .wrapper table { font-size: .7rem;}
+  #terrain_single_page .main-right .grille .wrapper table tr:nth-child(1) {
     th span:nth-child(1) { display: none;}
     th span:nth-child(2) { display: block;}
   }
@@ -214,10 +214,11 @@
 
 
   // TERRAIN_SUB PAGES
-  #terrain_presentation, 
-  #terrain_plan,
+  #terrain_single_page,
+  // #terrain_presentation, 
+  // #terrain_plan,
   #terrain_plan_lot,
-  #terrain_grille, 
+  // #terrain_grille, 
   #terrain_document, 
   #terrain_option
    {
@@ -485,7 +486,9 @@
   // }
 
 
-#terrain_presentation .main-right #presentation { margin: 0;
+#terrain_single_page .main-right #presentation { 
+  // margin: 0;
+// #terrain_presentation .main-right #presentation { margin: 0;
   
   .btm { padding: .5rem .3rem;}
 
@@ -508,21 +511,21 @@
 
 //  main #sidebar-left .sidebar-menu button { width: 100%;}
 
- #terrain_grille .main-right .grille { margin: 0;}
- #terrain_grille .main-right .grille .wrapper > p { padding: 0 !important;}
- #terrain_grille .main-right .grille .wrapper .notaire_geometre { display: block;}
- #terrain_grille .main-right .grille .wrapper .notaire_geometre .notaire { border-right: none; border-bottom: .5px dashed $bars;}
+ #terrain_single_page .main-right .grille { margin: 0;}
+ #terrain_single_page .main-right .grille .wrapper > p { padding: 0 !important;}
+ #terrain_single_page .main-right .grille .wrapper .notaire_geometre { display: block;}
+ #terrain_single_page .main-right .grille .wrapper .notaire_geometre .notaire { border-right: none; border-bottom: .5px dashed $bars;}
 
- #terrain_grille .main-right .grille .wrapper table { font-size: 11px;}
+ #terrain_single_page .main-right .grille .wrapper table { font-size: 11px;}
 
-  #terrain_grille .main-right .grille .wrapper table tr:nth-child(1) {
+  #terrain_single_page .main-right .grille .wrapper table tr:nth-child(1) {
     th span:nth-child(1) { display: none;}
     th span:nth-child(2) { display: block;}
     th:nth-child(6),
     th:last-child { display: none;}
   }
 
-  #terrain_grille .main-right .grille .wrapper table tr:nth-child(n+1) {
+  #terrain_single_page .main-right .grille .wrapper table tr:nth-child(n+1) {
     td:nth-child(6),
     td:last-child { display: none;}
   }

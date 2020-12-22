@@ -70,6 +70,7 @@
 
 html {
   font-size: 20px;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -403,12 +404,10 @@ a, button {
 }
 
 main #sidebar-left {
-  position: -webkit-sticky;
-  position: sticky;
-  top: 0;
+  position: relative;
   float: left;
   width: 14rem;
-  height: 100vh;
+  height: 100%;
   background-color: white;
   padding: 1rem;
 }
@@ -656,8 +655,8 @@ main .main-right > * {
   height: auto;
   margin-bottom: .5rem;
   background: white;
-  border-top: .3rem solid #e0e0e0;
-  border-bottom: .3rem solid #e0e0e0;
+  border-top: 5px solid #999999c2;
+  border-bottom: 5px solid #999999c2;
 }
 
 #terrain_single_page .main-right .header h2 i {

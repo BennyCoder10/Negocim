@@ -3,8 +3,11 @@
 
 
 // VERSION 1
-main {
-  #sidebar-left { position: sticky; top: 0; float: left; width: 14rem; height: 100vh; background-color: white; padding: 1rem; 
+main {  
+  #sidebar-left {
+    // position: sticky; min-height: 500px; height: 100vh; top: -100px; float: left; width: 14rem;  background-color: white; padding: 1rem;
+     position: relative; float: left; width: 14rem; height: 100%; background-color: white; padding: 1rem; 
+
     h2 { padding-bottom: 1rem; text-align: center;
       a { font-size: 1.9rem; font-weight: bold; color: $main;}
       &:hover a { color: $text-dark;}
@@ -91,8 +94,8 @@ main {
     
     .header { height: auto; margin-bottom: .5rem; background: white; 
       // border-bottom: .5rem solid $background; 
-      border-top: .3rem solid #e0e0e0; 
-      border-bottom: .3rem solid #e0e0e0;
+      border-top: 5px solid #999999c2; 
+      border-bottom: 5px solid #999999c2;
       
       h2 i { color: $sub;}
     }
