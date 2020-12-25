@@ -31,9 +31,9 @@
     <header class="clear">
 
       <!-- NEGOCIM LOGO -->
-      <h1><a href="index.html"><img src="images/main_logo_v1.jpg" alt="Negocim logo"><span class="hide">Negocim</span></a></h1>
-     
-      <!-- NAV MENU  -->
+      <h1><a href="index.html"><img src="images/main_logo.jpg" alt="Negocim logo"><span class="hide">Negocim</span></a></h1>
+
+      <!-- NAV MENU -->
       <h2 class="hide">menu</h2>
       <nav class="menu" id="menu">
         <ul>
@@ -45,13 +45,16 @@
           <li><a href="lexique.html">Lexique</a></li>            
         </ul>
       </nav>
+      <!-- END OF NAV MENU -->
 
-      <!-- MENU BAR ON MOBILE VERSION -->
+      <!-- MENU BARS ON MOBILE VERSION -->
       <div id="menu-toggle" onclick="menuToggle(this)">
         <div class="bar1"></div>
         <div class="bar2"></div>
         <div class="bar3"></div>
       </div>
+      <!-- END OF MENU BARS ON MOBILE VERSION -->
+
     </header>
     <!-- END OF HEADER -->
 
@@ -68,7 +71,7 @@
         <!-- PRESENTATION PAGE -->
         <div id="presentation" class="presentation" >
           
-          <h2 class="subtitle">Presentation</h2>
+          <h2 class="subheadings">Presentation</h2>
 
           <!-- SPLIDE CAROUSEL -->
           <div id="carousel" class="splide">
@@ -94,27 +97,32 @@
           </div>
           <!-- END OF SPLIDE CAROUSEL -->
 
-          <!-- The Modal/Lightbox -->
+          <!-- LIGHTBOX -->
           <div id="myModal" class="modal">
-            <div class="modal-content" id="modal-content">
+            <div id="modal-content" class="modal-content">
+
               <!-- CLOSE BUTTON -->
               <span class="close cursor" onclick="closeModal()"><i class="xi-close-circle-o"></i></span>
 
+              <!-- PHOTOS -->
               <div>
                 <img src="images/lotissement/photo_414.jpg" class="mySlides">              
                 <img src="images/lotissement/photo_415.jpg" class="mySlides">
               </div>
+              <!-- END OF PHOTOS -->
 
-              <!--  PREV, NEXT BUTTONS -->
+              <!-- PREV, NEXT BUTTONS -->
               <span id="arrow" class="arrow arrow_prev" onclick="plusSlides(-1)">
                 <a class="prev"><i class="xi-angle-left"></i></a>
               </span>
               <span id="arrow" class="arrow arrow_next" onclick="plusSlides(1)">
                 <a class="next"><i class="xi-angle-right"></i></a>
-              </span>                           
+              </span> 
+              <!-- END OF PREV, NEXT BUTTONS -->
+
             </div>
           </div>
-          <!-- MODAL END -->
+          <!-- END OF LIGHTBOX -->
 
           <!-- VISIT VIRTUELLE BUTTON -->
           <button class="visite_virtuelle"><a href="http://negocim.fr/lotissements/460-plouhinec-ar-ti-gar-kozh/lots/06/visite"><img src="images/lotissement/vr_icon.png" alt="Visit virtuelle icon">Visit virtuelle</a></button>
@@ -135,6 +143,7 @@
 
 
         <!-- PLAN PAGE -->
+
         <!-- LOTISSEMENT NAME ON MOBILE -->
         <!-- <div class="lotissement_name">
           <h3>Commune de Taillan-Médoc (Le)</h3>
@@ -142,15 +151,14 @@
         </div>   -->
         
         <div id="plan_right">
-          <h2 class="subtitle">Plan du Lotissement</h2>
+          <h2 class="subheadings">Plan du Lotissement</h2>
           <p class="click">Cliquez sur les n° des lots pour plus d'informations</p>
           <p class="visit-notice">Cliquez sur &nbsp;<img src='images/lotissement/vr_icon.png'>&nbsp; pour visiter le lot comme si vous y étiez</p>
 
+          <!-- PLAN IMAGE -->
           <div class="plan">
             <div class="plan_img" id="plan_img">
-
               <img src="images/lotissement/plan_masse_120.png" alt="Plan de masse Le Clos de Cante Gric">
-
 
               <!-- VENDU & OPTION BUTTONS -->
               <!-- add class "active" to make it clickable -->
@@ -230,11 +238,12 @@
                 <a class="visit" href="http://negocim.fr/lotissements/460-plouhinec-ar-ti-gar-kozh/lots/06/visite">
                   <img  src="images/lotissement/vr_icon.png" alt="">
                 </a>
-              </div>
-    
-              <!-- END OF VENDU & OPTION BUTTONS  -->
+              </div>    
+              <!-- END OF VENDU & OPTION BUTTONS -->
+
             </div>                        
-          </div>           
+          </div>  
+          <!-- END OF PLAN IMAGE -->
           
           <!-- NOTICE AT THE BOTTOM -->
           <div class="lot_notice">
@@ -242,13 +251,14 @@
               Les côtes et les superficies sont données à titre indicatif, et n'ont pas de valeur contractuelle.
               <br>Seules celles figurant sur le plan de bornage, joint à l'acte de vente, font foi.
             </p>
-            <span>Dernière mise à jour le : 31/10/2020 à 10:51</span>
+            <p class="update_date">Dernière mise à jour le : <span>09/11/2020 à 09:51</span></p>
           </div>                 
         </div> 
         <!-- END OF PLAN PAGE -->
 
 
         <!-- GRILLE PAGE -->
+
         <!-- LOTISSEMENT NAME ON MOBILE -->
         <!-- <div class="lotissement_name">
           <h3>Commune de Taillan-Médoc (Le)</h3>
@@ -256,9 +266,10 @@
         </div>   -->
 
         <div id="grille" class="grille">
+
           <!-- WRAPPER -->
           <div class="wrapper">
-            <h2 class="subtitle">Grille de prix</h2>
+            <h2 class="subheadings">Grille de prix</h2>
             <p>Commune : <strong>Taillan-Médoc (Le)</strong></p>                
             <p>Lotissement : <i>Le Clos de Cante Gric</i></p>
             <p class="update_date">Dernière mise à jour le : <span><strong>09/11/2020 à 09:51</strong></span></p>
@@ -379,18 +390,22 @@
                 <td>
                   <button class="simuler_un_credit">
                     <a href="simulateur.html">Simuler un crédit</a>
-                  </button>               
+                  </button>
+
                   <!-- VISIT VIRTUELLE BUTTON -->
                   <button class="visite_virtuelle">
                     <a href="http://negocim.fr/lotissements/460-plouhinec-ar-ti-gar-kozh/lots/06/visite"><img src="images/lotissement/vr_icon.png" alt="Visit virtuelle icon">Visit virtuelle</a>
                   </button>
-
                   <!-- END OF VISIT VIRTUELLE BUTTON -->
+      
                 </td>
               </tr>
+              <!-- END OF ADD VISIT VIRTUELLE CLASS -->
+
             </table>
             <!-- END OF LOT INFORMATION TABLE ON THE GRILLE DE PRIX PAGE -->
 
+            <!-- NOTAIRE & GEOMETRE  -->
             <div class="notaire_geometre">
               <div class="notaire">
                 <h5>Notaire</h5>
@@ -410,6 +425,7 @@
                 </p>
               </div>
             </div>
+            <!-- END OF NOTAIRE & GEOMETRE -->
 
             <!--  LOT PRICE INFORMATION TABLE ON THE GRILLE DE PRIX PAGE -->
             <div class="info_table">
@@ -445,37 +461,36 @@
                 </span>
               </p> 
             </div>
+            <!-- END OF LOT PRICE INFORMATION TABLE ON THE GRILLE DE PRIX PAGE -->
+            
             <div class="btm">
               <p>
                 Ces terrains seront livrés entièrement viabilisés, il convient d'ajouter à ces prix : - Les frais de pose compteurs - Les frais de raccordement aux réseaux divers (liaison coffrets/construction) - La réalisation d'un massif drainant pour l'infiltration des eaux de toiture sur le terrain
               </p>
             </div>
+
           </div>
           <!-- END OF WRAPPER -->                
           
         </div>
         <!-- END OF GRILLE PAGE -->
 
-
       </div>
       <!-- END OF CONTENT ON THE RIGHT -->
-
-
-
 
       <!-- SIDEBAR ON THE LEFT -->
       <div id="sidebar-left">
         <h2><a href="terrain_sudouest.html">Le Sud-Ouest</a></h2>
         
-        <div class="sidebar-menu">
- 
+        <!-- SIDEBAR MENU -->
+        <div class="sidebar-menu"> 
           <button id="presentation"><a href="#presentation">Présentation</a></button>
 
           <!-- VISIT VIRTUELLE BUTTON -->
           <button class="visite_virtuelle"><a href="http://negocim.fr/lotissements/460-plouhinec-ar-ti-gar-kozh/lots/06/visite"><img src="images/lotissement/vr_icon.png" alt="Visit virtuelle icon">Visit virtuelle</a></button>
           <!-- END OF VISIT VIRTUELLE BUTTON -->
 
-          <button id="plan_du_lotissement"><a href="#plan_du_lotissement">Plan du lotissement</a></button>
+          <button id="plan_du_lotissement"><a href="#plan_right">Plan du lotissement</a></button>
           <button id="grille_de_prix"><a href="#grille">Grille de prix</a></button>
           <button id="documents"><a href="terrains_document.html">Documents</a></button>
           <button id="simulaer_un_credit"><a href="simulateur.html">Simuler un crédit</a></button>
@@ -495,9 +510,12 @@
           <!-- GOBACK BUTTON AT THE BOTTOM -->
           <button type="button" id="goback"><a href="terrain_sudouest.html"><i class="xi-angle-left"></i>Retour</a></button>          
           <!-- <button type="button" id="goback" onclick="goBack()"><i class="xi-angle-left"></i>Retour</button> -->
-        </div>            
+
+        </div>      
+        <!-- END OF SIDEBAR MENU -->
       </div>
       <!-- END OF SIDEBAR ON THE LEFT -->
+
     </main>
     <!-- END OF MAIN -->
     

@@ -12,13 +12,20 @@
   <link rel="stylesheet" href="css/default.css">
   <link rel="stylesheet" href="css/terrain.css">
   <link rel="stylesheet" href="css/responsive.css">
-
 </head>
 
 <body>
+
+  <!-- WRAPPER FOR FULL HEIGHT ON THE SCREEN -->
   <div class="wrapper">
+
+    <!-- HEADER -->
     <header class="clear">
-      <h1><a href="index.html"><img src="images/main_logo_v1.jpg" alt="Negocim logo"><span class="hide">Negocim</span></a></h1>
+
+      <!-- NEGOCIM LOGO -->
+      <h1><a href="index.html"><img src="images/main_logo.jpg" alt="Negocim logo"><span class="hide">Negocim</span></a></h1>
+
+      <!-- NAV MENU -->
       <h2 class="hide">menu</h2>
       <nav class="menu" id="menu">
         <ul>
@@ -30,39 +37,55 @@
           <li><a href="lexique.html">Lexique</a></li>            
         </ul>
       </nav>
+      <!-- END OF NAV MENU -->
+
+      <!-- MENU BARS ON MOBILE VERSION -->
       <div id="menu-toggle" onclick="menuToggle(this)">
         <div class="bar1"></div>
         <div class="bar2"></div>
         <div class="bar3"></div>
       </div>
+      <!-- END OF MENU BARS ON MOBILE VERSION -->
+
     </header>
+    <!-- END OF HEADER -->
   
-  
+    <!-- MAIN -->
     <main id="terrain">
+
+      <!-- CONTENT ON THE RIGHT -->
       <div class="main-right" >
         <div class="map" id="terrain_map">
           <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1361011.8940086206!2d-3.0030612042034903!3d48.221515780890506!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sfr!4v1602670320688!5m2!1sen!2sfr" width="800" height="600" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>        </div>      
       </div>
+      <!-- END OF CONTENT ON THE RIGHT -->  
+      
+      <!-- SIDEBAR ON THE LEFT -->
       <div id="sidebar-left">
+
+        <!-- TERRAIN NAME -->
         <h2 class="vannes"><a href="terrain_vannes.html">La Bretagne</a></h2>
+        
+        <!-- SIDEBAR MENU -->
         <div class="sidebar-menu">
           <button class="dropdown-btn" id="kervignac">Kervignac</button>
+          
           <div class="dropdown-content">
             <ul>
-              <li><a href="terrain_vannes_presentation.html"><span>Les Quatre Vents</span></a></li>
+              <li><a href="terrains_single_page.html"><span>Les Quatre Vents</span></a></li>
             </ul>              
           </div>
           <button class="dropdown-btn" id="plouhinec">Plouhinec</button>
           <div class="dropdown-content" >
             <ul>
-              <li class="visit"><a href="terrain_vannes_presentation.html"><span>La Résidence de Poul Huern</a></button></li>
-              <li><a href="terrain_vannes_presentation.html"><span>Ar Ti-Gar Kozh</a></button></li>
+              <li class="visit"><a href="#"><span>La Résidence de Poul Huern</a></button></li>
+              <li><a href="#"><span>Ar Ti-Gar Kozh</a></button></li>
             </ul>
           </div>
           <button class="dropdown-btn" id="pluvigner">Pluvigner</button>
           <div class="dropdown-content">
             <ul>
-              <li><a href="#a"><span>Lann Straqueno</a></button></li>
+              <li><a href="#"><span>Lann Straqueno</a></button></li>
             </ul>
           </div>
           <button class="dropdown-btn" id="saint-christophe-des-bois">Saint-Christophe-des-Bois</button>
@@ -80,21 +103,28 @@
             </ul>
           </div>        
 
-          <button type="button" id="goback" onclick="goBack()"><i class="xi-angle-left"></i>Retour</button>
-        </div>         
+          <!-- GOBACK BUTTON AT THE BOTTOM -->
+          <button type="button" id="goback"><a href="index.html"><i class="xi-angle-left"></i>Retour</a></button>
+          <!-- END OF GOBACK BUTTON AT THE BOTTOM -->
+        </div>   
+        <!-- END OF SIDEBAR MENU -->
+
       </div> 
+      <!-- END OF SIDEBAR ON THE LEFT -->
+
     </main>
+    <!-- END OF MAIN -->
     
-    <!-- 
-      FOOTER AT THE BOTTOM
-     -->
-     <footer>
+    <!-- FOOTER -->
+    <footer>
       <p><a href="politique.html">Politique de protection des données personnelles</a></p>
     </footer>
-
+    <!-- END OF FOOTER -->
   
   </div>
- 
+  <!-- END OF WRAPPER -->
+
+  <!-- JAVASCRIPT --> 
   <script src="js/index.js"></script>
 
 </body>

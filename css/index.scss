@@ -10,11 +10,10 @@ $bars: #707070;
 $background: #e0e0e0ad;
 $button_hover: #5a9b00;
 
-
-
 // 
 // MIXINS
 // 
+
 // BOX SHADOW
 @mixin box-shadow {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
@@ -79,29 +78,6 @@ main { flex: 1;}
 header { background: $main;
 
   // NEGOCIM LOGO
-  // h1 { float: left; padding: 1rem 5rem .8rem 1.3rem;
-  //   a img { display: block; width: 8.5rem; height: 1.75rem;}
-  // }  
-
-  // NAV MENU 
-  // .menu { float: left;
-  //   ul { 
-  //     li { float: left;
-  //       a { display: block; font-size: .8rem; color: $text; padding: 1.3rem .6rem .4rem; position: relative; transition: all 0.5s; 
-  //         &:hover { color: $text-dark;}
-  //         &:before { content: ""; position: absolute; left: 30%; bottom: 0; width: 0; height: 1px; background: white; transition: all .5s;}  
-  //         &:hover:before { width: 40%;}        
-  //       }
-  //       .active { color: $text;
-  //         &:before { width: 40%;}
-  //       }
-  //     }
-  //   }
-  // }  
-
-
-  // NEGOCIM LOGO V1
-  // LOGO 
   h1 { float: left; padding: .5rem; padding-left: 2rem;
     a img { display: block; width: 17rem; height: auto;}
   }
@@ -120,34 +96,36 @@ header { background: $main;
         }
 
         &:first-child a {padding-left: 0;} 
-        // &:last-child a {padding-right: 0;}     
       }
     }
   }  
-  // END OF NEGOCIM LOGO V1 
+  // END OF NAV MENU
 
-  // MENU BAR ON MOBILE VERSION
+  // MENU BARS ON MOBILE VERSION
   #menu-toggle { display: none; float: right; padding: .8rem .8rem .5rem 0rem; cursor: pointer; z-index: 2;  
     .bar1, .bar2, .bar3 { 
       width: 35px; height: 5px; margin: 6px 0; background-color: $text; transition: 0.4s;
-    }    
+    }
   }
+  // END OF MENU BARS ON MOBILE VERSION
 
-  // MENU BAR ACTION ON MOBILE VERSION 
-  // WHEN CLICKED
+  // MENU BAR ACTION ON MOBILE VERSION WHEN CLICKED
   .change .bar1 { transform: rotate(-45deg) translate(-9px, 6px);}    
   .change .bar2 { opacity: 0;}    
   .change .bar3 {
     -webkit-transform: rotate(45deg) translate(-8px, -8px);
     transform: rotate(45deg) translate(-8px, -8px);
   }  
+  // END OF MENU BAR ACTION ON MOBILE VERSION WHEN CLICKED
+
 }
 // END OF HEADER
 
 
 // MAIN #TERRAINS
 #terrains { position: relative;
-  // FLOATING LINKS ON THE LEFT
+
+  // FLOATING LIST LINKS ON THE LEFT
   #float-left { position: absolute; left: 3.5rem; top: 30%; z-index: 1;
     ul li { margin: .2rem 0;
       &:nth-child(1) i { color: #2e60ff;}
@@ -162,6 +140,8 @@ header { background: $main;
       }
     }
   }
+  // END OF FLOATING LIST LINKS ON THE LEFT
+
 
   // MAP OF FRANCE
   .main-right { text-align: center; height: 100%; width: 100%; overflow: auto;
@@ -175,10 +155,12 @@ header { background: $main;
           &:focus { outline: none;}
         }
       }
+      // END OF CLICKABLE AREAS IN THE MAP
       
       p { position: absolute; left: 0; right: 0; bottom: 1.5rem; font-size: .8rem; font-weight: bold; padding: 0 1rem;} 
     }
   }
+  // END OF MAP OF FRANCE
 }
 // END OF MAIN
 
@@ -208,8 +190,6 @@ footer { text-align: center; height: auto; line-height: 2.35rem; background: $ma
 }
 // END OF POLITIQUE PAGE
 
-
-
 // 
 // GLOBAL EFFECTS AND ACTIONS
 // 
@@ -218,23 +198,26 @@ footer { text-align: center; height: auto; line-height: 2.35rem; background: $ma
 a, button { transition: all .5s ease;}
 
 
-
-// PRINT A PAGE WITH BACKGROUND IMAGES AND COLORS
+// 
+// PRINT A PAGE 
+// 
 @media print {
   body { 
+    // PRINT BACKGROUND IMAGES AND COLORS
     -webkit-print-color-adjust: exact; 
     color-adjust: exact; // For Firefox
 
     // PRINT ONLY SELECTED ELEMENTS
     > div {
 
-      // MAKE HEADER HEIGHT SMALLER
+      // SMALLER HEADER HIEGHT
       header { 
         h1 { padding: .5rem 1rem;
           a img { width: 7rem}
         }
         nav { display: none;}
       } 
+      // END OF SMALLER HEADER HIEGHT
 
       // REMOVE SIDEBAR ON THE LEFT & MAKE THE CONTENT ON THE RIGHT FULL WIDTH
       main {
@@ -243,26 +226,27 @@ a, button { transition: all .5s ease;}
         }
         #sidebar-left { display: none !important;}
       }
+      // END OF REMOVE SIDEBAR ON THE LEFT & MAKE THE CONTENT ON THE RIGHT FULL WIDTH
 
       // PLAN DU LOTISSEMENT PAGE
       #terrain_plan .main-right #plan_right {
         width: 90%; margin: 0 auto !important;
         > P { display: none;}
       }
+      // END OF PLAN DU LOTISSEMENT PAGE
 
       // REMOVE SIDEBAR ON THE LEFT & MAKE THE CONTENT ON THE RIGHT FULL WIDTH
       #qui_sommes_nous .text {
         .list_left { display: none;}
         .text_right { width: 100%; padding: 0;}
       }
+      // END OF REMOVE SIDEBAR ON THE LEFT & MAKE THE CONTENT ON THE RIGHT FULL WIDTH
 
-      // MAKE FOOTER HEIGHT SMALLER
+      // SMALLDER FOOTER HEIGHT
       footer { height: 5px;
-        p { display: none;}
-        // p { font-size: 1px;
-        //   a { font-size: 1px; visibility: hidden;}
-        // }        
-      }      
+        p { display: none;}             
+      }  
+      // END OF SMALLDER FOOTER HEIGHT    
     }                      
   }
 }

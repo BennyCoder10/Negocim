@@ -2,8 +2,10 @@
 @import "index.scss";
 
 
-// VERSION 1
+// COMMENT CODES FOR SIDEBAR ON THE LEFT AND THE CONTENTS ON THE RIGHT
 main {  
+
+  // SIDEBAR ON THE LEFT
   #sidebar-left {
     // position: sticky; min-height: 500px; height: 100vh; top: -100px; float: left; width: 14rem;  background-color: white; padding: 1rem;
      position: relative; float: left; width: 14rem; height: 100%; background-color: white; padding: 1rem; 
@@ -13,24 +15,25 @@ main {
       &:hover a { color: $text-dark;}
     }
 
+    // SIDEBAR MENU
     .sidebar-menu { @include scrollbar(auto); margin-bottom: 4rem; 
-      h4 { text-align: left; font-size: 1rem; color: $main; font-weight: 400; line-height: 1.3;
-        strong { color: $main;}
-      }
-      p { margin: 1.5rem .5rem 0 0; font-weight: 100; text-align: left; font-size: 1rem; color: $main; word-break: normal;}
-      .info { font-size: .7rem; height: 60%; overflow-y: auto; @include scrollbar(auto)} 
+      // h4 { text-align: left; font-size: 1rem; color: $main; font-weight: 400; line-height: 1.3;
+      //   strong { color: $main;}
+      // }
+      // p { margin: 1.5rem .5rem 0 0; font-weight: 100; text-align: left; font-size: 1rem; color: $main; word-break: normal;}
+      // .info { font-size: .7rem; height: 60%; overflow-y: auto; @include scrollbar(auto)} 
       
-      // TERRAIN SUB TEXT
-      .sub { height: 90%;}
+      // // TERRAIN SUB TEXT
+      // .sub { height: 90%;}
 
-      // TERRAIN SUB PROJECT TEXT
-      .projet { font-size: .8rem;}
+      // // TERRAIN SUB PROJECT TEXT
+      // .projet { font-size: .8rem;}
 
-      .look { display: block; margin-top: 1rem; font-size: 1rem; text-align: left; background: none; color: $text; font-weight: bold;
-        &:hover { color: $text-dark;}
-      }
+      // .look { display: block; margin-top: 1rem; font-size: 1rem; text-align: left; background: none; color: $text; font-weight: bold;
+      //   &:hover { color: $text-dark;}
+      // }
 
-      // TERRAIN SUB PROJECT INFORM BUTTON
+      // SIDEBAR MENU BUTTONS
       button { margin-bottom: .5rem; text-align: left; display: block; width:100%; border-radius: 0;  background: white; outline: none; transition: all .5s ease;
         a { display: block; font-size: .9rem; color: $main; padding: .4rem .5rem;}
         &:hover a { color: $text-dark;}        
@@ -40,67 +43,60 @@ main {
         i { color: $main; padding-left: 10px; transition: all .5s ease;}   
         &:hover i { color: $text-dark;}    
        }
-      // #itineraire { 
-      //   &:hover a span { color: $text-dark;}
-      //   a span { font-size: .9rem; color: $main; transition: all .5s ease;
-          
-      //     // display: block; color: $main; transition: all .5s ease; 
-      //     &:after { content: url(../images/lotissement/vr_icon.png); position: absolute; top: 0; left: 0;}    
-      //   }
-      //   // &:hover a { color: black; transition: all .5s ease;}
-      // }
 
       .visite_virtuelle,
       #simulaer_un_credit,
       #imprimer { text-align: center; border-radius: 3px; background: $sub; 
         &:hover { background: $button_hover;}
-        a { color: white; font-size: 1rem;}
-        // margin: 0 auto; text-align: center; margin-bottom: .8rem; display: block; @include buttons; border-radius: 3px; padding: .3rem .2rem; font-size: 1rem; color: $text;
-        // a { display: inline; font-size: 1rem; padding: 0;}
-        // &:hover { font-weight: normal;}
+        a { font-size: 1rem; color: white;}
       } 
 
       // CREATED VISITE VIRTUELLE BUTTON WHEN MAIN TAG HAS A CLASS "VISIT"
-      .visite_virtuelle { font-style: italic; font-weight: bold;
-        // &:hover a { color: white;}
+      .visite_virtuelle { font-weight: bold; font-style: italic;
         &:hover a { color: white;}
         img { width: 30px; padding-right: 10px; margin-left: -2rem;}
       }
       
       #imprimer { font-size: 1rem; color: white; padding: .4rem .5rem;}
  
-      #goback { @include buttons; margin: 0 auto; position: absolute; left: 0; right: 0; width: auto; bottom: 1rem; color: $text; 
-        a { padding: .4rem 2.5rem; font-size: .8rem;
+      // GOBACK BUTTON AT THE BOTTOM
+      #goback { @include buttons; position: absolute; left: 0; right: 0; bottom: 1rem; color: $text; width: auto; margin: 0 auto; 
+        a { font-size: .8rem; padding: .4rem 2.5rem; 
           i { font-size: .7rem; color: white; padding-right: .3rem;} 
         }       
-      }      
-    }     
+      } 
+      // END OF GOBACK BUTTON AT THE BOTTOM
+
+    }    
+    // END OF SIDEBAR MENU 
+    
   }  
+  // END OF SIDEBAR ON THE LEFT
+
+  // CONTENTS ON THE RIGHT
   .main-right { width: calc(100% - 14rem); padding: .5rem; height: 100%;
     // .wrapper { padding: .5rem; background-color: $background;}
     > * { height: 100%; padding: .5rem; background-color: $background;}
   }
+  // END OF CONTENTS ON THE RIGHT
+
 }
-// END OF COMMON SIDEBAR MENU ON THE LEFT 
+// END OF COMMENT CODES FOR SIDEBAR ON THE LEFT AND THE CONTENTS ON THE RIGHT
 
 
 //
-// MAIN #TERRAIN_PRESENTATION
+// MAIN #TERRAIN_SINGLE_PAGE
 //
 #terrain_single_page { position: relative; 
 
-  // SECTION ON THE RIGHT FOR MAP IMAGE & GOOGLE MAP API
+  // SECTION ON THE RIGHT ON THE TERRAIN_SINGLE_PAGE
   .main-right { float: right; text-align: center;
     
-    .header { height: auto; margin-bottom: .5rem; background: white; 
-      // border-bottom: .5rem solid $background; 
-      border-top: 5px solid #999999c2; 
-      border-bottom: 5px solid #999999c2;
-      
+    .header { height: auto; margin-bottom: .5rem; background: white; border-top: 5px solid #999999c2; border-bottom: 5px solid #999999c2;
       h2 i { color: $sub;}
     }
 
-    .subtitle { color: white; padding: .5rem 0; margin-bottom: 1rem; background-color: $sub !important; @include box-shadow;}
+    .subheadings { color: white; padding: .5rem 0; margin-bottom: 1rem; background-color: $sub !important; @include box-shadow;}
 
     // PRESENTATION PAGE
     #presentation { position: relative; padding: .5rem; background-color: $background; height: auto; margin-bottom: .7rem;
@@ -143,72 +139,58 @@ main {
       // END OF SPLIDE CAROUSEL 
 
 
-      // MODAL PICTURES
-      .modal {
-        display: none; position: fixed; left: 0; top: 0; width: 100%; height: 100%; overflow: auto; 
-        background-color:rgba(0, 0, 0, 0.664); animation: slowAppear .2s ease-in-out; z-index: 1;
-      }
+      // LIGHTBOX 
+      .modal { display: none; position: fixed; left: 0; top: 0; width: 100%; height: 100%; overflow: auto; background-color:rgba(0, 0, 0, 0.664); animation: slowAppear .2s ease-in-out; z-index: 1;
+        .modal-content { display: inline-block; position: relative; padding: 0; margin: auto; top: 50%; transform: translateY(-50%); background-color: #fefefe; border-radius: .5rem;
+          
+          // CLOSE BUTTON
+          .close { position: absolute; top: -29px; right: -23px; font-size: 35px;
+            i { color: white;}
+            &:hover, 
+            &:focus {
+              color: #999; text-decoration: none; cursor: pointer;
+            }
+          } 
+          // END OF CLOSE BUTTON
 
-      /* Modal Content */
-      .modal-content {
-        display: inline-block; position: relative; background-color: #fefefe; margin: auto; padding: 0; top: 50%; transform: translateY(-50%); border-radius: .5rem;
-      }
-
-      // CLOSE BUTTON
-      .close { position: absolute; top: -29px; right: -23px; font-size: 35px;
-        i { color: white;}
-      }
-
-      .close:hover,
-      .close:focus {
-        color: #999; text-decoration: none; cursor: pointer;
-      }
-
-      // PIC SLIDES 
-      .mySlides { display: none; height: auto; max-width: 85vw; max-height: 85vh; padding: .5rem;}
+          // PHOTOS
+          .mySlides { display: none; height: auto; max-width: 85vw; max-height: 85vh; padding: .5rem;}
 
 
-      // PREV, NEXT BUTTONS PADDINGS
-      .arrow { position: absolute; top: 50%; transform: translateY(-50%); padding: 20% 40%;}
-      
-      .arrow_prev { left: 0; padding-left: .5rem;}
-      .arrow_next { right: 0; padding-right: .5rem;}
-      
-      .arrow_prev:hover .prev,
-      .arrow_next:hover .next { opacity: 1;}
+          // PREV, NEXT BUTTONS
+          .arrow { position: absolute; top: 50%; transform: translateY(-50%); padding: 20% 40%;
+            .prev,
+            .next {     
+              font-size: 2rem; font-weight: bold; width: auto; padding: .5rem; background-color: rgba(90, 88, 88, 0.76); border-radius: 3px; cursor: pointer; opacity: 0; transition: 0.6s ease;
+              // user-select: none;
+              // -webkit-user-select: none;            
+              i { color: white;}
+            }
+          }
 
-      // PREV, NEXT BUTTONS
-      .prev,
-      .next {     
-        font-size: 2rem; font-weight: bold; padding: .5rem; width: auto; border-radius: 3px; background-color: rgba(90, 88, 88, 0.76); cursor: pointer; opacity: 0; transition: 0.6s ease;
-        // user-select: none;
-        // -webkit-user-select: none;
-      
-        i { color: white;}
-      }
+          .arrow_prev { left: 0; padding-left: .5rem;}
+          .arrow_next { right: 0; padding-right: .5rem;}
+          
+          .arrow_prev:hover .prev,
+          .arrow_next:hover .next { opacity: 1;}
+          // END OF PREV, NEXT BUTTONS
+        }
+      }    
     }  
     // END OF PRESENTATION PAGE
-    
+
     // PLAN PAGE
-    // LOTISSEMENT NAME ON MOBILE
-    // .lotissement_name { display: none; padding: .5rem 0;
-    //   h3 { font-weight: normal;}
-    //   h2 i { color: $sub;}
-    // }
-
     #plan_right { position: relative; height: auto; padding: .5rem; background-color: $background; margin-bottom: .7rem;
-      
       // h2 {color: white; padding: .5rem 0; margin-bottom: 1rem; background-color: $sub; @include box-shadow;}
-
       .click { color: white; width: fit-content; padding: .5rem; margin: 0 auto 1rem; background-color: $sub; @include box-shadow;}
       .visit-notice { font-size: .9rem; font-style: italic; padding-bottom: 0.5rem;}
       
-
-      // MAP IMG VERSION
+      // PLAN IMAGE
       .plan { margin: 0;
         .plan_img { position: relative; @include box-shadow; max-width: 730px; margin: 0 auto;
           > img { display: block; width: 100%;}
 
+          // VENDU & OPTION BUTTONS
           .lot { position: absolute; transition: none;
             line-height: 1; width: 14%;
               display: grid; grid-gap: 2px;
@@ -224,9 +206,9 @@ main {
             .visit {
               img { width: auto;}
             }
-          }          
+          }     
+          // END OF VENDU & OPTION BUTTONS     
           
-          /* MAP IMG VERSION */
           // LOCATION OF EACH LOT
           #lot1868 { left: 49%; top: 28%;}
           #lot1869 { left: 48%; top: 44%;}
@@ -241,22 +223,22 @@ main {
           // END OF LOCATOIN OF EACH LOT
 
           // WHEN "ACTIVE" CLASS ADDED
-          .active { cursor: pointer;}
+          .active { cursor: pointer;}          
         }
       }
-      // END OF MAP IMG VERSION
-
+      // END OF PLAN IMAGE
 
       // NOTICE AT THE BOTTOM IN THE PLAN PAGE
       .lot_notice { font-size: .8rem; max-width: 730px; padding: .5rem; margin: 1rem auto 0; background: white; border: 1px solid $bars;
         p { text-align: center; font-style: italic;}  
-        span { text-align: center; display: block; padding: .5rem; }
+        .update_date { font-style: normal; padding: .5rem; }
       } 
     }
     // END OF PLAN PAGE
 
 
     // GRILLE PAGE
+
     // LOTISSEMENT NAME ON MOBILE
     // .lotissement_name { display: none; padding: .5rem 0;
     //   h3 { font-weight: normal;}
@@ -264,7 +246,8 @@ main {
     // }
         
     .grille { height: auto;
-      // background-color: #e0e0e0;
+
+      // WRAPPER
       .wrapper {
         > * { background-color: white;}
 
@@ -292,12 +275,14 @@ main {
             }
           }
 
-          // WHEN "ACTIVE" CLASS ADDED
+          // ADD VISIT VIRTUELLE CLASS
           .active {
             &:hover { cursor: pointer;}
           }
         }
+        // END OF LOT INFORMATION TABLE ON THE GRILLE DE PRIX PAGE
 
+        // NOTAIRE & GEOMETRE
         .notaire_geometre { display: grid; grid-template-columns: 1fr 1fr; text-align: left; margin: .5rem 0; @include box-shadow;
           > div { padding: .5rem 2rem;
             h5 { color: $sub; font-weight: bold; text-align: center; padding-bottom: .5rem;}
@@ -305,6 +290,7 @@ main {
           }
           .notaire { border-right: .5px dashed $bars;}
         }
+        // END OF NOTAIRE & GEOMETRE
           
         // LOT PRICE INFORMATION TABLE ON THE GRILLE DE PRIX PAGE
         .info_table { padding: .5rem 0; @include box-shadow;
@@ -315,9 +301,16 @@ main {
             }
           }
         }
+        // END OF LOT PRICE INFORMATION TABLE ON THE GRILLE DE PRIX PAGE
+        
         .btm { font-size: .8rem; text-align: left; padding: .5rem; margin-top: 1rem; background-color: white; border: 1px solid $bars;}
-      }      
+
+      } 
+      // END OF WRAPPER  
     } 
     // END OF GRILLE PAGE
+
   }
+  // END OF SECTION ON THE RIGHT ON THE TERRAIN_SINGLE_PAGE
 }
+// END OF MAIN

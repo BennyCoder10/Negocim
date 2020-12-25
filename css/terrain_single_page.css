@@ -448,72 +448,6 @@ main #sidebar-left .sidebar-menu::-webkit-scrollbar-thumb:hover {
   background: #5a9b00;
 }
 
-main #sidebar-left .sidebar-menu h4 {
-  text-align: left;
-  font-size: 1rem;
-  color: #4cb0b2;
-  font-weight: 400;
-  line-height: 1.3;
-}
-
-main #sidebar-left .sidebar-menu h4 strong {
-  color: #4cb0b2;
-}
-
-main #sidebar-left .sidebar-menu p {
-  margin: 1.5rem .5rem 0 0;
-  font-weight: 100;
-  text-align: left;
-  font-size: 1rem;
-  color: #4cb0b2;
-  word-break: normal;
-}
-
-main #sidebar-left .sidebar-menu .info {
-  font-size: .7rem;
-  height: 60%;
-  overflow-y: auto;
-}
-
-main #sidebar-left .sidebar-menu .info::-webkit-scrollbar {
-  width: 6px;
-}
-
-main #sidebar-left .sidebar-menu .info::-webkit-scrollbar-track {
-  background: #bcbdbc;
-}
-
-main #sidebar-left .sidebar-menu .info::-webkit-scrollbar-thumb {
-  background: #87c133;
-  height: auto;
-}
-
-main #sidebar-left .sidebar-menu .info::-webkit-scrollbar-thumb:hover {
-  background: #5a9b00;
-}
-
-main #sidebar-left .sidebar-menu .sub {
-  height: 90%;
-}
-
-main #sidebar-left .sidebar-menu .projet {
-  font-size: .8rem;
-}
-
-main #sidebar-left .sidebar-menu .look {
-  display: block;
-  margin-top: 1rem;
-  font-size: 1rem;
-  text-align: left;
-  background: none;
-  color: #ffffff;
-  font-weight: bold;
-}
-
-main #sidebar-left .sidebar-menu .look:hover {
-  color: #525451;
-}
-
 main #sidebar-left .sidebar-menu button {
   margin-bottom: .5rem;
   text-align: left;
@@ -565,13 +499,13 @@ main #sidebar-left .sidebar-menu #imprimer:hover {
 main #sidebar-left .sidebar-menu .visite_virtuelle a,
 main #sidebar-left .sidebar-menu #simulaer_un_credit a,
 main #sidebar-left .sidebar-menu #imprimer a {
-  color: white;
   font-size: 1rem;
+  color: white;
 }
 
 main #sidebar-left .sidebar-menu .visite_virtuelle {
-  font-style: italic;
   font-weight: bold;
+  font-style: italic;
 }
 
 main #sidebar-left .sidebar-menu .visite_virtuelle:hover a {
@@ -595,13 +529,13 @@ main #sidebar-left .sidebar-menu #goback {
   background: #87c133;
   border: none;
   border-radius: 1.4rem;
-  margin: 0 auto;
   position: absolute;
   left: 0;
   right: 0;
-  width: auto;
   bottom: 1rem;
   color: #ffffff;
+  width: auto;
+  margin: 0 auto;
 }
 
 main #sidebar-left .sidebar-menu #goback a {
@@ -620,8 +554,8 @@ main #sidebar-left .sidebar-menu #goback:focus {
 }
 
 main #sidebar-left .sidebar-menu #goback a {
-  padding: .4rem 2.5rem;
   font-size: .8rem;
+  padding: .4rem 2.5rem;
 }
 
 main #sidebar-left .sidebar-menu #goback a i {
@@ -663,7 +597,7 @@ main .main-right > * {
   color: #87c133;
 }
 
-#terrain_single_page .main-right .subtitle {
+#terrain_single_page .main-right .subheadings {
   color: white;
   padding: .5rem 0;
   margin-bottom: 1rem;
@@ -678,7 +612,6 @@ main .main-right > * {
   background-color: #e0e0e0ad;
   height: auto;
   margin-bottom: .7rem;
-  /* Modal Content */
 }
 
 #terrain_single_page .main-right #presentation .visite_virtuelle {
@@ -761,37 +694,36 @@ main .main-right > * {
   z-index: 1;
 }
 
-#terrain_single_page .main-right #presentation .modal-content {
+#terrain_single_page .main-right #presentation .modal .modal-content {
   display: inline-block;
   position: relative;
-  background-color: #fefefe;
-  margin: auto;
   padding: 0;
+  margin: auto;
   top: 50%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
+  background-color: #fefefe;
   border-radius: .5rem;
 }
 
-#terrain_single_page .main-right #presentation .close {
+#terrain_single_page .main-right #presentation .modal .modal-content .close {
   position: absolute;
   top: -29px;
   right: -23px;
   font-size: 35px;
 }
 
-#terrain_single_page .main-right #presentation .close i {
+#terrain_single_page .main-right #presentation .modal .modal-content .close i {
   color: white;
 }
 
-#terrain_single_page .main-right #presentation .close:hover,
-#terrain_single_page .main-right #presentation .close:focus {
+#terrain_single_page .main-right #presentation .modal .modal-content .close:hover, #terrain_single_page .main-right #presentation .modal .modal-content .close:focus {
   color: #999;
   text-decoration: none;
   cursor: pointer;
 }
 
-#terrain_single_page .main-right #presentation .mySlides {
+#terrain_single_page .main-right #presentation .modal .modal-content .mySlides {
   display: none;
   height: auto;
   max-width: 85vw;
@@ -799,7 +731,7 @@ main .main-right > * {
   padding: .5rem;
 }
 
-#terrain_single_page .main-right #presentation .arrow {
+#terrain_single_page .main-right #presentation .modal .modal-content .arrow {
   position: absolute;
   top: 50%;
   -webkit-transform: translateY(-50%);
@@ -807,38 +739,38 @@ main .main-right > * {
   padding: 20% 40%;
 }
 
-#terrain_single_page .main-right #presentation .arrow_prev {
-  left: 0;
-  padding-left: .5rem;
-}
-
-#terrain_single_page .main-right #presentation .arrow_next {
-  right: 0;
-  padding-right: .5rem;
-}
-
-#terrain_single_page .main-right #presentation .arrow_prev:hover .prev,
-#terrain_single_page .main-right #presentation .arrow_next:hover .next {
-  opacity: 1;
-}
-
-#terrain_single_page .main-right #presentation .prev,
-#terrain_single_page .main-right #presentation .next {
+#terrain_single_page .main-right #presentation .modal .modal-content .arrow .prev,
+#terrain_single_page .main-right #presentation .modal .modal-content .arrow .next {
   font-size: 2rem;
   font-weight: bold;
-  padding: .5rem;
   width: auto;
-  border-radius: 3px;
+  padding: .5rem;
   background-color: rgba(90, 88, 88, 0.76);
+  border-radius: 3px;
   cursor: pointer;
   opacity: 0;
   -webkit-transition: 0.6s ease;
   transition: 0.6s ease;
 }
 
-#terrain_single_page .main-right #presentation .prev i,
-#terrain_single_page .main-right #presentation .next i {
+#terrain_single_page .main-right #presentation .modal .modal-content .arrow .prev i,
+#terrain_single_page .main-right #presentation .modal .modal-content .arrow .next i {
   color: white;
+}
+
+#terrain_single_page .main-right #presentation .modal .modal-content .arrow_prev {
+  left: 0;
+  padding-left: .5rem;
+}
+
+#terrain_single_page .main-right #presentation .modal .modal-content .arrow_next {
+  right: 0;
+  padding-right: .5rem;
+}
+
+#terrain_single_page .main-right #presentation .modal .modal-content .arrow_prev:hover .prev,
+#terrain_single_page .main-right #presentation .modal .modal-content .arrow_next:hover .next {
+  opacity: 1;
 }
 
 #terrain_single_page .main-right #plan_right {
@@ -877,7 +809,6 @@ main .main-right > * {
           box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   max-width: 730px;
   margin: 0 auto;
-  /* MAP IMG VERSION */
 }
 
 #terrain_single_page .main-right #plan_right .plan .plan_img > img {
@@ -999,9 +930,8 @@ main .main-right > * {
   font-style: italic;
 }
 
-#terrain_single_page .main-right #plan_right .lot_notice span {
-  text-align: center;
-  display: block;
+#terrain_single_page .main-right #plan_right .lot_notice .update_date {
+  font-style: normal;
   padding: .5rem;
 }
 

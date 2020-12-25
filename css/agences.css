@@ -70,6 +70,7 @@
 
 html {
   font-size: 20px;
+  scroll-behavior: smooth;
 }
 
 body {

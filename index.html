@@ -4,8 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <meta name="keywords" lang="fr" content="negocim, accueil, terrains, terrain, lotisseur, lotissement, lotissements, terain, terains, batir, promoteur, promoteurs, prometeur, foncier, fonciere, propriete, viabilise, parcelle, morcellement, construction, constructeur, amenageur">
   <meta name="description" content="Aménageur foncier spécialiste du terrain à bâtir pour particuliers">
+  <meta name="keywords" lang="fr" content="negocim, accueil, terrains, terrain, lotisseur, lotissement, lotissements, terain, terains, batir, promoteur, promoteurs, prometeur, foncier, fonciere, propriete, viabilise, parcelle, morcellement, construction, constructeur, amenageur">
   <title>Negocim France</title>
 
   <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
@@ -17,13 +17,15 @@
 <body>
   <!-- WRAPPER FOR FULL HEIGHT ON THE SCREEN -->
   <div class="wrapper">
+
+    <!-- HEADER -->
     <header class="clear">
 
       <!-- NEGOCIM LOGO -->
-      <h1><a href="index.html"><img src="images/main_logo_v1.jpg" alt="Negocim logo"><span class="hide">Negocim</span></a></h1>
-      <h2 class="hide">menu</h2>
+      <h1><a href="index.html"><img src="images/main_logo.jpg" alt="Negocim logo"><span class="hide">Negocim</span></a></h1>
 
-      <!-- NAV MENU  -->
+      <!-- NAV MENU -->
+      <h2 class="hide">menu</h2>
       <nav class="menu" id="menu">
         <ul>
           <li><a href="index.html" class="active">Terrains</a></li>
@@ -34,27 +36,32 @@
           <li><a href="lexique.html">Lexique</a></li>            
         </ul>
       </nav>
-      <!-- MENU BAR ON MOBILE VERSION -->
+      <!-- END OF NAV MENU -->
+
+      <!-- MENU BARS ON MOBILE VERSION -->
       <div id="menu-toggle" onclick="menuToggle(this)">
         <div class="bar1"></div>
         <div class="bar2"></div>
         <div class="bar3"></div>
       </div>
+      <!-- END OF MENU BARS ON MOBILE VERSION -->
+
     </header>
     <!-- END OF HEADER -->
 
-    
     <!-- MAIN -->
     <main id="terrains" class="clear">
-      <!-- FLOATING LINKS -->
+
+      <!-- FLOATING LIST LINKS ON THE LEFT -->
       <div id="float-left">
         <ul>
           <li class="vannes"><a href="terrain_bretagne.html"><i class="xi-full-moon"></i><span>La Bretagne</span></a></li>
           <li class="tour"><a href="terrain_tour.html"><i class="xi-full-moon"></i><span>La Touraine</span></a></li>
           <li class="orleanais"><a href="terrain_orleanais.html"><i class="xi-full-moon"></i><span>L'Orléanais</span></a></li>
-          <li class="bordeaux"><a href="terrain_sudouest.html"><i class="xi-full-moon"></i><span>Sud-Ouest</span></a></li>
+          <li class="bordeaux"><a href="terrain_sudouest.html"><i class="xi-full-moon"></i><span>Le Sud-Ouest</span></a></li>
         </ul>
       </div>  
+      <!-- END OF FLOATING LIST LINKS ON THE LEFT -->
 
       <!-- MAP OF FRANCE -->
       <div class="main-right">
@@ -68,13 +75,13 @@
             <area shape="poly" href="terrain_orleanais.html" coords="393,67,378,75,361,91,347,115,338,140,334,154,350,171,366,178,391,179,404,174,412,156,416,132,416,114,419,101,421,90,410,71" alt="L'Orléanais" title="L'Orléanais">
             <area shape="poly" href="terrain_sudouest.html" coords="148,228,159,228,181,234,201,242,223,260,240,283,251,315,258,354,260,396,256,434,242,473,218,510,197,536,148,498,165,471,178,458,178,432,187,402,193,373,194,349,199,327,188,315,195,294,191,275,179,264,165,256,156,245" alt="Sud-Ouest" title="Sud-Ouest">
           </map>
+          <!-- END OF CLICKABLE AREAS IN THE MAP -->
 
           <p>Nous vendons des terrains à bâtir viabilisés, tout en vous laissant le choix de votre constructeur, entreprise ou architecte</p>
-        </div>   
-        
-
-
+        </div>
       </div> 
+      <!-- END OF MAP OF FRANCE -->
+
     </main>
     <!-- END OF MAIN -->
 
@@ -90,11 +97,14 @@
   <!-- JAVASCRIPT -->
   <script src="js/index.js"></script>
 
-  <!-- FOR MAKING CLICKABLE AREAS IN THE RESPONSIVE FRANCE MAP -->
+  <!-- CLICKABLE AREAS IN THE RESPONSIVE FRANCE MAP -->
   <script src="js/map.js"></script>
   <script>
     ImageMap('img[usemap]')
   </script>
+  <!-- END OF CLICKABLE AREAS IN THE RESPONSIVE FRANCE MAP -->
+
+  <!-- END OF JAVASCRIPT -->
 
 </body>
 </html>
