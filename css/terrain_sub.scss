@@ -189,7 +189,7 @@ main {
       // END OF SPLIDE CAROUSEL 
 
 
-      // MODAL PICTURES
+      // LIGHTBOX PICTURES
       .modal {
         display: none; position: fixed; left: 0; top: 0; width: 100%; height: 100%; overflow: auto; 
         background-color:rgba(0, 0, 0, 0.664); animation: slowAppear .2s ease-in-out; z-index: 1;
@@ -210,7 +210,7 @@ main {
         color: #999; text-decoration: none; cursor: pointer;
       }
 
-      // PIC SLIDES 
+      // PHOTOS
       .mySlides { display: none; height: auto; max-width: 85vw; max-height: 85vh; padding: .5rem;}
 
 
@@ -225,7 +225,7 @@ main {
 
       // PREV, NEXT BUTTONS
       .prev,
-      .next {     
+      .next {    
         font-size: 2rem; font-weight: bold; padding: .5rem; width: auto; border-radius: 3px; background-color: rgba(90, 88, 88, 0.76); cursor: pointer; opacity: 0; transition: 0.6s ease;
         // user-select: none;
         // -webkit-user-select: none;
@@ -234,46 +234,6 @@ main {
       }
     }      
   }
-
-  // SIDEBAR MENU ON THE LEFT
-  // #sidebar-left { position: relative; float: left; width: 14rem; height: 100%; background-color: $main; border: .5px solid $bars; padding: 1rem; 
-  //   h2 { padding-bottom: 1.4rem;
-  //     a { font-size: 1.9rem; font-weight: bold; color: white;}
-  //     &:hover a { color: $text-dark;}
-  //   }
-  //   .sidebar-menu { @include scrollbar(auto); margin-bottom: 4rem; 
-  //     h4 { text-align: left; font-size: 1rem; color: white; font-weight: 400; line-height: 1.3;
-  //       strong { color: white;}
-  //     }
-  //     p { margin: 1.5rem .5rem 0 0; font-weight: 100; text-align: left; font-size: 1rem; color: white; word-break: normal;}
-  //     .info { font-size: .7rem; height: 60%; overflow-y: auto; @include scrollbar(auto)} 
-      
-      // TERRAIN SUB TEXT
-      // .sub { height: 90%;}
-
-      // TERRAIN SUB PROJECT TEXT
-      // .projet { font-size: .8rem;}
-
-      // .look { display: block; margin-top: 1rem; font-size: 1rem; text-align: left; background: none; color: $text; font-weight: bold;
-      //   &:hover { color: $text-dark;}
-      // }
-
-      // TERRAIN SUB PROJECT INFORM BUTTON
-//       button { margin-bottom: 1rem; text-align: left; display: block; width:100%; border-radius: 0; padding: .25rem 0 0 .5rem; font-size: .9rem; color: $text; background: none; cursor: pointer; outline: none;
-//         &:hover { color: $text-dark; font-weight: bold;}  
-//       }
-
-//       #simulaer_un_credit, #imprimer 
-//       { margin: 0 auto; text-align: center; margin-bottom: .8rem; display: block; @include buttons; border-radius: 3px; padding: .3rem .2rem; font-size: 1rem; color: $text;
-//         a { display: inline; padding: 0;}
-//         &:hover { font-weight: normal;}
-//       }       
-//     }  
-
-//     #goback { @include buttons; margin: 0 auto; position: absolute; left: 0; right: 0; width: auto; bottom: 1rem; padding: 0.4rem 2.5rem; color: $text; font-size: .8rem;
-//       i { font-size: .7rem; color: white; padding-right: .3rem;}       
-//     }       
-//   }
 }
 // END OF MAIN #TERRAIN_PRESENTATION
 
@@ -300,7 +260,6 @@ main {
       .visit-notice { font-size: .9rem; font-style: italic; padding-bottom: 0.5rem;}
       
       // p { margin: .5rem 0; text-align: center;}
-
 
       // MAP BACKGROUND IMG VERSION
       // .plan { margin: 0; overflow-x: auto;
@@ -334,65 +293,22 @@ main {
             .visit {
               img { width: auto;}
             }
-          }          
+          }      
           
-
           // WHEN "ACTIVE" CLASS ADDED
           .active { cursor: pointer;}
         }
       }
       // END OF MAP IMG VERSION
 
-
       // NOTICE AT THE BOTTOM IN THE PLAN PAGE
       .lot_notice { font-size: .8rem; max-width: 730px; padding: .5rem; margin: 1rem auto 0; background: white; border: 1px solid $bars;
         p { text-align: center; font-style: italic;}  
         span { text-align: center; display: block; padding: .5rem; }
       } 
-    }   
-       
+
+    }     
   }
-
-  // SIDEBAR MENU ON THE LEFT
-  // #sidebar-left { position: relative; float: left; width: 14rem; height: 100%; background-color: $main; border: .5px solid $bars; padding: 1rem; 
-  //   h2 { padding-bottom: 1.4rem;
-  //     a { font-size: 1.9rem; font-weight: bold; color: white;}
-  //     &:hover a { color: $text-dark;}
-  //   }
-  //   .sidebar-menu { @include scrollbar(auto); margin-bottom: 4rem; 
-  //     h4 { text-align: left; font-size: 1rem; color: white; font-weight: 400; line-height: 1.3;
-  //       strong { color: white;}
-  //     }
-  //     p { margin: 1.5rem .5rem 0 0; font-weight: 100; text-align: left; font-size: 1rem; color: white; word-break: normal;}
-  //     .info { font-size: .7rem; height: 60%; overflow-y: auto; @include scrollbar(auto)} 
-      
-      // TERRAIN SUB TEXT
-      // .sub { height: 90%;}
-
-      // TERRAIN SUB PROJECT TEXT
-      // .projet { font-size: .8rem;}
-
-      // .look { display: block; margin-top: 1rem; font-size: 1rem; text-align: left; background: none; color: $text; font-weight: bold;
-      //   &:hover { color: $text-dark;}
-      // }
-
-      // TERRAIN SUB PROJECT INFORM BUTTON
-    //   button { margin-bottom: 1rem; text-align: left; display: block; width:100%; border-radius: 0; padding: .25rem 0 0 .5rem; font-size: .9rem; color: $text; background: none; cursor: pointer; outline: none;
-    //     &:hover { color: $text-dark; font-weight: bold;}  
-    //   }
-
-    //   #simulaer_un_credit, #imprimer 
-    //   { margin: 0 auto; text-align: center; margin-bottom: .8rem; display: block; @include buttons; border-radius: 3px; padding: .3rem .2rem; font-size: 1rem; color: $text;
-    //     a { display: inline; padding: 0;}
-    //     &:hover { font-weight: normal;}
-    //   }
-    // }  
-
-    // GOBACK BUTTON AT THE BOTTOM
-  //   #goback { @include buttons; margin: 0 auto; position: absolute; left: 0; right: 0; width: auto; bottom: 1rem; padding: 0.4rem 2.5rem; color: $text; font-size: .8rem;
-  //     i { font-size: .7rem; color: white; padding-right: .3rem;}       
-  //   }       
-  // }
 }
 // END OF MAIN #TERRAIN_PLAN (PLAN DU LOTISSEMENT)
 
@@ -438,6 +354,7 @@ main {
                 }
               }             
             }
+            // END OF LOT INFORMATION TABLE
           }
 
           // LOT IMAGE ON THE RIGHT
@@ -457,7 +374,10 @@ main {
            // END OF VISITE VIRTUELLE
 
           }
+          // END OF LOT IMAGE ON THE RIGHT
         }
+
+
         .btm { font-size: .8rem; text-align: left; padding: .5rem; margin: .5rem 0 1rem; background-color: white; @include box-shadow;}
 
         // NOTICE AT THE BOTTOM IN THE PLAN PAGE
@@ -467,53 +387,8 @@ main {
         }   
       }
       // END OF WRAPPER   
-
-      
     }
-
-   
   }
-
-  // SIDEBAR MENU ON THE LEFT
-  // #sidebar-left { position: relative; float: left; width: 14rem; height: 100%; background-color: $main; border: .5px solid $bars; padding: 1rem; 
-  //   h2 { padding-bottom: 1.4rem;
-  //     a { font-size: 1.9rem; font-weight: bold; color: white;}
-  //     &:hover a { color: $text-dark;}
-  //   }
-  //   .sidebar-menu { @include scrollbar(auto); margin-bottom: 4rem; 
-  //     h4 { text-align: left; font-size: 1rem; color: white; font-weight: 400; line-height: 1.3;
-  //       strong { color: white;}
-  //     }
-  //     p { margin: 1.5rem .5rem 0 0; font-weight: 100; text-align: left; font-size: 1rem; color: white; word-break: normal;}
-  //     .info { font-size: .7rem; height: 60%; overflow-y: auto; @include scrollbar(auto)} 
-      
-      // TERRAIN SUB TEXT
-      // .sub { height: 90%;}
-
-      // TERRAIN SUB PROJECT TEXT
-      // .projet { font-size: .8rem;}
-
-      // .look { display: block; margin-top: 1rem; font-size: 1rem; text-align: left; background: none; color: $text; font-weight: bold;
-      //   &:hover { color: $text-dark;}
-      // }
-
-      // TERRAIN SUB PROJECT INFORM BUTTON
-    //   button { margin-bottom: 1rem; text-align: left; display: block; width:100%; border-radius: 0; padding: .25rem 0 0 .5rem; font-size: .9rem; color: $text; background: none; cursor: pointer; outline: none;
-    //     &:hover { color: $text-dark; font-weight: bold;}  
-    //   }
-
-    //   #simulaer_un_credit, #imprimer 
-    //   { margin: 0 auto; text-align: center; margin-bottom: .8rem; display: block; @include buttons; border-radius: 3px; padding: .3rem .2rem; font-size: 1rem; color: $text;
-    //     a { display: inline; padding: 0;}
-    //     &:hover { font-weight: normal;}
-    //   }
-    // }  
-
-    // GOBACK BUTTON AT THE BOTTOM
-  //   #goback { @include buttons; margin: 0 auto; position: absolute; left: 0; right: 0; width: auto; bottom: 1rem; padding: 0.4rem 2.5rem; color: $text; font-size: .8rem;
-  //     i { font-size: .7rem; color: white; padding-right: .3rem;}       
-  //   }       
-  // }
 }
 // END OF MAIN #TERRAIN_PLAN (PLAN DU LOTISSEMENT)
 
@@ -524,19 +399,19 @@ main {
 #terrain_grille { position: relative; 
 
   // CONTENT ON THE RIGHT
-  .main-right {
-    float: right; text-align: center; height: 100%; 
+  .main-right { float: right; text-align: center; height: 100%; overflow: auto; 
     // width: calc(100% - 14rem); 
-    overflow: auto; 
 
-     // LOTISSEMENT NAME ON MOBILE
-     .lotissement_name { display: none; padding: .5rem 0;
+    // LOTISSEMENT NAME ON MOBILE
+    .lotissement_name { display: none; padding: .5rem 0;
       h3 { font-weight: normal;}
       h2 i { color: $sub;}
     }
         
+    // GRILLE CONTENT
     .grille { margin: .5rem; 
       // background-color: #e0e0e0;
+
       .wrapper {
         > * { background-color: white;}
 
@@ -570,6 +445,7 @@ main {
             &:hover { cursor: pointer;}
           }
         }
+        // END OF LOT INFORMATION TABLE ON THE GRILLE DE PRIX PAGE
 
         .notaire_geometre { display: grid; grid-template-columns: 1fr 1fr; text-align: left; margin: .5rem 0; @include box-shadow;
           > div { padding: .5rem 2rem;
@@ -588,52 +464,16 @@ main {
             }
           }
         }
+        // END OF LOT PRICE INFORMATION TABLE ON THE GRILLE DE PRIX PAGE
         .btm { font-size: .8rem; text-align: left; padding: .5rem; margin-top: 1rem; background-color: white; border: 1px solid $bars;}
       }      
     }    
+    // END OF GRILLE CONTENT
   }
-
-  // SIDEBAR MENU ON THE LEFT
-  // #sidebar-left { position: relative; float: left; width: 14rem; height: 100%; background-color: $main; border: .5px solid $bars; padding: 1rem; 
-  //   h2 { padding-bottom: 1.4rem;
-  //     a { font-size: 1.9rem; font-weight: bold; color: white;}
-  //     &:hover a { color: $text-dark;}
-  //   }
-  //   .sidebar-menu { @include scrollbar(auto); margin-bottom: 4rem; 
-  //     h4 { text-align: left; font-size: 1rem; color: white; font-weight: 400; line-height: 1.3;
-  //       strong { color: white;}
-  //     }
-  //     p { margin: 1.5rem .5rem 0 0; font-weight: 100; text-align: left; font-size: 1rem; color: white; word-break: normal;}
-  //     .info { font-size: .7rem; height: 60%; overflow-y: auto; @include scrollbar(auto)} 
-      
-      // TERRAIN SUB TEXT
-      // .sub { height: 90%;}
-
-      // TERRAIN SUB PROJECT TEXT
-      // .projet { font-size: .8rem;}
-
-      // .look { display: block; margin-top: 1rem; font-size: 1rem; text-align: left; background: none; color: $text; font-weight: bold;
-      //   &:hover { color: $text-dark;}
-      // }
-
-      // TERRAIN SUB PROJECT INFORM BUTTON
-      // button { margin-bottom: 1rem; text-align: left; display: block; width:100%; border-radius: 0; padding: .25rem 0 0 .5rem; font-size: .9rem; color: $text; background: none; cursor: pointer; outline: none;
-      //   &:hover { color: $text-dark; font-weight: bold;}  
-      // }
-
-    //   #simulaer_un_credit, #imprimer 
-    //   { margin: 0 auto; text-align: center; margin-bottom: .8rem; display: block; @include buttons; border-radius: 3px; padding: .3rem .2rem; font-size: 1rem; color: $text;
-    //     a { display: inline; padding: 0;}
-    //     &:hover { font-weight: normal;}
-    //   }       
-    // }  
-
-    // GOBACK BUTTON AT THE BOTTOM
-  //   #goback { @include buttons; margin: 0 auto; position: absolute; left: 0; right: 0; width: auto; bottom: 1rem; padding: 0.4rem 2.5rem; color: $text; font-size: .8rem;
-  //     i { font-size: .7rem; color: white; padding-right: .3rem;}       
-  //   }       
-  // }
+  // END OF CONTENT ON THE RIGHT
 }
+// END OF MAIN #TERRAIN_GRILLLE (GRILLE PRIX)
+
 
 //
 // MAIN #TERRAIN_DOCUMENT
@@ -641,10 +481,8 @@ main {
 #terrain_document { position: relative; 
 
   // CONTENT ON THE RIGHT
-  .main-right {
-    float: right; text-align: center; height: 100%; 
-    // width: calc(100% - 14rem); 
-    overflow: auto; 
+  .main-right { float: right; text-align: center; height: 100%; overflow: auto; 
+                // width: calc(100% - 14rem); 
 
     // LOTISSEMENT NAME ON MOBILE
     .lotissement_name { display: none; padding: .5rem 0;
@@ -653,7 +491,7 @@ main {
     }
 
         
-    // DOCUMENT
+    // DOCUMENT PAGE
     .document { margin: .5rem;
       .wrapper { 
         h2 { color: white; padding: .5rem 0; margin-bottom: 1rem; background-color: $sub; @include box-shadow;}
@@ -665,57 +503,16 @@ main {
             a { display: inline-block; text-decoration: underline;
               img { padding-right: .3rem;}
             }
-          }
-        
-        }
-        // table { font-size: .8rem; width: 99%; padding: 1rem; margin: 0 auto; background: white; border-collapse: collapse;
-        //   th { border: 1px solid $bars; padding: 0 .3rem;} 
-        // }        
+          }        
+        }   
+        // END OF DOWNLOAD DOCUMENT SECTION 
       }
-    }    
+    }   
+    // END OF DOCUMENT PAGE
   }
-
-  // SIDEBAR MENU ON THE LEFT
-  // #sidebar-left { position: relative; float: left; width: 14rem; height: 100%; background-color: $main; border: .5px solid $bars; padding: 1rem; 
-  //   h2 { padding-bottom: 1.4rem;
-  //     a { font-size: 1.9rem; font-weight: bold; color: white;}
-  //     &:hover a { color: $text-dark;}
-  //   }
-  //   .sidebar-menu { @include scrollbar(auto); margin-bottom: 4rem; 
-  //     h4 { text-align: left; font-size: 1rem; color: white; font-weight: 400; line-height: 1.3;
-  //       strong { color: white;}
-  //     }
-  //     p { margin: 1.5rem .5rem 0 0; font-weight: 100; text-align: left; font-size: 1rem; color: white; word-break: normal;}
-  //     .info { font-size: .7rem; height: 60%; overflow-y: auto; @include scrollbar(auto)} 
-      
-      // TERRAIN SUB TEXT
-      // .sub { height: 90%;}
-
-      // TERRAIN SUB PROJECT TEXT
-      // .projet { font-size: .8rem;}
-
-      // .look { display: block; margin-top: 1rem; font-size: 1rem; text-align: left; background: none; color: $text; font-weight: bold;
-      //   &:hover { color: $text-dark;}
-      // }
-
-      // TERRAIN SUB PROJECT INFORM BUTTON
-    //   button { margin-bottom: 1rem; text-align: left; display: block; width:100%; border-radius: 0; padding: .25rem 0 0 .5rem; font-size: .9rem; color: $text; background: none; cursor: pointer; outline: none;
-    //     &:hover { color: $text-dark; font-weight: bold;}  
-    //   }
-
-    //   #simulaer_un_credit, #imprimer 
-    //   { margin: 0 auto; text-align: center; margin-bottom: .8rem; display: block; @include buttons; border-radius: 3px; padding: .3rem .2rem; font-size: 1rem; color: $text;
-    //     a { display: inline; padding: 0;}
-    //     &:hover { font-weight: normal;}
-    //   }       
-    // }  
-
-    // GOBACK BUTTON AT THE BOTTOM
-  //   #goback { @include buttons; margin: 0 auto; position: absolute; left: 0; right: 0; width: auto; bottom: 1rem; padding: 0.4rem 2.5rem; color: $text; font-size: .8rem;
-  //     i { font-size: .7rem; color: white; padding-right: .3rem;}       
-  //   }       
-  // }
 }
+// END OF MAIN #TERRAIN_DOCUMENT
+
 
 
 //
@@ -724,10 +521,8 @@ main {
 #terrain_option { position: relative; 
 
   // CONTENT ON THE RIGHT
-  .main-right {
-    float: right; text-align: center; height: 100%; 
-    // width: calc(100% - 14rem); 
-    // overflow: auto; 
+  .main-right { float: right; text-align: center; height: 100%; 
+                // width: calc(100% - 14rem); overflow: auto; 
 
      // LOTISSEMENT NAME ON MOBILE
      .lotissement_name { display: none; padding: .5rem 0;
@@ -735,12 +530,13 @@ main {
       h2 i { color: $sub;}
     }
     
-    //  LOT OPTION DETAIL PAGES
+    // LOT OPTION DETAIL PAGES
     > div { margin: .5rem; 
       .wrapper { display: flex; flex-direction: row;
 
         // OPTION & RESERVE ON THE LEFT
         .option_left { flex: 7;
+
           // HEADER
           > h2 { padding: .5rem 1.5rem; margin-bottom: 1rem; background-color: $sub; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
             span { display: block; font-size: 1.5rem; font-weight: bold; color: white; line-height: 1; padding: 0 .3rem;}
@@ -769,11 +565,13 @@ main {
           }
           .option_contact-up { margin-bottom: 1rem;}
         }
+        // END OF OPTION CONTACT ON THE RIGHT
       }         
-    }  
+    } 
+    // END OF LOT OPTION DETAIL PAGES 
   }
   // END OF CONTENT ON THE RIGHT
 }
-
+// END OF MAIN #TERRAIN_OPTION 
 
 

@@ -12,13 +12,19 @@
   <link rel="stylesheet" href="css/default.css">
   <link rel="stylesheet" href="css/contact.css">
   <link rel="stylesheet" href="css/responsive.css">
-
 </head>
 
 <body>
+  <!-- WRAPPER FOR FULL HEIGHT ON THE SCREEN -->
   <div class="wrapper">
+
+    <!-- HEADER -->
     <header class="clear">
-      <h1><a href="index.html"><img src="images/main_logo_v1.jpg" alt="Negocim logo"><span class="hide">Negocim</span></a></h1>
+
+      <!-- NEGOCIM LOGO -->
+      <h1><a href="index.html"><img src="images/main_logo.jpg" alt="Negocim logo"><span class="hide">Negocim</span></a></h1>
+
+      <!-- NAV MENU -->
       <h2 class="hide">menu</h2>
       <nav class="menu" id="menu">
         <ul>
@@ -30,21 +36,36 @@
           <li><a href="lexique.html">Lexique</a></li>            
         </ul>
       </nav>
+      <!-- END OF NAV MENU -->
+
+      <!-- MENU BARS ON MOBILE VERSION -->
       <div id="menu-toggle" onclick="menuToggle(this)">
         <div class="bar1"></div>
         <div class="bar2"></div>
         <div class="bar3"></div>
       </div>
+      <!-- END OF MENU BARS ON MOBILE VERSION -->
+
     </header>
-
-
+    <!-- END OF HEADER -->
+  
+    <!-- MAIN -->
     <main id="agence">
+
+      <!-- AGENCE NAME -->
       <h2>Agence de <span>VANNES</span></h2>
+
+      <!-- AGENCE INFO -->
       <table class="agenceTable">
         <tr>
+
+          <!-- INFO ON THE LEFT -->
           <td class="left">
             <img src="images/photo_agence4.jpg" alt="agence de vannes">
           </td>
+          <!-- END OF INFO ON THE LEFT -->
+
+          <!-- INFO ON THE RIGHT -->
           <td class="right">                           
             <table class="services">
               <tr>
@@ -60,18 +81,25 @@
             </table>                 
             <button class="buttons"><a href="agence_vannes_map.html">Plan d'accès</a></button>
           </td>
+          <!-- END OF INFO ON THE RIGHT -->
+
         </tr>       
       </table>
+      <!-- END OF AGENCE INFO -->
+
     </main>
+    <!-- END OF MAIN -->
     
-    <!-- 
-      FOOTER AT THE BOTTOM
-     -->
+    <!-- FOOTER -->
     <footer>
       <p><a href="politique.html">Politique de protection des données personnelles</a></p>
     </footer>
+    <!-- END OF FOOTER -->
 
   </div>
+  <!-- END OF WRAPPER -->
+
+  <!-- JAVASCRIPT -->
   <script src="js/index.js"></script>
 
 </body>

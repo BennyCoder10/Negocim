@@ -15,12 +15,16 @@
 </head>
 
 <body>  
-  <div class="wrapper"> <!-- FOR FLEXBOX -->
-    <!-- 
-      HEADER 
-      -->
-    <header>
-      <h1><a href="index.html"><img src="images/main_logo_v1.jpg" alt="Negocim logo"><span class="hide">Negocim</span></a></h1>
+  <!-- WRAPPER FOR FULL HEIGHT ON THE SCREEN -->
+  <div class="wrapper">
+
+    <!-- HEADER -->
+    <header class="clear">
+
+      <!-- NEGOCIM LOGO -->
+      <h1><a href="index.html"><img src="images/main_logo.jpg" alt="Negocim logo"><span class="hide">Negocim</span></a></h1>
+
+      <!-- NAV MENU -->
       <h2 class="hide">menu</h2>
       <nav class="menu" id="menu">
         <ul>
@@ -32,36 +36,47 @@
           <li><a href="lexique.html">Lexique</a></li>            
         </ul>
       </nav>
+      <!-- END OF NAV MENU -->
+
+      <!-- MENU BARS ON MOBILE VERSION -->
       <div id="menu-toggle" onclick="menuToggle(this)">
         <div class="bar1"></div>
         <div class="bar2"></div>
         <div class="bar3"></div>
       </div>
+      <!-- END OF MENU BARS ON MOBILE VERSION -->
+
     </header>
+    <!-- END OF HEADER -->
   
-    <!-- 
-      MAIN IN THE MIDDLE 
-      -->
+    <!-- MAIN -->
     <main id="contact">
+
       <div class="clear">
+
         <!-- AGENCE BUTTONS -->
         <div class="agencies" onclick="window.location='contact_bordeaux.html'">
           <img src="images/Agencebordeaux-4.jpg" alt="Bordeaux">
           <button class="buttons"><a href="contact_bordeaux.html">Agence de Bordeaux</a></button>
         </div>
+
         <div class="agencies" onclick="window.location='contact_tour.html'">
           <img src="images/AgenceTours.jpg" alt="Tours">
           <button class="buttons"><a href="contact_tour.html">Agence de Tours</a></button>
         </div>
+
         <div class="agencies" onclick="window.location='contact_orleans.html'">
           <img src="images/AgenceOrleans.jpg" alt="Orléans">
           <button class="buttons"><a href="contact_orleans.html">Agence de Orléans</a></button>
         </div>
+
         <div class="agencies" onclick="window.location='contact_vannes.html'">
           <img src="images/AgenceVannes.jpg" alt="Vannes">
           <button class="buttons"><a href="contact_vannes.html">Agence de Vannes</a></button>
         </div>
+
       </div>
+      <!-- END OF AGENCE BUTTONS  -->
       
       <p>
         Nous sommes en permanence à la <a href="#a">recherche de terrains</a> constructibles afin de réaliser des lotissements.</br>
@@ -70,16 +85,21 @@
         Vous trouverez ci-après la liste des départements susceptibles de nous intéresser pour réaliser nos opérations.</br>
         <a href="#a">Contactez-nous</a> et nous étudierons ensemble la faisabilité d'une opération sur votre propriété.</br>
       </p>
+
     </main>
-    <!-- 
-      FOOTER AT THE BOTTOM
-     -->
+    <!-- END OF MAIN -->
+
+    <!-- FOOTER -->
     <footer>
       <p><a href="politique.html">Politique de protection des données personnelles</a></p>
     </footer>
+    <!-- END OF FOOTER -->
 
   </div>
+  <!-- END OF WRAPPER -->
 
+  <!-- JAVASCRIPT -->
   <script src="js/index.js"></script>
+  
 </body>
 </html>

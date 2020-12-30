@@ -1,8 +1,9 @@
 @charset "utf-8";
 @import "index.scss";
 
-// MAIN
+// MAIN #AGENCE
 #contact { 
+
   // AGENCE BUTTON
   div .agencies { position:relative; float: left; width: 50%; height: auto; border: 1px solid $bars; box-sizing: border-box; overflow: hidden;
     img { width: 100%; height: 13rem; object-fit: cover; transition: transform .5s ease;}
@@ -19,69 +20,63 @@
   p { font-size: .55rem; text-align: center; padding: .5rem; color: black; line-height: 1.5;
     a { color: $sub; font-weight: bold;}
   }
+
 }
-// END OF MAIN
+// END OF MAIN #AGENCE
 
 
-// AGENCES
+// MAIN #AGENCE (INDIVIDUAL AGENCE PAGE)
 #agence {  
-  h2 { padding: 1.4rem 0 1.4rem; font-size: 1.8rem; font-weight: 600; text-align: center;
+
+  // AGENCE NAME
+  h2 { font-size: 1.8rem; font-weight: 600; text-align: center; padding: 1.4rem 0 1.4rem;
     span { color: $sub;}
   }
+
+  // AGENCE INFO
   .agenceTable { width: 100%; margin-bottom: 1.4rem;
-    tr td { width: 50%; text-align: center; padding: 0; 
+    tr td { text-align: center; width: 50%;  padding: 0; 
       // vertical-align: top;
     }
     
+    // INFO ON THE LEFT
     .left { 
       img { width: 100%; height: 22rem; object-fit: cover;} 
     }
-    .right { position: relative; padding-bottom: 6rem; text-align: center;
+    // END OF INFO ON THE LEFT
+
+    // INFO ON THE RIGHT
+    .right { position: relative; text-align: center; padding-bottom: 6rem;
       // h3 { font-size: 1rem; padding: .9rem .5rem 1.8rem;
       //   a { color: $text-dark;
       //     &:hover { color: $sub;}
       //   }
-      // }  
+      // } 
+
       .services {
-          tr td { width: 50%; text-align: center;
+          tr td { text-align: center; width: 50%;
             // h4 { font-weight: 500;}
             > div { padding: 0 .3rem 0;
               .person-name { color: $sub;}
+
               a { color: $text-dark;
                 &:hover { color: $sub;}              
               }
-              p { padding: .5rem 0; margin: .5rem 0; font-weight: 700;}
+
+              p { font-weight: 700; padding: .5rem 0; margin: .5rem 0;}
             }
           }
       }
-      .buttons { position: absolute; bottom: 0; left: 0; right: 0;
+
+      .buttons { position: absolute; left: 0; right: 0; bottom: 0; 
         @include buttons; margin: 1.8rem auto 0; @include transition;
-      }       
+      }
+
     }      
+    // END OF INFO ON THE RIGHT
+
   }
+  // END OF AGENCE INFO
+
 }
-
-
-// previous version
-// main { 
-//   .left { float: left; width: 50%; height: 23rem; border: 1px solid $bars; box-sizing: border-box;
-//     img { width: 100%; height: 100%; object-fit: cover;}
-//   }
-//   .right { float: left; width: 50%; height: 23rem; text-align: center; padding: 5rem 0 9rem; position: relative;
-//     p { font-size: 1rem; line-height: 2.5rem; font-weight: bold; color: $text-dark;
-//       a { color: $text-dark; font-weight: bold;
-//         &:hover { color: $sub;}
-//       }
-//      .buttons {
-//        @include buttons; 
-//        @include transition;       
-//        position: absolute; left: 50%; transform: translateX(-50%); bottom: 0;
-//        a { padding: .75rem 4.5rem;}
-//      }
-//     }
-//   }
-
-//   > p { font-size: .55rem; text-align: center; padding: 1.3rem 0 .5rem; color: black; line-height: 1.5;
-//       a { color: $sub; font-weight: bold;}
-//   }
-// }
+// END OF MAIN #AGENCE (INDIVIDUAL AGENCE PAGE)

@@ -430,24 +430,24 @@ a, button {
 
 #simulateur .choice > div > a {
   display: block;
+  position: relative;
   width: 100%;
   height: 100%;
-  position: relative;
 }
 
 #simulateur .choice > div > a div {
-  height: 4.5rem;
-  width: 100%;
   position: absolute;
   left: 0;
   bottom: 0;
+  height: 4.5rem;
+  width: 100%;
 }
 
 #simulateur .choice > div > a div p {
   font-size: 1.6rem;
-  color: white;
   font-weight: bold;
   text-align: left;
+  color: white;
   padding-left: 1rem;
   -webkit-transition: all .5s ease;
   transition: all .5s ease;
@@ -496,22 +496,22 @@ a, button {
 
 #simulateur .btm-txt {
   font-size: .7rem;
-  padding: 2rem 0 .8rem;
   text-align: center;
+  padding: 2rem 0 .8rem;
 }
 
 #simulateur_steps {
   display: none;
+  position: relative;
   text-align: center;
   padding-bottom: 2rem;
   margin: 1.2rem 3.65rem;
-  position: relative;
 }
 
 #simulateur_steps h1 {
   font-size: 1.7rem;
-  color: #87c133;
   text-align: center;
+  color: #87c133;
 }
 
 #simulateur_steps .indicator {

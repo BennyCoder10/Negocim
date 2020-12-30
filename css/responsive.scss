@@ -17,8 +17,11 @@
  }
 
   // LEXIQUE
-  #lexique > div .index #lexique-nav { justify-content: flex-start;} 
+  // INDEX ALPHABETS
+  #lexique > div .index #lexique-nav { justify-content: flex-start;}
+  
 }
+
 
 // 
 // FOR SCREEN SIZES LESS THAN 1120PX (SMALL PC)
@@ -331,15 +334,22 @@
         > div { margin-left: 0;}
       }    
     }
-  }
-  
+  }  
   
 
   // VENDES & CONTACT_SUB
-  #agence .agenceTable tr .left { display: none;}
-  #agence .agenceTable .right { padding-bottom: 3rem;
-    tr td { width: 100%; padding: 1.5rem 0 3rem;}
+  #agence .agenceTable tr {
+
+    // INFO ON THE LEFT
+    .left { display: none;}
+
+    // INFO ON THE RIGHT
+    .right { padding-bottom: 3rem;
+      tr td { width: 100%; padding: 1.5rem 0 3rem;}
+    }
   }
+  // END OF VENDES & CONTACT_SUB
+
 
   // SIMULATEUR
   #simulateur .choice > div div p { text-align: center; padding-left: 0;}
@@ -353,10 +363,7 @@
       &:hover { background: url(../images/simuler_terrain_construction.jpg) no-repeat center 82% / 135%;}
     }
   }
-  
-
-
-  
+   
   // SIMULATEUR STEPS
   #simulateur_steps { margin: .3rem;
     h1, h2 { font-size: 1.3rem;}
@@ -400,17 +407,21 @@
     }   
   }  
 
-  // QUI SOMMES
+  // #QUI_SOMMES_NOUS
   #qui_sommes_nous .text { padding: 0; margin: 0;
+
+    // LIST ON THE LEFT
     .list_left { display: none; }
+
+    // CONTENT ON THE RIGHT
     .text_right { width: 100%; height: auto; margin: 1.5rem auto; float: none; overflow-y: auto; direction: ltr;
       article:last-child { padding-bottom: 1rem;}
     }
   } 
 
-
   // LEXIQUE
   #lexique > div { padding: .8rem 1rem;}
+
 }
 
 
@@ -612,8 +623,7 @@
         span:first-child { padding-right: .5rem !important;}
       }
     }
-  
-  
+    
     .step4 {
       .summary {
         table th, table td { font-size: .9rem;}
@@ -652,26 +662,35 @@
   }
 
 
-  // QUI SOMMES NOUS
+  // #QUI_SOMMES_NOUS
   #qui_sommes_nous .text {
+
+    // LIST ON THE LEFT
     .list_left { display: none; }
+
+    // CONTENT ON THE RIGHT
     .text_right { width: 100%; height: auto; padding: 0; margin: 1.5rem auto; float: none; 
       // overflow-y: auto; direction: ltr;
       article { padding: .8rem .5rem;
         h3 { font-size: 1.2rem;}
       }
     }
+    // END OF CONTENT ON THE RIGHT
   } 
 
 
   // LEXIQUE
   #lexique > div { padding-bottom: 2rem;
+
+    // INDEX ALPHABETS
     .index { padding-bottom: 2rem;} 
 
+    // LEXIQUE CONTENTS
     #lexique > div #lexique-contents .texts { padding-right: .5rem;
       h3 { padding-bottom: 1.5rem;}
       p { padding-bottom: 1.5rem; line-height: 1.5;}
     }  
+
   }
  
   // POLITIQUE PAGE

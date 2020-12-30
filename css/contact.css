@@ -479,10 +479,10 @@ a, button {
 }
 
 #agence h2 {
-  padding: 1.4rem 0 1.4rem;
   font-size: 1.8rem;
   font-weight: 600;
   text-align: center;
+  padding: 1.4rem 0 1.4rem;
 }
 
 #agence h2 span {
@@ -495,8 +495,8 @@ a, button {
 }
 
 #agence .agenceTable tr td {
-  width: 50%;
   text-align: center;
+  width: 50%;
   padding: 0;
 }
 
@@ -509,13 +509,13 @@ a, button {
 
 #agence .agenceTable .right {
   position: relative;
-  padding-bottom: 6rem;
   text-align: center;
+  padding-bottom: 6rem;
 }
 
 #agence .agenceTable .right .services tr td {
-  width: 50%;
   text-align: center;
+  width: 50%;
 }
 
 #agence .agenceTable .right .services tr td > div {
@@ -535,16 +535,16 @@ a, button {
 }
 
 #agence .agenceTable .right .services tr td > div p {
+  font-weight: 700;
   padding: .5rem 0;
   margin: .5rem 0;
-  font-weight: 700;
 }
 
 #agence .agenceTable .right .buttons {
   position: absolute;
-  bottom: 0;
   left: 0;
   right: 0;
+  bottom: 0;
   display: block;
   background: #87c133;
   border: none;

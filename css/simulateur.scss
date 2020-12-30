@@ -5,15 +5,14 @@
 // MAIN #SIMULATEUR
 // 
 #simulateur { margin: 0;
-  h2 { font-size: 1.7rem; font-weight: 600; text-align: center;  padding: 1.25rem 0;}
+  h2 { font-size: 1.7rem; font-weight: 600; text-align: center; padding: 1.25rem 0;}
 
   // CHOICE AREA
-  .choice {  text-align: center;
+  .choice { text-align: center;
     > div { float: left; width: 50%; height: 360px; box-sizing: border-box; @include transition;
-      > a { display: block; width: 100%; height: 100%; position: relative;
-       div { height: 4.5rem;
-         width: 100%; position: absolute; left: 0; bottom: 0;
-        p { font-size: 1.6rem; color: white; font-weight: bold; text-align: left; padding-left: 1rem; @include transition;}
+      > a { display: block;  position: relative; width: 100%; height: 100%;
+       div { position: absolute; left: 0; bottom: 0; height: 4.5rem; width: 100%; 
+        p { font-size: 1.6rem; font-weight: bold; text-align: left; color: white; padding-left: 1rem; @include transition;}
        }
       }
       &:hover { overflow: hidden; cursor: pointer;
@@ -35,10 +34,12 @@
       }
       &:hover { background: url(../images/simuler_terrain_construction.jpg) no-repeat center 82% / 106%;}
     }
+
   }  
+  // END OF CHOICE AREA
 
   // NOTICE AT THE BOTTOM
-  .btm-txt { font-size: .7rem; padding: 2rem 0 .8rem; text-align: center;}
+  .btm-txt { font-size: .7rem; text-align: center; padding: 2rem 0 .8rem;}
 }
 // END OF MAIN #SIMULATEUR
 
@@ -46,12 +47,11 @@
 // 
 // MAIN #SIMULATEUR STEPS
 // 
-
 // COMMON CODES FOR ALL STEPS
-#simulateur_steps { display: none; text-align: center; padding-bottom: 2rem; margin: 1.2rem 3.65rem; position: relative; 
-  h1 { font-size: 1.7rem; color: $sub; text-align: center;}
-
-  // STEP INDICATOR
+#simulateur_steps { display: none; position: relative; text-align: center; padding-bottom: 2rem; margin: 1.2rem 3.65rem; 
+  
+  // HEADER FOR ALL SIMULATEUR STEPS
+  h1 { font-size: 1.7rem; text-align: center; color: $sub;}
   .indicator { position: relative;
     .step { display: inline-block; position: relative; margin: 0 13px;
       span { position: absolute;
@@ -60,7 +60,9 @@
     }    
     .step:first-child span { width: 30px; height: 3px; left: -10px; }
   }
+  // END OF HEADER FOR ALL SIMULATEUR STEPS
 
+  // SIMULATUER STEPS
   .steps { display: none; animation: slowAppear .5s ease-out;
     .step_wrapper_up, 
     .step_wrapper_down 
@@ -131,10 +133,10 @@
 }
 // END OF COMMON CODES FOR ALL STEPS
 
-
 // FOR INDIVIDUAL STEP
 #simulateur_steps {
-    // SIMULATEUR STEP 1 
+  
+  // SIMULATEUR STEP 1 
   .step1 {
     .selectors { 
       .unit { position: relative;
@@ -144,6 +146,7 @@
     // NOTICE AT THE BOTTOM
     .bottom p { font-size: .65rem; padding-top: 1rem;}
   }
+  // END OF SIMULATEUR STEP 1 
 
   // SIMULATEUR STEP 2
   .step2 {
@@ -183,7 +186,7 @@
       }
     }
   }
-
+  // END OF SIMULATEUR STEP 2
 
   // SIMULATEUR STEP 3
   .step3 {   
@@ -235,7 +238,7 @@
       }
     }
   }
-
+  // END OF SIMULATEUR STEP 3
 
   // SIMULATEUR STEP 4
   .step4 { 
@@ -263,10 +266,12 @@
     // NOTICE AT THE BOTTOM
     .bottom p { font-size: .55rem; padding-top: 1rem;}
   }
-
-  // END OF CODE FOR INDIVIDUAL STEP
-
+  // END OF SIMULATEUR STEP 4
+  
 }
+// END OF FOR INDIVIDUAL STEP
+
+
 // 
 // END OF MAIN #SIMULATEUR STEPS
 // 

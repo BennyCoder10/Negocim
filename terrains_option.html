@@ -13,7 +13,6 @@
 
   <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
   <script src="https://kit.fontawesome.com/f1aa0f2a4f.js" crossorigin="anonymous"></script>
-
   <link rel="stylesheet" href="css/default.css">
   <link rel="stylesheet" href="css/terrain_sub.css">
   <link rel="stylesheet" href="css/responsive.css">
@@ -23,12 +22,13 @@
   <!-- WRAPPER FOR FULL HEIGHT ON THE SCREEN -->
   <div class="wrapper">
 
+
     <!-- HEADER -->
     <header class="clear">
 
       <!-- NEGOCIM LOGO -->
-      <h1><a href="index.html"><img src="images/main_logo_v1.jpg" alt="Negocim logo"><span class="hide">Negocim</span></a></h1>
-      
+      <h1><a href="index.html"><img src="images/main_logo.jpg" alt="Negocim logo"><span class="hide">Negocim</span></a></h1>
+
       <!-- NAV MENU -->
       <h2 class="hide">menu</h2>
       <nav class="menu" id="menu">
@@ -41,13 +41,16 @@
           <li><a href="lexique.html">Lexique</a></li>            
         </ul>
       </nav>
+      <!-- END OF NAV MENU -->
 
-      <!-- MENU BAR ON MOBILE VERSION -->
+      <!-- MENU BARS ON MOBILE VERSION -->
       <div id="menu-toggle" onclick="menuToggle(this)">
         <div class="bar1"></div>
         <div class="bar2"></div>
         <div class="bar3"></div>
       </div>
+      <!-- END OF MENU BARS ON MOBILE VERSION -->
+
     </header>
     <!-- END OF HEADER -->
   
@@ -63,7 +66,7 @@
           <h2><i>Le Clos de Cante Gric</i></h2>
         </div>  
 
-        <!--  -->
+        <!-- LOT OPTION DETAIL PAGES -->
         <div>
           <div class="wrapper">                
 
@@ -96,7 +99,6 @@
             </div>
             <!-- END OF OPTION & RESERVE ON THE LEFT -->
 
-
             <!-- OPTION CONTACT ON THE RIGHT -->
             <div class="option_right">
               <h2>Contact</h2>
@@ -120,27 +122,29 @@
                   emmanuelle.caillon<br>
                 </p>                
               </div> 
-            </div>          
+            </div> 
+            <!-- END OF OPTION CONTACT ON THE RIGHT -->
+
           </div> 
         </div>
+        <!-- END OF LOT OPTION DETAIL PAGES -->
       </div>
       <!-- END OF CONTENT ON THE RIGHT -->
-
 
       <!-- SIDEBAR ON THE LEFT -->
       <div id="sidebar-left">
         <h2><a href="terrain_sudouest.html">Le Sud-Ouest</a></h2>
         
-        <div class="sidebar-menu">
- 
-          <button id="presentation"><a href="terrains_presentation.html">Présentation</a></button>
+        <!-- SIDEBAR MENU -->
+        <div class="sidebar-menu"> 
+          <button id="presentation"><a href="terrains_single_page.html#presentation">Présentation</a></button>
 
           <!-- VISIT VIRTUELLE BUTTON -->
           <button class="visite_virtuelle"><a href="http://negocim.fr/lotissements/460-plouhinec-ar-ti-gar-kozh/lots/06/visite"><img src="images/lotissement/vr_icon.png" alt="Visit virtuelle icon">Visit virtuelle</a></button>
           <!-- END OF VISIT VIRTUELLE BUTTON -->
 
-          <button id="plan_du_lotissement"><a href="terrains_plan.html">Plan du lotissement</a></button>
-          <button id="grille_de_prix"><a href="terrains_grille.html">Grille de prix</a></button>
+          <button id="plan_du_lotissement"><a href="terrains_single_page.html#plan_right">Plan du lotissement</a></button>
+          <button id="grille_de_prix"><a href="terrains_single_page.html#grille">Grille de prix</a></button>
           <button id="documents"><a href="terrains_document.html">Documents</a></button>
           <button id="simulaer_un_credit"><a href="simulateur.html">Simuler un crédit</a></button>
           <button id="poser_une_option"><a href="terrains_option.html">Poser une option</a></button>
@@ -148,11 +152,14 @@
           <button id="imprimer" onclick="window.print()">Imprimer cette page</button>         
 
           <!-- GOBACK BUTTON AT THE BOTTOM -->
-          <button type="button" id="goback"><a href="terrain_sudouest.html"><i class="xi-angle-left"></i>Retour</a></button>
-          <!-- END OF GOBACK BUTTON -->
-        </div>            
+          <button type="button" id="goback"><a href="terrain_sudouest.html"><i class="xi-angle-left"></i>Retour</a></button>          
+          <!-- <button type="button" id="goback" onclick="goBack()"><i class="xi-angle-left"></i>Retour</button> -->
+
+        </div>      
+        <!-- END OF SIDEBAR MENU -->
       </div>
       <!-- END OF SIDEBAR ON THE LEFT -->
+      
     </main>
     <!-- END OF MAIN -->
     

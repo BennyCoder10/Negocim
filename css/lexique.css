@@ -417,10 +417,10 @@ a, button {
 }
 
 #lexique > div .searchWrapper div input {
-  width: 10rem;
-  padding: 0;
   font-size: .8rem;
   text-indent: 5px;
+  width: 10rem;
+  padding: 0;
   border: none;
 }
 
@@ -430,9 +430,9 @@ a, button {
 
 #lexique > div .searchWrapper div button {
   padding: .5rem 0 0 .5rem;
-  cursor: pointer;
   background: white;
   vertical-align: bottom;
+  cursor: pointer;
 }
 
 #lexique > div .searchWrapper div button:focus {
@@ -455,6 +455,7 @@ a, button {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  font-size: 1rem;
   height: auto;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
@@ -462,7 +463,6 @@ a, button {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  font-size: 1rem;
 }
 
 #lexique > div .index #lexique-nav a {
@@ -471,10 +471,10 @@ a, button {
 }
 
 #lexique > div .index #lexique-nav a span {
-  padding: 0 .2rem;
+  font-weight: bold;
   text-align: center;
   color: #87c133;
-  font-weight: bold;
+  padding: 0 .2rem;
   -webkit-transition: color .5s;
   transition: color .5s;
 }

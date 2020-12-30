@@ -887,10 +887,10 @@ a, button {
   #agence .agenceTable tr .left {
     display: none;
   }
-  #agence .agenceTable .right {
+  #agence .agenceTable tr .right {
     padding-bottom: 3rem;
   }
-  #agence .agenceTable .right tr td {
+  #agence .agenceTable tr .right tr td {
     width: 100%;
     padding: 1.5rem 0 3rem;
   }

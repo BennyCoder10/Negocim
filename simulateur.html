@@ -22,10 +22,10 @@
     <header class="clear">
 
       <!-- NEGOCIM LOGO -->
-      <h1><a href="index.html"><img src="images/main_logo_v1.jpg" alt="Negocim logo"><span class="hide">Negocim</span></a></h1>
-      <h2 class="hide">menu</h2>
+      <h1><a href="index.html"><img src="images/main_logo.jpg" alt="Negocim logo"><span class="hide">Negocim</span></a></h1>
 
-      <!-- NAV MENU  -->
+      <!-- NAV MENU -->
+      <h2 class="hide">menu</h2>
       <nav class="menu" id="menu">
         <ul>
           <li><a href="index.html">Terrains</a></li>
@@ -36,17 +36,20 @@
           <li><a href="lexique.html">Lexique</a></li>            
         </ul>
       </nav>
+      <!-- END OF NAV MENU -->
 
-      <!-- MENU BAR ON MOBILE VERSION -->
+      <!-- MENU BARS ON MOBILE VERSION -->
       <div id="menu-toggle" onclick="menuToggle(this)">
         <div class="bar1"></div>
         <div class="bar2"></div>
         <div class="bar3"></div>
       </div>
+      <!-- END OF MENU BARS ON MOBILE VERSION -->
+
     </header>
     <!-- END OF HEADER -->
 
-    <!-- MAIN -->
+    <!-- MAIN #SIMULATEUR-->
     <main id="simulateur">
       <h2>Quel est votre projet ?</h2>
 
@@ -79,11 +82,9 @@
         Elles sont seulement utilisées pour les calculs des différentes simulations proposées et le calcul de votre taux d'endettement.
       </p>
     </main>
-    <!-- END OF MAIN -->
+    <!-- END OF MAIN #SIMULATEUR -->
 
-
-
-    <!-- MAIN -->
+    <!-- MAIN #SIMULATEUR_STEPS -->
     <main id="simulateur_steps">
 
       <!-- HEADER FOR ALL SIMULATEUR STEPS -->
@@ -98,8 +99,9 @@
       <!-- SIMULATUER STEPS -->
       <div class="steps">
 
-        <!-- step_wrapper_up 1 -->
+        <!-- UPPER SECTION ON THE STEP 1 -->
         <div class="step_wrapper_up step1">
+
           <!-- SELECTION SECTION -->
           <h2>Choisissez votre terrain</h2>
           <div class="selectors">
@@ -120,9 +122,7 @@
               <select name="commune" id="cities_select">
                 <option value="" disabled selected hidden>Commune</option>
                 <option value="13070">Taillan-Médoc (Le) (33)</option>
-                <option value="13">hi</option>
-               
-
+                <option value="13">hi</option>    
               </select>
             </div>
 
@@ -150,9 +150,9 @@
             </div>
           </div>
         </div>
-        <!-- END OF step_wrapper_up 1 -->
+        <!-- END OF UPPER SECTION ON THE STEP 1 -->
 
-        <!-- step_wrapper_up 2 -->
+        <!-- UPPER SECTION ON THE STEP 2 -->
         <div class="step_wrapper_up step2">
 
           <!-- SELECTION SECTION -->
@@ -193,11 +193,10 @@
             </div>  
   
           </div>
-          </div>
-        <!-- END OF step_wrapper_up 2 -->
+        </div>
+        <!-- END OF UPPER SECTION ON THE STEP 2 -->
 
-
-        <!-- step_wrapper_up 3 -->
+        <!-- UPPER SECTION ON THE STEP 3 -->
         <div class="step_wrapper_up step3">
           <h2>Calculez le montant de votre mensualité</h2>
           <div class="selectors">
@@ -235,10 +234,9 @@
             </div>             
           </div>  
         </div>
-        <!-- END OF step_wrapper_up 3 -->
+        <!-- END OF UPPER SECTION ON THE STEP 3 -->
 
-
-        <!-- step_wrapper_up 4 -->
+        <!-- UPPER SECTION ON THE STEP 4 -->
         <div class="step_wrapper_up step4">
 
           <!-- SUMMARY -->
@@ -276,6 +274,7 @@
               </tr>
             </table>       
           </div>
+          <!-- END OF SUMMARY -->
 
           <div class="final_price">
             <div class="revenus unit">
@@ -287,11 +286,10 @@
               <div><span>€</span></div>
             </div>               
           </div>
+
           <p>*Le PTZ n'est pas pris en compte dans le calcul du taux d'endettement</p>     
         </div>
-        <!-- END OF step_wrapper_up 4 -->
-
-
+        <!-- END OF UPPER SECTION ON THE STEP 4 -->
 
         <!-- Récapitulatif SECTION -->
         <div id="recap">
@@ -338,8 +336,7 @@
         </div>
         <!-- END OF Récapitulatif SECTION -->
 
-
-        <!-- step_wrapper_down 1 -->
+        <!-- LOWER SECTION ON THE STEP 1 -->
         <div class="step_wrapper_down step1">
           <!-- NOTICE AT THE BOTTOM -->
           <div class="bottom">
@@ -351,9 +348,9 @@
             </p>
           </div>
         </div>
-        <!-- END OF step_wrapper_down 1 -->
+        <!-- END OF LOWER SECTION ON THE STEP 1 -->
 
-        <!-- step_wrapper_down 2 -->
+        <!-- LOWER SECTION ON THE STEP 2 -->
         <div class="step_wrapper_down step2">
 
           <div class="bottom">
@@ -388,20 +385,18 @@
             </table>
           </div>   
         </div> 
-        <!-- END OF step_wrapper_down 2 -->
+        <!-- END OF LOWER SECTION ON THE STEP 2 -->
 
-
-        <!-- step_wrapper_down 3 -->
+        <!-- LOWER SECTION ON THE STEP 3 -->
         <div class="step_wrapper_down step3">
           <!-- NOTICE AT THE BOTTOM -->
           <div class="bottom">
             <p>Vous pouvez également simuler <span>votre capacité d'emprunt</span> ou la <span>durée de remboursement</span></p>
           </div>  
         </div>
-        <!-- END OF step_wrapper_down 3 -->
+        <!-- END OF LOWER SECTION ON THE STEP 3 -->
 
-
-        <!-- step_wrapper_down 4 -->
+        <!-- LOWER SECTION ON THE STEP 4 -->
         <div class="step_wrapper_down step4">
           <!-- NOTICE AT THE BOTTOM -->          
           <div class="bottom">
@@ -412,9 +407,7 @@
             </p>
           </div> 
         </div>
-        <!-- END OF step_wrapper_down 4 -->
-
-
+        <!-- END OF LOWER SECTION ON THE STEP 4 -->
 
       </div>
       <!-- END OF SIMULATUER STEPS -->        
@@ -427,7 +420,7 @@
       <!-- END OF PREV & NEXT BUTTONS -->
       
     </main>
-    <!-- END OF MAIN -->
+    <!-- END OF MAIN #SIMULATEUR_STEPS -->
    
     <!-- FOOTER -->
      <footer>
