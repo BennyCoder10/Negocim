@@ -114,7 +114,7 @@ header {
 
 header h1 {
   float: left;
-  padding: .5rem;
+  padding: 5px;
   padding-left: 2rem;
 }
 
@@ -409,7 +409,7 @@ a, button {
 }
 
 #qui_sommes_nous .text {
-  margin: 1.4rem 1rem;
+  margin: 1.4rem .5rem;
 }
 
 #qui_sommes_nous .text .list_left {

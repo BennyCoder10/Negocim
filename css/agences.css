@@ -114,7 +114,7 @@ header {
 
 header h1 {
   float: left;
-  padding: .5rem;
+  padding: 5px;
   padding-left: 2rem;
 }
 
@@ -404,10 +404,10 @@ a, button {
 }
 
 #agence h2 {
-  padding: 1.4rem 0 1.4rem;
   font-size: 1.8rem;
   font-weight: 600;
   text-align: center;
+  padding: 1.4rem 0 1.4rem;
 }
 
 #agence h2 span {
@@ -420,16 +420,23 @@ a, button {
 }
 
 #agence .agenceTable tr td {
-  width: 50%;
   text-align: center;
+  width: 50%;
   padding: 0;
   vertical-align: top;
 }
 
+#agence .agenceTable .left img {
+  width: 100%;
+  height: 22rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 #agence .agenceTable .right {
   position: relative;
-  padding-bottom: 3rem;
   text-align: center;
+  padding-bottom: 3rem;
 }
 
 #agence .agenceTable .right h3 {
@@ -446,8 +453,8 @@ a, button {
 }
 
 #agence .agenceTable .right .services tr td {
-  width: 50%;
   text-align: center;
+  width: 50%;
   vertical-align: top;
 }
 
@@ -476,11 +483,11 @@ a, button {
   bottom: 0;
   left: 0;
   right: 0;
+  margin: 1.8rem auto 0;
   display: block;
   background: #87c133;
   border: none;
   border-radius: 1.4rem;
-  margin: 1.8rem auto 0;
   -webkit-transition: all .5s ease;
   transition: all .5s ease;
 }
@@ -498,13 +505,6 @@ a, button {
 
 #agence .agenceTable .right .buttons:focus {
   outline: none;
-}
-
-#agence .agenceTable .left img {
-  width: 100%;
-  height: 22rem;
-  -o-object-fit: cover;
-     object-fit: cover;
 }
 
 #agence-map {
@@ -557,89 +557,4 @@ a, button {
 
 #agence-map .buttons a {
   padding: .6rem 2.5rem;
-}
-
-#agence-bordeaux-3 div {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-}
-
-#agence-bordeaux-3 div img {
-  float: left;
-  width: 48%;
-  height: auto;
-}
-
-#agence-bordeaux-3 div .contact {
-  float: left;
-  width: 50%;
-  text-align: center;
-  padding: 0;
-}
-
-#agence-bordeaux-3 div .contact h3 {
-  font-size: 1rem;
-  padding: .9rem 0 1.8rem;
-}
-
-#agence-bordeaux-3 div .contact .service {
-  float: left;
-}
-
-#agence-bordeaux-3 div .contact .service h4 {
-  font-weight: normal;
-}
-
-#agence-bordeaux-3 div .contact .service > div {
-  padding: 1.3rem .3rem 0;
-}
-
-#agence-bordeaux-3 div .contact .service > div .person-name {
-  color: #87c133;
-}
-
-#agence-bordeaux-3 div .contact .service > div a {
-  color: #525451;
-}
-
-#agence-bordeaux-3 div .contact .service > div a:hover {
-  color: #87c133;
-}
-
-#agence-bordeaux-3 div .contact .buttons {
-  display: block;
-  background: #87c133;
-  border: none;
-  border-radius: 1.4rem;
-  margin-top: 1.7rem auto;
-  -webkit-transition: all .5s ease;
-  transition: all .5s ease;
-}
-
-#agence-bordeaux-3 div .contact .buttons a {
-  display: block;
-  font-size: .95rem;
-  color: white;
-  padding: .75rem 3rem;
-}
-
-#agence-bordeaux-3 div .contact .buttons:hover {
-  background: #5a9b00;
-}
-
-#agence-bordeaux-3 div .contact .buttons:focus {
-  outline: none;
-}
-
-#agence-bordeaux-3 p {
-  font-size: .55rem;
-  text-align: center;
-  padding: .5rem;
-  color: black;
-  line-height: 1.5;
-}
-
-#agence-bordeaux-3 p a {
-  color: #87c133;
-  font-weight: bold;
 }

@@ -53,21 +53,24 @@
       //   }
       // } 
 
+      // SERVICE INFO
       .services {
-          tr td { text-align: center; width: 50%;
-            // h4 { font-weight: 500;}
-            > div { padding: 0 .3rem 0;
-              .person-name { color: $sub;}
+        tr td { text-align: center; width: 50%;
+          // h4 { font-weight: 500;}
+          > div { padding: 0 .3rem 0;
+            .person-name { color: $sub;}
 
-              a { color: $text-dark;
-                &:hover { color: $sub;}              
-              }
-
-              p { font-weight: 700; padding: .5rem 0; margin: .5rem 0;}
+            a { color: $text-dark;
+              &:hover { color: $sub;}              
             }
-          }
-      }
 
+            p { font-weight: 700; padding: .5rem 0; margin: .5rem 0;}
+          }
+        }
+      }
+      // END OF SERVICE INFO
+
+      // BUTTON TO MAP
       .buttons { position: absolute; left: 0; right: 0; bottom: 0; 
         @include buttons; margin: 1.8rem auto 0; @include transition;
       }

@@ -92,9 +92,13 @@ main {
   // SECTION ON THE RIGHT ON THE TERRAIN_SINGLE_PAGE
   .main-right { float: right; text-align: center;
     
-    .header { height: auto; margin-bottom: .5rem; background: white; border-top: 5px solid #999999c2; border-bottom: 5px solid #999999c2;
+    // LOTISSEMENT NAME
+    .header { height: auto; margin-bottom: .5rem; background: white; 
+      border-top: 5px solid $background; border-bottom: 5px solid $background;
+      // border-top: 5px solid #999999c2; border-bottom: 5px solid #999999c2;
       h2 i { color: $sub;}
     }
+    // END OF LOTISSEMENT NAME
 
     .subheadings { color: white; padding: .5rem 0; margin-bottom: 1rem; background-color: $sub !important; @include box-shadow;}
 

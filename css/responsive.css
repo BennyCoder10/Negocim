@@ -114,7 +114,7 @@ header {
 
 header h1 {
   float: left;
-  padding: .5rem;
+  padding: 5px;
   padding-left: 2rem;
 }
 
@@ -405,7 +405,7 @@ a, button {
 
 @media only screen and (max-width: 1240px) {
   body .wrapper header h1 {
-    padding: .5rem 0 .5rem .5rem;
+    padding: 5px 0 5px .5rem;
   }
   body .wrapper header h1 a img {
     width: 16rem;
@@ -457,7 +457,7 @@ a, button {
     padding-right: 0rem;
     position: fixed;
     right: 0;
-    top: 78px;
+    top: 70px;
     z-index: 100;
     overflow: auto;
     background-color: rgba(0, 0, 0, 0.9);
@@ -1032,7 +1032,7 @@ a, button {
     width: 13.5rem;
   }
   html body .wrapper header .menu {
-    top: 66px;
+    top: 62px;
   }
   #terrains .main-right {
     display: none;

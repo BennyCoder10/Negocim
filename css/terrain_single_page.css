@@ -114,7 +114,7 @@ header {
 
 header h1 {
   float: left;
-  padding: .5rem;
+  padding: 5px;
   padding-left: 2rem;
 }
 
@@ -589,8 +589,8 @@ main .main-right > * {
   height: auto;
   margin-bottom: .5rem;
   background: white;
-  border-top: 5px solid #999999c2;
-  border-bottom: 5px solid #999999c2;
+  border-top: 5px solid #e0e0e0ad;
+  border-bottom: 5px solid #e0e0e0ad;
 }
 
 #terrain_single_page .main-right .header h2 i {

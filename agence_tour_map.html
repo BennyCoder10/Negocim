@@ -16,9 +16,16 @@
 </head>
 
 <body>
+  <!-- WRAPPER FOR FULL HEIGHT ON THE SCREEN -->
   <div class="wrapper">
+
+    <!-- HEADER -->
     <header class="clear">
-      <h1><a href="index.html"><img src="images/main_logo_v1.jpg" alt="Negocim logo"><span class="hide">Negocim</span></a></h1>
+
+      <!-- NEGOCIM LOGO -->
+      <h1><a href="index.html"><img src="images/main_logo.jpg" alt="Negocim logo"><span class="hide">Negocim</span></a></h1>
+
+      <!-- NAV MENU -->
       <h2 class="hide">menu</h2>
       <nav class="menu" id="menu">
         <ul>
@@ -30,29 +37,46 @@
           <li><a href="lexique.html">Lexique</a></li>            
         </ul>
       </nav>
+      <!-- END OF NAV MENU -->
+
+      <!-- MENU BARS ON MOBILE VERSION -->
       <div id="menu-toggle" onclick="menuToggle(this)">
         <div class="bar1"></div>
         <div class="bar2"></div>
         <div class="bar3"></div>
       </div>
-    </header>
+      <!-- END OF MENU BARS ON MOBILE VERSION -->
 
+    </header>
+    <!-- END OF HEADER -->
+  
+    <!-- MAIN #AGENCE-MAP-->
     <main id="agence-map">
+
+      <!-- AGENCE NAME -->
       <h2>Agence de <span>Tour</span></h2>
+
+      <!-- AGENCE MAP -->
       <div class="map">
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10803.523517732558!2d0.6919562276329265!3d47.39475703561573!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47fcd44b159c7e05%3A0xd23201638ef9b1c4!2s52%20Boulevard%20Heurteloup%2C%2037000%20Tours!5e0!3m2!1sen!2sfr!4v1603171333379!5m2!1sen!2sfr" frameborder="0"  allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>       
       </div>
+
+      <!-- GOBACK BUTTON -->
       <button class="buttons" onclick="goBack()"><a>Retour à l'agence</a></button>
-    </main>
     
-    <!-- 
-      FOOTER AT THE BOTTOM
-     -->
+    </main>
+    <!-- END OF MAIN -->
+    
+    <!-- FOOTER -->
     <footer>
       <p><a href="politique.html">Politique de protection des données personnelles</a></p>
     </footer>
+    <!-- END OF FOOTER -->
 
   </div>
+  <!-- END OF WRAPPER -->
+
+  <!-- JAVASCRIPT -->
   <script src="js/index.js"></script>
 
 </body>

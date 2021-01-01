@@ -8,7 +8,7 @@
  body .wrapper header {
 
     // NEGOCIM LOGO
-    h1 { padding: .5rem 0 .5rem .5rem;
+    h1 { padding: 5px 0 5px .5rem;
       a img { width: 16rem;}
     }  
 
@@ -69,7 +69,7 @@
       } 
   
       // NAV MENU ON MOBILE
-      .menu { width: 17rem; height: 100%; padding-right: 0rem; position: fixed; right: 0; top: 78px; z-index: 100; overflow: auto; background-color: rgba(0, 0, 0, 0.9); transition: transform .5s ease-in-out; transform: translateX(100%);
+      .menu { width: 17rem; height: 100%; padding-right: 0rem; position: fixed; right: 0; top: 70px; z-index: 100; overflow: auto; background-color: rgba(0, 0, 0, 0.9); transition: transform .5s ease-in-out; transform: translateX(100%);
         ul { margin-left: 1rem;
           li { float: none; padding: 0 0 .8rem 0;
             .active:before { width: none;}
@@ -438,7 +438,7 @@
     } 
 
     // NAV MENU
-    .menu { top: 66px}
+    .menu { top: 62px}
   }
 
   // INDEX PAGE > MAIN 
@@ -692,6 +692,7 @@
     }  
 
   }
+  
  
   // POLITIQUE PAGE
   #politique > div { margin: .5rem;}
