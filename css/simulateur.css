@@ -1007,7 +1007,7 @@ a, button {
   padding-bottom: .5rem;
 }
 
-#simulateur_steps .step4 .final_price > div > input {
+#simulateur_steps .step4 .final_price > div input {
   display: block;
   text-align: center;
   width: 9.9rem;
@@ -1017,8 +1017,19 @@ a, button {
   border-radius: 1rem;
 }
 
-#simulateur_steps .step4 .final_price > div > input:focus {
+#simulateur_steps .step4 .final_price > div input:focus {
   outline: none;
+}
+
+#simulateur_steps .step4 .final_price > div input::-webkit-outer-spin-button,
+#simulateur_steps .step4 .final_price > div input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+#simulateur_steps .step4 .final_price > div input[type="number"] {
+  padding: 0 1rem 0 3px;
+  -moz-appearance: textfield;
 }
 
 #simulateur_steps .step4 .final_price > div span {

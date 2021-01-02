@@ -272,13 +272,28 @@
     
     .final_price {
       > div { display: inline-block; position: relative; margin-right: 1rem;
-        h4 { font-size: 1rem; color: $text-dark; padding-bottom: .5rem;}
+          h4 { font-size: 1rem; color: $text-dark; padding-bottom: .5rem;}
 
-        > input { display: block; text-align: center; width: 9.9rem; height: 1.7rem; padding: 0 .5rem; border: 1px solid $bars; border-radius: 1rem;
+          input { display: block; text-align: center; width: 9.9rem; height: 1.7rem; padding: 0 .5rem; border: 1px solid $bars; border-radius: 1rem;
             &:focus { outline: none;}
           }
+
+          // HIDE INPUT NUMBER ARROWS
+          input::-webkit-outer-spin-button,
+          input::-webkit-inner-spin-button {
+            -webkit-appearance: none; margin: 0;
+          }
+
+          // INPUT NUMBER 
+          input[type="number"]{
+            padding: 0 1rem 0 3px;
+            // HIDE INPUT NUMBER ARROWS IN FIREFOX BROWSER
+            -moz-appearance: textfield;
+          }  
+
           span { font-size: 1rem; position: absolute; left: 174px; bottom: 5px;}
         }
+
       .taux { margin-right: 0;}
     }
 
