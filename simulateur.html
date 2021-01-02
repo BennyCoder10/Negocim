@@ -81,6 +81,7 @@
         * Nous vous garantissons qu'aucune donnée n'est transmise à nos serveurs.</br>
         Elles sont seulement utilisées pour les calculs des différentes simulations proposées et le calcul de votre taux d'endettement.
       </p>
+
     </main>
     <!-- END OF MAIN #SIMULATEUR -->
 
@@ -199,6 +200,8 @@
         <!-- UPPER SECTION ON THE STEP 3 -->
         <div class="step_wrapper_up step3">
           <h2>Calculez le montant de votre mensualité</h2>
+
+          <!-- SELECTOR -->
           <div class="selectors">
 
             <div class="Montant unit">
@@ -223,6 +226,7 @@
             </button>
             </div>        
           </div>
+          <!-- END OF SELECTOR -->
     
           <div class="help">
             <button>
@@ -279,11 +283,13 @@
           <div class="final_price">
             <div class="revenus unit">
               <h4>Revenus mensuels actuels*</h4>
-              <div><span>€</span></div>
+              <input type="number"><span>€</span>
+              <!-- <div><span>€</span></div> -->
             </div>       
             <div class="taux unit">
               <h4>Taux d'endettement</h4>
-              <div><span>€</span></div>
+              <input type="number" disabled="disabled"><span>€</span>
+              <!-- <div><span>€</span></div> -->
             </div>               
           </div>
 

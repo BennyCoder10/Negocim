@@ -114,7 +114,7 @@ header {
 
 header h1 {
   float: left;
-  padding: .5rem;
+  padding: 5px;
   padding-left: 2rem;
 }
 
@@ -1007,20 +1007,25 @@ a, button {
   padding-bottom: .5rem;
 }
 
-#simulateur_steps .step4 .final_price > div > div {
+#simulateur_steps .step4 .final_price > div > input {
+  display: block;
+  text-align: center;
   width: 9.9rem;
   height: 1.7rem;
   padding: 0 .5rem;
   border: 1px solid #707070;
   border-radius: 1rem;
-  position: relative;
 }
 
-#simulateur_steps .step4 .final_price > div > div span {
+#simulateur_steps .step4 .final_price > div > input:focus {
+  outline: none;
+}
+
+#simulateur_steps .step4 .final_price > div span {
   font-size: 1rem;
   position: absolute;
-  right: 7px;
-  top: 2px;
+  left: 174px;
+  bottom: 5px;
 }
 
 #simulateur_steps .step4 .final_price .taux {

@@ -436,6 +436,9 @@ a, button {
   #simulateur_steps .step4 .summary table {
     width: 80%;
   }
+  #simulateur_steps .step4 .final_price > div span {
+    left: 158px;
+  }
   #terrains .main-right .map img {
     text-align: right;
   }
@@ -1236,9 +1239,13 @@ a, button {
     margin-top: 1rem;
     margin-right: 0;
   }
-  #simulateur_steps .step4 .final_price > div > div {
+  #simulateur_steps .step4 .final_price > div > input {
     width: 60%;
     margin: 0 auto;
+  }
+  #simulateur_steps .step4 .final_price > div span {
+    right: 23%;
+    left: unset;
   }
   #simulateur_steps .recap_table {
     -webkit-box-orient: vertical;

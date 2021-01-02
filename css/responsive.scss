@@ -45,7 +45,10 @@
 
   // SIMULATEUR_STEPS
   #simulateur_steps {
-    .step4 .summary table { width: 80%;}
+    .step4 {
+      .summary table { width: 80%;}
+      .final_price > div span { left: 158px;}
+    }   
   }
   
   // INDEX PAGE > MAIN
@@ -199,72 +202,72 @@
 
 
 
-  #terrains #float-left ul li a i { padding-right: .2rem;}
+#terrains #float-left ul li a i { padding-right: .2rem;}
 
 
-  // TERRAIN_SUB PAGES
-  #terrain_single_page,
-  // #terrain_presentation, 
-  // #terrain_plan,
-  #terrain_plan_lot,
-  // #terrain_grille, 
-  #terrain_document, 
-  #terrain_option
-   {
-    // CONTENT ON THE RIGHT
-    .main-right { width: 100%; height: auto; padding: .3rem; padding-top: 3rem;
-      
-      // LOTISSEMENT NAME ON MOBILE
-      .lotissement_name { display: block;}
-      
-      // PRESENTATION PAGE
-      #presentation {
-        > div > p { padding-top: 0;}    
-      } 
-
-    }
-  
-    // SIDEBAR ON THE LEFT
-    #sidebar-left { width: 100%; height: auto; position: static; background: white; border: none; 
-      // animation: fadeInRight .3s ease-in;
-       h2 { text-align: center; padding: 0; position: absolute; top: .5rem; left: 0; right: 0;
-         a { font-size: 1.5rem; font-weight: bold; color: $text; padding: 0 1rem; background: $sub; border-radius: 20px; }
-         &:hover a { color: $text-dark;}  
-       }
+// TERRAIN_SUB PAGES
+#terrain_single_page,
+// #terrain_presentation, 
+// #terrain_plan,
+#terrain_plan_lot,
+// #terrain_grille, 
+#terrain_document, 
+#terrain_option
+  {
+  // CONTENT ON THE RIGHT
+  .main-right { width: 100%; height: auto; padding: .3rem; padding-top: 3rem;
     
-       .sidebar-menu { height: auto; margin: 0; overflow-y: visible;
-          button { background-color: $sub;  width: 80%; text-align: center; margin: .5rem auto;
-            a { color: white; padding: .8rem 1rem;}
-            i { color: white;}
-            &:hover { background: $button_hover;}
-          }
-        
-          #itineraire { 
-            a i { color: white;}           
-          }
+    // LOTISSEMENT NAME ON MOBILE
+    .lotissement_name { display: block;}
+    
+    // PRESENTATION PAGE
+    #presentation {
+      > div > p { padding-top: 0;}    
+    } 
 
-          .visite_virtuelle, 
-          #simulaer_un_credit, 
-          #imprimer 
-            { margin: .5rm auto; border-radius: 30px; border: 2px solid $sub; background: none; color: $sub;
-              a { color: $sub; padding: .6rem 1rem;}
-            }
-                    
+  }
 
-          .visite_virtuelle { 
-            a { color: $sub;}
-            &:hover { background: none;}
+  // SIDEBAR ON THE LEFT
+  #sidebar-left { width: 100%; height: auto; position: static; background: white; border: none; 
+    // animation: fadeInRight .3s ease-in;
+      h2 { text-align: center; padding: 0; position: absolute; top: .5rem; left: 0; right: 0;
+        a { font-size: 1.5rem; font-weight: bold; color: $text; padding: 0 1rem; background: $sub; border-radius: 20px; }
+        &:hover a { color: $text-dark;}  
+      }
+  
+      .sidebar-menu { height: auto; margin: 0; overflow-y: visible;
+        button { background-color: $sub;  width: 80%; text-align: center; margin: .5rem auto;
+          a { color: white; padding: .8rem 1rem;}
+          i { color: white;}
+          &:hover { background: $button_hover;}
+        }
+      
+        #itineraire { 
+          a i { color: white;}           
+        }
+
+        .visite_virtuelle, 
+        #simulaer_un_credit, 
+        #imprimer 
+          { margin: .5rm auto; border-radius: 30px; border: 2px solid $sub; background: none; color: $sub;
+            a { color: $sub; padding: .6rem 1rem;}
           }
+                  
 
-          #imprimer { padding: .6rem 1rem;;}
+        .visite_virtuelle { 
+          a { color: $sub;}
+          &:hover { background: none;}
+        }
 
-          // GOBACK BUTTON AT THE BOTTOM
-          #goback { width: auto; margin: 2rem auto .5rem; position: static;
-            a { padding: .4rem 2.5rem;}
-          }
-       }
-     }   
-   } 
+        #imprimer { padding: .6rem 1rem;;}
+
+        // GOBACK BUTTON AT THE BOTTOM
+        #goback { width: auto; margin: 2rem auto .5rem; position: static;
+          a { padding: .4rem 2.5rem;}
+        }
+      }
+    }   
+  } 
 
 
   // TERRAIN_PLAN DU LOTISSEMENT
@@ -430,62 +433,62 @@
 // 
 @media only screen and (max-width: 560px) {
 
-  // HEADER
-  html body .wrapper header {
-    // NEGOCIM LOGO
-    h1 { padding-left: 1rem;
-      a img { width: 13.5rem;}
-    } 
-
-    // NAV MENU
-    .menu { top: 62px}
-  }
-
-  // INDEX PAGE > MAIN 
-  #terrains .main-right {display: none;}
-
-
-  //ORIGINAL Li BACKGROUND ($SUB COLOR)
-  // #terrains #float-left { height: 100%;
-  //   ul { flex-direction: column; height: 100%; margin: 0; justify-content: center; border: none;
-  //     li { text-align: center; margin: 1rem 2rem; background-color: $sub; border: 2px solid $sub; border-radius: 0 5rem  5rem 0; 
-  //       a { padding: 1rem 0;
-  //         i {display: none;}
-  //         span { font-size: 1.2rem; color: white;}
-  //       }
-  //       &:hover { background-color: white; @include transition;
-  //         a i span { color: $text-dark; }
-  //       }
-  //     }
-  //   }
-  // }
-
-  // Li BACKGROUND USING IMAGES
-  #terrains #float-left { height: 100%;
-    ul { flex-direction: column; height: 100%; margin: 0; justify-content: center; border: none;
-      li { position: relative; text-align: center; margin: .7rem 1rem; background-color: white; border: 2px solid $main; border-radius: 2px;
-        a { padding: 1.5rem 0; z-index: 2; position: relative;
-          i {display: none;}
-          span { font-size: 1.5rem; color: white; padding: 0 1rem; border-radius: .5rem; background-color: $main; border: 2px solid $main;}
-        }
-        &:hover { @include transition;
-          a span { @include transition; color: $main; background-color: white;}
-          
-        }
-        // &:before { content: ""; position: absolute; top: 0; bottom: 0; left: 0; right: 0; opacity: .5; z-index: 1;}
-      }
-      // SELECTION TABS BACKGROUND IMAGES
-      .tour { background: url(../images/AgenceTours.jpg) 0 63% / 100%;}
-      .bordeaux { background: url(../images/Agencebordeaux-4.jpg) 0 46% / 100%;}
-      .vannes { background: url(../images/AgenceVannes.jpg) 0 27% / 100%;}
-      .orleanais { background: url(../images/AgenceOrleans.jpg) 0 46% / 100%;}
-    }      
+// HEADER
+html body .wrapper header {
+  // NEGOCIM LOGO
+  h1 { padding-left: 1rem;
+    a img { width: 13.5rem;}
   } 
 
-  // TERRAINS SUB
-  // #terrain #sidebar-left .sidebar-menu { 
-  //   margin-right: 0rem;
-  // }
+  // NAV MENU
+  .menu { top: 62px}
+}
+
+// INDEX PAGE > MAIN 
+#terrains .main-right {display: none;}
+
+
+//ORIGINAL Li BACKGROUND ($SUB COLOR)
+// #terrains #float-left { height: 100%;
+//   ul { flex-direction: column; height: 100%; margin: 0; justify-content: center; border: none;
+//     li { text-align: center; margin: 1rem 2rem; background-color: $sub; border: 2px solid $sub; border-radius: 0 5rem  5rem 0; 
+//       a { padding: 1rem 0;
+//         i {display: none;}
+//         span { font-size: 1.2rem; color: white;}
+//       }
+//       &:hover { background-color: white; @include transition;
+//         a i span { color: $text-dark; }
+//       }
+//     }
+//   }
+// }
+
+// Li BACKGROUND USING IMAGES
+#terrains #float-left { height: 100%;
+  ul { flex-direction: column; height: 100%; margin: 0; justify-content: center; border: none;
+    li { position: relative; text-align: center; margin: .7rem 1rem; background-color: white; border: 2px solid $main; border-radius: 2px;
+      a { padding: 1.5rem 0; z-index: 2; position: relative;
+        i {display: none;}
+        span { font-size: 1.5rem; color: white; padding: 0 1rem; border-radius: .5rem; background-color: $main; border: 2px solid $main;}
+      }
+      &:hover { @include transition;
+        a span { @include transition; color: $main; background-color: white;}
+        
+      }
+      // &:before { content: ""; position: absolute; top: 0; bottom: 0; left: 0; right: 0; opacity: .5; z-index: 1;}
+    }
+    // SELECTION TABS BACKGROUND IMAGES
+    .tour { background: url(../images/AgenceTours.jpg) 0 63% / 100%;}
+    .bordeaux { background: url(../images/Agencebordeaux-4.jpg) 0 46% / 100%;}
+    .vannes { background: url(../images/AgenceVannes.jpg) 0 27% / 100%;}
+    .orleanais { background: url(../images/AgenceOrleans.jpg) 0 46% / 100%;}
+  }      
+} 
+
+// TERRAINS SUB
+// #terrain #sidebar-left .sidebar-menu { 
+//   margin-right: 0rem;
+// }
 
 // #terrain_presentation .main-right #presentation { margin: 0;}
 
@@ -629,7 +632,8 @@
         table th, table td { font-size: .9rem;}
       }
       .final_price > div { display: block; margin-top: 1rem; margin-right: 0;
-        > div {  width: 60%;  margin: 0 auto;}
+        > input { width: 60%; margin: 0 auto;}
+        span { right: 23%; left: unset;}
       }  
     }
     
