@@ -8,7 +8,7 @@
   <meta name="description" content="Un simulateur de crédit immobilier pour terrain à bâtir gratuit et anonyme. Vous pourrez ainsi simuler l'acquisition d'un terrain à bâtir de Negocim, aménageur foncier.">
   <title>Negocim.fr - Simulateur de crédit</title>
 
-  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+  <!-- <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css"> -->
   <link rel="stylesheet" href="css/default.css">  
   <link rel="stylesheet" href="css/simulateur.css">
   <link rel="stylesheet" href="css/responsive.css">
@@ -123,7 +123,6 @@
               <select name="commune" id="cities_select">
                 <option value="" disabled selected hidden>Commune</option>
                 <option value="13070">Taillan-Médoc (Le) (33)</option>
-                <option value="13">hi</option>    
               </select>
             </div>
 
@@ -132,7 +131,6 @@
               <select name="lotissement" id="lotissements_select">
                 <option value="" disabled selected hidden>Lotissement</option>
                 <option value="359">Le Clos de Cante Gric</option>
-                <option value="360">Hi</option>
               </select>
             </div>
 
@@ -141,7 +139,6 @@
               <select name="lot" id="lots_select">
                 <option value="" disabled selected hidden>Lot</option>
                 <option value="1877">Lot n°10 - 246 000 €</option>
-                <!-- <option value="1870">Lot n°98 - 246 000 €</option> -->
               </select>
             </div>
 
@@ -253,28 +250,29 @@
                 <th>Mensualité</th>
               </tr>
               <tr>
-                <td>PTZ</td>
-                <td><i class="xi-minus"></i></td>
-                <td><i class="xi-minus"></i></td>
-                <td><i class="xi-minus"></i></td>
+                <th>PTZ</th>
+                <td></td>
+                <td></td>
+                <td></td>
+                <!-- <td><i class="xi-minus"></i></td> -->
               </tr>
               <tr>
-                <td>Crédit</td>
-                <td><i class="xi-minus"></i></td>
+                <th>Crédit</th>
+                <td></td>
                 <td>1 000 €</td>
                 <td>84,69 €</td>           
               </tr>
               <tr>
-                <td>APL</td>
-                <td><i class="xi-minus"></i></td>
-                <td><i class="xi-minus"></i></td>
-                <td><i class="xi-minus"></i></td>
+                <th>APL</th>
+                <td></td>
+                <td></td>
+                <td></td>
               </tr>
               <tr>
-                <td></td>
-                <td>TOTAL</td>
-                <td>1 000 €</td>
-                <td>84,69 €</td>  
+                <th></th>
+                <th>TOTAL</th>
+                <th>1 000 €</th>
+                <th>84,69 €</th>  
               </tr>
             </table>       
           </div>
@@ -325,9 +323,9 @@
                   <span id="commune_value"></span>
                   <span id="lotissement_value"></span>
                   <span id="lot_value"></span>
-                  <span><i class="xi-minus"></i></span>
-                  <span><i class="xi-minus"></i></span>
-                  <span id="apport_value"></span>
+                  <span>&mdash;</span>
+                  <span>&mdash;</span>
+                  <span id="apport_value">&mdash;</span>
                 </div>
               </div>           
             </div>

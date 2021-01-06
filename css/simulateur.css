@@ -990,11 +990,6 @@ a, button {
   font-weight: 500;
 }
 
-#simulateur_steps .step4 .summary table td i {
-  font-size: 1.5rem;
-  color: #707070;
-}
-
 #simulateur_steps .step4 .final_price > div {
   display: inline-block;
   position: relative;

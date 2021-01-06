@@ -1,4 +1,6 @@
+// 
 // SIMULATEUR CHOICE PAGE
+// 
 var simulateur = document.getElementById("simulateur");
 var simulateurSteps = document.getElementById("simulateur_steps");
 var choiceTerrain = document.getElementById("choice");
@@ -18,7 +20,10 @@ function myChoice(clicked_id) {
 }
 // END OF SIMULATEUR CHOICE PAGE
 
+
+// 
 // SIMULATEUR STEPS
+// 
 var steps = document.getElementsByClassName("steps")[0];
 var stepWrapperUp = document.getElementsByClassName("step_wrapper_up");
 var stepWrapperDown = document.getElementsByClassName("step_wrapper_down");
@@ -94,8 +99,11 @@ if (currentStep == 0)
 // END OF SIMULATEUR STEPS
 
 
+// 
+// SELECTORS & INPUT FOR STEP 1
+// 
 
-// INPUT FIELD
+// 1. INPUT FIELD
 const region = document.getElementById("agences_select");
 const commune = document.getElementById("cities_select");
 const lotissement = document.getElementById("lotissements_select");
@@ -103,37 +111,40 @@ const lot = document.getElementById("lots_select");
 const apport = document.getElementById("apport");
 
 
-// OUTPUT FIELD
+// 2. OUTPUT FIELD
 const communeValue = document.getElementById("commune_value");
 const lotissementValue = document.getElementById("lotissement_value");
 const lotValue = document.getElementById("lot_value");
 const apportValue = document.getElementById("apport_value");
-
 const total = document.getElementById("total");
 
 
-// SELECT ONLY OPTION AUTOMATICALLY
-region.addEventListener('change', () => {
-  if (commune.options.length < 3) {
-    commune.value = commune.options[1].value;
-    communeValue.textContent = commune.options[commune.selectedIndex].text;
-
-    if (lotissement.options.length < 3) {
-      lotissement.value = lotissement.options[1].value;
-      lotissementValue.textContent = lotissement.options[lotissement.selectedIndex].text;
-
-
-      if (lot.options.length < 3) {
-        lot.value = lot.options[1].value;
-        lotValue.textContent = lot.options[lot.selectedIndex].text;
-      } 
-    }
-  } else {
-    commune.addEventListener('input', ($event) => {    
-      communeValue.textContent = $event.target.options[$event.target.selectedIndex].text;
-    });
-  }
+// 3. DISPLAY SELECTED OPTIONS
+commune.addEventListener('input', ($event) => {    
+  communeValue.textContent = $event.target.options[$event.target.selectedIndex].text;
 });
+
+// region.addEventListener('change', () => {
+//   if (commune.options.length < 3) {
+//     commune.value = commune.options[1].value;
+//     communeValue.textContent = commune.options[commune.selectedIndex].text;
+
+//     if (lotissement.options.length < 3) {
+//       lotissement.value = lotissement.options[1].value;
+//       lotissementValue.textContent = lotissement.options[lotissement.selectedIndex].text;
+
+
+//       if (lot.options.length < 3) {
+//         lot.value = lot.options[1].value;
+//         lotValue.textContent = lot.options[lot.selectedIndex].text;
+//       } 
+//     }
+//   } else {
+//     commune.addEventListener('input', ($event) => {    
+//       communeValue.textContent = $event.target.options[$event.target.selectedIndex].text;
+//     });
+//   }
+// });
 
 // commune.addEventListener('input', ($event) => {
   // if (lotissement.options.length < 3) {
@@ -145,9 +156,6 @@ region.addEventListener('change', () => {
 // });
 
 lotissement.addEventListener('input', ($event) => {
-  // if (lot.options.length < 3) {
-  //   lot.value = lot.options[1].value;
-  // }; 
   lotissementValue.textContent = $event.target.options[$event.target.selectedIndex].text;
 });
 
@@ -156,31 +164,65 @@ lot.addEventListener('change', ($event) => {
 });
 
 apport.addEventListener('input', () => {
+  // MUST MODIFY VALUE X ACCORDINGLY
+  var x = 246000; 
   apportValue.textContent = "- " + apport.value + " €";
-  total.textContent = ("246000" - apport.value) + " €";
+  total.textContent = (x - apport.value) + " €";
 
   if (! apport.value.length) {
-    apportValue.textContent = '\&ndash';
+    apportValue.textContent = '\u2014';
   }
 });
 
 
-// CALCULATE BUTTON 
+
+
+// 
+// CALCULATE BUTTON ON STEP 2
+// 
 const notaire = document.getElementById("notaire");
 const hypo = document.getElementById("hypo");
 
+// TEMPORARY NUMBERS *CALCULATION LOGIC NEEDED HERE
+var x = 20;
+var y = 5000;
+
 function calculate1() {
-  notaire.textContent = "20" + " €";
-  hypo.textContent = "5 000" + " €";
+  notaire.textContent = x + " €";
+  hypo.textContent = y + " €";
 }
 
 
 
 
+// 
+// SUMMARY TABLE ON STEP 4
+// 
 
+// FILL EMPTY 'TD' WITH DASH
+const summary = document.getElementsByClassName("summary")[0];
+const tableTd = summary.getElementsByTagName("td");
+var i;
 
-// test 
-// console.log(options);
+for (i = 0; i < tableTd.length; i++) {
+  if (! tableTd[i].innerHTML) {
+    tableTd[i].innerHTML = '\u2014';
+    tableTd[i].style.color = "#707070";
+    tableTd[i].style.fontWeight = "bolder";
+  };
+}
+// 
+
+// GIVE SPACE EVERY 3 DIGITS IN NUMBERS
+const input = document.getElementsByTagName("input");
+var i;
+
+for (i = 0; i < input.length; i++) {
+  
+  if (input[i].getAttribute("type") == "number") {
+    // CODES
+  };
+}
 
 
 
