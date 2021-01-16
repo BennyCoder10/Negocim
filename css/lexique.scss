@@ -23,8 +23,9 @@
     // END OF SEARCH BAR
     
     // INDEX ALPHABETS
-    .index { padding: 1rem 0 4.3rem; vertical-align: middle;
-      #lexique-nav { display: flex; flex-wrap: wrap; font-size: 1rem; height: auto; justify-content: space-between; align-items: center;
+    .index { padding: 1rem 0 1.5rem; vertical-align: middle;
+      #lexique-nav { display: flex; flex-wrap: wrap; font-size: 1rem; height: auto; align-items: center; justify-content: flex-start; 
+        // justify-content: space-between; 
         // flex-wrap: nowrap; 
         // overflow-x: auto;
         a { display: block; padding: .5rem;
@@ -38,7 +39,7 @@
     // END OF INDEX ALPHABETS
 
     // LEXIQUE CONTENTS
-    #lexique-contents { height: 50vh; overflow-y: scroll;
+    #lexique-contents { height: 58vh; overflow-y: scroll;
       .texts { padding-right: 1.65rem;
         .content { padding-bottom: 2rem;
           h3 { font-size: .9555rem; color: $sub; font-weight: 600; padding-bottom: 2rem;}

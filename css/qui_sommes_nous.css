@@ -126,7 +126,7 @@ header h1 a img {
 
 header .menu {
   float: right;
-  padding-right: 6vw;
+  padding-right: 2vw;
 }
 
 header .menu ul li {
@@ -222,19 +222,19 @@ header .change .bar3 {
 }
 
 #terrains #float-left ul li:nth-child(1) i {
-  color: #2e60ff;
+  color: #c6e2e5;
 }
 
 #terrains #float-left ul li:nth-child(2) i {
-  color: #929d3b;
+  color: #d9e952;
 }
 
 #terrains #float-left ul li:nth-child(3) i {
-  color: #149700;
+  color: #8ccf8a;
 }
 
 #terrains #float-left ul li:nth-child(4) i {
-  color: #930000;
+  color: #e4777a;
 }
 
 #terrains #float-left ul li a {
@@ -416,6 +416,9 @@ a, button {
   float: left;
   width: 12rem;
   padding: 1.4rem .5rem 0;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
 }
 
 #qui_sommes_nous .text .list_left li a {
@@ -435,7 +438,7 @@ a, button {
   width: calc(100% - 12rem);
   max-width: 1000px;
   height: 100%;
-  padding: 1rem;
+  padding: 0 1rem;
 }
 
 #qui_sommes_nous .text .text_right article {
@@ -446,7 +449,8 @@ a, button {
   font-size: 1.8rem;
   color: #87c133;
   text-align: left;
-  padding-bottom: 1.3rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 
 #qui_sommes_nous .text .text_right article p {

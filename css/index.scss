@@ -83,7 +83,7 @@ header { background: $main;
   }
 
   // NAV MENU 
-  .menu { float: right; padding-right: 6vw;
+  .menu { float: right; padding-right: 2vw;
     ul { 
       li { float: left;
         a { display: block; font-size: .8rem; color: $text; padding: 1.3rem .5rem .3rem; position: relative; transition: all 0.5s; 
@@ -128,10 +128,10 @@ header { background: $main;
   // FLOATING LIST LINKS ON THE LEFT
   #float-left { position: absolute; left: 3.5rem; top: 30%; z-index: 1;
     ul li { margin: .2rem 0;
-      &:nth-child(1) i { color: #2e60ff;}
-      &:nth-child(2) i { color: #929d3b;}
-      &:nth-child(3) i { color: #149700;}
-      &:nth-child(4) i { color: #930000;} 
+      &:nth-child(1) i { color: #c6e2e5;}
+      &:nth-child(2) i { color: #d9e952;}
+      &:nth-child(3) i { color: #8ccf8a;}
+      &:nth-child(4) i { color: #e4777a;} 
     
       a { display: block; padding: .2rem 0 .8rem; border: none;
         i { font-size: 1rem; padding-right: .55rem;}

@@ -126,7 +126,7 @@ header h1 a img {
 
 header .menu {
   float: right;
-  padding-right: 6vw;
+  padding-right: 2vw;
 }
 
 header .menu ul li {
@@ -222,19 +222,19 @@ header .change .bar3 {
 }
 
 #terrains #float-left ul li:nth-child(1) i {
-  color: #2e60ff;
+  color: #c6e2e5;
 }
 
 #terrains #float-left ul li:nth-child(2) i {
-  color: #929d3b;
+  color: #d9e952;
 }
 
 #terrains #float-left ul li:nth-child(3) i {
-  color: #149700;
+  color: #8ccf8a;
 }
 
 #terrains #float-left ul li:nth-child(4) i {
-  color: #930000;
+  color: #e4777a;
 }
 
 #terrains #float-left ul li a {

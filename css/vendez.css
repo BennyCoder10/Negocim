@@ -126,7 +126,7 @@ header h1 a img {
 
 header .menu {
   float: right;
-  padding-right: 6vw;
+  padding-right: 2vw;
 }
 
 header .menu ul li {
@@ -222,19 +222,19 @@ header .change .bar3 {
 }
 
 #terrains #float-left ul li:nth-child(1) i {
-  color: #2e60ff;
+  color: #c6e2e5;
 }
 
 #terrains #float-left ul li:nth-child(2) i {
-  color: #929d3b;
+  color: #d9e952;
 }
 
 #terrains #float-left ul li:nth-child(3) i {
-  color: #149700;
+  color: #8ccf8a;
 }
 
 #terrains #float-left ul li:nth-child(4) i {
-  color: #930000;
+  color: #e4777a;
 }
 
 #terrains #float-left ul li a {
@@ -423,15 +423,17 @@ main div .agencies img {
   transition: -webkit-transform .5s ease;
   transition: transform .5s ease;
   transition: transform .5s ease, -webkit-transform .5s ease;
+  -webkit-filter: blur(1px);
+          filter: blur(1px);
 }
 
 main div .agencies button {
   position: absolute;
   left: 50%;
-  bottom: .95rem;
+  top: 50%;
   min-width: 14.5rem;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
   display: block;
   background: #87c133;
   border: none;
@@ -459,14 +461,8 @@ main div .agencies button a {
   padding: .75rem;
 }
 
-main div .agencies:hover img {
-  -webkit-transform: scale(1.08);
-          transform: scale(1.08);
-  cursor: pointer;
-}
-
 main p {
-  font-size: .55rem;
+  font-size: .9rem;
   color: black;
   text-align: center;
   padding: .5rem;

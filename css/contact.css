@@ -126,7 +126,7 @@ header h1 a img {
 
 header .menu {
   float: right;
-  padding-right: 6vw;
+  padding-right: 2vw;
 }
 
 header .menu ul li {
@@ -222,19 +222,19 @@ header .change .bar3 {
 }
 
 #terrains #float-left ul li:nth-child(1) i {
-  color: #2e60ff;
+  color: #c6e2e5;
 }
 
 #terrains #float-left ul li:nth-child(2) i {
-  color: #929d3b;
+  color: #d9e952;
 }
 
 #terrains #float-left ul li:nth-child(3) i {
-  color: #149700;
+  color: #8ccf8a;
 }
 
 #terrains #float-left ul li:nth-child(4) i {
-  color: #930000;
+  color: #e4777a;
 }
 
 #terrains #float-left ul li a {
@@ -466,14 +466,14 @@ a, button {
 }
 
 #contact p {
-  font-size: .55rem;
+  font-size: .9rem;
   text-align: center;
   padding: .5rem;
   color: black;
   line-height: 1.5;
 }
 
-#contact p a {
+#contact p span {
   color: #87c133;
   font-weight: bold;
 }
@@ -511,6 +511,12 @@ a, button {
   position: relative;
   text-align: center;
   padding-bottom: 6rem;
+}
+
+#agence .agenceTable .right h3 {
+  font-size: 1.2rem;
+  font-weight: 400;
+  padding: .9rem .5rem 1.8rem;
 }
 
 #agence .agenceTable .right .services tr td {

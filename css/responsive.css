@@ -126,7 +126,7 @@ header h1 a img {
 
 header .menu {
   float: right;
-  padding-right: 6vw;
+  padding-right: 2vw;
 }
 
 header .menu ul li {
@@ -222,19 +222,19 @@ header .change .bar3 {
 }
 
 #terrains #float-left ul li:nth-child(1) i {
-  color: #2e60ff;
+  color: #c6e2e5;
 }
 
 #terrains #float-left ul li:nth-child(2) i {
-  color: #929d3b;
+  color: #d9e952;
 }
 
 #terrains #float-left ul li:nth-child(3) i {
-  color: #149700;
+  color: #8ccf8a;
 }
 
 #terrains #float-left ul li:nth-child(4) i {
-  color: #930000;
+  color: #e4777a;
 }
 
 #terrains #float-left ul li a {
@@ -562,6 +562,9 @@ a, button {
   }
   #simulateur_steps .step3 .help > div span:first-child {
     padding-right: 2rem;
+  }
+  #lexique > div {
+    padding: .8rem 3rem;
   }
 }
 
@@ -1312,7 +1315,7 @@ a, button {
     width: 100%;
     height: auto;
     padding: 0;
-    margin: 1.5rem auto;
+    margin: 0.5rem auto;
     float: none;
   }
   #qui_sommes_nous .text .text_right article {
@@ -1322,18 +1325,21 @@ a, button {
     font-size: 1.2rem;
   }
   #lexique > div {
-    padding-bottom: 2rem;
+    padding: .8rem .5rem;
   }
   #lexique > div .index {
-    padding-bottom: 2rem;
-  }
-  #lexique > div #lexique > div #lexique-contents .texts {
-    padding-right: .5rem;
-  }
-  #lexique > div #lexique > div #lexique-contents .texts h3 {
     padding-bottom: 1.5rem;
   }
-  #lexique > div #lexique > div #lexique-contents .texts p {
+  #lexique > div #lexique-contents {
+    height: 50vh;
+  }
+  #lexique > div #lexique-contents .texts {
+    padding-right: .5rem;
+  }
+  #lexique > div #lexique-contents .texts h3 {
+    padding-bottom: 1.5rem;
+  }
+  #lexique > div #lexique-contents .texts p {
     padding-bottom: 1.5rem;
     line-height: 1.5;
   }

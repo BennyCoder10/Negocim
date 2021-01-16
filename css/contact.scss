@@ -17,8 +17,8 @@
   }
 
   // NOTICE AT THE BOTTOM
-  p { font-size: .55rem; text-align: center; padding: .5rem; color: black; line-height: 1.5;
-    a { color: $sub; font-weight: bold;}
+  p { font-size: .9rem; text-align: center; padding: .5rem; color: black; line-height: 1.5;
+    span { color: $sub; font-weight: bold;}
   }
 
 }
@@ -47,6 +47,8 @@
 
     // INFO ON THE RIGHT
     .right { position: relative; text-align: center; padding-bottom: 6rem;
+      h3 { font-size: 1.2rem; font-weight: 400; padding: .9rem .5rem 1.8rem;}
+
       // h3 { font-size: 1rem; padding: .9rem .5rem 1.8rem;
       //   a { color: $text-dark;
       //     &:hover { color: $sub;}

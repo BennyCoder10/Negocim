@@ -161,6 +161,12 @@
   // QUI_SOMMES_NOUS
   // LIST CONTENT ON THE RIGHT
   // #qui_sommes_nous .text .text_right { width: 75vw;}
+
+
+
+  // LEXIQUE
+  #lexique > div { padding: .8rem 3rem;}
+  
 }
 
 // 
@@ -673,7 +679,7 @@ html body .wrapper header {
     .list_left { display: none; }
 
     // CONTENT ON THE RIGHT
-    .text_right { width: 100%; height: auto; padding: 0; margin: 1.5rem auto; float: none; 
+    .text_right { width: 100%; height: auto; padding: 0; margin: 0.5rem auto; float: none; 
       // overflow-y: auto; direction: ltr;
       article { padding: .8rem .5rem;
         h3 { font-size: 1.2rem;}
@@ -684,17 +690,18 @@ html body .wrapper header {
 
 
   // LEXIQUE
-  #lexique > div { padding-bottom: 2rem;
+  #lexique > div { padding: .8rem .5rem;
 
     // INDEX ALPHABETS
-    .index { padding-bottom: 2rem;} 
+    .index { padding-bottom: 1.5rem;} 
 
     // LEXIQUE CONTENTS
-    #lexique > div #lexique-contents .texts { padding-right: .5rem;
-      h3 { padding-bottom: 1.5rem;}
-      p { padding-bottom: 1.5rem; line-height: 1.5;}
-    }  
-
+    #lexique-contents { height: 50vh;
+      .texts { padding-right: .5rem;
+        h3 { padding-bottom: 1.5rem;}
+        p { padding-bottom: 1.5rem; line-height: 1.5;}
+      }  
+    }
   }
   
  
