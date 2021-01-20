@@ -106,10 +106,15 @@ main {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
+  margin-top: 70px !important;
 }
 
 header {
   background: #4cb0b2;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
 }
 
 header h1 {
@@ -539,13 +544,13 @@ a, button {
   #terrain_plan_lot .main-right .lot_option .wrapper .up .lot_info header h2 {
     font-size: 1.4rem;
   }
-  #terrain_grille .main-right .grille .wrapper table {
-    font-size: .7rem;
+  #terrain_single_page .main-right #grille .wrapper table {
+    font-size: .65rem;
   }
-  #terrain_grille .main-right .grille .wrapper table tr:nth-child(1) th span:nth-child(1) {
+  #terrain_single_page .main-right #grille .wrapper table tr:nth-child(1) th span:nth-child(1) {
     display: none;
   }
-  #terrain_grille .main-right .grille .wrapper table tr:nth-child(1) th span:nth-child(2) {
+  #terrain_single_page .main-right #grille .wrapper table tr:nth-child(1) th span:nth-child(2) {
     display: block;
   }
   #simulateur_steps {
@@ -1032,7 +1037,7 @@ a, button {
 
 @media only screen and (max-width: 560px) {
   html body .wrapper header h1 {
-    padding-left: 1rem;
+    padding-left: .5rem;
   }
   html body .wrapper header h1 a img {
     width: 13.5rem;
@@ -1128,45 +1133,45 @@ a, button {
   #terrain_plan_lot .main-right .lot_option {
     margin: 0;
   }
-  #terrain_single_page .main-right .grille,
-  #terrain_grille .main-right .grille {
+  #terrain_single_page .main-right #grille,
+  #terrain_grille .main-right #grille {
     margin: 0;
   }
-  #terrain_single_page .main-right .grille .wrapper > p,
-  #terrain_grille .main-right .grille .wrapper > p {
+  #terrain_single_page .main-right #grille .wrapper > p,
+  #terrain_grille .main-right #grille .wrapper > p {
     padding: 0 !important;
   }
-  #terrain_single_page .main-right .grille .wrapper .notaire_geometre,
-  #terrain_grille .main-right .grille .wrapper .notaire_geometre {
+  #terrain_single_page .main-right #grille .wrapper .notaire_geometre,
+  #terrain_grille .main-right #grille .wrapper .notaire_geometre {
     display: block;
   }
-  #terrain_single_page .main-right .grille .wrapper .notaire_geometre .notaire,
-  #terrain_grille .main-right .grille .wrapper .notaire_geometre .notaire {
+  #terrain_single_page .main-right #grille .wrapper .notaire_geometre .notaire,
+  #terrain_grille .main-right #grille .wrapper .notaire_geometre .notaire {
     border-right: none;
     border-bottom: 0.5px dashed #707070;
   }
-  #terrain_single_page .main-right .grille .wrapper table,
-  #terrain_grille .main-right .grille .wrapper table {
+  #terrain_single_page .main-right #grille .wrapper table,
+  #terrain_grille .main-right #grille .wrapper table {
     font-size: 11px;
   }
-  #terrain_single_page .main-right .grille .wrapper table tr:nth-child(1) th span:nth-child(1),
-  #terrain_grille .main-right .grille .wrapper table tr:nth-child(1) th span:nth-child(1) {
+  #terrain_single_page .main-right #grille .wrapper table tr:nth-child(1) th span:nth-child(1),
+  #terrain_grille .main-right #grille .wrapper table tr:nth-child(1) th span:nth-child(1) {
     display: none;
   }
-  #terrain_single_page .main-right .grille .wrapper table tr:nth-child(1) th span:nth-child(2),
-  #terrain_grille .main-right .grille .wrapper table tr:nth-child(1) th span:nth-child(2) {
+  #terrain_single_page .main-right #grille .wrapper table tr:nth-child(1) th span:nth-child(2),
+  #terrain_grille .main-right #grille .wrapper table tr:nth-child(1) th span:nth-child(2) {
     display: block;
   }
-  #terrain_single_page .main-right .grille .wrapper table tr:nth-child(1) th:nth-child(6),
-  #terrain_single_page .main-right .grille .wrapper table tr:nth-child(1) th:last-child,
-  #terrain_grille .main-right .grille .wrapper table tr:nth-child(1) th:nth-child(6),
-  #terrain_grille .main-right .grille .wrapper table tr:nth-child(1) th:last-child {
+  #terrain_single_page .main-right #grille .wrapper table tr:nth-child(1) th:nth-child(6),
+  #terrain_single_page .main-right #grille .wrapper table tr:nth-child(1) th:last-child,
+  #terrain_grille .main-right #grille .wrapper table tr:nth-child(1) th:nth-child(6),
+  #terrain_grille .main-right #grille .wrapper table tr:nth-child(1) th:last-child {
     display: none;
   }
-  #terrain_single_page .main-right .grille .wrapper table tr:nth-child(n+1) td:nth-child(6),
-  #terrain_single_page .main-right .grille .wrapper table tr:nth-child(n+1) td:last-child,
-  #terrain_grille .main-right .grille .wrapper table tr:nth-child(n+1) td:nth-child(6),
-  #terrain_grille .main-right .grille .wrapper table tr:nth-child(n+1) td:last-child {
+  #terrain_single_page .main-right #grille .wrapper table tr:nth-child(n+1) td:nth-child(6),
+  #terrain_single_page .main-right #grille .wrapper table tr:nth-child(n+1) td:last-child,
+  #terrain_grille .main-right #grille .wrapper table tr:nth-child(n+1) td:nth-child(6),
+  #terrain_grille .main-right #grille .wrapper table tr:nth-child(n+1) td:last-child {
     display: none;
   }
   #terrain_document .main-right .document {

@@ -20,9 +20,12 @@ function search() {
   };
 };
 
-// ENABLE "ENTER" BUTTON TO START SEARCH
+// SEARCH BUTTON
 input.addEventListener("keyup", function(event) {
+  // ENABLE "ENTER" BUTTON TO START SEARCH
   if (event.keyCode === 13) {
     search();
   }
 });
+  
+

@@ -10,16 +10,38 @@
   }
 
   // AGENCE INFO
-  .agenceTable { width: 100%; margin-bottom: 1.4rem;
+  .agenceTable { width: 100%; margin-bottom: 1.4rem; position: relative;
+    
+    // TEST FOR BLUR BACKGROUND IMAGE
+    // 
+    // &::before {
+    //   content: "";
+    //   background-image: url(../images/AgenceVannes.jpg);
+    //   background-size: cover;
+    //   position: absolute;
+    //   top: 0px;
+    //   right: 0px;
+    //   bottom: 0px;
+    //   left: 0px;
+    //   opacity: 0.3;
+    // }
+
     tr td { text-align: center; width: 50%; padding: 0; vertical-align: top;}
     
-    // INFO ON THE LEFT
-    .left { 
-      img { width: 100%; height: 22rem; object-fit: cover;} 
-    }
 
+    // TEST FOR BLUR BACKGROUND IMAGE
+    // 
+    // INFO ON THE LEFT
+    // .left { 
+    //   img { width: 100%; height: 22rem; object-fit: cover;} 
+    // }
+
+    
     // INFO ON THE RIGHT
-    .right { position: relative; text-align: center; padding-bottom: 3rem;
+    .right { position: relative; text-align: center; 
+      // padding-bottom: 3rem;
+      padding-bottom: 10rem;
+
       h3 { font-size: 1rem; padding: .9rem .5rem 1.8rem;
         a { color: $text-dark;
           &:hover { color: $sub;}

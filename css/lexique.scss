@@ -13,12 +13,13 @@
           &:focus { outline: none;}
         }
 
+        #reset { display: none;}
+
         button { padding: .5rem 0 0 .5rem; background: white; vertical-align: bottom; cursor: pointer;
           &:focus { outline: none;}
           i { font-size: 17px; color: $sub;}                
         }
       }  
-
     }
     // END OF SEARCH BAR
     

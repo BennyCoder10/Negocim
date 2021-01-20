@@ -106,10 +106,15 @@ main {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
+  margin-top: 70px !important;
 }
 
 header {
   background: #4cb0b2;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
 }
 
 header h1 {
@@ -423,17 +428,15 @@ main div .agencies img {
   transition: -webkit-transform .5s ease;
   transition: transform .5s ease;
   transition: transform .5s ease, -webkit-transform .5s ease;
-  -webkit-filter: blur(1px);
-          filter: blur(1px);
 }
 
 main div .agencies button {
   position: absolute;
   left: 50%;
-  top: 50%;
+  bottom: .95rem;
   min-width: 14.5rem;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
   display: block;
   background: #87c133;
   border: none;
@@ -459,6 +462,12 @@ main div .agencies button:focus {
 
 main div .agencies button a {
   padding: .75rem;
+}
+
+main div .agencies:hover img {
+  -webkit-transform: scale(1.08);
+          transform: scale(1.08);
+  cursor: pointer;
 }
 
 main p {

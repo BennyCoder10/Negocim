@@ -14,7 +14,7 @@
     margin: 1.4rem .5rem; 
 
     // LIST ON THE LEFT
-    .list_left { float: left; width: 12rem; padding: 1.4rem .5rem 0; position: sticky; top: 0;
+    .list_left { float: left; width: 12rem; padding: 1.4rem .5rem 0; position: sticky; top: 70px;
       li { 
         // float: left;
         a { display: inline-block; font-size: .9rem; font-weight: bold; padding: .4rem 0 .4rem .65rem; margin-right: .3rem;
@@ -30,7 +30,7 @@
     .text_right { float: left; width: calc(100% - 12rem); max-width: 1000px; height: 100%; padding: 0 1rem;
       // direction: rtl; overflow-y: scroll;      
      
-      article { padding: 0 1.15rem 2.5rem .5rem; 
+      article { padding: 0 1.15rem 2.5rem .5rem; scroll-margin-top: 70px;
         h3 { font-size: 1.8rem; color: $sub; text-align: left; padding-top: 1rem; padding-bottom: 1rem;}
         p { font-size: .65rem; line-height: 1.4; text-align: justify; word-break: keep-all;}
         &:last-child { padding-bottom: .5rem;}
