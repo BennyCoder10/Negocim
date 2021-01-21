@@ -106,13 +106,14 @@ main {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
-  margin-top: 70px !important;
+  margin-top: 78px !important;
 }
 
 header {
   background: #4cb0b2;
   position: fixed;
   top: 0;
+  max-width: 1440px;
   width: 100%;
   z-index: 1000;
 }
@@ -408,183 +409,52 @@ a, button {
   }
 }
 
-#terrain {
-  position: relative;
+#error_page > div {
+  padding: 1rem .5rem;
 }
 
-#terrain #sidebar-left {
-  position: relative;
-  float: left;
-  width: 14rem;
-  height: 100%;
-  background-color: white;
-  -webkit-animation: fadeInRight .3s ease-in;
-          animation: fadeInRight .3s ease-in;
+#error_page > div h1 {
+  font-size: 4rem;
+  font-weight: 500;
+  text-align: center;
 }
 
-#terrain #sidebar-left h2 {
-  padding: 1rem;
+#error_page > div div {
+  width: 56%;
+  margin: 0 auto;
 }
 
-#terrain #sidebar-left h2 a {
-  font-size: 1.9rem;
-  font-weight: bold;
-  color: #4cb0b2;
+#error_page > div div h3 {
+  font-size: 2.5rem;
+  font-weight: 500;
+  padding: 2rem 0;
 }
 
-#terrain #sidebar-left h2:hover a {
-  color: #525451;
+#error_page > div div p {
+  font-size: 2rem;
 }
 
-#terrain #sidebar-left .sidebar-menu {
-  overflow-y: auto;
-  min-height: 30%;
-  max-height: 65%;
-  margin-right: .5rem;
-  margin-bottom: 4rem;
-}
-
-#terrain #sidebar-left .sidebar-menu .dropdown-btn {
+#error_page > div .buttons {
   display: block;
-  width: 100%;
-  text-align: left;
-  font-size: 1rem;
-  cursor: pointer;
-  color: #4cb0b2;
-  background: white;
-  padding: .5rem .5rem .5rem 1.4rem;
-}
-
-#terrain #sidebar-left .sidebar-menu .dropdown-btn:hover {
-  color: black;
-}
-
-#terrain #sidebar-left .sidebar-menu .dropdown-btn:focus {
-  outline: none;
-}
-
-#terrain #sidebar-left .sidebar-menu .active {
-  font-weight: bold;
-}
-
-#terrain #sidebar-left .sidebar-menu .dropdown-content {
-  display: none;
-  padding: 0 .5rem .3rem 2.45rem;
-  -webkit-animation: slowAppear .3s ease-in-out;
-          animation: slowAppear .3s ease-in-out;
-}
-
-#terrain #sidebar-left .sidebar-menu .dropdown-content ul li a span {
-  position: relative;
-  display: inline-block;
-  color: #4cb0b2;
-  background: white;
-  padding: .2rem 0;
-  font-size: .9rem;
-  -webkit-transition: all .3s;
-  transition: all .3s;
-}
-
-#terrain #sidebar-left .sidebar-menu .dropdown-content ul li a span:hover {
-  color: black;
-}
-
-#terrain #sidebar-left .sidebar-menu .dropdown-content ul li a:focus {
-  outline: none;
-}
-
-#terrain #sidebar-left .sidebar-menu .dropdown-content ul li.visit a span:before {
-  content: url(../images/lotissement/vr_icon.png);
-  position: absolute;
-  top: 4px;
-  left: -30px;
-}
-
-#terrain #sidebar-left .sidebar-menu::-webkit-scrollbar {
-  width: 6px;
-}
-
-#terrain #sidebar-left .sidebar-menu::-webkit-scrollbar-track {
-  background: #bcbdbc;
-}
-
-#terrain #sidebar-left .sidebar-menu::-webkit-scrollbar-thumb {
-  background: #87c133;
-  height: auto;
-}
-
-#terrain #sidebar-left .sidebar-menu::-webkit-scrollbar-thumb:hover {
-  background: #5a9b00;
-}
-
-#terrain #sidebar-left #goback {
-  display: block;
+  margin: 2.5rem auto 1rem;
   background: #87c133;
   border: none;
   border-radius: 1.4rem;
-  margin: 0 auto;
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: 1rem;
-  padding: 0.4rem 2.5rem;
-  color: #ffffff;
-  font-size: .8rem;
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
 }
 
-#terrain #sidebar-left #goback a {
+#error_page > div .buttons:hover {
+  background: #5a9b00;
+}
+
+#error_page > div .buttons:focus {
+  outline: none;
+}
+
+#error_page > div .buttons a {
   display: block;
   font-size: .95rem;
   color: white;
   padding: .75rem 3rem;
-}
-
-#terrain #sidebar-left #goback:hover {
-  background: #5a9b00;
-}
-
-#terrain #sidebar-left #goback:focus {
-  outline: none;
-}
-
-#terrain #sidebar-left #goback i {
-  font-size: .7rem;
-  color: white;
-  padding-right: .3rem;
-}
-
-#terrain .main-right {
-  float: right;
-  width: calc(100% - 14rem);
-  text-align: center;
-  min-height: 20rem;
-  height: 100%;
-  overflow: auto;
-}
-
-#terrain .main-right .map {
-  height: 100%;
-  width: 100%;
-  padding: 5px;
-  position: relative;
-}
-
-#terrain .main-right .map img {
-  height: 100%;
-}
-
-#terrain .main-right .map p {
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: 1.5rem;
-  font-size: .8rem;
-  font-weight: bold;
-  padding: 0 1rem;
-}
-
-#terrain .main-right .map iframe {
-  height: 100%;
-  width: 100%;
-  border: 1px solid #87c133;
 }

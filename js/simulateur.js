@@ -124,37 +124,6 @@ commune.addEventListener('input', ($event) => {
   communeValue.textContent = $event.target.options[$event.target.selectedIndex].text;
 });
 
-// region.addEventListener('change', () => {
-//   if (commune.options.length < 3) {
-//     commune.value = commune.options[1].value;
-//     communeValue.textContent = commune.options[commune.selectedIndex].text;
-
-//     if (lotissement.options.length < 3) {
-//       lotissement.value = lotissement.options[1].value;
-//       lotissementValue.textContent = lotissement.options[lotissement.selectedIndex].text;
-
-
-//       if (lot.options.length < 3) {
-//         lot.value = lot.options[1].value;
-//         lotValue.textContent = lot.options[lot.selectedIndex].text;
-//       } 
-//     }
-//   } else {
-//     commune.addEventListener('input', ($event) => {    
-//       communeValue.textContent = $event.target.options[$event.target.selectedIndex].text;
-//     });
-//   }
-// });
-
-// commune.addEventListener('input', ($event) => {
-  // if (lotissement.options.length < 3) {
-  //   // lotissement.value = lotissement.options[1].value;
-  //   lotissement.options[lotissement.options.selectedIndex].selected = true;
-  // };  
-
-//   communeValue.textContent = $event.target.options[$event.target.selectedIndex].text;
-// });
-
 lotissement.addEventListener('input', ($event) => {
   lotissementValue.textContent = $event.target.options[$event.target.selectedIndex].text;
 });
@@ -175,8 +144,6 @@ apport.addEventListener('input', () => {
 });
 
 
-
-
 // 
 // CALCULATE BUTTON ON STEP 2
 // 
@@ -191,8 +158,6 @@ function calculate1() {
   notaire.textContent = x + " €";
   hypo.textContent = y + " €";
 }
-
-
 
 
 // 

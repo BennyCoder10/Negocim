@@ -1,0 +1,28 @@
+@charset "utf-8";
+@import "index.scss";
+
+
+//
+// MAIN #404
+//
+#error_page { 
+  > div { padding: 1rem .5rem; 
+    h1 { font-size: 4rem; font-weight: 500; text-align: center; }
+
+    // WRAPPER
+    div { width: 56%; margin: 0 auto;
+      h3 { font-size: 2.5rem; font-weight: 500; padding: 2rem 0;}
+      p { font-size: 2rem;}
+    }   
+    
+    // BUTTON
+    .buttons { display: block; margin: 2.5rem auto 1rem; background: #87c133; border: none; border-radius: 1.4rem; transition: all .5s ease; 
+      &:hover { background: #5a9b00;}
+      &:focus { outline: none;}
+  
+      a { display: block; font-size: .95rem; color: white; padding: .75rem 3rem;}
+    }
+    // END OF BUTTON 
+
+  }
+}

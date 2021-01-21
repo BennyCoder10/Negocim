@@ -106,13 +106,14 @@ main {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
-  margin-top: 70px !important;
+  margin-top: 78px !important;
 }
 
 header {
   background: #4cb0b2;
   position: fixed;
   top: 0;
+  max-width: 1440px;
   width: 100%;
   z-index: 1000;
 }

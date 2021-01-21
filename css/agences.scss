@@ -11,36 +11,9 @@
 
   // AGENCE INFO
   .agenceTable { width: 100%; margin-bottom: 1.4rem; position: relative;
-    
-    // TEST FOR BLUR BACKGROUND IMAGE
-    // 
-    // &::before {
-    //   content: "";
-    //   background-image: url(../images/AgenceVannes.jpg);
-    //   background-size: cover;
-    //   position: absolute;
-    //   top: 0px;
-    //   right: 0px;
-    //   bottom: 0px;
-    //   left: 0px;
-    //   opacity: 0.3;
-    // }
-
-    tr td { text-align: center; width: 50%; padding: 0; vertical-align: top;}
-    
-
-    // TEST FOR BLUR BACKGROUND IMAGE
-    // 
-    // INFO ON THE LEFT
-    // .left { 
-    //   img { width: 100%; height: 22rem; object-fit: cover;} 
-    // }
-
-    
+       
     // INFO ON THE RIGHT
-    .right { position: relative; text-align: center; 
-      // padding-bottom: 3rem;
-      padding-bottom: 10rem;
+    .right { position: relative; text-align: center; padding-bottom: 5rem;
 
       h3 { font-size: 1rem; padding: .9rem .5rem 1.8rem;
         a { color: $text-dark;
@@ -49,8 +22,8 @@
       }
 
       // SERVICE INFO
-      .services {
-        tr td { text-align: center; width: 50%; vertical-align: top;
+      .services { width: 80%; margin: auto;
+        tr td { text-align: center; width: 50%; padding: 1.5rem 0 3rem; vertical-align: top;
           h4 { font-weight: 500;}
           > div { padding: 1.3rem .3rem 0;             
             .person-name { color: $sub;}
@@ -94,27 +67,3 @@
 
 }
 // END OF MAIN #AGENCE-MAP
-
-// AGENCE INFO
-// #agence-bordeaux-3 { 
-//   div { box-sizing: border-box;
-//     img { float: left; width: 48%; height: auto;}
-//     .contact { float: left; width: 50%; text-align: center; padding: 0;
-//       h3 { font-size: 1rem; padding: .9rem 0 1.8rem;}
-//       .service { float: left; 
-//         h4 { font-weight: normal;}
-//         > div { padding: 1.3rem .3rem 0;             
-//           .person-name { color: $sub;}
-//           a { color: $text-dark;
-//             &:hover { color: $sub;}
-//           }
-//         }
-//       }
-//       .buttons { @include buttons; margin-top: 1.7rem auto;  @include transition;
-//       }
-//     }
-//   }
-//   p { font-size: .55rem; text-align: center; padding: .5rem; color: black; line-height: 1.5;
-//     a { color: $sub; font-weight: bold;}
-//   }
-// }

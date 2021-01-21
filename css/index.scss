@@ -71,10 +71,11 @@ body { font-size: 1rem; max-width: 1440px; font-family: 'Segoe UI', Tahoma, Gene
 // FLEXBOX FOR FULL HEIGHT
 html, body { height: 100%; padding: 0; margin: 0 auto;}
 .wrapper { display: flex; flex-direction: column; height: 100%;}
-main { flex: 1; margin-top: 70px !important;}
+
+main { flex: 1; margin-top: 78px !important;}
 
 // HEADER
-header { background: $main; position: fixed; top: 0; width: 100%; z-index: 1000;
+header { background: $main; position: fixed; top: 0; max-width: 1440px; width: 100%; z-index: 1000;
 
   // NEGOCIM LOGO
   h1 { float: left; padding: 5px; padding-left: 2rem;
@@ -151,7 +152,6 @@ header { background: $main; position: fixed; top: 0; width: 100%; z-index: 1000;
       // CLICKABLE AREAS IN THE MAP
       map {
         area { 
-          // &:hover { outline-color: $button_hover; }
           &:focus { outline: none;}
         }
       }

@@ -6,7 +6,6 @@
 
     // SEARCH BAR
     .searchWrapper { text-align: right;
-      // display: inline-block; border-bottom: 2.5px solid $sub;
 
       div { display: inline-block; border-bottom: 2.5px solid $sub;
         input { font-size: .8rem; text-indent: 5px;  width: 10rem; padding: 0; border: none; 
@@ -26,12 +25,9 @@
     // INDEX ALPHABETS
     .index { padding: 1rem 0 1.5rem; vertical-align: middle;
       #lexique-nav { display: flex; flex-wrap: wrap; font-size: 1rem; height: auto; align-items: center; justify-content: flex-start; 
-        // justify-content: space-between; 
-        // flex-wrap: nowrap; 
-        // overflow-x: auto;
+
         a { display: block; padding: .5rem;
-          // &:first-child { padding-left: 0;}
-          // &:last-child { padding-right: 0;}
+          
           span { font-weight: bold; text-align: center; color: $sub; padding: 0 .2rem; transition: color .5s;}
           &:hover span { color: #5a9b00; border-bottom: 3px solid #5a9b00;}
         }    
@@ -53,11 +49,6 @@
 
       // SCROLLBAR MODIFICATION  
       @include scrollbar(4.3rem)    
-      // &::-webkit-scrollbar { width: 6px;}
-      // &::-webkit-scrollbar-track { background: #bcbdbc;}
-      // &::-webkit-scrollbar-thumb { background: $sub; height: 4.3rem;
-      //   &:hover { background: #5a9b00;}
-      // }
     }
     // END OF LEXIQUE CONTENTS
     

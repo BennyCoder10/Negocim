@@ -106,13 +106,14 @@ main {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
-  margin-top: 70px !important;
+  margin-top: 78px !important;
 }
 
 header {
   background: #4cb0b2;
   position: fixed;
   top: 0;
+  max-width: 1440px;
   width: 100%;
   z-index: 1000;
 }
@@ -408,10 +409,6 @@ a, button {
   }
 }
 
-#simulateur {
-  margin: 0;
-}
-
 #simulateur h2 {
   font-size: 1.7rem;
   font-weight: 600;
@@ -517,6 +514,7 @@ a, button {
   font-size: 1.7rem;
   text-align: center;
   color: #87c133;
+  margin-top: 1rem;
 }
 
 #simulateur_steps .indicator {

@@ -15,7 +15,6 @@ function search() {
         content[i].style.display = "";
       } else {
         content[i].style.display = "none";
-        //   ul.textContent = "<h3>No Result</h3>";          
       }  
   };
 };

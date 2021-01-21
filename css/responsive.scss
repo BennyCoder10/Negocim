@@ -5,7 +5,7 @@
 // FOR SCREEN SIZES LESS THAN 1240PX (MIDDLE PC)
 // 
 @media only screen and (max-width: 1240px) {  
- body .wrapper header {
+  body .wrapper header {
 
     // NEGOCIM LOGO
     h1 { padding: 5px 0 5px .5rem;
@@ -14,12 +14,27 @@
 
     // NAV MENU 
     .menu { padding-right: 0;}
- }
+  }
+
+  // CONCERNING FIXED HEADER
+  main { margin-top: 72px !important;}
+
+
+  // VENDES & CONTACT_SUB
+  #agence .agenceTable {
+
+    // INFO ON THE RIGHT
+    .right { padding-bottom: 5rem;
+      .services { width: 100%; margin: unset;}
+    }
+  }
+  // END OF VENDES & CONTACT_SUB
+
 
   // LEXIQUE
   // INDEX ALPHABETS
   #lexique > div .index #lexique-nav { justify-content: flex-start;}
-  
+    
 }
 
 
@@ -43,6 +58,14 @@
     }
   }
 
+  // CONCERNING FIXED HEADER
+  main { margin-top: 57px !important;}
+  
+
+  // INDEX PAGE > MAIN
+  #terrains .main-right .map img { text-align: right;}  
+  
+
   // SIMULATEUR_STEPS
   #simulateur_steps {
     .step4 {
@@ -50,12 +73,20 @@
       .final_price > div span { left: 158px;}
     }   
   }
-  
-  // INDEX PAGE > MAIN
-  #terrains .main-right .map img { text-align: right;}  
-  
-  // #agence div .contact .services { font-size: 1.6vw;}
+
+
+  // PAGE 404
+  #error_page { 
+    > div { 
+
+      // WRAPPER
+      div { width: 90%;}   
+    }
+  }
+  // END OF PAGE 404
+
 }
+
 
 // 
 // FOR SCREEN SIZES LESS THAN 940PX (TABLET)
@@ -70,7 +101,7 @@
       h1 { padding-left: 2rem;
         a img { width: 17rem;}
       } 
-  
+
       // NAV MENU ON MOBILE
       .menu { width: 17rem; height: 100%; padding-right: 0rem; position: fixed; right: 0; top: 70px; z-index: 100; overflow: auto; background-color: rgba(0, 0, 0, 0.9); transition: transform .5s ease-in-out; transform: translateX(100%);
         ul { margin-left: 1rem;
@@ -85,7 +116,7 @@
         }
       }  
       // END OF NAV MENU ON MOBILE  
-  
+
       // SIDE MENU APPEAR
       .appear { transform: translateX(0);}
 
@@ -99,6 +130,10 @@
   .overlay{ position: fixed;} 
 
 
+  // CONCERNING FIXED HEADER
+  main { margin-top: 70px !important;}
+
+
   // INDEX PAGE > MAIN
   #terrains {
     //  FLOATING LINKS
@@ -107,10 +142,13 @@
         li a { padding: .5rem 0;}
       }
     }
+
     .main-right { height: auto;
       .map img { max-width: 100%; height: auto;}
     }
+
   }
+
 
   // TERRAIN_ PAGE / TERRAIN_PRESENTATION PAGE > MAIN
   main {
@@ -121,7 +159,7 @@
   }
 
   // TERRAIN_PLAN PAGE > MAIN
-  #terrain_plan_lot .main-right .lot_option .wrapper .up .lot_info header h2 { font-size: 1.4rem;}
+  #terrain_plan_lot .main-right .lot_option .wrapper .up .lot_info .header h2 { font-size: 1.4rem;}
   
   #terrain_single_page .main-right #grille .wrapper table { font-size: .65rem;
     tr:nth-child(1) {
@@ -130,40 +168,6 @@
     }
   }
   
- 
-
-//   #terrain_single_page {
-//   .main-right #grille { 
-//     .wrapper {      
-//       table {
-       
-//         tr:nth-child(1) {
-//           th span:nth-child(1) { display: none;}
-//           th span:nth-child(2) { display: block;}
-//         }   
-//       }
-//     } 
-//   } 
-// }
-
-  // #terrain_grille .main-right .grille .wrapper table tr:nth-child(1) {
-  //   th span:nth-child(1) { display: none;}
-  //   th span:nth-child(2) { display: block;}
-  //   th:nth-child(6),
-  //   th:last-child { display: none;}
-  // }
-
-  // #terrain_grille .main-right .grille .wrapper table tr:nth-child(n+1) {
-  //   td:nth-child(6),
-  //   td:last-child { display: none;}
-  // }
-
-  // #terrain_grille .main-right .grille .wrapper table tr:nth-child(n+1):not(.active) {
-  //   td:nth-child(1), td:nth-child(2), td:nth-child(3), td:nth-child(4), td:nth-child(5), td:nth-child(6)
-  //   // td:last-child 
-  //   { display: none;}
-  // }
-
 
   // SIMULATEUR
   #simulateur_steps { padding-bottom: 3rem; margin: 1.2rem 1rem;
@@ -175,85 +179,75 @@
     .step3 .help > div span:first-child { padding-right: 2rem;} 
   }
 
-  // QUI_SOMMES_NOUS
-  // LIST CONTENT ON THE RIGHT
-  // #qui_sommes_nous .text .text_right { width: 75vw;}
-
-
-
+  
   // LEXIQUE
   #lexique > div { padding: .8rem 3rem;}
   
 }
+
 
 // 
 // FOR MIDDLE SCREEN SIZES LESS THAN 770PX (SMALL TABLET)
 // 
 @media only screen and (max-width: 770px) {
 
-   // TERRAINS_SUB
- #terrain {
+  // TERRAINS_SUB
+  #terrain {
   #sidebar-left { width: 100%; position: static; background: white; border: none;
     animation: fadeInRight .3s ease-in;
-     h2 { text-align: center; padding: 3rem 0 .5rem;
-       a { font-size: 1.5rem; font-weight: bold; color: $text; background: $sub; border-radius: 20px; padding: 0 1rem;}
-       &:hover a { color: $text-dark;}  
-     }
-  
-     // H2 BACKGROUND IMAGES
-     .tour { background: url(../images/AgenceTours.jpg) 0 46% / 100%;}
-     .bordeaux { background: url(../images/Agencebordeaux-4.jpg) 0 46% / 100%;}
-     .vannes { background: url(../images/AgenceVannes.jpg) 0 35% / 100%;}
-     .orleanais { background: url(../images/AgenceOrleans.jpg) 0 46% / 100%;}
-     //
-  
-     .sidebar-menu { overflow-y: visible; height: auto; margin-right: 0; margin-top: 0; margin-bottom: 4rem;
-       .dropdown-btn { font-size: 1.2rem; text-align: center; color: $text-dark; background: white; padding: 1rem 0; transition: none;}
-       .active { font-weight: 600;}
-       .dropdown-content { text-align: center; padding: 0; padding-bottom: 1.5rem;           
-         ul li {
-           a {
-             span{ font-size: .9rem; color: $text-dark; background: white;  }  
-           }
-         }
-       }
-     }
-   }   
- }
+      h2 { text-align: center; padding: 3rem 0 .5rem;
+        a { font-size: 1.5rem; font-weight: bold; color: $text; background: $sub; border-radius: 20px; padding: 0 1rem;}
+        &:hover a { color: $text-dark;}  
+      }
 
- #terrain .main-right {display: none;}
+      // H2 BACKGROUND IMAGES
+      .tour { background: url(../images/AgenceTours.jpg) 0 46% / 100%;}
+      .bordeaux { background: url(../images/Agencebordeaux-4.jpg) 0 46% / 100%;}
+      .vannes { background: url(../images/AgenceVannes.jpg) 0 35% / 100%;}
+      .orleanais { background: url(../images/AgenceOrleans.jpg) 0 46% / 100%;}
+      
 
+      .sidebar-menu { overflow-y: visible; height: auto; margin-right: 0; margin-top: 0; margin-bottom: 4rem;
+        .dropdown-btn { font-size: 1.2rem; text-align: center; color: $text-dark; background: white; padding: 1rem 0; transition: none;}
+        .active { font-weight: 600;}
+        .dropdown-content { text-align: center; padding: 0; padding-bottom: 1.5rem;           
+          ul li {
+            a {
+              span{ font-size: .9rem; color: $text-dark; background: white;  }  
+            }
+          }
+        }
+      }
 
-
-#terrains #float-left ul li a i { padding-right: .2rem;}
+    }   
+  } 
+  // END OF TERRAINS_SUB
 
 
+  #terrain .main-right {display: none;}
 
 
-// TERRAIN_SUB PAGES
-#terrain_single_page,
-// #terrain_presentation, 
-// #terrain_plan,
-#terrain_plan_lot,
-// #terrain_grille, 
-#terrain_document, 
-#terrain_option
-  {
-  // CONTENT ON THE RIGHT
-  .main-right { width: 100%; height: auto; padding: .3rem; padding-top: 3rem;
-    
-    // LOTISSEMENT NAME ON MOBILE
-    .lotissement_name { display: block;}
-    
-    // PRESENTATION PAGE
-    #presentation {
-      > div > p { padding-top: 0;}    
-    } 
-  }
+  #terrains #float-left ul li a i { padding-right: .2rem;}
 
-  // SIDEBAR ON THE LEFT
-  #sidebar-left { width: 100%; height: auto; position: static; background: white; border: none; 
-    // animation: fadeInRight .3s ease-in;
+  // TERRAIN_SUB PAGES
+  #terrain_single_page,
+  #terrain_plan_lot,
+  #terrain_document, 
+  #terrain_option {
+    // CONTENT ON THE RIGHT
+    .main-right { width: 100%; height: auto; padding: .3rem; padding-top: 3rem;
+      
+      // LOTISSEMENT NAME ON MOBILE
+      .lotissement_name { display: block;}
+      
+      // PRESENTATION PAGE
+      #presentation {
+        > div > p { padding-top: 0;}    
+      } 
+    }
+
+    // SIDEBAR ON THE LEFT
+    #sidebar-left { width: 100%; height: auto; position: static; background: white; border: none; 
       h2 { text-align: center; padding: 0; position: absolute; top: .5rem; left: 0; right: 0;
         a { font-size: 1.5rem; font-weight: bold; color: $text; padding: 0 1rem; background: $sub; border-radius: 20px; }
         &:hover a { color: $text-dark;}  
@@ -272,12 +266,11 @@
 
         .visite_virtuelle, 
         #simulaer_un_credit, 
-        #imprimer 
-          { margin: .5rm auto; border-radius: 30px; border: 2px solid $sub; background: none; color: $sub;
-            a { color: $sub; padding: .6rem 1rem;}
-          }
-                  
-
+        #imprimer {
+          margin: .5rm auto; border-radius: 30px; border: 2px solid $sub; background: none; color: $sub;
+          a { color: $sub; padding: .6rem 1rem;}
+        }
+                 
         .visite_virtuelle { 
           a { color: $sub;}
           &:hover { background: none;}
@@ -326,24 +319,6 @@
   }
 
 
-
-  // #terrain_plan .main-right .lot_option .wrapper .up { display: block; margin: .5rem;}
-  // #terrain_plan .main-right .lot_option .wrapper .up .lot_info #lot_image_mobile { display: inline-block;}
-  // #terrain_plan .main-right .lot_option .wrapper .up .lot_image img { display: none;}
-  // #terrain_plan .main-right .lot_option .wrapper .up .lot_image button { position: static; padding: .7rem 1.5rem;
-  //   br { display: none;}
-  // }
-  // #terrain_plan .main-right .lot_option .wrapper .up .lot_info { margin: 0 auto;}
-  // #terrain_plan .main-right .lot_option .wrapper .up .lot_info .info_table { margin: 1.5rem 0;
-  //   p { display: block;
-  //     > span { display: inline-block; width: 49%; vertical-align: top;
-  //       &:first-child { font-weight: 600; text-align: right; padding-right: .5rem;}
-  //       &:nth-child(2) { text-align: left;}   
-  //     }
-  //   }
-  // }
-
-
   #terrain_option .main-right {
     .lotissement_name { display: none;}
     > div .wrapper { flex-direction: column;
@@ -363,20 +338,6 @@
     }
   }  
   
-
-  // VENDES & CONTACT_SUB
-  #agence .agenceTable tr {
-
-    // INFO ON THE LEFT
-    .left { display: none;}
-
-    // INFO ON THE RIGHT
-    .right { padding-bottom: 3rem;
-      tr td { width: 100%; padding: 1.5rem 0 3rem;}
-    }
-  }
-  // END OF VENDES & CONTACT_SUB
-
 
   // SIMULATEUR
   #simulateur .choice > div div p { text-align: center; padding-left: 0;}
@@ -433,6 +394,8 @@
       > div span:first-child { font-size: .8rem;}
     }   
   }  
+  // END OF SIMULATEUR STEPS
+
 
   // #QUI_SOMMES_NOUS
   #qui_sommes_nous .text { padding: 0; margin: 0;
@@ -446,6 +409,7 @@
     }
   } 
 
+
   // LEXIQUE
   #lexique > div { padding: .8rem 1rem;}
 
@@ -457,143 +421,102 @@
 // 
 @media only screen and (max-width: 560px) {
 
-// HEADER
-html body .wrapper header {
-  // NEGOCIM LOGO
-  h1 { padding-left: .5rem;
-    a img { width: 13.5rem;}
-  } 
+  // HEADER
+  html body .wrapper header {
+    // NEGOCIM LOGO
+    h1 { padding-left: .5rem;
+      a img { width: 13.5rem;}
+    } 
 
-  // NAV MENU
-  .menu { top: 62px}
-}
-
-// INDEX PAGE > MAIN 
-#terrains .main-right {display: none;}
+    // NAV MENU
+    .menu { top: 62px}
+  }
 
 
-//ORIGINAL Li BACKGROUND ($SUB COLOR)
-// #terrains #float-left { height: 100%;
-//   ul { flex-direction: column; height: 100%; margin: 0; justify-content: center; border: none;
-//     li { text-align: center; margin: 1rem 2rem; background-color: $sub; border: 2px solid $sub; border-radius: 0 5rem  5rem 0; 
-//       a { padding: 1rem 0;
-//         i {display: none;}
-//         span { font-size: 1.2rem; color: white;}
-//       }
-//       &:hover { background-color: white; @include transition;
-//         a i span { color: $text-dark; }
-//       }
-//     }
-//   }
-// }
+  // CONCERNING FIXED HEADER
+  main { margin-top: 62px !important;}
 
-// Li BACKGROUND USING IMAGES
-#terrains #float-left { height: 100%;
-  ul { flex-direction: column; height: 100%; margin: 0; justify-content: center; border: none;
-    li { position: relative; text-align: center; margin: .7rem 1rem; background-color: white; border: 2px solid $main; border-radius: 2px;
-      a { padding: 1.5rem 0; z-index: 2; position: relative;
-        i {display: none;}
-        span { font-size: 1.5rem; color: white; padding: 0 1rem; border-radius: .5rem; background-color: $main; border: 2px solid $main;}
-      }
-      &:hover { @include transition;
-        a span { @include transition; color: $main; background-color: white;}
-        
-      }
-      // &:before { content: ""; position: absolute; top: 0; bottom: 0; left: 0; right: 0; opacity: .5; z-index: 1;}
-    }
-    // SELECTION TABS BACKGROUND IMAGES
-    .tour { background: url(../images/AgenceTours.jpg) 0 63% / 100%;}
-    .bordeaux { background: url(../images/Agencebordeaux-4.jpg) 0 46% / 100%;}
-    .vannes { background: url(../images/AgenceVannes.jpg) 0 27% / 100%;}
-    .orleanais { background: url(../images/AgenceOrleans.jpg) 0 46% / 100%;}
-  }      
-} 
 
-// TERRAINS SUB
-// #terrain #sidebar-left .sidebar-menu { 
-//   margin-right: 0rem;
-// }
+  // INDEX PAGE > MAIN 
+  #terrains .main-right {display: none;}
 
-// #terrain_presentation .main-right #presentation { margin: 0;}
 
-// 
-#terrain_single_page .main-right #presentation { margin: 0;
-  .btm { padding: .5rem .3rem;}
-}
-
-//  #terrain_plan .main-right .lot_option .wrapper .up .lot_info #lot_image_mobile { width: 70%;}
-
-#terrain_single_page
-// #terrain_plan 
-{
-  .main-right {
-    #plan_right { margin: 0;
-      // .plan .plan_img { width: 539px; height: 623px;}
-      .plan .plan_img .lot {
-        .tag {
-          span { font-size: 5px;}
-          img { width: 77%;}
+  // Li BACKGROUND USING IMAGES
+  #terrains #float-left { height: 100%;
+    ul { flex-direction: column; height: 100%; margin: 0; justify-content: center; border: none;
+      li { position: relative; text-align: center; margin: .7rem 1rem; background-color: white; border: 2px solid $main; border-radius: 2px;
+        a { padding: 1.5rem 0; z-index: 2; position: relative;
+          i {display: none;}
+          span { font-size: 1.5rem; color: white; padding: 0 1rem; border-radius: .5rem; background-color: $main; border: 2px solid $main;}
         }
-        .visit img { width: 35%;}
-        .number { font-size: 50%;}
+        &:hover { @include transition;
+          a span { @include transition; color: $main; background-color: white;}
+          
+        }
+        // &:before { content: ""; position: absolute; top: 0; bottom: 0; left: 0; right: 0; opacity: .5; z-index: 1;}
       }
-    }
+      // SELECTION TABS BACKGROUND IMAGES
+      .tour { background: url(../images/AgenceTours.jpg) 0 63% / 100%;}
+      .bordeaux { background: url(../images/Agencebordeaux-4.jpg) 0 46% / 100%;}
+      .vannes { background: url(../images/AgenceVannes.jpg) 0 27% / 100%;}
+      .orleanais { background: url(../images/AgenceOrleans.jpg) 0 46% / 100%;}
+    }      
   } 
-}
 
 
- 
-//  .plan .plan_img .lot .tag span { font-size: 5px;}
-//  .plan .plan_img .lot .tag img { width: 77%;}
-//  .plan .plan_img .lot .visit img { width: 35%;}
-//  .plan .plan_img .lot .number { font-size: 50%;}
+  #terrain_single_page .main-right #presentation { margin: 0;
+    .btm { padding: .5rem .3rem;}
+  }
 
 
- #terrain_plan_lot .main-right .lot_option { margin: 0;}
-
-//  #terrain_presentation #sidebar-left .sidebar-menu button, 
-//  #terrain_plan #sidebar-left .sidebar-menu button { width: 100%; }
-
-//  main #sidebar-left .sidebar-menu button { width: 100%;}
-
-
-#terrain_single_page, 
-#terrain_grille {
-  .main-right #grille { margin: 0;
-    .wrapper {
-      > p { padding: 0 !important;}
-      .notaire_geometre { display: block;        
-        .notaire { border-right: none; border-bottom: .5px dashed $bars;}
-      }
-      table { font-size: 11px;
-        tr:nth-child(1) {
-          th span:nth-child(1) { display: none;}
-          th span:nth-child(2) { display: block;}
-          th:nth-child(6),
-          th:last-child { display: none;}
-        }   
-        
-        tr:nth-child(n+1) {
-          td:nth-child(6),
-          td:last-child { display: none;}
+  #terrain_single_page {
+    .main-right {
+      #plan_right { margin: 0;
+        .plan .plan_img .lot {
+          .tag {
+            span { font-size: 5px;}
+            img { width: 77%;}
+          }
+          .visit img { width: 35%;}
+          .number { font-size: 50%;}
         }
       }
     } 
+  }
+
+
+  #terrain_plan_lot .main-right .lot_option { margin: 0;}
+
+
+  #terrain_single_page {
+    .main-right #grille { margin: 0;
+      .wrapper {
+        > p { padding: 0 !important;}
+        .notaire_geometre { display: block;        
+          .notaire { border-right: none; border-bottom: .5px dashed $bars;}
+        }
+        table { font-size: 11px;
+          tr:nth-child(1) {
+            th span:nth-child(1) { display: none;}
+            th span:nth-child(2) { display: block;}
+            th:nth-child(6),
+            th:last-child { display: none;}
+          }   
+          
+          tr:nth-child(n+1) {
+            td:nth-child(6),
+            td:last-child { display: none;}
+          }
+        }
+      } 
+    } 
   } 
-}
 
-  // #terrain_grille .main-right .grille .wrapper table tr:nth-child(n+1):not(.active) {
-  //   td:nth-child(1), td:nth-child(2), td:nth-child(3), td:nth-child(4), td:nth-child(5), td:nth-child(6)
-  //   // td:last-child 
-  //   { display: none;}
-  // }
-   
+  #terrain_document .main-right .document { margin: 0;
+    .wrapper div p { font-size: .8rem;}
+  } 
 
- #terrain_document .main-right .document { margin: 0;
-  .wrapper div p { font-size: .8rem;}
-} 
-
- #terrain_option .main-right > div { margin: .5rem 0;}
+  #terrain_option .main-right > div { margin: .5rem 0;}
 
   // VENDEZ & CONTACT
   #vendez, 
@@ -609,29 +532,20 @@ html body .wrapper header {
     .services tr td { width: 100%;}
   }
 
-  // CONTACT 
-  // #contact div .agencies { width: 100%; border-bottom: 5px solid white;
-  //   img { height: 9rem;}
-  // }
-  // #contact .left { display: none;}
-  // #contact .right { float: none; width: 100%;}
-
   // SIMULATEUR
   #simulateur .choice > div { width: 100%; height: 57vw; border: 1px solid $bars; margin-bottom: 5px;}
-  // #simulateur .choice > div > a > div { height: 20vw;}
+
   #simulateur .choice {
     #choice_terrain { background: url(../images/simuler_terrain.jpg) no-repeat center 67% / 100%;
       &:hover { background: url(../images/simuler_terrain.jpg) no-repeat center 67% / 108%;}
     }
-  
+
     // CHOICE OF TERRAIN ET CONSTRUCTION ON THE RIGHT
     #choice_terrainConst { background: url(../images/simuler_terrain_construction.jpg) no-repeat center 82% / 100%;
       &:hover { background: url(../images/simuler_terrain_construction.jpg) no-repeat center 82% / 106%;}
     }
   }
 
-  // #simulateur .choice #choice_terrain { background-position: 0% 75%; background-size:  100%;}
-  // #simulateur .choice #choice_terrainConst { background-position: 0% 54%; background-size:  100%;}
   #simulateur .btm-txt { padding: .8rem 0;}
 
   #simulateur_steps { 
@@ -643,7 +557,7 @@ html body .wrapper header {
     .step2 .bottom .montant { justify-content: space-evenly;
       span { margin-right: 0; }
     } 
-  
+
     .step3 .help { 
       button { width: 100%;}
       > div { padding-top: 1rem;
@@ -682,7 +596,6 @@ html body .wrapper header {
   } 
 
   footer { 
-    // height: 100%;
     p { 
       a { display: block;}
       #legales { margin-right: 0;}
@@ -698,7 +611,7 @@ html body .wrapper header {
 
     // CONTENT ON THE RIGHT
     .text_right { width: 100%; height: auto; padding: 0; margin: 0.5rem auto; float: none; 
-      // overflow-y: auto; direction: ltr;
+
       article { padding: .8rem .5rem;
         h3 { font-size: 1.2rem;}
       }
@@ -721,9 +634,23 @@ html body .wrapper header {
       }  
     }
   }
-  
- 
+
+
   // POLITIQUE PAGE
   #politique > div { margin: .5rem;}
+
+
+  // PAGE 404
+  #error_page { 
+    > div { 
+
+      // WRAPPER
+      div { width: 90%;
+        h3 { font-size: 2rem; padding: 2rem 0;}
+        p { font-size: 2rem;}
+      }   
+    }
+  }
+  // END OF PAGE 404
 }
 

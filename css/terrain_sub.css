@@ -106,13 +106,14 @@ main {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
-  margin-top: 70px !important;
+  margin-top: 78px !important;
 }
 
 header {
   background: #4cb0b2;
   position: fixed;
   top: 0;
+  max-width: 1440px;
   width: 100%;
   z-index: 1000;
 }
@@ -1011,7 +1012,7 @@ main .main-right > * {
           flex: 6;
 }
 
-#terrain_plan_lot .main-right .lot_option .wrapper .up .lot_info header {
+#terrain_plan_lot .main-right .lot_option .wrapper .up .lot_info .header {
   background-color: #87c133;
   padding: .5rem 0;
   margin-bottom: 1rem;
@@ -1019,11 +1020,11 @@ main .main-right > * {
           box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
-#terrain_plan_lot .main-right .lot_option .wrapper .up .lot_info header * {
+#terrain_plan_lot .main-right .lot_option .wrapper .up .lot_info .header * {
   color: white;
 }
 
-#terrain_plan_lot .main-right .lot_option .wrapper .up .lot_info header p {
+#terrain_plan_lot .main-right .lot_option .wrapper .up .lot_info .header p {
   font-size: .7rem;
 }
 

@@ -106,13 +106,14 @@ main {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
-  margin-top: 70px !important;
+  margin-top: 78px !important;
 }
 
 header {
   background: #4cb0b2;
   position: fixed;
   top: 0;
+  max-width: 1440px;
   width: 100%;
   z-index: 1000;
 }
@@ -418,6 +419,16 @@ a, button {
   body .wrapper header .menu {
     padding-right: 0;
   }
+  main {
+    margin-top: 72px !important;
+  }
+  #agence .agenceTable .right {
+    padding-bottom: 5rem;
+  }
+  #agence .agenceTable .right .services {
+    width: 100%;
+    margin: unset;
+  }
   #lexique > div .index #lexique-nav {
     -webkit-box-pack: start;
         -ms-flex-pack: start;
@@ -438,14 +449,20 @@ a, button {
   html body .wrapper header .menu ul li a {
     padding: 1.3rem .45rem .3rem;
   }
+  main {
+    margin-top: 57px !important;
+  }
+  #terrains .main-right .map img {
+    text-align: right;
+  }
   #simulateur_steps .step4 .summary table {
     width: 80%;
   }
   #simulateur_steps .step4 .final_price > div span {
     left: 158px;
   }
-  #terrains .main-right .map img {
-    text-align: right;
+  #error_page > div div {
+    width: 90%;
   }
 }
 
@@ -509,6 +526,9 @@ a, button {
   .overlay {
     position: fixed;
   }
+  main {
+    margin-top: 70px !important;
+  }
   #terrains #float-left {
     position: static;
   }
@@ -541,7 +561,7 @@ a, button {
   main .main-right {
     width: calc(100% - 12rem);
   }
-  #terrain_plan_lot .main-right .lot_option .wrapper .up .lot_info header h2 {
+  #terrain_plan_lot .main-right .lot_option .wrapper .up .lot_info .header h2 {
     font-size: 1.4rem;
   }
   #terrain_single_page .main-right #grille .wrapper table {
@@ -895,16 +915,6 @@ a, button {
   #terrain_option .main-right > div .wrapper .option_right > div {
     margin-left: 0;
   }
-  #agence .agenceTable tr .left {
-    display: none;
-  }
-  #agence .agenceTable tr .right {
-    padding-bottom: 3rem;
-  }
-  #agence .agenceTable tr .right tr td {
-    width: 100%;
-    padding: 1.5rem 0 3rem;
-  }
   #simulateur .choice > div div p {
     text-align: center;
     padding-left: 0;
@@ -1045,6 +1055,9 @@ a, button {
   html body .wrapper header .menu {
     top: 62px;
   }
+  main {
+    margin-top: 62px !important;
+  }
   #terrains .main-right {
     display: none;
   }
@@ -1133,45 +1146,34 @@ a, button {
   #terrain_plan_lot .main-right .lot_option {
     margin: 0;
   }
-  #terrain_single_page .main-right #grille,
-  #terrain_grille .main-right #grille {
+  #terrain_single_page .main-right #grille {
     margin: 0;
   }
-  #terrain_single_page .main-right #grille .wrapper > p,
-  #terrain_grille .main-right #grille .wrapper > p {
+  #terrain_single_page .main-right #grille .wrapper > p {
     padding: 0 !important;
   }
-  #terrain_single_page .main-right #grille .wrapper .notaire_geometre,
-  #terrain_grille .main-right #grille .wrapper .notaire_geometre {
+  #terrain_single_page .main-right #grille .wrapper .notaire_geometre {
     display: block;
   }
-  #terrain_single_page .main-right #grille .wrapper .notaire_geometre .notaire,
-  #terrain_grille .main-right #grille .wrapper .notaire_geometre .notaire {
+  #terrain_single_page .main-right #grille .wrapper .notaire_geometre .notaire {
     border-right: none;
     border-bottom: 0.5px dashed #707070;
   }
-  #terrain_single_page .main-right #grille .wrapper table,
-  #terrain_grille .main-right #grille .wrapper table {
+  #terrain_single_page .main-right #grille .wrapper table {
     font-size: 11px;
   }
-  #terrain_single_page .main-right #grille .wrapper table tr:nth-child(1) th span:nth-child(1),
-  #terrain_grille .main-right #grille .wrapper table tr:nth-child(1) th span:nth-child(1) {
+  #terrain_single_page .main-right #grille .wrapper table tr:nth-child(1) th span:nth-child(1) {
     display: none;
   }
-  #terrain_single_page .main-right #grille .wrapper table tr:nth-child(1) th span:nth-child(2),
-  #terrain_grille .main-right #grille .wrapper table tr:nth-child(1) th span:nth-child(2) {
+  #terrain_single_page .main-right #grille .wrapper table tr:nth-child(1) th span:nth-child(2) {
     display: block;
   }
   #terrain_single_page .main-right #grille .wrapper table tr:nth-child(1) th:nth-child(6),
-  #terrain_single_page .main-right #grille .wrapper table tr:nth-child(1) th:last-child,
-  #terrain_grille .main-right #grille .wrapper table tr:nth-child(1) th:nth-child(6),
-  #terrain_grille .main-right #grille .wrapper table tr:nth-child(1) th:last-child {
+  #terrain_single_page .main-right #grille .wrapper table tr:nth-child(1) th:last-child {
     display: none;
   }
   #terrain_single_page .main-right #grille .wrapper table tr:nth-child(n+1) td:nth-child(6),
-  #terrain_single_page .main-right #grille .wrapper table tr:nth-child(n+1) td:last-child,
-  #terrain_grille .main-right #grille .wrapper table tr:nth-child(n+1) td:nth-child(6),
-  #terrain_grille .main-right #grille .wrapper table tr:nth-child(n+1) td:last-child {
+  #terrain_single_page .main-right #grille .wrapper table tr:nth-child(n+1) td:last-child {
     display: none;
   }
   #terrain_document .main-right .document {
@@ -1350,5 +1352,15 @@ a, button {
   }
   #politique > div {
     margin: .5rem;
+  }
+  #error_page > div div {
+    width: 90%;
+  }
+  #error_page > div div h3 {
+    font-size: 2rem;
+    padding: 2rem 0;
+  }
+  #error_page > div div p {
+    font-size: 2rem;
   }
 }
