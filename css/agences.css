@@ -453,7 +453,7 @@ a, button {
 #agence .agenceTable .right .services tr td {
   text-align: center;
   width: 50%;
-  padding: 1.5rem 0 3rem;
+  padding: 1.5rem 0;
   vertical-align: top;
 }
 

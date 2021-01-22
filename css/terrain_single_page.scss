@@ -2,11 +2,23 @@
 @import "index.scss";
 
 
-// COMMENT CODES FOR SIDEBAR ON THE LEFT AND THE CONTENTS ON THE RIGHT
+// SIDEBAR ON THE LEFT AND THE CONTENTS ON THE RIGHT
 main {  
 
   // SIDEBAR ON THE LEFT
-  #sidebar-left { position: relative; float: left; width: 14rem; height: 100%; background-color: white; padding: 1rem;
+  #sidebar-left { 
+    // position: relative; float: left; width: 14rem; height: 100%; background-color: white; padding: 1rem;
+    
+    // FIXED SIDEMENU TEST
+    position: sticky; float: left; width: 14rem;     
+    background-color: white; padding: 1rem;
+    top: 50px; bottom: 0;
+    z-index: 0;
+
+      // SCROLL
+      // max-height: 100vh; 
+      // overflow-y: auto; 
+      // @include scrollbar(5px)
 
     h2 { padding-bottom: 1rem; text-align: center;
       a { font-size: 1.9rem; font-weight: bold; color: $main;}
@@ -14,8 +26,9 @@ main {
     }
 
     // SIDEBAR MENU
-    .sidebar-menu { @include scrollbar(auto); margin-bottom: 4rem; 
-     
+    .sidebar-menu { margin-bottom: 2rem; 
+      
+    
       // SIDEBAR MENU BUTTONS
       button { margin-bottom: .5rem; text-align: left; display: block; width:100%; border-radius: 0;  background: white; outline: none; transition: all .5s ease;
         a { display: block; font-size: .9rem; color: $main; padding: .4rem .5rem;}
@@ -43,7 +56,14 @@ main {
       #imprimer { font-size: 1rem; color: white; padding: .4rem .5rem;}
  
       // GOBACK BUTTON AT THE BOTTOM
-      #goback { @include buttons; position: absolute; left: 0; right: 0; bottom: 1rem; color: $text; width: auto; margin: 0 auto; 
+      #goback { @include buttons; color: $text; width: auto; 
+        // position: absolute; left: 0; right: 0; bottom: 1rem; 
+
+
+        // FIXED SIDEMENU TEST
+        margin: 3rem auto 1rem; 
+
+
         a { font-size: .8rem; padding: .4rem 2.5rem; 
           i { font-size: .7rem; color: white; padding-right: .3rem;} 
         }       

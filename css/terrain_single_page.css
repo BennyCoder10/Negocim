@@ -410,12 +410,15 @@ a, button {
 }
 
 main #sidebar-left {
-  position: relative;
+  position: -webkit-sticky;
+  position: sticky;
   float: left;
   width: 14rem;
-  height: 100%;
   background-color: white;
   padding: 1rem;
+  top: 50px;
+  bottom: 0;
+  z-index: 0;
 }
 
 main #sidebar-left h2 {
@@ -434,24 +437,7 @@ main #sidebar-left h2:hover a {
 }
 
 main #sidebar-left .sidebar-menu {
-  margin-bottom: 4rem;
-}
-
-main #sidebar-left .sidebar-menu::-webkit-scrollbar {
-  width: 6px;
-}
-
-main #sidebar-left .sidebar-menu::-webkit-scrollbar-track {
-  background: #bcbdbc;
-}
-
-main #sidebar-left .sidebar-menu::-webkit-scrollbar-thumb {
-  background: #87c133;
-  height: auto;
-}
-
-main #sidebar-left .sidebar-menu::-webkit-scrollbar-thumb:hover {
-  background: #5a9b00;
+  margin-bottom: 2rem;
 }
 
 main #sidebar-left .sidebar-menu button {
@@ -535,13 +521,9 @@ main #sidebar-left .sidebar-menu #goback {
   background: #87c133;
   border: none;
   border-radius: 1.4rem;
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: 1rem;
   color: #ffffff;
   width: auto;
-  margin: 0 auto;
+  margin: 3rem auto 1rem;
 }
 
 main #sidebar-left .sidebar-menu #goback a {

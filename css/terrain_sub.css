@@ -410,12 +410,15 @@ a, button {
 }
 
 main #sidebar-left {
-  position: relative;
+  position: -webkit-sticky;
+  position: sticky;
   float: left;
   width: 14rem;
-  height: 100%;
   background-color: white;
   padding: 1rem;
+  top: 50px;
+  bottom: 0;
+  z-index: 0;
 }
 
 main #sidebar-left h2 {
@@ -434,7 +437,7 @@ main #sidebar-left h2:hover a {
 }
 
 main #sidebar-left .sidebar-menu {
-  margin-bottom: 4rem;
+  margin-bottom: 2rem;
 }
 
 main #sidebar-left .sidebar-menu::-webkit-scrollbar {
@@ -500,24 +503,6 @@ main #sidebar-left .sidebar-menu .info::-webkit-scrollbar-thumb:hover {
 
 main #sidebar-left .sidebar-menu .sub {
   height: 90%;
-}
-
-main #sidebar-left .sidebar-menu .projet {
-  font-size: .8rem;
-}
-
-main #sidebar-left .sidebar-menu .look {
-  display: block;
-  margin-top: 1rem;
-  font-size: 1rem;
-  text-align: left;
-  background: none;
-  color: #ffffff;
-  font-weight: bold;
-}
-
-main #sidebar-left .sidebar-menu .look:hover {
-  color: #525451;
 }
 
 main #sidebar-left .sidebar-menu button {
@@ -601,13 +586,9 @@ main #sidebar-left .sidebar-menu #goback {
   background: #87c133;
   border: none;
   border-radius: 1.4rem;
-  margin: 0 auto;
-  position: absolute;
-  left: 0;
-  right: 0;
   width: auto;
-  bottom: 1rem;
   color: #ffffff;
+  margin: 3rem auto 1rem;
 }
 
 main #sidebar-left .sidebar-menu #goback a {

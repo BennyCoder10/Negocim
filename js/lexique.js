@@ -6,6 +6,8 @@ function search() {
   filter = input.value.toUpperCase();
   contentsArea = document.getElementById("lexique-contents");
   content = contentsArea.getElementsByClassName("content");
+  reset = document.getElementById("reset");
+
 
   for (i = 0; i < content.length; i++) {
       a = content[i].getElementsByTagName("h3")[0];
@@ -13,9 +15,13 @@ function search() {
       
       if (txtValue.toUpperCase().indexOf(filter) > -1) {
         content[i].style.display = "";
-      } else {
+      } else  {
         content[i].style.display = "none";
       }  
+
+      // if (! txtValue == "") {
+      //   reset.style.display = "";
+      // } 
   };
 };
 
