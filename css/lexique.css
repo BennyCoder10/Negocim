@@ -538,6 +538,10 @@ a, button {
   line-height: 2;
 }
 
+#lexique > div #lexique-contents #noResult {
+  display: none;
+}
+
 #lexique > div #lexique-contents::-webkit-scrollbar {
   width: 6px;
 }

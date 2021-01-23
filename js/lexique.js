@@ -15,11 +15,12 @@ function search() {
         content[i].style.display = "";
       } else  {
         content[i].style.display = "none";
-      }  
+      } 
   };
+
+  // MAKE THE RESULT SCROLL UP TO TOP
+  document.getElementById("lexique-contents").scrollTo({ top: 0, behavior: 'smooth' });
 };
-
-
 
 
 // DELETE & RESET BUTTON
@@ -32,15 +33,12 @@ function delAndReset() {
 };
 
 input.addEventListener('input', () => {
-
   if (input.value.length > 0) {
     delReset.style.display = "inline-block";
   } else {
     delReset.style.display = "none";
   }
 });
-
-
 
 
 // SEARCH BUTTON

@@ -48,6 +48,8 @@
         }    
       }
 
+      #noResult { display: none;}
+
       // SCROLLBAR MODIFICATION  
       @include scrollbar(4.3rem)    
     }
