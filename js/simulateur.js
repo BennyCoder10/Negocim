@@ -128,7 +128,7 @@ lotissement.addEventListener('input', ($event) => {
   lotissementValue.textContent = $event.target.options[$event.target.selectedIndex].text;
 });
 
-lot.addEventListener('change', ($event) => {
+lot.addEventListener('input', ($event) => {
   lotValue.textContent = $event.target.options[$event.target.selectedIndex].text;
 });
 

@@ -6,8 +6,6 @@ function search() {
   filter = input.value.toUpperCase();
   contentsArea = document.getElementById("lexique-contents");
   content = contentsArea.getElementsByClassName("content");
-  reset = document.getElementById("reset");
-
 
   for (i = 0; i < content.length; i++) {
       a = content[i].getElementsByTagName("h3")[0];
@@ -18,12 +16,32 @@ function search() {
       } else  {
         content[i].style.display = "none";
       }  
-
-      // if (! txtValue == "") {
-      //   reset.style.display = "";
-      // } 
   };
 };
+
+
+
+
+// DELETE & RESET BUTTON
+const delReset = document.getElementById("delReset");
+
+function delAndReset() {
+  input.value = '';
+  search();
+  delReset.style.display = "none";
+};
+
+input.addEventListener('input', () => {
+
+  if (input.value.length > 0) {
+    delReset.style.display = "inline-block";
+  } else {
+    delReset.style.display = "none";
+  }
+});
+
+
+
 
 // SEARCH BUTTON
 input.addEventListener("keyup", function(event) {

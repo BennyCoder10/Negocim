@@ -7,12 +7,13 @@
     // SEARCH BAR
     .searchWrapper { text-align: right;
 
-      div { display: inline-block; border-bottom: 2.5px solid $sub;
-        input { font-size: .8rem; text-indent: 5px;  width: 10rem; padding: 0; border: none; 
+      div { display: inline-block; border-bottom: 2.5px solid $sub; position: relative;
+        input { font-size: .8rem; text-indent: 5px; width: 10rem; padding: 0; border: none; height: 22px;
           &:focus { outline: none;}
         }
 
-        #reset { display: none;}
+        // DELETE & RESET BUTTON
+        #delReset { display: none; padding: 0 .5rem; position: absolute; right: 15px; bottom: 1px;}
 
         button { padding: .5rem 0 0 .5rem; background: white; vertical-align: bottom; cursor: pointer;
           &:focus { outline: none;}

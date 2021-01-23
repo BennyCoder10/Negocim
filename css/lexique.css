@@ -106,7 +106,7 @@ main {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
-  margin-top: 78px !important;
+  margin-top: 77px !important;
 }
 
 header {
@@ -420,6 +420,7 @@ a, button {
 #lexique > div .searchWrapper div {
   display: inline-block;
   border-bottom: 2.5px solid #87c133;
+  position: relative;
 }
 
 #lexique > div .searchWrapper div input {
@@ -428,14 +429,19 @@ a, button {
   width: 10rem;
   padding: 0;
   border: none;
+  height: 22px;
 }
 
 #lexique > div .searchWrapper div input:focus {
   outline: none;
 }
 
-#lexique > div .searchWrapper div #reset {
+#lexique > div .searchWrapper div #delReset {
   display: none;
+  padding: 0 .5rem;
+  position: absolute;
+  right: 15px;
+  bottom: 1px;
 }
 
 #lexique > div .searchWrapper div button {
