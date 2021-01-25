@@ -7,6 +7,9 @@ function search() {
   contentsArea = document.getElementById("lexique-contents");
   content = contentsArea.getElementsByClassName("content");
 
+  // ALWAYS LAUNCH SEARCH FROM THE WHOLE TEXT CONTES
+  // input.value = '';
+
   for (i = 0; i < content.length; i++) {
       a = content[i].getElementsByTagName("h3")[0];
       txtValue = a.textContent || a.innerText;
