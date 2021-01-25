@@ -489,6 +489,7 @@ a, button {
   border-radius: 1.4rem;
   -webkit-transition: all .5s ease;
   transition: all .5s ease;
+  max-width: 230px;
 }
 
 #agence .agenceTable .right .buttons a {

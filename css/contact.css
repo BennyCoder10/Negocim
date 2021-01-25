@@ -551,13 +551,14 @@ a, button {
   left: 0;
   right: 0;
   bottom: 0;
+  margin: 1.8rem auto 0;
   display: block;
   background: #87c133;
   border: none;
   border-radius: 1.4rem;
-  margin: 1.8rem auto 0;
   -webkit-transition: all .5s ease;
   transition: all .5s ease;
+  max-width: 230px;
 }
 
 #agence .agenceTable .right .buttons a {

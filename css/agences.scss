@@ -36,8 +36,11 @@
       // END OF SERVICE INFO
 
       // BUTTON TO MAP
-      .buttons { position: absolute; bottom: 0; left: 0; right: 0; margin: 1.8rem auto 0;
+      .buttons { position: absolute; bottom: 0; left: 0; right: 0; margin: 1.8rem auto 0; 
         @include buttons; @include transition;
+
+        // ON SAFARI BROWSER
+        max-width: 230px;
       }  
 
     }  
