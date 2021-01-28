@@ -441,7 +441,7 @@ a, button {
 #terrain #sidebar-left .sidebar-menu {
   overflow-y: auto;
   min-height: 30%;
-  max-height: 65%;
+  max-height: calc(100% - 8rem);
   margin-right: .5rem;
   margin-bottom: 1rem;
 }
